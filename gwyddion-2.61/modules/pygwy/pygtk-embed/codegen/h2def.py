@@ -86,14 +86,16 @@ def to_upper_str(name):
     name = _upperstr_pat1.sub(r'\1_\2', name)
     name = _upperstr_pat2.sub(r'\1_\2', name)
     name = _upperstr_pat3.sub(r'\1_\2', name, count=1)
-    return string.upper(name)
+    return name.upper()
 
 def typecode(typename, namespace=None):
     """create a typecode (eg. GTK_TYPE_WIDGET) from a typename"""
     if namespace:
-      return string.replace(string.upper(namespace) + "_" + to_upper_str(typename[len(namespace):]), '_', '_TYPE_', 1)
+      #return string.replace(string.upper(namespace) + "_" + to_upper_str(typename[len(namespace):]), '_', '_TYPE_', 1)
+      return (string.upper(namespace) + "_" + to_upper_str(typename[len(namespace):])).replace('_', '_TYPE_', 1)
 
-    return string.replace(to_upper_str(typename), '_', '_TYPE_', 1)
+    #return string.replace(to_upper_str(typename), '_', '_TYPE_', 1)
+    return to_upper_str(typename).replace('_', '_TYPE_', 1)
 
 
 # ------------------ Find object definitions -----------------
@@ -102,10 +104,12 @@ def strip_comments(buf):
     parts = []
     lastpos = 0
     while 1:
-        pos = string.find(buf, '/*', lastpos)
+        #pos = string.find(buf, '/*', lastpos)
+        pos = buf.find('/*', lastpos)
         if pos >= 0:
             parts.append(buf[lastpos:pos])
-            pos = string.find(buf, '*/', pos)
+            #pos = string.find(buf, '*/', pos)
+            pos = buf.find('*/', pos)
             if pos >= 0:
                 lastpos = pos + 2
             else:
@@ -113,7 +117,7 @@ def strip_comments(buf):
         else:
             parts.append(buf[lastpos:])
             break
-    return string.join(parts, '')
+    return ''.join(parts)
 
 # Strips the dll API from buffer, for example WEBKIT_API
 def strip_dll_api(buf):
@@ -259,11 +263,11 @@ def find_enum_defs(buf, enums=[]):
 
         name = m.group(2)
         vals = m.group(1)
-        isflags = string.find(vals, '<<') >= 0
+        isflags = vals.find('<<') >= 0
         entries = []
         for val in splitter.split(vals):
-            if not string.strip(val): continue
-            entries.append(string.split(val)[0])
+            if not val.strip(): continue
+            entries.append(val.split()[0])
         if name != 'GdkCursorType':
             enums.append((name, isflags, entries))
 
@@ -322,8 +326,8 @@ def clean_func(buf):
 
     # make return types that are const work.
     buf = re.sub(r'\s*\*\s*G_CONST_RETURN\s*\*\s*', '** ', buf)
-    buf = string.replace(buf, 'G_CONST_RETURN ', 'const-')
-    buf = string.replace(buf, 'const ', 'const-')
+    buf = buf.replace('G_CONST_RETURN ', 'const-')
+    buf = buf.replace('const ', 'const-')
 
     #strip GSEAL macros from the middle of function declarations:
     pat = re.compile(r"""GSEAL""", re.VERBOSE)
@@ -380,8 +384,11 @@ class DefsWriter:
             fp = self.fp
 
         fp.write(';; Enumerations and flags ...\n\n')
-        trans = string.maketrans(string.uppercase + '_',
-                                 string.lowercase + '-')
+        
+        # Moved below for python3
+        #trans = string.maketrans(string.uppercase + '_',
+        #                         string.lowercase + '-')
+                                 
         filter = self._enums
         for cname, isflags, entries in enums:
             if filter:
@@ -414,9 +421,12 @@ class DefsWriter:
                     prefix = prefix[:-1]
             prefix_len = len(prefix)
             fp.write('  (values\n')
+            
             for ent in entries:
+                trans = ent[prefix_len:].maketrans(ent[prefix_len:].upper() + '_',
+                                 ent[prefix_len:].lower() + '-')
                 fp.write('    \'("%s" "%s")\n' %
-                         (string.translate(ent[prefix_len:], trans), ent))
+                         (ent[prefix_len:].translate(trans), ent))
             fp.write('  )\n')
             fp.write(')\n\n')
 
@@ -454,7 +464,7 @@ class DefsWriter:
 
     def _define_func(self, buf):
         buf = clean_func(buf)
-        buf = string.split(buf,'\n')
+        buf = buf.split('\n')
         filter = self._functions
         for p in buf:
             if not p:
@@ -474,9 +484,9 @@ class DefsWriter:
             args = m.group('args')
             args = arg_split_pat.split(args)
             for i in range(len(args)):
-                spaces = string.count(args[i], ' ')
+                spaces = args[i].count(' ')
                 if spaces > 1:
-                    args[i] = string.replace(args[i], ' ', '-', spaces - 1)
+                    args[i] = args[i].replace(' ', '-', spaces - 1)
 
             self._write_func(func, ret, args)
 
@@ -518,7 +528,8 @@ class DefsWriter:
         self._write_arguments(args)
 
     def _write_method(self, obj, name, ret, args):
-        regex = string.join(map(lambda x: x+'_?', string.lower(obj)),'')
+        #regex = string.join(map(lambda x: x+'_?', string.lower(obj)),'')
+        regex = ''.join(map(lambda x: x+'_?', obj.lower()))
         mname = re.sub(regex, '', name, 1)
         if self.prefix:
             l = len(self.prefix) + 1
@@ -548,7 +559,7 @@ class DefsWriter:
             self.fp.write('  (parameters\n')
             for arg in args:
                 if arg != '...':
-                    tupleArg = tuple(string.split(arg))
+                    tupleArg = tuple(arg.split())
                     if len(tupleArg) == 2:
                         self.fp.write('    \'("%s" "%s")\n' % tupleArg)
             self.fp.write('  )\n')

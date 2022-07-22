@@ -3,7 +3,7 @@
 from __future__ import generators
 
 import string
-from cStringIO import StringIO
+from io import StringIO
 
 class error(Exception):
     def __init__(self, filename, lineno, msg):
@@ -16,11 +16,12 @@ class error(Exception):
 
 trans = [' '] * 256
 for i in range(256):
-    if chr(i) in string.letters + string.digits + '_':
+    if chr(i) in string.ascii_letters + string.digits + '_':
         trans[i] = chr(i)
     else:
         trans[i] = '_'
-trans = string.join(trans, '')
+#trans = string.join(trans, '')
+trans = "".join(trans)
 
 def parse(filename):
     if isinstance(filename, str):
