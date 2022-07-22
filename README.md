@@ -18,4 +18,6 @@ make
 test pygwy inside: 
 gwyddion-2.61/debian/gwyddion/usr/lib/x86_64-linux-gnu/gwyddion/modules
 
+Python 3 packages needed: comtypes
+
 
