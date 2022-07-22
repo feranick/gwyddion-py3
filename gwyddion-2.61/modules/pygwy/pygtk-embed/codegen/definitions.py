@@ -210,7 +210,8 @@ class EnumDef(Definition):
 
 class FlagsDef(EnumDef):
     def __init__(self, *args):
-        apply(EnumDef.__init__, (self,) + args)
+        #apply(EnumDef.__init__, (self,) + args)
+        EnumDef.__init__(self, *args)
         self.deftype = 'flags'
 
 class BoxedDef(Definition):

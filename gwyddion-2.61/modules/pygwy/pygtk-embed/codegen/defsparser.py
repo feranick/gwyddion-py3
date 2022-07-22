@@ -47,39 +47,48 @@ class DefsParser(IncludeParser):
         self.defines = defines      # -Dfoo=bar options, as dictionary
 
     def define_object(self, *args):
-        odef = apply(ObjectDef, args)
+        #odef = apply(ObjectDef, args)
+        odef = ObjectDef(*args)
         self.objects.append(odef)
         self.c_name[odef.c_name] = odef
     def define_interface(self, *args):
-        idef = apply(InterfaceDef, args)
+        #idef = apply(InterfaceDef, args)
+        idef = InterfaceDef(*args)
         self.interfaces.append(idef)
         self.c_name[idef.c_name] = idef
     def define_enum(self, *args):
-        edef = apply(EnumDef, args)
+        #edef = apply(EnumDef, args)
+        edef = EnumDef(*args)
         self.enums.append(edef)
         self.c_name[edef.c_name] = edef
     def define_flags(self, *args):
-        fdef = apply(FlagsDef, args)
+        #fdef = apply(FlagsDef, args)
+        fdef = FlagsDef(*args)
         self.enums.append(fdef)
         self.c_name[fdef.c_name] = fdef
     def define_boxed(self, *args):
-        bdef = apply(BoxedDef, args)
+        #bdef = apply(BoxedDef, args)
+        bdef = BoxedDef(*args)
         self.boxes.append(bdef)
         self.c_name[bdef.c_name] = bdef
     def define_pointer(self, *args):
-        pdef = apply(PointerDef, args)
+        #pdef = apply(PointerDef, args)
+        pdef = PointerDef(*args)
         self.pointers.append(pdef)
         self.c_name[pdef.c_name] = pdef
     def define_function(self, *args):
-        fdef = apply(FunctionDef, args)
+        #fdef = apply(FunctionDef, args)
+        fdef = FunctionDef(*args)
         self.functions.append(fdef)
         self.c_name[fdef.c_name] = fdef
     def define_method(self, *args):
-        mdef = apply(MethodDef, args)
+        #mdef = apply(MethodDef, args)
+        mdef = MethodDef(*args)
         self.functions.append(mdef)
         self.c_name[mdef.c_name] = mdef
     def define_virtual(self, *args):
-        vdef = apply(VirtualDef, args)
+        #vdef = apply(VirtualDef, args)
+        vdef = VirtualDef(*args)
         self.virtuals.append(vdef)
     def merge(self, old, parmerge):
         for obj in self.objects:
