@@ -231,7 +231,7 @@ fi
 # to use the highest version, which can be python 3.x.
 GWY_WITH([python],,[Install Python modules and plug-ins])
 m4_define_default([_AM_PYTHON_INTERPRETER_LIST],[python3 python3.6 python3.7 python3.8 python3.9 python3.10 python2 python2.7 python2.6 python2.5 python2.4 python])
-AM_PATH_PYTHON(2.4,,:)
+AM_PATH_PYTHON(3.10,,:)
 AM_CONDITIONAL([HAVE_PYTHON],[test "$PYTHON" != : -a "$enable_python" != no])
 AC_CHECK_SIZEOF([pid_t])
 
