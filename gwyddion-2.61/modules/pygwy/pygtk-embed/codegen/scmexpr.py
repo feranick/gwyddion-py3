@@ -114,7 +114,7 @@ class Parser:
         for statement in statements:
             self.handle(statement)
     def handle(self, tup):
-        cmd = string.translate(tup[0], trans)
+        cmd = tup[0].translate(trans)
         if hasattr(self, cmd):
             getattr(self, cmd)(*tup[1:])
         else:

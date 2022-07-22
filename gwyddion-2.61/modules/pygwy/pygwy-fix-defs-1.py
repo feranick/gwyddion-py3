@@ -23,7 +23,7 @@ fixes = [
     (r'"(as|assert|def|exec|from|global|import|in|is|lambda|pass|print|raise|with|yield)"\)', r'"\1_")'),
 ]
 
-text = file(sys.argv[1]).read()
+text = open(sys.argv[1]).read()
 for fix in fixes:
     text, nsub = re.subn(fix[0], fix[1], text)
     if nsub:
