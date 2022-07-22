@@ -587,7 +587,7 @@ def main(args):
             defsfilter = v
 
     if not args[0:1]:
-        print 'Must specify at least one input file name'
+        print('Must specify at least one input file name')
         return -1
 
     # read all the object definitions in
@@ -607,11 +607,11 @@ def main(args):
                         verbose=verbose, defsfilter=defsfilter)
         dw.write_obj_defs(objdefs, types)
         dw.write_enum_defs(enums, types)
-        print "Wrote %s-types.defs" % separate
+        print("Wrote %s-types.defs" % separate)
 
         for filename in args:
             dw.write_def(filename)
-        print "Wrote %s.defs" % separate
+        print ("Wrote %s.defs" % separate)
     else:
         dw = DefsWriter(prefix=modulename, ns=namespace,
                         verbose=verbose, defsfilter=defsfilter)

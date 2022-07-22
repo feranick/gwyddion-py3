@@ -140,4 +140,4 @@ if __name__ == '__main__':
         fp = StringIO(_testString)
     statements = parse(fp)
     for s in statements:
-        print `s`
+        print(s)
