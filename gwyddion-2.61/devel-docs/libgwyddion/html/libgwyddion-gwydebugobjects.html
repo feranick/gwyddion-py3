@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gwydebugobjects: Gwyddion Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="prev" href="libgwyddion-gwymd5.html" title="gwymd5">
+<link rel="next" href="api-index-all.html" title="Index of all symbols">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyddion-gwydebugobjects.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyddion-gwymd5.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="api-index-all.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyddion-gwydebugobjects"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyddion-gwydebugobjects.top_of_page"></a>gwydebugobjects</span></h2>
+<p>gwydebugobjects — Helps chasing leaking objects (debug)</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyddion-gwydebugobjects.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-gwydebugobjects.html#gwy-debug-objects-creation" title="gwy_debug_objects_creation()">gwy_debug_objects_creation</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-gwydebugobjects.html#gwy-debug-objects-creation-detailed" title="gwy_debug_objects_creation_detailed ()">gwy_debug_objects_creation_detailed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-gwydebugobjects.html#gwy-debug-objects-enable" title="gwy_debug_objects_enable ()">gwy_debug_objects_enable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-gwydebugobjects.html#gwy-debug-objects-dump-to-file" title="gwy_debug_objects_dump_to_file ()">gwy_debug_objects_dump_to_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-gwydebugobjects.html#gwy-debug-objects-clear" title="gwy_debug_objects_clear ()">gwy_debug_objects_clear</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-gwydebugobjects.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgwyddion-gwydebugobjects.html#GwyDebugObjectsDumpFlags" title="enum GwyDebugObjectsDumpFlags">GwyDebugObjectsDumpFlags</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-gwydebugobjects.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwyddion/gwyddion.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-gwydebugobjects.description"></a><h2>Description</h2>
+<p>If you wonder about some object lifetime rules, these functions can help
+you: <a class="link" href="libgwyddion-gwydebugobjects.html#gwy-debug-objects-creation" title="gwy_debug_objects_creation()"><code class="function">gwy_debug_objects_creation()</code></a> hooks object finalization so it is
+possible to tell later whether and when the object was destroyed -- use
+<a class="link" href="libgwyddion-gwydebugobjects.html#gwy-debug-objects-dump-to-file" title="gwy_debug_objects_dump_to_file ()"><code class="function">gwy_debug_objects_dump_to_file()</code></a> to dump this information to a file.</p>
+<p>If debugging is not enabled with <a class="link" href="libgwyddion-gwydebugobjects.html#gwy-debug-objects-enable" title="gwy_debug_objects_enable ()"><code class="function">gwy_debug_objects_enable()</code></a> these functions
+do nothing.  Note all Gwyddion data-like objects (i.e., not widgets) already
+call <a class="link" href="libgwyddion-gwydebugobjects.html#gwy-debug-objects-creation" title="gwy_debug_objects_creation()"><code class="function">gwy_debug_objects_creation()</code></a> so to debug their lifetime rules, just
+enable it.</p>
+<p>Future changes: This functionality will be removed in 3.0.  Use RefDbg.</p>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-gwydebugobjects.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-debug-objects-creation"></a><h3>gwy_debug_objects_creation()</h3>
+<pre class="programlisting">#define             gwy_debug_objects_creation(o)</pre>
+<p>Convenience wrapper for <a class="link" href="libgwyddion-gwydebugobjects.html#gwy-debug-objects-creation-detailed" title="gwy_debug_objects_creation_detailed ()"><code class="function">gwy_debug_objects_creation_detailed()</code></a>.</p>
+<p>It uses file name and line number as the detail.</p>
+<div class="refsect3">
+<a name="gwy-debug-objects-creation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>o</p></td>
+<td class="parameter_description"><p>An object to watch.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-debug-objects-creation-detailed"></a><h3>gwy_debug_objects_creation_detailed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_debug_objects_creation_detailed (<em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *object</code></em>,
+                                     <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *details</code></em>);</pre>
+<p>Notes down <em class="parameter"><code>object</code></em>
+ and sets up watch for its destruction.</p>
+<p>This function should be called on object creation to get accurate creation
+time, but can be in fact called anytime in object existence.</p>
+<p>There are two possible uses: In class implementation, where it should be
+put into instance init function.  Constructors are less suited for that,
+as there can be more than one, there can be deserializators, duplicators,
+etc., and you usually want to catch all possible means of object creation.</p>
+<p>Or it can be used on the side of object user who is concerned with lifetime
+rules of a particular object, he then calls it just after object creation.</p>
+<div class="refsect3">
+<a name="gwy-debug-objects-creation-detailed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>object</p></td>
+<td class="parameter_description"><p>An object to watch.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>details</p></td>
+<td class="parameter_description"><p>Detailed information printed in debug output.  No copy is made,
+it must exist permanently.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-debug-objects-enable"></a><h3>gwy_debug_objects_enable ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_debug_objects_enable (<em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> enable</code></em>);</pre>
+<p>Enables or disables the object creation/destruction debugger.</p>
+<p>When debugger is disabled, no new objects are noted, but destruction of
+already watched ones is still noted.</p>
+<div class="refsect3">
+<a name="gwy-debug-objects-enable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>enable</p></td>
+<td class="parameter_description"><p>Whether object creation/destruction debugger should be enabled.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-debug-objects-dump-to-file"></a><h3>gwy_debug_objects_dump_to_file ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_debug_objects_dump_to_file (<em class="parameter"><code><span class="type">FILE</span> *filehandle</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyddion-gwydebugobjects.html#GwyDebugObjectsDumpFlags" title="enum GwyDebugObjectsDumpFlags"><span class="type">GwyDebugObjectsDumpFlags</span></a> flags</code></em>);</pre>
+<p>Dumps all recorded objects to a file.</p>
+<p>The format of each line is: object type name, object address, creation time,
+destruction time (or ALIVE! message with reference count).</p>
+<div class="refsect3">
+<a name="gwy-debug-objects-dump-to-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>filehandle</p></td>
+<td class="parameter_description"><p>A filehandle open for writing.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>Dump option flags.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-debug-objects-clear"></a><h3>gwy_debug_objects_clear ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_debug_objects_clear (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Frees all memory taken by debugger, removes all watches.</p>
+<p>Eventual following call to <a class="link" href="libgwyddion-gwydebugobjects.html#gwy-debug-objects-creation" title="gwy_debug_objects_creation()"><code class="function">gwy_debug_objects_creation()</code></a> will behave like
+the very first one, including time counting reset.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-gwydebugobjects.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyDebugObjectsDumpFlags"></a><h3>enum GwyDebugObjectsDumpFlags</h3>
+<p>Option flags for <a class="link" href="libgwyddion-gwydebugobjects.html#gwy-debug-objects-dump-to-file" title="gwy_debug_objects_dump_to_file ()"><code class="function">gwy_debug_objects_dump_to_file()</code></a>.</p>
+<div class="refsect3">
+<a name="GwyDebugObjectsDumpFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody><tr>
+<td class="enum_member_name"><p><a name="GWY-DEBUG-OBJECTS-DUMP-ONLY-ALIVE:CAPS"></a>GWY_DEBUG_OBJECTS_DUMP_ONLY_ALIVE</p></td>
+<td class="enum_member_description">
+<p>Dump only objects that are still
+alive.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

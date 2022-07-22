@@ -1,0 +1,1191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyMarkerBox: Gwyddion Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Widgets Library Reference Manual">
+<link rel="up" href="GeneralWidgets.html" title="General Widgets">
+<link rel="prev" href="GwyVRuler.html" title="GwyVRuler">
+<link rel="next" href="GwyHMarkerBox.html" title="GwyHMarkerBox">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyMarkerBox.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyMarkerBox.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GwyMarkerBox.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GwyMarkerBox.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GwyMarkerBox.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="GeneralWidgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GwyVRuler.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyHMarkerBox.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyMarkerBox"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyMarkerBox.top_of_page"></a>GwyMarkerBox</span></h2>
+<p>GwyMarkerBox — Base class for box with movable markers.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyMarkerBox.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="GwyMarkerBox.html#GwyMarkerValidateFunc" title="GwyMarkerValidateFunc ()">*GwyMarkerValidateFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyMarkerBox.html#gwy-marker-box-get-selected-marker" title="gwy_marker_box_get_selected_marker ()">gwy_marker_box_get_selected_marker</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyMarkerBox.html#gwy-marker-box-set-selected-marker" title="gwy_marker_box_set_selected_marker ()">gwy_marker_box_set_selected_marker</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyMarkerBox.html#gwy-marker-box-get-marker-position" title="gwy_marker_box_get_marker_position ()">gwy_marker_box_get_marker_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyMarkerBox.html#gwy-marker-box-set-marker-position" title="gwy_marker_box_set_marker_position ()">gwy_marker_box_set_marker_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyMarkerBox.html#gwy-marker-box-add-marker" title="gwy_marker_box_add_marker ()">gwy_marker_box_add_marker</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyMarkerBox.html#gwy-marker-box-remove-marker" title="gwy_marker_box_remove_marker ()">gwy_marker_box_remove_marker</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyMarkerBox.html#gwy-marker-box-get-nmarkers" title="gwy_marker_box_get_nmarkers ()">gwy_marker_box_get_nmarkers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyMarkerBox.html#gwy-marker-box-get-markers" title="gwy_marker_box_get_markers ()">gwy_marker_box_get_markers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyMarkerBox.html#gwy-marker-box-set-markers" title="gwy_marker_box_set_markers ()">gwy_marker_box_set_markers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyMarkerBox.html#gwy-marker-box-set-flipped" title="gwy_marker_box_set_flipped ()">gwy_marker_box_set_flipped</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyMarkerBox.html#gwy-marker-box-get-flipped" title="gwy_marker_box_get_flipped ()">gwy_marker_box_get_flipped</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyMarkerBox.html#gwy-marker-box-set-highlight-selected" title="gwy_marker_box_set_highlight_selected ()">gwy_marker_box_set_highlight_selected</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyMarkerBox.html#gwy-marker-box-get-highlight-selected" title="gwy_marker_box_get_highlight_selected ()">gwy_marker_box_get_highlight_selected</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyMarkerBox.html#gwy-marker-box-set-validator" title="gwy_marker_box_set_validator ()">gwy_marker_box_set_validator</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyMarkerBox.html#GwyMarkerValidateFunc" title="GwyMarkerValidateFunc ()"><span class="returnvalue">GwyMarkerValidateFunc</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyMarkerBox.html#gwy-marker-box-get-validator" title="gwy_marker_box_get_validator ()">gwy_marker_box_get_validator</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyMarkerBox.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GwyMarkerBox.html#GwyMarkerBox--flipped" title="The “flipped” property">flipped</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GwyMarkerBox.html#GwyMarkerBox--highlight-selected" title="The “highlight-selected” property">highlight-selected</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">int</span></td>
+<td class="property_name"><a class="link" href="GwyMarkerBox.html#GwyMarkerBox--selected-marker" title="The “selected-marker” property">selected-marker</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyMarkerBox.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyMarkerBox.html#GwyMarkerBox-marker-added" title="The “marker-added” signal">marker-added</a></td>
+<td class="signal_flags"><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyMarkerBox.html#GwyMarkerBox-marker-moved" title="The “marker-moved” signal">marker-moved</a></td>
+<td class="signal_flags"><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyMarkerBox.html#GwyMarkerBox-marker-removed" title="The “marker-removed” signal">marker-removed</a></td>
+<td class="signal_flags"><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyMarkerBox.html#GwyMarkerBox-marker-selected" title="The “marker-selected” signal">marker-selected</a></td>
+<td class="signal_flags"><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyMarkerBox.html#GwyMarkerBox-markers-set" title="The “markers-set” signal">markers-set</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyMarkerBox.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyMarkerBox.html#GwyMarkerBox-struct" title="struct GwyMarkerBox">GwyMarkerBox</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyMarkerBox.html#GwyMarkerBoxClass" title="struct GwyMarkerBoxClass">GwyMarkerBoxClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyMarkerBox.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk2/GtkObject.html#GtkObject-struct">GtkObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct">GtkWidget</a>
+                <span class="lineart">╰──</span> GwyMarkerBox
+                    <span class="lineart">╰──</span> <a class="link" href="GwyHMarkerBox.html" title="GwyHMarkerBox">GwyHMarkerBox</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyMarkerBox.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GwyMarkerBox implements
+ AtkImplementorIface and  <a href="/usr/share/gtk-doc/html/gtk3/GtkBuildable.html#GtkBuildable-struct">GtkBuildable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwyMarkerBox.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwydgets/gwydgets.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyMarkerBox.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> is a box with triangular markers that can be
+moved, added, and/or deleted.  One or no marker can be selected.</p>
+<p>Marker coordinates are always from the range [0.0, 1.0].</p>
+<p>It is possible to fully control where and how user can move, add, and/or
+delete markers with marker validation function set with
+<a class="link" href="GwyMarkerBox.html#gwy-marker-box-set-validator" title="gwy_marker_box_set_validator ()"><code class="function">gwy_marker_box_set_validator()</code></a>.  By default, no validator is in effect
+and user can change markers completely freely.</p>
+</div>
+<div class="refsect1">
+<a name="GwyMarkerBox.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GwyMarkerValidateFunc"></a><h3>GwyMarkerValidateFunc ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<span class="c_punctuation">(</span>*GwyMarkerValidateFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> *mbox</code></em>,
+                          <em class="parameter"><code><a class="link" href="libgwydgets-gwydgetenums.html#GwyMarkerOperationType" title="enum GwyMarkerOperationType"><span class="type">GwyMarkerOperationType</span></a> optype</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *i</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *pos</code></em>);</pre>
+<p>Marker validation function.</p>
+<p>It is called for each single-marker change, both by user and by
+<a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> methods.  However, it is NOT called upon
+<a class="link" href="GwyMarkerBox.html#gwy-marker-box-set-markers" title="gwy_marker_box_set_markers ()"><code class="function">gwy_marker_box_set_markers()</code></a> as it is unclear how the validation should
+proceed.</p>
+<p>The function must not have any side-effects, that is it must not assume the
+operation will be actually performed when it returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
+<p>Marker validator that allows free marker movement but disables insertion
+and removal could look:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="k">static</span> <span class="n">gboolean</span>
+<span class="n">validate_marker</span><span class="p">(</span><span class="n">GwyMarkerBox</span> <span class="o">*</span><span class="n">mbox</span><span class="p">,</span>
+                <span class="n">GwyMarkerOperationType</span> <span class="n">optype</span><span class="p">,</span>
+                <span class="n">gint</span> <span class="o">*</span><span class="n">i</span><span class="p">,</span>
+                <span class="n">gdouble</span> <span class="o">*</span><span class="n">pos</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">optype</span> <span class="o">==</span> <span class="n">GWY_MARKER_OPERATION_ADD</span>
+        <span class="o">||</span> <span class="n">optype</span> <span class="o">==</span> <span class="n">GWY_MARKER_OPERATION_REMOVE</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">FALSE</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">TRUE</span><span class="p">;</span>
+<span class="p">}</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>Marker validator that assures markers are sorted and there is always
+a marker at 0.0 and another at 1.0 could look:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="k">static</span> <span class="n">gboolean</span>
+<span class="n">validate_marker</span><span class="p">(</span><span class="n">GwyMarkerBox</span> <span class="o">*</span><span class="n">mbox</span><span class="p">,</span>
+                <span class="n">GwyMarkerOperationType</span> <span class="n">optype</span><span class="p">,</span>
+                <span class="n">gint</span> <span class="o">*</span><span class="n">i</span><span class="p">,</span>
+                <span class="n">gdouble</span> <span class="o">*</span><span class="n">pos</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">const</span> <span class="n">gdouble</span> <span class="o">*</span><span class="n">markers</span><span class="p">;</span>
+    <span class="n">gint</span> <span class="n">j</span><span class="p">,</span> <span class="n">n</span><span class="p">;</span>
+
+    <span class="n">n</span> <span class="o">=</span> <span class="n">gwy_marker_box_get_nmarkers</span><span class="p">(</span><span class="n">mbox</span><span class="p">);</span>
+
+    <span class="cm">/* Insertions are sorted */</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">optype</span> <span class="o">==</span> <span class="n">GWY_MARKER_OPERATION_ADD</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">markers</span> <span class="o">=</span> <span class="n">gwy_marker_box_get_markers</span><span class="p">(</span><span class="n">mbox</span><span class="p">);</span>
+        <span class="k">for</span> <span class="p">(</span><span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">pos</span> <span class="o">&lt;</span> <span class="n">markers</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+                <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">j</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">j</span> <span class="o">==</span> <span class="n">n</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">FALSE</span><span class="p">;</span>
+        <span class="o">*</span><span class="n">i</span> <span class="o">=</span> <span class="n">j</span><span class="p">;</span>
+        <span class="k">return</span> <span class="n">TRUE</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="cm">/* Nothing at all can be done with border markers */</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">i</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="o">*</span><span class="n">i</span> <span class="o">==</span> <span class="n">n</span><span class="mi">-1</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">FALSE</span><span class="p">;</span>
+
+    <span class="cm">/* Inner markers can be moved only from previous to next */</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">optype</span> <span class="o">==</span> <span class="n">GWY_MARKER_OPERATION_MOVE</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">markers</span> <span class="o">=</span> <span class="n">gwy_marker_box_get_markers</span><span class="p">(</span><span class="n">mbox</span><span class="p">);</span>
+        <span class="o">*</span><span class="n">pos</span> <span class="o">=</span> <span class="n">CLAMP</span><span class="p">(</span><span class="o">*</span><span class="n">pos</span><span class="p">,</span> <span class="n">markers</span><span class="p">[</span><span class="o">*</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">],</span> <span class="n">markers</span><span class="p">[</span><span class="o">*</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]);</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">TRUE</span><span class="p">;</span>
+<span class="p">}</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="refsect3">
+<a name="GwyMarkerValidateFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mbox</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> to validate markers for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>optype</p></td>
+<td class="parameter_description"><p>Marker operation to validate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Pointer to index of marker to validate.  For insertion, it's the
+position the marker would be inserted to (but it's not there yet),
+for removal it's the position where it still is.  The validator can
+change the index, but it has an effect only when a marker is being
+added.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pos</p></td>
+<td class="parameter_description"><p>Pointer to requested marker position. The validator can change the
+position and the marker will be then moved or inserted to the changed
+position. For removal, its changes have no effect.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="GwyMarkerValidateFunc.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to allow requested the operation, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to disallow it.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-marker-box-get-selected-marker"></a><h3>gwy_marker_box_get_selected_marker ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_marker_box_get_selected_marker (<em class="parameter"><code><a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> *mbox</code></em>);</pre>
+<p>Gets the index of the currently selected marker in a marker
+box.</p>
+<div class="refsect3">
+<a name="gwy-marker-box-get-selected-marker.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mbox</p></td>
+<td class="parameter_description"><p>A marker box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-marker-box-get-selected-marker.returns"></a><h4>Returns</h4>
+<p> The index of currently selected marker, -1 when none is
+selected.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-marker-box-set-selected-marker"></a><h3>gwy_marker_box_set_selected_marker ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_marker_box_set_selected_marker (<em class="parameter"><code><a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> *mbox</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>);</pre>
+<p>Selects a marker in a marker box.</p>
+<div class="refsect3">
+<a name="gwy-marker-box-set-selected-marker.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mbox</p></td>
+<td class="parameter_description"><p>A marker box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>The index of marker to select.  Pass -1 to unselect.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-marker-box-get-marker-position"></a><h3>gwy_marker_box_get_marker_position ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_marker_box_get_marker_position (<em class="parameter"><code><a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> *mbox</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>);</pre>
+<p>Gets the position of a marker in a marker box.</p>
+<div class="refsect3">
+<a name="gwy-marker-box-get-marker-position.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mbox</p></td>
+<td class="parameter_description"><p>A marker box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>The index of marker to get position of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-marker-box-get-marker-position.returns"></a><h4>Returns</h4>
+<p> The marker position, in the range [0.0, 1.0].</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-marker-box-set-marker-position"></a><h3>gwy_marker_box_set_marker_position ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_marker_box_set_marker_position (<em class="parameter"><code><a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> *mbox</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> pos</code></em>);</pre>
+<p>Moves a marker in a marker box.</p>
+<div class="refsect3">
+<a name="gwy-marker-box-set-marker-position.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mbox</p></td>
+<td class="parameter_description"><p>A marker box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Index of marker to move.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pos</p></td>
+<td class="parameter_description"><p>The new marker position, in the range [0.0, 1.0].</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-marker-box-set-marker-position.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success. If the move does not validate, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> is returned
+and the marker position does not change.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-marker-box-add-marker"></a><h3>gwy_marker_box_add_marker ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_marker_box_add_marker (<em class="parameter"><code><a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> *mbox</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> pos</code></em>);</pre>
+<p>Adds a marker to a marker box.</p>
+<div class="refsect3">
+<a name="gwy-marker-box-add-marker.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mbox</p></td>
+<td class="parameter_description"><p>A marker box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Index to insert marker at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pos</p></td>
+<td class="parameter_description"><p>Position to insert marker to, in the range [0.0, 1.0].</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-marker-box-add-marker.returns"></a><h4>Returns</h4>
+<p> On success, the index the marker was added at.  If the insertion
+does not validate, -1 is returned and no marker is added.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-marker-box-remove-marker"></a><h3>gwy_marker_box_remove_marker ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_marker_box_remove_marker (<em class="parameter"><code><a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> *mbox</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>);</pre>
+<p>Removes a marker from a marker box.</p>
+<div class="refsect3">
+<a name="gwy-marker-box-remove-marker.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mbox</p></td>
+<td class="parameter_description"><p>A marker box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Index of marker to remove.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-marker-box-remove-marker.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success. If the removal does not validate, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> is
+returned and the marker is kept.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-marker-box-get-nmarkers"></a><h3>gwy_marker_box_get_nmarkers ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_marker_box_get_nmarkers (<em class="parameter"><code><a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> *mbox</code></em>);</pre>
+<p>Gets the number of markers in a marker box.</p>
+<div class="refsect3">
+<a name="gwy-marker-box-get-nmarkers.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mbox</p></td>
+<td class="parameter_description"><p>A marker box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-marker-box-get-nmarkers.returns"></a><h4>Returns</h4>
+<p> The number of markers.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-marker-box-get-markers"></a><h3>gwy_marker_box_get_markers ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_marker_box_get_markers (<em class="parameter"><code><a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> *mbox</code></em>);</pre>
+<p>Gets all markers in a marker box.</p>
+<div class="refsect3">
+<a name="gwy-marker-box-get-markers.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mbox</p></td>
+<td class="parameter_description"><p>A marker box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-marker-box-get-markers.returns"></a><h4>Returns</h4>
+<p> The markers as an array of positions, owned by <em class="parameter"><code>mbox</code></em>
+.  It must
+not be modified nor freed by caller and it's valid only until
+next marker change.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-marker-box-set-markers"></a><h3>gwy_marker_box_set_markers ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_marker_box_set_markers (<em class="parameter"><code><a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> *mbox</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *markers</code></em>);</pre>
+<p>Sets positions of all markers in a marker box.</p>
+<p>No validation is performed, even if validator is set.  It's up to caller to
+set markers that do not logically conflict with the validator.</p>
+<div class="refsect3">
+<a name="gwy-marker-box-set-markers.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mbox</p></td>
+<td class="parameter_description"><p>A marker box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The number of markers to set.  If it is zero, <em class="parameter"><code>markers</code></em>
+can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>markers</p></td>
+<td class="parameter_description"><p>Markers position.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-marker-box-set-flipped"></a><h3>gwy_marker_box_set_flipped ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_marker_box_set_flipped (<em class="parameter"><code><a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> *mbox</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> flipped</code></em>);</pre>
+<p>Sets whether a marker box is drawn upside down.</p>
+<div class="refsect3">
+<a name="gwy-marker-box-set-flipped.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mbox</p></td>
+<td class="parameter_description"><p>A marker box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flipped</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to draw markers upside down.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-marker-box-get-flipped"></a><h3>gwy_marker_box_get_flipped ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_marker_box_get_flipped (<em class="parameter"><code><a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> *mbox</code></em>);</pre>
+<p>Returns whether a marker box is drawn upside down.</p>
+<div class="refsect3">
+<a name="gwy-marker-box-get-flipped.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mbox</p></td>
+<td class="parameter_description"><p>A marker box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-marker-box-get-flipped.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if markers are drawn upside down.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-marker-box-set-highlight-selected"></a><h3>gwy_marker_box_set_highlight_selected ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_marker_box_set_highlight_selected (<em class="parameter"><code><a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> *mbox</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> highlight</code></em>);</pre>
+<p>Sets whether a marker box highlights selected marker.</p>
+<div class="refsect3">
+<a name="gwy-marker-box-set-highlight-selected.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mbox</p></td>
+<td class="parameter_description"><p>A marker box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>highlight</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to visually differentiate selected marker, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to
+draw markers uniformly.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-marker-box-get-highlight-selected"></a><h3>gwy_marker_box_get_highlight_selected ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_marker_box_get_highlight_selected (<em class="parameter"><code><a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> *mbox</code></em>);</pre>
+<p>Returns whether a marker box highlights selected marker.</p>
+<div class="refsect3">
+<a name="gwy-marker-box-get-highlight-selected.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mbox</p></td>
+<td class="parameter_description"><p>A marker box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-marker-box-get-highlight-selected.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if selected marker is visually differentiated, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if
+markers are drawn uniformly.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-marker-box-set-validator"></a><h3>gwy_marker_box_set_validator ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_marker_box_set_validator (<em class="parameter"><code><a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> *mbox</code></em>,
+                              <em class="parameter"><code><a class="link" href="GwyMarkerBox.html#GwyMarkerValidateFunc" title="GwyMarkerValidateFunc ()"><span class="type">GwyMarkerValidateFunc</span></a> validate</code></em>);</pre>
+<p>Sets marker box marker validation function.</p>
+<p>It is used the next time an attempt to change markers is made, no
+revalidation is done immediately.  It's up to caller to set a validator
+that do not logically conflict with the distribution of markers.</p>
+<div class="refsect3">
+<a name="gwy-marker-box-set-validator.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mbox</p></td>
+<td class="parameter_description"><p>A marker box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>validate</p></td>
+<td class="parameter_description"><p>Marker validation function.  Pass <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to disable validation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-marker-box-get-validator"></a><h3>gwy_marker_box_get_validator ()</h3>
+<pre class="programlisting"><a class="link" href="GwyMarkerBox.html#GwyMarkerValidateFunc" title="GwyMarkerValidateFunc ()"><span class="returnvalue">GwyMarkerValidateFunc</span></a>
+gwy_marker_box_get_validator (<em class="parameter"><code><a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> *mbox</code></em>);</pre>
+<p>Gets the marker validation function currently in use.</p>
+<div class="refsect3">
+<a name="gwy-marker-box-get-validator.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mbox</p></td>
+<td class="parameter_description"><p>A marker box.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-marker-box-get-validator.returns"></a><h4>Returns</h4>
+<p> The marker validation function.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyMarkerBox.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyMarkerBox-struct"></a><h3>struct GwyMarkerBox</h3>
+<pre class="programlisting">struct GwyMarkerBox;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyMarkerBoxClass"></a><h3>struct GwyMarkerBoxClass</h3>
+<pre class="programlisting">struct GwyMarkerBoxClass {
+    GtkWidgetClass parent_class;
+
+    /* signals */
+    void (*marker_selected)(GwyMarkerBox *mbox,
+                            gint i);
+    void (*marker_moved)(GwyMarkerBox *mbox,
+                         gint i);
+    void (*marker_added)(GwyMarkerBox *mbox,
+                         gint i);
+    void (*marker_removed)(GwyMarkerBox *mbox,
+                           gint i);
+    void (*markers_set)(GwyMarkerBox *mbox);
+
+    /* virtual methods */
+    void (*draw_box)(GwyMarkerBox *mbox);
+    void (*draw_marker)(GwyMarkerBox *mbox,
+                        gint i);
+
+    void (*reserved1)(void);
+    void (*reserved2)(void);
+    void (*reserved3)(void);
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyMarkerBox.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GwyMarkerBox--flipped"></a><h3>The <code class="literal">“flipped”</code> property</h3>
+<pre class="programlisting">  “flipped”                  <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether marks are drawn upside down.</p>
+<p>Owner: GwyMarkerBox</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyMarkerBox--highlight-selected"></a><h3>The <code class="literal">“highlight-selected”</code> property</h3>
+<pre class="programlisting">  “highlight-selected”       <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether to visually differentiate selected marker.</p>
+<p>Owner: GwyMarkerBox</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyMarkerBox--selected-marker"></a><h3>The <code class="literal">“selected-marker”</code> property</h3>
+<pre class="programlisting">  “selected-marker”          <span class="type">int</span></pre>
+<p>The index of selected marker, -1 if none.</p>
+<p>Owner: GwyMarkerBox</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [-1,1024]</p>
+<p>Default value: -1</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyMarkerBox.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GwyMarkerBox-marker-added"></a><h3>The <code class="literal">“marker-added”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> *arg1,
+               <span class="type">int</span>           gwymarkerbox,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>The ::marker-added signal is emitted when a marker is added.</p>
+<div class="refsect3">
+<a name="GwyMarkerBox-marker-added.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>arg1</p></td>
+<td class="parameter_description"><p>The index a marker was added at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gwymarkerbox</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyMarkerBox-marker-moved"></a><h3>The <code class="literal">“marker-moved”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> *arg1,
+               <span class="type">int</span>           gwymarkerbox,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>The ::marker-moved signal is emitted when a marker is moved.</p>
+<div class="refsect3">
+<a name="GwyMarkerBox-marker-moved.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>arg1</p></td>
+<td class="parameter_description"><p>The index of moved marker.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gwymarkerbox</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyMarkerBox-marker-removed"></a><h3>The <code class="literal">“marker-removed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> *arg1,
+               <span class="type">int</span>           gwymarkerbox,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>The ::marker-removed signal is emitted when a marker is removed.</p>
+<div class="refsect3">
+<a name="GwyMarkerBox-marker-removed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>arg1</p></td>
+<td class="parameter_description"><p>The index a marker was removed from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gwymarkerbox</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyMarkerBox-marker-selected"></a><h3>The <code class="literal">“marker-selected”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> *arg1,
+               <span class="type">int</span>           gwymarkerbox,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>The ::marker-selected signal is emitted when marker selection changes.</p>
+<div class="refsect3">
+<a name="GwyMarkerBox-marker-selected.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>arg1</p></td>
+<td class="parameter_description"><p>The index of selected marker, -1 when marker was unselected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gwymarkerbox</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyMarkerBox-markers-set"></a><h3>The <code class="literal">“markers-set”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> *gwymarkerbox,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>The ::markers-set signal is emitted when markers are explicitly set
+with <a class="link" href="GwyMarkerBox.html#gwy-marker-box-set-markers" title="gwy_marker_box_set_markers ()"><code class="function">gwy_marker_box_set_markers()</code></a>.</p>
+<div class="refsect3">
+<a name="GwyMarkerBox-markers-set.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwymarkerbox</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyMarkerBox.html" title="GwyMarkerBox"><span class="type">GwyMarkerBox</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

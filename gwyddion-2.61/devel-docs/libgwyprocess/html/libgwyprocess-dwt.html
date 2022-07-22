@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>dwt: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="libgwyprocess-cwt.html" title="cwt">
+<link rel="next" href="libgwyprocess-elliptic.html" title="elliptic">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyprocess-dwt.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyprocess-cwt.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyprocess-elliptic.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyprocess-dwt"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyprocess-dwt.top_of_page"></a>dwt</span></h2>
+<p>dwt — Discrete Wavelet Transform</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyprocess-dwt.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="returnvalue">GwyDataLine</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-dwt.html#gwy-dwt-set-coefficients" title="gwy_dwt_set_coefficients ()">gwy_dwt_set_coefficients</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-dwt.html#gwy-data-line-dwt" title="gwy_data_line_dwt ()">gwy_data_line_dwt</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-dwt.html#gwy-data-field-xdwt" title="gwy_data_field_xdwt ()">gwy_data_field_xdwt</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-dwt.html#gwy-data-field-ydwt" title="gwy_data_field_ydwt ()">gwy_data_field_ydwt</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-dwt.html#gwy-data-field-dwt" title="gwy_data_field_dwt ()">gwy_data_field_dwt</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-dwt.html#gwy-data-field-dwt-mark-anisotropy" title="gwy_data_field_dwt_mark_anisotropy ()">gwy_data_field_dwt_mark_anisotropy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-dwt.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-dwt.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-dwt.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-dwt-set-coefficients"></a><h3>gwy_dwt_set_coefficients ()</h3>
+<pre class="programlisting"><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="returnvalue">GwyDataLine</span></a> *
+gwy_dwt_set_coefficients (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *dline</code></em>,
+                          <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDWTType" title="enum GwyDWTType"><span class="type">GwyDWTType</span></a> type</code></em>);</pre>
+<p>Fills resampled or nely allocated data line with wavelet coefficients.</p>
+<div class="refsect3">
+<a name="gwy-dwt-set-coefficients.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dline</p></td>
+<td class="parameter_description"><p>Data line to store wavelet coefficients to (or <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to allocate
+a new one).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>Wavelet type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-dwt-set-coefficients.returns"></a><h4>Returns</h4>
+<p> resampled or newly allocated GwyDataLine with wavelet coefficients.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-dwt"></a><h3>gwy_data_line_dwt ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_line_dwt (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *dline</code></em>,
+                   <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *wt_coefs</code></em>,
+                   <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyTransformDirection" title="enum GwyTransformDirection"><span class="type">GwyTransformDirection</span></a> direction</code></em>,
+                   <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> minsize</code></em>);</pre>
+<p>Performs steps of the wavelet decomposition.</p>
+<p>The smallest low pass coefficients block is equal to <em class="parameter"><code>minsize</code></em>
+. Run with
+<em class="parameter"><code>minsize</code></em>
+ = <em class="parameter"><code>dline-&gt;res</code></em>
+/2 to perform one step of decomposition
+or <em class="parameter"><code>minsize</code></em>
+ = 4 to perform full decomposition (or anything between).</p>
+<div class="refsect3">
+<a name="gwy-data-line-dwt.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dline</p></td>
+<td class="parameter_description"><p>Data line to be transformed, it must have at least four samples.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>wt_coefs</p></td>
+<td class="parameter_description"><p>Data line where the wavelet transform coefficients are stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>Transform direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>minsize</p></td>
+<td class="parameter_description"><p>size of minimal transform result block</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-xdwt"></a><h3>gwy_data_field_xdwt ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_xdwt (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dfield</code></em>,
+                     <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *wt_coefs</code></em>,
+                     <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyTransformDirection" title="enum GwyTransformDirection"><span class="type">GwyTransformDirection</span></a> direction</code></em>,
+                     <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> minsize</code></em>);</pre>
+<p>Performs steps of the X-direction image wavelet decomposition.</p>
+<p>The smallest low pass coefficients block is equal to <em class="parameter"><code>minsize</code></em>
+. Run with
+<em class="parameter"><code>minsize</code></em>
+ = <em class="parameter"><code>dfield-&gt;xres</code></em>
+/2 to perform one step of decomposition
+or <em class="parameter"><code>minsize</code></em>
+ = 4 to perform full decomposition (or anything between).</p>
+<div class="refsect3">
+<a name="gwy-data-field-xdwt.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dfield</p></td>
+<td class="parameter_description"><p>Data field to be transformed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>wt_coefs</p></td>
+<td class="parameter_description"><p>Data line where the wavelet transform coefficients are stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>Transform direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>minsize</p></td>
+<td class="parameter_description"><p>size of minimal transform result block</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-ydwt"></a><h3>gwy_data_field_ydwt ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_ydwt (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dfield</code></em>,
+                     <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *wt_coefs</code></em>,
+                     <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyTransformDirection" title="enum GwyTransformDirection"><span class="type">GwyTransformDirection</span></a> direction</code></em>,
+                     <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> minsize</code></em>);</pre>
+<p>Performs steps of the Y-direction image wavelet decomposition.</p>
+<p>The smallest low pass coefficients block is equal to <em class="parameter"><code>minsize</code></em>
+. Run with
+<em class="parameter"><code>minsize</code></em>
+ = <em class="parameter"><code>dfield-&gt;yres</code></em>
+/2 to perform one step of decomposition
+or <em class="parameter"><code>minsize</code></em>
+ = 4 to perform full decomposition (or anything between).</p>
+<div class="refsect3">
+<a name="gwy-data-field-ydwt.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dfield</p></td>
+<td class="parameter_description"><p>Data field to be transformed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>wt_coefs</p></td>
+<td class="parameter_description"><p>Data line where the wavelet transform coefficients are stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>Transform direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>minsize</p></td>
+<td class="parameter_description"><p>size of minimal transform result block</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-dwt"></a><h3>gwy_data_field_dwt ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_dwt (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dfield</code></em>,
+                    <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *wt_coefs</code></em>,
+                    <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyTransformDirection" title="enum GwyTransformDirection"><span class="type">GwyTransformDirection</span></a> direction</code></em>,
+                    <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> minsize</code></em>);</pre>
+<p>Performs steps of the 2D image wavelet decomposition.</p>
+<p>The smallest low pass coefficients block is equal to <em class="parameter"><code>minsize</code></em>
+. Run with
+<em class="parameter"><code>minsize</code></em>
+ = <em class="parameter"><code>dfield-&gt;xres</code></em>
+/2 to perform one step of decomposition
+or <em class="parameter"><code>minsize</code></em>
+ = 4 to perform full decomposition (or anything between).</p>
+<div class="refsect3">
+<a name="gwy-data-field-dwt.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dfield</p></td>
+<td class="parameter_description"><p>Data field to be transformed (must be square).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>wt_coefs</p></td>
+<td class="parameter_description"><p>Data line where the wavelet transform coefficients are stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>Transform direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>minsize</p></td>
+<td class="parameter_description"><p>size of minimal transform result block</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-dwt-mark-anisotropy"></a><h3>gwy_data_field_dwt_mark_anisotropy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_dwt_mark_anisotropy (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dfield</code></em>,
+                                    <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                                    <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *wt_coefs</code></em>,
+                                    <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> ratio</code></em>,
+                                    <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> lowlimit</code></em>);</pre>
+<p>Performs steps of the 2D image wavelet decomposition.</p>
+<p>The smallest low pass coefficients block is equal to <em class="parameter"><code>minsize</code></em>
+. Run with
+<em class="parameter"><code>minsize</code></em>
+ = <em class="parameter"><code>dfield-&gt;xres</code></em>
+/2 to perform one step of decomposition
+or <em class="parameter"><code>minsize</code></em>
+ = 4 to perform full decomposition (or anything between).</p>
+<div class="refsect3">
+<a name="gwy-data-field-dwt-mark-anisotropy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dfield</p></td>
+<td class="parameter_description"><p>Data field to mark anisotropy of (must be square).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>wt_coefs</p></td>
+<td class="parameter_description"><p>Data line to store wavelet transform coefficients to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>minsize</p></td>
+<td class="parameter_description"><p>size of minimal transform result block</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Beyond the Minimal Module: Gwyddion Module Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Module Library Reference Manual">
+<link rel="up" href="ModuleTutorial.html" title="Gwyddion Module Tutorial">
+<link rel="prev" href="gwymodule-tutorial-minimal.html" title="Minimal Module">
+<link rel="next" href="gwymodule-tutorial-process.html" title="Data Processing Modules">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ModuleTutorial.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gwymodule-tutorial-minimal.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gwymodule-tutorial-process.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gwymodule-tutorial-beyond"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle">Beyond the Minimal Module</span></h2>
+<p>Beyond the Minimal Module — 
+      Common module idioms
+    </p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="id-1.3.4.3"></a><h2>Multiple Modules, Multiple Function, Multifunctions</h2>
+<p>
+      Often one wants to implement a group of closely related functions that
+      could share quite a bit of code.  There are several posibilities how
+      to do it.
+    </p>
+<p>
+      The naive approach would be to put the code of all the modules to
+      a one file and share what is shareable.  But alas! there can be only one
+      <a class="link" href="libgwymodule-gwymoduleloader.html#GWY-MODULE-QUERY:CAPS" title="GWY_MODULE_QUERY()"><code class="literal">GWY_MODULE_QUERY</code></a> per file, thus a one file can register only a one
+      module and this approach would not work.
+    </p>
+<p>
+      The prefered solution is to register more than function for the module.
+      This is as simple as it sounds.  One just has to call
+      <a class="link" href="libgwymodule-gwymodule-process.html#gwy-process-func-register" title="gwy_process_func_register ()"><code class="function">gwy_process_func_register()</code></a> (or other feature registration method)
+      several times with different functions. It is even possible to register
+      functions of different kind in a one module, but usually there is no
+      reason to do this.
+    </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="k">static</span> <span class="n">gboolean</span>
+<span class="n">module_register</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">gwy_process_func_register</span><span class="p">(</span><span class="s">&quot;sobel_horizontal&quot;</span><span class="p">,</span>
+                              <span class="p">(</span><span class="n">GwyProcessFunc</span><span class="p">)</span><span class="o">&amp;</span><span class="n">gradient_sobel_horizontal</span><span class="p">,</span>
+                              <span class="n">N_</span><span class="p">(</span><span class="s">&quot;/_Presentation/_Gradient/_Sobel (horizontal)&quot;</span><span class="p">),</span>
+                              <span class="nb">NULL</span><span class="p">,</span>
+                              <span class="n">GRADIENT_RUN_MODES</span><span class="p">,</span>
+                              <span class="n">GWY_MENU_FLAG_DATA</span><span class="p">,</span>
+                              <span class="n">N_</span><span class="p">(</span><span class="s">&quot;Horizontal Sobel gradient presentation&quot;</span><span class="p">));</span>
+    <span class="n">gwy_process_func_register</span><span class="p">(</span><span class="s">&quot;sobel_vertical&quot;</span><span class="p">,</span>
+                              <span class="p">(</span><span class="n">GwyProcessFunc</span><span class="p">)</span><span class="o">&amp;</span><span class="n">gradient_sobel_vertical</span><span class="p">,</span>
+                              <span class="n">N_</span><span class="p">(</span><span class="s">&quot;/_Presentation/_Gradient/_Sobel (vertical)&quot;</span><span class="p">),</span>
+                              <span class="nb">NULL</span><span class="p">,</span>
+                              <span class="n">GRADIENT_RUN_MODES</span><span class="p">,</span>
+                              <span class="n">GWY_MENU_FLAG_DATA</span><span class="p">,</span>
+                              <span class="n">N_</span><span class="p">(</span><span class="s">&quot;Vertical Sobel gradient presentation&quot;</span><span class="p">));</span>
+
+    <span class="k">return</span> <span class="n">TRUE</span><span class="p">;</span>
+<span class="p">}</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+      The other posibility is to call <a class="link" href="libgwymodule-gwymodule-process.html#gwy-process-func-register" title="gwy_process_func_register ()"><code class="function">gwy_process_func_register()</code></a> several times
+      with the same <em class="parameter"><code>func</code></em> argument. The function can then
+      determine from its last argument (<em class="parameter"><code>name</code></em>) what
+      function the caller thinks it is calling.  This approach can be used
+      when the differences between the functions are very small.  Incidentally,
+      this is also exactly how the plugin-proxy module works.
+    </p>
+</div>
+<div class="refsect1">
+<a name="id-1.3.4.4"></a><h2>Settings</h2>
+<p>
+      The nice thing about <span class="application">Gwyddion</span> module dialog
+      boxes is that they show the same parameter values as when you last opened
+      them, and they remember the settings even across sessions.  And you of
+      course want this feature in your modules too.
+    </p>
+<p>
+      Saving and restoring settings usually has sense only for modules with
+      a GUI, simple noninteractive modules like value inversion have no
+      settings to remember.  We will get to GUI later.
+    </p>
+<p>
+      There is a one <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> in <span class="application">Gwyddion</span>
+      containing settings for all modules (and other creatures). The function
+      <a href="../libgwyapp-settings.html#gwy-app-settings-get"><code class="function">gwy_app_settings_get()</code></a> will bring it to you.  It is loaded on startup and
+      saved on exit and you don not need to take care about this. So the only
+      thing you have to care about is to read the settings from it when your
+      module starts and store them there on exit.  OK, there are in fact two
+      things you have to care about.  There are no limitations on who can
+      access what in the settings, so to avoid surprises you should use only
+      keys startings with
+      <code class="literal">"/module/<em class="parameter"><code>my-module-name</code></em>/"</code>.
+    </p>
+<p>
+      Loading settings could look (remember they may not always exist, for
+      instance when the function is run the first time):
+    </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">GwyContainer</span> <span class="o">*</span><span class="n">settings</span><span class="p">;</span>
+
+<span class="n">settings</span> <span class="o">=</span> <span class="n">gwy_app_settings_get</span><span class="p">();</span>
+<span class="n">ratio</span> <span class="o">=</span> <span class="mf">1.61803</span><span class="p">;</span>
+<span class="n">gwy_container_gis_double_by_name</span><span class="p">(</span><span class="n">settings</span><span class="p">,</span>
+                                 <span class="s">&quot;/module/my_module/ratio&quot;</span><span class="p">,</span>
+                                 <span class="o">&amp;</span><span class="n">ratio</span><span class="p">);</span>
+<span class="n">ratio</span> <span class="o">=</span> <span class="n">CLAMP</span><span class="p">(</span><span class="n">ratio</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+      Function <a href="../GwyContainer.html#gwy-container-gis-double-by-name"><code class="function">gwy_container_gis_double_by_name()</code></a> function updates its last
+      argument only when there is a corresponding value in the container.
+      The use of <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#CLAMP:CAPS"><code class="function">CLAMP()</code></a> is a recommended defensive measure against corrupted
+      settings (for example manually (mis)edited by the user) that could cause
+      troubles later.
+    </p>
+<p>
+      Saving settings is equally easy:
+    </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">GwyContainer</span> <span class="o">*</span><span class="n">settings</span><span class="p">;</span>
+
+<span class="n">settings</span> <span class="o">=</span> <span class="n">gwy_app_settings_get</span><span class="p">();</span>
+<span class="n">gwy_container_set_double_by_name</span><span class="p">(</span><span class="n">settings</span><span class="p">,</span>
+                                 <span class="s">&quot;/module/my_module/ratio&quot;</span><span class="p">,</span>
+                                 <span class="n">ratio</span><span class="p">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+      Modules customarily define a function <span class="symbol"><code class="function">load_settings()</code></span>
+      that fills its internal parameter representation on the start of
+      execution and santitizes them.  Likewise function
+      <span class="symbol"><code class="function">save_settings()</code></span> stores them to back to the global
+      settings upon exit.  Note to achieve the typical state preservation of
+      <span class="application">Gwyddion</span> modules parameters have to be saved
+      both after successful execution and cancellation.
+    </p>
+</div>
+<div class="refsect1">
+<a name="id-1.3.4.5"></a><h2>Creating New Files, Data Fields and Graphs</h2>
+<p>
+      Not always one wants to modify the original data instead one prefers to
+      create a new window for the result, or the output is perhaps of diffrent
+      kind than the source: a graph is created from two-dimensional data.
+    </p>
+<p>
+      Modules usually do not create new files, if they create new objects, they
+      put them to the same container as the source data.  A notable exception
+      are file modules, they however just return the newly created container.
+      New data containers, if one wishes to create them, are put under the
+      control of the data browser with <a href="../libgwyapp-data-browser.html#gwy-app-data-browser-add"><code class="function">gwy_app_data_browser_add()</code></a>.  If they
+      contain no visible data, they would be inaccessible by the user and
+      present a memory leak.  Therefore some data must be added and made
+      visible later (or beforehand).
+    </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">GwyContainer</span> <span class="o">*</span><span class="n">container</span><span class="p">;</span>
+
+<span class="n">container</span> <span class="o">=</span> <span class="n">gwy_container_new</span><span class="p">();</span>
+<span class="cm">/* Fill data with something meaningful */</span>
+<span class="p">...</span>
+<span class="n">gwy_app_data_browser_add</span><span class="p">(</span><span class="n">container</span><span class="p">);</span>
+<span class="n">g_object_unref</span><span class="p">(</span><span class="n">container</span><span class="p">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+      New data fields can be created from scratch with <a href="../GwyDataField.html#gwy-data-field-new"><code class="function">gwy_data_field_new()</code></a>,
+      in most cases the new data field is strongly related to an existing one
+      and then <a href="../GwyDataField.html#gwy-data-field-new-alike"><code class="function">gwy_data_field_new_alike()</code></a> or <a href="../GwyDataField.html#gwy-data-field-duplicate"><code class="function">gwy_data_field_duplicate()</code></a> come
+      handy.  The former copies all properties <span class="emphasis"><em>except</em></span> the
+      data itself, the latter duplicates a data field completely.
+    </p>
+<p>
+      When we created the new object and we have to add it to the current file.
+      We <span class="emphasis"><em>could</em></span> just use one of <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> functions
+    </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">gwy_container_set_object_by_name</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="s">&quot;/12345/data&quot;</span><span class="p">,</span> <span class="n">data_field</span><span class="p">);</span>
+<span class="n">g_object_unref</span><span class="p">(</span><span class="n">data_field</span><span class="p">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+      The data browser would notice it and add the data field, but this method
+      is generally very inconvenient – for start, how we came to
+      <code class="literal">"/12345/data"</code>?. Therefore we use the high-level
+      interface and obtain the new channel number for free:
+    </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">new_id</span> <span class="o">=</span> <span class="n">gwy_app_data_browser_add_data_field</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">data_field</span><span class="p">);</span>
+<span class="n">g_object_unref</span><span class="p">(</span><span class="n">data_field</span><span class="p">);</span>
+<span class="n">gwy_app_set_data_field_title</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">new_id</span><span class="p">,</span> <span class="n">_</span><span class="p">(</span><span class="s">&quot;Bogosity&quot;</span><span class="p">));</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+      Often the new data field should inherit more properties from the original
+      one than just the dimensions, e.g., the color gradient.  This can be
+      easily achieved with <a href="../libgwyapp-data-browser.html#gwy-app-sync-data-items"><code class="function">gwy_app_sync_data_items()</code></a>
+    </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">gwy_app_sync_data_items</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">container</span><span class="p">,</span>
+                        <span class="n">old_id</span><span class="p">,</span> <span class="n">new_id</span><span class="p">,</span>
+                        <span class="n">FALSE</span><span class="p">,</span>
+                        <span class="n">GWY_DATA_ITEM_GRADIENT</span><span class="p">,</span>
+                        <span class="n">GWY_DATA_ITEM_MASK_COLOR</span><span class="p">,</span>
+                        <span class="mi">0</span><span class="p">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+      The id number of the source data field (<span class="symbol">old_id</span>)
+      was obtained with <a href="../libgwyapp-data-browser.html#gwy-app-data-browser-get-current"><code class="function">gwy_app_data_browser_get_current()</code></a>
+      (normally together with the data field itself, its key and/or other
+      current objects)
+    </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">gwy_app_data_browser_get_current</span><span class="p">(</span><span class="n">GWY_APP_DATA_FIELD_ID</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">old_id</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+      Creation and addition of graphs is very similar.  We create a new graph
+      model with <a href="../GwyGraphModel.html#gwy-graph-model-new"><code class="function">gwy_graph_model_new()</code></a> or a similar function, create
+      individual curves with <a href="../GwyGraphCurveModel.html#gwy-graph-curve-model-new"><code class="function">gwy_graph_curve_model_new()</code></a> and fill the curves
+      with data.  Then we add it to the data browser
+    </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">new_id</span> <span class="o">=</span> <span class="n">gwy_app_data_browser_add_graph_model</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">graph_model</span><span class="p">);</span>
+<span class="n">g_object_unref</span><span class="p">(</span><span class="n">graph_model</span><span class="p">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<div class="refsect1">
+<a name="id-1.3.4.6"></a><h2>Graphical User Interface (GUI)</h2>
+<p>
+      You are encouraged to use the <a class="ulink" href="http://gtk.org/" target="_top">Gtk+</a>
+      graphical toolkit for your module GUI.  It has following advantages:
+      </p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
+          It is used by <span class="application">Gwyddion</span> itself.
+          Mixing multiple graphical toolkits in one application often leads
+          to intricate and hard to resolve bugs, not speaking about
+          inconsistent look and feel.
+        </li>
+<li class="listitem">
+          It is used by <span class="application">Gwyddion</span> itself.
+          Any specialized <span class="application">Gwyddion</span> widgets
+          you could make use of are Gtk+ widgets.
+        </li>
+<li class="listitem">
+          It is available for a variety of platforms, allowing to easily
+          create portable modules.
+        </li>
+<li class="listitem">
+          It is licensed under GNU LGPL (for all the platforms), this meaning
+          namely it is free, with complete source code available and imposing
+          few restrictions on programs using it.
+        </li>
+</ul></div>
+<p>
+      There is an extensive
+      <a class="ulink" href="https://developer.gnome.org/gtk-tutorial/stable/" target="_top">Gtk+ Tutorial</a>
+      and <a class="ulink" href="https://developer.gnome.org/gtk2/stable/" target="_top">API Reference</a> available
+      on the Gtk+ Web site.  You can use existing modules as templates
+      for your module.
+    </p>
+<p>
+      A very simple graphical user interface asking for a one value
+      (unimaginatively called Amount) can be implemented in Gtk+ as follows:
+    </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="k">static</span> <span class="n">gboolean</span>
+<span class="n">slope_dialog</span><span class="p">(</span><span class="n">gdouble</span> <span class="o">*</span><span class="n">amount</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">GtkWidget</span> <span class="o">*</span><span class="n">dialog</span><span class="p">,</span> <span class="o">*</span><span class="n">table</span><span class="p">,</span> <span class="o">*</span><span class="n">spin</span><span class="p">;</span>
+    <span class="n">GtkObject</span> <span class="o">*</span><span class="n">adjust</span><span class="p">;</span>
+    <span class="n">gint</span> <span class="n">response</span><span class="p">;</span>
+
+    <span class="cm">/* Create the dialog */</span>
+    <span class="n">dialog</span> <span class="o">=</span> <span class="n">gtk_dialog_new_with_buttons</span><span class="p">(</span><span class="n">_</span><span class="p">(</span><span class="s">&quot;Frobnicate&quot;</span><span class="p">),</span> <span class="nb">NULL</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>
+                                         <span class="n">GTK_STOCK_CANCEL</span><span class="p">,</span> <span class="n">GTK_RESPONSE_CANCEL</span><span class="p">,</span>
+                                         <span class="n">GTK_STOCK_OK</span><span class="p">,</span> <span class="n">GTK_RESPONSE_OK</span><span class="p">,</span>
+                                         <span class="nb">NULL</span><span class="p">);</span>
+    <span class="n">gtk_dialog_set_has_separator</span><span class="p">(</span><span class="n">GTK_DIALOG</span><span class="p">(</span><span class="n">dialog</span><span class="p">),</span> <span class="n">FALSE</span><span class="p">);</span>
+    <span class="n">gtk_dialog_set_default_response</span><span class="p">(</span><span class="n">GTK_DIALOG</span><span class="p">(</span><span class="n">dialog</span><span class="p">),</span> <span class="n">GTK_RESPONSE_OK</span><span class="p">);</span>
+
+    <span class="cm">/* Create the parameter controls */</span>
+    <span class="n">table</span> <span class="o">=</span> <span class="n">gtk_table_new</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">FALSE</span><span class="p">);</span>
+    <span class="n">gtk_box_pack_start</span><span class="p">(</span><span class="n">GTK_BOX</span><span class="p">(</span><span class="n">GTK_DIALOG</span><span class="p">(</span><span class="n">dialog</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">vbox</span><span class="p">),</span> <span class="n">table</span><span class="p">,</span>
+                       <span class="n">FALSE</span><span class="p">,</span> <span class="n">FALSE</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+
+    <span class="n">adjust</span> <span class="o">=</span> <span class="n">gtk_adjustment_new</span><span class="p">(</span><span class="o">*</span><span class="n">amount</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="n">spin</span> <span class="o">=</span> <span class="n">gwy_table_attach_hscale</span><span class="p">(</span><span class="n">table</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">_</span><span class="p">(</span><span class="s">&quot;Amount:&quot;</span><span class="p">),</span> <span class="s">&quot;percent&quot;</span><span class="p">,</span>
+                                   <span class="n">adjust</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+
+    <span class="cm">/* Run the dialog and respond to user actions */</span>
+    <span class="n">gtk_widget_show_all</span><span class="p">(</span><span class="n">dialog</span><span class="p">);</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">gtk_dialog_run</span><span class="p">(</span><span class="n">GTK_DIALOG</span><span class="p">(</span><span class="n">dialog</span><span class="p">));</span>
+    <span class="k">switch</span> <span class="p">(</span><span class="n">response</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="nl">GTK_RESPONSE_CANCEL</span><span class="p">:</span>
+        <span class="k">case</span> <span class="nl">GTK_RESPONSE_DELETE_EVENT</span><span class="p">:</span>
+        <span class="n">gtk_widget_destroy</span><span class="p">(</span><span class="n">dialog</span><span class="p">);</span>
+        <span class="k">case</span> <span class="nl">GTK_RESPONSE_NONE</span><span class="p">:</span>
+        <span class="k">break</span><span class="p">;</span>
+
+        <span class="k">case</span> <span class="nl">GTK_RESPONSE_OK</span><span class="p">:</span>
+        <span class="o">*</span><span class="n">amount</span> <span class="o">=</span> <span class="n">gtk_adjustment_get_value</span><span class="p">(</span><span class="n">GTK_ADJUSTMENT</span><span class="p">(</span><span class="n">adjust</span><span class="p">));</span>
+        <span class="n">gtk_widget_destroy</span><span class="p">(</span><span class="n">dialog</span><span class="p">);</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">response</span> <span class="o">==</span> <span class="n">GTK_RESPONSE_OK</span><span class="p">;</span>
+<span class="p">}</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+      There is no rocket science in here: the dialog is created with some
+      standard buttons and settings.  Then a table with a value entry with
+      a description is placed there and the range of allowed values is
+      specified.  Then the dialog is run and depending on user's action the
+      value of <code class="varname">amount</code> is possibly updated, and
+      <code class="literal">TRUE</code> or <code class="literal">FALSE</code> is returned to
+      the caller to indicate user's action (we take everything as
+      cancellation, except pressing <span class="guibutton">OK</span>).
+    </p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

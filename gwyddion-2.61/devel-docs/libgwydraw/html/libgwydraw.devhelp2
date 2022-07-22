@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="Gwyddion Drawing Library Reference Manual" link="index.html" author="" name="libgwydraw" version="2" language="c" online="http://gwyddion.net/documentation/libgwydraw/index.php">
+  <chapters>
+    <sub name="GwyRGBA" link="libgwydraw-GwyRGBA.html"/>
+    <sub name="GwyGradient" link="GwyGradient.html"/>
+    <sub name="GwyGLMaterial" link="GwyGLMaterial.html"/>
+    <sub name="gwypixfield" link="libgwydraw-gwypixfield.html"/>
+    <sub name="GwySelection" link="GwySelection.html"/>
+    <sub name="gwydrawenums" link="libgwydraw-gwydrawenums.html"/>
+    <sub name="gwydraw" link="libgwydraw-gwydraw.html"/>
+    <sub name="Index of all symbols" link="api-index-all.html"/>
+    <sub name="Index of new symbols in 2.16" link="api-index-2-16.html"/>
+    <sub name="Index of new symbols in 2.32" link="api-index-2-32.html"/>
+    <sub name="Index of new symbols in 2.39" link="api-index-2-39.html"/>
+    <sub name="Index of new symbols in 2.43" link="api-index-2-43.html"/>
+    <sub name="Index of new symbols in 2.47" link="api-index-2-47.html"/>
+    <sub name="Index of new symbols in 2.49" link="api-index-2-49.html"/>
+    <sub name="Index of new symbols in 2.52" link="api-index-2-52.html"/>
+  </chapters>
+  <functions>
+    <keyword type="function" name="gwy_rgba_new ()" link="libgwydraw-GwyRGBA.html#gwy-rgba-new" since="2.47"/>
+    <keyword type="function" name="gwy_rgba_copy ()" link="libgwydraw-GwyRGBA.html#gwy-rgba-copy"/>
+    <keyword type="function" name="gwy_rgba_free ()" link="libgwydraw-GwyRGBA.html#gwy-rgba-free"/>
+    <keyword type="function" name="gwy_rgba_to_gdk_color ()" link="libgwydraw-GwyRGBA.html#gwy-rgba-to-gdk-color"/>
+    <keyword type="function" name="gwy_rgba_to_gdk_alpha ()" link="libgwydraw-GwyRGBA.html#gwy-rgba-to-gdk-alpha"/>
+    <keyword type="function" name="gwy_rgba_from_gdk_color ()" link="libgwydraw-GwyRGBA.html#gwy-rgba-from-gdk-color"/>
+    <keyword type="function" name="gwy_rgba_from_gdk_color_and_alpha ()" link="libgwydraw-GwyRGBA.html#gwy-rgba-from-gdk-color-and-alpha"/>
+    <keyword type="function" name="gwy_rgba_interpolate ()" link="libgwydraw-GwyRGBA.html#gwy-rgba-interpolate"/>
+    <keyword type="function" name="gwy_rgba_get_from_container ()" link="libgwydraw-GwyRGBA.html#gwy-rgba-get-from-container"/>
+    <keyword type="function" name="gwy_rgba_store_to_container ()" link="libgwydraw-GwyRGBA.html#gwy-rgba-store-to-container"/>
+    <keyword type="function" name="gwy_rgba_remove_from_container ()" link="libgwydraw-GwyRGBA.html#gwy-rgba-remove-from-container"/>
+    <keyword type="function" name="gwy_rgba_set_gdk_gc_fg ()" link="libgwydraw-GwyRGBA.html#gwy-rgba-set-gdk-gc-fg"/>
+    <keyword type="function" name="gwy_rgba_set_gdk_gc_bg ()" link="libgwydraw-GwyRGBA.html#gwy-rgba-set-gdk-gc-bg"/>
+    <keyword type="function" name="gwy_rgba_to_hex6 ()" link="libgwydraw-GwyRGBA.html#gwy-rgba-to-hex6" since="2.32"/>
+    <keyword type="function" name="gwy_rgba_to_hex8 ()" link="libgwydraw-GwyRGBA.html#gwy-rgba-to-hex8" since="2.32"/>
+    <keyword type="function" name="gwy_rgba_to_pixbuf_pixel ()" link="libgwydraw-GwyRGBA.html#gwy-rgba-to-pixbuf-pixel" since="2.49"/>
+    <keyword type="function" name="gwy_rgba_from_pixbuf_pixel ()" link="libgwydraw-GwyRGBA.html#gwy-rgba-from-pixbuf-pixel" since="2.49"/>
+    <keyword type="struct" name="GwyRGBA" link="libgwydraw-GwyRGBA.html#GwyRGBA"/>
+    <keyword type="function" name="gwy_gradient_get_color ()" link="GwyGradient.html#gwy-gradient-get-color"/>
+    <keyword type="function" name="gwy_gradient_get_samples ()" link="GwyGradient.html#gwy-gradient-get-samples"/>
+    <keyword type="function" name="gwy_gradient_sample ()" link="GwyGradient.html#gwy-gradient-sample"/>
+    <keyword type="function" name="gwy_gradient_sample_to_pixbuf ()" link="GwyGradient.html#gwy-gradient-sample-to-pixbuf"/>
+    <keyword type="function" name="gwy_gradient_get_npoints ()" link="GwyGradient.html#gwy-gradient-get-npoints"/>
+    <keyword type="function" name="gwy_gradient_get_point ()" link="GwyGradient.html#gwy-gradient-get-point"/>
+    <keyword type="function" name="gwy_gradient_set_point ()" link="GwyGradient.html#gwy-gradient-set-point"/>
+    <keyword type="function" name="gwy_gradient_set_point_color ()" link="GwyGradient.html#gwy-gradient-set-point-color"/>
+    <keyword type="function" name="gwy_gradient_insert_point ()" link="GwyGradient.html#gwy-gradient-insert-point"/>
+    <keyword type="function" name="gwy_gradient_insert_point_sorted ()" link="GwyGradient.html#gwy-gradient-insert-point-sorted"/>
+    <keyword type="function" name="gwy_gradient_delete_point ()" link="GwyGradient.html#gwy-gradient-delete-point"/>
+    <keyword type="function" name="gwy_gradient_reset ()" link="GwyGradient.html#gwy-gradient-reset"/>
+    <keyword type="function" name="gwy_gradient_get_points ()" link="GwyGradient.html#gwy-gradient-get-points"/>
+    <keyword type="function" name="gwy_gradient_set_points ()" link="GwyGradient.html#gwy-gradient-set-points"/>
+    <keyword type="function" name="gwy_gradient_set_from_samples ()" link="GwyGradient.html#gwy-gradient-set-from-samples"/>
+    <keyword type="function" name="gwy_gradients ()" link="GwyGradient.html#gwy-gradients"/>
+    <keyword type="function" name="gwy_gradients_get_gradient ()" link="GwyGradient.html#gwy-gradients-get-gradient"/>
+    <keyword type="macro" name="GWY_GRADIENT_DEFAULT" link="GwyGradient.html#GWY-GRADIENT-DEFAULT:CAPS"/>
+    <keyword type="struct" name="GwyGradientPoint" link="GwyGradient.html#GwyGradientPoint"/>
+    <keyword type="struct" name="struct GwyGradient" link="GwyGradient.html#GwyGradient-struct"/>
+    <keyword type="struct" name="struct GwyGradientClass" link="GwyGradient.html#GwyGradientClass"/>
+    <keyword type="function" name="gwy_gl_material_get_ambient ()" link="GwyGLMaterial.html#gwy-gl-material-get-ambient"/>
+    <keyword type="function" name="gwy_gl_material_set_ambient ()" link="GwyGLMaterial.html#gwy-gl-material-set-ambient"/>
+    <keyword type="function" name="gwy_gl_material_get_diffuse ()" link="GwyGLMaterial.html#gwy-gl-material-get-diffuse"/>
+    <keyword type="function" name="gwy_gl_material_set_diffuse ()" link="GwyGLMaterial.html#gwy-gl-material-set-diffuse"/>
+    <keyword type="function" name="gwy_gl_material_get_specular ()" link="GwyGLMaterial.html#gwy-gl-material-get-specular"/>
+    <keyword type="function" name="gwy_gl_material_set_specular ()" link="GwyGLMaterial.html#gwy-gl-material-set-specular"/>
+    <keyword type="function" name="gwy_gl_material_get_emission ()" link="GwyGLMaterial.html#gwy-gl-material-get-emission"/>
+    <keyword type="function" name="gwy_gl_material_set_emission ()" link="GwyGLMaterial.html#gwy-gl-material-set-emission"/>
+    <keyword type="function" name="gwy_gl_material_get_shininess ()" link="GwyGLMaterial.html#gwy-gl-material-get-shininess"/>
+    <keyword type="function" name="gwy_gl_material_set_shininess ()" link="GwyGLMaterial.html#gwy-gl-material-set-shininess"/>
+    <keyword type="function" name="gwy_gl_material_sample_to_pixbuf ()" link="GwyGLMaterial.html#gwy-gl-material-sample-to-pixbuf"/>
+    <keyword type="function" name="gwy_gl_material_reset ()" link="GwyGLMaterial.html#gwy-gl-material-reset"/>
+    <keyword type="function" name="gwy_gl_materials ()" link="GwyGLMaterial.html#gwy-gl-materials"/>
+    <keyword type="function" name="gwy_gl_materials_get_gl_material ()" link="GwyGLMaterial.html#gwy-gl-materials-get-gl-material"/>
+    <keyword type="macro" name="GWY_GL_MATERIAL_DEFAULT" link="GwyGLMaterial.html#GWY-GL-MATERIAL-DEFAULT:CAPS"/>
+    <keyword type="macro" name="GWY_GL_MATERIAL_NONE" link="GwyGLMaterial.html#GWY-GL-MATERIAL-NONE:CAPS"/>
+    <keyword type="struct" name="struct GwyGLMaterial" link="GwyGLMaterial.html#GwyGLMaterial-struct"/>
+    <keyword type="struct" name="struct GwyGLMaterialClass" link="GwyGLMaterial.html#GwyGLMaterialClass"/>
+    <keyword type="function" name="gwy_pixbuf_draw_data_field ()" link="libgwydraw-gwypixfield.html#gwy-pixbuf-draw-data-field"/>
+    <keyword type="function" name="gwy_pixbuf_draw_data_field_with_range ()" link="libgwydraw-gwypixfield.html#gwy-pixbuf-draw-data-field-with-range"/>
+    <keyword type="function" name="gwy_pixbuf_draw_data_field_adaptive ()" link="libgwydraw-gwypixfield.html#gwy-pixbuf-draw-data-field-adaptive"/>
+    <keyword type="function" name="gwy_draw_data_field_map_adaptive ()" link="libgwydraw-gwypixfield.html#gwy-draw-data-field-map-adaptive" since="2.39"/>
+    <keyword type="function" name="gwy_pixbuf_draw_data_field_as_mask ()" link="libgwydraw-gwypixfield.html#gwy-pixbuf-draw-data-field-as-mask"/>
+    <keyword type="function" name="GwySelectionFilterFunc ()" link="GwySelection.html#GwySelectionFilterFunc" since="2.16"/>
+    <keyword type="macro" name="gwy_selection_duplicate()" link="GwySelection.html#gwy-selection-duplicate"/>
+    <keyword type="macro" name="gwy_selection_assign()" link="GwySelection.html#gwy-selection-assign" since="2.52"/>
+    <keyword type="function" name="gwy_selection_get_object_size ()" link="GwySelection.html#gwy-selection-get-object-size"/>
+    <keyword type="function" name="gwy_selection_clear ()" link="GwySelection.html#gwy-selection-clear"/>
+    <keyword type="function" name="gwy_selection_get_object ()" link="GwySelection.html#gwy-selection-get-object"/>
+    <keyword type="function" name="gwy_selection_set_object ()" link="GwySelection.html#gwy-selection-set-object"/>
+    <keyword type="function" name="gwy_selection_delete_object ()" link="GwySelection.html#gwy-selection-delete-object"/>
+    <keyword type="function" name="gwy_selection_get_data ()" link="GwySelection.html#gwy-selection-get-data"/>
+    <keyword type="function" name="gwy_selection_set_data ()" link="GwySelection.html#gwy-selection-set-data"/>
+    <keyword type="function" name="gwy_selection_get_max_objects ()" link="GwySelection.html#gwy-selection-get-max-objects"/>
+    <keyword type="function" name="gwy_selection_set_max_objects ()" link="GwySelection.html#gwy-selection-set-max-objects"/>
+    <keyword type="function" name="gwy_selection_is_full ()" link="GwySelection.html#gwy-selection-is-full"/>
+    <keyword type="function" name="gwy_selection_crop ()" link="GwySelection.html#gwy-selection-crop" since="2.16"/>
+    <keyword type="function" name="gwy_selection_move ()" link="GwySelection.html#gwy-selection-move" since="2.43"/>
+    <keyword type="function" name="gwy_selection_filter ()" link="GwySelection.html#gwy-selection-filter" since="2.16"/>
+    <keyword type="function" name="gwy_selection_changed ()" link="GwySelection.html#gwy-selection-changed"/>
+    <keyword type="function" name="gwy_selection_finished ()" link="GwySelection.html#gwy-selection-finished"/>
+    <keyword type="struct" name="struct GwySelection" link="GwySelection.html#GwySelection-struct"/>
+    <keyword type="struct" name="struct GwySelectionClass" link="GwySelection.html#GwySelectionClass"/>
+    <keyword type="property" name="The “max-objects” property" link="GwySelection.html#GwySelection--max-objects"/>
+    <keyword type="property" name="The “object-size” property" link="GwySelection.html#GwySelection--object-size"/>
+    <keyword type="signal" name="The “changed” signal" link="GwySelection.html#GwySelection-changed"/>
+    <keyword type="signal" name="The “finished” signal" link="GwySelection.html#GwySelection-finished"/>
+    <keyword type="enum" name="enum GwyRenderingTarget" link="libgwydraw-gwydrawenums.html#GwyRenderingTarget"/>
+    <keyword type="function" name="gwy_draw_type_init ()" link="libgwydraw-gwydraw.html#gwy-draw-type-init"/>
+    <keyword type="constant" name="GWY_RENDERING_TARGET_SCREEN" link="libgwydraw-gwydrawenums.html#GWY-RENDERING-TARGET-SCREEN:CAPS"/>
+    <keyword type="constant" name="GWY_RENDERING_TARGET_PIXMAP_IMAGE" link="libgwydraw-gwydrawenums.html#GWY-RENDERING-TARGET-PIXMAP-IMAGE:CAPS"/>
+    <keyword type="member" name="GwyRGBA.r" link="libgwydraw-GwyRGBA.html#GwyRGBA.r"/>
+    <keyword type="member" name="GwyRGBA.g" link="libgwydraw-GwyRGBA.html#GwyRGBA.g"/>
+    <keyword type="member" name="GwyRGBA.b" link="libgwydraw-GwyRGBA.html#GwyRGBA.b"/>
+    <keyword type="member" name="GwyRGBA.a" link="libgwydraw-GwyRGBA.html#GwyRGBA.a"/>
+    <keyword type="member" name="GwyGradientPoint.x" link="GwyGradient.html#GwyGradientPoint.x"/>
+    <keyword type="member" name="GwyGradientPoint.color" link="GwyGradient.html#GwyGradientPoint.color"/>
+    <keyword type="member" name="GwySelectionClass.object-size" link="GwySelection.html#GwySelectionClass.object-size"/>
+    <keyword type="member" name="GwySelectionClass.clear" link="GwySelection.html#GwySelectionClass.clear"/>
+    <keyword type="member" name="GwySelectionClass.get-object" link="GwySelection.html#GwySelectionClass.get-object"/>
+    <keyword type="member" name="GwySelectionClass.set-object" link="GwySelection.html#GwySelectionClass.set-object"/>
+    <keyword type="member" name="GwySelectionClass.delete-object" link="GwySelection.html#GwySelectionClass.delete-object"/>
+    <keyword type="member" name="GwySelectionClass.get-data" link="GwySelection.html#GwySelectionClass.get-data"/>
+    <keyword type="member" name="GwySelectionClass.set-data" link="GwySelection.html#GwySelectionClass.set-data"/>
+    <keyword type="member" name="GwySelectionClass.set-max-objects" link="GwySelection.html#GwySelectionClass.set-max-objects"/>
+    <keyword type="member" name="GwySelectionClass.changed" link="GwySelection.html#GwySelectionClass.changed"/>
+    <keyword type="member" name="GwySelectionClass.finished" link="GwySelection.html#GwySelectionClass.finished"/>
+  </functions>
+</book>

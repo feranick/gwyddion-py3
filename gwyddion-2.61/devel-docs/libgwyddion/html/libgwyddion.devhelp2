@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="Gwyddion Library Reference Manual" link="index.html" author="" name="libgwyddion" version="2" language="c" online="http://gwyddion.net/documentation/libgwyddion/index.php">
+  <chapters>
+    <sub name="gwyddionenums" link="libgwyddion-gwyddionenums.html"/>
+    <sub name="GwySerializable" link="GwySerializable.html"/>
+    <sub name="GwyContainer" link="GwyContainer.html"/>
+    <sub name="gwymacros" link="libgwyddion-gwymacros.html"/>
+    <sub name="gwyddion" link="libgwyddion-gwyddion.html"/>
+    <sub name="gwythreads" link="libgwyddion-gwythreads.html"/>
+    <sub name="gwyentities" link="libgwyddion-gwyentities.html"/>
+    <sub name="Math" link="libgwyddion-Math.html"/>
+    <sub name="Math Fallback" link="libgwyddion-Math-Fallback.html"/>
+    <sub name="GwyNLFitter" link="libgwyddion-GwyNLFitter.html"/>
+    <sub name="GwyNLFitPreset" link="GwyNLFitPreset.html"/>
+    <sub name="GwyFDCurvePreset" link="GwyFDCurvePreset.html"/>
+    <sub name="GwyExpr" link="libgwyddion-GwyExpr.html"/>
+    <sub name="GwySIUnit" link="GwySIUnit.html"/>
+    <sub name="GwySIValueFormat" link="libgwyddion-GwySIValueFormat.html"/>
+    <sub name="gwyutils" link="libgwyddion-gwyutils.html"/>
+    <sub name="gwyversion" link="libgwyddion-gwyversion.html"/>
+    <sub name="GwyEnum" link="GwyEnum.html"/>
+    <sub name="GwyInventory" link="GwyInventory.html"/>
+    <sub name="GwyRandGenSet" link="libgwyddion-GwyRandGenSet.html"/>
+    <sub name="GwyResource" link="GwyResource.html"/>
+    <sub name="GwyStringList" link="GwyStringList.html"/>
+    <sub name="GwyResults" link="GwyResults.html"/>
+    <sub name="gwymd5" link="libgwyddion-gwymd5.html"/>
+    <sub name="gwydebugobjects" link="libgwyddion-gwydebugobjects.html"/>
+    <sub name="Index of all symbols" link="api-index-all.html"/>
+    <sub name="Index of deprecated symbols" link="api-index-deprec.html"/>
+    <sub name="Index of new symbols in 2.1" link="api-index-2-1.html"/>
+    <sub name="Index of new symbols in 2.4" link="api-index-2-4.html"/>
+    <sub name="Index of new symbols in 2.5" link="api-index-2-5.html"/>
+    <sub name="Index of new symbols in 2.7" link="api-index-2-7.html"/>
+    <sub name="Index of new symbols in 2.8" link="api-index-2-8.html"/>
+    <sub name="Index of new symbols in 2.9" link="api-index-2-9.html"/>
+    <sub name="Index of new symbols in 2.11" link="api-index-2-11.html"/>
+    <sub name="Index of new symbols in 2.12" link="api-index-2-12.html"/>
+    <sub name="Index of new symbols in 2.22" link="api-index-2-22.html"/>
+    <sub name="Index of new symbols in 2.23" link="api-index-2-23.html"/>
+    <sub name="Index of new symbols in 2.25" link="api-index-2-25.html"/>
+    <sub name="Index of new symbols in 2.26" link="api-index-2-26.html"/>
+    <sub name="Index of new symbols in 2.35" link="api-index-2-35.html"/>
+    <sub name="Index of new symbols in 2.36" link="api-index-2-36.html"/>
+    <sub name="Index of new symbols in 2.37" link="api-index-2-37.html"/>
+    <sub name="Index of new symbols in 2.38" link="api-index-2-38.html"/>
+    <sub name="Index of new symbols in 2.39" link="api-index-2-39.html"/>
+    <sub name="Index of new symbols in 2.42" link="api-index-2-42.html"/>
+    <sub name="Index of new symbols in 2.43" link="api-index-2-43.html"/>
+    <sub name="Index of new symbols in 2.44" link="api-index-2-44.html"/>
+    <sub name="Index of new symbols in 2.45" link="api-index-2-45.html"/>
+    <sub name="Index of new symbols in 2.46" link="api-index-2-46.html"/>
+    <sub name="Index of new symbols in 2.47" link="api-index-2-47.html"/>
+    <sub name="Index of new symbols in 2.48" link="api-index-2-48.html"/>
+    <sub name="Index of new symbols in 2.49" link="api-index-2-49.html"/>
+    <sub name="Index of new symbols in 2.50" link="api-index-2-50.html"/>
+    <sub name="Index of new symbols in 2.51" link="api-index-2-51.html"/>
+    <sub name="Index of new symbols in 2.52" link="api-index-2-52.html"/>
+    <sub name="Index of new symbols in 2.53" link="api-index-2-53.html"/>
+    <sub name="Index of new symbols in 2.54" link="api-index-2-54.html"/>
+    <sub name="Index of new symbols in 2.59" link="api-index-2-59.html"/>
+    <sub name="Index of new symbols in 2.60" link="api-index-2-60.html"/>
+    <sub name="Index of new symbols in 2.61" link="api-index-2-61.html"/>
+  </chapters>
+  <functions>
+    <keyword type="enum" name="enum GwySIUnitFormatStyle" link="libgwyddion-gwyddionenums.html#GwySIUnitFormatStyle"/>
+    <keyword type="enum" name="enum GwyNLFitParamFlags" link="libgwyddion-gwyddionenums.html#GwyNLFitParamFlags" since="2.47"/>
+    <keyword type="enum" name="enum GwyPercentileInterpolationType" link="libgwyddion-gwyddionenums.html#GwyPercentileInterpolationType" since="2.50"/>
+    <keyword type="function" name="GwySerializeFunc ()" link="GwySerializable.html#GwySerializeFunc"/>
+    <keyword type="function" name="GwyDeserializeFunc ()" link="GwySerializable.html#GwyDeserializeFunc"/>
+    <keyword type="function" name="gwy_serializable_serialize ()" link="GwySerializable.html#gwy-serializable-serialize"/>
+    <keyword type="function" name="gwy_serializable_deserialize ()" link="GwySerializable.html#gwy-serializable-deserialize"/>
+    <keyword type="function" name="gwy_serializable_duplicate ()" link="GwySerializable.html#gwy-serializable-duplicate"/>
+    <keyword type="function" name="gwy_serializable_clone ()" link="GwySerializable.html#gwy-serializable-clone"/>
+    <keyword type="function" name="gwy_serializable_clone_with_type ()" link="GwySerializable.html#gwy-serializable-clone-with-type"/>
+    <keyword type="function" name="gwy_serializable_get_size ()" link="GwySerializable.html#gwy-serializable-get-size"/>
+    <keyword type="function" name="gwy_serialize_get_struct_size ()" link="GwySerializable.html#gwy-serialize-get-struct-size"/>
+    <keyword type="function" name="gwy_serialize_get_items_size ()" link="GwySerializable.html#gwy-serialize-get-items-size"/>
+    <keyword type="function" name="gwy_serialize_pack_object_struct ()" link="GwySerializable.html#gwy-serialize-pack-object-struct"/>
+    <keyword type="function" name="gwy_serialize_unpack_object_struct ()" link="GwySerializable.html#gwy-serialize-unpack-object-struct"/>
+    <keyword type="function" name="gwy_serialize_check_string ()" link="GwySerializable.html#gwy-serialize-check-string"/>
+    <keyword type="function" name="gwy_serialize_object_items ()" link="GwySerializable.html#gwy-serialize-object-items"/>
+    <keyword type="function" name="gwy_deserialize_object_hash ()" link="GwySerializable.html#gwy-deserialize-object-hash"/>
+    <keyword type="macro" name="GWY_SERIALIZABLE_GET_IFACE()" link="GwySerializable.html#GWY-SERIALIZABLE-GET-IFACE:CAPS"/>
+    <keyword type="struct" name="GwySerializeSpec" link="GwySerializable.html#GwySerializeSpec"/>
+    <keyword type="union" name="GwySerializeValue" link="GwySerializable.html#GwySerializeValue"/>
+    <keyword type="struct" name="GwySerializeItem" link="GwySerializable.html#GwySerializeItem"/>
+    <keyword type="struct" name="GwySerializable" link="GwySerializable.html#GwySerializable-struct"/>
+    <keyword type="struct" name="struct GwySerializableIface" link="GwySerializable.html#GwySerializableIface"/>
+    <keyword type="macro" name="gwy_container_duplicate()" link="GwyContainer.html#gwy-container-duplicate"/>
+    <keyword type="function" name="gwy_container_new ()" link="GwyContainer.html#gwy-container-new"/>
+    <keyword type="function" name="gwy_container_get_n_items ()" link="GwyContainer.html#gwy-container-get-n-items"/>
+    <keyword type="function" name="gwy_container_value_type ()" link="GwyContainer.html#gwy-container-value-type"/>
+    <keyword type="function" name="gwy_container_contains ()" link="GwyContainer.html#gwy-container-contains"/>
+    <keyword type="function" name="gwy_container_get_value ()" link="GwyContainer.html#gwy-container-get-value"/>
+    <keyword type="function" name="gwy_container_gis_value ()" link="GwyContainer.html#gwy-container-gis-value"/>
+    <keyword type="function" name="gwy_container_set_value ()" link="GwyContainer.html#gwy-container-set-value"/>
+    <keyword type="function" name="gwy_container_set_value_by_name ()" link="GwyContainer.html#gwy-container-set-value-by-name"/>
+    <keyword type="function" name="gwy_container_remove ()" link="GwyContainer.html#gwy-container-remove"/>
+    <keyword type="function" name="gwy_container_remove_by_prefix ()" link="GwyContainer.html#gwy-container-remove-by-prefix"/>
+    <keyword type="function" name="gwy_container_duplicate_by_prefix ()" link="GwyContainer.html#gwy-container-duplicate-by-prefix"/>
+    <keyword type="function" name="gwy_container_duplicate_by_prefixv ()" link="GwyContainer.html#gwy-container-duplicate-by-prefixv" since="2.48"/>
+    <keyword type="function" name="gwy_container_transfer ()" link="GwyContainer.html#gwy-container-transfer"/>
+    <keyword type="function" name="gwy_container_rename ()" link="GwyContainer.html#gwy-container-rename"/>
+    <keyword type="function" name="gwy_container_foreach ()" link="GwyContainer.html#gwy-container-foreach"/>
+    <keyword type="function" name="gwy_container_keys ()" link="GwyContainer.html#gwy-container-keys" since="2.7"/>
+    <keyword type="function" name="gwy_container_keys_by_name ()" link="GwyContainer.html#gwy-container-keys-by-name" since="2.7"/>
+    <keyword type="function" name="gwy_container_keys_with_prefix ()" link="GwyContainer.html#gwy-container-keys-with-prefix" since="2.50"/>
+    <keyword type="function" name="gwy_container_keys_with_prefix_by_name ()" link="GwyContainer.html#gwy-container-keys-with-prefix-by-name" since="2.50"/>
+    <keyword type="function" name="gwy_container_set_boolean ()" link="GwyContainer.html#gwy-container-set-boolean"/>
+    <keyword type="function" name="gwy_container_get_boolean ()" link="GwyContainer.html#gwy-container-get-boolean"/>
+    <keyword type="function" name="gwy_container_gis_boolean ()" link="GwyContainer.html#gwy-container-gis-boolean"/>
+    <keyword type="function" name="gwy_container_set_uchar ()" link="GwyContainer.html#gwy-container-set-uchar"/>
+    <keyword type="function" name="gwy_container_get_uchar ()" link="GwyContainer.html#gwy-container-get-uchar"/>
+    <keyword type="function" name="gwy_container_gis_uchar ()" link="GwyContainer.html#gwy-container-gis-uchar"/>
+    <keyword type="function" name="gwy_container_set_int32 ()" link="GwyContainer.html#gwy-container-set-int32"/>
+    <keyword type="function" name="gwy_container_get_int32 ()" link="GwyContainer.html#gwy-container-get-int32"/>
+    <keyword type="function" name="gwy_container_gis_int32 ()" link="GwyContainer.html#gwy-container-gis-int32"/>
+    <keyword type="function" name="gwy_container_set_enum ()" link="GwyContainer.html#gwy-container-set-enum"/>
+    <keyword type="function" name="gwy_container_get_enum ()" link="GwyContainer.html#gwy-container-get-enum"/>
+    <keyword type="function" name="gwy_container_gis_enum ()" link="GwyContainer.html#gwy-container-gis-enum"/>
+    <keyword type="function" name="gwy_container_set_int64 ()" link="GwyContainer.html#gwy-container-set-int64"/>
+    <keyword type="function" name="gwy_container_get_int64 ()" link="GwyContainer.html#gwy-container-get-int64"/>
+    <keyword type="function" name="gwy_container_gis_int64 ()" link="GwyContainer.html#gwy-container-gis-int64"/>
+    <keyword type="function" name="gwy_container_set_double ()" link="GwyContainer.html#gwy-container-set-double"/>
+    <keyword type="function" name="gwy_container_get_double ()" link="GwyContainer.html#gwy-container-get-double"/>
+    <keyword type="function" name="gwy_container_gis_double ()" link="GwyContainer.html#gwy-container-gis-double"/>
+    <keyword type="function" name="gwy_container_set_string ()" link="GwyContainer.html#gwy-container-set-string"/>
+    <keyword type="function" name="gwy_container_set_const_string ()" link="GwyContainer.html#gwy-container-set-const-string" since="2.38"/>
+    <keyword type="function" name="gwy_container_get_string ()" link="GwyContainer.html#gwy-container-get-string"/>
+    <keyword type="function" name="gwy_container_gis_string ()" link="GwyContainer.html#gwy-container-gis-string"/>
+    <keyword type="function" name="gwy_container_set_object ()" link="GwyContainer.html#gwy-container-set-object"/>
+    <keyword type="function" name="gwy_container_get_object ()" link="GwyContainer.html#gwy-container-get-object"/>
+    <keyword type="function" name="gwy_container_gis_object ()" link="GwyContainer.html#gwy-container-gis-object"/>
+    <keyword type="function" name="gwy_container_serialize_to_text ()" link="GwyContainer.html#gwy-container-serialize-to-text"/>
+    <keyword type="function" name="gwy_container_deserialize_from_text ()" link="GwyContainer.html#gwy-container-deserialize-from-text"/>
+    <keyword type="macro" name="gwy_container_value_type_by_name()" link="GwyContainer.html#gwy-container-value-type-by-name"/>
+    <keyword type="macro" name="gwy_container_contains_by_name()" link="GwyContainer.html#gwy-container-contains-by-name"/>
+    <keyword type="macro" name="gwy_container_get_value_by_name()" link="GwyContainer.html#gwy-container-get-value-by-name"/>
+    <keyword type="macro" name="gwy_container_gis_value_by_name()" link="GwyContainer.html#gwy-container-gis-value-by-name"/>
+    <keyword type="macro" name="gwy_container_remove_by_name()" link="GwyContainer.html#gwy-container-remove-by-name"/>
+    <keyword type="macro" name="gwy_container_rename_by_name()" link="GwyContainer.html#gwy-container-rename-by-name"/>
+    <keyword type="macro" name="gwy_container_set_boolean_by_name()" link="GwyContainer.html#gwy-container-set-boolean-by-name"/>
+    <keyword type="macro" name="gwy_container_get_boolean_by_name()" link="GwyContainer.html#gwy-container-get-boolean-by-name"/>
+    <keyword type="macro" name="gwy_container_gis_boolean_by_name()" link="GwyContainer.html#gwy-container-gis-boolean-by-name"/>
+    <keyword type="macro" name="gwy_container_set_uchar_by_name()" link="GwyContainer.html#gwy-container-set-uchar-by-name"/>
+    <keyword type="macro" name="gwy_container_get_uchar_by_name()" link="GwyContainer.html#gwy-container-get-uchar-by-name"/>
+    <keyword type="macro" name="gwy_container_gis_uchar_by_name()" link="GwyContainer.html#gwy-container-gis-uchar-by-name"/>
+    <keyword type="macro" name="gwy_container_set_int32_by_name()" link="GwyContainer.html#gwy-container-set-int32-by-name"/>
+    <keyword type="macro" name="gwy_container_get_int32_by_name()" link="GwyContainer.html#gwy-container-get-int32-by-name"/>
+    <keyword type="macro" name="gwy_container_gis_int32_by_name()" link="GwyContainer.html#gwy-container-gis-int32-by-name"/>
+    <keyword type="macro" name="gwy_container_set_enum_by_name()" link="GwyContainer.html#gwy-container-set-enum-by-name"/>
+    <keyword type="macro" name="gwy_container_get_enum_by_name()" link="GwyContainer.html#gwy-container-get-enum-by-name"/>
+    <keyword type="macro" name="gwy_container_gis_enum_by_name()" link="GwyContainer.html#gwy-container-gis-enum-by-name"/>
+    <keyword type="macro" name="gwy_container_set_int64_by_name()" link="GwyContainer.html#gwy-container-set-int64-by-name"/>
+    <keyword type="macro" name="gwy_container_get_int64_by_name()" link="GwyContainer.html#gwy-container-get-int64-by-name"/>
+    <keyword type="macro" name="gwy_container_gis_int64_by_name()" link="GwyContainer.html#gwy-container-gis-int64-by-name"/>
+    <keyword type="macro" name="gwy_container_set_double_by_name()" link="GwyContainer.html#gwy-container-set-double-by-name"/>
+    <keyword type="macro" name="gwy_container_get_double_by_name()" link="GwyContainer.html#gwy-container-get-double-by-name"/>
+    <keyword type="macro" name="gwy_container_gis_double_by_name()" link="GwyContainer.html#gwy-container-gis-double-by-name"/>
+    <keyword type="macro" name="gwy_container_set_string_by_name()" link="GwyContainer.html#gwy-container-set-string-by-name"/>
+    <keyword type="macro" name="gwy_container_set_const_string_by_name()" link="GwyContainer.html#gwy-container-set-const-string-by-name" since="2.38"/>
+    <keyword type="macro" name="gwy_container_get_string_by_name()" link="GwyContainer.html#gwy-container-get-string-by-name"/>
+    <keyword type="macro" name="gwy_container_gis_string_by_name()" link="GwyContainer.html#gwy-container-gis-string-by-name"/>
+    <keyword type="macro" name="gwy_container_set_object_by_name()" link="GwyContainer.html#gwy-container-set-object-by-name"/>
+    <keyword type="macro" name="gwy_container_get_object_by_name()" link="GwyContainer.html#gwy-container-get-object-by-name"/>
+    <keyword type="macro" name="gwy_container_gis_object_by_name()" link="GwyContainer.html#gwy-container-gis-object-by-name"/>
+    <keyword type="macro" name="GWY_CONTAINER_PATHSEP" link="GwyContainer.html#GWY-CONTAINER-PATHSEP:CAPS"/>
+    <keyword type="macro" name="GWY_CONTAINER_PATHSEP_STR" link="GwyContainer.html#GWY-CONTAINER-PATHSEP-STR:CAPS"/>
+    <keyword type="struct" name="struct GwyContainer" link="GwyContainer.html#GwyContainer-struct"/>
+    <keyword type="struct" name="struct GwyContainerClass" link="GwyContainer.html#GwyContainerClass"/>
+    <keyword type="signal" name="The “item-changed” signal" link="GwyContainer.html#GwyContainer-item-changed"/>
+    <keyword type="macro" name="gettext()" link="libgwyddion-gwymacros.html#gettext"/>
+    <keyword type="macro" name="ngettext()" link="libgwyddion-gwymacros.html#ngettext"/>
+    <keyword type="macro" name="_()" link="libgwyddion-gwymacros.html#gettext-macro"/>
+    <keyword type="macro" name="N_()" link="libgwyddion-gwymacros.html#N-:CAPS"/>
+    <keyword type="macro" name="GWY_SWAP()" link="libgwyddion-gwymacros.html#GWY-SWAP:CAPS"/>
+    <keyword type="macro" name="gwy_strequal()" link="libgwyddion-gwymacros.html#gwy-strequal"/>
+    <keyword type="macro" name="GWY_CLAMP()" link="libgwyddion-gwymacros.html#GWY-CLAMP:CAPS"/>
+    <keyword type="macro" name="gwy_clear()" link="libgwyddion-gwymacros.html#gwy-clear" since="2.12"/>
+    <keyword type="macro" name="gwy_assign()" link="libgwyddion-gwymacros.html#gwy-assign" since="2.46"/>
+    <keyword type="macro" name="GWY_OBJECT_UNREF()" link="libgwyddion-gwymacros.html#GWY-OBJECT-UNREF:CAPS" since="2.46"/>
+    <keyword type="macro" name="GWY_SIGNAL_HANDLER_DISCONNECT()" link="libgwyddion-gwymacros.html#GWY-SIGNAL-HANDLER-DISCONNECT:CAPS" since="2.46"/>
+    <keyword type="macro" name="GWY_FIND_PSPEC()" link="libgwyddion-gwymacros.html#GWY-FIND-PSPEC:CAPS"/>
+    <keyword type="macro" name="GWY_SI_VALUE_FORMAT_FREE()" link="libgwyddion-gwymacros.html#GWY-SI-VALUE-FORMAT-FREE:CAPS" since="2.46"/>
+    <keyword type="macro" name="GWY_FREE()" link="libgwyddion-gwymacros.html#GWY-FREE:CAPS" since="2.46"/>
+    <keyword type="macro" name="gwy_debug()" link="libgwyddion-gwymacros.html#gwy-debug"/>
+    <keyword type="macro" name="gwy_info()" link="libgwyddion-gwymacros.html#gwy-info" since="2.45"/>
+    <keyword type="function" name="gwy_debug_gnu ()" link="libgwyddion-gwymacros.html#gwy-debug-gnu"/>
+    <keyword type="macro" name="gwy_object_unref" link="libgwyddion-gwymacros.html#gwy-object-unref"/>
+    <keyword type="macro" name="gwy_signal_handler_disconnect" link="libgwyddion-gwymacros.html#gwy-signal-handler-disconnect"/>
+    <keyword type="function" name="gwy_type_init ()" link="libgwyddion-gwyddion.html#gwy-type-init"/>
+    <keyword type="function" name="gwy_threads_are_enabled ()" link="libgwyddion-gwythreads.html#gwy-threads-are-enabled" since="2.53"/>
+    <keyword type="function" name="gwy_threads_set_enabled ()" link="libgwyddion-gwythreads.html#gwy-threads-set-enabled" since="2.53"/>
+    <keyword type="function" name="gwy_entities ()" link="libgwyddion-gwyentities.html#gwy-entities"/>
+    <keyword type="function" name="gwy_entities_entity_to_utf8 ()" link="libgwyddion-gwyentities.html#gwy-entities-entity-to-utf8"/>
+    <keyword type="function" name="gwy_entities_text_to_utf8 ()" link="libgwyddion-gwyentities.html#gwy-entities-text-to-utf8"/>
+    <keyword type="struct" name="GwyTextEntity" link="libgwyddion-gwyentities.html#GwyTextEntity"/>
+    <keyword type="macro" name="ROUND()" link="libgwyddion-Math.html#ROUND:CAPS" deprecated=""/>
+    <keyword type="macro" name="GWY_ROUND()" link="libgwyddion-Math.html#GWY-ROUND:CAPS" since="2.5"/>
+    <keyword type="function" name="gwy_xy_new ()" link="libgwyddion-Math.html#gwy-xy-new" since="2.47"/>
+    <keyword type="function" name="gwy_xy_copy ()" link="libgwyddion-Math.html#gwy-xy-copy" since="2.45"/>
+    <keyword type="function" name="gwy_xy_free ()" link="libgwyddion-Math.html#gwy-xy-free" since="2.45"/>
+    <keyword type="function" name="gwy_xyz_new ()" link="libgwyddion-Math.html#gwy-xyz-new" since="2.47"/>
+    <keyword type="function" name="gwy_xyz_copy ()" link="libgwyddion-Math.html#gwy-xyz-copy" since="2.45"/>
+    <keyword type="function" name="gwy_xyz_free ()" link="libgwyddion-Math.html#gwy-xyz-free" since="2.45"/>
+    <keyword type="function" name="GwyRealFunc ()" link="libgwyddion-Math.html#GwyRealFunc"/>
+    <keyword type="function" name="gwy_math_humanize_numbers ()" link="libgwyddion-Math.html#gwy-math-humanize-numbers"/>
+    <keyword type="function" name="gwy_math_is_in_polygon ()" link="libgwyddion-Math.html#gwy-math-is-in-polygon" since="2.7"/>
+    <keyword type="function" name="gwy_math_find_nearest_line ()" link="libgwyddion-Math.html#gwy-math-find-nearest-line"/>
+    <keyword type="function" name="gwy_math_find_nearest_point ()" link="libgwyddion-Math.html#gwy-math-find-nearest-point"/>
+    <keyword type="function" name="gwy_math_lin_solve ()" link="libgwyddion-Math.html#gwy-math-lin-solve"/>
+    <keyword type="function" name="gwy_math_lin_solve_rewrite ()" link="libgwyddion-Math.html#gwy-math-lin-solve-rewrite"/>
+    <keyword type="function" name="gwy_math_tridiag_solve_rewrite ()" link="libgwyddion-Math.html#gwy-math-tridiag-solve-rewrite"/>
+    <keyword type="function" name="gwy_math_fit_polynom ()" link="libgwyddion-Math.html#gwy-math-fit-polynom"/>
+    <keyword type="function" name="gwy_math_choleski_decompose ()" link="libgwyddion-Math.html#gwy-math-choleski-decompose"/>
+    <keyword type="function" name="gwy_math_choleski_solve ()" link="libgwyddion-Math.html#gwy-math-choleski-solve"/>
+    <keyword type="function" name="gwy_math_choleski_invert ()" link="libgwyddion-Math.html#gwy-math-choleski-invert" since="2.46"/>
+    <keyword type="function" name="gwy_math_curvature ()" link="libgwyddion-Math.html#gwy-math-curvature" since="2.22"/>
+    <keyword type="function" name="gwy_math_curvature_at_apex ()" link="libgwyddion-Math.html#gwy-math-curvature-at-apex" since="2.61"/>
+    <keyword type="function" name="gwy_math_curvature_at_origin ()" link="libgwyddion-Math.html#gwy-math-curvature-at-origin" since="2.61"/>
+    <keyword type="function" name="gwy_math_refine_maximum_1d ()" link="libgwyddion-Math.html#gwy-math-refine-maximum-1d" since="2.49"/>
+    <keyword type="function" name="gwy_math_refine_maximum_2d ()" link="libgwyddion-Math.html#gwy-math-refine-maximum-2d" since="2.49"/>
+    <keyword type="function" name="gwy_math_refine_maximum ()" link="libgwyddion-Math.html#gwy-math-refine-maximum" since="2.42"/>
+    <keyword type="function" name="gwy_math_find_minimum_1d ()" link="libgwyddion-Math.html#gwy-math-find-minimum-1d" since="2.51"/>
+    <keyword type="function" name="gwy_check_regular_2d_grid ()" link="libgwyddion-Math.html#gwy-check-regular-2d-grid" since="2.48"/>
+    <keyword type="function" name="gwy_math_median ()" link="libgwyddion-Math.html#gwy-math-median"/>
+    <keyword type="function" name="gwy_math_kth_rank ()" link="libgwyddion-Math.html#gwy-math-kth-rank" since="2.50"/>
+    <keyword type="function" name="gwy_math_kth_ranks ()" link="libgwyddion-Math.html#gwy-math-kth-ranks" since="2.50"/>
+    <keyword type="function" name="gwy_math_percentiles ()" link="libgwyddion-Math.html#gwy-math-percentiles" since="2.50"/>
+    <keyword type="function" name="gwy_math_sort ()" link="libgwyddion-Math.html#gwy-math-sort"/>
+    <keyword type="function" name="gwy_guint_sort ()" link="libgwyddion-Math.html#gwy-guint-sort" since="2.50"/>
+    <keyword type="function" name="gwy_math_sort_with_index ()" link="libgwyddion-Math.html#gwy-math-sort-with-index" since="2.50"/>
+    <keyword type="function" name="gwy_math_trimmed_mean ()" link="libgwyddion-Math.html#gwy-math-trimmed-mean" since="2.50"/>
+    <keyword type="function" name="gwy_math_median_uncertainty ()" link="libgwyddion-Math.html#gwy-math-median-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_xlnx_int ()" link="libgwyddion-Math.html#gwy-xlnx-int" since="2.44"/>
+    <keyword type="function" name="gwy_sinc ()" link="libgwyddion-Math.html#gwy-sinc" since="2.51"/>
+    <keyword type="function" name="gwy_canonicalize_angle ()" link="libgwyddion-Math.html#gwy-canonicalize-angle" since="2.50"/>
+    <keyword type="function" name="gwy_math_histogram ()" link="libgwyddion-Math.html#gwy-math-histogram" since="2.49"/>
+    <keyword type="macro" name="GWY_SQRT3" link="libgwyddion-Math.html#GWY-SQRT3:CAPS"/>
+    <keyword type="macro" name="GWY_SQRT_PI" link="libgwyddion-Math.html#GWY-SQRT-PI:CAPS"/>
+    <keyword type="struct" name="GwyXY" link="libgwyddion-Math.html#GwyXY" since="2.45"/>
+    <keyword type="struct" name="GwyXYZ" link="libgwyddion-Math.html#GwyXYZ" since="2.45"/>
+    <keyword type="function" name="gwy_math_fallback_pow10 ()" link="libgwyddion-Math-Fallback.html#gwy-math-fallback-pow10" since="2.9"/>
+    <keyword type="function" name="gwy_math_fallback_cbrt ()" link="libgwyddion-Math-Fallback.html#gwy-math-fallback-cbrt" since="2.9"/>
+    <keyword type="function" name="gwy_math_fallback_hypot ()" link="libgwyddion-Math-Fallback.html#gwy-math-fallback-hypot" since="2.9"/>
+    <keyword type="function" name="gwy_math_fallback_acosh ()" link="libgwyddion-Math-Fallback.html#gwy-math-fallback-acosh" since="2.9"/>
+    <keyword type="function" name="gwy_math_fallback_asinh ()" link="libgwyddion-Math-Fallback.html#gwy-math-fallback-asinh" since="2.9"/>
+    <keyword type="function" name="gwy_math_fallback_atanh ()" link="libgwyddion-Math-Fallback.html#gwy-math-fallback-atanh" since="2.9"/>
+    <keyword type="function" name="gwy_math_fallback_powi ()" link="libgwyddion-Math-Fallback.html#gwy-math-fallback-powi" since="2.53"/>
+    <keyword type="function" name="gwy_math_fallback_isinf ()" link="libgwyddion-Math-Fallback.html#gwy-math-fallback-isinf" since="2.22"/>
+    <keyword type="function" name="gwy_math_fallback_isnan ()" link="libgwyddion-Math-Fallback.html#gwy-math-fallback-isnan" since="2.22"/>
+    <keyword type="macro" name="pow10" link="libgwyddion-Math-Fallback.html#pow10"/>
+    <keyword type="macro" name="cbrt" link="libgwyddion-Math-Fallback.html#cbrt"/>
+    <keyword type="macro" name="hypot" link="libgwyddion-Math-Fallback.html#hypot"/>
+    <keyword type="macro" name="acosh" link="libgwyddion-Math-Fallback.html#acosh"/>
+    <keyword type="macro" name="asinh" link="libgwyddion-Math-Fallback.html#asinh"/>
+    <keyword type="macro" name="atanh" link="libgwyddion-Math-Fallback.html#atanh"/>
+    <keyword type="macro" name="gwy_isinf" link="libgwyddion-Math-Fallback.html#gwy-isinf" since="2.22"/>
+    <keyword type="macro" name="gwy_isnan" link="libgwyddion-Math-Fallback.html#gwy-isnan" since="2.22"/>
+    <keyword type="macro" name="gwy_powi" link="libgwyddion-Math-Fallback.html#gwy-powi" since="2.53"/>
+    <keyword type="function" name="GwyNLFitFunc ()" link="libgwyddion-GwyNLFitter.html#GwyNLFitFunc"/>
+    <keyword type="function" name="GwyNLFitDerFunc ()" link="libgwyddion-GwyNLFitter.html#GwyNLFitDerFunc"/>
+    <keyword type="function" name="GwyNLFitIdxFunc ()" link="libgwyddion-GwyNLFitter.html#GwyNLFitIdxFunc" since="2.46"/>
+    <keyword type="function" name="GwyNLFitIdxDiffFunc ()" link="libgwyddion-GwyNLFitter.html#GwyNLFitIdxDiffFunc" since="2.46"/>
+    <keyword type="function" name="gwy_math_nlfit_new ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-new"/>
+    <keyword type="function" name="gwy_math_nlfit_new_idx ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-new-idx" since="2.46"/>
+    <keyword type="function" name="gwy_math_nlfit_free ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-free"/>
+    <keyword type="function" name="gwy_math_nlfit_copy ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-copy" since="2.47"/>
+    <keyword type="function" name="gwy_math_nlfit_fit ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-fit"/>
+    <keyword type="function" name="gwy_math_nlfit_fit_full ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-fit-full"/>
+    <keyword type="function" name="gwy_math_nlfit_fit_idx ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-fit-idx" since="2.46"/>
+    <keyword type="function" name="gwy_math_nlfit_fit_idx_full ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-fit-idx-full" since="2.46"/>
+    <keyword type="function" name="gwy_math_nlfit_get_max_iterations ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-max-iterations"/>
+    <keyword type="function" name="gwy_math_nlfit_set_max_iterations ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-set-max-iterations"/>
+    <keyword type="function" name="gwy_math_nlfit_get_approx_geometric ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-approx-geometric" since="2.47"/>
+    <keyword type="function" name="gwy_math_nlfit_set_approx_geometric ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-set-approx-geometric" since="2.47"/>
+    <keyword type="function" name="gwy_math_nlfit_succeeded ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-succeeded" since="2.7"/>
+    <keyword type="function" name="gwy_math_nlfit_get_dispersion ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-dispersion"/>
+    <keyword type="function" name="gwy_math_nlfit_get_correlations ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-correlations"/>
+    <keyword type="function" name="gwy_math_nlfit_get_eval ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-eval" since="2.47"/>
+    <keyword type="function" name="gwy_math_nlfit_get_covar ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-covar" since="2.47"/>
+    <keyword type="function" name="gwy_math_nlfit_get_nparam ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-nparam" since="2.47"/>
+    <keyword type="function" name="gwy_math_nlfit_get_sigma ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-sigma"/>
+    <keyword type="function" name="gwy_math_nlfit_set_callbacks ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-set-callbacks" since="2.46"/>
+    <keyword type="function" name="gwy_math_nlfit_diff ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-diff" since="2.46"/>
+    <keyword type="function" name="gwy_math_nlfit_derive ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-derive"/>
+    <keyword type="function" name="gwy_math_nlfit_diff_idx ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-diff-idx" since="2.46"/>
+    <keyword type="function" name="gwy_math_nlfit_map_free_params ()" link="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-map-free-params" since="2.50"/>
+    <keyword type="struct" name="struct GwyNLFitter" link="libgwyddion-GwyNLFitter.html#GwyNLFitter"/>
+    <keyword type="function" name="gwy_nlfit_preset_get_value ()" link="GwyNLFitPreset.html#gwy-nlfit-preset-get-value"/>
+    <keyword type="function" name="gwy_nlfit_preset_get_formula ()" link="GwyNLFitPreset.html#gwy-nlfit-preset-get-formula"/>
+    <keyword type="function" name="gwy_nlfit_preset_get_nparams ()" link="GwyNLFitPreset.html#gwy-nlfit-preset-get-nparams"/>
+    <keyword type="function" name="gwy_nlfit_preset_get_param_name ()" link="GwyNLFitPreset.html#gwy-nlfit-preset-get-param-name"/>
+    <keyword type="function" name="gwy_nlfit_preset_get_param_units ()" link="GwyNLFitPreset.html#gwy-nlfit-preset-get-param-units" since="2.5"/>
+    <keyword type="function" name="gwy_nlfit_preset_guess ()" link="GwyNLFitPreset.html#gwy-nlfit-preset-guess"/>
+    <keyword type="function" name="gwy_nlfit_preset_create_fitter ()" link="GwyNLFitPreset.html#gwy-nlfit-preset-create-fitter" since="2.47"/>
+    <keyword type="function" name="gwy_nlfit_preset_fit ()" link="GwyNLFitPreset.html#gwy-nlfit-preset-fit"/>
+    <keyword type="function" name="gwy_nlfit_presets ()" link="GwyNLFitPreset.html#gwy-nlfit-presets"/>
+    <keyword type="struct" name="GwyNLFitPresetBuiltin" link="GwyNLFitPreset.html#GwyNLFitPresetBuiltin"/>
+    <keyword type="struct" name="struct GwyNLFitPreset" link="GwyNLFitPreset.html#GwyNLFitPreset-struct"/>
+    <keyword type="struct" name="struct GwyNLFitPresetClass" link="GwyNLFitPreset.html#GwyNLFitPresetClass"/>
+    <keyword type="function" name="gwy_fd_curve_presets ()" link="GwyFDCurvePreset.html#gwy-fd-curve-presets" since="2.7"/>
+    <keyword type="struct" name="GwyFDCurvePresetBuiltin" link="GwyFDCurvePreset.html#GwyFDCurvePresetBuiltin"/>
+    <keyword type="struct" name="struct GwyFDCurvePreset" link="GwyFDCurvePreset.html#GwyFDCurvePreset-struct"/>
+    <keyword type="struct" name="struct GwyFDCurvePresetClass" link="GwyFDCurvePreset.html#GwyFDCurvePresetClass"/>
+    <keyword type="function" name="gwy_expr_error_quark ()" link="libgwyddion-GwyExpr.html#gwy-expr-error-quark"/>
+    <keyword type="function" name="gwy_expr_new ()" link="libgwyddion-GwyExpr.html#gwy-expr-new"/>
+    <keyword type="function" name="gwy_expr_free ()" link="libgwyddion-GwyExpr.html#gwy-expr-free"/>
+    <keyword type="function" name="gwy_expr_evaluate ()" link="libgwyddion-GwyExpr.html#gwy-expr-evaluate"/>
+    <keyword type="function" name="gwy_expr_compile ()" link="libgwyddion-GwyExpr.html#gwy-expr-compile"/>
+    <keyword type="function" name="gwy_expr_resolve_variables ()" link="libgwyddion-GwyExpr.html#gwy-expr-resolve-variables"/>
+    <keyword type="function" name="gwy_expr_get_variables ()" link="libgwyddion-GwyExpr.html#gwy-expr-get-variables"/>
+    <keyword type="function" name="gwy_expr_execute ()" link="libgwyddion-GwyExpr.html#gwy-expr-execute"/>
+    <keyword type="function" name="gwy_expr_vector_execute ()" link="libgwyddion-GwyExpr.html#gwy-expr-vector-execute"/>
+    <keyword type="function" name="gwy_expr_define_constant ()" link="libgwyddion-GwyExpr.html#gwy-expr-define-constant"/>
+    <keyword type="function" name="gwy_expr_undefine_constant ()" link="libgwyddion-GwyExpr.html#gwy-expr-undefine-constant"/>
+    <keyword type="function" name="gwy_expr_get_expression ()" link="libgwyddion-GwyExpr.html#gwy-expr-get-expression"/>
+    <keyword type="macro" name="GWY_EXPR_ERROR" link="libgwyddion-GwyExpr.html#GWY-EXPR-ERROR:CAPS"/>
+    <keyword type="enum" name="enum GwyExprError" link="libgwyddion-GwyExpr.html#GwyExprError"/>
+    <keyword type="struct" name="GwyExpr" link="libgwyddion-GwyExpr.html#GwyExpr"/>
+    <keyword type="macro" name="gwy_si_unit_duplicate()" link="GwySIUnit.html#gwy-si-unit-duplicate"/>
+    <keyword type="macro" name="gwy_si_unit_assign()" link="GwySIUnit.html#gwy-si-unit-assign" since="2.51"/>
+    <keyword type="function" name="gwy_si_unit_new ()" link="GwySIUnit.html#gwy-si-unit-new"/>
+    <keyword type="function" name="gwy_si_unit_new_parse ()" link="GwySIUnit.html#gwy-si-unit-new-parse"/>
+    <keyword type="function" name="gwy_si_unit_set_from_string ()" link="GwySIUnit.html#gwy-si-unit-set-from-string"/>
+    <keyword type="function" name="gwy_si_unit_set_from_string_parse ()" link="GwySIUnit.html#gwy-si-unit-set-from-string-parse"/>
+    <keyword type="function" name="gwy_si_unit_get_string ()" link="GwySIUnit.html#gwy-si-unit-get-string"/>
+    <keyword type="function" name="gwy_si_unit_multiply ()" link="GwySIUnit.html#gwy-si-unit-multiply"/>
+    <keyword type="function" name="gwy_si_unit_divide ()" link="GwySIUnit.html#gwy-si-unit-divide"/>
+    <keyword type="function" name="gwy_si_unit_power ()" link="GwySIUnit.html#gwy-si-unit-power"/>
+    <keyword type="function" name="gwy_si_unit_nth_root ()" link="GwySIUnit.html#gwy-si-unit-nth-root" since="2.5"/>
+    <keyword type="function" name="gwy_si_unit_power_multiply ()" link="GwySIUnit.html#gwy-si-unit-power-multiply" since="2.4"/>
+    <keyword type="function" name="gwy_si_unit_factor_to_base ()" link="GwySIUnit.html#gwy-si-unit-factor-to-base" since="2.51"/>
+    <keyword type="function" name="gwy_si_unit_equal ()" link="GwySIUnit.html#gwy-si-unit-equal"/>
+    <keyword type="function" name="gwy_si_unit_equal_string ()" link="GwySIUnit.html#gwy-si-unit-equal-string" since="2.49"/>
+    <keyword type="function" name="gwy_si_unit_get_format ()" link="GwySIUnit.html#gwy-si-unit-get-format"/>
+    <keyword type="function" name="gwy_si_unit_get_format_for_power10 ()" link="GwySIUnit.html#gwy-si-unit-get-format-for-power10"/>
+    <keyword type="function" name="gwy_si_unit_get_format_with_resolution ()" link="GwySIUnit.html#gwy-si-unit-get-format-with-resolution"/>
+    <keyword type="function" name="gwy_si_unit_get_format_with_digits ()" link="GwySIUnit.html#gwy-si-unit-get-format-with-digits"/>
+    <keyword type="struct" name="struct GwySIUnit" link="GwySIUnit.html#GwySIUnit-struct"/>
+    <keyword type="struct" name="struct GwySIUnitClass" link="GwySIUnit.html#GwySIUnitClass"/>
+    <keyword type="signal" name="The “value-changed” signal" link="GwySIUnit.html#GwySIUnit-value-changed"/>
+    <keyword type="function" name="gwy_si_unit_value_format_new ()" link="libgwyddion-GwySIValueFormat.html#gwy-si-unit-value-format-new" since="2.46"/>
+    <keyword type="function" name="gwy_si_unit_value_format_copy ()" link="libgwyddion-GwySIValueFormat.html#gwy-si-unit-value-format-copy" since="2.39"/>
+    <keyword type="function" name="gwy_si_unit_value_format_free ()" link="libgwyddion-GwySIValueFormat.html#gwy-si-unit-value-format-free"/>
+    <keyword type="function" name="gwy_si_unit_value_format_clone ()" link="libgwyddion-GwySIValueFormat.html#gwy-si-unit-value-format-clone" since="2.46"/>
+    <keyword type="function" name="gwy_si_unit_value_format_set_units ()" link="libgwyddion-GwySIValueFormat.html#gwy-si-unit-value-format-set-units"/>
+    <keyword type="struct" name="GwySIValueFormat" link="libgwyddion-GwySIValueFormat.html#GwySIValueFormat"/>
+    <keyword type="function" name="GwySetFractionFunc ()" link="libgwyddion-gwyutils.html#GwySetFractionFunc"/>
+    <keyword type="function" name="GwySetMessageFunc ()" link="libgwyddion-gwyutils.html#GwySetMessageFunc"/>
+    <keyword type="function" name="gwy_hash_table_to_slist_cb ()" link="libgwyddion-gwyutils.html#gwy-hash-table-to-slist-cb"/>
+    <keyword type="function" name="gwy_hash_table_to_list_cb ()" link="libgwyddion-gwyutils.html#gwy-hash-table-to-list-cb"/>
+    <keyword type="function" name="gwy_strkill ()" link="libgwyddion-gwyutils.html#gwy-strkill"/>
+    <keyword type="function" name="gwy_strreplace ()" link="libgwyddion-gwyutils.html#gwy-strreplace"/>
+    <keyword type="function" name="gwy_strdiffpos ()" link="libgwyddion-gwyutils.html#gwy-strdiffpos"/>
+    <keyword type="function" name="gwy_strisident ()" link="libgwyddion-gwyutils.html#gwy-strisident"/>
+    <keyword type="function" name="gwy_ascii_strcase_equal ()" link="libgwyddion-gwyutils.html#gwy-ascii-strcase-equal" since="2.26"/>
+    <keyword type="function" name="gwy_ascii_strcase_hash ()" link="libgwyddion-gwyutils.html#gwy-ascii-strcase-hash" since="2.26"/>
+    <keyword type="function" name="gwy_stramong ()" link="libgwyddion-gwyutils.html#gwy-stramong" since="2.11"/>
+    <keyword type="function" name="gwy_memmem ()" link="libgwyddion-gwyutils.html#gwy-memmem" since="2.12"/>
+    <keyword type="function" name="gwy_file_get_contents ()" link="libgwyddion-gwyutils.html#gwy-file-get-contents"/>
+    <keyword type="function" name="gwy_file_abandon_contents ()" link="libgwyddion-gwyutils.html#gwy-file-abandon-contents"/>
+    <keyword type="function" name="gwy_find_self_dir ()" link="libgwyddion-gwyutils.html#gwy-find-self-dir"/>
+    <keyword type="function" name="gwy_get_user_dir ()" link="libgwyddion-gwyutils.html#gwy-get-user-dir"/>
+    <keyword type="function" name="gwy_get_home_dir ()" link="libgwyddion-gwyutils.html#gwy-get-home-dir"/>
+    <keyword type="function" name="gwy_canonicalize_path ()" link="libgwyddion-gwyutils.html#gwy-canonicalize-path"/>
+    <keyword type="function" name="gwy_filename_ignore ()" link="libgwyddion-gwyutils.html#gwy-filename-ignore"/>
+    <keyword type="function" name="gwy_sgettext ()" link="libgwyddion-gwyutils.html#gwy-sgettext"/>
+    <keyword type="function" name="gwy_str_next_line ()" link="libgwyddion-gwyutils.html#gwy-str-next-line"/>
+    <keyword type="function" name="gwy_str_fixed_font_width ()" link="libgwyddion-gwyutils.html#gwy-str-fixed-font-width" since="2.52"/>
+    <keyword type="function" name="gwy_gstring_replace ()" link="libgwyddion-gwyutils.html#gwy-gstring-replace" since="2.36"/>
+    <keyword type="function" name="gwy_gstring_to_native_eol ()" link="libgwyddion-gwyutils.html#gwy-gstring-to-native-eol" since="2.36"/>
+    <keyword type="function" name="gwy_memcpy_byte_swap ()" link="libgwyddion-gwyutils.html#gwy-memcpy-byte-swap" since="2.1"/>
+    <keyword type="function" name="gwy_convert_raw_data ()" link="libgwyddion-gwyutils.html#gwy-convert-raw-data" since="2.25"/>
+    <keyword type="function" name="gwy_raw_data_size ()" link="libgwyddion-gwyutils.html#gwy-raw-data-size" since="2.25"/>
+    <keyword type="function" name="gwy_utf16_to_utf8 ()" link="libgwyddion-gwyutils.html#gwy-utf16-to-utf8" since="2.60"/>
+    <keyword type="function" name="gwy_assign_string ()" link="libgwyddion-gwyutils.html#gwy-assign-string" since="2.59"/>
+    <keyword type="function" name="gwy_object_set_or_reset ()" link="libgwyddion-gwyutils.html#gwy-object-set-or-reset"/>
+    <keyword type="function" name="gwy_set_member_object ()" link="libgwyddion-gwyutils.html#gwy-set-member-object" since="2.49"/>
+    <keyword type="function" name="gwy_fopen ()" link="libgwyddion-gwyutils.html#gwy-fopen" since="2.43"/>
+    <keyword type="function" name="gwy_fprintf ()" link="libgwyddion-gwyutils.html#gwy-fprintf" since="2.43"/>
+    <keyword type="enum" name="enum GwyRawDataType" link="libgwyddion-gwyutils.html#GwyRawDataType" since="2.25"/>
+    <keyword type="enum" name="enum GwyByteOrder" link="libgwyddion-gwyutils.html#GwyByteOrder" since="2.25"/>
+    <keyword type="function" name="gwy_version_major ()" link="libgwyddion-gwyversion.html#gwy-version-major"/>
+    <keyword type="function" name="gwy_version_minor ()" link="libgwyddion-gwyversion.html#gwy-version-minor"/>
+    <keyword type="function" name="gwy_version_string ()" link="libgwyddion-gwyversion.html#gwy-version-string"/>
+    <keyword type="macro" name="GWY_VERSION_MAJOR" link="libgwyddion-gwyversion.html#GWY-VERSION-MAJOR:CAPS"/>
+    <keyword type="macro" name="GWY_VERSION_MINOR" link="libgwyddion-gwyversion.html#GWY-VERSION-MINOR:CAPS"/>
+    <keyword type="macro" name="GWY_VERSION_STRING" link="libgwyddion-gwyversion.html#GWY-VERSION-STRING:CAPS"/>
+    <keyword type="function" name="gwy_string_to_enum ()" link="GwyEnum.html#gwy-string-to-enum"/>
+    <keyword type="function" name="gwy_enum_to_string ()" link="GwyEnum.html#gwy-enum-to-string"/>
+    <keyword type="function" name="gwy_enuml_to_string ()" link="GwyEnum.html#gwy-enuml-to-string" since="2.5"/>
+    <keyword type="function" name="gwy_string_to_flags ()" link="GwyEnum.html#gwy-string-to-flags"/>
+    <keyword type="function" name="gwy_flags_to_string ()" link="GwyEnum.html#gwy-flags-to-string"/>
+    <keyword type="function" name="gwy_enum_sanitize_value ()" link="GwyEnum.html#gwy-enum-sanitize-value"/>
+    <keyword type="function" name="gwy_enum_freev ()" link="GwyEnum.html#gwy-enum-freev"/>
+    <keyword type="function" name="gwy_enum_inventory_new ()" link="GwyEnum.html#gwy-enum-inventory-new"/>
+    <keyword type="function" name="gwy_enum_fill_from_struct ()" link="GwyEnum.html#gwy-enum-fill-from-struct" since="2.59"/>
+    <keyword type="struct" name="GwyEnum" link="GwyEnum.html#GwyEnum-struct"/>
+    <keyword type="function" name="gwy_inventory_new ()" link="GwyInventory.html#gwy-inventory-new"/>
+    <keyword type="function" name="gwy_inventory_new_filled ()" link="GwyInventory.html#gwy-inventory-new-filled"/>
+    <keyword type="function" name="gwy_inventory_new_from_array ()" link="GwyInventory.html#gwy-inventory-new-from-array"/>
+    <keyword type="function" name="gwy_inventory_get_n_items ()" link="GwyInventory.html#gwy-inventory-get-n-items"/>
+    <keyword type="function" name="gwy_inventory_can_make_copies ()" link="GwyInventory.html#gwy-inventory-can-make-copies"/>
+    <keyword type="function" name="gwy_inventory_is_const ()" link="GwyInventory.html#gwy-inventory-is-const"/>
+    <keyword type="function" name="gwy_inventory_get_item_type ()" link="GwyInventory.html#gwy-inventory-get-item-type"/>
+    <keyword type="function" name="gwy_inventory_get_item ()" link="GwyInventory.html#gwy-inventory-get-item"/>
+    <keyword type="function" name="gwy_inventory_get_item_or_default ()" link="GwyInventory.html#gwy-inventory-get-item-or-default"/>
+    <keyword type="function" name="gwy_inventory_get_nth_item ()" link="GwyInventory.html#gwy-inventory-get-nth-item"/>
+    <keyword type="function" name="gwy_inventory_get_item_position ()" link="GwyInventory.html#gwy-inventory-get-item-position"/>
+    <keyword type="function" name="gwy_inventory_foreach ()" link="GwyInventory.html#gwy-inventory-foreach"/>
+    <keyword type="function" name="gwy_inventory_find ()" link="GwyInventory.html#gwy-inventory-find"/>
+    <keyword type="function" name="gwy_inventory_set_default_item_name ()" link="GwyInventory.html#gwy-inventory-set-default-item-name"/>
+    <keyword type="function" name="gwy_inventory_get_default_item_name ()" link="GwyInventory.html#gwy-inventory-get-default-item-name"/>
+    <keyword type="function" name="gwy_inventory_get_default_item ()" link="GwyInventory.html#gwy-inventory-get-default-item"/>
+    <keyword type="function" name="gwy_inventory_item_updated ()" link="GwyInventory.html#gwy-inventory-item-updated"/>
+    <keyword type="function" name="gwy_inventory_nth_item_updated ()" link="GwyInventory.html#gwy-inventory-nth-item-updated"/>
+    <keyword type="function" name="gwy_inventory_restore_order ()" link="GwyInventory.html#gwy-inventory-restore-order"/>
+    <keyword type="function" name="gwy_inventory_forget_order ()" link="GwyInventory.html#gwy-inventory-forget-order"/>
+    <keyword type="function" name="gwy_inventory_insert_item ()" link="GwyInventory.html#gwy-inventory-insert-item"/>
+    <keyword type="function" name="gwy_inventory_insert_nth_item ()" link="GwyInventory.html#gwy-inventory-insert-nth-item"/>
+    <keyword type="function" name="gwy_inventory_delete_item ()" link="GwyInventory.html#gwy-inventory-delete-item"/>
+    <keyword type="function" name="gwy_inventory_delete_nth_item ()" link="GwyInventory.html#gwy-inventory-delete-nth-item"/>
+    <keyword type="function" name="gwy_inventory_rename_item ()" link="GwyInventory.html#gwy-inventory-rename-item"/>
+    <keyword type="function" name="gwy_inventory_new_item ()" link="GwyInventory.html#gwy-inventory-new-item"/>
+    <keyword type="struct" name="struct GwyInventoryItemType" link="GwyInventory.html#GwyInventoryItemType"/>
+    <keyword type="struct" name="struct GwyInventory" link="GwyInventory.html#GwyInventory-struct"/>
+    <keyword type="struct" name="struct GwyInventoryClass" link="GwyInventory.html#GwyInventoryClass"/>
+    <keyword type="signal" name="The “default-changed” signal" link="GwyInventory.html#GwyInventory-default-changed"/>
+    <keyword type="signal" name="The “item-deleted” signal" link="GwyInventory.html#GwyInventory-item-deleted"/>
+    <keyword type="signal" name="The “item-inserted” signal" link="GwyInventory.html#GwyInventory-item-inserted"/>
+    <keyword type="signal" name="The “item-updated” signal" link="GwyInventory.html#GwyInventory-item-updated"/>
+    <keyword type="signal" name="The “items-reordered” signal" link="GwyInventory.html#GwyInventory-items-reordered"/>
+    <keyword type="function" name="gwy_rand_gen_set_new ()" link="libgwyddion-GwyRandGenSet.html#gwy-rand-gen-set-new" since="2.37"/>
+    <keyword type="function" name="gwy_rand_gen_set_init ()" link="libgwyddion-GwyRandGenSet.html#gwy-rand-gen-set-init" since="2.37"/>
+    <keyword type="function" name="gwy_rand_gen_set_free ()" link="libgwyddion-GwyRandGenSet.html#gwy-rand-gen-set-free" since="2.37"/>
+    <keyword type="function" name="gwy_rand_gen_set_rng ()" link="libgwyddion-GwyRandGenSet.html#gwy-rand-gen-set-rng" since="2.37"/>
+    <keyword type="function" name="gwy_rand_gen_set_range ()" link="libgwyddion-GwyRandGenSet.html#gwy-rand-gen-set-range" since="2.37"/>
+    <keyword type="function" name="gwy_rand_gen_set_uniform ()" link="libgwyddion-GwyRandGenSet.html#gwy-rand-gen-set-uniform" since="2.37"/>
+    <keyword type="function" name="gwy_rand_gen_set_gaussian ()" link="libgwyddion-GwyRandGenSet.html#gwy-rand-gen-set-gaussian" since="2.37"/>
+    <keyword type="function" name="gwy_rand_gen_set_exponential ()" link="libgwyddion-GwyRandGenSet.html#gwy-rand-gen-set-exponential" since="2.37"/>
+    <keyword type="function" name="gwy_rand_gen_set_triangular ()" link="libgwyddion-GwyRandGenSet.html#gwy-rand-gen-set-triangular" since="2.37"/>
+    <keyword type="function" name="gwy_rand_gen_set_multiplier ()" link="libgwyddion-GwyRandGenSet.html#gwy-rand-gen-set-multiplier" since="2.37"/>
+    <keyword type="function" name="gwy_rand_gen_set_double ()" link="libgwyddion-GwyRandGenSet.html#gwy-rand-gen-set-double" since="2.37"/>
+    <keyword type="function" name="gwy_rand_gen_set_int ()" link="libgwyddion-GwyRandGenSet.html#gwy-rand-gen-set-int" since="2.37"/>
+    <keyword type="function" name="gwy_rand_gen_set_choose_shuffle ()" link="libgwyddion-GwyRandGenSet.html#gwy-rand-gen-set-choose-shuffle" since="2.46"/>
+    <keyword type="function" name="gwy_rand_gen_set_fill_doubles ()" link="libgwyddion-GwyRandGenSet.html#gwy-rand-gen-set-fill-doubles" since="2.59"/>
+    <keyword type="function" name="gwy_rand_gen_set_fill_ints ()" link="libgwyddion-GwyRandGenSet.html#gwy-rand-gen-set-fill-ints" since="2.59"/>
+    <keyword type="struct" name="GwyRandGenSet" link="libgwyddion-GwyRandGenSet.html#GwyRandGenSet" since="2.37"/>
+    <keyword type="function" name="gwy_resource_get_name ()" link="GwyResource.html#gwy-resource-get-name"/>
+    <keyword type="function" name="gwy_resource_get_is_modifiable ()" link="GwyResource.html#gwy-resource-get-is-modifiable"/>
+    <keyword type="function" name="gwy_resource_get_is_preferred ()" link="GwyResource.html#gwy-resource-get-is-preferred"/>
+    <keyword type="function" name="gwy_resource_set_is_preferred ()" link="GwyResource.html#gwy-resource-set-is-preferred"/>
+    <keyword type="function" name="gwy_resource_class_get_name ()" link="GwyResource.html#gwy-resource-class-get-name"/>
+    <keyword type="function" name="gwy_resource_class_get_inventory ()" link="GwyResource.html#gwy-resource-class-get-inventory"/>
+    <keyword type="function" name="gwy_resource_class_get_item_type ()" link="GwyResource.html#gwy-resource-class-get-item-type"/>
+    <keyword type="function" name="gwy_resource_use ()" link="GwyResource.html#gwy-resource-use"/>
+    <keyword type="function" name="gwy_resource_release ()" link="GwyResource.html#gwy-resource-release"/>
+    <keyword type="function" name="gwy_resource_is_used ()" link="GwyResource.html#gwy-resource-is-used"/>
+    <keyword type="function" name="gwy_resource_data_changed ()" link="GwyResource.html#gwy-resource-data-changed"/>
+    <keyword type="function" name="gwy_resource_data_saved ()" link="GwyResource.html#gwy-resource-data-saved" since="2.8"/>
+    <keyword type="function" name="gwy_resource_build_filename ()" link="GwyResource.html#gwy-resource-build-filename"/>
+    <keyword type="function" name="gwy_resource_dump ()" link="GwyResource.html#gwy-resource-dump"/>
+    <keyword type="function" name="gwy_resource_parse ()" link="GwyResource.html#gwy-resource-parse"/>
+    <keyword type="function" name="gwy_resource_rename ()" link="GwyResource.html#gwy-resource-rename" since="2.51"/>
+    <keyword type="function" name="gwy_resource_delete ()" link="GwyResource.html#gwy-resource-delete" since="2.51"/>
+    <keyword type="function" name="gwy_resource_class_load ()" link="GwyResource.html#gwy-resource-class-load"/>
+    <keyword type="function" name="gwy_resource_class_mkdir ()" link="GwyResource.html#gwy-resource-class-mkdir"/>
+    <keyword type="function" name="gwy_resource_classes_finalize ()" link="GwyResource.html#gwy-resource-classes-finalize" since="2.8"/>
+    <keyword type="struct" name="struct GwyResource" link="GwyResource.html#GwyResource-struct"/>
+    <keyword type="struct" name="struct GwyResourceClass" link="GwyResource.html#GwyResourceClass"/>
+    <keyword type="property" name="The “is-const” property" link="GwyResource.html#GwyResource--is-const"/>
+    <keyword type="property" name="The “is-preferred” property" link="GwyResource.html#GwyResource--is-preferred"/>
+    <keyword type="property" name="The “name” property" link="GwyResource.html#GwyResource--name"/>
+    <keyword type="signal" name="The “data-changed” signal" link="GwyResource.html#GwyResource-data-changed"/>
+    <keyword type="macro" name="gwy_string_list_duplicate()" link="GwyStringList.html#gwy-string-list-duplicate"/>
+    <keyword type="function" name="gwy_string_list_new ()" link="GwyStringList.html#gwy-string-list-new"/>
+    <keyword type="function" name="gwy_string_list_append ()" link="GwyStringList.html#gwy-string-list-append"/>
+    <keyword type="function" name="gwy_string_list_append_take ()" link="GwyStringList.html#gwy-string-list-append-take" since="2.35"/>
+    <keyword type="function" name="gwy_string_list_get_length ()" link="GwyStringList.html#gwy-string-list-get-length"/>
+    <keyword type="function" name="gwy_string_list_get ()" link="GwyStringList.html#gwy-string-list-get"/>
+    <keyword type="function" name="gwy_string_list_clear ()" link="GwyStringList.html#gwy-string-list-clear" since="2.35"/>
+    <keyword type="struct" name="struct GwyStringList" link="GwyStringList.html#GwyStringList-struct"/>
+    <keyword type="struct" name="struct GwyStringListClass" link="GwyStringList.html#GwyStringListClass"/>
+    <keyword type="signal" name="The “value-changed” signal" link="GwyStringList.html#GwyStringList-value-changed"/>
+    <keyword type="function" name="gwy_results_new ()" link="GwyResults.html#gwy-results-new" since="2.50"/>
+    <keyword type="function" name="gwy_results_copy ()" link="GwyResults.html#gwy-results-copy" since="2.50"/>
+    <keyword type="function" name="gwy_results_add_header ()" link="GwyResults.html#gwy-results-add-header" since="2.50"/>
+    <keyword type="function" name="gwy_results_add_separator ()" link="GwyResults.html#gwy-results-add-separator" since="2.50"/>
+    <keyword type="function" name="gwy_results_add_value ()" link="GwyResults.html#gwy-results-add-value" since="2.50"/>
+    <keyword type="function" name="gwy_results_add_format ()" link="GwyResults.html#gwy-results-add-format" since="2.50"/>
+    <keyword type="function" name="gwy_results_add_value_str ()" link="GwyResults.html#gwy-results-add-value-str" since="2.50"/>
+    <keyword type="function" name="gwy_results_add_value_x ()" link="GwyResults.html#gwy-results-add-value-x" since="2.50"/>
+    <keyword type="function" name="gwy_results_add_value_y ()" link="GwyResults.html#gwy-results-add-value-y" since="2.61"/>
+    <keyword type="function" name="gwy_results_add_value_z ()" link="GwyResults.html#gwy-results-add-value-z" since="2.50"/>
+    <keyword type="function" name="gwy_results_add_value_plain ()" link="GwyResults.html#gwy-results-add-value-plain" since="2.50"/>
+    <keyword type="function" name="gwy_results_add_value_int ()" link="GwyResults.html#gwy-results-add-value-int" since="2.50"/>
+    <keyword type="function" name="gwy_results_add_value_angle ()" link="GwyResults.html#gwy-results-add-value-angle" since="2.50"/>
+    <keyword type="function" name="gwy_results_add_value_percents ()" link="GwyResults.html#gwy-results-add-value-percents" since="2.50"/>
+    <keyword type="function" name="gwy_results_add_value_yesno ()" link="GwyResults.html#gwy-results-add-value-yesno" since="2.50"/>
+    <keyword type="function" name="gwy_results_add_covariance_matrix ()" link="GwyResults.html#gwy-results-add-covariance-matrix" since="2.50"/>
+    <keyword type="function" name="gwy_results_add_covariance_matrixv ()" link="GwyResults.html#gwy-results-add-covariance-matrixv" since="2.50"/>
+    <keyword type="function" name="gwy_results_bind_formats ()" link="GwyResults.html#gwy-results-bind-formats" since="2.50"/>
+    <keyword type="function" name="gwy_results_unbind_formats ()" link="GwyResults.html#gwy-results-unbind-formats" since="2.50"/>
+    <keyword type="function" name="gwy_results_set_unit ()" link="GwyResults.html#gwy-results-set-unit" since="2.50"/>
+    <keyword type="function" name="gwy_results_set_unit_str ()" link="GwyResults.html#gwy-results-set-unit-str" since="2.50"/>
+    <keyword type="function" name="gwy_results_fill_values ()" link="GwyResults.html#gwy-results-fill-values" since="2.50"/>
+    <keyword type="function" name="gwy_results_fill_values_with_errors ()" link="GwyResults.html#gwy-results-fill-values-with-errors" since="2.50"/>
+    <keyword type="function" name="gwy_results_fill_format ()" link="GwyResults.html#gwy-results-fill-format" since="2.50"/>
+    <keyword type="function" name="gwy_results_fill_covariance_matrix ()" link="GwyResults.html#gwy-results-fill-covariance-matrix" since="2.50"/>
+    <keyword type="function" name="gwy_results_set_na ()" link="GwyResults.html#gwy-results-set-na" since="2.50"/>
+    <keyword type="function" name="gwy_results_set_nav ()" link="GwyResults.html#gwy-results-set-nav" since="2.50"/>
+    <keyword type="function" name="gwy_results_create_report ()" link="GwyResults.html#gwy-results-create-report" since="2.50"/>
+    <keyword type="function" name="gwy_results_get_label ()" link="GwyResults.html#gwy-results-get-label" since="2.50"/>
+    <keyword type="function" name="gwy_results_get_symbol ()" link="GwyResults.html#gwy-results-get-symbol" since="2.50"/>
+    <keyword type="function" name="gwy_results_get_label_with_symbol ()" link="GwyResults.html#gwy-results-get-label-with-symbol" since="2.50"/>
+    <keyword type="function" name="gwy_results_get_value ()" link="GwyResults.html#gwy-results-get-value" since="2.50"/>
+    <keyword type="function" name="gwy_results_get_error ()" link="GwyResults.html#gwy-results-get-error" since="2.50"/>
+    <keyword type="function" name="gwy_results_get_value_with_error ()" link="GwyResults.html#gwy-results-get-value-with-error" since="2.50"/>
+    <keyword type="function" name="gwy_results_get_units ()" link="GwyResults.html#gwy-results-get-units" since="2.50"/>
+    <keyword type="function" name="gwy_results_get_full ()" link="GwyResults.html#gwy-results-get-full" since="2.50"/>
+    <keyword type="function" name="gwy_results_value_is_na ()" link="GwyResults.html#gwy-results-value-is-na" since="2.50"/>
+    <keyword type="function" name="gwy_format_result_table_row ()" link="GwyResults.html#gwy-format-result-table-row" since="2.50"/>
+    <keyword type="function" name="gwy_format_result_table_rowv ()" link="GwyResults.html#gwy-format-result-table-rowv" since="2.50"/>
+    <keyword type="function" name="gwy_format_result_table_strings ()" link="GwyResults.html#gwy-format-result-table-strings" since="2.50"/>
+    <keyword type="function" name="gwy_format_result_table_stringsv ()" link="GwyResults.html#gwy-format-result-table-stringsv" since="2.50"/>
+    <keyword type="function" name="gwy_format_result_table_mixed ()" link="GwyResults.html#gwy-format-result-table-mixed" since="2.54"/>
+    <keyword type="enum" name="enum GwyResultsValueType" link="GwyResults.html#GwyResultsValueType" since="2.50"/>
+    <keyword type="enum" name="enum GwyResultsReportType" link="GwyResults.html#GwyResultsReportType" since="2.50"/>
+    <keyword type="struct" name="struct GwyResults" link="GwyResults.html#GwyResults-struct"/>
+    <keyword type="struct" name="struct GwyResultsClass" link="GwyResults.html#GwyResultsClass"/>
+    <keyword type="function" name="gwy_md5_get_digest ()" link="libgwyddion-gwymd5.html#gwy-md5-get-digest"/>
+    <keyword type="macro" name="gwy_debug_objects_creation()" link="libgwyddion-gwydebugobjects.html#gwy-debug-objects-creation"/>
+    <keyword type="function" name="gwy_debug_objects_creation_detailed ()" link="libgwyddion-gwydebugobjects.html#gwy-debug-objects-creation-detailed"/>
+    <keyword type="function" name="gwy_debug_objects_enable ()" link="libgwyddion-gwydebugobjects.html#gwy-debug-objects-enable"/>
+    <keyword type="function" name="gwy_debug_objects_dump_to_file ()" link="libgwyddion-gwydebugobjects.html#gwy-debug-objects-dump-to-file"/>
+    <keyword type="function" name="gwy_debug_objects_clear ()" link="libgwyddion-gwydebugobjects.html#gwy-debug-objects-clear"/>
+    <keyword type="enum" name="enum GwyDebugObjectsDumpFlags" link="libgwyddion-gwydebugobjects.html#GwyDebugObjectsDumpFlags"/>
+    <keyword type="constant" name="GWY_SI_UNIT_FORMAT_NONE" link="libgwyddion-gwyddionenums.html#GWY-SI-UNIT-FORMAT-NONE:CAPS"/>
+    <keyword type="constant" name="GWY_SI_UNIT_FORMAT_PLAIN" link="libgwyddion-gwyddionenums.html#GWY-SI-UNIT-FORMAT-PLAIN:CAPS"/>
+    <keyword type="constant" name="GWY_SI_UNIT_FORMAT_MARKUP" link="libgwyddion-gwyddionenums.html#GWY-SI-UNIT-FORMAT-MARKUP:CAPS"/>
+    <keyword type="constant" name="GWY_SI_UNIT_FORMAT_VFMARKUP" link="libgwyddion-gwyddionenums.html#GWY-SI-UNIT-FORMAT-VFMARKUP:CAPS"/>
+    <keyword type="constant" name="GWY_SI_UNIT_FORMAT_TEX" link="libgwyddion-gwyddionenums.html#GWY-SI-UNIT-FORMAT-TEX:CAPS"/>
+    <keyword type="constant" name="GWY_SI_UNIT_FORMAT_VFTEX" link="libgwyddion-gwyddionenums.html#GWY-SI-UNIT-FORMAT-VFTEX:CAPS"/>
+    <keyword type="constant" name="GWY_SI_UNIT_FORMAT_UNICODE" link="libgwyddion-gwyddionenums.html#GWY-SI-UNIT-FORMAT-UNICODE:CAPS"/>
+    <keyword type="constant" name="GWY_SI_UNIT_FORMAT_VFUNICODE" link="libgwyddion-gwyddionenums.html#GWY-SI-UNIT-FORMAT-VFUNICODE:CAPS"/>
+    <keyword type="constant" name="GWY_NLFIT_PARAM_ANGLE" link="libgwyddion-gwyddionenums.html#GWY-NLFIT-PARAM-ANGLE:CAPS"/>
+    <keyword type="constant" name="GWY_NLFIT_PARAM_ABSVAL" link="libgwyddion-gwyddionenums.html#GWY-NLFIT-PARAM-ABSVAL:CAPS"/>
+    <keyword type="constant" name="GWY_PERCENTILE_INTERPOLATION_LINEAR" link="libgwyddion-gwyddionenums.html#GWY-PERCENTILE-INTERPOLATION-LINEAR:CAPS"/>
+    <keyword type="constant" name="GWY_PERCENTILE_INTERPOLATION_LOWER" link="libgwyddion-gwyddionenums.html#GWY-PERCENTILE-INTERPOLATION-LOWER:CAPS"/>
+    <keyword type="constant" name="GWY_PERCENTILE_INTERPOLATION_HIGHER" link="libgwyddion-gwyddionenums.html#GWY-PERCENTILE-INTERPOLATION-HIGHER:CAPS"/>
+    <keyword type="constant" name="GWY_PERCENTILE_INTERPOLATION_NEAREST" link="libgwyddion-gwyddionenums.html#GWY-PERCENTILE-INTERPOLATION-NEAREST:CAPS"/>
+    <keyword type="constant" name="GWY_PERCENTILE_INTERPOLATION_MIDPOINT" link="libgwyddion-gwyddionenums.html#GWY-PERCENTILE-INTERPOLATION-MIDPOINT:CAPS"/>
+    <keyword type="constant" name="GWY_EXPR_ERROR_CLOSING_PARENTHESIS" link="libgwyddion-GwyExpr.html#GWY-EXPR-ERROR-CLOSING-PARENTHESIS:CAPS"/>
+    <keyword type="constant" name="GWY_EXPR_ERROR_EMPTY" link="libgwyddion-GwyExpr.html#GWY-EXPR-ERROR-EMPTY:CAPS"/>
+    <keyword type="constant" name="GWY_EXPR_ERROR_EMPTY_PARENTHESES" link="libgwyddion-GwyExpr.html#GWY-EXPR-ERROR-EMPTY-PARENTHESES:CAPS"/>
+    <keyword type="constant" name="GWY_EXPR_ERROR_GARBAGE" link="libgwyddion-GwyExpr.html#GWY-EXPR-ERROR-GARBAGE:CAPS"/>
+    <keyword type="constant" name="GWY_EXPR_ERROR_INVALID_ARGUMENT" link="libgwyddion-GwyExpr.html#GWY-EXPR-ERROR-INVALID-ARGUMENT:CAPS"/>
+    <keyword type="constant" name="GWY_EXPR_ERROR_INVALID_TOKEN" link="libgwyddion-GwyExpr.html#GWY-EXPR-ERROR-INVALID-TOKEN:CAPS"/>
+    <keyword type="constant" name="GWY_EXPR_ERROR_MISSING_ARGUMENT" link="libgwyddion-GwyExpr.html#GWY-EXPR-ERROR-MISSING-ARGUMENT:CAPS"/>
+    <keyword type="constant" name="GWY_EXPR_ERROR_NOT_EXECUTABLE" link="libgwyddion-GwyExpr.html#GWY-EXPR-ERROR-NOT-EXECUTABLE:CAPS"/>
+    <keyword type="constant" name="GWY_EXPR_ERROR_OPENING_PARENTHESIS" link="libgwyddion-GwyExpr.html#GWY-EXPR-ERROR-OPENING-PARENTHESIS:CAPS"/>
+    <keyword type="constant" name="GWY_EXPR_ERROR_STRAY_COMMA" link="libgwyddion-GwyExpr.html#GWY-EXPR-ERROR-STRAY-COMMA:CAPS"/>
+    <keyword type="constant" name="GWY_EXPR_ERROR_UNRESOLVED_IDENTIFIERS" link="libgwyddion-GwyExpr.html#GWY-EXPR-ERROR-UNRESOLVED-IDENTIFIERS:CAPS"/>
+    <keyword type="constant" name="GWY_EXPR_ERROR_CONSTANT_NAME" link="libgwyddion-GwyExpr.html#GWY-EXPR-ERROR-CONSTANT-NAME:CAPS"/>
+    <keyword type="constant" name="GWY_RAW_DATA_SINT8" link="libgwyddion-gwyutils.html#GWY-RAW-DATA-SINT8:CAPS"/>
+    <keyword type="constant" name="GWY_RAW_DATA_UINT8" link="libgwyddion-gwyutils.html#GWY-RAW-DATA-UINT8:CAPS"/>
+    <keyword type="constant" name="GWY_RAW_DATA_SINT16" link="libgwyddion-gwyutils.html#GWY-RAW-DATA-SINT16:CAPS"/>
+    <keyword type="constant" name="GWY_RAW_DATA_UINT16" link="libgwyddion-gwyutils.html#GWY-RAW-DATA-UINT16:CAPS"/>
+    <keyword type="constant" name="GWY_RAW_DATA_SINT32" link="libgwyddion-gwyutils.html#GWY-RAW-DATA-SINT32:CAPS"/>
+    <keyword type="constant" name="GWY_RAW_DATA_UINT32" link="libgwyddion-gwyutils.html#GWY-RAW-DATA-UINT32:CAPS"/>
+    <keyword type="constant" name="GWY_RAW_DATA_SINT64" link="libgwyddion-gwyutils.html#GWY-RAW-DATA-SINT64:CAPS"/>
+    <keyword type="constant" name="GWY_RAW_DATA_UINT64" link="libgwyddion-gwyutils.html#GWY-RAW-DATA-UINT64:CAPS"/>
+    <keyword type="constant" name="GWY_RAW_DATA_HALF" link="libgwyddion-gwyutils.html#GWY-RAW-DATA-HALF:CAPS"/>
+    <keyword type="constant" name="GWY_RAW_DATA_FLOAT" link="libgwyddion-gwyutils.html#GWY-RAW-DATA-FLOAT:CAPS"/>
+    <keyword type="constant" name="GWY_RAW_DATA_REAL" link="libgwyddion-gwyutils.html#GWY-RAW-DATA-REAL:CAPS"/>
+    <keyword type="constant" name="GWY_RAW_DATA_DOUBLE" link="libgwyddion-gwyutils.html#GWY-RAW-DATA-DOUBLE:CAPS"/>
+    <keyword type="constant" name="GWY_BYTE_ORDER_NATIVE" link="libgwyddion-gwyutils.html#GWY-BYTE-ORDER-NATIVE:CAPS"/>
+    <keyword type="constant" name="GWY_BYTE_ORDER_LITTLE_ENDIAN" link="libgwyddion-gwyutils.html#GWY-BYTE-ORDER-LITTLE-ENDIAN:CAPS"/>
+    <keyword type="constant" name="GWY_BYTE_ORDER_BIG_ENDIAN" link="libgwyddion-gwyutils.html#GWY-BYTE-ORDER-BIG-ENDIAN:CAPS"/>
+    <keyword type="constant" name="GWY_BYTE_ORDER_IMPLICIT" link="libgwyddion-gwyutils.html#GWY-BYTE-ORDER-IMPLICIT:CAPS"/>
+    <keyword type="constant" name="GWY_RESULTS_VALUE_FLOAT" link="GwyResults.html#GWY-RESULTS-VALUE-FLOAT:CAPS"/>
+    <keyword type="constant" name="GWY_RESULTS_VALUE_STRING" link="GwyResults.html#GWY-RESULTS-VALUE-STRING:CAPS"/>
+    <keyword type="constant" name="GWY_RESULTS_VALUE_INT" link="GwyResults.html#GWY-RESULTS-VALUE-INT:CAPS"/>
+    <keyword type="constant" name="GWY_RESULTS_VALUE_YESNO" link="GwyResults.html#GWY-RESULTS-VALUE-YESNO:CAPS"/>
+    <keyword type="constant" name="GWY_RESULTS_REPORT_COLON" link="GwyResults.html#GWY-RESULTS-REPORT-COLON:CAPS"/>
+    <keyword type="constant" name="GWY_RESULTS_REPORT_TABSEP" link="GwyResults.html#GWY-RESULTS-REPORT-TABSEP:CAPS"/>
+    <keyword type="constant" name="GWY_RESULTS_REPORT_CSV" link="GwyResults.html#GWY-RESULTS-REPORT-CSV:CAPS"/>
+    <keyword type="constant" name="GWY_RESULTS_REPORT_MACHINE" link="GwyResults.html#GWY-RESULTS-REPORT-MACHINE:CAPS"/>
+    <keyword type="constant" name="GWY_DEBUG_OBJECTS_DUMP_ONLY_ALIVE" link="libgwyddion-gwydebugobjects.html#GWY-DEBUG-OBJECTS-DUMP-ONLY-ALIVE:CAPS"/>
+    <keyword type="member" name="GwySerializeSpec.ctype" link="GwySerializable.html#GwySerializeSpec.ctype"/>
+    <keyword type="member" name="GwySerializeSpec.name" link="GwySerializable.html#GwySerializeSpec.name"/>
+    <keyword type="member" name="GwySerializeSpec.value" link="GwySerializable.html#GwySerializeSpec.value"/>
+    <keyword type="member" name="GwySerializeSpec.array-size" link="GwySerializable.html#GwySerializeSpec.array-size"/>
+    <keyword type="member" name="GwySerializeItem.ctype" link="GwySerializable.html#GwySerializeItem.ctype"/>
+    <keyword type="member" name="GwySerializeItem.name" link="GwySerializable.html#GwySerializeItem.name"/>
+    <keyword type="member" name="GwySerializeItem.value" link="GwySerializable.html#GwySerializeItem.value"/>
+    <keyword type="member" name="GwySerializeItem.array-size" link="GwySerializable.html#GwySerializeItem.array-size"/>
+    <keyword type="member" name="GwySerializableIface.serialize" link="GwySerializable.html#GwySerializableIface.serialize"/>
+    <keyword type="member" name="GwySerializableIface.deserialize" link="GwySerializable.html#GwySerializableIface.deserialize"/>
+    <keyword type="member" name="GwySerializableIface.clone" link="GwySerializable.html#GwySerializableIface.clone"/>
+    <keyword type="member" name="GwySerializableIface.duplicate" link="GwySerializable.html#GwySerializableIface.duplicate"/>
+    <keyword type="member" name="GwySerializableIface.get-size" link="GwySerializable.html#GwySerializableIface.get-size"/>
+    <keyword type="member" name="GwyTextEntity.entity" link="libgwyddion-gwyentities.html#GwyTextEntity.entity"/>
+    <keyword type="member" name="GwyTextEntity.utf8" link="libgwyddion-gwyentities.html#GwyTextEntity.utf8"/>
+    <keyword type="member" name="GwyXY.x" link="libgwyddion-Math.html#GwyXY.x"/>
+    <keyword type="member" name="GwyXY.y" link="libgwyddion-Math.html#GwyXY.y"/>
+    <keyword type="member" name="GwyXYZ.x" link="libgwyddion-Math.html#GwyXYZ.x"/>
+    <keyword type="member" name="GwyXYZ.y" link="libgwyddion-Math.html#GwyXYZ.y"/>
+    <keyword type="member" name="GwyXYZ.z" link="libgwyddion-Math.html#GwyXYZ.z"/>
+    <keyword type="member" name="GwyNLFitter.fmarq" link="libgwyddion-GwyNLFitter.html#GwyNLFitter.fmarq"/>
+    <keyword type="member" name="GwyNLFitter.dmarq" link="libgwyddion-GwyNLFitter.html#GwyNLFitter.dmarq"/>
+    <keyword type="member" name="GwyNLFitter.maxiter" link="libgwyddion-GwyNLFitter.html#GwyNLFitter.maxiter"/>
+    <keyword type="member" name="GwyNLFitter.eval" link="libgwyddion-GwyNLFitter.html#GwyNLFitter.eval"/>
+    <keyword type="member" name="GwyNLFitter.covar" link="libgwyddion-GwyNLFitter.html#GwyNLFitter.covar"/>
+    <keyword type="member" name="GwyNLFitter.dispersion" link="libgwyddion-GwyNLFitter.html#GwyNLFitter.dispersion"/>
+    <keyword type="member" name="GwyNLFitter.mfi" link="libgwyddion-GwyNLFitter.html#GwyNLFitter.mfi"/>
+    <keyword type="member" name="GwyNLFitter.mdec" link="libgwyddion-GwyNLFitter.html#GwyNLFitter.mdec"/>
+    <keyword type="member" name="GwyNLFitter.minc" link="libgwyddion-GwyNLFitter.html#GwyNLFitter.minc"/>
+    <keyword type="member" name="GwyNLFitter.mtol" link="libgwyddion-GwyNLFitter.html#GwyNLFitter.mtol"/>
+    <keyword type="member" name="GwySIValueFormat.magnitude" link="libgwyddion-GwySIValueFormat.html#GwySIValueFormat.magnitude"/>
+    <keyword type="member" name="GwySIValueFormat.precision" link="libgwyddion-GwySIValueFormat.html#GwySIValueFormat.precision"/>
+    <keyword type="member" name="GwySIValueFormat.units" link="libgwyddion-GwySIValueFormat.html#GwySIValueFormat.units"/>
+    <keyword type="member" name="GwyEnum-struct.name" link="GwyEnum.html#GwyEnum-struct.name"/>
+    <keyword type="member" name="GwyEnum-struct.value" link="GwyEnum.html#GwyEnum-struct.value"/>
+    <keyword type="member" name="GwyInventoryItemType.type" link="GwyInventory.html#GwyInventoryItemType.type"/>
+    <keyword type="member" name="GwyInventoryItemType.watchable-signal" link="GwyInventory.html#GwyInventoryItemType.watchable-signal"/>
+    <keyword type="member" name="GwyInventoryItemType.is-fixed" link="GwyInventory.html#GwyInventoryItemType.is-fixed"/>
+    <keyword type="member" name="GwyInventoryItemType.get-name" link="GwyInventory.html#GwyInventoryItemType.get-name"/>
+    <keyword type="member" name="GwyInventoryItemType.compare" link="GwyInventory.html#GwyInventoryItemType.compare"/>
+    <keyword type="member" name="GwyInventoryItemType.rename" link="GwyInventory.html#GwyInventoryItemType.rename"/>
+    <keyword type="member" name="GwyInventoryItemType.dismantle" link="GwyInventory.html#GwyInventoryItemType.dismantle"/>
+    <keyword type="member" name="GwyInventoryItemType.copy" link="GwyInventory.html#GwyInventoryItemType.copy"/>
+    <keyword type="member" name="GwyInventoryItemType.get-traits" link="GwyInventory.html#GwyInventoryItemType.get-traits"/>
+    <keyword type="member" name="GwyInventoryItemType.get-trait-name" link="GwyInventory.html#GwyInventoryItemType.get-trait-name"/>
+    <keyword type="member" name="GwyInventoryItemType.get-trait-value" link="GwyInventory.html#GwyInventoryItemType.get-trait-value"/>
+    <keyword type="member" name="GwyResourceClass.inventory" link="GwyResource.html#GwyResourceClass.inventory"/>
+    <keyword type="member" name="GwyResourceClass.name" link="GwyResource.html#GwyResourceClass.name"/>
+    <keyword type="member" name="GwyResourceClass.item-type" link="GwyResource.html#GwyResourceClass.item-type"/>
+    <keyword type="member" name="GwyResourceClass.data-changed" link="GwyResource.html#GwyResourceClass.data-changed"/>
+    <keyword type="member" name="GwyResourceClass.use" link="GwyResource.html#GwyResourceClass.use"/>
+    <keyword type="member" name="GwyResourceClass.release" link="GwyResource.html#GwyResourceClass.release"/>
+    <keyword type="member" name="GwyResourceClass.dump" link="GwyResource.html#GwyResourceClass.dump"/>
+    <keyword type="member" name="GwyResourceClass.parse" link="GwyResource.html#GwyResourceClass.parse"/>
+  </functions>
+</book>

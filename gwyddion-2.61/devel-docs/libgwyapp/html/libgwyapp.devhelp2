@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="Gwyddion Application Library Reference Manual" link="index.html" author="" name="libgwyapp" version="2" language="c" online="http://gwyddion.net/documentation/libgwyapp/index.php">
+  <chapters>
+    <sub name="app" link="libgwyapp-app.html"/>
+    <sub name="data-browser" link="libgwyapp-data-browser.html"/>
+    <sub name="GwyDataChooser" link="GwyDataChooser.html"/>
+    <sub name="settings" link="libgwyapp-settings.html"/>
+    <sub name="file" link="libgwyapp-file.html"/>
+    <sub name="filelist" link="libgwyapp-filelist.html"/>
+    <sub name="funcuse" link="libgwyapp-funcuse.html"/>
+    <sub name="GwyResourceEditor" link="GwyResourceEditor.html"/>
+    <sub name="GwyGLMaterialEditor" link="libgwyapp-GwyGLMaterialEditor.html"/>
+    <sub name="GwyGradientEditor" link="libgwyapp-GwyGradientEditor.html"/>
+    <sub name="menu" link="libgwyapp-menu.html"/>
+    <sub name="meta" link="libgwyapp-meta.html"/>
+    <sub name="undo" link="libgwyapp-undo.html"/>
+    <sub name="help" link="libgwyapp-help.html"/>
+    <sub name="log" link="libgwyapp-log.html"/>
+    <sub name="logging" link="libgwyapp-logging.html"/>
+    <sub name="GwyParamDef" link="GwyParamDef.html"/>
+    <sub name="GwyParams" link="GwyParams.html"/>
+    <sub name="GwyParamTable" link="GwyParamTable.html"/>
+    <sub name="GwyDialog" link="GwyDialog.html"/>
+    <sub name="GwyTool" link="GwyTool.html"/>
+    <sub name="GwyPlainTool" link="GwyPlainTool.html"/>
+    <sub name="module utils" link="libgwyapp-module-utils.html"/>
+    <sub name="file module utils" link="libgwyapp-file-module-utils.html"/>
+    <sub name="synth module utils" link="libgwyapp-synth-module-utils.html"/>
+    <sub name="GwyResultsExport" link="GwyResultsExport.html"/>
+    <sub name="Validate" link="libgwyapp-Validate.html"/>
+    <sub name="wait" link="libgwyapp-wait.html"/>
+    <sub name="Index of all symbols" link="api-index-all.html"/>
+    <sub name="Index of deprecated symbols" link="api-index-deprec.html"/>
+    <sub name="Index of new symbols in 2.3" link="api-index-2-3.html"/>
+    <sub name="Index of new symbols in 2.7" link="api-index-2-7.html"/>
+    <sub name="Index of new symbols in 2.9" link="api-index-2-9.html"/>
+    <sub name="Index of new symbols in 2.14" link="api-index-2-14.html"/>
+    <sub name="Index of new symbols in 2.18" link="api-index-2-18.html"/>
+    <sub name="Index of new symbols in 2.21" link="api-index-2-21.html"/>
+    <sub name="Index of new symbols in 2.23" link="api-index-2-23.html"/>
+    <sub name="Index of new symbols in 2.32" link="api-index-2-32.html"/>
+    <sub name="Index of new symbols in 2.33" link="api-index-2-33.html"/>
+    <sub name="Index of new symbols in 2.35" link="api-index-2-35.html"/>
+    <sub name="Index of new symbols in 2.38" link="api-index-2-38.html"/>
+    <sub name="Index of new symbols in 2.41" link="api-index-2-41.html"/>
+    <sub name="Index of new symbols in 2.42" link="api-index-2-42.html"/>
+    <sub name="Index of new symbols in 2.43" link="api-index-2-43.html"/>
+    <sub name="Index of new symbols in 2.45" link="api-index-2-45.html"/>
+    <sub name="Index of new symbols in 2.46" link="api-index-2-46.html"/>
+    <sub name="Index of new symbols in 2.47" link="api-index-2-47.html"/>
+    <sub name="Index of new symbols in 2.48" link="api-index-2-48.html"/>
+    <sub name="Index of new symbols in 2.49" link="api-index-2-49.html"/>
+    <sub name="Index of new symbols in 2.50" link="api-index-2-50.html"/>
+    <sub name="Index of new symbols in 2.51" link="api-index-2-51.html"/>
+    <sub name="Index of new symbols in 2.53" link="api-index-2-53.html"/>
+    <sub name="Index of new symbols in 2.54" link="api-index-2-54.html"/>
+    <sub name="Index of new symbols in 2.55" link="api-index-2-55.html"/>
+    <sub name="Index of new symbols in 2.59" link="api-index-2-59.html"/>
+    <sub name="Index of new symbols in 2.60" link="api-index-2-60.html"/>
+    <sub name="Index of new symbols in 2.61" link="api-index-2-61.html"/>
+  </chapters>
+  <functions>
+    <keyword type="function" name="gwy_app_switch_tool ()" link="libgwyapp-app.html#gwy-app-switch-tool"/>
+    <keyword type="function" name="gwy_app_current_tool_name ()" link="libgwyapp-app.html#gwy-app-current-tool-name" since="2.38"/>
+    <keyword type="function" name="gwy_app_current_tool ()" link="libgwyapp-app.html#gwy-app-current-tool" since="2.55"/>
+    <keyword type="function" name="gwy_app_add_main_accel_group ()" link="libgwyapp-app.html#gwy-app-add-main-accel-group"/>
+    <keyword type="function" name="gwy_app_save_window_position ()" link="libgwyapp-app.html#gwy-app-save-window-position"/>
+    <keyword type="function" name="gwy_app_restore_window_position ()" link="libgwyapp-app.html#gwy-app-restore-window-position"/>
+    <keyword type="function" name="gwy_app_main_window_get ()" link="libgwyapp-app.html#gwy-app-main-window-get"/>
+    <keyword type="function" name="gwy_app_main_window_set ()" link="libgwyapp-app.html#gwy-app-main-window-set"/>
+    <keyword type="function" name="gwy_app_data_view_change_mask_color ()" link="libgwyapp-app.html#gwy-app-data-view-change-mask-color"/>
+    <keyword type="function" name="gwy_app_quit ()" link="libgwyapp-app.html#gwy-app-quit"/>
+    <keyword type="function" name="gwy_app_init_widget_styles ()" link="libgwyapp-app.html#gwy-app-init-widget-styles"/>
+    <keyword type="function" name="gwy_app_init_i18n ()" link="libgwyapp-app.html#gwy-app-init-i18n"/>
+    <keyword type="function" name="gwy_app_init_common ()" link="libgwyapp-app.html#gwy-app-init-common"/>
+    <keyword type="function" name="gwy_app_init_nongui ()" link="libgwyapp-app.html#gwy-app-init-nongui" since="2.55"/>
+    <keyword type="function" name="GwyAppDataForeachFunc ()" link="libgwyapp-data-browser.html#GwyAppDataForeachFunc"/>
+    <keyword type="function" name="GwyAppDataWatchFunc ()" link="libgwyapp-data-browser.html#GwyAppDataWatchFunc" since="2.21"/>
+    <keyword type="function" name="gwy_app_data_browser_add ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-add"/>
+    <keyword type="function" name="gwy_app_data_browser_remove ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-remove"/>
+    <keyword type="function" name="gwy_app_data_browser_merge ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-merge" since="2.7"/>
+    <keyword type="function" name="gwy_app_data_browser_get ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-get" since="2.41"/>
+    <keyword type="function" name="gwy_app_data_browser_get_number ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-get-number" since="2.41"/>
+    <keyword type="function" name="gwy_app_data_browser_reset_visibility ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-reset-visibility"/>
+    <keyword type="function" name="gwy_app_data_browser_set_keep_invisible ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-set-keep-invisible"/>
+    <keyword type="function" name="gwy_app_data_browser_get_keep_invisible ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-get-keep-invisible"/>
+    <keyword type="function" name="gwy_app_data_browser_select_data_view ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-select-data-view"/>
+    <keyword type="function" name="gwy_app_data_browser_select_graph ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-select-graph"/>
+    <keyword type="function" name="gwy_app_data_browser_select_spectra ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-select-spectra" since="2.7"/>
+    <keyword type="function" name="gwy_app_data_browser_select_volume ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-select-volume" since="2.32"/>
+    <keyword type="function" name="gwy_app_data_browser_select_xyz ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-select-xyz" since="2.45"/>
+    <keyword type="function" name="gwy_app_data_browser_select_curve_map ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-select-curve-map" since="2.60"/>
+    <keyword type="function" name="gwy_app_data_browser_add_data_field ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-add-data-field"/>
+    <keyword type="function" name="gwy_app_data_browser_add_graph_model ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-add-graph-model"/>
+    <keyword type="function" name="gwy_app_data_browser_add_spectra ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-add-spectra" since="2.7"/>
+    <keyword type="function" name="gwy_app_data_browser_add_brick ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-add-brick" since="2.32"/>
+    <keyword type="function" name="gwy_app_data_browser_add_surface ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-add-surface" since="2.45"/>
+    <keyword type="function" name="gwy_app_data_browser_add_lawn ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-add-lawn" since="2.60"/>
+    <keyword type="function" name="gwy_app_data_browser_get_current ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-get-current"/>
+    <keyword type="function" name="gwy_app_data_browser_get_data_ids ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-get-data-ids"/>
+    <keyword type="function" name="gwy_app_data_browser_get_graph_ids ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-get-graph-ids"/>
+    <keyword type="function" name="gwy_app_data_browser_get_spectra_ids ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-get-spectra-ids" since="2.7"/>
+    <keyword type="function" name="gwy_app_data_browser_get_volume_ids ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-get-volume-ids" since="2.33"/>
+    <keyword type="function" name="gwy_app_data_browser_get_xyz_ids ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-get-xyz-ids" since="2.45"/>
+    <keyword type="function" name="gwy_app_data_browser_get_curve_map_ids ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-get-curve-map-ids" since="2.60"/>
+    <keyword type="function" name="gwy_app_data_browser_find_data_by_title ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-find-data-by-title" since="2.21"/>
+    <keyword type="function" name="gwy_app_data_browser_find_graphs_by_title ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-find-graphs-by-title" since="2.21"/>
+    <keyword type="function" name="gwy_app_data_browser_find_spectra_by_title ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-find-spectra-by-title" since="2.21"/>
+    <keyword type="function" name="gwy_app_data_browser_find_volume_by_title ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-find-volume-by-title" since="2.45"/>
+    <keyword type="function" name="gwy_app_data_browser_find_xyz_by_title ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-find-xyz-by-title" since="2.45"/>
+    <keyword type="function" name="gwy_app_data_browser_find_curve_map_by_title ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-find-curve-map-by-title" since="2.60"/>
+    <keyword type="function" name="gwy_app_data_clear_selections ()" link="libgwyapp-data-browser.html#gwy-app-data-clear-selections"/>
+    <keyword type="function" name="gwy_app_data_browser_foreach ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-foreach"/>
+    <keyword type="function" name="gwy_app_data_browser_add_channel_watch ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-add-channel-watch" since="2.21"/>
+    <keyword type="function" name="gwy_app_data_browser_remove_channel_watch ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-remove-channel-watch" since="2.21"/>
+    <keyword type="function" name="gwy_app_data_browser_add_graph_watch ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-add-graph-watch" since="2.41"/>
+    <keyword type="function" name="gwy_app_data_browser_remove_graph_watch ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-remove-graph-watch" since="2.41"/>
+    <keyword type="function" name="gwy_app_data_browser_add_volume_watch ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-add-volume-watch" since="2.60"/>
+    <keyword type="function" name="gwy_app_data_browser_remove_volume_watch ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-remove-volume-watch" since="2.60"/>
+    <keyword type="function" name="gwy_app_data_browser_add_xyz_watch ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-add-xyz-watch" since="2.60"/>
+    <keyword type="function" name="gwy_app_data_browser_remove_xyz_watch ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-remove-xyz-watch" since="2.60"/>
+    <keyword type="function" name="gwy_app_data_browser_add_curve_map_watch ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-add-curve-map-watch" since="2.60"/>
+    <keyword type="function" name="gwy_app_data_browser_remove_curve_map_watch ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-remove-curve-map-watch" since="2.60"/>
+    <keyword type="function" name="gwy_app_sync_data_items ()" link="libgwyapp-data-browser.html#gwy-app-sync-data-items"/>
+    <keyword type="function" name="gwy_app_sync_data_itemsv ()" link="libgwyapp-data-browser.html#gwy-app-sync-data-itemsv" since="2.48"/>
+    <keyword type="function" name="gwy_app_sync_volume_items ()" link="libgwyapp-data-browser.html#gwy-app-sync-volume-items" since="2.51"/>
+    <keyword type="function" name="gwy_app_sync_volume_itemsv ()" link="libgwyapp-data-browser.html#gwy-app-sync-volume-itemsv" since="2.51"/>
+    <keyword type="function" name="gwy_app_sync_xyz_items ()" link="libgwyapp-data-browser.html#gwy-app-sync-xyz-items" since="2.60"/>
+    <keyword type="function" name="gwy_app_sync_xyz_itemsv ()" link="libgwyapp-data-browser.html#gwy-app-sync-xyz-itemsv" since="2.60"/>
+    <keyword type="function" name="gwy_app_sync_curve_map_items ()" link="libgwyapp-data-browser.html#gwy-app-sync-curve-map-items" since="2.60"/>
+    <keyword type="function" name="gwy_app_sync_curve_map_itemsv ()" link="libgwyapp-data-browser.html#gwy-app-sync-curve-map-itemsv" since="2.60"/>
+    <keyword type="function" name="gwy_app_data_browser_copy_channel ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-copy-channel"/>
+    <keyword type="function" name="gwy_app_data_browser_copy_volume ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-copy-volume" since="2.32"/>
+    <keyword type="function" name="gwy_app_data_browser_copy_xyz ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-copy-xyz" since="2.45"/>
+    <keyword type="function" name="gwy_app_data_browser_copy_curve_map ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-copy-curve-map" since="2.60"/>
+    <keyword type="function" name="gwy_app_get_data_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-data-key-for-id"/>
+    <keyword type="function" name="gwy_app_get_mask_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-mask-key-for-id"/>
+    <keyword type="function" name="gwy_app_get_show_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-show-key-for-id"/>
+    <keyword type="function" name="gwy_app_get_graph_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-graph-key-for-id" since="2.7"/>
+    <keyword type="function" name="gwy_app_get_spectra_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-spectra-key-for-id" since="2.7"/>
+    <keyword type="function" name="gwy_app_get_brick_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-brick-key-for-id" since="2.32"/>
+    <keyword type="function" name="gwy_app_get_surface_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-surface-key-for-id" since="2.45"/>
+    <keyword type="function" name="gwy_app_get_lawn_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-lawn-key-for-id" since="2.60"/>
+    <keyword type="function" name="gwy_app_get_data_title_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-data-title-key-for-id" since="2.43"/>
+    <keyword type="function" name="gwy_app_get_data_base_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-data-base-key-for-id" since="2.59"/>
+    <keyword type="function" name="gwy_app_get_data_range_type_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-data-range-type-key-for-id" since="2.43"/>
+    <keyword type="function" name="gwy_app_get_data_range_min_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-data-range-min-key-for-id" since="2.43"/>
+    <keyword type="function" name="gwy_app_get_data_range_max_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-data-range-max-key-for-id" since="2.43"/>
+    <keyword type="function" name="gwy_app_get_data_palette_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-data-palette-key-for-id" since="2.43"/>
+    <keyword type="function" name="gwy_app_get_data_meta_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-data-meta-key-for-id" since="2.43"/>
+    <keyword type="function" name="gwy_app_get_data_real_square_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-data-real-square-key-for-id" since="2.60"/>
+    <keyword type="function" name="gwy_app_get_brick_title_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-brick-title-key-for-id" since="2.43"/>
+    <keyword type="function" name="gwy_app_get_brick_preview_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-brick-preview-key-for-id" since="2.43"/>
+    <keyword type="function" name="gwy_app_get_brick_palette_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-brick-palette-key-for-id" since="2.43"/>
+    <keyword type="function" name="gwy_app_get_brick_meta_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-brick-meta-key-for-id" since="2.43"/>
+    <keyword type="function" name="gwy_app_get_surface_title_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-surface-title-key-for-id" since="2.45"/>
+    <keyword type="function" name="gwy_app_get_surface_palette_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-surface-palette-key-for-id" since="2.45"/>
+    <keyword type="function" name="gwy_app_get_surface_meta_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-surface-meta-key-for-id" since="2.45"/>
+    <keyword type="function" name="gwy_app_get_surface_preview_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-surface-preview-key-for-id" since="2.46"/>
+    <keyword type="function" name="gwy_app_get_lawn_title_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-lawn-title-key-for-id" since="2.60"/>
+    <keyword type="function" name="gwy_app_get_lawn_palette_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-lawn-palette-key-for-id" since="2.60"/>
+    <keyword type="function" name="gwy_app_get_lawn_meta_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-lawn-meta-key-for-id" since="2.60"/>
+    <keyword type="function" name="gwy_app_get_lawn_preview_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-lawn-preview-key-for-id" since="2.60"/>
+    <keyword type="function" name="gwy_app_get_lawn_real_square_key_for_id ()" link="libgwyapp-data-browser.html#gwy-app-get-lawn-real-square-key-for-id" since="2.60"/>
+    <keyword type="function" name="gwy_app_set_data_field_title ()" link="libgwyapp-data-browser.html#gwy-app-set-data-field-title"/>
+    <keyword type="function" name="gwy_app_get_data_field_title ()" link="libgwyapp-data-browser.html#gwy-app-get-data-field-title"/>
+    <keyword type="function" name="gwy_app_set_brick_title ()" link="libgwyapp-data-browser.html#gwy-app-set-brick-title" since="2.32"/>
+    <keyword type="function" name="gwy_app_get_brick_title ()" link="libgwyapp-data-browser.html#gwy-app-get-brick-title" since="2.32"/>
+    <keyword type="function" name="gwy_app_set_surface_title ()" link="libgwyapp-data-browser.html#gwy-app-set-surface-title" since="2.45"/>
+    <keyword type="function" name="gwy_app_get_surface_title ()" link="libgwyapp-data-browser.html#gwy-app-get-surface-title" since="2.45"/>
+    <keyword type="function" name="gwy_app_set_lawn_title ()" link="libgwyapp-data-browser.html#gwy-app-set-lawn-title" since="2.60"/>
+    <keyword type="function" name="gwy_app_get_lawn_title ()" link="libgwyapp-data-browser.html#gwy-app-get-lawn-title" since="2.60"/>
+    <keyword type="function" name="gwy_app_data_browser_show ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-show"/>
+    <keyword type="function" name="gwy_app_data_browser_restore ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-restore"/>
+    <keyword type="function" name="gwy_app_data_browser_shut_down ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-shut-down"/>
+    <keyword type="function" name="gwy_app_get_channel_thumbnail ()" link="libgwyapp-data-browser.html#gwy-app-get-channel-thumbnail"/>
+    <keyword type="function" name="gwy_app_get_graph_thumbnail ()" link="libgwyapp-data-browser.html#gwy-app-get-graph-thumbnail" since="2.45"/>
+    <keyword type="function" name="gwy_app_get_volume_thumbnail ()" link="libgwyapp-data-browser.html#gwy-app-get-volume-thumbnail" since="2.33"/>
+    <keyword type="function" name="gwy_app_get_xyz_thumbnail ()" link="libgwyapp-data-browser.html#gwy-app-get-xyz-thumbnail" since="2.45"/>
+    <keyword type="function" name="gwy_app_get_curve_map_thumbnail ()" link="libgwyapp-data-browser.html#gwy-app-get-curve-map-thumbnail" since="2.60"/>
+    <keyword type="function" name="gwy_app_data_browser_select_data_field ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-select-data-field"/>
+    <keyword type="function" name="gwy_app_data_browser_select_graph_model ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-select-graph-model"/>
+    <keyword type="function" name="gwy_app_data_browser_select_surface ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-select-surface" since="2.61"/>
+    <keyword type="function" name="gwy_app_data_browser_select_brick ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-select-brick" since="2.61"/>
+    <keyword type="function" name="gwy_app_data_browser_select_lawn ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-select-lawn" since="2.61"/>
+    <keyword type="function" name="gwy_app_data_browser_show_3d ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-show-3d"/>
+    <keyword type="function" name="gwy_app_find_window_for_channel ()" link="libgwyapp-data-browser.html#gwy-app-find-window-for-channel"/>
+    <keyword type="function" name="gwy_app_find_window_for_graph ()" link="libgwyapp-data-browser.html#gwy-app-find-window-for-graph" since="2.45"/>
+    <keyword type="function" name="gwy_app_find_window_for_volume ()" link="libgwyapp-data-browser.html#gwy-app-find-window-for-volume" since="2.42"/>
+    <keyword type="function" name="gwy_app_find_window_for_xyz ()" link="libgwyapp-data-browser.html#gwy-app-find-window-for-xyz" since="2.45"/>
+    <keyword type="function" name="gwy_app_find_window_for_curve_map ()" link="libgwyapp-data-browser.html#gwy-app-find-window-for-curve-map" since="2.60"/>
+    <keyword type="function" name="gwy_app_data_browser_get_gui_enabled ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-get-gui-enabled" since="2.21"/>
+    <keyword type="function" name="gwy_app_data_browser_set_gui_enabled ()" link="libgwyapp-data-browser.html#gwy-app-data-browser-set-gui-enabled" since="2.21"/>
+    <keyword type="enum" name="enum GwyAppWhat" link="libgwyapp-data-browser.html#GwyAppWhat"/>
+    <keyword type="enum" name="enum GwyAppPage" link="libgwyapp-data-browser.html#GwyAppPage" since="2.45"/>
+    <keyword type="enum" name="enum GwyDataItem" link="libgwyapp-data-browser.html#GwyDataItem"/>
+    <keyword type="enum" name="enum GwyVisibilityResetType" link="libgwyapp-data-browser.html#GwyVisibilityResetType"/>
+    <keyword type="enum" name="enum GwyDataWatchEventType" link="libgwyapp-data-browser.html#GwyDataWatchEventType" since="2.21"/>
+    <keyword type="function" name="GwyDataChooserFilterFunc ()" link="GwyDataChooser.html#GwyDataChooserFilterFunc"/>
+    <keyword type="function" name="gwy_data_chooser_new_channels ()" link="GwyDataChooser.html#gwy-data-chooser-new-channels"/>
+    <keyword type="function" name="gwy_data_chooser_new_volumes ()" link="GwyDataChooser.html#gwy-data-chooser-new-volumes" since="2.33"/>
+    <keyword type="function" name="gwy_data_chooser_new_graphs ()" link="GwyDataChooser.html#gwy-data-chooser-new-graphs" since="2.41"/>
+    <keyword type="function" name="gwy_data_chooser_new_xyzs ()" link="GwyDataChooser.html#gwy-data-chooser-new-xyzs" since="2.45"/>
+    <keyword type="function" name="gwy_data_chooser_new_curve_maps ()" link="GwyDataChooser.html#gwy-data-chooser-new-curve-maps" since="2.60"/>
+    <keyword type="function" name="gwy_app_data_id_new ()" link="GwyDataChooser.html#gwy-app-data-id-new" since="2.47"/>
+    <keyword type="function" name="gwy_app_data_id_copy ()" link="GwyDataChooser.html#gwy-app-data-id-copy" since="2.47"/>
+    <keyword type="function" name="gwy_app_data_id_free ()" link="GwyDataChooser.html#gwy-app-data-id-free" since="2.47"/>
+    <keyword type="function" name="gwy_data_chooser_set_active ()" link="GwyDataChooser.html#gwy-data-chooser-set-active"/>
+    <keyword type="function" name="gwy_data_chooser_get_active ()" link="GwyDataChooser.html#gwy-data-chooser-get-active"/>
+    <keyword type="function" name="gwy_data_chooser_set_active_id ()" link="GwyDataChooser.html#gwy-data-chooser-set-active-id" since="2.41"/>
+    <keyword type="function" name="gwy_data_chooser_get_active_id ()" link="GwyDataChooser.html#gwy-data-chooser-get-active-id" since="2.41"/>
+    <keyword type="function" name="gwy_data_chooser_set_filter ()" link="GwyDataChooser.html#gwy-data-chooser-set-filter"/>
+    <keyword type="function" name="gwy_data_chooser_get_none ()" link="GwyDataChooser.html#gwy-data-chooser-get-none"/>
+    <keyword type="function" name="gwy_data_chooser_set_none ()" link="GwyDataChooser.html#gwy-data-chooser-set-none"/>
+    <keyword type="function" name="gwy_data_chooser_get_filter ()" link="GwyDataChooser.html#gwy-data-chooser-get-filter"/>
+    <keyword type="function" name="gwy_data_chooser_refilter ()" link="GwyDataChooser.html#gwy-data-chooser-refilter" since="2.41"/>
+    <keyword type="macro" name="GWY_APP_DATA_ID_NONE" link="GwyDataChooser.html#GWY-APP-DATA-ID-NONE:CAPS" since="2.41"/>
+    <keyword type="struct" name="GwyAppDataId" link="GwyDataChooser.html#GwyAppDataId" since="2.41"/>
+    <keyword type="struct" name="GwyDataChooser" link="GwyDataChooser.html#GwyDataChooser-struct"/>
+    <keyword type="struct" name="GwyDataChooserClass" link="GwyDataChooser.html#GwyDataChooserClass"/>
+    <keyword type="function" name="gwy_app_settings_error_quark ()" link="libgwyapp-settings.html#gwy-app-settings-error-quark"/>
+    <keyword type="function" name="gwy_app_settings_get ()" link="libgwyapp-settings.html#gwy-app-settings-get"/>
+    <keyword type="function" name="gwy_app_settings_free ()" link="libgwyapp-settings.html#gwy-app-settings-free"/>
+    <keyword type="function" name="gwy_app_settings_save ()" link="libgwyapp-settings.html#gwy-app-settings-save"/>
+    <keyword type="function" name="gwy_app_settings_load ()" link="libgwyapp-settings.html#gwy-app-settings-load"/>
+    <keyword type="function" name="gwy_app_settings_create_config_dir ()" link="libgwyapp-settings.html#gwy-app-settings-create-config-dir"/>
+    <keyword type="function" name="gwy_app_settings_get_module_dirs ()" link="libgwyapp-settings.html#gwy-app-settings-get-module-dirs"/>
+    <keyword type="function" name="gwy_app_settings_get_settings_filename ()" link="libgwyapp-settings.html#gwy-app-settings-get-settings-filename"/>
+    <keyword type="function" name="gwy_app_settings_get_log_filename ()" link="libgwyapp-settings.html#gwy-app-settings-get-log-filename"/>
+    <keyword type="function" name="gwy_app_settings_get_recent_file_list_filename ()" link="libgwyapp-settings.html#gwy-app-settings-get-recent-file-list-filename"/>
+    <keyword type="function" name="gwy_app_gl_init ()" link="libgwyapp-settings.html#gwy-app-gl-init"/>
+    <keyword type="function" name="gwy_app_gl_is_ok ()" link="libgwyapp-settings.html#gwy-app-gl-is-ok"/>
+    <keyword type="macro" name="GWY_APP_SETTINGS_ERROR" link="libgwyapp-settings.html#GWY-APP-SETTINGS-ERROR:CAPS"/>
+    <keyword type="enum" name="enum GwyAppSettingsError" link="libgwyapp-settings.html#GwyAppSettingsError"/>
+    <keyword type="function" name="gwy_app_get_current_directory ()" link="libgwyapp-file.html#gwy-app-get-current-directory"/>
+    <keyword type="function" name="gwy_app_set_current_directory ()" link="libgwyapp-file.html#gwy-app-set-current-directory"/>
+    <keyword type="function" name="gwy_app_file_load ()" link="libgwyapp-file.html#gwy-app-file-load"/>
+    <keyword type="function" name="gwy_app_file_open ()" link="libgwyapp-file.html#gwy-app-file-open"/>
+    <keyword type="function" name="gwy_app_file_merge ()" link="libgwyapp-file.html#gwy-app-file-merge" since="2.7"/>
+    <keyword type="function" name="gwy_app_file_write ()" link="libgwyapp-file.html#gwy-app-file-write"/>
+    <keyword type="function" name="gwy_app_file_save ()" link="libgwyapp-file.html#gwy-app-file-save"/>
+    <keyword type="function" name="gwy_app_file_save_as ()" link="libgwyapp-file.html#gwy-app-file-save-as"/>
+    <keyword type="function" name="gwy_app_file_close ()" link="libgwyapp-file.html#gwy-app-file-close" since="2.45"/>
+    <keyword type="function" name="gwy_app_file_confirm_overwrite ()" link="libgwyapp-file.html#gwy-app-file-confirm-overwrite"/>
+    <keyword type="function" name="gwy_app_recent_file_list_new ()" link="libgwyapp-filelist.html#gwy-app-recent-file-list-new"/>
+    <keyword type="function" name="gwy_app_recent_file_list_update ()" link="libgwyapp-filelist.html#gwy-app-recent-file-list-update"/>
+    <keyword type="function" name="gwy_app_recent_file_list_load ()" link="libgwyapp-filelist.html#gwy-app-recent-file-list-load"/>
+    <keyword type="function" name="gwy_app_recent_file_list_save ()" link="libgwyapp-filelist.html#gwy-app-recent-file-list-save"/>
+    <keyword type="function" name="gwy_app_recent_file_list_free ()" link="libgwyapp-filelist.html#gwy-app-recent-file-list-free"/>
+    <keyword type="function" name="gwy_app_recent_file_get_thumbnail ()" link="libgwyapp-filelist.html#gwy-app-recent-file-get-thumbnail"/>
+    <keyword type="function" name="gwy_func_use_new ()" link="libgwyapp-funcuse.html#gwy-func-use-new"/>
+    <keyword type="function" name="gwy_func_use_free ()" link="libgwyapp-funcuse.html#gwy-func-use-free"/>
+    <keyword type="function" name="gwy_func_use_add ()" link="libgwyapp-funcuse.html#gwy-func-use-add"/>
+    <keyword type="function" name="gwy_func_use_get ()" link="libgwyapp-funcuse.html#gwy-func-use-get"/>
+    <keyword type="function" name="gwy_func_use_load ()" link="libgwyapp-funcuse.html#gwy-func-use-load"/>
+    <keyword type="function" name="gwy_func_use_save ()" link="libgwyapp-funcuse.html#gwy-func-use-save"/>
+    <keyword type="function" name="gwy_func_use_get_filename ()" link="libgwyapp-funcuse.html#gwy-func-use-get-filename"/>
+    <keyword type="function" name="gwy_app_process_func_get_use ()" link="libgwyapp-funcuse.html#gwy-app-process-func-get-use"/>
+    <keyword type="function" name="gwy_app_process_func_save_use ()" link="libgwyapp-funcuse.html#gwy-app-process-func-save-use"/>
+    <keyword type="struct" name="GwyFunctionUse" link="libgwyapp-funcuse.html#GwyFunctionUse"/>
+    <keyword type="function" name="gwy_resource_editor_get_edited ()" link="GwyResourceEditor.html#gwy-resource-editor-get-edited"/>
+    <keyword type="function" name="gwy_resource_editor_queue_commit ()" link="GwyResourceEditor.html#gwy-resource-editor-queue-commit"/>
+    <keyword type="function" name="gwy_resource_editor_commit ()" link="GwyResourceEditor.html#gwy-resource-editor-commit"/>
+    <keyword type="function" name="gwy_resource_editor_setup ()" link="GwyResourceEditor.html#gwy-resource-editor-setup"/>
+    <keyword type="function" name="gwy_resource_editor_class_setup ()" link="GwyResourceEditor.html#gwy-resource-editor-class-setup"/>
+    <keyword type="struct" name="struct GwyResourceEditor" link="GwyResourceEditor.html#GwyResourceEditor-struct"/>
+    <keyword type="struct" name="struct GwyResourceEditorClass" link="GwyResourceEditor.html#GwyResourceEditorClass"/>
+    <keyword type="function" name="gwy_app_gl_material_editor ()" link="libgwyapp-GwyGLMaterialEditor.html#gwy-app-gl-material-editor"/>
+    <keyword type="function" name="gwy_app_gradient_editor ()" link="libgwyapp-GwyGradientEditor.html#gwy-app-gradient-editor"/>
+    <keyword type="function" name="gwy_app_build_process_menu ()" link="libgwyapp-menu.html#gwy-app-build-process-menu"/>
+    <keyword type="function" name="gwy_app_process_menu_add_run_last ()" link="libgwyapp-menu.html#gwy-app-process-menu-add-run-last"/>
+    <keyword type="function" name="gwy_app_run_process_func ()" link="libgwyapp-menu.html#gwy-app-run-process-func"/>
+    <keyword type="function" name="gwy_app_run_process_func_in_mode ()" link="libgwyapp-menu.html#gwy-app-run-process-func-in-mode"/>
+    <keyword type="function" name="gwy_app_build_graph_menu ()" link="libgwyapp-menu.html#gwy-app-build-graph-menu"/>
+    <keyword type="function" name="gwy_app_run_graph_func ()" link="libgwyapp-menu.html#gwy-app-run-graph-func"/>
+    <keyword type="function" name="gwy_app_build_volume_menu ()" link="libgwyapp-menu.html#gwy-app-build-volume-menu" since="2.32"/>
+    <keyword type="function" name="gwy_app_run_volume_func ()" link="libgwyapp-menu.html#gwy-app-run-volume-func" since="2.32"/>
+    <keyword type="function" name="gwy_app_run_volume_func_in_mode ()" link="libgwyapp-menu.html#gwy-app-run-volume-func-in-mode" since="2.32"/>
+    <keyword type="function" name="gwy_app_build_xyz_menu ()" link="libgwyapp-menu.html#gwy-app-build-xyz-menu" since="2.45"/>
+    <keyword type="function" name="gwy_app_run_xyz_func ()" link="libgwyapp-menu.html#gwy-app-run-xyz-func" since="2.45"/>
+    <keyword type="function" name="gwy_app_run_xyz_func_in_mode ()" link="libgwyapp-menu.html#gwy-app-run-xyz-func-in-mode" since="2.45"/>
+    <keyword type="function" name="gwy_app_build_curve_map_menu ()" link="libgwyapp-menu.html#gwy-app-build-curve-map-menu" since="2.60"/>
+    <keyword type="function" name="gwy_app_run_curve_map_func ()" link="libgwyapp-menu.html#gwy-app-run-curve-map-func" since="2.45"/>
+    <keyword type="function" name="gwy_app_run_curve_map_func_in_mode ()" link="libgwyapp-menu.html#gwy-app-run-curve-map-func-in-mode" since="2.45"/>
+    <keyword type="function" name="gwy_app_menu_recent_files_update ()" link="libgwyapp-menu.html#gwy-app-menu-recent-files-update"/>
+    <keyword type="function" name="gwy_app_menu_recent_files_get ()" link="libgwyapp-menu.html#gwy-app-menu-recent-files-get"/>
+    <keyword type="function" name="gwy_app_get_tooltips ()" link="libgwyapp-menu.html#gwy-app-get-tooltips" deprecated=""/>
+    <keyword type="function" name="gwy_app_sensitivity_get_group ()" link="libgwyapp-menu.html#gwy-app-sensitivity-get-group"/>
+    <keyword type="function" name="gwy_app_sensitivity_add_widget ()" link="libgwyapp-menu.html#gwy-app-sensitivity-add-widget"/>
+    <keyword type="function" name="gwy_app_sensitivity_set_state ()" link="libgwyapp-menu.html#gwy-app-sensitivity-set-state"/>
+    <keyword type="enum" name="enum GwyMenuSensFlags" link="libgwyapp-menu.html#GwyMenuSensFlags"/>
+    <keyword type="function" name="gwy_app_metadata_browser_for_channel ()" link="libgwyapp-meta.html#gwy-app-metadata-browser-for-channel" since="2.32"/>
+    <keyword type="function" name="gwy_app_metadata_browser_for_volume ()" link="libgwyapp-meta.html#gwy-app-metadata-browser-for-volume" since="2.32"/>
+    <keyword type="function" name="gwy_app_metadata_browser_for_xyz ()" link="libgwyapp-meta.html#gwy-app-metadata-browser-for-xyz" since="2.45"/>
+    <keyword type="function" name="gwy_app_metadata_browser_for_curve_map ()" link="libgwyapp-meta.html#gwy-app-metadata-browser-for-curve-map" since="2.60"/>
+    <keyword type="function" name="gwy_app_undo_checkpoint ()" link="libgwyapp-undo.html#gwy-app-undo-checkpoint"/>
+    <keyword type="function" name="gwy_app_undo_qcheckpoint ()" link="libgwyapp-undo.html#gwy-app-undo-qcheckpoint"/>
+    <keyword type="function" name="gwy_app_undo_checkpointv ()" link="libgwyapp-undo.html#gwy-app-undo-checkpointv"/>
+    <keyword type="function" name="gwy_app_undo_qcheckpointv ()" link="libgwyapp-undo.html#gwy-app-undo-qcheckpointv"/>
+    <keyword type="function" name="gwy_app_undo_undo_container ()" link="libgwyapp-undo.html#gwy-app-undo-undo-container"/>
+    <keyword type="function" name="gwy_app_undo_redo_container ()" link="libgwyapp-undo.html#gwy-app-undo-redo-container"/>
+    <keyword type="function" name="gwy_app_undo_container_remove ()" link="libgwyapp-undo.html#gwy-app-undo-container-remove" since="2.23"/>
+    <keyword type="function" name="gwy_undo_checkpoint ()" link="libgwyapp-undo.html#gwy-undo-checkpoint"/>
+    <keyword type="function" name="gwy_undo_qcheckpoint ()" link="libgwyapp-undo.html#gwy-undo-qcheckpoint"/>
+    <keyword type="function" name="gwy_undo_checkpointv ()" link="libgwyapp-undo.html#gwy-undo-checkpointv"/>
+    <keyword type="function" name="gwy_undo_qcheckpointv ()" link="libgwyapp-undo.html#gwy-undo-qcheckpointv"/>
+    <keyword type="function" name="gwy_undo_undo_container ()" link="libgwyapp-undo.html#gwy-undo-undo-container"/>
+    <keyword type="function" name="gwy_undo_redo_container ()" link="libgwyapp-undo.html#gwy-undo-redo-container"/>
+    <keyword type="function" name="gwy_undo_container_has_undo ()" link="libgwyapp-undo.html#gwy-undo-container-has-undo"/>
+    <keyword type="function" name="gwy_undo_container_has_redo ()" link="libgwyapp-undo.html#gwy-undo-container-has-redo"/>
+    <keyword type="function" name="gwy_undo_container_get_modified ()" link="libgwyapp-undo.html#gwy-undo-container-get-modified"/>
+    <keyword type="function" name="gwy_undo_container_set_unmodified ()" link="libgwyapp-undo.html#gwy-undo-container-set-unmodified"/>
+    <keyword type="function" name="gwy_undo_container_remove ()" link="libgwyapp-undo.html#gwy-undo-container-remove"/>
+    <keyword type="function" name="gwy_undo_get_enabled ()" link="libgwyapp-undo.html#gwy-undo-get-enabled" since="2.21"/>
+    <keyword type="function" name="gwy_undo_set_enabled ()" link="libgwyapp-undo.html#gwy-undo-set-enabled" since="2.21"/>
+    <keyword type="function" name="gwy_help_add_to_proc_dialog ()" link="libgwyapp-help.html#gwy-help-add-to-proc-dialog" since="2.38"/>
+    <keyword type="function" name="gwy_help_add_to_graph_dialog ()" link="libgwyapp-help.html#gwy-help-add-to-graph-dialog" since="2.38"/>
+    <keyword type="function" name="gwy_help_add_to_volume_dialog ()" link="libgwyapp-help.html#gwy-help-add-to-volume-dialog" since="2.38"/>
+    <keyword type="function" name="gwy_help_add_to_xyz_dialog ()" link="libgwyapp-help.html#gwy-help-add-to-xyz-dialog" since="2.45"/>
+    <keyword type="function" name="gwy_help_add_to_cmap_dialog ()" link="libgwyapp-help.html#gwy-help-add-to-cmap-dialog" since="2.60"/>
+    <keyword type="function" name="gwy_help_add_to_file_dialog ()" link="libgwyapp-help.html#gwy-help-add-to-file-dialog" since="2.38"/>
+    <keyword type="function" name="gwy_help_add_to_tool_dialog ()" link="libgwyapp-help.html#gwy-help-add-to-tool-dialog" since="2.38"/>
+    <keyword type="function" name="gwy_help_add_to_window ()" link="libgwyapp-help.html#gwy-help-add-to-window" since="2.38"/>
+    <keyword type="function" name="gwy_help_add_to_window_uri ()" link="libgwyapp-help.html#gwy-help-add-to-window-uri" since="2.38"/>
+    <keyword type="function" name="gwy_help_show ()" link="libgwyapp-help.html#gwy-help-show" since="2.38"/>
+    <keyword type="function" name="gwy_help_is_available ()" link="libgwyapp-help.html#gwy-help-is-available" since="2.38"/>
+    <keyword type="enum" name="enum GwyHelpFlags" link="libgwyapp-help.html#GwyHelpFlags" since="2.38"/>
+    <keyword type="function" name="gwy_app_channel_log_add ()" link="libgwyapp-log.html#gwy-app-channel-log-add" since="2.35"/>
+    <keyword type="function" name="gwy_app_volume_log_add ()" link="libgwyapp-log.html#gwy-app-volume-log-add" since="2.35"/>
+    <keyword type="function" name="gwy_app_xyz_log_add ()" link="libgwyapp-log.html#gwy-app-xyz-log-add" since="2.45"/>
+    <keyword type="function" name="gwy_app_curve_map_log_add ()" link="libgwyapp-log.html#gwy-app-curve-map-log-add" since="2.60"/>
+    <keyword type="function" name="gwy_app_channel_log_add_proc ()" link="libgwyapp-log.html#gwy-app-channel-log-add-proc" since="2.38"/>
+    <keyword type="function" name="gwy_app_volume_log_add_volume ()" link="libgwyapp-log.html#gwy-app-volume-log-add-volume" since="2.38"/>
+    <keyword type="function" name="gwy_app_xyz_log_add_xyz ()" link="libgwyapp-log.html#gwy-app-xyz-log-add-xyz" since="2.45"/>
+    <keyword type="function" name="gwy_app_curve_map_log_add_curve_map ()" link="libgwyapp-log.html#gwy-app-curve-map-log-add-curve-map" since="2.60"/>
+    <keyword type="function" name="gwy_app_log_browser_for_channel ()" link="libgwyapp-log.html#gwy-app-log-browser-for-channel" since="2.35"/>
+    <keyword type="function" name="gwy_app_log_browser_for_volume ()" link="libgwyapp-log.html#gwy-app-log-browser-for-volume" since="2.35"/>
+    <keyword type="function" name="gwy_app_log_browser_for_xyz ()" link="libgwyapp-log.html#gwy-app-log-browser-for-xyz" since="2.45"/>
+    <keyword type="function" name="gwy_app_log_browser_for_curve_map ()" link="libgwyapp-log.html#gwy-app-log-browser-for-curve-map" since="2.60"/>
+    <keyword type="function" name="gwy_log_get_enabled ()" link="libgwyapp-log.html#gwy-log-get-enabled" since="2.35"/>
+    <keyword type="function" name="gwy_log_set_enabled ()" link="libgwyapp-log.html#gwy-log-set-enabled" since="2.35"/>
+    <keyword type="function" name="gwy_app_setup_logging ()" link="libgwyapp-logging.html#gwy-app-setup-logging" since="2.45"/>
+    <keyword type="function" name="gwy_app_get_log_text_buffer ()" link="libgwyapp-logging.html#gwy-app-get-log-text-buffer" since="2.45"/>
+    <keyword type="enum" name="enum GwyAppLoggingFlags" link="libgwyapp-logging.html#GwyAppLoggingFlags" since="2.45"/>
+    <keyword type="function" name="GwyRectifyStringFunc ()" link="GwyParamDef.html#GwyRectifyStringFunc" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_new ()" link="GwyParamDef.html#gwy-param-def-new" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_set_function_name ()" link="GwyParamDef.html#gwy-param-def-set-function-name" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_get_function_name ()" link="GwyParamDef.html#gwy-param-def-get-function-name" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_gwyenum ()" link="GwyParamDef.html#gwy-param-def-add-gwyenum" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_gwyflags ()" link="GwyParamDef.html#gwy-param-def-add-gwyflags" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_enum ()" link="GwyParamDef.html#gwy-param-def-add-enum" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_int ()" link="GwyParamDef.html#gwy-param-def-add-int" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_graph_curve ()" link="GwyParamDef.html#gwy-param-def-add-graph-curve" since="2.60"/>
+    <keyword type="function" name="gwy_param_def_add_lawn_curve ()" link="GwyParamDef.html#gwy-param-def-add-lawn-curve" since="2.60"/>
+    <keyword type="function" name="gwy_param_def_add_lawn_segment ()" link="GwyParamDef.html#gwy-param-def-add-lawn-segment" since="2.60"/>
+    <keyword type="function" name="gwy_param_def_add_active_page ()" link="GwyParamDef.html#gwy-param-def-add-active-page" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_boolean ()" link="GwyParamDef.html#gwy-param-def-add-boolean" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_instant_updates ()" link="GwyParamDef.html#gwy-param-def-add-instant-updates" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_randomize ()" link="GwyParamDef.html#gwy-param-def-add-randomize" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_double ()" link="GwyParamDef.html#gwy-param-def-add-double" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_angle ()" link="GwyParamDef.html#gwy-param-def-add-angle" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_percentage ()" link="GwyParamDef.html#gwy-param-def-add-percentage" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_mask_color ()" link="GwyParamDef.html#gwy-param-def-add-mask-color" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_target_graph ()" link="GwyParamDef.html#gwy-param-def-add-target-graph" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_graph_id ()" link="GwyParamDef.html#gwy-param-def-add-graph-id" since="2.60"/>
+    <keyword type="function" name="gwy_param_def_add_image_id ()" link="GwyParamDef.html#gwy-param-def-add-image-id" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_volume_id ()" link="GwyParamDef.html#gwy-param-def-add-volume-id" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_xyz_id ()" link="GwyParamDef.html#gwy-param-def-add-xyz-id" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_curve_map_id ()" link="GwyParamDef.html#gwy-param-def-add-curve-map-id" since="2.60"/>
+    <keyword type="function" name="gwy_param_def_add_report_type ()" link="GwyParamDef.html#gwy-param-def-add-report-type" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_seed ()" link="GwyParamDef.html#gwy-param-def-add-seed" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_string ()" link="GwyParamDef.html#gwy-param-def-add-string" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_unit ()" link="GwyParamDef.html#gwy-param-def-add-unit" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_resource ()" link="GwyParamDef.html#gwy-param-def-add-resource" since="2.59"/>
+    <keyword type="function" name="gwy_param_def_add_grain_groups ()" link="GwyParamDef.html#gwy-param-def-add-grain-groups" since="2.61"/>
+    <keyword type="enum" name="enum GwyParamStringFlags" link="GwyParamDef.html#GwyParamStringFlags" since="2.59"/>
+    <keyword type="struct" name="struct GwyParamDef" link="GwyParamDef.html#GwyParamDef-struct"/>
+    <keyword type="struct" name="struct GwyParamDefClass" link="GwyParamDef.html#GwyParamDefClass" since="2.59"/>
+    <keyword type="function" name="gwy_params_new ()" link="GwyParams.html#gwy-params-new" since="2.59"/>
+    <keyword type="function" name="gwy_params_set_def ()" link="GwyParams.html#gwy-params-set-def" since="2.59"/>
+    <keyword type="function" name="gwy_params_get_def ()" link="GwyParams.html#gwy-params-get-def" since="2.59"/>
+    <keyword type="function" name="gwy_params_new_from_settings ()" link="GwyParams.html#gwy-params-new-from-settings" since="2.59"/>
+    <keyword type="function" name="gwy_params_load_from_settings ()" link="GwyParams.html#gwy-params-load-from-settings" since="2.59"/>
+    <keyword type="function" name="gwy_params_duplicate ()" link="GwyParams.html#gwy-params-duplicate" since="2.59"/>
+    <keyword type="function" name="gwy_params_save_to_settings ()" link="GwyParams.html#gwy-params-save-to-settings" since="2.59"/>
+    <keyword type="function" name="gwy_params_reset_all ()" link="GwyParams.html#gwy-params-reset-all" since="2.59"/>
+    <keyword type="function" name="gwy_params_reset ()" link="GwyParams.html#gwy-params-reset" since="2.59"/>
+    <keyword type="function" name="gwy_params_get_boolean ()" link="GwyParams.html#gwy-params-get-boolean" since="2.59"/>
+    <keyword type="function" name="gwy_params_set_boolean ()" link="GwyParams.html#gwy-params-set-boolean" since="2.59"/>
+    <keyword type="function" name="gwy_params_get_enum ()" link="GwyParams.html#gwy-params-get-enum" since="2.59"/>
+    <keyword type="function" name="gwy_params_get_masking ()" link="GwyParams.html#gwy-params-get-masking" since="2.59"/>
+    <keyword type="function" name="gwy_params_set_enum ()" link="GwyParams.html#gwy-params-set-enum" since="2.59"/>
+    <keyword type="function" name="gwy_params_get_flags ()" link="GwyParams.html#gwy-params-get-flags" since="2.59"/>
+    <keyword type="function" name="gwy_params_set_flags ()" link="GwyParams.html#gwy-params-set-flags" since="2.59"/>
+    <keyword type="function" name="gwy_params_set_flag ()" link="GwyParams.html#gwy-params-set-flag" since="2.59"/>
+    <keyword type="function" name="gwy_params_get_report_type ()" link="GwyParams.html#gwy-params-get-report-type" since="2.59"/>
+    <keyword type="function" name="gwy_params_set_report_type ()" link="GwyParams.html#gwy-params-set-report-type" since="2.59"/>
+    <keyword type="function" name="gwy_params_get_int ()" link="GwyParams.html#gwy-params-get-int" since="2.59"/>
+    <keyword type="function" name="gwy_params_set_int ()" link="GwyParams.html#gwy-params-set-int" since="2.59"/>
+    <keyword type="function" name="gwy_params_get_double ()" link="GwyParams.html#gwy-params-get-double" since="2.59"/>
+    <keyword type="function" name="gwy_params_set_double ()" link="GwyParams.html#gwy-params-set-double" since="2.59"/>
+    <keyword type="function" name="gwy_params_get_string ()" link="GwyParams.html#gwy-params-get-string" since="2.59"/>
+    <keyword type="function" name="gwy_params_set_string ()" link="GwyParams.html#gwy-params-set-string" since="2.59"/>
+    <keyword type="function" name="gwy_params_set_unit ()" link="GwyParams.html#gwy-params-set-unit" since="2.59"/>
+    <keyword type="function" name="gwy_params_get_unit ()" link="GwyParams.html#gwy-params-get-unit" since="2.59"/>
+    <keyword type="function" name="gwy_params_set_resource ()" link="GwyParams.html#gwy-params-set-resource" since="2.59"/>
+    <keyword type="function" name="gwy_params_get_resource ()" link="GwyParams.html#gwy-params-get-resource" since="2.61"/>
+    <keyword type="function" name="gwy_params_get_color ()" link="GwyParams.html#gwy-params-get-color" since="2.59"/>
+    <keyword type="function" name="gwy_params_set_color ()" link="GwyParams.html#gwy-params-set-color" since="2.59"/>
+    <keyword type="function" name="gwy_params_get_data_id ()" link="GwyParams.html#gwy-params-get-data-id" since="2.59"/>
+    <keyword type="function" name="gwy_params_data_id_is_none ()" link="GwyParams.html#gwy-params-data-id-is-none" since="2.59"/>
+    <keyword type="function" name="gwy_params_get_image ()" link="GwyParams.html#gwy-params-get-image" since="2.59"/>
+    <keyword type="function" name="gwy_params_get_mask ()" link="GwyParams.html#gwy-params-get-mask" since="2.59"/>
+    <keyword type="function" name="gwy_params_get_graph ()" link="GwyParams.html#gwy-params-get-graph" since="2.59"/>
+    <keyword type="function" name="gwy_params_get_volume ()" link="GwyParams.html#gwy-params-get-volume" since="2.59"/>
+    <keyword type="function" name="gwy_params_get_xyz ()" link="GwyParams.html#gwy-params-get-xyz" since="2.59"/>
+    <keyword type="function" name="gwy_params_get_curve_map ()" link="GwyParams.html#gwy-params-get-curve-map" since="2.60"/>
+    <keyword type="function" name="gwy_params_set_image_id ()" link="GwyParams.html#gwy-params-set-image-id" since="2.59"/>
+    <keyword type="function" name="gwy_params_set_graph_id ()" link="GwyParams.html#gwy-params-set-graph-id" since="2.59"/>
+    <keyword type="function" name="gwy_params_set_volume_id ()" link="GwyParams.html#gwy-params-set-volume-id" since="2.59"/>
+    <keyword type="function" name="gwy_params_set_xyz_id ()" link="GwyParams.html#gwy-params-set-xyz-id" since="2.59"/>
+    <keyword type="function" name="gwy_params_set_curve_map_id ()" link="GwyParams.html#gwy-params-set-curve-map-id" since="2.60"/>
+    <keyword type="function" name="gwy_params_set_curve ()" link="GwyParams.html#gwy-params-set-curve" since="2.60"/>
+    <keyword type="function" name="gwy_params_randomize_seed ()" link="GwyParams.html#gwy-params-randomize-seed" since="2.59"/>
+    <keyword type="struct" name="struct GwyParams" link="GwyParams.html#GwyParams-struct"/>
+    <keyword type="struct" name="struct GwyParamsClass" link="GwyParams.html#GwyParamsClass" since="2.59"/>
+    <keyword type="function" name="GwyCreateWidgetFunc ()" link="GwyParamTable.html#GwyCreateWidgetFunc" since="2.59"/>
+    <keyword type="function" name="GwyCreateTextFunc ()" link="GwyParamTable.html#GwyCreateTextFunc" since="2.59"/>
+    <keyword type="function" name="GwyEnumFilterFunc ()" link="GwyParamTable.html#GwyEnumFilterFunc"/>
+    <keyword type="function" name="gwy_param_table_new ()" link="GwyParamTable.html#gwy-param-table-new" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_params ()" link="GwyParamTable.html#gwy-param-table-params" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_widget ()" link="GwyParamTable.html#gwy-param-table-widget" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_reset ()" link="GwyParamTable.html#gwy-param-table-reset" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_exists ()" link="GwyParamTable.html#gwy-param-table-exists" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_param_changed ()" link="GwyParamTable.html#gwy-param-table-param-changed" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_set_no_reset ()" link="GwyParamTable.html#gwy-param-table-set-no-reset" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_set_sensitive ()" link="GwyParamTable.html#gwy-param-table-set-sensitive" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_set_label ()" link="GwyParamTable.html#gwy-param-table-set-label" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_set_boolean ()" link="GwyParamTable.html#gwy-param-table-set-boolean" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_set_int ()" link="GwyParamTable.html#gwy-param-table-set-int" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_set_double ()" link="GwyParamTable.html#gwy-param-table-set-double" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_set_enum ()" link="GwyParamTable.html#gwy-param-table-set-enum" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_set_flags ()" link="GwyParamTable.html#gwy-param-table-set-flags" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_set_string ()" link="GwyParamTable.html#gwy-param-table-set-string" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_set_data_id ()" link="GwyParamTable.html#gwy-param-table-set-data-id" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_set_curve ()" link="GwyParamTable.html#gwy-param-table-set-curve" since="2.60"/>
+    <keyword type="function" name="gwy_param_table_append_header ()" link="GwyParamTable.html#gwy-param-table-append-header" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_separator ()" link="GwyParamTable.html#gwy-param-table-append-separator" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_set_unitstr ()" link="GwyParamTable.html#gwy-param-table-set-unitstr" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_checkbox ()" link="GwyParamTable.html#gwy-param-table-append-checkbox" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_add_enabler ()" link="GwyParamTable.html#gwy-param-table-add-enabler" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_combo ()" link="GwyParamTable.html#gwy-param-table-append-combo" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_combo_set_filter ()" link="GwyParamTable.html#gwy-param-table-combo-set-filter" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_combo_refilter ()" link="GwyParamTable.html#gwy-param-table-combo-refilter" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_radio ()" link="GwyParamTable.html#gwy-param-table-append-radio" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_radio_header ()" link="GwyParamTable.html#gwy-param-table-append-radio-header" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_radio_item ()" link="GwyParamTable.html#gwy-param-table-append-radio-item" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_radio_row ()" link="GwyParamTable.html#gwy-param-table-append-radio-row" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_radio_buttons ()" link="GwyParamTable.html#gwy-param-table-append-radio-buttons" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_radio_set_sensitive ()" link="GwyParamTable.html#gwy-param-table-radio-set-sensitive" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_checkboxes ()" link="GwyParamTable.html#gwy-param-table-append-checkboxes" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_checkboxes_set_sensitive ()" link="GwyParamTable.html#gwy-param-table-checkboxes-set-sensitive" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_graph_id ()" link="GwyParamTable.html#gwy-param-table-append-graph-id" since="2.60"/>
+    <keyword type="function" name="gwy_param_table_append_image_id ()" link="GwyParamTable.html#gwy-param-table-append-image-id" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_volume_id ()" link="GwyParamTable.html#gwy-param-table-append-volume-id" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_xyz_id ()" link="GwyParamTable.html#gwy-param-table-append-xyz-id" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_curve_map_id ()" link="GwyParamTable.html#gwy-param-table-append-curve-map-id" since="2.60"/>
+    <keyword type="function" name="gwy_param_table_append_target_graph ()" link="GwyParamTable.html#gwy-param-table-append-target-graph" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_graph_curve ()" link="GwyParamTable.html#gwy-param-table-append-graph-curve" since="2.60"/>
+    <keyword type="function" name="gwy_param_table_graph_curve_set_model ()" link="GwyParamTable.html#gwy-param-table-graph-curve-set-model" since="2.60"/>
+    <keyword type="function" name="gwy_param_table_append_lawn_curve ()" link="GwyParamTable.html#gwy-param-table-append-lawn-curve" since="2.60"/>
+    <keyword type="function" name="gwy_param_table_append_lawn_segment ()" link="GwyParamTable.html#gwy-param-table-append-lawn-segment" since="2.60"/>
+    <keyword type="function" name="gwy_param_table_data_id_set_filter ()" link="GwyParamTable.html#gwy-param-table-data-id-set-filter" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_data_id_refilter ()" link="GwyParamTable.html#gwy-param-table-data-id-refilter" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_slider ()" link="GwyParamTable.html#gwy-param-table-append-slider" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_slider_set_mapping ()" link="GwyParamTable.html#gwy-param-table-slider-set-mapping" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_slider_set_steps ()" link="GwyParamTable.html#gwy-param-table-slider-set-steps" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_slider_set_digits ()" link="GwyParamTable.html#gwy-param-table-slider-set-digits" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_slider_restrict_range ()" link="GwyParamTable.html#gwy-param-table-slider-restrict-range" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_slider_set_transform ()" link="GwyParamTable.html#gwy-param-table-slider-set-transform" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_slider_set_factor ()" link="GwyParamTable.html#gwy-param-table-slider-set-factor" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_slider_add_alt ()" link="GwyParamTable.html#gwy-param-table-slider-add-alt" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_alt_set_field_pixel_x ()" link="GwyParamTable.html#gwy-param-table-alt-set-field-pixel-x" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_alt_set_field_pixel_y ()" link="GwyParamTable.html#gwy-param-table-alt-set-field-pixel-y" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_alt_set_field_frac_z ()" link="GwyParamTable.html#gwy-param-table-alt-set-field-frac-z" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_alt_set_linear ()" link="GwyParamTable.html#gwy-param-table-alt-set-linear" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_entry ()" link="GwyParamTable.html#gwy-param-table-append-entry" since="2.60"/>
+    <keyword type="function" name="gwy_param_table_entry_set_width ()" link="GwyParamTable.html#gwy-param-table-entry-set-width" since="2.60"/>
+    <keyword type="function" name="gwy_param_table_entry_set_value_format ()" link="GwyParamTable.html#gwy-param-table-entry-set-value-format" since="2.60"/>
+    <keyword type="function" name="gwy_param_table_append_unit_chooser ()" link="GwyParamTable.html#gwy-param-table-append-unit-chooser" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_mask_color ()" link="GwyParamTable.html#gwy-param-table-append-mask-color" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_button ()" link="GwyParamTable.html#gwy-param-table-append-button" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_info ()" link="GwyParamTable.html#gwy-param-table-append-info" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_results ()" link="GwyParamTable.html#gwy-param-table-append-results" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_resultsv ()" link="GwyParamTable.html#gwy-param-table-append-resultsv" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_results_fill ()" link="GwyParamTable.html#gwy-param-table-results-fill" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_results_clear ()" link="GwyParamTable.html#gwy-param-table-results-clear" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_report ()" link="GwyParamTable.html#gwy-param-table-append-report" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_report_set_results ()" link="GwyParamTable.html#gwy-param-table-report-set-results" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_report_set_formatter ()" link="GwyParamTable.html#gwy-param-table-report-set-formatter" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_seed ()" link="GwyParamTable.html#gwy-param-table-append-seed" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_message ()" link="GwyParamTable.html#gwy-param-table-append-message" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_info_set_valuestr ()" link="GwyParamTable.html#gwy-param-table-info-set-valuestr" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_message_set_type ()" link="GwyParamTable.html#gwy-param-table-message-set-type" since="2.59"/>
+    <keyword type="function" name="gwy_param_table_append_foreign ()" link="GwyParamTable.html#gwy-param-table-append-foreign" since="2.59"/>
+    <keyword type="struct" name="struct GwyParamTable" link="GwyParamTable.html#GwyParamTable-struct"/>
+    <keyword type="struct" name="struct GwyParamTableClass" link="GwyParamTable.html#GwyParamTableClass" since="2.59"/>
+    <keyword type="signal" name="The “param-changed” signal" link="GwyParamTable.html#GwyParamTable-param-changed"/>
+    <keyword type="function" name="GwyDialogPreviewFunc ()" link="GwyDialog.html#GwyDialogPreviewFunc" since="2.59"/>
+    <keyword type="function" name="gwy_dialog_new ()" link="GwyDialog.html#gwy-dialog-new" since="2.59"/>
+    <keyword type="function" name="gwy_dialog_add_buttons ()" link="GwyDialog.html#gwy-dialog-add-buttons" since="2.59"/>
+    <keyword type="function" name="gwy_dialog_add_content ()" link="GwyDialog.html#gwy-dialog-add-content" since="2.59"/>
+    <keyword type="function" name="gwy_dialog_add_param_table ()" link="GwyDialog.html#gwy-dialog-add-param-table" since="2.59"/>
+    <keyword type="function" name="gwy_dialog_remove_param_table ()" link="GwyDialog.html#gwy-dialog-remove-param-table" since="2.59"/>
+    <keyword type="function" name="gwy_dialog_set_preview_func ()" link="GwyDialog.html#gwy-dialog-set-preview-func" since="2.59"/>
+    <keyword type="function" name="gwy_dialog_set_instant_updates_param ()" link="GwyDialog.html#gwy-dialog-set-instant-updates-param" since="2.59"/>
+    <keyword type="function" name="gwy_dialog_run ()" link="GwyDialog.html#gwy-dialog-run" since="2.59"/>
+    <keyword type="function" name="gwy_dialog_invalidate ()" link="GwyDialog.html#gwy-dialog-invalidate" since="2.59"/>
+    <keyword type="function" name="gwy_dialog_have_result ()" link="GwyDialog.html#gwy-dialog-have-result" since="2.59"/>
+    <keyword type="enum" name="enum GwyDialogOutcome" link="GwyDialog.html#GwyDialogOutcome" since="2.59"/>
+    <keyword type="enum" name="enum GwyPreviewType" link="GwyDialog.html#GwyPreviewType" since="2.59"/>
+    <keyword type="enum" name="enum GwyResponseType" link="GwyDialog.html#GwyResponseType" since="2.59"/>
+    <keyword type="struct" name="struct GwyDialog" link="GwyDialog.html#GwyDialog-struct"/>
+    <keyword type="struct" name="struct GwyDialogClass" link="GwyDialog.html#GwyDialogClass" since="2.59"/>
+    <keyword type="function" name="gwy_tool_add_hide_button ()" link="GwyTool.html#gwy-tool-add-hide-button"/>
+    <keyword type="function" name="gwy_tool_show ()" link="GwyTool.html#gwy-tool-show"/>
+    <keyword type="function" name="gwy_tool_hide ()" link="GwyTool.html#gwy-tool-hide"/>
+    <keyword type="function" name="gwy_tool_is_visible ()" link="GwyTool.html#gwy-tool-is-visible"/>
+    <keyword type="function" name="gwy_tool_data_switched ()" link="GwyTool.html#gwy-tool-data-switched"/>
+    <keyword type="function" name="gwy_tool_spectra_switched ()" link="GwyTool.html#gwy-tool-spectra-switched" since="2.7"/>
+    <keyword type="function" name="gwy_tool_restore_screen_position ()" link="GwyTool.html#gwy-tool-restore-screen-position" since="2.33"/>
+    <keyword type="function" name="gwy_tool_class_get_title ()" link="GwyTool.html#gwy-tool-class-get-title"/>
+    <keyword type="function" name="gwy_tool_class_get_stock_id ()" link="GwyTool.html#gwy-tool-class-get-stock-id"/>
+    <keyword type="function" name="gwy_tool_class_get_tooltip ()" link="GwyTool.html#gwy-tool-class-get-tooltip"/>
+    <keyword type="enum" name="enum GwyToolResponseType" link="GwyTool.html#GwyToolResponseType"/>
+    <keyword type="struct" name="struct GwyTool" link="GwyTool.html#GwyTool-struct"/>
+    <keyword type="struct" name="struct GwyToolClass" link="GwyTool.html#GwyToolClass"/>
+    <keyword type="function" name="gwy_plain_tool_check_layer_type ()" link="GwyPlainTool.html#gwy-plain-tool-check-layer-type"/>
+    <keyword type="function" name="gwy_plain_tool_connect_selection ()" link="GwyPlainTool.html#gwy-plain-tool-connect-selection"/>
+    <keyword type="function" name="gwy_plain_tool_ensure_layer ()" link="GwyPlainTool.html#gwy-plain-tool-ensure-layer"/>
+    <keyword type="function" name="gwy_plain_tool_set_selection_key ()" link="GwyPlainTool.html#gwy-plain-tool-set-selection-key"/>
+    <keyword type="function" name="gwy_plain_tool_add_clear_button ()" link="GwyPlainTool.html#gwy-plain-tool-add-clear-button"/>
+    <keyword type="function" name="gwy_plain_tool_get_z_average ()" link="GwyPlainTool.html#gwy-plain-tool-get-z-average"/>
+    <keyword type="function" name="gwy_plain_tool_enable_object_deletion ()" link="GwyPlainTool.html#gwy-plain-tool-enable-object-deletion" since="2.7"/>
+    <keyword type="function" name="gwy_rect_selection_labels_new ()" link="GwyPlainTool.html#gwy-rect-selection-labels-new"/>
+    <keyword type="function" name="gwy_rect_selection_labels_get_table ()" link="GwyPlainTool.html#gwy-rect-selection-labels-get-table"/>
+    <keyword type="function" name="gwy_rect_selection_labels_select ()" link="GwyPlainTool.html#gwy-rect-selection-labels-select"/>
+    <keyword type="function" name="gwy_rect_selection_labels_fill ()" link="GwyPlainTool.html#gwy-rect-selection-labels-fill"/>
+    <keyword type="function" name="gwy_plain_tool_log_add ()" link="GwyPlainTool.html#gwy-plain-tool-log-add" since="2.35"/>
+    <keyword type="enum" name="enum GwyPlainToolChanged" link="GwyPlainTool.html#GwyPlainToolChanged"/>
+    <keyword type="struct" name="GwyRectSelectionLabels" link="GwyPlainTool.html#GwyRectSelectionLabels"/>
+    <keyword type="struct" name="struct GwyPlainTool" link="GwyPlainTool.html#GwyPlainTool-struct"/>
+    <keyword type="struct" name="struct GwyPlainToolClass" link="GwyPlainTool.html#GwyPlainToolClass"/>
+    <keyword type="function" name="GwySaveAuxiliaryCreate ()" link="libgwyapp-module-utils.html#GwySaveAuxiliaryCreate" since="2.3"/>
+    <keyword type="function" name="GwySaveAuxiliaryDestroy ()" link="libgwyapp-module-utils.html#GwySaveAuxiliaryDestroy" since="2.3"/>
+    <keyword type="function" name="gwy_save_auxiliary_data ()" link="libgwyapp-module-utils.html#gwy-save-auxiliary-data" since="2.3"/>
+    <keyword type="function" name="gwy_save_auxiliary_with_callback ()" link="libgwyapp-module-utils.html#gwy-save-auxiliary-with-callback" since="2.3"/>
+    <keyword type="function" name="gwy_module_data_load ()" link="libgwyapp-module-utils.html#gwy-module-data-load" since="2.51"/>
+    <keyword type="function" name="gwy_module_data_save ()" link="libgwyapp-module-utils.html#gwy-module-data-save" since="2.51"/>
+    <keyword type="function" name="gwy_module_data_fopen ()" link="libgwyapp-module-utils.html#gwy-module-data-fopen" since="2.51"/>
+    <keyword type="function" name="gwy_set_data_preview_size ()" link="libgwyapp-module-utils.html#gwy-set-data-preview-size" since="2.7"/>
+    <keyword type="function" name="gwy_require_image_same_units ()" link="libgwyapp-module-utils.html#gwy-require-image-same-units" since="2.59"/>
+    <keyword type="function" name="gwy_require_square_image ()" link="libgwyapp-module-utils.html#gwy-require-square-image" since="2.59"/>
+    <keyword type="function" name="gwy_create_preview ()" link="libgwyapp-module-utils.html#gwy-create-preview" since="2.59"/>
+    <keyword type="function" name="gwy_create_dialog_preview_hbox ()" link="libgwyapp-module-utils.html#gwy-create-dialog-preview-hbox" since="2.59"/>
+    <keyword type="function" name="gwy_create_preview_vector_layer ()" link="libgwyapp-module-utils.html#gwy-create-preview-vector-layer" since="2.61"/>
+    <keyword type="function" name="gwy_param_active_page_link_to_notebook ()" link="libgwyapp-module-utils.html#gwy-param-active-page-link-to-notebook" since="2.59"/>
+    <keyword type="function" name="gwy_app_add_graph_or_curves ()" link="libgwyapp-module-utils.html#gwy-app-add-graph-or-curves" since="2.41"/>
+    <keyword type="function" name="gwy_preview_surface_to_datafield ()" link="libgwyapp-module-utils.html#gwy-preview-surface-to-datafield" since="2.46"/>
+    <keyword type="function" name="gwy_app_wait_preview_data_field ()" link="libgwyapp-module-utils.html#gwy-app-wait-preview-data-field" since="2.59"/>
+    <keyword type="function" name="gwy_app_data_id_verify_channel ()" link="libgwyapp-module-utils.html#gwy-app-data-id-verify-channel" since="2.41"/>
+    <keyword type="function" name="gwy_app_data_id_verify_graph ()" link="libgwyapp-module-utils.html#gwy-app-data-id-verify-graph" since="2.41"/>
+    <keyword type="function" name="gwy_app_data_id_verify_volume ()" link="libgwyapp-module-utils.html#gwy-app-data-id-verify-volume" since="2.41"/>
+    <keyword type="function" name="gwy_app_data_id_verify_xyz ()" link="libgwyapp-module-utils.html#gwy-app-data-id-verify-xyz" since="2.46"/>
+    <keyword type="function" name="gwy_app_data_id_verify_curve_map ()" link="libgwyapp-module-utils.html#gwy-app-data-id-verify-curve-map" since="2.46"/>
+    <keyword type="function" name="gwy_app_data_id_verify_spectra ()" link="libgwyapp-module-utils.html#gwy-app-data-id-verify-spectra" since="2.41"/>
+    <keyword type="enum" name="enum GwyPreviewSurfaceFlags" link="libgwyapp-module-utils.html#GwyPreviewSurfaceFlags" since="2.46"/>
+    <keyword type="function" name="gwy_get_gboolean8 ()" link="libgwyapp-file-module-utils.html#gwy-get-gboolean8" since="2.3"/>
+    <keyword type="function" name="gwy_get_gint16_le ()" link="libgwyapp-file-module-utils.html#gwy-get-gint16-le" since="2.3"/>
+    <keyword type="function" name="gwy_get_gint16_be ()" link="libgwyapp-file-module-utils.html#gwy-get-gint16-be" since="2.3"/>
+    <keyword type="function" name="gwy_get_guint16_le ()" link="libgwyapp-file-module-utils.html#gwy-get-guint16-le" since="2.3"/>
+    <keyword type="function" name="gwy_get_guint16_be ()" link="libgwyapp-file-module-utils.html#gwy-get-guint16-be" since="2.3"/>
+    <keyword type="function" name="gwy_get_gint32_le ()" link="libgwyapp-file-module-utils.html#gwy-get-gint32-le" since="2.3"/>
+    <keyword type="function" name="gwy_get_gint32_be ()" link="libgwyapp-file-module-utils.html#gwy-get-gint32-be" since="2.3"/>
+    <keyword type="function" name="gwy_get_guint32_le ()" link="libgwyapp-file-module-utils.html#gwy-get-guint32-le" since="2.3"/>
+    <keyword type="function" name="gwy_get_guint32_be ()" link="libgwyapp-file-module-utils.html#gwy-get-guint32-be" since="2.3"/>
+    <keyword type="function" name="gwy_get_gint64_le ()" link="libgwyapp-file-module-utils.html#gwy-get-gint64-le" since="2.3"/>
+    <keyword type="function" name="gwy_get_gint64_be ()" link="libgwyapp-file-module-utils.html#gwy-get-gint64-be" since="2.3"/>
+    <keyword type="function" name="gwy_get_guint64_le ()" link="libgwyapp-file-module-utils.html#gwy-get-guint64-le" since="2.3"/>
+    <keyword type="function" name="gwy_get_guint64_be ()" link="libgwyapp-file-module-utils.html#gwy-get-guint64-be" since="2.3"/>
+    <keyword type="function" name="gwy_get_gfloat_le ()" link="libgwyapp-file-module-utils.html#gwy-get-gfloat-le" since="2.3"/>
+    <keyword type="function" name="gwy_get_gfloat_be ()" link="libgwyapp-file-module-utils.html#gwy-get-gfloat-be" since="2.3"/>
+    <keyword type="function" name="gwy_get_gdouble_le ()" link="libgwyapp-file-module-utils.html#gwy-get-gdouble-le" since="2.3"/>
+    <keyword type="function" name="gwy_get_gdouble_be ()" link="libgwyapp-file-module-utils.html#gwy-get-gdouble-be" since="2.3"/>
+    <keyword type="function" name="gwy_get_pascal_real_le ()" link="libgwyapp-file-module-utils.html#gwy-get-pascal-real-le" since="2.3"/>
+    <keyword type="function" name="gwy_get_pascal_real_be ()" link="libgwyapp-file-module-utils.html#gwy-get-pascal-real-be" since="2.3"/>
+    <keyword type="function" name="gwy_app_channel_check_nonsquare ()" link="libgwyapp-file-module-utils.html#gwy-app-channel-check-nonsquare" since="2.3"/>
+    <keyword type="function" name="gwy_app_channel_title_fall_back ()" link="libgwyapp-file-module-utils.html#gwy-app-channel-title-fall-back" since="2.3"/>
+    <keyword type="function" name="gwy_app_xyz_title_fall_back ()" link="libgwyapp-file-module-utils.html#gwy-app-xyz-title-fall-back" since="2.45"/>
+    <keyword type="function" name="gwy_app_channel_remove_bad_data ()" link="libgwyapp-file-module-utils.html#gwy-app-channel-remove-bad-data" since="2.14"/>
+    <keyword type="function" name="gwy_app_channel_mask_of_nans ()" link="libgwyapp-file-module-utils.html#gwy-app-channel-mask-of-nans" since="2.38"/>
+    <keyword type="function" name="gwy_text_header_error_quark ()" link="libgwyapp-file-module-utils.html#gwy-text-header-error-quark" since="2.18"/>
+    <keyword type="function" name="gwy_text_header_parse ()" link="libgwyapp-file-module-utils.html#gwy-text-header-parse" since="2.18"/>
+    <keyword type="function" name="gwy_text_header_context_get_section ()" link="libgwyapp-file-module-utils.html#gwy-text-header-context-get-section" since="2.18"/>
+    <keyword type="function" name="gwy_text_header_context_get_lineno ()" link="libgwyapp-file-module-utils.html#gwy-text-header-context-get-lineno" since="2.18"/>
+    <keyword type="function" name="gwy_file_channel_import_log_add ()" link="libgwyapp-file-module-utils.html#gwy-file-channel-import-log-add" since="2.35"/>
+    <keyword type="function" name="gwy_file_volume_import_log_add ()" link="libgwyapp-file-module-utils.html#gwy-file-volume-import-log-add" since="2.35"/>
+    <keyword type="function" name="gwy_file_xyz_import_log_add ()" link="libgwyapp-file-module-utils.html#gwy-file-xyz-import-log-add" since="2.45"/>
+    <keyword type="function" name="gwy_file_curve_map_import_log_add ()" link="libgwyapp-file-module-utils.html#gwy-file-curve-map-import-log-add" since="2.60"/>
+    <keyword type="macro" name="GWY_TEXT_HEADER_ERROR" link="libgwyapp-file-module-utils.html#GWY-TEXT-HEADER-ERROR:CAPS" since="2.18"/>
+    <keyword type="enum" name="enum GwyTextHeaderError" link="libgwyapp-file-module-utils.html#GwyTextHeaderError" since="2.18"/>
+    <keyword type="struct" name="GwyTextHeaderParser" link="libgwyapp-file-module-utils.html#GwyTextHeaderParser" since="2.18"/>
+    <keyword type="struct" name="GwyTextHeaderContext" link="libgwyapp-file-module-utils.html#GwyTextHeaderContext" since="2.18"/>
+    <keyword type="function" name="gwy_synth_define_dimensions_params ()" link="libgwyapp-synth-module-utils.html#gwy-synth-define-dimensions-params" since="2.59"/>
+    <keyword type="function" name="gwy_synth_sanitise_params ()" link="libgwyapp-synth-module-utils.html#gwy-synth-sanitise-params" since="2.59"/>
+    <keyword type="function" name="gwy_synth_append_dimensions_to_param_table ()" link="libgwyapp-synth-module-utils.html#gwy-synth-append-dimensions-to-param-table" since="2.59"/>
+    <keyword type="function" name="gwy_synth_use_dimensions_template ()" link="libgwyapp-synth-module-utils.html#gwy-synth-use-dimensions-template" since="2.59"/>
+    <keyword type="function" name="gwy_synth_update_value_unitstrs ()" link="libgwyapp-synth-module-utils.html#gwy-synth-update-value-unitstrs" since="2.59"/>
+    <keyword type="function" name="gwy_synth_update_lateral_alts ()" link="libgwyapp-synth-module-utils.html#gwy-synth-update-lateral-alts" since="2.59"/>
+    <keyword type="function" name="gwy_synth_update_like_current_button_sensitivity ()" link="libgwyapp-synth-module-utils.html#gwy-synth-update-like-current-button-sensitivity" since="2.59"/>
+    <keyword type="function" name="gwy_synth_handle_param_changed ()" link="libgwyapp-synth-module-utils.html#gwy-synth-handle-param-changed" since="2.59"/>
+    <keyword type="function" name="gwy_synth_add_result_to_file ()" link="libgwyapp-synth-module-utils.html#gwy-synth-add-result-to-file" since="2.59"/>
+    <keyword type="function" name="gwy_synth_make_result_data_field ()" link="libgwyapp-synth-module-utils.html#gwy-synth-make-result-data-field" since="2.59"/>
+    <keyword type="function" name="gwy_synth_make_preview_data_field ()" link="libgwyapp-synth-module-utils.html#gwy-synth-make-preview-data-field" since="2.59"/>
+    <keyword type="function" name="gwy_synth_update_progress ()" link="libgwyapp-synth-module-utils.html#gwy-synth-update-progress" since="2.59"/>
+    <keyword type="enum" name="enum GwySynthResponseType" link="libgwyapp-synth-module-utils.html#GwySynthResponseType" since="2.59"/>
+    <keyword type="enum" name="enum GwySynthDimsParam" link="libgwyapp-synth-module-utils.html#GwySynthDimsParam" since="2.59"/>
+    <keyword type="enum" name="enum GwySynthDimsFlags" link="libgwyapp-synth-module-utils.html#GwySynthDimsFlags" since="2.59"/>
+    <keyword type="enum" name="enum GwySynthUpdateType" link="libgwyapp-synth-module-utils.html#GwySynthUpdateType" since="2.59"/>
+    <keyword type="function" name="gwy_results_export_new ()" link="GwyResultsExport.html#gwy-results-export-new" since="2.50"/>
+    <keyword type="function" name="gwy_results_export_set_format ()" link="GwyResultsExport.html#gwy-results-export-set-format" since="2.50"/>
+    <keyword type="function" name="gwy_results_export_get_format ()" link="GwyResultsExport.html#gwy-results-export-get-format" since="2.50"/>
+    <keyword type="function" name="gwy_results_export_set_results ()" link="GwyResultsExport.html#gwy-results-export-set-results" since="2.50"/>
+    <keyword type="function" name="gwy_results_export_get_results ()" link="GwyResultsExport.html#gwy-results-export-get-results" since="2.50"/>
+    <keyword type="function" name="gwy_results_export_set_title ()" link="GwyResultsExport.html#gwy-results-export-set-title" since="2.50"/>
+    <keyword type="function" name="gwy_results_export_set_style ()" link="GwyResultsExport.html#gwy-results-export-set-style" since="2.50"/>
+    <keyword type="function" name="gwy_results_export_get_style ()" link="GwyResultsExport.html#gwy-results-export-get-style" since="2.50"/>
+    <keyword type="function" name="gwy_results_export_set_actions_sensitive ()" link="GwyResultsExport.html#gwy-results-export-set-actions-sensitive" since="2.50"/>
+    <keyword type="function" name="gwy_results_fill_filename ()" link="GwyResultsExport.html#gwy-results-fill-filename" since="2.50"/>
+    <keyword type="function" name="gwy_results_fill_channel ()" link="GwyResultsExport.html#gwy-results-fill-channel" since="2.50"/>
+    <keyword type="function" name="gwy_results_fill_volume ()" link="GwyResultsExport.html#gwy-results-fill-volume" since="2.50"/>
+    <keyword type="function" name="gwy_results_fill_xyz ()" link="GwyResultsExport.html#gwy-results-fill-xyz" since="2.50"/>
+    <keyword type="function" name="gwy_results_fill_curve_map ()" link="GwyResultsExport.html#gwy-results-fill-curve-map" since="2.60"/>
+    <keyword type="function" name="gwy_results_fill_graph ()" link="GwyResultsExport.html#gwy-results-fill-graph" since="2.53"/>
+    <keyword type="function" name="gwy_results_fill_graph_curve ()" link="GwyResultsExport.html#gwy-results-fill-graph-curve" since="2.53"/>
+    <keyword type="function" name="gwy_results_fill_lawn_curve ()" link="GwyResultsExport.html#gwy-results-fill-lawn-curve" since="2.60"/>
+    <keyword type="enum" name="enum GwyResultsExportStyle" link="GwyResultsExport.html#GwyResultsExportStyle"/>
+    <keyword type="struct" name="struct GwyResultsExport" link="GwyResultsExport.html#GwyResultsExport-struct"/>
+    <keyword type="struct" name="struct GwyResultsExportClass" link="GwyResultsExport.html#GwyResultsExportClass"/>
+    <keyword type="signal" name="The “copy” signal" link="GwyResultsExport.html#GwyResultsExport-copy"/>
+    <keyword type="signal" name="The “format-changed” signal" link="GwyResultsExport.html#GwyResultsExport-format-changed"/>
+    <keyword type="signal" name="The “save” signal" link="GwyResultsExport.html#GwyResultsExport-save"/>
+    <keyword type="function" name="gwy_data_validate ()" link="libgwyapp-Validate.html#gwy-data-validate" since="2.9"/>
+    <keyword type="function" name="gwy_data_error_desrcibe ()" link="libgwyapp-Validate.html#gwy-data-error-desrcibe" since="2.9"/>
+    <keyword type="function" name="gwy_data_validation_failure_list_free ()" link="libgwyapp-Validate.html#gwy-data-validation-failure-list-free" since="2.9"/>
+    <keyword type="enum" name="enum GwyDataError" link="libgwyapp-Validate.html#GwyDataError" since="2.9"/>
+    <keyword type="enum" name="enum GwyDataValidateFlags" link="libgwyapp-Validate.html#GwyDataValidateFlags" since="2.9"/>
+    <keyword type="struct" name="GwyDataValidationFailure" link="libgwyapp-Validate.html#GwyDataValidationFailure" since="2.9"/>
+    <keyword type="function" name="gwy_app_wait_start ()" link="libgwyapp-wait.html#gwy-app-wait-start"/>
+    <keyword type="function" name="gwy_app_wait_finish ()" link="libgwyapp-wait.html#gwy-app-wait-finish"/>
+    <keyword type="function" name="gwy_app_wait_set_fraction ()" link="libgwyapp-wait.html#gwy-app-wait-set-fraction"/>
+    <keyword type="function" name="gwy_app_wait_set_message ()" link="libgwyapp-wait.html#gwy-app-wait-set-message"/>
+    <keyword type="function" name="gwy_app_wait_set_message_prefix ()" link="libgwyapp-wait.html#gwy-app-wait-set-message-prefix"/>
+    <keyword type="function" name="gwy_app_wait_cursor_start ()" link="libgwyapp-wait.html#gwy-app-wait-cursor-start" since="2.3"/>
+    <keyword type="function" name="gwy_app_wait_cursor_finish ()" link="libgwyapp-wait.html#gwy-app-wait-cursor-finish" since="2.3"/>
+    <keyword type="function" name="gwy_app_wait_get_enabled ()" link="libgwyapp-wait.html#gwy-app-wait-get-enabled" since="2.48"/>
+    <keyword type="function" name="gwy_app_wait_set_enabled ()" link="libgwyapp-wait.html#gwy-app-wait-set-enabled" since="2.48"/>
+    <keyword type="function" name="gwy_app_wait_was_canceled ()" link="libgwyapp-wait.html#gwy-app-wait-was-canceled" since="2.49"/>
+    <keyword type="function" name="gwy_app_wait_set_preview_widget ()" link="libgwyapp-wait.html#gwy-app-wait-set-preview-widget" since="2.54"/>
+    <keyword type="constant" name="GWY_APP_CONTAINER" link="libgwyapp-data-browser.html#GWY-APP-CONTAINER:CAPS"/>
+    <keyword type="constant" name="GWY_APP_DATA_VIEW" link="libgwyapp-data-browser.html#GWY-APP-DATA-VIEW:CAPS"/>
+    <keyword type="constant" name="GWY_APP_GRAPH" link="libgwyapp-data-browser.html#GWY-APP-GRAPH:CAPS"/>
+    <keyword type="constant" name="GWY_APP_DATA_FIELD" link="libgwyapp-data-browser.html#GWY-APP-DATA-FIELD:CAPS"/>
+    <keyword type="constant" name="GWY_APP_DATA_FIELD_KEY" link="libgwyapp-data-browser.html#GWY-APP-DATA-FIELD-KEY:CAPS"/>
+    <keyword type="constant" name="GWY_APP_DATA_FIELD_ID" link="libgwyapp-data-browser.html#GWY-APP-DATA-FIELD-ID:CAPS"/>
+    <keyword type="constant" name="GWY_APP_MASK_FIELD" link="libgwyapp-data-browser.html#GWY-APP-MASK-FIELD:CAPS"/>
+    <keyword type="constant" name="GWY_APP_MASK_FIELD_KEY" link="libgwyapp-data-browser.html#GWY-APP-MASK-FIELD-KEY:CAPS"/>
+    <keyword type="constant" name="GWY_APP_SHOW_FIELD" link="libgwyapp-data-browser.html#GWY-APP-SHOW-FIELD:CAPS"/>
+    <keyword type="constant" name="GWY_APP_SHOW_FIELD_KEY" link="libgwyapp-data-browser.html#GWY-APP-SHOW-FIELD-KEY:CAPS"/>
+    <keyword type="constant" name="GWY_APP_GRAPH_MODEL" link="libgwyapp-data-browser.html#GWY-APP-GRAPH-MODEL:CAPS"/>
+    <keyword type="constant" name="GWY_APP_GRAPH_MODEL_KEY" link="libgwyapp-data-browser.html#GWY-APP-GRAPH-MODEL-KEY:CAPS"/>
+    <keyword type="constant" name="GWY_APP_GRAPH_MODEL_ID" link="libgwyapp-data-browser.html#GWY-APP-GRAPH-MODEL-ID:CAPS"/>
+    <keyword type="constant" name="GWY_APP_SPECTRA" link="libgwyapp-data-browser.html#GWY-APP-SPECTRA:CAPS"/>
+    <keyword type="constant" name="GWY_APP_SPECTRA_KEY" link="libgwyapp-data-browser.html#GWY-APP-SPECTRA-KEY:CAPS"/>
+    <keyword type="constant" name="GWY_APP_SPECTRA_ID" link="libgwyapp-data-browser.html#GWY-APP-SPECTRA-ID:CAPS"/>
+    <keyword type="constant" name="GWY_APP_VOLUME_VIEW" link="libgwyapp-data-browser.html#GWY-APP-VOLUME-VIEW:CAPS"/>
+    <keyword type="constant" name="GWY_APP_BRICK" link="libgwyapp-data-browser.html#GWY-APP-BRICK:CAPS"/>
+    <keyword type="constant" name="GWY_APP_BRICK_KEY" link="libgwyapp-data-browser.html#GWY-APP-BRICK-KEY:CAPS"/>
+    <keyword type="constant" name="GWY_APP_BRICK_ID" link="libgwyapp-data-browser.html#GWY-APP-BRICK-ID:CAPS"/>
+    <keyword type="constant" name="GWY_APP_CONTAINER_ID" link="libgwyapp-data-browser.html#GWY-APP-CONTAINER-ID:CAPS"/>
+    <keyword type="constant" name="GWY_APP_XYZ_VIEW" link="libgwyapp-data-browser.html#GWY-APP-XYZ-VIEW:CAPS"/>
+    <keyword type="constant" name="GWY_APP_SURFACE" link="libgwyapp-data-browser.html#GWY-APP-SURFACE:CAPS"/>
+    <keyword type="constant" name="GWY_APP_SURFACE_KEY" link="libgwyapp-data-browser.html#GWY-APP-SURFACE-KEY:CAPS"/>
+    <keyword type="constant" name="GWY_APP_SURFACE_ID" link="libgwyapp-data-browser.html#GWY-APP-SURFACE-ID:CAPS"/>
+    <keyword type="constant" name="GWY_APP_PAGE" link="libgwyapp-data-browser.html#GWY-APP-PAGE:CAPS"/>
+    <keyword type="constant" name="GWY_APP_LAWN" link="libgwyapp-data-browser.html#GWY-APP-LAWN:CAPS"/>
+    <keyword type="constant" name="GWY_APP_LAWN_KEY" link="libgwyapp-data-browser.html#GWY-APP-LAWN-KEY:CAPS"/>
+    <keyword type="constant" name="GWY_APP_LAWN_ID" link="libgwyapp-data-browser.html#GWY-APP-LAWN-ID:CAPS"/>
+    <keyword type="constant" name="GWY_APP_CURVE_MAP_VIEW" link="libgwyapp-data-browser.html#GWY-APP-CURVE-MAP-VIEW:CAPS"/>
+    <keyword type="constant" name="GWY_PAGE_NOPAGE" link="libgwyapp-data-browser.html#GWY-PAGE-NOPAGE:CAPS"/>
+    <keyword type="constant" name="GWY_PAGE_CHANNELS" link="libgwyapp-data-browser.html#GWY-PAGE-CHANNELS:CAPS"/>
+    <keyword type="constant" name="GWY_PAGE_GRAPHS" link="libgwyapp-data-browser.html#GWY-PAGE-GRAPHS:CAPS"/>
+    <keyword type="constant" name="GWY_PAGE_SPECTRA" link="libgwyapp-data-browser.html#GWY-PAGE-SPECTRA:CAPS"/>
+    <keyword type="constant" name="GWY_PAGE_VOLUMES" link="libgwyapp-data-browser.html#GWY-PAGE-VOLUMES:CAPS"/>
+    <keyword type="constant" name="GWY_PAGE_XYZS" link="libgwyapp-data-browser.html#GWY-PAGE-XYZS:CAPS"/>
+    <keyword type="constant" name="GWY_PAGE_CURVE_MAPS" link="libgwyapp-data-browser.html#GWY-PAGE-CURVE-MAPS:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_ITEM_GRADIENT" link="libgwyapp-data-browser.html#GWY-DATA-ITEM-GRADIENT:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_ITEM_PALETTE" link="libgwyapp-data-browser.html#GWY-DATA-ITEM-PALETTE:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_ITEM_MASK_COLOR" link="libgwyapp-data-browser.html#GWY-DATA-ITEM-MASK-COLOR:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_ITEM_TITLE" link="libgwyapp-data-browser.html#GWY-DATA-ITEM-TITLE:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_ITEM_RANGE" link="libgwyapp-data-browser.html#GWY-DATA-ITEM-RANGE:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_ITEM_RANGE_TYPE" link="libgwyapp-data-browser.html#GWY-DATA-ITEM-RANGE-TYPE:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_ITEM_REAL_SQUARE" link="libgwyapp-data-browser.html#GWY-DATA-ITEM-REAL-SQUARE:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_ITEM_SELECTIONS" link="libgwyapp-data-browser.html#GWY-DATA-ITEM-SELECTIONS:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_ITEM_META" link="libgwyapp-data-browser.html#GWY-DATA-ITEM-META:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_ITEM_CALDATA" link="libgwyapp-data-browser.html#GWY-DATA-ITEM-CALDATA:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_ITEM_PREVIEW" link="libgwyapp-data-browser.html#GWY-DATA-ITEM-PREVIEW:CAPS"/>
+    <keyword type="constant" name="GWY_VISIBILITY_RESET_DEFAULT" link="libgwyapp-data-browser.html#GWY-VISIBILITY-RESET-DEFAULT:CAPS"/>
+    <keyword type="constant" name="GWY_VISIBILITY_RESET_RESTORE" link="libgwyapp-data-browser.html#GWY-VISIBILITY-RESET-RESTORE:CAPS"/>
+    <keyword type="constant" name="GWY_VISIBILITY_RESET_SHOW_ALL" link="libgwyapp-data-browser.html#GWY-VISIBILITY-RESET-SHOW-ALL:CAPS"/>
+    <keyword type="constant" name="GWY_VISIBILITY_RESET_HIDE_ALL" link="libgwyapp-data-browser.html#GWY-VISIBILITY-RESET-HIDE-ALL:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_WATCH_EVENT_ADDED" link="libgwyapp-data-browser.html#GWY-DATA-WATCH-EVENT-ADDED:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_WATCH_EVENT_CHANGED" link="libgwyapp-data-browser.html#GWY-DATA-WATCH-EVENT-CHANGED:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_WATCH_EVENT_REMOVED" link="libgwyapp-data-browser.html#GWY-DATA-WATCH-EVENT-REMOVED:CAPS"/>
+    <keyword type="constant" name="GWY_APP_SETTINGS_ERROR_FILE" link="libgwyapp-settings.html#GWY-APP-SETTINGS-ERROR-FILE:CAPS"/>
+    <keyword type="constant" name="GWY_APP_SETTINGS_ERROR_CORRUPT" link="libgwyapp-settings.html#GWY-APP-SETTINGS-ERROR-CORRUPT:CAPS"/>
+    <keyword type="constant" name="GWY_APP_SETTINGS_ERROR_CFGDIR" link="libgwyapp-settings.html#GWY-APP-SETTINGS-ERROR-CFGDIR:CAPS"/>
+    <keyword type="constant" name="GWY_APP_SETTINGS_ERROR_EMPTY" link="libgwyapp-settings.html#GWY-APP-SETTINGS-ERROR-EMPTY:CAPS"/>
+    <keyword type="constant" name="GWY_MENU_FLAG_DATA" link="libgwyapp-menu.html#GWY-MENU-FLAG-DATA:CAPS"/>
+    <keyword type="constant" name="GWY_MENU_FLAG_UNDO" link="libgwyapp-menu.html#GWY-MENU-FLAG-UNDO:CAPS"/>
+    <keyword type="constant" name="GWY_MENU_FLAG_REDO" link="libgwyapp-menu.html#GWY-MENU-FLAG-REDO:CAPS"/>
+    <keyword type="constant" name="GWY_MENU_FLAG_GRAPH" link="libgwyapp-menu.html#GWY-MENU-FLAG-GRAPH:CAPS"/>
+    <keyword type="constant" name="GWY_MENU_FLAG_LAST_PROC" link="libgwyapp-menu.html#GWY-MENU-FLAG-LAST-PROC:CAPS"/>
+    <keyword type="constant" name="GWY_MENU_FLAG_LAST_GRAPH" link="libgwyapp-menu.html#GWY-MENU-FLAG-LAST-GRAPH:CAPS"/>
+    <keyword type="constant" name="GWY_MENU_FLAG_DATA_MASK" link="libgwyapp-menu.html#GWY-MENU-FLAG-DATA-MASK:CAPS"/>
+    <keyword type="constant" name="GWY_MENU_FLAG_DATA_SHOW" link="libgwyapp-menu.html#GWY-MENU-FLAG-DATA-SHOW:CAPS"/>
+    <keyword type="constant" name="GWY_MENU_FLAG_3D" link="libgwyapp-menu.html#GWY-MENU-FLAG-3D:CAPS"/>
+    <keyword type="constant" name="GWY_MENU_FLAG_FILE" link="libgwyapp-menu.html#GWY-MENU-FLAG-FILE:CAPS"/>
+    <keyword type="constant" name="GWY_MENU_FLAG_VOLUME" link="libgwyapp-menu.html#GWY-MENU-FLAG-VOLUME:CAPS"/>
+    <keyword type="constant" name="GWY_MENU_FLAG_XYZ" link="libgwyapp-menu.html#GWY-MENU-FLAG-XYZ:CAPS"/>
+    <keyword type="constant" name="GWY_MENU_FLAG_CURVE_MAP" link="libgwyapp-menu.html#GWY-MENU-FLAG-CURVE-MAP:CAPS"/>
+    <keyword type="constant" name="GWY_MENU_FLAG_GRAPH_CURVE" link="libgwyapp-menu.html#GWY-MENU-FLAG-GRAPH-CURVE:CAPS"/>
+    <keyword type="constant" name="GWY_MENU_FLAG_MASK" link="libgwyapp-menu.html#GWY-MENU-FLAG-MASK:CAPS"/>
+    <keyword type="constant" name="GWY_HELP_DEFAULT" link="libgwyapp-help.html#GWY-HELP-DEFAULT:CAPS"/>
+    <keyword type="constant" name="GWY_HELP_NO_BUTTON" link="libgwyapp-help.html#GWY-HELP-NO-BUTTON:CAPS"/>
+    <keyword type="constant" name="GWY_APP_LOGGING_TO_FILE" link="libgwyapp-logging.html#GWY-APP-LOGGING-TO-FILE:CAPS"/>
+    <keyword type="constant" name="GWY_APP_LOGGING_TO_CONSOLE" link="libgwyapp-logging.html#GWY-APP-LOGGING-TO-CONSOLE:CAPS"/>
+    <keyword type="constant" name="GWY_PARAM_STRING_EMPTY_IS_NULL" link="GwyParamDef.html#GWY-PARAM-STRING-EMPTY-IS-NULL:CAPS"/>
+    <keyword type="constant" name="GWY_PARAM_STRING_NULL_IS_EMPTY" link="GwyParamDef.html#GWY-PARAM-STRING-NULL-IS-EMPTY:CAPS"/>
+    <keyword type="constant" name="GWY_PARAM_STRING_DO_NOT_STRIP" link="GwyParamDef.html#GWY-PARAM-STRING-DO-NOT-STRIP:CAPS"/>
+    <keyword type="constant" name="GWY_DIALOG_CANCEL" link="GwyDialog.html#GWY-DIALOG-CANCEL:CAPS"/>
+    <keyword type="constant" name="GWY_DIALOG_PROCEED" link="GwyDialog.html#GWY-DIALOG-PROCEED:CAPS"/>
+    <keyword type="constant" name="GWY_DIALOG_HAVE_RESULT" link="GwyDialog.html#GWY-DIALOG-HAVE-RESULT:CAPS"/>
+    <keyword type="constant" name="GWY_PREVIEW_NONE" link="GwyDialog.html#GWY-PREVIEW-NONE:CAPS"/>
+    <keyword type="constant" name="GWY_PREVIEW_IMMEDIATE" link="GwyDialog.html#GWY-PREVIEW-IMMEDIATE:CAPS"/>
+    <keyword type="constant" name="GWY_PREVIEW_UPON_REQUEST" link="GwyDialog.html#GWY-PREVIEW-UPON-REQUEST:CAPS"/>
+    <keyword type="constant" name="GWY_RESPONSE_RESET" link="GwyDialog.html#GWY-RESPONSE-RESET:CAPS"/>
+    <keyword type="constant" name="GWY_RESPONSE_UPDATE" link="GwyDialog.html#GWY-RESPONSE-UPDATE:CAPS"/>
+    <keyword type="constant" name="GWY_RESPONSE_CLEAR" link="GwyDialog.html#GWY-RESPONSE-CLEAR:CAPS"/>
+    <keyword type="constant" name="GWY_TOOL_RESPONSE_CLEAR" link="GwyTool.html#GWY-TOOL-RESPONSE-CLEAR:CAPS"/>
+    <keyword type="constant" name="GWY_TOOL_RESPONSE_UPDATE" link="GwyTool.html#GWY-TOOL-RESPONSE-UPDATE:CAPS"/>
+    <keyword type="constant" name="GWY_PLAIN_TOOL_CHANGED_DATA" link="GwyPlainTool.html#GWY-PLAIN-TOOL-CHANGED-DATA:CAPS"/>
+    <keyword type="constant" name="GWY_PLAIN_TOOL_CHANGED_MASK" link="GwyPlainTool.html#GWY-PLAIN-TOOL-CHANGED-MASK:CAPS"/>
+    <keyword type="constant" name="GWY_PLAIN_TOOL_CHANGED_SHOW" link="GwyPlainTool.html#GWY-PLAIN-TOOL-CHANGED-SHOW:CAPS"/>
+    <keyword type="constant" name="GWY_PLAIN_TOOL_CHANGED_SELECTION" link="GwyPlainTool.html#GWY-PLAIN-TOOL-CHANGED-SELECTION:CAPS"/>
+    <keyword type="constant" name="GWY_PLAIN_TOOL_FINISHED_SELECTION" link="GwyPlainTool.html#GWY-PLAIN-TOOL-FINISHED-SELECTION:CAPS"/>
+    <keyword type="constant" name="GWY_PREVIEW_SURFACE_DENSITY" link="libgwyapp-module-utils.html#GWY-PREVIEW-SURFACE-DENSITY:CAPS"/>
+    <keyword type="constant" name="GWY_PREVIEW_SURFACE_FILL" link="libgwyapp-module-utils.html#GWY-PREVIEW-SURFACE-FILL:CAPS"/>
+    <keyword type="constant" name="GWY_TEXT_HEADER_ERROR_SECTION_NAME" link="libgwyapp-file-module-utils.html#GWY-TEXT-HEADER-ERROR-SECTION-NAME:CAPS"/>
+    <keyword type="constant" name="GWY_TEXT_HEADER_ERROR_SECTION_END" link="libgwyapp-file-module-utils.html#GWY-TEXT-HEADER-ERROR-SECTION-END:CAPS"/>
+    <keyword type="constant" name="GWY_TEXT_HEADER_ERROR_SECTION_START" link="libgwyapp-file-module-utils.html#GWY-TEXT-HEADER-ERROR-SECTION-START:CAPS"/>
+    <keyword type="constant" name="GWY_TEXT_HEADER_ERROR_PREFIX" link="libgwyapp-file-module-utils.html#GWY-TEXT-HEADER-ERROR-PREFIX:CAPS"/>
+    <keyword type="constant" name="GWY_TEXT_HEADER_ERROR_GARBAGE" link="libgwyapp-file-module-utils.html#GWY-TEXT-HEADER-ERROR-GARBAGE:CAPS"/>
+    <keyword type="constant" name="GWY_TEXT_HEADER_ERROR_KEY" link="libgwyapp-file-module-utils.html#GWY-TEXT-HEADER-ERROR-KEY:CAPS"/>
+    <keyword type="constant" name="GWY_TEXT_HEADER_ERROR_VALUE" link="libgwyapp-file-module-utils.html#GWY-TEXT-HEADER-ERROR-VALUE:CAPS"/>
+    <keyword type="constant" name="GWY_TEXT_HEADER_ERROR_TERMINATOR" link="libgwyapp-file-module-utils.html#GWY-TEXT-HEADER-ERROR-TERMINATOR:CAPS"/>
+    <keyword type="constant" name="GWY_RESPONSE_SYNTH_TAKE_DIMS" link="libgwyapp-synth-module-utils.html#GWY-RESPONSE-SYNTH-TAKE-DIMS:CAPS"/>
+    <keyword type="constant" name="GWY_RESPONSE_SYNTH_INIT_Z" link="libgwyapp-synth-module-utils.html#GWY-RESPONSE-SYNTH-INIT-Z:CAPS"/>
+    <keyword type="constant" name="GWY_DIMS_PARAM_XRES" link="libgwyapp-synth-module-utils.html#GWY-DIMS-PARAM-XRES:CAPS"/>
+    <keyword type="constant" name="GWY_DIMS_PARAM_YRES" link="libgwyapp-synth-module-utils.html#GWY-DIMS-PARAM-YRES:CAPS"/>
+    <keyword type="constant" name="GWY_DIMS_PARAM_SQUARE_IMAGE" link="libgwyapp-synth-module-utils.html#GWY-DIMS-PARAM-SQUARE-IMAGE:CAPS"/>
+    <keyword type="constant" name="GWY_DIMS_PARAM_XREAL" link="libgwyapp-synth-module-utils.html#GWY-DIMS-PARAM-XREAL:CAPS"/>
+    <keyword type="constant" name="GWY_DIMS_PARAM_YREAL" link="libgwyapp-synth-module-utils.html#GWY-DIMS-PARAM-YREAL:CAPS"/>
+    <keyword type="constant" name="GWY_DIMS_PARAM_SQUARE_PIXELS" link="libgwyapp-synth-module-utils.html#GWY-DIMS-PARAM-SQUARE-PIXELS:CAPS"/>
+    <keyword type="constant" name="GWY_DIMS_PARAM_XYUNIT" link="libgwyapp-synth-module-utils.html#GWY-DIMS-PARAM-XYUNIT:CAPS"/>
+    <keyword type="constant" name="GWY_DIMS_PARAM_ZUNIT" link="libgwyapp-synth-module-utils.html#GWY-DIMS-PARAM-ZUNIT:CAPS"/>
+    <keyword type="constant" name="GWY_DIMS_PARAM_REPLACE" link="libgwyapp-synth-module-utils.html#GWY-DIMS-PARAM-REPLACE:CAPS"/>
+    <keyword type="constant" name="GWY_DIMS_PARAM_INITIALIZE" link="libgwyapp-synth-module-utils.html#GWY-DIMS-PARAM-INITIALIZE:CAPS"/>
+    <keyword type="constant" name="GWY_DIMS_BUTTON_TAKE" link="libgwyapp-synth-module-utils.html#GWY-DIMS-BUTTON-TAKE:CAPS"/>
+    <keyword type="constant" name="GWY_DIMS_HEADER_PIXEL" link="libgwyapp-synth-module-utils.html#GWY-DIMS-HEADER-PIXEL:CAPS"/>
+    <keyword type="constant" name="GWY_DIMS_HEADER_PHYSICAL" link="libgwyapp-synth-module-utils.html#GWY-DIMS-HEADER-PHYSICAL:CAPS"/>
+    <keyword type="constant" name="GWY_DIMS_HEADER_UNITS" link="libgwyapp-synth-module-utils.html#GWY-DIMS-HEADER-UNITS:CAPS"/>
+    <keyword type="constant" name="GWY_DIMS_HEADER_CURRENT_IMAGE" link="libgwyapp-synth-module-utils.html#GWY-DIMS-HEADER-CURRENT-IMAGE:CAPS"/>
+    <keyword type="constant" name="GWY_SYNTH_FIXED_XYUNIT" link="libgwyapp-synth-module-utils.html#GWY-SYNTH-FIXED-XYUNIT:CAPS"/>
+    <keyword type="constant" name="GWY_SYNTH_FIXED_ZUNIT" link="libgwyapp-synth-module-utils.html#GWY-SYNTH-FIXED-ZUNIT:CAPS"/>
+    <keyword type="constant" name="GWY_SYNTH_FIXED_UNITS" link="libgwyapp-synth-module-utils.html#GWY-SYNTH-FIXED-UNITS:CAPS"/>
+    <keyword type="constant" name="GWY_SYNTH_UPDATE_CANCELLED" link="libgwyapp-synth-module-utils.html#GWY-SYNTH-UPDATE-CANCELLED:CAPS"/>
+    <keyword type="constant" name="GWY_SYNTH_UPDATE_NOTHING" link="libgwyapp-synth-module-utils.html#GWY-SYNTH-UPDATE-NOTHING:CAPS"/>
+    <keyword type="constant" name="GWY_SYNTH_UPDATE_DO_PREVIEW" link="libgwyapp-synth-module-utils.html#GWY-SYNTH-UPDATE-DO-PREVIEW:CAPS"/>
+    <keyword type="constant" name="GWY_RESULTS_EXPORT_PARAMETERS" link="GwyResultsExport.html#GWY-RESULTS-EXPORT-PARAMETERS:CAPS"/>
+    <keyword type="constant" name="GWY_RESULTS_EXPORT_TABULAR_DATA" link="GwyResultsExport.html#GWY-RESULTS-EXPORT-TABULAR-DATA:CAPS"/>
+    <keyword type="constant" name="GWY_RESULTS_EXPORT_FIXED_FORMAT" link="GwyResultsExport.html#GWY-RESULTS-EXPORT-FIXED-FORMAT:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_ERROR_KEY_FORMAT" link="libgwyapp-Validate.html#GWY-DATA-ERROR-KEY-FORMAT:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_ERROR_KEY_CHARACTERS" link="libgwyapp-Validate.html#GWY-DATA-ERROR-KEY-CHARACTERS:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_ERROR_KEY_UNKNOWN" link="libgwyapp-Validate.html#GWY-DATA-ERROR-KEY-UNKNOWN:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_ERROR_KEY_ID" link="libgwyapp-Validate.html#GWY-DATA-ERROR-KEY-ID:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_ERROR_ITEM_TYPE" link="libgwyapp-Validate.html#GWY-DATA-ERROR-ITEM-TYPE:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_ERROR_NON_UTF8_STRING" link="libgwyapp-Validate.html#GWY-DATA-ERROR-NON-UTF8-STRING:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_ERROR_REF_COUNT" link="libgwyapp-Validate.html#GWY-DATA-ERROR-REF-COUNT:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_ERROR_STRAY_SECONDARY_DATA" link="libgwyapp-Validate.html#GWY-DATA-ERROR-STRAY-SECONDARY-DATA:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_VALIDATE_UNKNOWN" link="libgwyapp-Validate.html#GWY-DATA-VALIDATE-UNKNOWN:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_VALIDATE_REF_COUNT" link="libgwyapp-Validate.html#GWY-DATA-VALIDATE-REF-COUNT:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_VALIDATE_ALL" link="libgwyapp-Validate.html#GWY-DATA-VALIDATE-ALL:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_VALIDATE_CORRECT" link="libgwyapp-Validate.html#GWY-DATA-VALIDATE-CORRECT:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_VALIDATE_NO_REPORT" link="libgwyapp-Validate.html#GWY-DATA-VALIDATE-NO-REPORT:CAPS"/>
+    <keyword type="member" name="GwyAppDataId.datano" link="GwyDataChooser.html#GwyAppDataId.datano"/>
+    <keyword type="member" name="GwyAppDataId.id" link="GwyDataChooser.html#GwyAppDataId.id"/>
+    <keyword type="member" name="GwyResourceEditorClass.resource-type" link="GwyResourceEditor.html#GwyResourceEditorClass.resource-type"/>
+    <keyword type="member" name="GwyResourceEditorClass.base-resource" link="GwyResourceEditor.html#GwyResourceEditorClass.base-resource"/>
+    <keyword type="member" name="GwyResourceEditorClass.window-title" link="GwyResourceEditor.html#GwyResourceEditorClass.window-title"/>
+    <keyword type="member" name="GwyResourceEditorClass.editor-title" link="GwyResourceEditor.html#GwyResourceEditorClass.editor-title"/>
+    <keyword type="member" name="GwyResourceEditorClass.settings-prefix" link="GwyResourceEditor.html#GwyResourceEditorClass.settings-prefix"/>
+    <keyword type="member" name="GwyResourceEditorClass.construct-treeview" link="GwyResourceEditor.html#GwyResourceEditorClass.construct-treeview"/>
+    <keyword type="member" name="GwyResourceEditorClass.construct-editor" link="GwyResourceEditor.html#GwyResourceEditorClass.construct-editor"/>
+    <keyword type="member" name="GwyResourceEditorClass.apply-changes" link="GwyResourceEditor.html#GwyResourceEditorClass.apply-changes"/>
+    <keyword type="member" name="GwyResourceEditorClass.switch-resource" link="GwyResourceEditor.html#GwyResourceEditorClass.switch-resource"/>
+    <keyword type="member" name="GwyResourceEditorClass.reserved1" link="GwyResourceEditor.html#GwyResourceEditorClass.reserved1"/>
+    <keyword type="member" name="GwyResourceEditorClass.reserved2" link="GwyResourceEditor.html#GwyResourceEditorClass.reserved2"/>
+    <keyword type="member" name="GwyResourceEditorClass.instance" link="GwyResourceEditor.html#GwyResourceEditorClass.instance"/>
+    <keyword type="member" name="GwyToolClass.stock-id" link="GwyTool.html#GwyToolClass.stock-id"/>
+    <keyword type="member" name="GwyToolClass.tooltip" link="GwyTool.html#GwyToolClass.tooltip"/>
+    <keyword type="member" name="GwyToolClass.title" link="GwyTool.html#GwyToolClass.title"/>
+    <keyword type="member" name="GwyToolClass.prefix" link="GwyTool.html#GwyToolClass.prefix"/>
+    <keyword type="member" name="GwyToolClass.default-width" link="GwyTool.html#GwyToolClass.default-width"/>
+    <keyword type="member" name="GwyToolClass.default-height" link="GwyTool.html#GwyToolClass.default-height"/>
+    <keyword type="member" name="GwyToolClass.show" link="GwyTool.html#GwyToolClass.show"/>
+    <keyword type="member" name="GwyToolClass.hide" link="GwyTool.html#GwyToolClass.hide"/>
+    <keyword type="member" name="GwyToolClass.data-switched" link="GwyTool.html#GwyToolClass.data-switched"/>
+    <keyword type="member" name="GwyToolClass.response" link="GwyTool.html#GwyToolClass.response"/>
+    <keyword type="member" name="GwyToolClass.spectra-switched" link="GwyTool.html#GwyToolClass.spectra-switched"/>
+    <keyword type="member" name="GwyToolClass.reserved2" link="GwyTool.html#GwyToolClass.reserved2"/>
+    <keyword type="member" name="GwyToolClass.reserved3" link="GwyTool.html#GwyToolClass.reserved3"/>
+    <keyword type="member" name="GwyToolClass.priv" link="GwyTool.html#GwyToolClass.priv"/>
+    <keyword type="member" name="GwyTextHeaderParser.comment-prefix" link="libgwyapp-file-module-utils.html#GwyTextHeaderParser.comment-prefix"/>
+    <keyword type="member" name="GwyTextHeaderParser.section-template" link="libgwyapp-file-module-utils.html#GwyTextHeaderParser.section-template"/>
+    <keyword type="member" name="GwyTextHeaderParser.endsection-template" link="libgwyapp-file-module-utils.html#GwyTextHeaderParser.endsection-template"/>
+    <keyword type="member" name="GwyTextHeaderParser.section-accessor" link="libgwyapp-file-module-utils.html#GwyTextHeaderParser.section-accessor"/>
+    <keyword type="member" name="GwyTextHeaderParser.line-prefix" link="libgwyapp-file-module-utils.html#GwyTextHeaderParser.line-prefix"/>
+    <keyword type="member" name="GwyTextHeaderParser.key-value-separator" link="libgwyapp-file-module-utils.html#GwyTextHeaderParser.key-value-separator"/>
+    <keyword type="member" name="GwyTextHeaderParser.terminator" link="libgwyapp-file-module-utils.html#GwyTextHeaderParser.terminator"/>
+    <keyword type="member" name="GwyTextHeaderParser.item" link="libgwyapp-file-module-utils.html#GwyTextHeaderParser.item"/>
+    <keyword type="member" name="GwyTextHeaderParser.section" link="libgwyapp-file-module-utils.html#GwyTextHeaderParser.section"/>
+    <keyword type="member" name="GwyTextHeaderParser.endsection" link="libgwyapp-file-module-utils.html#GwyTextHeaderParser.endsection"/>
+    <keyword type="member" name="GwyTextHeaderParser.end" link="libgwyapp-file-module-utils.html#GwyTextHeaderParser.end"/>
+    <keyword type="member" name="GwyTextHeaderParser.error" link="libgwyapp-file-module-utils.html#GwyTextHeaderParser.error"/>
+    <keyword type="member" name="GwyTextHeaderParser.destroy-key" link="libgwyapp-file-module-utils.html#GwyTextHeaderParser.destroy-key"/>
+    <keyword type="member" name="GwyTextHeaderParser.destroy-value" link="libgwyapp-file-module-utils.html#GwyTextHeaderParser.destroy-value"/>
+    <keyword type="member" name="GwyDataValidationFailure.error" link="libgwyapp-Validate.html#GwyDataValidationFailure.error"/>
+    <keyword type="member" name="GwyDataValidationFailure.key" link="libgwyapp-Validate.html#GwyDataValidationFailure.key"/>
+    <keyword type="member" name="GwyDataValidationFailure.details" link="libgwyapp-Validate.html#GwyDataValidationFailure.details"/>
+  </functions>
+</book>

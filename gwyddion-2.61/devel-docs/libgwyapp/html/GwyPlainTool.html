@@ -1,0 +1,735 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyPlainTool: Gwyddion Application Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="prev" href="GwyTool.html" title="GwyTool">
+<link rel="next" href="libgwyapp-module-utils.html" title="module utils">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyPlainTool.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyPlainTool.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="GwyTool.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyapp-module-utils.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyPlainTool"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyPlainTool.top_of_page"></a>GwyPlainTool</span></h2>
+<p>GwyPlainTool — Base class for simple tools</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyPlainTool.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyPlainTool.html#gwy-plain-tool-check-layer-type" title="gwy_plain_tool_check_layer_type ()">gwy_plain_tool_check_layer_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyPlainTool.html#gwy-plain-tool-connect-selection" title="gwy_plain_tool_connect_selection ()">gwy_plain_tool_connect_selection</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyPlainTool.html#gwy-plain-tool-ensure-layer" title="gwy_plain_tool_ensure_layer ()">gwy_plain_tool_ensure_layer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyPlainTool.html#gwy-plain-tool-set-selection-key" title="gwy_plain_tool_set_selection_key ()">gwy_plain_tool_set_selection_key</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyPlainTool.html#gwy-plain-tool-add-clear-button" title="gwy_plain_tool_add_clear_button ()">gwy_plain_tool_add_clear_button</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyPlainTool.html#gwy-plain-tool-get-z-average" title="gwy_plain_tool_get_z_average ()">gwy_plain_tool_get_z_average</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyPlainTool.html#gwy-plain-tool-enable-object-deletion" title="gwy_plain_tool_enable_object_deletion ()">gwy_plain_tool_enable_object_deletion</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyPlainTool.html#GwyRectSelectionLabels" title="GwyRectSelectionLabels"><span class="returnvalue">GwyRectSelectionLabels</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyPlainTool.html#gwy-rect-selection-labels-new" title="gwy_rect_selection_labels_new ()">gwy_rect_selection_labels_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyPlainTool.html#gwy-rect-selection-labels-get-table" title="gwy_rect_selection_labels_get_table ()">gwy_rect_selection_labels_get_table</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyPlainTool.html#gwy-rect-selection-labels-select" title="gwy_rect_selection_labels_select ()">gwy_rect_selection_labels_select</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyPlainTool.html#gwy-rect-selection-labels-fill" title="gwy_rect_selection_labels_fill ()">gwy_rect_selection_labels_fill</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyPlainTool.html#gwy-plain-tool-log-add" title="gwy_plain_tool_log_add ()">gwy_plain_tool_log_add</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyPlainTool.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GwyPlainTool.html#GwyPlainToolChanged" title="enum GwyPlainToolChanged">GwyPlainToolChanged</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GwyPlainTool.html#GwyRectSelectionLabels" title="GwyRectSelectionLabels">GwyRectSelectionLabels</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyPlainTool.html#GwyPlainTool-struct" title="struct GwyPlainTool">GwyPlainTool</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyPlainTool.html#GwyPlainToolClass" title="struct GwyPlainToolClass">GwyPlainToolClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyPlainTool.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a class="link" href="GwyTool.html" title="GwyTool">GwyTool</a>
+        <span class="lineart">╰──</span> GwyPlainTool
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyPlainTool.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;app/gwyapp.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyPlainTool.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="GwyPlainTool.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-plain-tool-check-layer-type"></a><h3>gwy_plain_tool_check_layer_type ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>
+gwy_plain_tool_check_layer_type (<em class="parameter"><code><a class="link" href="GwyPlainTool.html" title="GwyPlainTool"><span class="type">GwyPlainTool</span></a> *plain_tool</code></em>,
+                                 <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Checks for a required layer type.</p>
+<p>If the layer exists, its <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> is returned.  If it does not exist, zero
+is returned and a warning message is added to the tool dialog.  In addition,
+it sets <em class="parameter"><code>init_failed</code></em>
+ to <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
+<p>Therefore, this function should be called early in tool instance
+initialization and it should not be called again once it fails.</p>
+<div class="refsect3">
+<a name="gwy-plain-tool-check-layer-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>plain_tool</p></td>
+<td class="parameter_description"><p>A plain tool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Layer type name (e.g. <code class="literal">"GwyLayerPoint"</code>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-plain-tool-check-layer-type.returns"></a><h4>Returns</h4>
+<p> The type of the layer, or 0 on failure.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-plain-tool-connect-selection"></a><h3>gwy_plain_tool_connect_selection ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_plain_tool_connect_selection (<em class="parameter"><code><a class="link" href="GwyPlainTool.html" title="GwyPlainTool"><span class="type">GwyPlainTool</span></a> *plain_tool</code></em>,
+                                  <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> layer_type</code></em>,
+                                  <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *bname</code></em>);</pre>
+<p>Sets up a plain tool to automatically manage layer selection.</p>
+<p>When <em class="parameter"><code>layer_type</code></em>
+ is 0 and <em class="parameter"><code>bname</code></em>
+ <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, plain tool stops automatically
+managing selection (hopefully).</p>
+<p>This method performs <a class="link" href="GwyPlainTool.html#gwy-plain-tool-ensure-layer" title="gwy_plain_tool_ensure_layer ()"><code class="function">gwy_plain_tool_ensure_layer()</code></a> and
+<a class="link" href="GwyPlainTool.html#gwy-plain-tool-set-selection-key" title="gwy_plain_tool_set_selection_key ()"><code class="function">gwy_plain_tool_set_selection_key()</code></a>, connecting to the selection and making
+sure the <em class="parameter"><code>selection</code></em>
+ field always points to the correct selection object
+(or is <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p>
+<p>The <em class="parameter"><code>selection_changed</code></em>
+ method of <a class="link" href="GwyPlainTool.html#GwyPlainToolClass" title="struct GwyPlainToolClass"><span class="type">GwyPlainToolClass</span></a> is only invoked for a
+tool instance once this method was called to set up the selection tracking.</p>
+<div class="refsect3">
+<a name="gwy-plain-tool-connect-selection.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>plain_tool</p></td>
+<td class="parameter_description"><p>A plain tool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>layer_type</p></td>
+<td class="parameter_description"><p>Layer type.  Use <a class="link" href="GwyPlainTool.html#gwy-plain-tool-check-layer-type" title="gwy_plain_tool_check_layer_type ()"><code class="function">gwy_plain_tool_check_layer_type()</code></a> in tool
+instance initialization to check for layer types.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bname</p></td>
+<td class="parameter_description"><p>Selection key base name, for example <code class="literal">"line"</code>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-plain-tool-ensure-layer"></a><h3>gwy_plain_tool_ensure_layer ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_plain_tool_ensure_layer (<em class="parameter"><code><a class="link" href="GwyPlainTool.html" title="GwyPlainTool"><span class="type">GwyPlainTool</span></a> *plain_tool</code></em>,
+                             <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> layer_type</code></em>);</pre>
+<p>Makes sure a plain tool's layer is of the correct type.</p>
+<p>This is a low-level function, normally you would use
+<a class="link" href="GwyPlainTool.html#gwy-plain-tool-connect-selection" title="gwy_plain_tool_connect_selection ()"><code class="function">gwy_plain_tool_connect_selection()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-plain-tool-ensure-layer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>plain_tool</p></td>
+<td class="parameter_description"><p>A plain tool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>layer_type</p></td>
+<td class="parameter_description"><p>Layer type.  Use <a class="link" href="GwyPlainTool.html#gwy-plain-tool-check-layer-type" title="gwy_plain_tool_check_layer_type ()"><code class="function">gwy_plain_tool_check_layer_type()</code></a> in
+tool instance initialization to check for layer types.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-plain-tool-set-selection-key"></a><h3>gwy_plain_tool_set_selection_key ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_plain_tool_set_selection_key (<em class="parameter"><code><a class="link" href="GwyPlainTool.html" title="GwyPlainTool"><span class="type">GwyPlainTool</span></a> *plain_tool</code></em>,
+                                  <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *bname</code></em>);</pre>
+<p>Constructs selection key from data key and sets it on the vector layer.</p>
+<p>This is a low-level function, normally you would use
+<a class="link" href="GwyPlainTool.html#gwy-plain-tool-connect-selection" title="gwy_plain_tool_connect_selection ()"><code class="function">gwy_plain_tool_connect_selection()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-plain-tool-set-selection-key.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>plain_tool</p></td>
+<td class="parameter_description"><p>A plain tool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bname</p></td>
+<td class="parameter_description"><p>Selection key base name, for example <code class="literal">"line"</code>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-plain-tool-set-selection-key.returns"></a><h4>Returns</h4>
+<p> The full key (as a layer-owned string).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-plain-tool-add-clear-button"></a><h3>gwy_plain_tool_add_clear_button ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_plain_tool_add_clear_button (<em class="parameter"><code><a class="link" href="GwyPlainTool.html" title="GwyPlainTool"><span class="type">GwyPlainTool</span></a> *plain_tool</code></em>);</pre>
+<p>Adds a `Clear' button to a plain tool.</p>
+<p>This button works with automatically managed selection (see
+<a class="link" href="GwyPlainTool.html#gwy-plain-tool-connect-selection" title="gwy_plain_tool_connect_selection ()"><code class="function">gwy_plain_tool_connect_selection()</code></a>).  If you want to manage selection
+yourself add the button with <a href="/usr/share/gtk-doc/html/gtk3/GtkDialog.html#gtk-dialog-add-button"><code class="function">gtk_dialog_add_button()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-plain-tool-add-clear-button.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>plain_tool</p></td>
+<td class="parameter_description"><p>A plain tool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-plain-tool-add-clear-button.returns"></a><h4>Returns</h4>
+<p> The button widget.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-plain-tool-get-z-average"></a><h3>gwy_plain_tool_get_z_average ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_plain_tool_get_z_average (<em class="parameter"><code><a href="../GwyDataField.html#GwyDataField-struct"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *point</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> radius</code></em>);</pre>
+<p>Computes average value over a part of data field <em class="parameter"><code>dfield</code></em>
+.</p>
+<p>It is not an error if part of it lies outside the data field borders
+(it is simply not counted in), however the intersection have to be nonempty.</p>
+<div class="refsect3">
+<a name="gwy-plain-tool-get-z-average.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>point</p></td>
+<td class="parameter_description"><p>Real X and Y-coordinate of area center in physical units.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>radius</p></td>
+<td class="parameter_description"><p>Area radius in pixels, 1 means a signle pixel.  The actual radius
+passed to <a href="../libgwyprocess-elliptic.html#gwy-data-field-circular-area-extract"><code class="function">gwy_data_field_circular_area_extract()</code></a> is <em class="parameter"><code>radius</code></em>
+-0.5.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-plain-tool-get-z-average.returns"></a><h4>Returns</h4>
+<p> The average value.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-plain-tool-enable-object-deletion"></a><h3>gwy_plain_tool_enable_object_deletion ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_plain_tool_enable_object_deletion (<em class="parameter"><code><a class="link" href="GwyPlainTool.html" title="GwyPlainTool"><span class="type">GwyPlainTool</span></a> *plain_tool</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkTreeView.html#GtkTreeView-struct"><span class="type">GtkTreeView</span></a> *treeview</code></em>);</pre>
+<p>Enables deletion of selection objects by presssing Delete in a tree view
+diplaying them.</p>
+<div class="refsect3">
+<a name="gwy-plain-tool-enable-object-deletion.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>plain_tool</p></td>
+<td class="parameter_description"><p>A plain tool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>treeview</p></td>
+<td class="parameter_description"><p>A tree view that displays selection objects in order, each row
+corresponding to one selection object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-7.html#api-index-2.7">2.7</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-rect-selection-labels-new"></a><h3>gwy_rect_selection_labels_new ()</h3>
+<pre class="programlisting"><a class="link" href="GwyPlainTool.html#GwyRectSelectionLabels" title="GwyRectSelectionLabels"><span class="returnvalue">GwyRectSelectionLabels</span></a> *
+gwy_rect_selection_labels_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> none_is_full</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-Closures.html#GCallback"><span class="type">GCallback</span></a> callback</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> cbdata</code></em>);</pre>
+<p>Creates a table displaying rectangular selection information.</p>
+<p>The returned object will destroy itself when the table is destroyed.</p>
+<div class="refsect3">
+<a name="gwy-rect-selection-labels-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>none_is_full</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to treat unselected state as full data selected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>Callback to call when the selection is edited.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cbdata</p></td>
+<td class="parameter_description"><p>Data to pass to <em class="parameter"><code>callback</code></em>
+(as the first argument).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-rect-selection-labels-new.returns"></a><h4>Returns</h4>
+<p> The newly created rectangular selection information, as an opaque
+pointer.  The table widget can be obtained with
+<a class="link" href="GwyPlainTool.html#gwy-rect-selection-labels-get-table" title="gwy_rect_selection_labels_get_table ()"><code class="function">gwy_rect_selection_labels_get_table()</code></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-rect-selection-labels-get-table"></a><h3>gwy_rect_selection_labels_get_table ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_rect_selection_labels_get_table (<em class="parameter"><code><a class="link" href="GwyPlainTool.html#GwyRectSelectionLabels" title="GwyRectSelectionLabels"><span class="type">GwyRectSelectionLabels</span></a> *rlabels</code></em>);</pre>
+<p>Gets the table widget of a rectangular selection information.</p>
+<div class="refsect3">
+<a name="gwy-rect-selection-labels-get-table.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>rlabels</p></td>
+<td class="parameter_description"><p>Rectangular selection information table.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-rect-selection-labels-get-table.returns"></a><h4>Returns</h4>
+<p> The table as a <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-rect-selection-labels-select"></a><h3>gwy_rect_selection_labels_select ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_rect_selection_labels_select (<em class="parameter"><code><a class="link" href="GwyPlainTool.html#GwyRectSelectionLabels" title="GwyRectSelectionLabels"><span class="type">GwyRectSelectionLabels</span></a> *rlabels</code></em>,
+                                  <em class="parameter"><code><a href="../GwySelection.html#GwySelection-struct"><span class="type">GwySelection</span></a> *selection</code></em>,
+                                  <em class="parameter"><code><a href="../GwyDataField.html#GwyDataField-struct"><span class="type">GwyDataField</span></a> *dfield</code></em>);</pre>
+<p>Updates selection data using rectangular selection information table.</p>
+<div class="refsect3">
+<a name="gwy-rect-selection-labels-select.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rlabels</p></td>
+<td class="parameter_description"><p>Rectangular selection information table.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>selection</p></td>
+<td class="parameter_description"><p>A rectangular selection to fill information into.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dfield</p></td>
+<td class="parameter_description"><p>A data field to use for real/pixel coordinate transforms.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-rect-selection-labels-fill"></a><h3>gwy_rect_selection_labels_fill ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_rect_selection_labels_fill (<em class="parameter"><code><a class="link" href="GwyPlainTool.html#GwyRectSelectionLabels" title="GwyRectSelectionLabels"><span class="type">GwyRectSelectionLabels</span></a> *rlabels</code></em>,
+                                <em class="parameter"><code><a href="../GwySelection.html#GwySelection-struct"><span class="type">GwySelection</span></a> *selection</code></em>,
+                                <em class="parameter"><code><a href="../GwyDataField.html#GwyDataField-struct"><span class="type">GwyDataField</span></a> *dfield</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *selreal</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *selpix</code></em>);</pre>
+<p>Updates rectangular selection info display.</p>
+<p>It is possible to pass <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> <em class="parameter"><code>dfield</code></em>
+ but non-<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> <em class="parameter"><code>selection</code></em>
+.  This can
+lead to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> return value (if the selection is non-empty), but the labels
+will be still cleared as there is no way to convert between real and
+pixel coordinates.</p>
+<div class="refsect3">
+<a name="gwy-rect-selection-labels-fill.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rlabels</p></td>
+<td class="parameter_description"><p>Rectangular selection info table.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>selection</p></td>
+<td class="parameter_description"><p>A rectangular selection to fill information from.  It can
+be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to clear the labels.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dfield</p></td>
+<td class="parameter_description"><p>A data field to use for real/pixel coordinate transforms.
+It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to clear the labels.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>selreal</p></td>
+<td class="parameter_description"><p>If not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, must be an array of size at least 4 and will be
+filled with selection data xmin, ymin, xmax, ymax in physical
+units.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>selpix</p></td>
+<td class="parameter_description"><p>If not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, must be an array of size at least 4 and will be
+filled with selection data xmin, ymin, xmax, ymax in pixels.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-rect-selection-labels-fill.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if a selection is present, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-plain-tool-log-add"></a><h3>gwy_plain_tool_log_add ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_plain_tool_log_add (<em class="parameter"><code><a class="link" href="GwyPlainTool.html" title="GwyPlainTool"><span class="type">GwyPlainTool</span></a> *plain_tool</code></em>);</pre>
+<p>Logs a data modification operation of a plain tool.</p>
+<p>This is a convenience wrapper for <a class="link" href="libgwyapp-log.html#gwy-app-channel-log-add" title="gwy_app_channel_log_add ()"><code class="function">gwy_app_channel_log_add()</code></a>,
+setting automatically the container, data id and function name from the
+tool.  It can only be used for simple data modification operations in which
+the source and target ids are the same.  In more complex cases you have to
+use <a class="link" href="libgwyapp-log.html#gwy-app-channel-log-add" title="gwy_app_channel_log_add ()"><code class="function">gwy_app_channel_log_add()</code></a> directly.</p>
+<div class="refsect3">
+<a name="gwy-plain-tool-log-add.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>plain_tool</p></td>
+<td class="parameter_description"><p>A plain tool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-35.html#api-index-2.35">2.35</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyPlainTool.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyPlainToolChanged"></a><h3>enum GwyPlainToolChanged</h3>
+<p>The type of pending changes that accumulated during tool inactivity.</p>
+<div class="refsect3">
+<a name="GwyPlainToolChanged.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-PLAIN-TOOL-CHANGED-DATA:CAPS"></a>GWY_PLAIN_TOOL_CHANGED_DATA</p></td>
+<td class="enum_member_description">
+<p>Channel data field was changed.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-PLAIN-TOOL-CHANGED-MASK:CAPS"></a>GWY_PLAIN_TOOL_CHANGED_MASK</p></td>
+<td class="enum_member_description">
+<p>Mask data field was changed.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-PLAIN-TOOL-CHANGED-SHOW:CAPS"></a>GWY_PLAIN_TOOL_CHANGED_SHOW</p></td>
+<td class="enum_member_description">
+<p>Presentation data field was changed.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-PLAIN-TOOL-CHANGED-SELECTION:CAPS"></a>GWY_PLAIN_TOOL_CHANGED_SELECTION</p></td>
+<td class="enum_member_description">
+<p>Selection was changed.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-PLAIN-TOOL-FINISHED-SELECTION:CAPS"></a>GWY_PLAIN_TOOL_FINISHED_SELECTION</p></td>
+<td class="enum_member_description">
+<p>Selection was finished (that is emitted
+<a href="../GwySelection.html#GwySelection-finished"><span class="type">“finished”</span></a>).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyRectSelectionLabels"></a><h3>GwyRectSelectionLabels</h3>
+<pre class="programlisting">typedef struct _GwyRectSelectionLabels GwyRectSelectionLabels;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyPlainTool-struct"></a><h3>struct GwyPlainTool</h3>
+<pre class="programlisting">struct GwyPlainTool;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyPlainToolClass"></a><h3>struct GwyPlainToolClass</h3>
+<pre class="programlisting">struct GwyPlainToolClass {
+    GwyToolClass parent_class;
+
+    void (*data_changed)(GwyPlainTool *plain_tool);
+    void (*mask_changed)(GwyPlainTool *plain_tool);
+    void (*show_changed)(GwyPlainTool *plain_tool);
+    void (*selection_changed)(GwyPlainTool *plain_tool,
+                              gint hint);
+    void (*selection_finished)(GwyPlainTool *plain_tool);
+
+    void (*reserved1)(void);
+    void (*reserved2)(void);
+    void (*reserved3)(void);
+};
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

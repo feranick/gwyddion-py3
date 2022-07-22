@@ -1,0 +1,853 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyRGBA: Gwyddion Drawing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Drawing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Drawing Library Reference Manual">
+<link rel="prev" href="index.html" title="Gwyddion Drawing Library Reference Manual">
+<link rel="next" href="GwyGradient.html" title="GwyGradient">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwydraw-GwyRGBA.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="index.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyGradient.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwydraw-GwyRGBA"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwydraw-GwyRGBA.top_of_page"></a>GwyRGBA</span></h2>
+<p>GwyRGBA — Bit depth independet RGBA colors</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwydraw-GwyRGBA.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="returnvalue">GwyRGBA</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-new" title="gwy_rgba_new ()">gwy_rgba_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="returnvalue">GwyRGBA</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-copy" title="gwy_rgba_copy ()">gwy_rgba_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-free" title="gwy_rgba_free ()">gwy_rgba_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-to-gdk-color" title="gwy_rgba_to_gdk_color ()">gwy_rgba_to_gdk_color</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint16"><span class="returnvalue">guint16</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-to-gdk-alpha" title="gwy_rgba_to_gdk_alpha ()">gwy_rgba_to_gdk_alpha</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-from-gdk-color" title="gwy_rgba_from_gdk_color ()">gwy_rgba_from_gdk_color</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-from-gdk-color-and-alpha" title="gwy_rgba_from_gdk_color_and_alpha ()">gwy_rgba_from_gdk_color_and_alpha</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-interpolate" title="gwy_rgba_interpolate ()">gwy_rgba_interpolate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-get-from-container" title="gwy_rgba_get_from_container ()">gwy_rgba_get_from_container</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-store-to-container" title="gwy_rgba_store_to_container ()">gwy_rgba_store_to_container</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-remove-from-container" title="gwy_rgba_remove_from_container ()">gwy_rgba_remove_from_container</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-set-gdk-gc-fg" title="gwy_rgba_set_gdk_gc_fg ()">gwy_rgba_set_gdk_gc_fg</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-set-gdk-gc-bg" title="gwy_rgba_set_gdk_gc_bg ()">gwy_rgba_set_gdk_gc_bg</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-to-hex6" title="gwy_rgba_to_hex6 ()">gwy_rgba_to_hex6</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-to-hex8" title="gwy_rgba_to_hex8 ()">gwy_rgba_to_hex8</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint32"><span class="returnvalue">guint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-to-pixbuf-pixel" title="gwy_rgba_to_pixbuf_pixel ()">gwy_rgba_to_pixbuf_pixel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-from-pixbuf-pixel" title="gwy_rgba_from_pixbuf_pixel ()">gwy_rgba_from_pixbuf_pixel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwydraw-GwyRGBA.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA">GwyRGBA</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwydraw-GwyRGBA.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libdraw/gwydraw.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwydraw-GwyRGBA.description"></a><h2>Description</h2>
+<p><a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> is a bit depth independent representation of an RGB or RGBA color,
+using floating point values from the [0,1] interval.</p>
+<p><a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> is not an object, but a simple struct that can be allocated on
+stack on created with <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Memory-Allocation.html#g-new"><code class="function">g_new()</code></a> or <code class="function">malloc()</code>. Helper functions for conversion
+between <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> and <a href="http://developer.gnome.org/doc/API/2.0/gtk/gdk3-Colors.html#GdkColor"><span class="type">GdkColor</span></a> (<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-to-gdk-color" title="gwy_rgba_to_gdk_color ()"><code class="function">gwy_rgba_to_gdk_color()</code></a>,
+<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-from-gdk-color" title="gwy_rgba_from_gdk_color ()"><code class="function">gwy_rgba_from_gdk_color()</code></a>) and for <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> storage by component
+(<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-store-to-container" title="gwy_rgba_store_to_container ()"><code class="function">gwy_rgba_store_to_container()</code></a>, <a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-get-from-container" title="gwy_rgba_get_from_container ()"><code class="function">gwy_rgba_get_from_container()</code></a>) are provided.</p>
+</div>
+<div class="refsect1">
+<a name="libgwydraw-GwyRGBA.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-rgba-new"></a><h3>gwy_rgba_new ()</h3>
+<pre class="programlisting"><a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="returnvalue">GwyRGBA</span></a> *
+gwy_rgba_new (<em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> r</code></em>,
+              <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> g</code></em>,
+              <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> b</code></em>,
+              <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> a</code></em>);</pre>
+<p>Creates RGBA colour specification.</p>
+<p>This is mostly useful for language bindings.</p>
+<div class="refsect3">
+<a name="gwy-rgba-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>r</p></td>
+<td class="parameter_description"><p>The red component.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>g</p></td>
+<td class="parameter_description"><p>The green component.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>The blue component.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>The alpha (opacity) value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-rgba-new.returns"></a><h4>Returns</h4>
+<p> New RGBA colour structure.  The result must be freed with
+<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-free" title="gwy_rgba_free ()"><code class="function">gwy_rgba_free()</code></a>, not <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-rgba-copy"></a><h3>gwy_rgba_copy ()</h3>
+<pre class="programlisting"><a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="returnvalue">GwyRGBA</span></a> *
+gwy_rgba_copy (<em class="parameter"><code>const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *rgba</code></em>);</pre>
+<p>Makes a copy of a rgba structure. The result must be freed using
+<a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-free" title="gwy_rgba_free ()"><code class="function">gwy_rgba_free()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-rgba-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A RGBA color.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-rgba-copy.returns"></a><h4>Returns</h4>
+<p> A copy of <em class="parameter"><code>rgba</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-rgba-free"></a><h3>gwy_rgba_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_rgba_free (<em class="parameter"><code><a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *rgba</code></em>);</pre>
+<p>Frees an rgba structure created with <a class="link" href="libgwydraw-GwyRGBA.html#gwy-rgba-copy" title="gwy_rgba_copy ()"><code class="function">gwy_rgba_copy()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-rgba-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A RGBA color.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-rgba-to-gdk-color"></a><h3>gwy_rgba_to_gdk_color ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_rgba_to_gdk_color (<em class="parameter"><code>const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *rgba</code></em>,
+                       <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/gtk/gdk3-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *gdkcolor</code></em>);</pre>
+<p>Converts a rgba to a Gdk color.</p>
+<p>Note no allocation is performed, just channel value conversion.</p>
+<div class="refsect3">
+<a name="gwy-rgba-to-gdk-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A RGBA color.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gdkcolor</p></td>
+<td class="parameter_description"><p>A <a href="http://developer.gnome.org/doc/API/2.0/gtk/gdk3-Colors.html#GdkColor"><span class="type">GdkColor</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-rgba-to-gdk-alpha"></a><h3>gwy_rgba_to_gdk_alpha ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint16"><span class="returnvalue">guint16</span></a>
+gwy_rgba_to_gdk_alpha (<em class="parameter"><code>const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *rgba</code></em>);</pre>
+<p>Converts a rgba to a Gdk opacity value.</p>
+<div class="refsect3">
+<a name="gwy-rgba-to-gdk-alpha.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A RGBA color.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-rgba-to-gdk-alpha.returns"></a><h4>Returns</h4>
+<p> The opacity value as a 16bit integer.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-rgba-from-gdk-color"></a><h3>gwy_rgba_from_gdk_color ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_rgba_from_gdk_color (<em class="parameter"><code><a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *rgba</code></em>,
+                         <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/gtk/gdk3-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *gdkcolor</code></em>);</pre>
+<p>Converts a Gdk color to a rgba.</p>
+<p>The alpha value is unchanged, as <a href="http://developer.gnome.org/doc/API/2.0/gtk/gdk3-Colors.html#GdkColor"><span class="type">GdkColor</span></a> has no opacity information.</p>
+<div class="refsect3">
+<a name="gwy-rgba-from-gdk-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A RGBA color.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gdkcolor</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/gdk3/gdk3-Colors.html#GdkColor"><span class="type">GdkColor</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-rgba-from-gdk-color-and-alpha"></a><h3>gwy_rgba_from_gdk_color_and_alpha ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_rgba_from_gdk_color_and_alpha (<em class="parameter"><code><a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *rgba</code></em>,
+                                   <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/gdk3/gdk3-Colors.html#GdkColor"><span class="type">GdkColor</span></a> *gdkcolor</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint16"><span class="type">guint16</span></a> gdkalpha</code></em>);</pre>
+<p>Converts a Gdk color plus an opacity value to a rgba.</p>
+<div class="refsect3">
+<a name="gwy-rgba-from-gdk-color-and-alpha.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A RGBA color.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gdkcolor</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/gdk3/gdk3-Colors.html#GdkColor"><span class="type">GdkColor</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gdkalpha</p></td>
+<td class="parameter_description"><p>Gdk 16bit opacity value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-rgba-interpolate"></a><h3>gwy_rgba_interpolate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_rgba_interpolate (<em class="parameter"><code>const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *src1</code></em>,
+                      <em class="parameter"><code>const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *src2</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x</code></em>,
+                      <em class="parameter"><code><a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *rgba</code></em>);</pre>
+<p>Linearly interpolates two colors, including alpha blending.</p>
+<p>Correct blending of two not fully opaque colors is tricky.  Always use
+this function, not simple independent interpolation of r, g, b, and a.</p>
+<div class="refsect3">
+<a name="gwy-rgba-interpolate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>src1</p></td>
+<td class="parameter_description"><p>Color at point <em class="parameter"><code>x</code></em>
+= 0.0.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>src2</p></td>
+<td class="parameter_description"><p>Color at point <em class="parameter"><code>x</code></em>
+= 1.0.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Point in interval 0..1 to take color from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> to store the result to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-rgba-get-from-container"></a><h3>gwy_rgba_get_from_container ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_rgba_get_from_container (<em class="parameter"><code><a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *rgba</code></em>,
+                             <em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *container</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *prefix</code></em>);</pre>
+<p>Gets RGBA color components from a container.</p>
+<p>This is a convenience function to get the components in the common
+arrangement.</p>
+<div class="refsect3">
+<a name="gwy-rgba-get-from-container.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A RGBA color.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> to get the color components from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prefix</p></td>
+<td class="parameter_description"><p>Prefix in <em class="parameter"><code>container</code></em>
+, e.g. "/0/mask" (it would try to fetch
+"/0/mask/red", "/0/mask/green", etc. then).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-rgba-get-from-container.returns"></a><h4>Returns</h4>
+<p> Whether all <em class="parameter"><code>rgba</code></em>
+components were successfully found and set.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-rgba-store-to-container"></a><h3>gwy_rgba_store_to_container ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_rgba_store_to_container (<em class="parameter"><code>const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *rgba</code></em>,
+                             <em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *container</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *prefix</code></em>);</pre>
+<p>Stores RGBA color components to a container.</p>
+<p>This is a convenience function to store the components in the common
+arrangement.</p>
+<div class="refsect3">
+<a name="gwy-rgba-store-to-container.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A RGBA color.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> to store the color components to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prefix</p></td>
+<td class="parameter_description"><p>Prefix in <em class="parameter"><code>container</code></em>
+, e.g. "/0/mask" (it will store
+"/0/mask/red", "/0/mask/green", etc. then).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-rgba-remove-from-container"></a><h3>gwy_rgba_remove_from_container ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_rgba_remove_from_container (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *container</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *prefix</code></em>);</pre>
+<p>Removes RGBA color components from a container.</p>
+<p>This is a convenience function to remove the components in the common
+arrangement.</p>
+<div class="refsect3">
+<a name="gwy-rgba-remove-from-container.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> to remove the color components from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prefix</p></td>
+<td class="parameter_description"><p>Prefix in <em class="parameter"><code>container</code></em>
+, e.g. "/0/mask" (it will remove
+"/0/mask/red", "/0/mask/green", etc. then).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-rgba-remove-from-container.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if anything was removed.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-rgba-set-gdk-gc-fg"></a><h3>gwy_rgba_set_gdk_gc_fg ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_rgba_set_gdk_gc_fg (<em class="parameter"><code>const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *rgba</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gdk2/gdk2-Graphics-Contexts.html#GdkGC-struct"><span class="type">GdkGC</span></a> *gc</code></em>);</pre>
+<p>Sets foreground color of a Gdk graphics context from a RGBA color.</p>
+<p>This is a convenience wrapper around <a href="/usr/share/gtk-doc/html/gdk2/gdk2-Graphics-Contexts.html#gdk-gc-set-rgb-fg-color"><code class="function">gdk_gc_set_rgb_fg_color()</code></a>, see its
+documentation for details and caveats.</p>
+<div class="refsect3">
+<a name="gwy-rgba-set-gdk-gc-fg.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A RGBA color.  Its alpha component is ignored, only RGB is used.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gc</p></td>
+<td class="parameter_description"><p>A Gdk graphics context to set forgeground color of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-rgba-set-gdk-gc-bg"></a><h3>gwy_rgba_set_gdk_gc_bg ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_rgba_set_gdk_gc_bg (<em class="parameter"><code>const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *rgba</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gdk2/gdk2-Graphics-Contexts.html#GdkGC-struct"><span class="type">GdkGC</span></a> *gc</code></em>);</pre>
+<p>Sets foreground color of a Gdk graphics context from a RGBA color.</p>
+<p>This is a convenience wrapper around <a href="/usr/share/gtk-doc/html/gdk2/gdk2-Graphics-Contexts.html#gdk-gc-set-rgb-bg-color"><code class="function">gdk_gc_set_rgb_bg_color()</code></a>, see its
+documentation for details and caveats.</p>
+<div class="refsect3">
+<a name="gwy-rgba-set-gdk-gc-bg.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A RGBA color.  Its alpha component is ignored, only RGB is used.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gc</p></td>
+<td class="parameter_description"><p>A Gdk graphics context to set forgeground color of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-rgba-to-hex6"></a><h3>gwy_rgba_to_hex6 ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_rgba_to_hex6 (<em class="parameter"><code>const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *rgba</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *hexout</code></em>);</pre>
+<p>Formats the R, G and B components of a RGBA color to hexadecimal string.</p>
+<p>The component order is R, G and B.  The output has always exactly 6 bytes
+and does not include any "#" prefix which is used in some contexts.</p>
+<div class="refsect3">
+<a name="gwy-rgba-to-hex6.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A RGBA color.  Its alpha component is ignored, only RGB is used.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>hexout</p></td>
+<td class="parameter_description"><p>Buffer at least seven character long where the hexadecimal
+representation (e.g. "ff0000" for red) will be stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-32.html#api-index-2.32">2.32</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-rgba-to-hex8"></a><h3>gwy_rgba_to_hex8 ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_rgba_to_hex8 (<em class="parameter"><code>const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *rgba</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *hexout</code></em>);</pre>
+<p>Formats all components of a RGBA color to hexadecimal string.</p>
+<p>The component order is A, R, G and B.  Note that while this order is a
+common it is by no means universal.  The output has always exactly 8 bytes
+and does not include any "#" prefix which is used in some contexts.</p>
+<div class="refsect3">
+<a name="gwy-rgba-to-hex8.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A RGBA color.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>hexout</p></td>
+<td class="parameter_description"><p>Buffer at least nine character long where the hexadecimal
+representation (e.g. "ffff0000" for opaque red) will be stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-32.html#api-index-2.32">2.32</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-rgba-to-pixbuf-pixel"></a><h3>gwy_rgba_to_pixbuf_pixel ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint32"><span class="returnvalue">guint32</span></a>
+gwy_rgba_to_pixbuf_pixel (<em class="parameter"><code>const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *rgba</code></em>);</pre>
+<p>Converts a RGBA color to pixbuf pixel.</p>
+<p>The returned pixel value includes opacity.  If <em class="parameter"><code>rgba</code></em>
+ is partially
+transparent, so is the pixel.</p>
+<div class="refsect3">
+<a name="gwy-rgba-to-pixbuf-pixel.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A RGBA color.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-rgba-to-pixbuf-pixel.returns"></a><h4>Returns</h4>
+<p> The pixel value as a 32-bit integer.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-rgba-from-pixbuf-pixel"></a><h3>gwy_rgba_from_pixbuf_pixel ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_rgba_from_pixbuf_pixel (<em class="parameter"><code><a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *rgba</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> pixel</code></em>);</pre>
+<p>Converts a pixbuf pixel value to a RGBA color.</p>
+<p>The conversion includes opacity.  If the opacity channel is undefined or
+should be ignored, you need to either set the lowest byte of <em class="parameter"><code>pixel</code></em>
+ to 0xff
+or fix <em class="parameter"><code>rgba</code></em>
+ afterwards.</p>
+<div class="refsect3">
+<a name="gwy-rgba-from-pixbuf-pixel.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rgba</p></td>
+<td class="parameter_description"><p>A <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> to store the result to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pixel</p></td>
+<td class="parameter_description"><p>Pixbuf pixel value as a 32-bit integer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgwydraw-GwyRGBA.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyRGBA"></a><h3>GwyRGBA</h3>
+<pre class="programlisting">typedef struct {
+    gdouble r;
+    gdouble g;
+    gdouble b;
+    gdouble a;
+} GwyRGBA;
+</pre>
+<p>RGB[A] color specification type.</p>
+<p>All values are from the range [0,1].  The components are not premultiplied.</p>
+<div class="refsect3">
+<a name="GwyRGBA.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GwyRGBA.r"></a>r</code></em>;</p></td>
+<td class="struct_member_description"><p>The red component.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GwyRGBA.g"></a>g</code></em>;</p></td>
+<td class="struct_member_description"><p>The green component.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GwyRGBA.b"></a>b</code></em>;</p></td>
+<td class="struct_member_description"><p>The blue component.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GwyRGBA.a"></a>a</code></em>;</p></td>
+<td class="struct_member_description"><p>The alpha (opacity) value.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

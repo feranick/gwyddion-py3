@@ -1,0 +1,616 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyDataWindow: Gwyddion Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Widgets Library Reference Manual">
+<link rel="up" href="DataWindowWidgets.html" title="Data Windows and Views">
+<link rel="prev" href="DataWindowWidgets.html" title="Data Windows and Views">
+<link rel="next" href="GwyDataView.html" title="GwyDataView">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyDataWindow.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyDataWindow.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GwyDataWindow.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GwyDataWindow.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="DataWindowWidgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="DataWindowWidgets.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyDataView.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyDataWindow"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyDataWindow.top_of_page"></a>GwyDataWindow</span></h2>
+<p>GwyDataWindow — Data display window</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyDataWindow.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataWindow.html#gwy-data-window-new" title="gwy_data_window_new ()">gwy_data_window_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyDataView.html" title="GwyDataView"><span class="returnvalue">GwyDataView</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataWindow.html#gwy-data-window-get-data-view" title="gwy_data_window_get_data_view ()">gwy_data_window_get_data_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataWindow.html#gwy-data-window-get-color-axis" title="gwy_data_window_get_color_axis ()">gwy_data_window_get_color_axis</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwyContainer.html#GwyContainer-struct"><span class="returnvalue">GwyContainer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataWindow.html#gwy-data-window-get-data" title="gwy_data_window_get_data ()">gwy_data_window_get_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataWindow.html#gwy-data-window-set-zoom" title="gwy_data_window_set_zoom ()">gwy_data_window_set_zoom</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataWindow.html#gwy-data-window-fit-to-screen" title="gwy_data_window_fit_to_screen ()">gwy_data_window_fit_to_screen</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataWindow.html#gwy-data-window-get-data-name" title="gwy_data_window_get_data_name ()">gwy_data_window_get_data_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataWindow.html#gwy-data-window-set-data-name" title="gwy_data_window_set_data_name ()">gwy_data_window_set_data_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataWindow.html#gwy-data-window-get-ul-corner-widget" title="gwy_data_window_get_ul_corner_widget ()">gwy_data_window_get_ul_corner_widget</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataWindow.html#gwy-data-window-set-ul-corner-widget" title="gwy_data_window_set_ul_corner_widget ()">gwy_data_window_set_ul_corner_widget</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataWindow.html#gwy-data-window-class-set-tooltips" title="gwy_data_window_class_set_tooltips ()">gwy_data_window_class_set_tooltips</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkTooltip.html#GtkTooltip-struct"><span class="returnvalue">GtkTooltips</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataWindow.html#gwy-data-window-class-get-tooltips" title="gwy_data_window_class_get_tooltips ()">gwy_data_window_class_get_tooltips</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyDataWindow.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a class="link" href="GwyColorAxis.html" title="GwyColorAxis"><span class="type">GwyColorAxis</span></a> *</td>
+<td class="property_name"><a class="link" href="GwyDataWindow.html#GwyDataWindow--color-axis" title="The “color-axis” property">color-axis</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="GwyDataWindow.html#GwyDataWindow--data-name" title="The “data-name” property">data-name</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *</td>
+<td class="property_name"><a class="link" href="GwyDataWindow.html#GwyDataWindow--data-view" title="The “data-view” property">data-view</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a> *</td>
+<td class="property_name"><a class="link" href="GwyDataWindow.html#GwyDataWindow--ul-corner" title="The “ul-corner” property">ul-corner</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyDataWindow.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyDataWindow.html#GwyDataWindow-struct" title="struct GwyDataWindow">GwyDataWindow</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyDataWindow.html#GwyDataWindowClass" title="struct GwyDataWindowClass">GwyDataWindowClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyDataWindow.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkObject.html#GtkObject-struct">GtkObject</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct">GtkWidget</a>
+                <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkContainer.html#GtkContainer-struct">GtkContainer</a>
+                    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkBin.html#GtkBin-struct">GtkBin</a>
+                        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWindow.html#GtkWindow-struct">GtkWindow</a>
+                            <span class="lineart">╰──</span> GwyDataWindow
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyDataWindow.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GwyDataWindow implements
+ AtkImplementorIface and  <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkBuildable.html#GtkBuildable-struct">GtkBuildable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwyDataWindow.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwydgets/gwydgets.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyDataWindow.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyDataWindow.html" title="GwyDataWindow"><span class="type">GwyDataWindow</span></a> encapsulates a <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> together with other controls.
+You can create a data window for a data view with <a class="link" href="GwyDataWindow.html#gwy-data-window-new" title="gwy_data_window_new ()"><code class="function">gwy_data_window_new()</code></a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwyDataWindow.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-data-window-new"></a><h3>gwy_data_window_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_data_window_new (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>);</pre>
+<p>Creates a new data displaying window.</p>
+<div class="refsect3">
+<a name="gwy-data-window-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> containing the data-displaying widget to show.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-window-new.returns"></a><h4>Returns</h4>
+<p> A newly created widget, as <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-window-get-data-view"></a><h3>gwy_data_window_get_data_view ()</h3>
+<pre class="programlisting"><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="returnvalue">GwyDataView</span></a> *
+gwy_data_window_get_data_view (<em class="parameter"><code><a class="link" href="GwyDataWindow.html" title="GwyDataWindow"><span class="type">GwyDataWindow</span></a> *data_window</code></em>);</pre>
+<p>Returns the data view widget a data window currently shows.</p>
+<div class="refsect3">
+<a name="gwy-data-window-get-data-view.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_window</p></td>
+<td class="parameter_description"><p>A data view window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-window-get-data-view.returns"></a><h4>Returns</h4>
+<p> The currently shown data view.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-window-get-color-axis"></a><h3>gwy_data_window_get_color_axis ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_data_window_get_color_axis (<em class="parameter"><code><a class="link" href="GwyDataWindow.html" title="GwyDataWindow"><span class="type">GwyDataWindow</span></a> *data_window</code></em>);</pre>
+<p>Returns the color axis widget displayed by a data window.</p>
+<div class="refsect3">
+<a name="gwy-data-window-get-color-axis.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_window</p></td>
+<td class="parameter_description"><p>A data view window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-window-get-color-axis.returns"></a><h4>Returns</h4>
+<p> The color axis.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-window-get-data"></a><h3>gwy_data_window_get_data ()</h3>
+<pre class="programlisting"><a href="../GwyContainer.html#GwyContainer-struct"><span class="returnvalue">GwyContainer</span></a> *
+gwy_data_window_get_data (<em class="parameter"><code><a class="link" href="GwyDataWindow.html" title="GwyDataWindow"><span class="type">GwyDataWindow</span></a> *data_window</code></em>);</pre>
+<p>Returns the data for the data view a data window currently shows.</p>
+<div class="refsect3">
+<a name="gwy-data-window-get-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_window</p></td>
+<td class="parameter_description"><p>A data view window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-window-get-data.returns"></a><h4>Returns</h4>
+<p> The data as <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-window-set-zoom"></a><h3>gwy_data_window_set_zoom ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_window_set_zoom (<em class="parameter"><code><a class="link" href="GwyDataWindow.html" title="GwyDataWindow"><span class="type">GwyDataWindow</span></a> *data_window</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> izoom</code></em>);</pre>
+<p>Sets the zoom of a data window to <em class="parameter"><code>izoom</code></em>
+.</p>
+<p>When <em class="parameter"><code>izoom</code></em>
+ is -1 it zooms out; when <em class="parameter"><code>izoom</code></em>
+ is 1 it zooms out.
+Otherwise the new zoom value is set to <em class="parameter"><code>izoom</code></em>
+/10000.</p>
+<div class="refsect3">
+<a name="gwy-data-window-set-zoom.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_window</p></td>
+<td class="parameter_description"><p>A data window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>izoom</p></td>
+<td class="parameter_description"><p>The new zoom value (as an integer).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-window-fit-to-screen"></a><h3>gwy_data_window_fit_to_screen ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_window_fit_to_screen (<em class="parameter"><code><a class="link" href="GwyDataWindow.html" title="GwyDataWindow"><span class="type">GwyDataWindow</span></a> *data_window</code></em>);</pre>
+<p>Sets the zoom of data windows's data view in an attempt to make the window
+fit to the screen.</p>
+<div class="refsect3">
+<a name="gwy-data-window-fit-to-screen.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_window</p></td>
+<td class="parameter_description"><p>A data view window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-56.html#api-index-2.56">2.56</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-window-get-data-name"></a><h3>gwy_data_window_get_data_name ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_data_window_get_data_name (<em class="parameter"><code><a class="link" href="GwyDataWindow.html" title="GwyDataWindow"><span class="type">GwyDataWindow</span></a> *data_window</code></em>);</pre>
+<p>Gets the data name part of a data window's title.</p>
+<div class="refsect3">
+<a name="gwy-data-window-get-data-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_window</p></td>
+<td class="parameter_description"><p>A data window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-window-get-data-name.returns"></a><h4>Returns</h4>
+<p> The data name as a string owned by the window.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-window-set-data-name"></a><h3>gwy_data_window_set_data_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_window_set_data_name (<em class="parameter"><code><a class="link" href="GwyDataWindow.html" title="GwyDataWindow"><span class="type">GwyDataWindow</span></a> *data_window</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *data_name</code></em>);</pre>
+<p>Sets the data name of a data window.</p>
+<p>The data name is used in the window's title.</p>
+<div class="refsect3">
+<a name="gwy-data-window-set-data-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_window</p></td>
+<td class="parameter_description"><p>A data window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data_name</p></td>
+<td class="parameter_description"><p>New data name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-window-get-ul-corner-widget"></a><h3>gwy_data_window_get_ul_corner_widget ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_data_window_get_ul_corner_widget (<em class="parameter"><code><a class="link" href="GwyDataWindow.html" title="GwyDataWindow"><span class="type">GwyDataWindow</span></a> *data_window</code></em>);</pre>
+<p>Returns the upper left corner widget of <em class="parameter"><code>data_window</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-data-window-get-ul-corner-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_window</p></td>
+<td class="parameter_description"><p>A data window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-window-get-ul-corner-widget.returns"></a><h4>Returns</h4>
+<p> The upper left corner widget as a <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a>, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there is
+no such widget.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-window-set-ul-corner-widget"></a><h3>gwy_data_window_set_ul_corner_widget ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_window_set_ul_corner_widget (<em class="parameter"><code><a class="link" href="GwyDataWindow.html" title="GwyDataWindow"><span class="type">GwyDataWindow</span></a> *data_window</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a> *corner</code></em>);</pre>
+<p>Sets the widget in upper left corner of a data window to <em class="parameter"><code>corner</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-data-window-set-ul-corner-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_window</p></td>
+<td class="parameter_description"><p>A data window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>corner</p></td>
+<td class="parameter_description"><p>A widget to set as upper left corner widget, many be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to
+just remove any eventual existing one.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-window-class-set-tooltips"></a><h3>gwy_data_window_class_set_tooltips ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_window_class_set_tooltips (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkTooltip.html#GtkTooltip-struct"><span class="type">GtkTooltips</span></a> *tips</code></em>);</pre>
+<div class="warning"><p><code class="literal">gwy_data_window_class_set_tooltips</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>Sets the tooltips object to use for adding tooltips to data window parts.</p>
+<p>This function does not do anything useful.  Do not use it.</p>
+<p>This is a class method.  It affects only newly cerated data windows,
+existing data windows will continue to use the tooltips they were
+constructed with.</p>
+<p>If no class tooltips object is set before first <a class="link" href="GwyDataWindow.html" title="GwyDataWindow"><span class="type">GwyDataWindow</span></a> is created,
+the class instantiates one on its own.  You can normally obtain it with
+<a class="link" href="GwyDataWindow.html#gwy-data-window-class-get-tooltips" title="gwy_data_window_class_get_tooltips ()"><code class="function">gwy_data_window_class_get_tooltips()</code></a> then.  The class takes a reference on
+the tooltips in either case.</p>
+<div class="refsect3">
+<a name="gwy-data-window-class-set-tooltips.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tips</p></td>
+<td class="parameter_description"><p>Tooltips object <a class="link" href="GwyDataWindow.html" title="GwyDataWindow"><span class="type">GwyDataWindow</span></a>'s should use for setting tooltips.
+A <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> value disables tooltips altogether.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-window-class-get-tooltips"></a><h3>gwy_data_window_class_get_tooltips ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkTooltip.html#GtkTooltip-struct"><span class="returnvalue">GtkTooltips</span></a> *
+gwy_data_window_class_get_tooltips (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="warning"><p><code class="literal">gwy_data_window_class_get_tooltips</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>Gets the tooltips object used for adding tooltips to Data window parts.</p>
+<p>This function does not do anything useful.  Do not use it.</p>
+<div class="refsect3">
+<a name="gwy-data-window-class-get-tooltips.returns"></a><h4>Returns</h4>
+<p> The <a href="/usr/share/gtk-doc/html/gtk3/GtkTooltip.html#GtkTooltip-struct"><span class="type">GtkTooltips</span></a> object.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyDataWindow.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyDataWindow-struct"></a><h3>struct GwyDataWindow</h3>
+<pre class="programlisting">struct GwyDataWindow;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyDataWindowClass"></a><h3>struct GwyDataWindowClass</h3>
+<pre class="programlisting">struct GwyDataWindowClass {
+    GtkWindowClass parent_class;
+
+    void (*reserved1)(void);
+    void (*reserved2)(void);
+    void (*reserved3)(void);
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyDataWindow.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GwyDataWindow--color-axis"></a><h3>The <code class="literal">“color-axis”</code> property</h3>
+<pre class="programlisting">  “color-axis”               <a class="link" href="GwyColorAxis.html" title="GwyColorAxis"><span class="type">GwyColorAxis</span></a> *</pre>
+<p>The color axis widget displayed in the window.</p>
+<p>Owner: GwyDataWindow</p>
+<p>Flags: Read</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyDataWindow--data-name"></a><h3>The <code class="literal">“data-name”</code> property</h3>
+<pre class="programlisting">  “data-name”                <span class="type">char</span> *</pre>
+<p>Data name used in window title.</p>
+<p>Owner: GwyDataWindow</p>
+<p>Flags: Read / Write</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyDataWindow--data-view"></a><h3>The <code class="literal">“data-view”</code> property</h3>
+<pre class="programlisting">  “data-view”                <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *</pre>
+<p>The data view widget displayed in the window.</p>
+<p>Owner: GwyDataWindow</p>
+<p>Flags: Read</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyDataWindow--ul-corner"></a><h3>The <code class="literal">“ul-corner”</code> property</h3>
+<pre class="programlisting">  “ul-corner”                <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a> *</pre>
+<p>The widget in the upper left corner.</p>
+<p>Owner: GwyDataWindow</p>
+<p>Flags: Read / Write</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyDataWindow.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> -- basic data display widget</p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>File Type Plug-ins: Gwyddion Module Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Module Library Reference Manual">
+<link rel="up" href="PluginProxyReference.html" title="Plug-in Proxy Reference">
+<link rel="prev" href="plugin-proxy-process.html" title="Data Process Plug-ins">
+<link rel="next" href="plugin-proxy-dump.html" title="Dump Format">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="PluginProxyReference.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="plugin-proxy-process.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="plugin-proxy-dump.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="plugin-proxy-file"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle">File Type Plug-ins</span></h2>
+<p>File Type Plug-ins — 
+      Plug-in loading and/or saving third party data formats.
+    </p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="id-1.4.4.3"></a><h2>Registration</h2>
+<p>
+      When the plug-in is called with <code class="literal">register</code> as
+      its first argument it should dump following information to standard
+      output (each on a separate line) and terminate:
+      </p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">plug-in name</li>
+<li class="listitem">file format description</li>
+<li class="listitem">file globs</li>
+<li class="listitem">supported operations</li>
+</ul></div>
+<p>
+    </p>
+<p>
+      These information correspond to similar
+      <a class="link" href="libgwymodule-gwymodule-file.html" title="gwymodule-file">file module</a>
+      information.  All fields are case-sensitive.  The supported operations
+      line consists of a space-separated sublist from:
+      </p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td><code class="literal">load</code></td></tr>
+<tr><td><code class="literal">save</code></td></tr>
+</table>
+<p>
+      The file globs line consists of a space separated list of file globs
+      (not just extensions; note to Unix users: they are in fact GPatternSpec
+      globs, so character classes are not supported) of files the plug-in
+      claims it can read and/or
+      write.  Note the plug-in proxy has a notion of file glob specificity
+      and prefers to give chance to the plug-in whose file glob is the most
+      specific if more than one match.  So while it is possible to register
+      <code class="filename">*.*</code> the effect is quite the opposite of getting
+      all files <span class="application">Gwyddion</span> tries to open or write.
+    </p>
+<p>
+      So the output of plugin <span class="command"><strong>acme_v5</strong></span> when run as
+      <span class="command"><strong>acme_v5 register</strong></span> could look:
+    </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">acme_v5</span>
+<span class="n">ACME</span> <span class="n">AFM</span> <span class="n">Data</span> <span class="n">Format</span> <span class="n">v5</span> <span class="p">(</span><span class="o">*</span><span class="p">.</span><span class="n">ac5</span><span class="p">)</span>
+<span class="o">*</span><span class="p">.</span><span class="n">ac5</span> <span class="o">*</span><span class="p">.</span><span class="n">acme5</span>
+<span class="n">load</span> <span class="n">save</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<div class="refsect1">
+<a name="id-1.4.4.4"></a><h2>Loading</h2>
+<p>
+      When the plug-in is called with <code class="literal">load</code> as its first
+      argument then the second argument is the name of
+      <a class="link" href="plugin-proxy-dump.html" title="Dump Format">dump file</a> to write the data
+      to, and the last, third argument is the name of the file to load.
+    </p>
+<p>
+      The plug-in reads the specified file and dumps the data to the dump
+      file.  The dump file is created as an empty file before the plug-in
+      is run to avoid race conditions.  The plug-in should just overwrite
+      with actual data.  Leaving the dump file empty is a mark of failure
+      to load the given file.
+    </p>
+</div>
+<div class="refsect1">
+<a name="id-1.4.4.5"></a><h2>Saving</h2>
+<p>
+      Saving works much like loading.  When the first argument is
+      <code class="literal">save</code>, then the second and third arguments are again
+      names of dump file and the file to save (the order of arguments is the
+      same as in loading, dump file always comes first, then the real file).
+    </p>
+<p>
+      The plug-in reads the dump file and writes the data to the file given
+      as the last argument.  Since the file to be written can already exist
+      the only reliable signal of failure to save the file is returning
+      nonzero exit code.
+    </p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

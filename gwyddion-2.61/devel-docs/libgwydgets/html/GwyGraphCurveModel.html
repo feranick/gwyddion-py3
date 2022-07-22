@@ -1,0 +1,987 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyGraphCurveModel: Gwyddion Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Widgets Library Reference Manual">
+<link rel="up" href="GraphWidgets.html" title="Graphs">
+<link rel="prev" href="GwyGraphModel.html" title="GwyGraphModel">
+<link rel="next" href="GwyGraphArea.html" title="GwyGraphArea">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyGraphCurveModel.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyGraphCurveModel.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GwyGraphCurveModel.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GwyGraphCurveModel.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GwyGraphCurveModel.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="GraphWidgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GwyGraphModel.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyGraphArea.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyGraphCurveModel"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyGraphCurveModel.top_of_page"></a>GwyGraphCurveModel</span></h2>
+<p>GwyGraphCurveModel — Representation of one graph curve</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyGraphCurveModel.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-duplicate" title="gwy_graph_curve_model_duplicate()">gwy_graph_curve_model_duplicate</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="returnvalue">GwyGraphCurveModel</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-new" title="gwy_graph_curve_model_new ()">gwy_graph_curve_model_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="returnvalue">GwyGraphCurveModel</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-new-alike" title="gwy_graph_curve_model_new_alike ()">gwy_graph_curve_model_new_alike</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-set-data" title="gwy_graph_curve_model_set_data ()">gwy_graph_curve_model_set_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-set-data-interleaved" title="gwy_graph_curve_model_set_data_interleaved ()">gwy_graph_curve_model_set_data_interleaved</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-set-data-from-dataline" title="gwy_graph_curve_model_set_data_from_dataline ()">gwy_graph_curve_model_set_data_from_dataline</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-enforce-order" title="gwy_graph_curve_model_enforce_order ()">gwy_graph_curve_model_enforce_order</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-is-ordered" title="gwy_graph_curve_model_is_ordered ()">gwy_graph_curve_model_is_ordered</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-get-xdata" title="gwy_graph_curve_model_get_xdata ()">gwy_graph_curve_model_get_xdata</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-get-ydata" title="gwy_graph_curve_model_get_ydata ()">gwy_graph_curve_model_get_ydata</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-get-ndata" title="gwy_graph_curve_model_get_ndata ()">gwy_graph_curve_model_get_ndata</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-get-x-range" title="gwy_graph_curve_model_get_x_range ()">gwy_graph_curve_model_get_x_range</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-get-y-range" title="gwy_graph_curve_model_get_y_range ()">gwy_graph_curve_model_get_y_range</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-get-ranges" title="gwy_graph_curve_model_get_ranges ()">gwy_graph_curve_model_get_ranges</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwyCalData.html#GwyCurveCalibrationData"><span class="returnvalue">GwyCurveCalibrationData</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-get-calibration-data" title="gwy_graph_curve_model_get_calibration_data ()">gwy_graph_curve_model_get_calibration_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-set-calibration-data" title="gwy_graph_curve_model_set_calibration_data ()">gwy_graph_curve_model_set_calibration_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyGraphCurveModel.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="../libgwydraw-GwyRGBA.html#GwyRGBA"><span class="type">GwyRGBA</span></a> *</td>
+<td class="property_name"><a class="link" href="GwyGraphCurveModel.html#GwyGraphCurveModel--color" title="The “color” property">color</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="GwyGraphCurveModel.html#GwyGraphCurveModel--description" title="The “description” property">description</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://developer.gnome.org/doc/API/2.0/gtk/gdk2-Graphics-Contexts.html#GdkLineStyle"><span class="type">GdkLineStyle</span></a></td>
+<td class="property_name"><a class="link" href="GwyGraphCurveModel.html#GwyGraphCurveModel--line-style" title="The “line-style” property">line-style</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">int</span></td>
+<td class="property_name"><a class="link" href="GwyGraphCurveModel.html#GwyGraphCurveModel--line-width" title="The “line-width” property">line-width</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="libgwydgets-gwydgetenums.html#GwyGraphCurveType" title="enum GwyGraphCurveType"><span class="type">GwyGraphCurveType</span></a></td>
+<td class="property_name"><a class="link" href="GwyGraphCurveModel.html#GwyGraphCurveModel--mode" title="The “mode” property">mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">int</span></td>
+<td class="property_name"><a class="link" href="GwyGraphCurveModel.html#GwyGraphCurveModel--point-size" title="The “point-size” property">point-size</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="libgwydgets-gwydgetenums.html#GwyGraphPointType" title="enum GwyGraphPointType"><span class="type">GwyGraphPointType</span></a></td>
+<td class="property_name"><a class="link" href="GwyGraphCurveModel.html#GwyGraphCurveModel--point-type" title="The “point-type” property">point-type</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyGraphCurveModel.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyGraphCurveModel.html#GwyGraphCurveModel-data-changed" title="The “data-changed” signal">data-changed</a></td>
+<td class="signal_flags"><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyGraphCurveModel.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyGraphCurveModel.html#GwyGraphCurveModel-struct" title="struct GwyGraphCurveModel">GwyGraphCurveModel</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyGraphCurveModel.html#GwyGraphCurveModelClass" title="struct GwyGraphCurveModelClass">GwyGraphCurveModelClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyGraphCurveModel.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> GwyGraphCurveModel
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyGraphCurveModel.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GwyGraphCurveModel implements
+ <a href="../GwySerializable.html#GwySerializable-struct">GwySerializable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwyGraphCurveModel.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwydgets/gwydgets.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyGraphCurveModel.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="type">GwyGraphCurveModel</span></a> represents information about a graph curve necessary to fully reconstruct it.</p>
+</div>
+<div class="refsect1">
+<a name="GwyGraphCurveModel.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-graph-curve-model-duplicate"></a><h3>gwy_graph_curve_model_duplicate()</h3>
+<pre class="programlisting">#define             gwy_graph_curve_model_duplicate(gcmodel)</pre>
+<p>Convenience macro doing <a href="../GwySerializable.html#gwy-serializable-duplicate"><code class="function">gwy_serializable_duplicate()</code></a> with all the necessary typecasting.</p>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-duplicate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gcmodel</p></td>
+<td class="parameter_description"><p>A graph curve model to duplicate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-curve-model-new"></a><h3>gwy_graph_curve_model_new ()</h3>
+<pre class="programlisting"><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="returnvalue">GwyGraphCurveModel</span></a> *
+gwy_graph_curve_model_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new graph curve model.</p>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-new.returns"></a><h4>Returns</h4>
+<p> New empty graph curve model as a <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-curve-model-new-alike"></a><h3>gwy_graph_curve_model_new_alike ()</h3>
+<pre class="programlisting"><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="returnvalue">GwyGraphCurveModel</span></a> *
+gwy_graph_curve_model_new_alike (<em class="parameter"><code><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="type">GwyGraphCurveModel</span></a> *gcmodel</code></em>);</pre>
+<p>Creates new graph curve model object that has the same settings as <em class="parameter"><code>gcmodel</code></em>
+.</p>
+<p>Curve data are not duplicated.</p>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-new-alike.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gcmodel</p></td>
+<td class="parameter_description"><p>A graph curve model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-new-alike.returns"></a><h4>Returns</h4>
+<p> New graph curve model.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-curve-model-set-data"></a><h3>gwy_graph_curve_model_set_data ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_curve_model_set_data (<em class="parameter"><code><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="type">GwyGraphCurveModel</span></a> *gcmodel</code></em>,
+                                <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *xdata</code></em>,
+                                <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *ydata</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>);</pre>
+<p>Sets curve model data from separated X and Y arrays.</p>
+<p>If there were calibration data in the former <em class="parameter"><code>gcmodel</code></em>
+, they are removed.</p>
+<div class="warning">The points should be ordered in ascending abscissa order, meaning <em class="parameter"><code>xdata</code></em> values ordered from smallest to
+largest.  It is not enforced and you can create graphs of data the do not satisfy this condition.  However, various
+graph functionality may be unavailable or degraded then.  You also can use <a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-enforce-order" title="gwy_graph_curve_model_enforce_order ()"><code class="function">gwy_graph_curve_model_enforce_order()</code></a>
+afterwards to ensure the recommended data point order.</div>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-set-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gcmodel</p></td>
+<td class="parameter_description"><p>A graph curve model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xdata</p></td>
+<td class="parameter_description"><p>X data points (array of size <em class="parameter"><code>n</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ydata</p></td>
+<td class="parameter_description"><p>Y data points (array of size <em class="parameter"><code>n</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of points, i.e. items in <em class="parameter"><code>xdata</code></em>
+and <em class="parameter"><code>ydata</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-curve-model-set-data-interleaved"></a><h3>gwy_graph_curve_model_set_data_interleaved ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_curve_model_set_data_interleaved
+                               (<em class="parameter"><code><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="type">GwyGraphCurveModel</span></a> *gcmodel</code></em>,
+                                <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *xydata</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>);</pre>
+<p>Sets curve model data from an interleaved array.</p>
+<p>The array should contain interleaved abscissa and ordinate values: x0, y0, x1, y1, x2, y2, etc.  You can also
+typecast an array of <a href="../libgwyddion-Math.html#GwyXY"><span class="type">GwyXY</span></a> structs and pass it as <em class="parameter"><code>xydata</code></em>
+.</p>
+<p>If there were calibration data in the former <em class="parameter"><code>gcmodel</code></em>
+, they are removed.</p>
+<div class="warning">The points should be ordered in ascending abscissa order, meaning <em class="parameter"><code>xdata</code></em> values ordered from smallest to
+largest.  It is not enforced and you can create graphs of data the do not satisfy this condition.  However, various
+graph functionality may be unavailable or degraded then.  You also can use <a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-enforce-order" title="gwy_graph_curve_model_enforce_order ()"><code class="function">gwy_graph_curve_model_enforce_order()</code></a>
+afterwards to ensure the recommended data point order.</div>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-set-data-interleaved.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gcmodel</p></td>
+<td class="parameter_description"><p>A graph curve model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xydata</p></td>
+<td class="parameter_description"><p>X and Y data points (array of size 2*<em class="parameter"><code>n</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of points, i.e. half the number of items in <em class="parameter"><code>xydata</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-curve-model-set-data-from-dataline"></a><h3>gwy_graph_curve_model_set_data_from_dataline ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_curve_model_set_data_from_dataline
+                               (<em class="parameter"><code><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="type">GwyGraphCurveModel</span></a> *gcmodel</code></em>,
+                                <em class="parameter"><code><a href="../GwyDataLine.html#GwyDataLine-struct"><span class="type">GwyDataLine</span></a> *dline</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> from_index</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to_index</code></em>);</pre>
+<p>Sets graph curve model data from a data line.</p>
+<p>The range of import can be modified using parameters <em class="parameter"><code>from_index</code></em>
+ and <em class="parameter"><code>to_index</code></em>
+ that are interpreted directly as
+data indices within the <a href="../GwyDataLine.html#GwyDataLine-struct"><span class="type">GwyDataLine</span></a>.  In the case that <em class="parameter"><code>from_index</code></em>
+ == <em class="parameter"><code>to_index</code></em>
+, the full <a href="../GwyDataLine.html#GwyDataLine-struct"><span class="type">GwyDataLine</span></a> is used.</p>
+<p>If there were calibration data in the former <em class="parameter"><code>gcmodel</code></em>
+, they are removed.</p>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-set-data-from-dataline.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gcmodel</p></td>
+<td class="parameter_description"><p>A graph curve model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dline</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from_index</p></td>
+<td class="parameter_description"><p>Data line index where to start.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>to_index</p></td>
+<td class="parameter_description"><p>Data line index where to stop.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-curve-model-enforce-order"></a><h3>gwy_graph_curve_model_enforce_order ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_curve_model_enforce_order (<em class="parameter"><code><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="type">GwyGraphCurveModel</span></a> *gcmodel</code></em>);</pre>
+<p>Ensures curve model data points are ordered by abscissa in ascending order.</p>
+<p>The function reorders the data points currently present in the model.  It does not prevent functions such as
+<a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-set-data" title="gwy_graph_curve_model_set_data ()"><code class="function">gwy_graph_curve_model_set_data()</code></a> from disrupting the order again.  See its documentation for further remarks.</p>
+<p>The "data-changed" signal is emitted if the data order actually changes.</p>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-enforce-order.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gcmodel</p></td>
+<td class="parameter_description"><p>A graph curve model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-curve-model-is-ordered"></a><h3>gwy_graph_curve_model_is_ordered ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_graph_curve_model_is_ordered (<em class="parameter"><code><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="type">GwyGraphCurveModel</span></a> *gcmodel</code></em>);</pre>
+<p>Checks if a curve model data points are ordered by abscissa in ascending order.</p>
+<p>If the curve model has less than two points it is considered ordered by abscissa.  Two points with the same
+abscissa are considered correctly ordered in both orders.</p>
+<p>See <a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-enforce-order" title="gwy_graph_curve_model_enforce_order ()"><code class="function">gwy_graph_curve_model_enforce_order()</code></a> for fixing the point order.</p>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-is-ordered.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gcmodel</p></td>
+<td class="parameter_description"><p>A graph curve model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-is-ordered.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the graph curve model points are sorted by abscissa, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when they are not.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-46.html#api-index-2.46">2.46</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-curve-model-get-xdata"></a><h3>gwy_graph_curve_model_get_xdata ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_graph_curve_model_get_xdata (<em class="parameter"><code><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="type">GwyGraphCurveModel</span></a> *gcmodel</code></em>);</pre>
+<p>Gets y data points of a graph curve model.</p>
+<p>The returned data are owned by the and cannot be modified nor freed.  The returned pointer is valid only so long as
+the curve model exists and its data do not change.</p>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-get-xdata.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gcmodel</p></td>
+<td class="parameter_description"><p>A graph curve model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-get-xdata.returns"></a><h4>Returns</h4>
+<p> X data points, owned by the curve model.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-curve-model-get-ydata"></a><h3>gwy_graph_curve_model_get_ydata ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_graph_curve_model_get_ydata (<em class="parameter"><code><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="type">GwyGraphCurveModel</span></a> *gcmodel</code></em>);</pre>
+<p>Gets y data points of a graph curve model.</p>
+<p>The returned data are owned by the and cannot be modified nor freed.  The returned pointer is valid only so long as
+the curve model exists and its data do not change.</p>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-get-ydata.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gcmodel</p></td>
+<td class="parameter_description"><p>A graph curve model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-get-ydata.returns"></a><h4>Returns</h4>
+<p> Y data points, owned by the curve model.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-curve-model-get-ndata"></a><h3>gwy_graph_curve_model_get_ndata ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_graph_curve_model_get_ndata (<em class="parameter"><code><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="type">GwyGraphCurveModel</span></a> *gcmodel</code></em>);</pre>
+<p>Gets the number of points in a graph curve model.</p>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-get-ndata.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gcmodel</p></td>
+<td class="parameter_description"><p>A graph curve model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-get-ndata.returns"></a><h4>Returns</h4>
+<p> number of data points within the curve data</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-curve-model-get-x-range"></a><h3>gwy_graph_curve_model_get_x_range ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_graph_curve_model_get_x_range (<em class="parameter"><code><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="type">GwyGraphCurveModel</span></a> *gcmodel</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *x_min</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *x_max</code></em>);</pre>
+<p>Gets the abscissa range of a graph curve.</p>
+<p>The values are cached in the curve model therefore repeated calls to this function (with unchanged data) are cheap.</p>
+<p>If there are no data points in the curve, <em class="parameter"><code>x_min</code></em>
+ and <em class="parameter"><code>x_max</code></em>
+ are untouched and the function returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+<p>See also <a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-get-ranges" title="gwy_graph_curve_model_get_ranges ()"><code class="function">gwy_graph_curve_model_get_ranges()</code></a> for a more high-level function.</p>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-get-x-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gcmodel</p></td>
+<td class="parameter_description"><p>A graph curve model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x_min</p></td>
+<td class="parameter_description"><p>Location to store the minimum abscissa value, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x_max</p></td>
+<td class="parameter_description"><p>Location to store the maximum abscissa value, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-get-x-range.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if there are any data points in the curve and <em class="parameter"><code>x_min</code></em>
+, <em class="parameter"><code>x_max</code></em>
+were set.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-curve-model-get-y-range"></a><h3>gwy_graph_curve_model_get_y_range ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_graph_curve_model_get_y_range (<em class="parameter"><code><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="type">GwyGraphCurveModel</span></a> *gcmodel</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *y_min</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *y_max</code></em>);</pre>
+<p>Gets the ordinate range of a graph curve.</p>
+<p>The values are cached in the curve model therefore repeated calls to this function (with unchanged data) are cheap.</p>
+<p>If there are no data points in the curve, <em class="parameter"><code>x_min</code></em>
+ and <em class="parameter"><code>x_max</code></em>
+ are untouched and the function returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+<p>See also <a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-get-ranges" title="gwy_graph_curve_model_get_ranges ()"><code class="function">gwy_graph_curve_model_get_ranges()</code></a> for a more high-level function.</p>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-get-y-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gcmodel</p></td>
+<td class="parameter_description"><p>A graph curve model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y_min</p></td>
+<td class="parameter_description"><p>Location to store the minimum ordinate value, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y_max</p></td>
+<td class="parameter_description"><p>Location to store the maximum ordinate value, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-get-y-range.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if there are any data points in the curve and <em class="parameter"><code>x_min</code></em>
+, <em class="parameter"><code>x_max</code></em>
+were set.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-curve-model-get-ranges"></a><h3>gwy_graph_curve_model_get_ranges ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_graph_curve_model_get_ranges (<em class="parameter"><code><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="type">GwyGraphCurveModel</span></a> *gcmodel</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> x_logscale</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> y_logscale</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *x_min</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *x_max</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *y_min</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *y_max</code></em>);</pre>
+<p>Gets the log-scale suitable range minima of a graph curve.</p>
+<p>Parameters <em class="parameter"><code>x_logscale</code></em>
+ and <em class="parameter"><code>y_logscale</code></em>
+ determine which axis or axes are intended to use logarithmical scale.  The
+range of displayble values for an axis generally depends on the other axis too as it acts as a filter. When both
+<em class="parameter"><code>x_logscale</code></em>
+ and <em class="parameter"><code>y_logscale</code></em>
+ are <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>, the returned minima are identical to those returned by
+<a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-get-x-range" title="gwy_graph_curve_model_get_x_range ()"><code class="function">gwy_graph_curve_model_get_x_range()</code></a> and <a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-get-y-range" title="gwy_graph_curve_model_get_y_range ()"><code class="function">gwy_graph_curve_model_get_y_range()</code></a>.</p>
+<p>The return values are cached in the curve model therefore repeated calls to this function (with unchanged data) are
+cheap.</p>
+<p>If there are no data points that would be displayable with the intended logarithmical scale setup, the output
+arguments are untouched and <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> is returned.</p>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-get-ranges.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gcmodel</p></td>
+<td class="parameter_description"><p>A graph curve model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x_logscale</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if logarithmical scale is intended for the abscissa.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y_logscale</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if logarithmical scale is intended for the ordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x_min</p></td>
+<td class="parameter_description"><p>Location to store the minimum abscissa value to, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x_max</p></td>
+<td class="parameter_description"><p>Location to store the maximum abscissa value to, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y_min</p></td>
+<td class="parameter_description"><p>Location to store the minimum ordinate value to, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y_max</p></td>
+<td class="parameter_description"><p>Location to store the maximum ordinate value to, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-get-ranges.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the output arguments were filled with the ranges.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-curve-model-get-calibration-data"></a><h3>gwy_graph_curve_model_get_calibration_data ()</h3>
+<pre class="programlisting"><a href="../GwyCalData.html#GwyCurveCalibrationData"><span class="returnvalue">GwyCurveCalibrationData</span></a> *
+gwy_graph_curve_model_get_calibration_data
+                               (<em class="parameter"><code><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="type">GwyGraphCurveModel</span></a> *gcmodel</code></em>);</pre>
+<p>Get pointer to actual calibration data for curve.</p>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-get-calibration-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gcmodel</p></td>
+<td class="parameter_description"><p>A graph curve model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-get-calibration-data.returns"></a><h4>Returns</h4>
+<p> Pointer to the calibration data of present curve (NULL if none).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-curve-model-set-calibration-data"></a><h3>gwy_graph_curve_model_set_calibration_data ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_curve_model_set_calibration_data
+                               (<em class="parameter"><code><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="type">GwyGraphCurveModel</span></a> *gcmodel</code></em>,
+                                <em class="parameter"><code>const <a href="../GwyCalData.html#GwyCurveCalibrationData"><span class="type">GwyCurveCalibrationData</span></a> *calibration</code></em>);</pre>
+<p>Set calibration data for curve.</p>
+<p>The function makes a deep copy of <em class="parameter"><code>calibration</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-graph-curve-model-set-calibration-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gcmodel</p></td>
+<td class="parameter_description"><p>A graph curve model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>calibration</p></td>
+<td class="parameter_description"><p>Curve calibration data</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyGraphCurveModel.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyGraphCurveModel-struct"></a><h3>struct GwyGraphCurveModel</h3>
+<pre class="programlisting">struct GwyGraphCurveModel;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphCurveModelClass"></a><h3>struct GwyGraphCurveModelClass</h3>
+<pre class="programlisting">struct GwyGraphCurveModelClass {
+    GObjectClass parent_class;
+
+    void (*data_changed)(GwyGraphCurveModel *model);
+
+    void (*reserved1)(void);
+    void (*reserved2)(void);
+    void (*reserved3)(void);
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyGraphCurveModel.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GwyGraphCurveModel--color"></a><h3>The <code class="literal">“color”</code> property</h3>
+<pre class="programlisting">  “color”                    <a href="../libgwydraw-GwyRGBA.html#GwyRGBA"><span class="type">GwyRGBA</span></a> *</pre>
+<p>Curve color.</p>
+<p>Owner: GwyGraphCurveModel</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphCurveModel--description"></a><h3>The <code class="literal">“description”</code> property</h3>
+<pre class="programlisting">  “description”              <span class="type">char</span> *</pre>
+<p>Curve description.  It appears on graph key.</p>
+<p>Owner: GwyGraphCurveModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: "curve"</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphCurveModel--line-style"></a><h3>The <code class="literal">“line-style”</code> property</h3>
+<pre class="programlisting">  “line-style”               <a href="/usr/share/gtk-doc/html/gdk2/gdk2-Graphics-Contexts.html#GdkLineStyle"><span class="type">GdkLineStyle</span></a></pre>
+<p>Curve line style.  Curve mode has to include lines for the line to be visible.</p>
+<p>Owner: GwyGraphCurveModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GDK_LINE_SOLID</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphCurveModel--line-width"></a><h3>The <code class="literal">“line-width”</code> property</h3>
+<pre class="programlisting">  “line-width”               <span class="type">int</span></pre>
+<p>Curve line width.</p>
+<p>Owner: GwyGraphCurveModel</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,100]</p>
+<p>Default value: 1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphCurveModel--mode"></a><h3>The <code class="literal">“mode”</code> property</h3>
+<pre class="programlisting">  “mode”                     <a class="link" href="libgwydgets-gwydgetenums.html#GwyGraphCurveType" title="enum GwyGraphCurveType"><span class="type">GwyGraphCurveType</span></a></pre>
+<p>Curve plotting mode (line, points, ...).</p>
+<p>Owner: GwyGraphCurveModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GWY_GRAPH_CURVE_LINE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphCurveModel--point-size"></a><h3>The <code class="literal">“point-size”</code> property</h3>
+<pre class="programlisting">  “point-size”               <span class="type">int</span></pre>
+<p>Curve point symbol size.</p>
+<p>Owner: GwyGraphCurveModel</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,100]</p>
+<p>Default value: 5</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphCurveModel--point-type"></a><h3>The <code class="literal">“point-type”</code> property</h3>
+<pre class="programlisting">  “point-type”               <a class="link" href="libgwydgets-gwydgetenums.html#GwyGraphPointType" title="enum GwyGraphPointType"><span class="type">GwyGraphPointType</span></a></pre>
+<p>Curve point symbol type.  Curve mode has toinclude points for the symbols to be visible.</p>
+<p>Owner: GwyGraphCurveModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GWY_GRAPH_POINT_SQUARE</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyGraphCurveModel.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GwyGraphCurveModel-data-changed"></a><h3>The <code class="literal">“data-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="type">GwyGraphCurveModel</span></a> *gwygraphcurvemodel,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>            user_data)</pre>
+<p>The ::data-changed signal is emitted whenever curve data is set with a function like
+<a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-set-data" title="gwy_graph_curve_model_set_data ()"><code class="function">gwy_graph_curve_model_set_data()</code></a>.</p>
+<div class="refsect3">
+<a name="GwyGraphCurveModel-data-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwygraphcurvemodel</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="type">GwyGraphCurveModel</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

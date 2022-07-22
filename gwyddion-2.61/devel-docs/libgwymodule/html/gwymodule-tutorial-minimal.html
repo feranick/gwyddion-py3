@@ -1,0 +1,510 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Minimal Module: Gwyddion Module Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Module Library Reference Manual">
+<link rel="up" href="ModuleTutorial.html" title="Gwyddion Module Tutorial">
+<link rel="prev" href="gwymodule-tutorial-overview.html" title="Gwyddion Module Overview">
+<link rel="next" href="gwymodule-tutorial-beyond.html" title="Beyond the Minimal Module">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ModuleTutorial.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gwymodule-tutorial-overview.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gwymodule-tutorial-beyond.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gwymodule-tutorial-minimal"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle">Minimal Module</span></h2>
+<p>Minimal Module — 
+      Dissection of a minimal <span class="application">Gwyddion</span> data
+      processing module
+    </p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="id-1.3.3.3"></a><h2>Module Overview</h2>
+<p>
+      In this section we will describe a minimal
+      <span class="application">Gwyddion</span> data-processing module.
+      It provides a function to invert values in a channel about zero.
+      The complete module code is:
+    </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="cp">#include</span> <span class="cpf">&lt;libgwyddion/gwymacros.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;libprocess/datafield.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;libgwymodule/gwymodule-process.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;libgwydgets/gwystock.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;app/gwyapp.h&gt;</span><span class="cp"></span>
+
+<span class="cp">#define INVERT_VALUE_RUN_MODES GWY_RUN_IMMEDIATE</span>
+
+<span class="k">static</span> <span class="n">gboolean</span> <span class="n">module_register</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="k">static</span> <span class="kt">void</span>     <span class="n">my_invert_value</span><span class="p">(</span><span class="n">GwyContainer</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span>
+                                <span class="n">GwyRunType</span> <span class="n">run</span><span class="p">);</span>
+
+<span class="k">static</span> <span class="n">GwyModuleInfo</span> <span class="n">module_info</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">GWY_MODULE_ABI_VERSION</span><span class="p">,</span>
+    <span class="o">&amp;</span><span class="n">module_register</span><span class="p">,</span>
+    <span class="n">N_</span><span class="p">(</span><span class="s">&quot;Inverts data value.&quot;</span><span class="p">),</span>
+    <span class="s">&quot;J. Random Hacker &lt;hacker.jr@example.org&gt;&quot;</span><span class="p">,</span>
+    <span class="s">&quot;1.0&quot;</span><span class="p">,</span>
+    <span class="s">&quot;Bit Rot Inc.&quot;</span><span class="p">,</span>
+    <span class="s">&quot;2006&quot;</span><span class="p">,</span>
+<span class="p">};</span>
+
+<span class="n">GWY_MODULE_QUERY</span><span class="p">(</span><span class="n">module_info</span><span class="p">)</span>
+
+<span class="k">static</span> <span class="n">gboolean</span>
+<span class="n">module_register</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">gwy_process_func_register</span><span class="p">(</span><span class="s">&quot;my_invert_value&quot;</span><span class="p">,</span>
+                              <span class="p">(</span><span class="n">GwyProcessFunc</span><span class="p">)</span><span class="o">&amp;</span><span class="n">my_invert_value</span><span class="p">,</span>
+                              <span class="n">N_</span><span class="p">(</span><span class="s">&quot;/_Test/_Invert Value&quot;</span><span class="p">),</span>
+                              <span class="n">GWY_STOCK_VALUE_INVERT</span><span class="p">,</span>
+                              <span class="n">INVERT_VALUE_RUN_MODES</span><span class="p">,</span>
+                              <span class="n">GWY_MENU_FLAG_DATA</span><span class="p">,</span>
+                              <span class="n">N_</span><span class="p">(</span><span class="s">&quot;Invert data value about origin&quot;</span><span class="p">));</span>
+
+    <span class="k">return</span> <span class="n">TRUE</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="kt">void</span>
+<span class="n">my_invert_value</span><span class="p">(</span><span class="n">GwyContainer</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span>
+                <span class="n">GwyRunType</span> <span class="n">run</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">GwyDataField</span> <span class="o">*</span><span class="n">dfield</span><span class="p">;</span>
+    <span class="n">GQuark</span> <span class="n">quark</span><span class="p">;</span>
+    <span class="n">gint</span> <span class="n">id</span><span class="p">;</span>
+
+    <span class="n">g_return_if_fail</span><span class="p">(</span><span class="n">run</span> <span class="o">&amp;</span> <span class="n">INVERT_VALUE_RUN_MODES</span><span class="p">);</span>
+    <span class="n">gwy_app_data_browser_get_current</span><span class="p">(</span><span class="n">GWY_APP_DATA_FIELD</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">dfield</span><span class="p">,</span>
+                                     <span class="n">GWY_APP_DATA_FIELD_KEY</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">quark</span><span class="p">,</span>
+                                     <span class="n">GWY_APP_DATA_FIELD_ID</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">id</span><span class="p">,</span>
+                                     <span class="mi">0</span><span class="p">);</span>
+    <span class="n">gwy_app_undo_qcheckpointv</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">quark</span><span class="p">);</span>
+    <span class="n">gwy_data_field_multiply</span><span class="p">(</span><span class="n">dfield</span><span class="p">,</span> <span class="mf">-1.0</span><span class="p">);</span>
+    <span class="n">gwy_data_field_data_changed</span><span class="p">(</span><span class="n">dfield</span><span class="p">);</span>
+    <span class="n">gwy_app_channel_log_add_proc</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">id</span><span class="p">,</span> <span class="n">id</span><span class="p">);</span>
+<span class="p">}</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+    Though the above example is minimal it still constis of quite a bit of
+    code.  We will analyse it piece-by-piece in the following paragraphs.
+  </p>
+</div>
+<div class="refsect1">
+<a name="id-1.3.3.4"></a><h2>Boilerplate</h2>
+<p>
+      First of all, of course, some header files.
+    </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="cp">#include</span> <span class="cpf">&lt;libgwyddion/gwymacros.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;libprocess/datafield.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;libgwymodule/gwymodule-process.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;libgwydgets/gwystock.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;app/gwyapp.h&gt;</span><span class="cp"></span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+      These four are essential, for a complex modules you may need additional
+      headers.
+      <code class="filename">gwymacros.h</code>
+      contains some basic macros,
+      <code class="filename"><a href="../GwyDataField.html#GwyDataField-struct">datafield.h</a></code>
+      declares basic <a href="../GwyDataField.html#GwyDataField-struct"><span class="type">GwyDataField</span></a> methods,
+      <code class="filename">gwystock.h</code>
+      contains stock icon definitions,
+      <code class="filename"><a class="link" href="libgwymodule-gwymodule-process.html" title="gwymodule-process">gwymodule-process.h</a></code>
+      declares functions essential for registering the module and its data processing functions,
+      and <code class="filename">gwyapp.h</code>
+      includes everything necessary for interfacing with the application.
+    </p>
+</div>
+<div class="refsect1">
+<a name="id-1.3.3.5"></a><h2>Function Prototypes</h2>
+<p>
+      Function prototypes of our functions.
+    </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="k">static</span> <span class="n">gboolean</span> <span class="n">module_register</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="k">static</span> <span class="kt">void</span>     <span class="n">my_invert_value</span><span class="p">(</span><span class="n">GwyContainer</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span>
+                                <span class="n">GwyRunType</span> <span class="n">run</span><span class="p">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+      Note <span class="emphasis"><em>all</em></span> functions and global variables should be
+      declared <code class="literal">static</code>, the module should export no symbol
+      except <a class="link" href="libgwymodule-gwymoduleloader.html#GWY-MODULE-QUERY:CAPS" title="GWY_MODULE_QUERY()"><code class="literal">GWY_MODULE_QUERY</code></a> described below.
+    </p>
+<p>
+      An attentive reader has probably noticed we omitted the line
+    </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="cp">#define INVERT_VALUE_RUN_MODES GWY_RUN_IMMEDIATE</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+      where so-called run mode is defined.  We will describe run modes in
+      detail in the <a class="link" href="gwymodule-tutorial-process.html" title="Data Processing Modules">section about
+      data processing modules</a>.  At this point it suffices to say
+      <a class="link" href="libgwymodule-gwymoduleenums.html#GWY-RUN-IMMEDIATE:CAPS"><code class="literal">GWY_RUN_IMMEDIATE</code></a> means the function is non-interactive, executed
+      immediately.
+    </p>
+</div>
+<div class="refsect1">
+<a name="id-1.3.3.6"></a><h2>The Module Info Structure</h2>
+<p>
+      Here the interesting part starts.  The <a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleInfo" title="struct GwyModuleInfo"><span class="type">GwyModuleInfo</span></a> structure contains
+      overall information about the module, most of it is presented in
+      a more-or-less human-readable form in <span class="application">Gwyddion</span>
+      in the module browser.
+    </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="k">static</span> <span class="n">GwyModuleInfo</span> <span class="n">module_info</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">GWY_MODULE_ABI_VERSION</span><span class="p">,</span>
+    <span class="o">&amp;</span><span class="n">module_register</span><span class="p">,</span>
+    <span class="n">N_</span><span class="p">(</span><span class="s">&quot;Inverts data value.&quot;</span><span class="p">),</span>
+    <span class="s">&quot;J. Random Hacker &lt;hacker.jr@example.org&gt;&quot;</span><span class="p">,</span>
+    <span class="s">&quot;1.0&quot;</span><span class="p">,</span>
+    <span class="s">&quot;Bit Rot Inc.&quot;</span><span class="p">,</span>
+    <span class="s">&quot;2006&quot;</span><span class="p">,</span>
+<span class="p">};</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+      The first item is always <a class="link" href="libgwymodule-gwymoduleloader.html#GWY-MODULE-ABI-VERSION:CAPS" title="GWY_MODULE_ABI_VERSION"><code class="literal">GWY_MODULE_ABI_VERSION</code></a>.  The ABI version
+      compiled to the module is checked by the loader on load-time and
+      modules with wrong ABI version are rejected.
+    </p>
+<p>
+      The second item is a pointer to module registration function, by
+      convention called <code class="function">module_register</code>.  It is described
+      in details below.
+    </p>
+<p>
+      The fourth item is module description.  It will appear as Description
+      in the module browser.  This is a short text (up to a paragraph or two)
+      informing curious humans what the module contains and/or does.
+    </p>
+<p>
+      The next item is the module author(s).  Under normal circumstances this
+      should be a name of a person (or more people).  Including a contact
+      e-mail address here it's a good idea because it will appear in the
+      browser as Authors, so people don't need to look to the module sources
+      to find out how to contact you.
+    </p>
+<p>
+      The next item is the module version, a free-form string that will
+      appear as Version in the browser.  Though it is free-form, using a
+      versioning scheme with alorithmically comparable versions is
+      preferable.
+    </p>
+<p>
+      The last but one and last items are the module copyright and date.
+      The copyright field may be the same as authors field (except without
+      the e-mail address), it may be an organization, or whoever owns the
+      copyright.
+    </p>
+</div>
+<div class="refsect1">
+<a name="id-1.3.3.7"></a><h2>The Module Query Function</h2>
+<p>
+      A <span class="application">Gwyddion</span> module is loaded in two stages.
+      First, it is queried, the module responds with its module info,
+      <span class="application">Gwyddion</span> then performs some basic sanity
+      checks (e.g., whether module ABI version matches).  If it looks all
+      right, <span class="application">Gwyddion</span> continues with the
+      registration of particular module features.
+    </p>
+<p>
+      The query function should be always constructed using the
+      <a class="link" href="libgwymodule-gwymoduleloader.html#GWY-MODULE-QUERY:CAPS" title="GWY_MODULE_QUERY()"><code class="literal">GWY_MODULE_QUERY</code></a> macro as follows (note there is <span class="emphasis"><em>no</em></span>
+      semicolon after the right parenthesis):
+    </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">GWY_MODULE_QUERY</span><span class="p">(</span><span class="n">module_info</span><span class="p">)</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+      The <em class="parameter"><code>module_info</code></em> parameter is the module info
+      described above.  If you change its name for any reason, change it here
+      too.
+    </p>
+</div>
+<div class="refsect1">
+<a name="id-1.3.3.8"></a><h2>Module Feature Registration</h2>
+<p>
+      The module registration function is called in the second registration
+      stage and is responsible for registering particular module functions,
+      each in one turn.  Our sample module registeres only a one function,
+      <code class="function">my_invert_value</code>.
+    </p>
+<p>
+      Each function type has its own registration function, our function
+      is a data processing one, so it's registered with
+      <a class="link" href="libgwymodule-gwymodule-process.html#gwy-process-func-register" title="gwy_process_func_register ()"><code class="function">gwy_process_func_register()</code></a>.
+      File loading and/or saving functions are registered with
+      <a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-register" title="gwy_file_func_register ()"><code class="function">gwy_file_func_register()</code></a>, etc.
+    </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="k">static</span> <span class="n">gboolean</span>
+<span class="n">module_register</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">gwy_process_func_register</span><span class="p">(</span><span class="s">&quot;my_invert_value&quot;</span><span class="p">,</span>
+                              <span class="p">(</span><span class="n">GwyProcessFunc</span><span class="p">)</span><span class="o">&amp;</span><span class="n">my_invert_value</span><span class="p">,</span>
+                              <span class="n">N_</span><span class="p">(</span><span class="s">&quot;/_Test/_Invert Value&quot;</span><span class="p">),</span>
+                              <span class="n">GWY_STOCK_VALUE_INVERT</span><span class="p">,</span>
+                              <span class="n">INVERT_VALUE_RUN_MODES</span><span class="p">,</span>
+                              <span class="n">GWY_MENU_FLAG_DATA</span><span class="p">,</span>
+                              <span class="n">N_</span><span class="p">(</span><span class="s">&quot;Invert data value about origin&quot;</span><span class="p">));</span>
+
+    <span class="k">return</span> <span class="n">TRUE</span><span class="p">;</span>
+<span class="p">}</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+     The registration function normally returns <code class="literal">TRUE</code>.
+     Returning <code class="literal">FALSE</code> means the registration failed, and
+     <span class="application">Gwyddion</span> then attempts to unregister all its
+     already registered functions, unload the module and proceed as if it
+     didn't exist.
+   </p>
+</div>
+<div class="refsect1">
+<a name="id-1.3.3.9"></a><h2>Executive</h2>
+<p>
+      Now let's do some actuall data processing:
+    </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="k">static</span> <span class="kt">void</span>
+<span class="n">my_invert_value</span><span class="p">(</span><span class="n">GwyContainer</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span>
+                <span class="n">GwyRunType</span> <span class="n">run</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">GwyDataField</span> <span class="o">*</span><span class="n">dfield</span><span class="p">;</span>
+    <span class="n">GQuark</span> <span class="n">quark</span><span class="p">;</span>
+    <span class="n">gint</span> <span class="n">id</span><span class="p">;</span>
+
+    <span class="n">g_return_if_fail</span><span class="p">(</span><span class="n">run</span> <span class="o">&amp;</span> <span class="n">INVERT_VALUE_RUN_MODES</span><span class="p">);</span>
+    <span class="n">gwy_app_data_browser_get_current</span><span class="p">(</span><span class="n">GWY_APP_DATA_FIELD</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">dfield</span><span class="p">,</span>
+                                     <span class="n">GWY_APP_DATA_FIELD_KEY</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">quark</span><span class="p">,</span>
+                                     <span class="n">GWY_APP_DATA_FIELD_ID</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">id</span><span class="p">,</span>
+                                     <span class="mi">0</span><span class="p">);</span>
+    <span class="n">gwy_app_undo_qcheckpointv</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">quark</span><span class="p">);</span>
+    <span class="n">gwy_data_field_multiply</span><span class="p">(</span><span class="n">dfield</span><span class="p">,</span> <span class="mf">-1.0</span><span class="p">);</span>
+    <span class="n">gwy_data_field_data_changed</span><span class="p">(</span><span class="n">dfield</span><span class="p">);</span>
+    <span class="n">gwy_app_channel_log_add_proc</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">id</span><span class="p">,</span> <span class="n">id</span><span class="p">);</span>
+<span class="p">}</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+     A few things can be seen here.  First, we check the run mode we were
+     executed in.  More sofisticated modules can in principle do different
+     things based on the run mode, but we just check whether it looks sane.
+   </p>
+<p>
+     Next, we get the data field to operate on.  The notion of current object
+     is maintained by the application
+     data browser therefore we us
+     a data browser method (beside the current data field, we also ask for its
+     key that will be useful for undo later).
+   </p>
+<p>
+     <a href="../GwyDataField.html#GwyDataField-struct"><span class="type">GwyDataField</span></a> is the basic data object representing a two-dimensional
+     array of values (typically a height field).  Quite a few datafield
+     manipulating functions already exist in libprocess, we will use one of them
+     to perform the value inversion.
+   </p>
+<p>
+     Function <a href="../libgwyapp-undo.html#gwy-app-undo-qcheckpointv"><code class="function">gwy_app_undo_qcheckpointv()</code></a> creates a point in the undo history
+     we can return to later.  It is necessary to call it before we start
+     modifying the data.  Its first argument is the
+     <a href="../GwyContainer.html#GwyContainer-struct">data container</a> the objects we will
+     change reside in.  Then we pass the number of changed items (1) and
+     an array of their indentifiers in the data container.
+   </p>
+<p>
+     Then we finally invert the value with <a href="../GwyDataField.html#gwy-data-field-multiply"><code class="function">gwy_data_field_multiply()</code></a> and we are
+     done – almost.  To notify views displaying our data field that its data
+     has changed we call <a href="../GwyDataField.html#gwy-data-field-data-changed"><code class="function">gwy_data_field_data_changed()</code></a>.  This function should
+     be called once on each changed data field after all processing is done.
+   </p>
+<p>
+     When we perform a data modification, it should be logged to the data
+     operation log.  A new log entry can be added with
+     <a href="../libgwyapp-log.html#gwy-app-channel-log-add-proc"><code class="function">gwy_app_channel_log_add_proc()</code></a>, where <em class="parameter"><code>id</code></em> is the numeric identifier of the
+     data field in the container.  If the source and target of the operation
+     is the same, we just pass the same identifier twice.  If new data are
+     created the two identifier can differ, as described in the
+     logging documentation.
+   </p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

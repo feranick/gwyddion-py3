@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>hough: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="GwyGrainValue.html" title="GwyGrainValue">
+<link rel="next" href="libgwyprocess-inttrans.html" title="inttrans">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyprocess-hough.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="GwyGrainValue.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyprocess-inttrans.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyprocess-hough"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyprocess-hough.top_of_page"></a>hough</span></h2>
+<p>hough — Hough transform</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyprocess-hough.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-hough.html#gwy-data-field-hough-line" title="gwy_data_field_hough_line ()">gwy_data_field_hough_line</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-hough.html#gwy-data-field-hough-circle" title="gwy_data_field_hough_circle ()">gwy_data_field_hough_circle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-hough.html#gwy-data-field-hough-line-strenghten" title="gwy_data_field_hough_line_strenghten ()">gwy_data_field_hough_line_strenghten</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-hough.html#gwy-data-field-hough-circle-strenghten" title="gwy_data_field_hough_circle_strenghten ()">gwy_data_field_hough_circle_strenghten</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-hough.html#gwy-data-field-get-local-maxima-list" title="gwy_data_field_get_local_maxima_list ()">gwy_data_field_get_local_maxima_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-hough.html#gwy-data-field-get-local-minima-list" title="gwy_data_field_get_local_minima_list ()">gwy_data_field_get_local_minima_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-hough.html#gwy-data-field-hough-polar-line-to-datafield" title="gwy_data_field_hough_polar_line_to_datafield ()">gwy_data_field_hough_polar_line_to_datafield</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-hough.html#gwy-data-field-hough-datafield-line-to-polar" title="gwy_data_field_hough_datafield_line_to_polar ()">gwy_data_field_hough_datafield_line_to_polar</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-hough.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-hough.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-hough.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-data-field-hough-line"></a><h3>gwy_data_field_hough_line ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_hough_line (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dfield</code></em>,
+                           <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *x_gradient</code></em>,
+                           <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *y_gradient</code></em>,
+                           <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *result</code></em>,
+                           <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> hwidth</code></em>,
+                           <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> overlapping</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-hough-circle"></a><h3>gwy_data_field_hough_circle ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_hough_circle (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dfield</code></em>,
+                             <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *x_gradient</code></em>,
+                             <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *y_gradient</code></em>,
+                             <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *result</code></em>,
+                             <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> radius</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-hough-line-strenghten"></a><h3>gwy_data_field_hough_line_strenghten ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_hough_line_strenghten (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dfield</code></em>,
+                                      <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *x_gradient</code></em>,
+                                      <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *y_gradient</code></em>,
+                                      <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> hwidth</code></em>,
+                                      <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> threshold</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-hough-circle-strenghten"></a><h3>gwy_data_field_hough_circle_strenghten ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_hough_circle_strenghten
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dfield</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *x_gradient</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *y_gradient</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> radius</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> threshold</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-get-local-maxima-list"></a><h3>gwy_data_field_get_local_maxima_list ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_data_field_get_local_maxima_list (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dfield</code></em>,
+                                      <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *xdata</code></em>,
+                                      <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *ydata</code></em>,
+                                      <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *zdata</code></em>,
+                                      <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ndata</code></em>,
+                                      <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> skip</code></em>,
+                                      <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> threshold</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> subpixel</code></em>);</pre>
+<p>Locates local maxima in a data field.</p>
+<p>At most <em class="parameter"><code>ndata</code></em>
+ maxima are located (with the largest values).</p>
+<div class="refsect3">
+<a name="gwy-data-field-get-local-maxima-list.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dfield</p></td>
+<td class="parameter_description"><p>A two-dimensional data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xdata</p></td>
+<td class="parameter_description"><p>Array of <em class="parameter"><code>ndata</code></em>
+elements where the columns should be stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ydata</p></td>
+<td class="parameter_description"><p>Array of <em class="parameter"><code>ndata</code></em>
+elements where the rows should be stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>zdata</p></td>
+<td class="parameter_description"><p>Array of <em class="parameter"><code>ndata</code></em>
+elements where the values should be stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ndata</p></td>
+<td class="parameter_description"><p>Number of items in <em class="parameter"><code>xdata</code></em>
+, <em class="parameter"><code>ydata</code></em>
+and <em class="parameter"><code>zdata</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>skip</p></td>
+<td class="parameter_description"><p>Minimum pixel distance between maxima.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>threshold</p></td>
+<td class="parameter_description"><p>Minimum value to be considered a maximum.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>subpixel</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> for subpixel refinement.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-get-local-maxima-list.returns"></a><h4>Returns</h4>
+<p> The actual number of maxima found.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-get-local-minima-list"></a><h3>gwy_data_field_get_local_minima_list ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_data_field_get_local_minima_list (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dfield</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *xdata</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *ydata</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *zdata</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ndata</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> skip</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> threshold</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> subpixel</code></em>);</pre>
+<p>Locates local minima in a data field.</p>
+<p>At most <em class="parameter"><code>ndata</code></em>
+ minima are located (with the smallest values).</p>
+<div class="refsect3">
+<a name="gwy-data-field-get-local-minima-list.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dfield</p></td>
+<td class="parameter_description"><p>A two-dimensional data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xdata</p></td>
+<td class="parameter_description"><p>Array of <em class="parameter"><code>ndata</code></em>
+elements where the columns should be stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ydata</p></td>
+<td class="parameter_description"><p>Array of <em class="parameter"><code>ndata</code></em>
+elements where the rows should be stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>zdata</p></td>
+<td class="parameter_description"><p>Array of <em class="parameter"><code>ndata</code></em>
+elements where the values should be stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ndata</p></td>
+<td class="parameter_description"><p>Number of items in <em class="parameter"><code>xdata</code></em>
+, <em class="parameter"><code>ydata</code></em>
+and <em class="parameter"><code>zdata</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>skip</p></td>
+<td class="parameter_description"><p>Minimum pixel distance between minima.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>threshold</p></td>
+<td class="parameter_description"><p>Maximum value to be considered a minimum.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>subpixel</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> for subpixel refinement.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-get-local-minima-list.returns"></a><h4>Returns</h4>
+<p> The actual number of minima found.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-hough-polar-line-to-datafield"></a><h3>gwy_data_field_hough_polar_line_to_datafield ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_hough_polar_line_to_datafield
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dfield</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> rho</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> theta</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *px1</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *px2</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *py1</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *py2</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-hough-datafield-line-to-polar"></a><h3>gwy_data_field_hough_datafield_line_to_polar ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_hough_datafield_line_to_polar
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> px1</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> px2</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> py1</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> py2</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *rho</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *theta</code></em>);</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

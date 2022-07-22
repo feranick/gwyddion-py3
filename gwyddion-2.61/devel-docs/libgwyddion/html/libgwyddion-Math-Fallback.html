@@ -1,0 +1,529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math Fallback: Gwyddion Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="prev" href="libgwyddion-Math.html" title="Math">
+<link rel="next" href="libgwyddion-GwyNLFitter.html" title="GwyNLFitter">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyddion-Math-Fallback.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyddion-Math.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyddion-GwyNLFitter.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyddion-Math-Fallback"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyddion-Math-Fallback.top_of_page"></a>Math Fallback</span></h2>
+<p>Math Fallback — Fallback implementations of standard mathematical functions</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyddion-Math-Fallback.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">double</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math-Fallback.html#gwy-math-fallback-pow10" title="gwy_math_fallback_pow10 ()">gwy_math_fallback_pow10</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">double</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math-Fallback.html#gwy-math-fallback-cbrt" title="gwy_math_fallback_cbrt ()">gwy_math_fallback_cbrt</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">double</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math-Fallback.html#gwy-math-fallback-hypot" title="gwy_math_fallback_hypot ()">gwy_math_fallback_hypot</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">double</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math-Fallback.html#gwy-math-fallback-acosh" title="gwy_math_fallback_acosh ()">gwy_math_fallback_acosh</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">double</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math-Fallback.html#gwy-math-fallback-asinh" title="gwy_math_fallback_asinh ()">gwy_math_fallback_asinh</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">double</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math-Fallback.html#gwy-math-fallback-atanh" title="gwy_math_fallback_atanh ()">gwy_math_fallback_atanh</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">double</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math-Fallback.html#gwy-math-fallback-powi" title="gwy_math_fallback_powi ()">gwy_math_fallback_powi</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math-Fallback.html#gwy-math-fallback-isinf" title="gwy_math_fallback_isinf ()">gwy_math_fallback_isinf</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math-Fallback.html#gwy-math-fallback-isnan" title="gwy_math_fallback_isnan ()">gwy_math_fallback_isnan</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-Math-Fallback.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgwyddion-Math-Fallback.html#pow10" title="pow10">pow10</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgwyddion-Math-Fallback.html#cbrt" title="cbrt">cbrt</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgwyddion-Math-Fallback.html#hypot" title="hypot">hypot</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgwyddion-Math-Fallback.html#acosh" title="acosh">acosh</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgwyddion-Math-Fallback.html#asinh" title="asinh">asinh</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgwyddion-Math-Fallback.html#atanh" title="atanh">atanh</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgwyddion-Math-Fallback.html#gwy-isinf" title="gwy_isinf">gwy_isinf</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgwyddion-Math-Fallback.html#gwy-isnan" title="gwy_isnan">gwy_isnan</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgwyddion-Math-Fallback.html#gwy-powi" title="gwy_powi">gwy_powi</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-Math-Fallback.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwyddion/gwymathfallback.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-Math-Fallback.description"></a><h2>Description</h2>
+<p>Fallback functions <code class="function">gwy_math_fallback_<em class="replaceable"><code>foo</code></em></code> are defined for
+mathematical functions <code class="function"><em class="replaceable"><code>foo</code></em></code> that might not be implemented on all
+platforms and are commonly used in Gwyddion.  These functions are always defined (as <code class="literal">static
+inline</code>), however, you should not use them as they can be less efficient or precise than the standard
+functions.</p>
+<p>For each unavailable function (and only for those), this header file defines a replacement macro expanding to the
+name of the fallback function. Therefore after including it, you can use for instance <code class="function">cbrt</code>
+regardless if the platform provides it or not. Note this header has to be included explicitly to avoid possible
+inadvertent clashes with other definitions of <code class="function">cbrt</code>.</p>
+<p>Since all replacement macros expand to names of functions, it is possible to take the address of any of them.</p>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-Math-Fallback.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-math-fallback-pow10"></a><h3>gwy_math_fallback_pow10 ()</h3>
+<pre class="programlisting"><span class="returnvalue">double</span>
+gwy_math_fallback_pow10 (<em class="parameter"><code><span class="type">double</span> x</code></em>);</pre>
+<p>Fallback for the standard mathematical function <code class="function">pow10</code>.</p>
+<div class="refsect3">
+<a name="gwy-math-fallback-pow10.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Floating point number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-fallback-pow10.returns"></a><h4>Returns</h4>
+<p> 10 raised to <em class="parameter"><code>x</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-9.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-fallback-cbrt"></a><h3>gwy_math_fallback_cbrt ()</h3>
+<pre class="programlisting"><span class="returnvalue">double</span>
+gwy_math_fallback_cbrt (<em class="parameter"><code><span class="type">double</span> x</code></em>);</pre>
+<p>Fallback for the standard mathematical function <code class="function">cbrt</code>.</p>
+<div class="refsect3">
+<a name="gwy-math-fallback-cbrt.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Floating point number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-fallback-cbrt.returns"></a><h4>Returns</h4>
+<p> Cubic root of <em class="parameter"><code>x</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-9.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-fallback-hypot"></a><h3>gwy_math_fallback_hypot ()</h3>
+<pre class="programlisting"><span class="returnvalue">double</span>
+gwy_math_fallback_hypot (<em class="parameter"><code><span class="type">double</span> x</code></em>,
+                         <em class="parameter"><code><span class="type">double</span> y</code></em>);</pre>
+<p>Fallback for the standard mathematical function <code class="function">hypot</code>.</p>
+<div class="refsect3">
+<a name="gwy-math-fallback-hypot.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Floating point number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Floating point number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-fallback-hypot.returns"></a><h4>Returns</h4>
+<p> Length of hypotenuse of a right-angle triangle with sides of lengths <em class="parameter"><code>x</code></em>
+and <em class="parameter"><code>y</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-9.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-fallback-acosh"></a><h3>gwy_math_fallback_acosh ()</h3>
+<pre class="programlisting"><span class="returnvalue">double</span>
+gwy_math_fallback_acosh (<em class="parameter"><code><span class="type">double</span> x</code></em>);</pre>
+<p>Fallback for the standard mathematical function <code class="function">acosh</code>.</p>
+<div class="refsect3">
+<a name="gwy-math-fallback-acosh.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Floating point number greater or equal to 1.0.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-fallback-acosh.returns"></a><h4>Returns</h4>
+<p> Inverse hyperbolic cosine of <em class="parameter"><code>x</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-9.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-fallback-asinh"></a><h3>gwy_math_fallback_asinh ()</h3>
+<pre class="programlisting"><span class="returnvalue">double</span>
+gwy_math_fallback_asinh (<em class="parameter"><code><span class="type">double</span> x</code></em>);</pre>
+<p>Fallback for the standard mathematical function <code class="function">asinh</code>.</p>
+<div class="refsect3">
+<a name="gwy-math-fallback-asinh.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Floating point number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-fallback-asinh.returns"></a><h4>Returns</h4>
+<p> Inverse hyperbolic sine of <em class="parameter"><code>x</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-9.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-fallback-atanh"></a><h3>gwy_math_fallback_atanh ()</h3>
+<pre class="programlisting"><span class="returnvalue">double</span>
+gwy_math_fallback_atanh (<em class="parameter"><code><span class="type">double</span> x</code></em>);</pre>
+<p>Fallback for the standard mathematical function <code class="function">atanh</code>.</p>
+<div class="refsect3">
+<a name="gwy-math-fallback-atanh.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Floating point number in the range [-1, 1].</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-fallback-atanh.returns"></a><h4>Returns</h4>
+<p> Inverse hyperbolic tangent of <em class="parameter"><code>x</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-9.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-fallback-powi"></a><h3>gwy_math_fallback_powi ()</h3>
+<pre class="programlisting"><span class="returnvalue">double</span>
+gwy_math_fallback_powi (<em class="parameter"><code><span class="type">double</span> x</code></em>,
+                        <em class="parameter"><code><span class="type">int</span> i</code></em>);</pre>
+<p>Fallback for the integer power function.</p>
+<p>It provides the same functionality as GCC's <code class="function">__builtin_powi()</code> for finite fast math, without any precision guarantee.</p>
+<div class="refsect3">
+<a name="gwy-math-fallback-powi.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Floating point number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Integer power.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-fallback-powi.returns"></a><h4>Returns</h4>
+<p> Value of <em class="parameter"><code>x</code></em>
+raised to <em class="parameter"><code>i</code></em>
+-th power.  If <em class="parameter"><code>i</code></em>
+is zero, the return values is 1, even when <em class="parameter"><code>x</code></em>
+is zero.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-53.html#api-index-2.53">2.53</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-fallback-isinf"></a><h3>gwy_math_fallback_isinf ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gwy_math_fallback_isinf (<em class="parameter"><code><span class="type">double</span> x</code></em>);</pre>
+<p>Fallback for the standard mathematical function <code class="function">isinf</code>.</p>
+<div class="refsect3">
+<a name="gwy-math-fallback-isinf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Floating point number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-fallback-isinf.returns"></a><h4>Returns</h4>
+<p> <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>x</code></em>
+is infinity, <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-fallback-isnan"></a><h3>gwy_math_fallback_isnan ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gwy_math_fallback_isnan (<em class="parameter"><code><span class="type">double</span> x</code></em>);</pre>
+<p>Fallback for the standard mathematical function <code class="function">isnan</code>.</p>
+<div class="refsect3">
+<a name="gwy-math-fallback-isnan.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Floating point number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-fallback-isnan.returns"></a><h4>Returns</h4>
+<p> <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>x</code></em>
+is infinity, <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-Math-Fallback.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="pow10"></a><h3>pow10</h3>
+<pre class="programlisting">#define pow10 exp10
+</pre>
+<p>Macro defined to <a class="link" href="libgwyddion-Math-Fallback.html#gwy-math-fallback-pow10" title="gwy_math_fallback_pow10 ()"><code class="function">gwy_math_fallback_pow10()</code></a> if the platform does not provide <code class="function">pow10</code>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="cbrt"></a><h3>cbrt</h3>
+<pre class="programlisting">#define cbrt gwy_math_fallback_cbrt
+</pre>
+<p>Macro defined to <a class="link" href="libgwyddion-Math-Fallback.html#gwy-math-fallback-cbrt" title="gwy_math_fallback_cbrt ()"><code class="function">gwy_math_fallback_cbrt()</code></a> if the platform does not provide <code class="function">cbrt</code>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="hypot"></a><h3>hypot</h3>
+<pre class="programlisting">#define hypot gwy_math_fallback_hypot
+</pre>
+<p>Macro defined to <a class="link" href="libgwyddion-Math-Fallback.html#gwy-math-fallback-hypot" title="gwy_math_fallback_hypot ()"><code class="function">gwy_math_fallback_hypot()</code></a> if the platform does not provide <code class="function">hypot</code>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="acosh"></a><h3>acosh</h3>
+<pre class="programlisting">#define acosh gwy_math_fallback_acosh
+</pre>
+<p>Macro defined to <a class="link" href="libgwyddion-Math-Fallback.html#gwy-math-fallback-acosh" title="gwy_math_fallback_acosh ()"><code class="function">gwy_math_fallback_acosh()</code></a> if the platform does not provide <code class="function">acosh</code>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="asinh"></a><h3>asinh</h3>
+<pre class="programlisting">#define asinh gwy_math_fallback_asinh
+</pre>
+<p>Macro defined to <a class="link" href="libgwyddion-Math-Fallback.html#gwy-math-fallback-asinh" title="gwy_math_fallback_asinh ()"><code class="function">gwy_math_fallback_asinh()</code></a> if the platform does not provide <code class="function">asinh</code>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="atanh"></a><h3>atanh</h3>
+<pre class="programlisting">#define atanh gwy_math_fallback_atanh
+</pre>
+<p>Macro defined to <a class="link" href="libgwyddion-Math-Fallback.html#gwy-math-fallback-atanh" title="gwy_math_fallback_atanh ()"><code class="function">gwy_math_fallback_atanh()</code></a> if the platform does not provide <code class="function">atanh</code>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-isinf"></a><h3>gwy_isinf</h3>
+<pre class="programlisting">#define gwy_isinf isinf
+</pre>
+<p>Macro defined to working <code class="function">isinf()</code> implementation, either a system one or <a class="link" href="libgwyddion-Math-Fallback.html#gwy-math-fallback-isinf" title="gwy_math_fallback_isinf ()"><code class="function">gwy_math_fallback_isinf()</code></a>.</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-isnan"></a><h3>gwy_isnan</h3>
+<pre class="programlisting">#define gwy_isnan isnan
+</pre>
+<p>Macro defined to working <code class="function">isnan()</code> implementation, either a system one or <a class="link" href="libgwyddion-Math-Fallback.html#gwy-math-fallback-isnan" title="gwy_math_fallback_isnan ()"><code class="function">gwy_math_fallback_isnan()</code></a>.</p>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-powi"></a><h3>gwy_powi</h3>
+<pre class="programlisting">#  define gwy_powi gwy_math_fallback_powi
+</pre>
+<p>Macro defined to working integer power implementation, either a compiler provided one or <a class="link" href="libgwyddion-Math-Fallback.html#gwy-math-fallback-powi" title="gwy_math_fallback_powi ()"><code class="function">gwy_math_fallback_powi()</code></a>.</p>
+<p class="since">Since: <a class="link" href="api-index-2-53.html#api-index-2.53">2.53</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

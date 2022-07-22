@@ -1,0 +1,857 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>undo: Gwyddion Application Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="prev" href="libgwyapp-meta.html" title="meta">
+<link rel="next" href="libgwyapp-help.html" title="help">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyapp-undo.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyapp-meta.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyapp-help.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyapp-undo"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyapp-undo.top_of_page"></a>undo</span></h2>
+<p>undo — Undo and redo facility</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyapp-undo.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gulong"><span class="returnvalue">gulong</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-undo.html#gwy-app-undo-checkpoint" title="gwy_app_undo_checkpoint ()">gwy_app_undo_checkpoint</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gulong"><span class="returnvalue">gulong</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-undo.html#gwy-app-undo-qcheckpoint" title="gwy_app_undo_qcheckpoint ()">gwy_app_undo_qcheckpoint</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gulong"><span class="returnvalue">gulong</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-undo.html#gwy-app-undo-checkpointv" title="gwy_app_undo_checkpointv ()">gwy_app_undo_checkpointv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gulong"><span class="returnvalue">gulong</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-undo.html#gwy-app-undo-qcheckpointv" title="gwy_app_undo_qcheckpointv ()">gwy_app_undo_qcheckpointv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-undo.html#gwy-app-undo-undo-container" title="gwy_app_undo_undo_container ()">gwy_app_undo_undo_container</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-undo.html#gwy-app-undo-redo-container" title="gwy_app_undo_redo_container ()">gwy_app_undo_redo_container</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-undo.html#gwy-app-undo-container-remove" title="gwy_app_undo_container_remove ()">gwy_app_undo_container_remove</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gulong"><span class="returnvalue">gulong</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-undo.html#gwy-undo-checkpoint" title="gwy_undo_checkpoint ()">gwy_undo_checkpoint</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gulong"><span class="returnvalue">gulong</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-undo.html#gwy-undo-qcheckpoint" title="gwy_undo_qcheckpoint ()">gwy_undo_qcheckpoint</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gulong"><span class="returnvalue">gulong</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-undo.html#gwy-undo-checkpointv" title="gwy_undo_checkpointv ()">gwy_undo_checkpointv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gulong"><span class="returnvalue">gulong</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-undo.html#gwy-undo-qcheckpointv" title="gwy_undo_qcheckpointv ()">gwy_undo_qcheckpointv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-undo.html#gwy-undo-undo-container" title="gwy_undo_undo_container ()">gwy_undo_undo_container</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-undo.html#gwy-undo-redo-container" title="gwy_undo_redo_container ()">gwy_undo_redo_container</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-undo.html#gwy-undo-container-has-undo" title="gwy_undo_container_has_undo ()">gwy_undo_container_has_undo</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-undo.html#gwy-undo-container-has-redo" title="gwy_undo_container_has_redo ()">gwy_undo_container_has_redo</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-undo.html#gwy-undo-container-get-modified" title="gwy_undo_container_get_modified ()">gwy_undo_container_get_modified</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-undo.html#gwy-undo-container-set-unmodified" title="gwy_undo_container_set_unmodified ()">gwy_undo_container_set_unmodified</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-undo.html#gwy-undo-container-remove" title="gwy_undo_container_remove ()">gwy_undo_container_remove</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-undo.html#gwy-undo-get-enabled" title="gwy_undo_get_enabled ()">gwy_undo_get_enabled</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-undo.html#gwy-undo-set-enabled" title="gwy_undo_set_enabled ()">gwy_undo_set_enabled</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-undo.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;app/gwyapp.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-undo.description"></a><h2>Description</h2>
+<p>For a module developer, the only two useful undo/redo functions are probably
+<a class="link" href="libgwyapp-undo.html#gwy-app-undo-checkpoint" title="gwy_app_undo_checkpoint ()"><code class="function">gwy_app_undo_checkpoint()</code></a> and <a class="link" href="libgwyapp-undo.html#gwy-app-undo-checkpointv" title="gwy_app_undo_checkpointv ()"><code class="function">gwy_app_undo_checkpointv()</code></a> creating a
+checkpoint in the undo history to which is possible to return to later. You
+should use these functions before commiting changes to data.</p>
+<p>The other functions actually perform undo or redo, and has little use
+outside main application, unless it wishes to implement its local undo.</p>
+<p>There are two types of functions app-level and container-level.  App-level
+functions (have `app' in their names) should be generally used only by the
+main application as they update menus and toolboxes according to undo and
+redo state.  Container-level functions only perform the actual undo or redo
+and can be used for local undo implementation.</p>
+<p>Undo information for a <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> is automatically destroyed when the
+container is finalized.</p>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-undo.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-app-undo-checkpoint"></a><h3>gwy_app_undo_checkpoint ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gulong"><span class="returnvalue">gulong</span></a>
+gwy_app_undo_checkpoint (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                         <em class="parameter"><code>...</code></em>);</pre>
+<p>Create a point in the undo history it is possible to return to.</p>
+<p>In addition to what <a class="link" href="libgwyapp-undo.html#gwy-undo-checkpoint" title="gwy_undo_checkpoint ()"><code class="function">gwy_undo_checkpoint()</code></a> does, this function takes care
+of updating application controls state.</p>
+<div class="refsect3">
+<a name="gwy-app-undo-checkpoint.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated list of container item names to save.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-undo-checkpoint.returns"></a><h4>Returns</h4>
+<p> Undo level id (zero if undo/redo is disabled).  Not useful (yet).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-undo-qcheckpoint"></a><h3>gwy_app_undo_qcheckpoint ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gulong"><span class="returnvalue">gulong</span></a>
+gwy_app_undo_qcheckpoint (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                          <em class="parameter"><code>...</code></em>);</pre>
+<p>Create a point in the undo history it is possible to return to.</p>
+<p>In addition to what <a class="link" href="libgwyapp-undo.html#gwy-undo-checkpoint" title="gwy_undo_checkpoint ()"><code class="function">gwy_undo_checkpoint()</code></a> does, this function takes care
+of updating application controls state.</p>
+<div class="refsect3">
+<a name="gwy-app-undo-qcheckpoint.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>0-terminated list of container item quark keys to save.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-undo-qcheckpoint.returns"></a><h4>Returns</h4>
+<p> Undo level id.  Not useful (yet).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-undo-checkpointv"></a><h3>gwy_app_undo_checkpointv ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gulong"><span class="returnvalue">gulong</span></a>
+gwy_app_undo_checkpointv (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **keys</code></em>);</pre>
+<p>Create a point in the undo history it is possible to return to.</p>
+<p>In addition to what <a class="link" href="libgwyapp-undo.html#gwy-undo-checkpointv" title="gwy_undo_checkpointv ()"><code class="function">gwy_undo_checkpointv()</code></a> does, this function takes care
+of updating application controls state.</p>
+<div class="refsect3">
+<a name="gwy-app-undo-checkpointv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The number of strings in <em class="parameter"><code>keys</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>keys</p></td>
+<td class="parameter_description"><p>An array of container string keys to save data.
+It can contain holes, that is NUL's, they are ignored.  However, it
+should contain at least one real key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-undo-checkpointv.returns"></a><h4>Returns</h4>
+<p> Undo level id.  Not useful (yet).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-undo-qcheckpointv"></a><h3>gwy_app_undo_qcheckpointv ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gulong"><span class="returnvalue">gulong</span></a>
+gwy_app_undo_qcheckpointv (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                           <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> *keys</code></em>);</pre>
+<p>Create a point in the undo history it is possible to return to.</p>
+<p>In addition to what <a class="link" href="libgwyapp-undo.html#gwy-undo-checkpointv" title="gwy_undo_checkpointv ()"><code class="function">gwy_undo_checkpointv()</code></a> does, this function takes care
+of updating application controls state.</p>
+<p>If <em class="parameter"><code>keys</code></em>
+ include channel keys the corresponding channel calibration data is
+saved together with the data and then removed from the container.  This
+prevents mismatch between a data field and its calibration data.  Therefore,
+if you perform a data operation that can also meaningfully transform the
+corresponding calibration data take care to obtain it before saving undo.</p>
+<div class="refsect3">
+<a name="gwy-app-undo-qcheckpointv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The number of strings in <em class="parameter"><code>keys</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>keys</p></td>
+<td class="parameter_description"><p>An array of container quark keys to save data.
+It can contain holes, that is 0's, they are ignored.  However, it
+should contain at least one real key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-undo-qcheckpointv.returns"></a><h4>Returns</h4>
+<p> Undo level id.  Not useful (yet).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-undo-undo-container"></a><h3>gwy_app_undo_undo_container ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_undo_undo_container (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>);</pre>
+<p>Performs undo on a data container.</p>
+<p>It must have undo available.</p>
+<p>In addition to what <a class="link" href="libgwyapp-undo.html#gwy-undo-undo-container" title="gwy_undo_undo_container ()"><code class="function">gwy_undo_undo_container()</code></a> does, this function takes care
+of updating application controls state.</p>
+<div class="refsect3">
+<a name="gwy-app-undo-undo-container.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-undo-redo-container"></a><h3>gwy_app_undo_redo_container ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_undo_redo_container (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>);</pre>
+<p>Performs undo on a data container.</p>
+<p>It must have redo available.</p>
+<p>In addition to what <a class="link" href="libgwyapp-undo.html#gwy-undo-redo-container" title="gwy_undo_redo_container ()"><code class="function">gwy_undo_redo_container()</code></a> does, this function takes care
+of updating application controls state.</p>
+<div class="refsect3">
+<a name="gwy-app-undo-redo-container.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-undo-container-remove"></a><h3>gwy_app_undo_container_remove ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_undo_container_remove (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *prefix</code></em>);</pre>
+<p>Removes undo/redo information for a data container.</p>
+<p>In addition to what <a class="link" href="libgwyapp-undo.html#gwy-undo-container-remove" title="gwy_undo_container_remove ()"><code class="function">gwy_undo_container_remove()</code></a> does, this function takes
+care of updating application controls state.</p>
+<div class="refsect3">
+<a name="gwy-app-undo-container-remove.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container managed by the data-browser.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prefix</p></td>
+<td class="parameter_description"><p>Prefix to remove undo/redo information under.  Pass <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to remove
+undo/redo information altogether.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-undo-checkpoint"></a><h3>gwy_undo_checkpoint ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gulong"><span class="returnvalue">gulong</span></a>
+gwy_undo_checkpoint (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                     <em class="parameter"><code>...</code></em>);</pre>
+<p>Create a point in the undo history it is possible to return to.</p>
+<div class="refsect3">
+<a name="gwy-undo-checkpoint.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated list of container item names to save.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-undo-checkpoint.returns"></a><h4>Returns</h4>
+<p> Undo level id.  Not useful (yet).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-undo-qcheckpoint"></a><h3>gwy_undo_qcheckpoint ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gulong"><span class="returnvalue">gulong</span></a>
+gwy_undo_qcheckpoint (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                      <em class="parameter"><code>...</code></em>);</pre>
+<p>Create a point in the undo history it is possible to return to.</p>
+<div class="refsect3">
+<a name="gwy-undo-qcheckpoint.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>0-terminated list of container item quark keys to save.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-undo-qcheckpoint.returns"></a><h4>Returns</h4>
+<p> Undo level id.  Not useful (yet).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-undo-checkpointv"></a><h3>gwy_undo_checkpointv ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gulong"><span class="returnvalue">gulong</span></a>
+gwy_undo_checkpointv (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **keys</code></em>);</pre>
+<p>Create a point in the undo history it is possible to return to.</p>
+<div class="refsect3">
+<a name="gwy-undo-checkpointv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The number of strings in <em class="parameter"><code>keys</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>keys</p></td>
+<td class="parameter_description"><p>An array of container string keys to save data.
+It can contain holes, that is NUL's, they are ignored.  However, it
+should contain at least one real key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-undo-checkpointv.returns"></a><h4>Returns</h4>
+<p> Undo level id.  Not useful (yet).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-undo-qcheckpointv"></a><h3>gwy_undo_qcheckpointv ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gulong"><span class="returnvalue">gulong</span></a>
+gwy_undo_qcheckpointv (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                       <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> *keys</code></em>);</pre>
+<p>Create a point in the undo history it is possible to return to.</p>
+<div class="refsect3">
+<a name="gwy-undo-qcheckpointv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The number of strings in <em class="parameter"><code>keys</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>keys</p></td>
+<td class="parameter_description"><p>An array of container quark keys to save data.
+It can contain holes, that is 0's, they are ignored.  However, it
+should contain at least one real key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-undo-qcheckpointv.returns"></a><h4>Returns</h4>
+<p> Undo level id.  Not useful (yet).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-undo-undo-container"></a><h3>gwy_undo_undo_container ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_undo_undo_container (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>);</pre>
+<p>Performs undo on a data container.</p>
+<p>It must have undo available.</p>
+<div class="refsect3">
+<a name="gwy-undo-undo-container.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-undo-redo-container"></a><h3>gwy_undo_redo_container ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_undo_redo_container (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>);</pre>
+<p>Performs undo on a data container.</p>
+<p>It must have redo available.</p>
+<div class="refsect3">
+<a name="gwy-undo-redo-container.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-undo-container-has-undo"></a><h3>gwy_undo_container_has_undo ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_undo_container_has_undo (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>);</pre>
+<p>Returns whether there is any undo available for a container.</p>
+<div class="refsect3">
+<a name="gwy-undo-container-has-undo.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Data container to get undo infomation of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-undo-container-has-undo.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if there is undo, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-undo-container-has-redo"></a><h3>gwy_undo_container_has_redo ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_undo_container_has_redo (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>);</pre>
+<p>Returns whether there is any redo available for a container.</p>
+<div class="refsect3">
+<a name="gwy-undo-container-has-redo.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Data container to get redo infomation of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-undo-container-has-redo.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if there is redo, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-undo-container-get-modified"></a><h3>gwy_undo_container_get_modified ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_undo_container_get_modified (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>);</pre>
+<p>Tests whether a container was modified.</p>
+<p>FIXME: it may not work.</p>
+<div class="refsect3">
+<a name="gwy-undo-container-get-modified.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Data container to get modification infomation of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-undo-container-get-modified.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if container was modified, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-undo-container-set-unmodified"></a><h3>gwy_undo_container_set_unmodified ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_undo_container_set_unmodified (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>);</pre>
+<p>Marks a data container as umodified (that is, saved).</p>
+<div class="refsect3">
+<a name="gwy-undo-container-set-unmodified.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Data container to set modification infomation of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-undo-container-remove"></a><h3>gwy_undo_container_remove ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_undo_container_remove (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                           <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *prefix</code></em>);</pre>
+<p>Removes undo/redo information for a data container.</p>
+<div class="refsect3">
+<a name="gwy-undo-container-remove.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prefix</p></td>
+<td class="parameter_description"><p>Prefix to remove undo/redo information under.  Pass <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to remove
+undo/redo information altogether.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-undo-get-enabled"></a><h3>gwy_undo_get_enabled ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_undo_get_enabled (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Reports whether undo/redo is globally enabled.</p>
+<div class="refsect3">
+<a name="gwy-undo-get-enabled.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if undo/redo is enabled, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it is disabled.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-21.html#api-index-2.21">2.21</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-undo-set-enabled"></a><h3>gwy_undo_set_enabled ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_undo_set_enabled (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> setting</code></em>);</pre>
+<p>Globally enables or disables undo/redo.</p>
+<p>By default, undo/redo is enabled.  Non-GUI applications that run module
+functions may wish to disable it to conserve resources.</p>
+<p>If undo/redo is disabled undo information manipulating functions such as
+<a class="link" href="libgwyapp-undo.html#gwy-app-undo-qcheckpoint" title="gwy_app_undo_qcheckpoint ()"><code class="function">gwy_app_undo_qcheckpoint()</code></a> become no-op and
+<a class="link" href="libgwyapp-undo.html#gwy-undo-container-get-modified" title="gwy_undo_container_get_modified ()"><code class="function">gwy_undo_container_get_modified()</code></a> always returns zero. Disabling undo also
+removes saved undo data of all containers.</p>
+<div class="refsect3">
+<a name="gwy-undo-set-enabled.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>setting</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to enable undo, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to disable it.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-21.html#api-index-2.21">2.21</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

@@ -1,0 +1,901 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyGradient: Gwyddion Drawing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Drawing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Drawing Library Reference Manual">
+<link rel="prev" href="libgwydraw-GwyRGBA.html" title="GwyRGBA">
+<link rel="next" href="GwyGLMaterial.html" title="GwyGLMaterial">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyGradient.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyGradient.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwydraw-GwyRGBA.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyGLMaterial.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyGradient"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyGradient.top_of_page"></a>GwyGradient</span></h2>
+<p>GwyGradient — A map from numbers to RGBA colors</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyGradient.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGradient.html#gwy-gradient-get-color" title="gwy_gradient_get_color ()">gwy_gradient_get_color</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guchar"><span class="returnvalue">guchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGradient.html#gwy-gradient-get-samples" title="gwy_gradient_get_samples ()">gwy_gradient_get_samples</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guchar"><span class="returnvalue">guchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGradient.html#gwy-gradient-sample" title="gwy_gradient_sample ()">gwy_gradient_sample</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGradient.html#gwy-gradient-sample-to-pixbuf" title="gwy_gradient_sample_to_pixbuf ()">gwy_gradient_sample_to_pixbuf</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGradient.html#gwy-gradient-get-npoints" title="gwy_gradient_get_npoints ()">gwy_gradient_get_npoints</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyGradient.html#GwyGradientPoint" title="GwyGradientPoint"><span class="returnvalue">GwyGradientPoint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGradient.html#gwy-gradient-get-point" title="gwy_gradient_get_point ()">gwy_gradient_get_point</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGradient.html#gwy-gradient-set-point" title="gwy_gradient_set_point ()">gwy_gradient_set_point</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGradient.html#gwy-gradient-set-point-color" title="gwy_gradient_set_point_color ()">gwy_gradient_set_point_color</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGradient.html#gwy-gradient-insert-point" title="gwy_gradient_insert_point ()">gwy_gradient_insert_point</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGradient.html#gwy-gradient-insert-point-sorted" title="gwy_gradient_insert_point_sorted ()">gwy_gradient_insert_point_sorted</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGradient.html#gwy-gradient-delete-point" title="gwy_gradient_delete_point ()">gwy_gradient_delete_point</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGradient.html#gwy-gradient-reset" title="gwy_gradient_reset ()">gwy_gradient_reset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a class="link" href="GwyGradient.html#GwyGradientPoint" title="GwyGradientPoint"><span class="returnvalue">GwyGradientPoint</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGradient.html#gwy-gradient-get-points" title="gwy_gradient_get_points ()">gwy_gradient_get_points</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGradient.html#gwy-gradient-set-points" title="gwy_gradient_set_points ()">gwy_gradient_set_points</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGradient.html#gwy-gradient-set-from-samples" title="gwy_gradient_set_from_samples ()">gwy_gradient_set_from_samples</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwyInventory.html#GwyInventory-struct"><span class="returnvalue">GwyInventory</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGradient.html#gwy-gradients" title="gwy_gradients ()">gwy_gradients</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyGradient.html" title="GwyGradient"><span class="returnvalue">GwyGradient</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGradient.html#gwy-gradients-get-gradient" title="gwy_gradients_get_gradient ()">gwy_gradients_get_gradient</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyGradient.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="GwyGradient.html#GWY-GRADIENT-DEFAULT:CAPS" title="GWY_GRADIENT_DEFAULT">GWY_GRADIENT_DEFAULT</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GwyGradient.html#GwyGradientPoint" title="GwyGradientPoint">GwyGradientPoint</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyGradient.html#GwyGradient-struct" title="struct GwyGradient">GwyGradient</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyGradient.html#GwyGradientClass" title="struct GwyGradientClass">GwyGradientClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyGradient.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="../GwyResource.html#GwyResource-struct">GwyResource</a>
+        <span class="lineart">╰──</span> GwyGradient
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyGradient.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libdraw/gwydraw.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyGradient.description"></a><h2>Description</h2>
+<p>Gradient is a map from interval [0,1] to RGB(A) color space. Each gradient
+is defined by an ordered set of color points, the first of them is always at
+0.0, the last at 1.0 (thus each gradient must consist of at least two
+points).  Between them, the color is interpolated.  Color points of
+modifiable gradients (see <a href="../GwyResource.html#GwyResource-struct"><span class="type">GwyResource</span></a>) can be edited with functions like
+<a class="link" href="GwyGradient.html#gwy-gradient-insert-point" title="gwy_gradient_insert_point ()"><code class="function">gwy_gradient_insert_point()</code></a>, <a class="link" href="GwyGradient.html#gwy-gradient-set-point-color" title="gwy_gradient_set_point_color ()"><code class="function">gwy_gradient_set_point_color()</code></a>, or
+<a class="link" href="GwyGradient.html#gwy-gradient-set-points" title="gwy_gradient_set_points ()"><code class="function">gwy_gradient_set_points()</code></a>.</p>
+<p>Gradient objects can be obtained from <a class="link" href="GwyGradient.html#gwy-gradients-get-gradient" title="gwy_gradients_get_gradient ()"><code class="function">gwy_gradients_get_gradient()</code></a>. New
+gradients can be created with <a href="../GwyInventory.html#gwy-inventory-new-item"><code class="function">gwy_inventory_new_item()</code></a> on the <a href="../GwyInventory.html#GwyInventory-struct"><span class="type">GwyInventory</span></a>
+returned by <a class="link" href="GwyGradient.html#gwy-gradients" title="gwy_gradients ()"><code class="function">gwy_gradients()</code></a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwyGradient.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-gradient-get-color"></a><h3>gwy_gradient_get_color ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_gradient_get_color (<em class="parameter"><code><a class="link" href="GwyGradient.html" title="GwyGradient"><span class="type">GwyGradient</span></a> *gradient</code></em>,
+                        <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x</code></em>,
+                        <em class="parameter"><code><a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *color</code></em>);</pre>
+<p>Computes the color at a given position of a color gradient.</p>
+<div class="refsect3">
+<a name="gwy-gradient-get-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gradient</p></td>
+<td class="parameter_description"><p>A color gradient.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Position in gradient, in range 0..1.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>color</p></td>
+<td class="parameter_description"><p>Color to fill with interpolated color at position <em class="parameter"><code>x</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gradient-get-samples"></a><h3>gwy_gradient_get_samples ()</h3>
+<pre class="programlisting">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guchar"><span class="returnvalue">guchar</span></a> *
+gwy_gradient_get_samples (<em class="parameter"><code><a class="link" href="GwyGradient.html" title="GwyGradient"><span class="type">GwyGradient</span></a> *gradient</code></em>,
+                          <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *nsamples</code></em>);</pre>
+<p>Returns color gradient sampled to integers in <span class="type">GdkPixbuf</span>-like scheme.</p>
+<p>The returned samples are owned by <em class="parameter"><code>gradient</code></em>
+ and must not be modified or
+freed.  They are automatically updated when the gradient changes, although
+their number never changes.  The returned pointer is valid only as long
+as the gradient used, indicated by <a href="../GwyResource.html#gwy-resource-use"><code class="function">gwy_resource_use()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-gradient-get-samples.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gradient</p></td>
+<td class="parameter_description"><p>A color gradient to get samples of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nsamples</p></td>
+<td class="parameter_description"><p>A location to store the number of samples (or <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-gradient-get-samples.returns"></a><h4>Returns</h4>
+<p> Sampled <em class="parameter"><code>gradient</code></em>
+as a sequence of <span class="type">GdkPixbuf</span>-like RRGGBBAA
+quadruplets.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gradient-sample"></a><h3>gwy_gradient_sample ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guchar"><span class="returnvalue">guchar</span></a> *
+gwy_gradient_sample (<em class="parameter"><code><a class="link" href="GwyGradient.html" title="GwyGradient"><span class="type">GwyGradient</span></a> *gradient</code></em>,
+                     <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nsamples</code></em>,
+                     <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *samples</code></em>);</pre>
+<p>Samples a gradient to an array <span class="type">GdkPixbuf</span>-like samples.</p>
+<p>If <em class="parameter"><code>samples</code></em>
+ is not <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, it's resized to 4*<em class="parameter"><code>nsamples</code></em>
+ bytes, otherwise a
+new buffer is allocated.</p>
+<p>If you don't have a reason for specific sample size (and are not going
+to modify the samples or otherwise dislike the automatic resampling on
+gradient definition change), use <a class="link" href="GwyGradient.html#gwy-gradient-get-samples" title="gwy_gradient_get_samples ()"><code class="function">gwy_gradient_get_samples()</code></a> instead.
+This function does not need the gradient to be in use, though.</p>
+<div class="refsect3">
+<a name="gwy-gradient-sample.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gradient</p></td>
+<td class="parameter_description"><p>A color gradient to sample.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nsamples</p></td>
+<td class="parameter_description"><p>Required number of samples.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>samples</p></td>
+<td class="parameter_description"><p>Pointer to array to be filled.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-gradient-sample.returns"></a><h4>Returns</h4>
+<p> Sampled <em class="parameter"><code>gradient</code></em>
+as a sequence of <span class="type">GdkPixbuf</span>-like
+RRGGBBAA quadruplets.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gradient-sample-to-pixbuf"></a><h3>gwy_gradient_sample_to_pixbuf ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_gradient_sample_to_pixbuf (<em class="parameter"><code><a class="link" href="GwyGradient.html" title="GwyGradient"><span class="type">GwyGradient</span></a> *gradient</code></em>,
+                               <em class="parameter"><code><span class="type">GdkPixbuf</span> *pixbuf</code></em>);</pre>
+<p>Samples a color gradient to a provided pixbuf.</p>
+<p>Unlike <a class="link" href="GwyGradient.html#gwy-gradient-sample" title="gwy_gradient_sample ()"><code class="function">gwy_gradient_sample()</code></a> which simply takes samples at equidistant
+points this method uses supersampling and thus it gives a bit better
+looking gradient presentation.</p>
+<div class="refsect3">
+<a name="gwy-gradient-sample-to-pixbuf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gradient</p></td>
+<td class="parameter_description"><p>A color gradient to sample.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pixbuf</p></td>
+<td class="parameter_description"><p>A pixbuf to sample gradient to (in horizontal direction).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gradient-get-npoints"></a><h3>gwy_gradient_get_npoints ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_gradient_get_npoints (<em class="parameter"><code><a class="link" href="GwyGradient.html" title="GwyGradient"><span class="type">GwyGradient</span></a> *gradient</code></em>);</pre>
+<p>Returns the number of points in a color gradient.</p>
+<div class="refsect3">
+<a name="gwy-gradient-get-npoints.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gradient</p></td>
+<td class="parameter_description"><p>A color gradient.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-gradient-get-npoints.returns"></a><h4>Returns</h4>
+<p> The number of points in <em class="parameter"><code>gradient</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gradient-get-point"></a><h3>gwy_gradient_get_point ()</h3>
+<pre class="programlisting"><a class="link" href="GwyGradient.html#GwyGradientPoint" title="GwyGradientPoint"><span class="returnvalue">GwyGradientPoint</span></a>
+gwy_gradient_get_point (<em class="parameter"><code><a class="link" href="GwyGradient.html" title="GwyGradient"><span class="type">GwyGradient</span></a> *gradient</code></em>,
+                        <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> index_</code></em>);</pre>
+<p>Returns the point at given index of a color gradient.</p>
+<div class="refsect3">
+<a name="gwy-gradient-get-point.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gradient</p></td>
+<td class="parameter_description"><p>A color gradient.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>index_</p></td>
+<td class="parameter_description"><p>Color point index in <em class="parameter"><code>gradient</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-gradient-get-point.returns"></a><h4>Returns</h4>
+<p> Color point at <em class="parameter"><code>index_</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gradient-set-point"></a><h3>gwy_gradient_set_point ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_gradient_set_point (<em class="parameter"><code><a class="link" href="GwyGradient.html" title="GwyGradient"><span class="type">GwyGradient</span></a> *gradient</code></em>,
+                        <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> index_</code></em>,
+                        <em class="parameter"><code>const <a class="link" href="GwyGradient.html#GwyGradientPoint" title="GwyGradientPoint"><span class="type">GwyGradientPoint</span></a> *point</code></em>);</pre>
+<p>Sets a single color point in a color gradient.</p>
+<p>It is an error to try to move points beyond its neighbours, or to move first
+(or last) point from 0 (or 1).</p>
+<div class="refsect3">
+<a name="gwy-gradient-set-point.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gradient</p></td>
+<td class="parameter_description"><p>A color gradient.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>index_</p></td>
+<td class="parameter_description"><p>Color point index in <em class="parameter"><code>gradient</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>point</p></td>
+<td class="parameter_description"><p>Color point to replace current point at <em class="parameter"><code>index_</code></em>
+with.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gradient-set-point-color"></a><h3>gwy_gradient_set_point_color ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_gradient_set_point_color (<em class="parameter"><code><a class="link" href="GwyGradient.html" title="GwyGradient"><span class="type">GwyGradient</span></a> *gradient</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> index_</code></em>,
+                              <em class="parameter"><code>const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *color</code></em>);</pre>
+<p>Sets the color of a color gradient point without moving it.</p>
+<div class="refsect3">
+<a name="gwy-gradient-set-point-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gradient</p></td>
+<td class="parameter_description"><p>A color gradient.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>index_</p></td>
+<td class="parameter_description"><p>Color point index in <em class="parameter"><code>gradient</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>color</p></td>
+<td class="parameter_description"><p>Color to set the point to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gradient-insert-point"></a><h3>gwy_gradient_insert_point ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_gradient_insert_point (<em class="parameter"><code><a class="link" href="GwyGradient.html" title="GwyGradient"><span class="type">GwyGradient</span></a> *gradient</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> index_</code></em>,
+                           <em class="parameter"><code>const <a class="link" href="GwyGradient.html#GwyGradientPoint" title="GwyGradientPoint"><span class="type">GwyGradientPoint</span></a> *point</code></em>);</pre>
+<p>Inserts a point to a color gradient.</p>
+<p>It is an error to try to position a outside its future neighbours, or to
+move the first (or last) point from 0 (or 1).</p>
+<div class="refsect3">
+<a name="gwy-gradient-insert-point.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gradient</p></td>
+<td class="parameter_description"><p>A color gradient.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>index_</p></td>
+<td class="parameter_description"><p>Color point index in <em class="parameter"><code>gradient</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>point</p></td>
+<td class="parameter_description"><p>Color point to insert at <em class="parameter"><code>index_</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gradient-insert-point-sorted"></a><h3>gwy_gradient_insert_point_sorted ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_gradient_insert_point_sorted (<em class="parameter"><code><a class="link" href="GwyGradient.html" title="GwyGradient"><span class="type">GwyGradient</span></a> *gradient</code></em>,
+                                  <em class="parameter"><code>const <a class="link" href="GwyGradient.html#GwyGradientPoint" title="GwyGradientPoint"><span class="type">GwyGradientPoint</span></a> *point</code></em>);</pre>
+<p>Inserts a point into a color gradient based on its x position.</p>
+<div class="refsect3">
+<a name="gwy-gradient-insert-point-sorted.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gradient</p></td>
+<td class="parameter_description"><p>A color gradient.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>point</p></td>
+<td class="parameter_description"><p>Color point to insert.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-gradient-insert-point-sorted.returns"></a><h4>Returns</h4>
+<p> The index <em class="parameter"><code>point</code></em>
+was inserted at.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gradient-delete-point"></a><h3>gwy_gradient_delete_point ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_gradient_delete_point (<em class="parameter"><code><a class="link" href="GwyGradient.html" title="GwyGradient"><span class="type">GwyGradient</span></a> *gradient</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> index_</code></em>);</pre>
+<p>Deletes a point at given index in a color gradient.</p>
+<p>It is not possible to delete points in gradients with less than 3 points.
+First and last points should not be deleted unless there's another point
+with <em class="parameter"><code>x</code></em>
+ = 0 or <em class="parameter"><code>x</code></em>
+ = 1 present.</p>
+<div class="refsect3">
+<a name="gwy-gradient-delete-point.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gradient</p></td>
+<td class="parameter_description"><p>A color gradient.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>index_</p></td>
+<td class="parameter_description"><p>Color point index in <em class="parameter"><code>gradient</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gradient-reset"></a><h3>gwy_gradient_reset ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_gradient_reset (<em class="parameter"><code><a class="link" href="GwyGradient.html" title="GwyGradient"><span class="type">GwyGradient</span></a> *gradient</code></em>);</pre>
+<p>Resets a gradient to the default two-point gray scale state.</p>
+<div class="refsect3">
+<a name="gwy-gradient-reset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gradient</p></td>
+<td class="parameter_description"><p>A color gradient.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gradient-get-points"></a><h3>gwy_gradient_get_points ()</h3>
+<pre class="programlisting">const <a class="link" href="GwyGradient.html#GwyGradientPoint" title="GwyGradientPoint"><span class="returnvalue">GwyGradientPoint</span></a> *
+gwy_gradient_get_points (<em class="parameter"><code><a class="link" href="GwyGradient.html" title="GwyGradient"><span class="type">GwyGradient</span></a> *gradient</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *npoints</code></em>);</pre>
+<p>Returns the complete set of color points of a gradient.</p>
+<div class="refsect3">
+<a name="gwy-gradient-get-points.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gradient</p></td>
+<td class="parameter_description"><p>A color gradient.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>npoints</p></td>
+<td class="parameter_description"><p>A location to store the number of color points (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-gradient-get-points.returns"></a><h4>Returns</h4>
+<p> Complete set <em class="parameter"><code>gradient</code></em>
+'s color points.  The returned array is
+owned by <em class="parameter"><code>gradient</code></em>
+and must not be modified or freed.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gradient-set-points"></a><h3>gwy_gradient_set_points ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_gradient_set_points (<em class="parameter"><code><a class="link" href="GwyGradient.html" title="GwyGradient"><span class="type">GwyGradient</span></a> *gradient</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> npoints</code></em>,
+                         <em class="parameter"><code>const <a class="link" href="GwyGradient.html#GwyGradientPoint" title="GwyGradientPoint"><span class="type">GwyGradientPoint</span></a> *points</code></em>);</pre>
+<p>Sets the complete color gradient definition to a given set of points.</p>
+<p>The point positions should be ordered, and first point should start at 0.0,
+last end at 1.0.  There should be no redundant points.</p>
+<div class="refsect3">
+<a name="gwy-gradient-set-points.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gradient</p></td>
+<td class="parameter_description"><p>A color gradient.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>npoints</p></td>
+<td class="parameter_description"><p>The length of <em class="parameter"><code>points</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>points</p></td>
+<td class="parameter_description"><p>Color points to set as new gradient definition.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gradient-set-from-samples"></a><h3>gwy_gradient_set_from_samples ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_gradient_set_from_samples (<em class="parameter"><code><a class="link" href="GwyGradient.html" title="GwyGradient"><span class="type">GwyGradient</span></a> *gradient</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nsamples</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *samples</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> threshold</code></em>);</pre>
+<p>Reconstructs a color gradient definition from sampled colors.</p>
+<p>The result is usually approximate.</p>
+<div class="refsect3">
+<a name="gwy-gradient-set-from-samples.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gradient</p></td>
+<td class="parameter_description"><p>A color gradient.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nsamples</p></td>
+<td class="parameter_description"><p>Number of samples, it must be at least one.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>samples</p></td>
+<td class="parameter_description"><p>Sampled color gradient in <span class="type">GdkPixbuf</span>-like RRGGBBAA form.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>threshold</p></td>
+<td class="parameter_description"><p>Maximum allowed difference (for color components in range 0..1).
+When negative, default value 1/80 suitable for most purposes
+is used.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gradients"></a><h3>gwy_gradients ()</h3>
+<pre class="programlisting"><a href="../GwyInventory.html#GwyInventory-struct"><span class="returnvalue">GwyInventory</span></a> *
+gwy_gradients (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Gets inventory with all the gradients.</p>
+<div class="refsect3">
+<a name="gwy-gradients.returns"></a><h4>Returns</h4>
+<p> Gradient inventory.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gradients-get-gradient"></a><h3>gwy_gradients_get_gradient ()</h3>
+<pre class="programlisting"><a class="link" href="GwyGradient.html" title="GwyGradient"><span class="returnvalue">GwyGradient</span></a> *
+gwy_gradients_get_gradient (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Convenience function to get a gradient from <a class="link" href="GwyGradient.html#gwy-gradients" title="gwy_gradients ()"><code class="function">gwy_gradients()</code></a> by name.</p>
+<div class="refsect3">
+<a name="gwy-gradients-get-gradient.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Gradient name.  May be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to get the default gradient.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-gradients-get-gradient.returns"></a><h4>Returns</h4>
+<p> Gradient identified by <em class="parameter"><code>name</code></em>
+or the default gradient if <em class="parameter"><code>name</code></em>
+does
+not exist.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyGradient.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GWY-GRADIENT-DEFAULT:CAPS"></a><h3>GWY_GRADIENT_DEFAULT</h3>
+<pre class="programlisting">#define GWY_GRADIENT_DEFAULT "Gray"
+</pre>
+<p>The name of the default gray color gradient.</p>
+<p>It is guaranteed to always exist.</p>
+<p>Note this is not the same as user's default gradient which corresponds to
+the default item in <a class="link" href="GwyGradient.html#gwy-gradients" title="gwy_gradients ()"><code class="function">gwy_gradients()</code></a> inventory and it changes over time.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGradientPoint"></a><h3>GwyGradientPoint</h3>
+<pre class="programlisting">typedef struct {
+    gdouble x;
+    GwyRGBA color;
+} GwyGradientPoint;
+</pre>
+<p>Gradient color point struct.</p>
+<div class="refsect3">
+<a name="GwyGradientPoint.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GwyGradientPoint.x"></a>x</code></em>;</p></td>
+<td class="struct_member_description"><p>Color point position (in interval [0,1]).</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> <em class="structfield"><code><a name="GwyGradientPoint.color"></a>color</code></em>;</p></td>
+<td class="struct_member_description"><p>The color at position <em class="parameter"><code>x</code></em>
+.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGradient-struct"></a><h3>struct GwyGradient</h3>
+<pre class="programlisting">struct GwyGradient;</pre>
+<p><a class="link" href="GwyGradient.html" title="GwyGradient"><span class="type">GwyGradient</span></a> struct contains private data only and should be accessed
+using the functions below.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGradientClass"></a><h3>struct GwyGradientClass</h3>
+<pre class="programlisting">struct GwyGradientClass {
+};
+</pre>
+<p><a class="link" href="GwyGradient.html#GwyGradientClass" title="struct GwyGradientClass"><span class="type">GwyGradientClass</span></a> does not contain any public members.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyGradient.see-also"></a><h2>See Also</h2>
+<a class="link" href="libgwydraw-gwypixfield.html" title="gwypixfield">gwypixfield</a> --
+<p>Drawing data with gradients,
+<a href="../GwyInventory.html#GwyInventory-struct"><span class="type">GwyInventory</span></a> -- the container holding all gradients,
+<a href="../GwyDataView.html#GwyDataView-struct"><span class="type">GwyDataView</span></a> -- 2D data display widget,
+<a href="../GwyColorAxis.html#GwyColorAxis-struct"><span class="type">GwyColorAxis</span></a> -- false color axis widget</p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

@@ -1,0 +1,3667 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyContainer: Gwyddion Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="prev" href="GwySerializable.html" title="GwySerializable">
+<link rel="next" href="libgwyddion-gwymacros.html" title="gwymacros">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyContainer.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyContainer.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GwyContainer.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GwyContainer.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="GwySerializable.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyddion-gwymacros.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyContainer"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyContainer.top_of_page"></a>GwyContainer</span></h2>
+<p>GwyContainer — A container with items identified by a GQuark</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyContainer.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-duplicate" title="gwy_container_duplicate()">gwy_container_duplicate</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyContainer.html" title="GwyContainer"><span class="returnvalue">GwyContainer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-new" title="gwy_container_new ()">gwy_container_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-get-n-items" title="gwy_container_get_n_items ()">gwy_container_get_n_items</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-value-type" title="gwy_container_value_type ()">gwy_container_value_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-contains" title="gwy_container_contains ()">gwy_container_contains</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Generic-values.html#GValue-struct"><span class="returnvalue">GValue</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-get-value" title="gwy_container_get_value ()">gwy_container_get_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-gis-value" title="gwy_container_gis_value ()">gwy_container_gis_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-set-value" title="gwy_container_set_value ()">gwy_container_set_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-set-value-by-name" title="gwy_container_set_value_by_name ()">gwy_container_set_value_by_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-remove" title="gwy_container_remove ()">gwy_container_remove</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-remove-by-prefix" title="gwy_container_remove_by_prefix ()">gwy_container_remove_by_prefix</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyContainer.html" title="GwyContainer"><span class="returnvalue">GwyContainer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-duplicate-by-prefix" title="gwy_container_duplicate_by_prefix ()">gwy_container_duplicate_by_prefix</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyContainer.html" title="GwyContainer"><span class="returnvalue">GwyContainer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-duplicate-by-prefixv" title="gwy_container_duplicate_by_prefixv ()">gwy_container_duplicate_by_prefixv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-transfer" title="gwy_container_transfer ()">gwy_container_transfer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-rename" title="gwy_container_rename ()">gwy_container_rename</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-foreach" title="gwy_container_foreach ()">gwy_container_foreach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-keys" title="gwy_container_keys ()">gwy_container_keys</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-keys-by-name" title="gwy_container_keys_by_name ()">gwy_container_keys_by_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-keys-with-prefix" title="gwy_container_keys_with_prefix ()">gwy_container_keys_with_prefix</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-keys-with-prefix-by-name" title="gwy_container_keys_with_prefix_by_name ()">gwy_container_keys_with_prefix_by_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-set-boolean" title="gwy_container_set_boolean ()">gwy_container_set_boolean</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-get-boolean" title="gwy_container_get_boolean ()">gwy_container_get_boolean</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-gis-boolean" title="gwy_container_gis_boolean ()">gwy_container_gis_boolean</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-set-uchar" title="gwy_container_set_uchar ()">gwy_container_set_uchar</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="returnvalue">guchar</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-get-uchar" title="gwy_container_get_uchar ()">gwy_container_get_uchar</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-gis-uchar" title="gwy_container_gis_uchar ()">gwy_container_gis_uchar</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-set-int32" title="gwy_container_set_int32 ()">gwy_container_set_int32</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-get-int32" title="gwy_container_get_int32 ()">gwy_container_get_int32</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-gis-int32" title="gwy_container_gis_int32 ()">gwy_container_gis_int32</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-set-enum" title="gwy_container_set_enum ()">gwy_container_set_enum</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-get-enum" title="gwy_container_get_enum ()">gwy_container_get_enum</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-gis-enum" title="gwy_container_gis_enum ()">gwy_container_gis_enum</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-set-int64" title="gwy_container_set_int64 ()">gwy_container_set_int64</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint64"><span class="returnvalue">gint64</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-get-int64" title="gwy_container_get_int64 ()">gwy_container_get_int64</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-gis-int64" title="gwy_container_gis_int64 ()">gwy_container_gis_int64</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-set-double" title="gwy_container_set_double ()">gwy_container_set_double</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-get-double" title="gwy_container_get_double ()">gwy_container_get_double</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-gis-double" title="gwy_container_gis_double ()">gwy_container_gis_double</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-set-string" title="gwy_container_set_string ()">gwy_container_set_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-set-const-string" title="gwy_container_set_const_string ()">gwy_container_set_const_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="returnvalue">guchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-get-string" title="gwy_container_get_string ()">gwy_container_get_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-gis-string" title="gwy_container_gis_string ()">gwy_container_gis_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-set-object" title="gwy_container_set_object ()">gwy_container_set_object</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-get-object" title="gwy_container_get_object ()">gwy_container_get_object</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-gis-object" title="gwy_container_gis_object ()">gwy_container_gis_object</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-serialize-to-text" title="gwy_container_serialize_to_text ()">gwy_container_serialize_to_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyContainer.html" title="GwyContainer"><span class="returnvalue">GwyContainer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-deserialize-from-text" title="gwy_container_deserialize_from_text ()">gwy_container_deserialize_from_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-value-type-by-name" title="gwy_container_value_type_by_name()">gwy_container_value_type_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-contains-by-name" title="gwy_container_contains_by_name()">gwy_container_contains_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-get-value-by-name" title="gwy_container_get_value_by_name()">gwy_container_get_value_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-gis-value-by-name" title="gwy_container_gis_value_by_name()">gwy_container_gis_value_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-remove-by-name" title="gwy_container_remove_by_name()">gwy_container_remove_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-rename-by-name" title="gwy_container_rename_by_name()">gwy_container_rename_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-set-boolean-by-name" title="gwy_container_set_boolean_by_name()">gwy_container_set_boolean_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-get-boolean-by-name" title="gwy_container_get_boolean_by_name()">gwy_container_get_boolean_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-gis-boolean-by-name" title="gwy_container_gis_boolean_by_name()">gwy_container_gis_boolean_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-set-uchar-by-name" title="gwy_container_set_uchar_by_name()">gwy_container_set_uchar_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-get-uchar-by-name" title="gwy_container_get_uchar_by_name()">gwy_container_get_uchar_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-gis-uchar-by-name" title="gwy_container_gis_uchar_by_name()">gwy_container_gis_uchar_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-set-int32-by-name" title="gwy_container_set_int32_by_name()">gwy_container_set_int32_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-get-int32-by-name" title="gwy_container_get_int32_by_name()">gwy_container_get_int32_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-gis-int32-by-name" title="gwy_container_gis_int32_by_name()">gwy_container_gis_int32_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-set-enum-by-name" title="gwy_container_set_enum_by_name()">gwy_container_set_enum_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-get-enum-by-name" title="gwy_container_get_enum_by_name()">gwy_container_get_enum_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-gis-enum-by-name" title="gwy_container_gis_enum_by_name()">gwy_container_gis_enum_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-set-int64-by-name" title="gwy_container_set_int64_by_name()">gwy_container_set_int64_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-get-int64-by-name" title="gwy_container_get_int64_by_name()">gwy_container_get_int64_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-gis-int64-by-name" title="gwy_container_gis_int64_by_name()">gwy_container_gis_int64_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-set-double-by-name" title="gwy_container_set_double_by_name()">gwy_container_set_double_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-get-double-by-name" title="gwy_container_get_double_by_name()">gwy_container_get_double_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-gis-double-by-name" title="gwy_container_gis_double_by_name()">gwy_container_gis_double_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-set-string-by-name" title="gwy_container_set_string_by_name()">gwy_container_set_string_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-set-const-string-by-name" title="gwy_container_set_const_string_by_name()">gwy_container_set_const_string_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-get-string-by-name" title="gwy_container_get_string_by_name()">gwy_container_get_string_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-gis-string-by-name" title="gwy_container_gis_string_by_name()">gwy_container_gis_string_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-set-object-by-name" title="gwy_container_set_object_by_name()">gwy_container_set_object_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-get-object-by-name" title="gwy_container_get_object_by_name()">gwy_container_get_object_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyContainer.html#gwy-container-gis-object-by-name" title="gwy_container_gis_object_by_name()">gwy_container_gis_object_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyContainer.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyContainer.html#GwyContainer-item-changed" title="The “item-changed” signal">item-changed</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-DETAILED:CAPS">Has Details</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyContainer.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="GwyContainer.html#GWY-CONTAINER-PATHSEP:CAPS" title="GWY_CONTAINER_PATHSEP">GWY_CONTAINER_PATHSEP</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="GwyContainer.html#GWY-CONTAINER-PATHSEP-STR:CAPS" title="GWY_CONTAINER_PATHSEP_STR">GWY_CONTAINER_PATHSEP_STR</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyContainer.html#GwyContainer-struct" title="struct GwyContainer">GwyContainer</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyContainer.html#GwyContainerClass" title="struct GwyContainerClass">GwyContainerClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyContainer.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> GwyContainer
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyContainer.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GwyContainer implements
+ <a class="link" href="GwySerializable.html" title="GwySerializable">GwySerializable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwyContainer.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwyddion/gwyddion.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyContainer.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> is a general-purpose container, it can hold atomic types,
+strings and objects. However, objects must implement the <a class="link" href="GwySerializable.html" title="GwySerializable"><span class="type">GwySerializable</span></a>
+interface, because the container itself is serializable.</p>
+<p>A new container can be created with <a class="link" href="GwyContainer.html#gwy-container-new" title="gwy_container_new ()"><code class="function">gwy_container_new()</code></a>, items can be stored
+with function like <a class="link" href="GwyContainer.html#gwy-container-set-double" title="gwy_container_set_double ()"><code class="function">gwy_container_set_double()</code></a>, read with
+<a class="link" href="GwyContainer.html#gwy-container-get-double" title="gwy_container_get_double ()"><code class="function">gwy_container_get_double()</code></a>, and removed with <a class="link" href="GwyContainer.html#gwy-container-remove" title="gwy_container_remove ()"><code class="function">gwy_container_remove()</code></a> or
+<a class="link" href="GwyContainer.html#gwy-container-remove-by-prefix" title="gwy_container_remove_by_prefix ()"><code class="function">gwy_container_remove_by_prefix()</code></a>. A presence of a value can be tested with
+<a class="link" href="GwyContainer.html#gwy-container-contains" title="gwy_container_contains ()"><code class="function">gwy_container_contains()</code></a>, convenience functions for reading (updating) a
+value only if it is present like <a class="link" href="GwyContainer.html#gwy-container-gis-double" title="gwy_container_gis_double ()"><code class="function">gwy_container_gis_double()</code></a>, are available
+too.</p>
+<p><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> takes ownership of stored non-atomic items. For strings, this
+means you cannot store static strings (use <a href="/usr/share/gtk-doc/html/glib/glib-String-Utility-Functions.html#g-strdup"><code class="function">g_strdup()</code></a> to duplicate them),
+and must not free stored dynamic strings, as the container will free them
+itself when they are removed or when the container is finalized. For
+objects, this means it takes a reference on the object (released when the
+object is removed or the container is finalized), so you usually want to
+<a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> objects after storing them to a container.</p>
+<p>Items in a <a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> can be identified by a <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> or the corresponding
+string.  While <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a>'s are atomic values and allow faster acces, they are
+less convenient for casual usage -- each <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key function like
+<a class="link" href="GwyContainer.html#gwy-container-set-double" title="gwy_container_set_double ()"><code class="function">gwy_container_set_double()</code></a> thus has a string-key counterpart
+<a class="link" href="GwyContainer.html#gwy-container-set-double-by-name" title="gwy_container_set_double_by_name()"><code class="function">gwy_container_set_double_by_name()</code></a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwyContainer.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-container-duplicate"></a><h3>gwy_container_duplicate()</h3>
+<pre class="programlisting">#define             gwy_container_duplicate(container)</pre>
+<p>Convenience macro doing <a class="link" href="GwySerializable.html#gwy-serializable-duplicate" title="gwy_serializable_duplicate ()"><code class="function">gwy_serializable_duplicate()</code></a> with all the necessary
+typecasting.</p>
+<div class="refsect3">
+<a name="gwy-container-duplicate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container to duplicate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-new"></a><h3>gwy_container_new ()</h3>
+<pre class="programlisting"><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="returnvalue">GwyContainer</span></a> *
+gwy_container_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new <a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a>.</p>
+<div class="refsect3">
+<a name="gwy-container-new.returns"></a><h4>Returns</h4>
+<p> The container, as a <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-get-n-items"></a><h3>gwy_container_get_n_items ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gwy_container_get_n_items (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>);</pre>
+<p>Gets the number of items in a container.</p>
+<div class="refsect3">
+<a name="gwy-container-get-n-items.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-get-n-items.returns"></a><h4>Returns</h4>
+<p> The number of items.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-value-type"></a><h3>gwy_container_value_type ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>
+gwy_container_value_type (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>);</pre>
+<p>Returns the type of value in <em class="parameter"><code>container</code></em>
+ identified by <em class="parameter"><code>key</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-value-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-value-type.returns"></a><h4>Returns</h4>
+<p> The value type as <a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a>; 0 if there is no such value.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-contains"></a><h3>gwy_container_contains ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_container_contains (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>);</pre>
+<p>Returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>container</code></em>
+ contains a value identified by <em class="parameter"><code>key</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-contains.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-contains.returns"></a><h4>Returns</h4>
+<p> Whether <em class="parameter"><code>container</code></em>
+contains something identified by <em class="parameter"><code>key</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-get-value"></a><h3>gwy_container_get_value ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gobject/gobject-Generic-values.html#GValue-struct"><span class="returnvalue">GValue</span></a>
+gwy_container_get_value (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>);</pre>
+<p>Returns the value in <em class="parameter"><code>container</code></em>
+ identified by <em class="parameter"><code>key</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-get-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-get-value.returns"></a><h4>Returns</h4>
+<p> The value as a <a href="/usr/share/gtk-doc/html/gobject/gobject-Generic-values.html#GValue-struct"><span class="type">GValue</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-gis-value"></a><h3>gwy_container_gis_value ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_container_gis_value (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-Generic-values.html#GValue-struct"><span class="type">GValue</span></a> *value</code></em>);</pre>
+<p>Get-if-set a generic value from a container.</p>
+<div class="refsect3">
+<a name="gwy-container-gis-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Pointer to a <a href="/usr/share/gtk-doc/html/gobject/gobject-Generic-values.html#GValue-struct"><span class="type">GValue</span></a> to update. If item does not exist,
+it is left untouched.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-gis-value.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>v</code></em>
+was actually updated, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when there is no
+such value in the container.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-set-value"></a><h3>gwy_container_set_value ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_container_set_value (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                         <em class="parameter"><code>...</code></em>);</pre>
+<p>Inserts or updates several values in <em class="parameter"><code>container</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-set-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>A zero-terminated list of <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> keys and <a href="/usr/share/gtk-doc/html/gobject/gobject-Generic-values.html#GValue-struct"><span class="type">GValue</span></a> values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-set-value-by-name"></a><h3>gwy_container_set_value_by_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_container_set_value_by_name (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                                 <em class="parameter"><code>...</code></em>);</pre>
+<p>Inserts or updates several values in <em class="parameter"><code>container</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-set-value-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated list of string keys and <a href="/usr/share/gtk-doc/html/gobject/gobject-Generic-values.html#GValue-struct"><span class="type">GValue</span></a> values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-remove"></a><h3>gwy_container_remove ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_container_remove (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>);</pre>
+<p>Removes a value identified by <em class="parameter"><code>key</code></em>
+ from a container.</p>
+<div class="refsect3">
+<a name="gwy-container-remove.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-remove.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if there was such a value and was removed.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-remove-by-prefix"></a><h3>gwy_container_remove_by_prefix ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gwy_container_remove_by_prefix (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *prefix</code></em>);</pre>
+<p>Removes a values whose key start with <em class="parameter"><code>prefix</code></em>
+ from container <em class="parameter"><code>container</code></em>
+.</p>
+<p><em class="parameter"><code>prefix</code></em>
+ can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, all values are then removed.</p>
+<div class="refsect3">
+<a name="gwy-container-remove-by-prefix.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prefix</p></td>
+<td class="parameter_description"><p>A nul-terminated id prefix.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-remove-by-prefix.returns"></a><h4>Returns</h4>
+<p> The number of values removed.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-duplicate-by-prefix"></a><h3>gwy_container_duplicate_by_prefix ()</h3>
+<pre class="programlisting"><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="returnvalue">GwyContainer</span></a> *
+gwy_container_duplicate_by_prefix (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                                   <em class="parameter"><code>...</code></em>);</pre>
+<p>Duplicates a container keeping only values under given prefixes.</p>
+<p>Like <a class="link" href="GwyContainer.html#gwy-container-duplicate" title="gwy_container_duplicate()"><code class="function">gwy_container_duplicate()</code></a>, this method creates a deep copy, that is
+contained object are physically duplicated too, not just referenced again.</p>
+<div class="refsect3">
+<a name="gwy-container-duplicate-by-prefix.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated list of string keys.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-duplicate-by-prefix.returns"></a><h4>Returns</h4>
+<p> A newly created container.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-duplicate-by-prefixv"></a><h3>gwy_container_duplicate_by_prefixv ()</h3>
+<pre class="programlisting"><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="returnvalue">GwyContainer</span></a> *
+gwy_container_duplicate_by_prefixv (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **prefixes</code></em>);</pre>
+<p>Duplicates a container keeping only values under given prefixes.</p>
+<p>Like <a class="link" href="GwyContainer.html#gwy-container-duplicate" title="gwy_container_duplicate()"><code class="function">gwy_container_duplicate()</code></a>, this method creates a deep copy, that is
+contained object are physically duplicated too, not just referenced again.</p>
+<div class="refsect3">
+<a name="gwy-container-duplicate-by-prefixv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of prefixes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prefixes</p></td>
+<td class="parameter_description"><p>List of prefixes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-duplicate-by-prefixv.returns"></a><h4>Returns</h4>
+<p> A newly created container.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-48.html#api-index-2.48">2.48</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-transfer"></a><h3>gwy_container_transfer ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_container_transfer (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *source</code></em>,
+                        <em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *dest</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source_prefix</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *dest_prefix</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> force</code></em>);</pre>
+<p>Copies a items from one place in container to another place.</p>
+<p>The copies are shallow, objects are not physically duplicated, only
+referenced in <em class="parameter"><code>dest</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-transfer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>Source container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest</p></td>
+<td class="parameter_description"><p>Destination container. It may be the same container as <em class="parameter"><code>source</code></em>
+, but
+<em class="parameter"><code>source_prefix</code></em>
+and <em class="parameter"><code>dest_prefix</code></em>
+may not overlap then.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source_prefix</p></td>
+<td class="parameter_description"><p>Prefix in <em class="parameter"><code>source</code></em>
+to take values from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest_prefix</p></td>
+<td class="parameter_description"><p>Prefix in <em class="parameter"><code>dest</code></em>
+to put values to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>force</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to replace existing values in <em class="parameter"><code>dest</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-transfer.returns"></a><h4>Returns</h4>
+<p> The number of actually transferred items.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-rename"></a><h3>gwy_container_rename ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_container_rename (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> newkey</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> force</code></em>);</pre>
+<p>Makes a value in <em class="parameter"><code>container</code></em>
+ identified by <em class="parameter"><code>key</code></em>
+ to be identified by <em class="parameter"><code>newkey</code></em>
+.</p>
+<p>When <em class="parameter"><code>force</code></em>
+ is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> existing value at <em class="parameter"><code>newkey</code></em>
+ is removed from <em class="parameter"><code>container</code></em>
+.
+When it's <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>, an existing value <em class="parameter"><code>newkey</code></em>
+ inhibits the rename and <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>
+is returned.</p>
+<div class="refsect3">
+<a name="gwy-container-rename.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>The current key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>newkey</p></td>
+<td class="parameter_description"><p>A new key for the value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>force</p></td>
+<td class="parameter_description"><p>Whether to replace existing value at <em class="parameter"><code>newkey</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-rename.returns"></a><h4>Returns</h4>
+<p> Whether the rename succeeded.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-foreach"></a><h3>gwy_container_foreach ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gwy_container_foreach (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                       <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *prefix</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Hash-Tables.html#GHFunc"><span class="type">GHFunc</span></a> function</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Calls <em class="parameter"><code>function</code></em>
+ on each <em class="parameter"><code>container</code></em>
+ item whose identifier starts with
+<em class="parameter"><code>prefix</code></em>
+.</p>
+<p>The function is called <em class="parameter"><code>function</code></em>
+(<a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key, <a href="/usr/share/gtk-doc/html/gobject/gobject-Generic-values.html#GValue-struct"><span class="type">GValue</span></a> *value, user_data).</p>
+<div class="refsect3">
+<a name="gwy-container-foreach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prefix</p></td>
+<td class="parameter_description"><p>A nul-terminated id prefix.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>function</p></td>
+<td class="parameter_description"><p>The function called on the items.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>The user data passed to <em class="parameter"><code>function</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-foreach.returns"></a><h4>Returns</h4>
+<p> The number of items <em class="parameter"><code>function</code></em>
+was called on.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-keys"></a><h3>gwy_container_keys ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a> *
+gwy_container_keys (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>);</pre>
+<p>Gets all quark keys of a container.</p>
+<div class="refsect3">
+<a name="gwy-container-keys.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-keys.returns"></a><h4>Returns</h4>
+<p> A newly allocated array with quark keys of all <em class="parameter"><code>container</code></em>
+items,
+in no particular order.  The number of items can be obtained
+with <a class="link" href="GwyContainer.html#gwy-container-get-n-items" title="gwy_container_get_n_items ()"><code class="function">gwy_container_get_n_items()</code></a>.  If there are no items, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+is returned.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-7.html#api-index-2.7">2.7</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-keys-by-name"></a><h3>gwy_container_keys_by_name ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **
+gwy_container_keys_by_name (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>);</pre>
+<p>Gets all string keys of a container.</p>
+<div class="refsect3">
+<a name="gwy-container-keys-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-keys-by-name.returns"></a><h4>Returns</h4>
+<p> A newly allocated array with string keys of all <em class="parameter"><code>container</code></em>
+items,
+in no particular order.  The number of items can be obtained
+with <a class="link" href="GwyContainer.html#gwy-container-get-n-items" title="gwy_container_get_n_items ()"><code class="function">gwy_container_get_n_items()</code></a>.  If there are no items, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+is returned.  Unlike the array the strings are owned by GLib and
+must not be freed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-7.html#api-index-2.7">2.7</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-keys-with-prefix"></a><h3>gwy_container_keys_with_prefix ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a> *
+gwy_container_keys_with_prefix (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *prefix</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *n</code></em>);</pre>
+<p>Gets quark keys of a container that start with given prefix.</p>
+<div class="refsect3">
+<a name="gwy-container-keys-with-prefix.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prefix</p></td>
+<td class="parameter_description"><p>A nul-terminated id prefix.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Location to store the number of keys to.  Can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-keys-with-prefix.returns"></a><h4>Returns</h4>
+<p> A newly allocated array with quark keys, in no particular order.
+The array is zero-terminated.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-keys-with-prefix-by-name"></a><h3>gwy_container_keys_with_prefix_by_name ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **
+gwy_container_keys_with_prefix_by_name
+                               (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *prefix</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *n</code></em>);</pre>
+<p>Gets string keys of a container that start with given prefix.</p>
+<div class="refsect3">
+<a name="gwy-container-keys-with-prefix-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prefix</p></td>
+<td class="parameter_description"><p>A nul-terminated id prefix.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Location to store the number of keys to.  Can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-keys-with-prefix-by-name.returns"></a><h4>Returns</h4>
+<p> A newly allocated array with string keys, in no particular order.
+Unlike the array the strings are owned by GLib and must not be
+freed.  The array is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-set-boolean"></a><h3>gwy_container_set_boolean ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_container_set_boolean (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> value</code></em>);</pre>
+<p>Stores a boolean into <em class="parameter"><code>container</code></em>
+, identified by <em class="parameter"><code>key</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-set-boolean.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>A boolean.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-get-boolean"></a><h3>gwy_container_get_boolean ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_container_get_boolean (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>);</pre>
+<p>Returns the boolean in <em class="parameter"><code>container</code></em>
+ identified by <em class="parameter"><code>key</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-get-boolean.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-get-boolean.returns"></a><h4>Returns</h4>
+<p> The boolean as <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-gis-boolean"></a><h3>gwy_container_gis_boolean ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_container_gis_boolean (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *value</code></em>);</pre>
+<p>Get-if-set a boolean from a container.</p>
+<div class="refsect3">
+<a name="gwy-container-gis-boolean.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Pointer to the boolean to update.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-gis-boolean.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>v</code></em>
+was actually updated, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when there is no
+such boolean in the container.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-set-uchar"></a><h3>gwy_container_set_uchar ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_container_set_uchar (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> value</code></em>);</pre>
+<p>Stores an unsigned character into <em class="parameter"><code>container</code></em>
+, identified by <em class="parameter"><code>key</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-set-uchar.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>An unsigned character.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-get-uchar"></a><h3>gwy_container_get_uchar ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="returnvalue">guchar</span></a>
+gwy_container_get_uchar (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>);</pre>
+<p>Returns the unsigned character in <em class="parameter"><code>container</code></em>
+ identified by <em class="parameter"><code>key</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-get-uchar.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-get-uchar.returns"></a><h4>Returns</h4>
+<p> The character as <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-gis-uchar"></a><h3>gwy_container_gis_uchar ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_container_gis_uchar (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *value</code></em>);</pre>
+<p>Get-if-set an unsigned char from a container.</p>
+<div class="refsect3">
+<a name="gwy-container-gis-uchar.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Pointer to the unsigned char to update.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-gis-uchar.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>v</code></em>
+was actually updated, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when there is no
+such unsigned char in the container.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-set-int32"></a><h3>gwy_container_set_int32 ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_container_set_int32 (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint32"><span class="type">gint32</span></a> value</code></em>);</pre>
+<p>Stores a 32bit integer into <em class="parameter"><code>container</code></em>
+, identified by <em class="parameter"><code>key</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-set-int32.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>A 32bit integer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-get-int32"></a><h3>gwy_container_get_int32 ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gwy_container_get_int32 (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>);</pre>
+<p>Returns the 32bit integer in <em class="parameter"><code>container</code></em>
+ identified by <em class="parameter"><code>key</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-get-int32.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-get-int32.returns"></a><h4>Returns</h4>
+<p> The integer as <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-gis-int32"></a><h3>gwy_container_gis_int32 ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_container_gis_int32 (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint32"><span class="type">gint32</span></a> *value</code></em>);</pre>
+<p>Get-if-set a 32bit integer from a container.</p>
+<div class="refsect3">
+<a name="gwy-container-gis-int32.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Pointer to the 32bit integer to update.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-gis-int32.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>v</code></em>
+was actually updated, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when there is no
+such 32bit integer in the container.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-set-enum"></a><h3>gwy_container_set_enum ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_container_set_enum (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> value</code></em>);</pre>
+<p>Stores an enum into <em class="parameter"><code>container</code></em>
+, identified by <em class="parameter"><code>key</code></em>
+.</p>
+<p>Note enums are treated as 32bit integers.</p>
+<div class="refsect3">
+<a name="gwy-container-set-enum.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>An enum integer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-get-enum"></a><h3>gwy_container_get_enum ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gwy_container_get_enum (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>);</pre>
+<p>Returns the enum in <em class="parameter"><code>container</code></em>
+ identified by <em class="parameter"><code>key</code></em>
+.</p>
+<p>Note enums are treated as 32bit integers.</p>
+<div class="refsect3">
+<a name="gwy-container-get-enum.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-get-enum.returns"></a><h4>Returns</h4>
+<p> The enum as <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-gis-enum"></a><h3>gwy_container_gis_enum ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_container_gis_enum (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *value</code></em>);</pre>
+<p>Get-if-set an enum from a container.</p>
+<p>Note enums are treated as 32bit integers.</p>
+<div class="refsect3">
+<a name="gwy-container-gis-enum.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Pointer to the enum to update.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-gis-enum.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>v</code></em>
+was actually updated, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when there is no
+such enum in the container.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-set-int64"></a><h3>gwy_container_set_int64 ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_container_set_int64 (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a> value</code></em>);</pre>
+<p>Stores a 64bit integer into <em class="parameter"><code>container</code></em>
+, identified by <em class="parameter"><code>key</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-set-int64.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>A 64bit integer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-get-int64"></a><h3>gwy_container_get_int64 ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint64"><span class="returnvalue">gint64</span></a>
+gwy_container_get_int64 (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>);</pre>
+<p>Returns the 64bit integer in <em class="parameter"><code>container</code></em>
+ identified by <em class="parameter"><code>key</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-get-int64.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-get-int64.returns"></a><h4>Returns</h4>
+<p> The 64bit integer as <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-gis-int64"></a><h3>gwy_container_gis_int64 ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_container_gis_int64 (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a> *value</code></em>);</pre>
+<p>Get-if-set a 64bit integer from a container.</p>
+<div class="refsect3">
+<a name="gwy-container-gis-int64.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Pointer to the 64bit integer to update.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-gis-int64.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>v</code></em>
+was actually updated, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when there is no
+such 64bit integer in the container.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-set-double"></a><h3>gwy_container_set_double ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_container_set_double (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> value</code></em>);</pre>
+<p>Stores a double into <em class="parameter"><code>container</code></em>
+, identified by <em class="parameter"><code>key</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-set-double.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>A double.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-get-double"></a><h3>gwy_container_get_double ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_container_get_double (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>);</pre>
+<p>Returns the double in <em class="parameter"><code>container</code></em>
+ identified by <em class="parameter"><code>key</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-get-double.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-get-double.returns"></a><h4>Returns</h4>
+<p> The double as <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-gis-double"></a><h3>gwy_container_gis_double ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_container_gis_double (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *value</code></em>);</pre>
+<p>Get-if-set a double from a container.</p>
+<div class="refsect3">
+<a name="gwy-container-gis-double.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Pointer to the double to update.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-gis-double.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>v</code></em>
+was actually updated, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when there is no
+such double in the container.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-set-string"></a><h3>gwy_container_set_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_container_set_string (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *value</code></em>);</pre>
+<p>Stores a string into <em class="parameter"><code>container</code></em>
+, identified by <em class="parameter"><code>key</code></em>
+.</p>
+<p>The container takes ownership of the string, so it can't be used on
+static strings, use <a href="/usr/share/gtk-doc/html/glib/glib-String-Utility-Functions.html#g-strdup"><code class="function">g_strdup()</code></a> to duplicate them first.</p>
+<div class="refsect3">
+<a name="gwy-container-set-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>A nul-terminated string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-set-const-string"></a><h3>gwy_container_set_const_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_container_set_const_string (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *value</code></em>);</pre>
+<p>Stores a string into <em class="parameter"><code>container</code></em>
+, identified by <em class="parameter"><code>key</code></em>
+.</p>
+<p>The container makes a copy of the string, so it can be used on static
+strings.</p>
+<div class="refsect3">
+<a name="gwy-container-set-const-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>A nul-terminated string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-38.html#api-index-2.38">2.38</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-get-string"></a><h3>gwy_container_get_string ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="returnvalue">guchar</span></a> *
+gwy_container_get_string (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>);</pre>
+<p>Returns the string in <em class="parameter"><code>container</code></em>
+ identified by <em class="parameter"><code>key</code></em>
+.</p>
+<p>The returned string must be treated as constant and never freed or modified.</p>
+<div class="refsect3">
+<a name="gwy-container-get-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-get-string.returns"></a><h4>Returns</h4>
+<p> The string.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-gis-string"></a><h3>gwy_container_gis_string ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_container_gis_string (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> **value</code></em>);</pre>
+<p>Get-if-set a string from a container.</p>
+<p>The string eventually stored in <em class="parameter"><code>value</code></em>
+ must be treated as constant and
+never freed or modified.</p>
+<div class="refsect3">
+<a name="gwy-container-gis-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Pointer to the string pointer to update.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-gis-string.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>v</code></em>
+was actually updated, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when there is no
+such string in the container.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-set-object"></a><h3>gwy_container_set_object ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_container_set_object (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> value</code></em>);</pre>
+<p>Stores an object into <em class="parameter"><code>container</code></em>
+, identified by <em class="parameter"><code>key</code></em>
+.</p>
+<p>The container claims ownership on the object, i.e. its reference count is
+incremented.</p>
+<p>The object must implement <a class="link" href="GwySerializable.html" title="GwySerializable"><span class="type">GwySerializable</span></a> interface to allow serialization
+of the container.</p>
+<div class="refsect3">
+<a name="gwy-container-set-object.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>An object to store into container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-get-object"></a><h3>gwy_container_get_object ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+gwy_container_get_object (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>);</pre>
+<p>Returns the object in <em class="parameter"><code>container</code></em>
+ identified by <em class="parameter"><code>key</code></em>
+.</p>
+<p>The returned object doesn't have its reference count increased, use
+<a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a> if you want to access it even when <em class="parameter"><code>container</code></em>
+ may cease
+to exist.</p>
+<div class="refsect3">
+<a name="gwy-container-get-object.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-get-object.returns"></a><h4>Returns</h4>
+<p> The object as <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-gis-object"></a><h3>gwy_container_gis_object ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_container_gis_object (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> value</code></em>);</pre>
+<p>Get-if-set an object from a container.</p>
+<p>The object eventually stored in <em class="parameter"><code>value</code></em>
+ doesn't have its reference count
+increased, use <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a> if you want to access it even when
+<em class="parameter"><code>container</code></em>
+ may cease to exist.</p>
+<div class="refsect3">
+<a name="gwy-container-gis-object.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> key.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Pointer to the object pointer to update.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-gis-object.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>v</code></em>
+was actually updated, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when there is no
+such object in the container.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-serialize-to-text"></a><h3>gwy_container_serialize_to_text ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+gwy_container_serialize_to_text (<em class="parameter"><code><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *container</code></em>);</pre>
+<p>Creates a text representation of <em class="parameter"><code>container</code></em>
+ contents.</p>
+<p>Note only simple data types are supported as serialization of compound
+objects is not controllable.</p>
+<div class="refsect3">
+<a name="gwy-container-serialize-to-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>container</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-serialize-to-text.returns"></a><h4>Returns</h4>
+<p> A pointer array, each item containing string with one container
+item representation (name, type, value).  The array is sorted by name.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-deserialize-from-text"></a><h3>gwy_container_deserialize_from_text ()</h3>
+<pre class="programlisting"><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="returnvalue">GwyContainer</span></a> *
+gwy_container_deserialize_from_text (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text</code></em>);</pre>
+<p>Restores a container from is text representation.</p>
+<div class="refsect3">
+<a name="gwy-container-deserialize-from-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>text</p></td>
+<td class="parameter_description"><p>Text containing serialized container contents as dumped by
+<a class="link" href="GwyContainer.html#gwy-container-serialize-to-text" title="gwy_container_serialize_to_text ()"><code class="function">gwy_container_serialize_to_text()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-container-deserialize-from-text.returns"></a><h4>Returns</h4>
+<p> The restored container, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> on failure.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-value-type-by-name"></a><h3>gwy_container_value_type_by_name()</h3>
+<pre class="programlisting">#define gwy_container_value_type_by_name(c,n)    gwy_container_value_type(c,g_quark_try_string(n))
+</pre>
+<p>Gets the type of value in container <em class="parameter"><code>c</code></em>
+ identified by name <em class="parameter"><code>n</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-value-type-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-contains-by-name"></a><h3>gwy_container_contains_by_name()</h3>
+<pre class="programlisting">#define gwy_container_contains_by_name(c,n)      gwy_container_contains(c,g_quark_try_string(n))
+</pre>
+<p>Expands to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if container <em class="parameter"><code>c</code></em>
+ contains a value identified by name <em class="parameter"><code>n</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-contains-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-get-value-by-name"></a><h3>gwy_container_get_value_by_name()</h3>
+<pre class="programlisting">#define gwy_container_get_value_by_name(c,n)     gwy_container_get_value(c,g_quark_from_string(n))
+</pre>
+<p>Gets the value in container <em class="parameter"><code>c</code></em>
+ identified by name <em class="parameter"><code>n</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-get-value-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-gis-value-by-name"></a><h3>gwy_container_gis_value_by_name()</h3>
+<pre class="programlisting">#define gwy_container_gis_value_by_name(c,n,v)   gwy_container_gis_value(c,g_quark_try_string(n),v)
+</pre>
+<p>Get-if-set a generic value from a container.</p>
+<p>Expands to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>value</code></em>
+ was actually updated, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when there is no
+such value in the container.</p>
+<div class="refsect3">
+<a name="gwy-container-gis-value-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v</p></td>
+<td class="parameter_description"><p>Pointer to a <a href="/usr/share/gtk-doc/html/gobject/gobject-Generic-values.html#GValue-struct"><span class="type">GValue</span></a> to update. If item does not exist,
+it is left untouched.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-remove-by-name"></a><h3>gwy_container_remove_by_name()</h3>
+<pre class="programlisting">#define gwy_container_remove_by_name(c,n)        gwy_container_remove(c,g_quark_try_string(n))
+</pre>
+<p>Removes a value identified by name <em class="parameter"><code>n</code></em>
+ from container <em class="parameter"><code>c</code></em>
+.</p>
+<p>Expands to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if there was such a value and was removed.</p>
+<div class="refsect3">
+<a name="gwy-container-remove-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-rename-by-name"></a><h3>gwy_container_rename_by_name()</h3>
+<pre class="programlisting">#define gwy_container_rename_by_name(c,n,nn,f)   gwy_container_rename(c,g_quark_try_string(n),g_quark_from_string(nn),f)
+</pre>
+<p>Makes a value in container <em class="parameter"><code>c</code></em>
+ identified by name <em class="parameter"><code>n</code></em>
+ to be identified by
+new name <em class="parameter"><code>nn</code></em>
+.</p>
+<p>See <a class="link" href="GwyContainer.html#gwy-container-rename" title="gwy_container_rename ()"><code class="function">gwy_container_rename()</code></a> for details.</p>
+<div class="refsect3">
+<a name="gwy-container-rename-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nn</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>f</p></td>
+<td class="parameter_description"><p>Whether to delete existing value at <em class="parameter"><code>newkey</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-set-boolean-by-name"></a><h3>gwy_container_set_boolean_by_name()</h3>
+<pre class="programlisting">#define gwy_container_set_boolean_by_name(c,n,v) gwy_container_set_boolean(c,g_quark_from_string(n),v)
+</pre>
+<p>Stores a boolean into container <em class="parameter"><code>c</code></em>
+, identified by name <em class="parameter"><code>n</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-set-boolean-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v</p></td>
+<td class="parameter_description"><p>A boolean.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-get-boolean-by-name"></a><h3>gwy_container_get_boolean_by_name()</h3>
+<pre class="programlisting">#define gwy_container_get_boolean_by_name(c,n)   gwy_container_get_boolean(c,g_quark_from_string(n))
+</pre>
+<p>Gets the boolean in container <em class="parameter"><code>c</code></em>
+ identified by name <em class="parameter"><code>n</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-get-boolean-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-gis-boolean-by-name"></a><h3>gwy_container_gis_boolean_by_name()</h3>
+<pre class="programlisting">#define gwy_container_gis_boolean_by_name(c,n,v) gwy_container_gis_boolean(c,g_quark_try_string(n),v)
+</pre>
+<p>Get-if-set a boolean from a container.</p>
+<p>Expands to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>value</code></em>
+ was actually updated, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when there is no
+such boolean in the container.</p>
+<div class="refsect3">
+<a name="gwy-container-gis-boolean-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v</p></td>
+<td class="parameter_description"><p>Pointer to the boolean to update.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-set-uchar-by-name"></a><h3>gwy_container_set_uchar_by_name()</h3>
+<pre class="programlisting">#define gwy_container_set_uchar_by_name(c,n,v)   gwy_container_set_uchar(c,g_quark_from_string(n),v)
+</pre>
+<p>Stores an unsigned character into container <em class="parameter"><code>c</code></em>
+, identified by name <em class="parameter"><code>n</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-set-uchar-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v</p></td>
+<td class="parameter_description"><p>An unsigned character.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-get-uchar-by-name"></a><h3>gwy_container_get_uchar_by_name()</h3>
+<pre class="programlisting">#define gwy_container_get_uchar_by_name(c,n)     gwy_container_get_uchar(c,g_quark_from_string(n))
+</pre>
+<p>Gets the unsigned character in container <em class="parameter"><code>c</code></em>
+ identified by name <em class="parameter"><code>n</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-get-uchar-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-gis-uchar-by-name"></a><h3>gwy_container_gis_uchar_by_name()</h3>
+<pre class="programlisting">#define gwy_container_gis_uchar_by_name(c,n,v)   gwy_container_gis_uchar(c,g_quark_try_string(n),v)
+</pre>
+<p>Get-if-set an unsigned char from a container.</p>
+<p>Expands to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>value</code></em>
+ was actually updated, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when there is no
+such unsigned char in the container.</p>
+<div class="refsect3">
+<a name="gwy-container-gis-uchar-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v</p></td>
+<td class="parameter_description"><p>Pointer to the unsigned char to update.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-set-int32-by-name"></a><h3>gwy_container_set_int32_by_name()</h3>
+<pre class="programlisting">#define gwy_container_set_int32_by_name(c,n,v)   gwy_container_set_int32(c,g_quark_from_string(n),v)
+</pre>
+<p>Stores a 32bit integer into container <em class="parameter"><code>c</code></em>
+, identified by name <em class="parameter"><code>n</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-set-int32-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v</p></td>
+<td class="parameter_description"><p>A 32bit integer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-get-int32-by-name"></a><h3>gwy_container_get_int32_by_name()</h3>
+<pre class="programlisting">#define gwy_container_get_int32_by_name(c,n)     gwy_container_get_int32(c,g_quark_from_string(n))
+</pre>
+<p>Gets the 32bit integer in container <em class="parameter"><code>c</code></em>
+ identified by name <em class="parameter"><code>n</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-get-int32-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-gis-int32-by-name"></a><h3>gwy_container_gis_int32_by_name()</h3>
+<pre class="programlisting">#define gwy_container_gis_int32_by_name(c,n,v)   gwy_container_gis_int32(c,g_quark_try_string(n),v)
+</pre>
+<p>Get-if-set a 32bit integer from a container.</p>
+<p>Expands to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>value</code></em>
+ was actually updated, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when there is no
+such 32bit integer in the container.</p>
+<div class="refsect3">
+<a name="gwy-container-gis-int32-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v</p></td>
+<td class="parameter_description"><p>Pointer to the 32bit integer to update.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-set-enum-by-name"></a><h3>gwy_container_set_enum_by_name()</h3>
+<pre class="programlisting">#define gwy_container_set_enum_by_name(c,n,v)    gwy_container_set_enum(c,g_quark_from_string(n),v)
+</pre>
+<p>Stores an enum into container <em class="parameter"><code>c</code></em>
+, identified by name <em class="parameter"><code>n</code></em>
+.</p>
+<p>Note enums are treated as 32bit integers.</p>
+<div class="refsect3">
+<a name="gwy-container-set-enum-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v</p></td>
+<td class="parameter_description"><p>An enum.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-get-enum-by-name"></a><h3>gwy_container_get_enum_by_name()</h3>
+<pre class="programlisting">#define gwy_container_get_enum_by_name(c,n)      gwy_container_get_enum(c,g_quark_from_string(n))
+</pre>
+<p>Gets the enum in container <em class="parameter"><code>c</code></em>
+ identified by name <em class="parameter"><code>n</code></em>
+.</p>
+<p>Note enums are treated as 32bit integers.</p>
+<div class="refsect3">
+<a name="gwy-container-get-enum-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-gis-enum-by-name"></a><h3>gwy_container_gis_enum_by_name()</h3>
+<pre class="programlisting">#define gwy_container_gis_enum_by_name(c,n,v)    gwy_container_gis_enum(c,g_quark_try_string(n),v)
+</pre>
+<p>Get-if-set an enum from a container.</p>
+<p>Note enums are treated as 32bit integers.</p>
+<p>Expands to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>value</code></em>
+ was actually updated, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when there is no
+such enum in the container.</p>
+<div class="refsect3">
+<a name="gwy-container-gis-enum-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v</p></td>
+<td class="parameter_description"><p>Pointer to the enum to update.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-set-int64-by-name"></a><h3>gwy_container_set_int64_by_name()</h3>
+<pre class="programlisting">#define gwy_container_set_int64_by_name(c,n,v)   gwy_container_set_int64(c,g_quark_from_string(n),v)
+</pre>
+<p>Stores a 64bit integer into container <em class="parameter"><code>c</code></em>
+, identified by name <em class="parameter"><code>n</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-set-int64-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v</p></td>
+<td class="parameter_description"><p>A 64bit integer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-get-int64-by-name"></a><h3>gwy_container_get_int64_by_name()</h3>
+<pre class="programlisting">#define gwy_container_get_int64_by_name(c,n)     gwy_container_get_int64(c,g_quark_from_string(n))
+</pre>
+<p>Gets the 64bit integer in container <em class="parameter"><code>c</code></em>
+ identified by name <em class="parameter"><code>n</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-get-int64-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-gis-int64-by-name"></a><h3>gwy_container_gis_int64_by_name()</h3>
+<pre class="programlisting">#define gwy_container_gis_int64_by_name(c,n,v)   gwy_container_gis_int64(c,g_quark_try_string(n),v)
+</pre>
+<p>Get-if-set a 64bit integer from a container.</p>
+<p>Expands to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>value</code></em>
+ was actually updated, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when there is no
+such 64bit integer in the container.</p>
+<div class="refsect3">
+<a name="gwy-container-gis-int64-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v</p></td>
+<td class="parameter_description"><p>Pointer to the 64bit integer to update.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-set-double-by-name"></a><h3>gwy_container_set_double_by_name()</h3>
+<pre class="programlisting">#define gwy_container_set_double_by_name(c,n,v)  gwy_container_set_double(c,g_quark_from_string(n),v)
+</pre>
+<p>Stores a double into container <em class="parameter"><code>c</code></em>
+, identified by name <em class="parameter"><code>n</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-set-double-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v</p></td>
+<td class="parameter_description"><p>A double integer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-get-double-by-name"></a><h3>gwy_container_get_double_by_name()</h3>
+<pre class="programlisting">#define gwy_container_get_double_by_name(c,n)    gwy_container_get_double(c,g_quark_from_string(n))
+</pre>
+<p>Gets the double in container <em class="parameter"><code>c</code></em>
+ identified by name <em class="parameter"><code>n</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-container-get-double-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-gis-double-by-name"></a><h3>gwy_container_gis_double_by_name()</h3>
+<pre class="programlisting">#define gwy_container_gis_double_by_name(c,n,v)  gwy_container_gis_double(c,g_quark_try_string(n),v)
+</pre>
+<p>Get-if-set a double from a container.</p>
+<p>Expands to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>value</code></em>
+ was actually updated, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when there is no
+such double in the container.</p>
+<div class="refsect3">
+<a name="gwy-container-gis-double-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v</p></td>
+<td class="parameter_description"><p>Pointer to the double to update.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-set-string-by-name"></a><h3>gwy_container_set_string_by_name()</h3>
+<pre class="programlisting">#define gwy_container_set_string_by_name(c,n,v)  gwy_container_set_string(c,g_quark_from_string(n),v)
+</pre>
+<p>Stores a string into container <em class="parameter"><code>c</code></em>
+, identified by name <em class="parameter"><code>n</code></em>
+.</p>
+<p>The container takes ownership of the string, so it can't be used on
+static strings, use <a href="/usr/share/gtk-doc/html/glib/glib-String-Utility-Functions.html#g-strdup"><code class="function">g_strdup()</code></a> to duplicate them first.</p>
+<div class="refsect3">
+<a name="gwy-container-set-string-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v</p></td>
+<td class="parameter_description"><p>A nul-terminated string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-set-const-string-by-name"></a><h3>gwy_container_set_const_string_by_name()</h3>
+<pre class="programlisting">#define gwy_container_set_const_string_by_name(c,n,v)  gwy_container_set_const_string(c,g_quark_from_string(n),v)
+</pre>
+<p>Stores a string into container <em class="parameter"><code>c</code></em>
+, identified by name <em class="parameter"><code>n</code></em>
+.</p>
+<p>The container makes a copy of the string, so it can be used on static
+strings.</p>
+<div class="refsect3">
+<a name="gwy-container-set-const-string-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v</p></td>
+<td class="parameter_description"><p>A nul-terminated string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-38.html#api-index-2.38">2.38</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-get-string-by-name"></a><h3>gwy_container_get_string_by_name()</h3>
+<pre class="programlisting">#define gwy_container_get_string_by_name(c,n)    gwy_container_get_string(c,g_quark_from_string(n))
+</pre>
+<p>Gets the string in container <em class="parameter"><code>c</code></em>
+ identified by name <em class="parameter"><code>n</code></em>
+.</p>
+<p>The returned string must be treated as constant and never freed or modified.</p>
+<div class="refsect3">
+<a name="gwy-container-get-string-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-gis-string-by-name"></a><h3>gwy_container_gis_string_by_name()</h3>
+<pre class="programlisting">#define gwy_container_gis_string_by_name(c,n,v)  gwy_container_gis_string(c,g_quark_try_string(n),v)
+</pre>
+<p>Get-if-set a string from a container.</p>
+<p>The string eventually stored in <em class="parameter"><code>v</code></em>
+ must be treated as constant and
+never freed or modified.</p>
+<p>Expands to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>value</code></em>
+ was actually updated, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when there is no
+such string in the container.</p>
+<div class="refsect3">
+<a name="gwy-container-gis-string-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v</p></td>
+<td class="parameter_description"><p>Pointer to the string pointer to update.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-set-object-by-name"></a><h3>gwy_container_set_object_by_name()</h3>
+<pre class="programlisting">#define gwy_container_set_object_by_name(c,n,v)  gwy_container_set_object(c,g_quark_from_string(n),v)
+</pre>
+<p>Stores an object into container <em class="parameter"><code>c</code></em>
+, identified by name <em class="parameter"><code>n</code></em>
+.</p>
+<p>See <a class="link" href="GwyContainer.html#gwy-container-set-object" title="gwy_container_set_object ()"><code class="function">gwy_container_set_object()</code></a> for details.</p>
+<div class="refsect3">
+<a name="gwy-container-set-object-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v</p></td>
+<td class="parameter_description"><p>An object to store into container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-get-object-by-name"></a><h3>gwy_container_get_object_by_name()</h3>
+<pre class="programlisting">#define gwy_container_get_object_by_name(c,n)    gwy_container_get_object(c,g_quark_from_string(n))
+</pre>
+<p>Gets the object in container <em class="parameter"><code>c</code></em>
+ identified by name <em class="parameter"><code>n</code></em>
+.</p>
+<p>The returned object doesn't have its reference count increased, use
+<a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a> if you want to access it even when <em class="parameter"><code>container</code></em>
+ may cease
+to exist.</p>
+<div class="refsect3">
+<a name="gwy-container-get-object-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-container-gis-object-by-name"></a><h3>gwy_container_gis_object_by_name()</h3>
+<pre class="programlisting">#define gwy_container_gis_object_by_name(c,n,v)  gwy_container_gis_object(c,g_quark_try_string(n),v)
+</pre>
+<p>Get-if-set an object from a container.</p>
+<p>The object eventually stored in <em class="parameter"><code>value</code></em>
+ doesn't have its reference count
+increased, use <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a> if you want to access it even when
+<em class="parameter"><code>container</code></em>
+ may cease to exist.</p>
+<p>Expands to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>value</code></em>
+ was actually updated, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when there is no
+such object in the container.</p>
+<div class="refsect3">
+<a name="gwy-container-gis-object-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>c</p></td>
+<td class="parameter_description"><p>A container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>A nul-terminated name (id).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>v</p></td>
+<td class="parameter_description"><p>Pointer to the object pointer to update.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyContainer.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GWY-CONTAINER-PATHSEP:CAPS"></a><h3>GWY_CONTAINER_PATHSEP</h3>
+<pre class="programlisting">#define GWY_CONTAINER_PATHSEP      '/'
+</pre>
+<p>Path separator to be used for hierarchical structures in the container.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GWY-CONTAINER-PATHSEP-STR:CAPS"></a><h3>GWY_CONTAINER_PATHSEP_STR</h3>
+<pre class="programlisting">#define GWY_CONTAINER_PATHSEP_STR  "/"
+</pre>
+<p>Path separator to be used for hierarchical structures in the container,
+as a string.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyContainer-struct"></a><h3>struct GwyContainer</h3>
+<pre class="programlisting">struct GwyContainer;</pre>
+<p>The <a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> struct contains private data only and should be accessed
+using the functions below.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyContainerClass"></a><h3>struct GwyContainerClass</h3>
+<pre class="programlisting">struct GwyContainerClass {
+    GObjectClass parent_class;
+
+    void (*item_changed)(GwyContainer *container, const gchar *key);
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyContainer.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GwyContainer-item-changed"></a><h3>The <code class="literal">“item-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> *gwycontainer,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a>         arg1,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>The ::item-changed signal is emitted whenever a container item is
+changed.  The detail is the string key identifier.</p>
+<div class="refsect3">
+<a name="GwyContainer-item-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwycontainer</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arg1</p></td>
+<td class="parameter_description"><p>The quark key identifying the changed item.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-DETAILED:CAPS">Has Details</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyContainer.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

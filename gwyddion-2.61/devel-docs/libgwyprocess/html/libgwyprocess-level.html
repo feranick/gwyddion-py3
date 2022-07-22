@@ -1,0 +1,2029 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>level: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="libgwyprocess-interpolation.html" title="interpolation">
+<link rel="next" href="libgwyprocess-linestats.html" title="linestats">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyprocess-level.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyprocess-interpolation.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyprocess-linestats.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyprocess-level"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyprocess-level.top_of_page"></a>level</span></h2>
+<p>level — Leveling and background removal</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyprocess-level.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-area-fit-plane" title="gwy_data_field_area_fit_plane ()">gwy_data_field_area_fit_plane</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-area-fit-plane-mask" title="gwy_data_field_area_fit_plane_mask ()">gwy_data_field_area_fit_plane_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-fit-plane" title="gwy_data_field_fit_plane ()">gwy_data_field_fit_plane</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-fit-facet-plane" title="gwy_data_field_fit_facet_plane ()">gwy_data_field_fit_facet_plane</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-plane-level" title="gwy_data_field_plane_level ()">gwy_data_field_plane_level</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-plane-rotate" title="gwy_data_field_plane_rotate ()">gwy_data_field_plane_rotate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-fit-lines" title="gwy_data_field_fit_lines ()">gwy_data_field_fit_lines</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-fit-polynom" title="gwy_data_field_fit_polynom ()">gwy_data_field_fit_polynom</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-area-fit-polynom" title="gwy_data_field_area_fit_polynom ()">gwy_data_field_area_fit_polynom</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-subtract-polynom" title="gwy_data_field_subtract_polynom ()">gwy_data_field_subtract_polynom</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-area-subtract-polynom" title="gwy_data_field_area_subtract_polynom ()">gwy_data_field_area_subtract_polynom</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-fit-legendre" title="gwy_data_field_fit_legendre ()">gwy_data_field_fit_legendre</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-area-fit-legendre" title="gwy_data_field_area_fit_legendre ()">gwy_data_field_area_fit_legendre</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-subtract-legendre" title="gwy_data_field_subtract_legendre ()">gwy_data_field_subtract_legendre</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-area-subtract-legendre" title="gwy_data_field_area_subtract_legendre ()">gwy_data_field_area_subtract_legendre</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-fit-poly-max" title="gwy_data_field_fit_poly_max ()">gwy_data_field_fit_poly_max</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-area-fit-poly-max" title="gwy_data_field_area_fit_poly_max ()">gwy_data_field_area_fit_poly_max</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-subtract-poly-max" title="gwy_data_field_subtract_poly_max ()">gwy_data_field_subtract_poly_max</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-area-subtract-poly-max" title="gwy_data_field_area_subtract_poly_max ()">gwy_data_field_area_subtract_poly_max</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-fit-poly" title="gwy_data_field_fit_poly ()">gwy_data_field_fit_poly</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-area-fit-poly" title="gwy_data_field_area_fit_poly ()">gwy_data_field_area_fit_poly</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-subtract-poly" title="gwy_data_field_subtract_poly ()">gwy_data_field_subtract_poly</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-area-subtract-poly" title="gwy_data_field_area_subtract_poly ()">gwy_data_field_area_subtract_poly</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyDataField.html" title="GwyDataField"><span class="returnvalue">GwyDataField</span></a> **
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-area-fit-local-planes" title="gwy_data_field_area_fit_local_planes ()">gwy_data_field_area_fit_local_planes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyDataField.html" title="GwyDataField"><span class="returnvalue">GwyDataField</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-area-local-plane-quantity" title="gwy_data_field_area_local_plane_quantity ()">gwy_data_field_area_local_plane_quantity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyDataField.html" title="GwyDataField"><span class="returnvalue">GwyDataField</span></a> **
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-fit-local-planes" title="gwy_data_field_fit_local_planes ()">gwy_data_field_fit_local_planes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyDataField.html" title="GwyDataField"><span class="returnvalue">GwyDataField</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-local-plane-quantity" title="gwy_data_field_local_plane_quantity ()">gwy_data_field_local_plane_quantity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-level.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-level.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-level.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-data-field-area-fit-plane"></a><h3>gwy_data_field_area_fit_plane ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_fit_plane (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                               <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                               <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                               <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                               <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                               <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                               <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *pa</code></em>,
+                               <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *pbx</code></em>,
+                               <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *pby</code></em>);</pre>
+<p>Fits a plane through a rectangular part of a data field.</p>
+<p>The coefficients can be used for plane leveling using the same relation
+as in <a class="link" href="libgwyprocess-level.html#gwy-data-field-fit-plane" title="gwy_data_field_fit_plane ()"><code class="function">gwy_data_field_fit_plane()</code></a>, counting indices from area top left
+corner.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-fit-plane.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Mask of values to take values into account, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for full
+<em class="parameter"><code>data_field</code></em>
+.  Values equal to 0.0 and below cause corresponding
+<em class="parameter"><code>data_field</code></em>
+samples to be ignored, values equal to 1.0 and above
+cause inclusion of corresponding <em class="parameter"><code>data_field</code></em>
+samples.  The behaviour
+for values inside (0.0, 1.0) is undefined (it may be specified
+in the future).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pa</p></td>
+<td class="parameter_description"><p>Where constant coefficient should be stored (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pbx</p></td>
+<td class="parameter_description"><p>Where x plane coefficient should be stored (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pby</p></td>
+<td class="parameter_description"><p>Where y plane coefficient should be stored (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-fit-plane-mask"></a><h3>gwy_data_field_area_fit_plane_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_fit_plane_mask (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                    <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                                    <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyMaskingType" title="enum GwyMaskingType"><span class="type">GwyMaskingType</span></a> masking</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *pa</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *pbx</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *pby</code></em>);</pre>
+<p>Fits a plane through a rectangular part of a data field with masking.</p>
+<p>The coefficients can be used for plane leveling using the same relation
+as in <a class="link" href="libgwyprocess-level.html#gwy-data-field-fit-plane" title="gwy_data_field_fit_plane ()"><code class="function">gwy_data_field_fit_plane()</code></a>, counting indices from area top left
+corner.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-fit-plane-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Mask specifying which values to take into account/exclude, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>masking</p></td>
+<td class="parameter_description"><p>Masking mode to use.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pa</p></td>
+<td class="parameter_description"><p>Where constant coefficient should be stored (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pbx</p></td>
+<td class="parameter_description"><p>Where x plane coefficient should be stored (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pby</p></td>
+<td class="parameter_description"><p>Where y plane coefficient should be stored (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-56.html#api-index-2.56">2.56</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-fit-plane"></a><h3>gwy_data_field_fit_plane ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_fit_plane (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *pa</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *pbx</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *pby</code></em>);</pre>
+<p>Fits a plane through a data field.</p>
+<p>The coefficients can be used for plane leveling using relation
+data[i] := data[i] - (pa + pby*i + pbx*j);</p>
+<div class="refsect3">
+<a name="gwy-data-field-fit-plane.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pa</p></td>
+<td class="parameter_description"><p>Where constant coefficient should be stored (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pbx</p></td>
+<td class="parameter_description"><p>Where x plane coefficient should be stored (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pby</p></td>
+<td class="parameter_description"><p>Where y plane coefficient should be stored (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-fit-facet-plane"></a><h3>gwy_data_field_fit_facet_plane ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_data_field_fit_facet_plane (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mfield</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyMaskingType" title="enum GwyMaskingType"><span class="type">GwyMaskingType</span></a> masking</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *pa</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *pbx</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *pby</code></em>);</pre>
+<p>Calculates the inclination of a plane close to the dominant plane in a data
+field.</p>
+<p>The dominant plane is determined by taking into account larger local slopes
+with exponentially smaller weight.</p>
+<p>This is the basis of so-called facet levelling algorithm.  Usually, the
+plane found by this method is subtracted using <a class="link" href="libgwyprocess-level.html#gwy-data-field-plane-level" title="gwy_data_field_plane_level ()"><code class="function">gwy_data_field_plane_level()</code></a>
+and the entire process is repeated until it converges.  A convergence
+criterion may be sufficiently small values of the x and y plane
+coefficients.  Note that since <a class="link" href="libgwyprocess-level.html#gwy-data-field-plane-level" title="gwy_data_field_plane_level ()"><code class="function">gwy_data_field_plane_level()</code></a> uses pixel-based
+lateral coordinates, the coefficients must be divided by
+gwy_data_field_get_dx(data_field) and
+gwy_data_field_get_dy(data_field) to obtain physical plane
+coefficients.</p>
+<div class="refsect3">
+<a name="gwy-data-field-fit-facet-plane.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mfield</p></td>
+<td class="parameter_description"><p>Mask specifying which values to take into account/exclude, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>masking</p></td>
+<td class="parameter_description"><p>Masking mode to use.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pa</p></td>
+<td class="parameter_description"><p>Where constant coefficient should be stored (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pbx</p></td>
+<td class="parameter_description"><p>Where x plane coefficient should be stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pby</p></td>
+<td class="parameter_description"><p>Where y plane coefficient should be stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-fit-facet-plane.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if any plane was actually fitted; <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if there was an
+insufficient number of unmasked pixels.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-37.html#api-index-2.37">2.37</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-plane-level"></a><h3>gwy_data_field_plane_level ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_plane_level (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> a</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> bx</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> by</code></em>);</pre>
+<p>Subtracts plane from a data field.</p>
+<p>See <a class="link" href="libgwyprocess-level.html#gwy-data-field-fit-plane" title="gwy_data_field_fit_plane ()"><code class="function">gwy_data_field_fit_plane()</code></a> for details.</p>
+<div class="refsect3">
+<a name="gwy-data-field-plane-level.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>Constant coefficient.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bx</p></td>
+<td class="parameter_description"><p>X plane coefficient.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>by</p></td>
+<td class="parameter_description"><p>Y plane coefficient.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-plane-rotate"></a><h3>gwy_data_field_plane_rotate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_plane_rotate (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> xangle</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> yangle</code></em>,
+                             <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interpolation</code></em>);</pre>
+<p>Performs rotation of plane along x and y axis.</p>
+<div class="refsect3">
+<a name="gwy-data-field-plane-rotate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xangle</p></td>
+<td class="parameter_description"><p>Rotation angle in x direction (rotation along y axis, in radians).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yangle</p></td>
+<td class="parameter_description"><p>Rotation angle in y direction (rotation along x axis, in radians).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>Interpolation type (can be only of two-point type).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-fit-lines"></a><h3>gwy_data_field_fit_lines ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_fit_lines (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> degree</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> exclude</code></em>,
+                          <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyOrientation" title="enum GwyOrientation"><span class="type">GwyOrientation</span></a> orientation</code></em>);</pre>
+<p>Independently levels profiles on each row/column in a data field.</p>
+<p>Lines that have no intersection with area selected by <em class="parameter"><code>ulcol</code></em>
+, <em class="parameter"><code>ulrow</code></em>
+,
+<em class="parameter"><code>brcol</code></em>
+, <em class="parameter"><code>brrow</code></em>
+ are always leveled as a whole.  Lines that have intersection
+with selected area, are leveled using polynomial coefficients computed only
+from data inside (or outside for <em class="parameter"><code>exclude</code></em>
+ = <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>) the area.</p>
+<div class="refsect3">
+<a name="gwy-data-field-fit-lines.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>degree</p></td>
+<td class="parameter_description"><p>Fitted polynomial degree.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>exclude</p></td>
+<td class="parameter_description"><p>If <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, outside of area selected by <em class="parameter"><code>ulcol</code></em>
+, <em class="parameter"><code>ulrow</code></em>
+, <em class="parameter"><code>brcol</code></em>
+,
+<em class="parameter"><code>brrow</code></em>
+will be used for polynomial coefficients computation,
+instead of inside.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>orientation</p></td>
+<td class="parameter_description"><p>Line orientation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-fit-polynom"></a><h3>gwy_data_field_fit_polynom ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_data_field_fit_polynom (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col_degree</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row_degree</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coeffs</code></em>);</pre>
+<p>Fits a two-dimensional polynomial to a data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-fit-polynom.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col_degree</p></td>
+<td class="parameter_description"><p>Degree of polynomial to fit column-wise (x-coordinate).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row_degree</p></td>
+<td class="parameter_description"><p>Degree of polynomial to fit row-wise (y-coordinate).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeffs</p></td>
+<td class="parameter_description"><p>An array of size (<em class="parameter"><code>row_degree</code></em>
++1)*(<em class="parameter"><code>col_degree</code></em>
++1) to store the
+coefficients to, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (a fresh array is allocated then),
+see <a class="link" href="libgwyprocess-level.html#gwy-data-field-area-fit-polynom" title="gwy_data_field_area_fit_polynom ()"><code class="function">gwy_data_field_area_fit_polynom()</code></a> for details.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-fit-polynom.returns"></a><h4>Returns</h4>
+<p> Either <em class="parameter"><code>coeffs</code></em>
+if it was not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, or a newly allocated array
+with coefficients.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-fit-polynom"></a><h3>gwy_data_field_area_fit_polynom ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_data_field_area_fit_polynom (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col_degree</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row_degree</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coeffs</code></em>);</pre>
+<p>Fits a two-dimensional polynomial to a rectangular part of a data field.</p>
+<p>The coefficients are stored by row into <em class="parameter"><code>coeffs</code></em>
+, like data in a datafield.
+Row index is y-degree, column index is x-degree.</p>
+<p>Note naive x^n y^m polynomial fitting is numerically unstable, therefore
+this method works only up to <em class="parameter"><code>col_degree</code></em>
+ = <em class="parameter"><code>row_degree</code></em>
+ = 6.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-fit-polynom.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col_degree</p></td>
+<td class="parameter_description"><p>Degree of polynomial to fit column-wise (x-coordinate).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row_degree</p></td>
+<td class="parameter_description"><p>Degree of polynomial to fit row-wise (y-coordinate).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeffs</p></td>
+<td class="parameter_description"><p>An array of size (<em class="parameter"><code>row_degree</code></em>
++1)*(<em class="parameter"><code>col_degree</code></em>
++1) to store the
+coefficients to, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (a fresh array is allocated then).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-area-fit-polynom.returns"></a><h4>Returns</h4>
+<p> Either <em class="parameter"><code>coeffs</code></em>
+if it was not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, or a newly allocated array
+with coefficients.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-subtract-polynom"></a><h3>gwy_data_field_subtract_polynom ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_subtract_polynom (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col_degree</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row_degree</code></em>,
+                                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coeffs</code></em>);</pre>
+<p>Subtracts a two-dimensional polynomial from a data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-subtract-polynom.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col_degree</p></td>
+<td class="parameter_description"><p>Degree of polynomial to subtract column-wise (x-coordinate).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row_degree</p></td>
+<td class="parameter_description"><p>Degree of polynomial to subtract row-wise (y-coordinate).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeffs</p></td>
+<td class="parameter_description"><p>An array of size (<em class="parameter"><code>row_degree</code></em>
++1)*(<em class="parameter"><code>col_degree</code></em>
++1) with coefficients,
+see <a class="link" href="libgwyprocess-level.html#gwy-data-field-area-fit-polynom" title="gwy_data_field_area_fit_polynom ()"><code class="function">gwy_data_field_area_fit_polynom()</code></a> for details.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-subtract-polynom"></a><h3>gwy_data_field_area_subtract_polynom ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_subtract_polynom (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col_degree</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row_degree</code></em>,
+                                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coeffs</code></em>);</pre>
+<p>Subtracts a two-dimensional polynomial from a rectangular part of a data
+field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-subtract-polynom.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col_degree</p></td>
+<td class="parameter_description"><p>Degree of polynomial to subtract column-wise (x-coordinate).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row_degree</p></td>
+<td class="parameter_description"><p>Degree of polynomial to subtract row-wise (y-coordinate).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeffs</p></td>
+<td class="parameter_description"><p>An array of size (<em class="parameter"><code>row_degree</code></em>
++1)*(<em class="parameter"><code>col_degree</code></em>
++1) with coefficients,
+see <a class="link" href="libgwyprocess-level.html#gwy-data-field-area-fit-polynom" title="gwy_data_field_area_fit_polynom ()"><code class="function">gwy_data_field_area_fit_polynom()</code></a> for details.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-fit-legendre"></a><h3>gwy_data_field_fit_legendre ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_data_field_fit_legendre (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col_degree</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row_degree</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coeffs</code></em>);</pre>
+<p>Fits two-dimensional Legendre polynomial to a data field.</p>
+<p>See <a class="link" href="libgwyprocess-level.html#gwy-data-field-area-fit-legendre" title="gwy_data_field_area_fit_legendre ()"><code class="function">gwy_data_field_area_fit_legendre()</code></a> for details.</p>
+<div class="refsect3">
+<a name="gwy-data-field-fit-legendre.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col_degree</p></td>
+<td class="parameter_description"><p>Degree of polynomial to fit column-wise (x-coordinate).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row_degree</p></td>
+<td class="parameter_description"><p>Degree of polynomial to fit row-wise (y-coordinate).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeffs</p></td>
+<td class="parameter_description"><p>An array of size (<em class="parameter"><code>row_degree</code></em>
++1)*(<em class="parameter"><code>col_degree</code></em>
++1) to store the
+coefficients to, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (a fresh array is allocated then).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-fit-legendre.returns"></a><h4>Returns</h4>
+<p> Either <em class="parameter"><code>coeffs</code></em>
+if it was not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, or a newly allocated array
+with coefficients.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-fit-legendre"></a><h3>gwy_data_field_area_fit_legendre ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_data_field_area_fit_legendre (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col_degree</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row_degree</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coeffs</code></em>);</pre>
+<p>Fits two-dimensional Legendre polynomial to a rectangular part of a data
+field.</p>
+<p>The <em class="parameter"><code>col_degree</code></em>
+ and <em class="parameter"><code>row_degree</code></em>
+ parameters limit the maximum powers of x and
+y exactly as if simple powers were fitted, therefore if you do not intend to
+interpret contents of <em class="parameter"><code>coeffs</code></em>
+ youself, the only difference is that this
+method is much more numerically stable.</p>
+<p>The coefficients are organized exactly like in
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-area-fit-polynom" title="gwy_data_field_area_fit_polynom ()"><code class="function">gwy_data_field_area_fit_polynom()</code></a>, but they are not coefficients of
+x^n y^m, instead they are coefficients of P_n(x) P_m(x), where P are
+Legendre polynomials.  The polynomials are evaluated in coordinates where
+first row (column) corresponds to -1.0, and the last row (column) to 1.0.</p>
+<p>Note the polynomials are normal Legendre polynomials that are not exactly
+orthogonal on a discrete point set (if their degrees are equal mod 2).</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-fit-legendre.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col_degree</p></td>
+<td class="parameter_description"><p>Degree of polynomial to fit column-wise (x-coordinate).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row_degree</p></td>
+<td class="parameter_description"><p>Degree of polynomial to fit row-wise (y-coordinate).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeffs</p></td>
+<td class="parameter_description"><p>An array of size (<em class="parameter"><code>row_degree</code></em>
++1)*(<em class="parameter"><code>col_degree</code></em>
++1) to store the
+coefficients to, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (a fresh array is allocated then).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-area-fit-legendre.returns"></a><h4>Returns</h4>
+<p> Either <em class="parameter"><code>coeffs</code></em>
+if it was not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, or a newly allocated array
+with coefficients.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-subtract-legendre"></a><h3>gwy_data_field_subtract_legendre ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_subtract_legendre (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col_degree</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row_degree</code></em>,
+                                  <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coeffs</code></em>);</pre>
+<p>Subtracts a two-dimensional Legendre polynomial fit from a data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-subtract-legendre.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col_degree</p></td>
+<td class="parameter_description"><p>Degree of polynomial to subtract column-wise (x-coordinate).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row_degree</p></td>
+<td class="parameter_description"><p>Degree of polynomial to subtract row-wise (y-coordinate).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeffs</p></td>
+<td class="parameter_description"><p>An array of size (<em class="parameter"><code>row_degree</code></em>
++1)*(<em class="parameter"><code>col_degree</code></em>
++1) with coefficients,
+see <a class="link" href="libgwyprocess-level.html#gwy-data-field-area-fit-legendre" title="gwy_data_field_area_fit_legendre ()"><code class="function">gwy_data_field_area_fit_legendre()</code></a> for details.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-subtract-legendre"></a><h3>gwy_data_field_area_subtract_legendre ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_subtract_legendre (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col_degree</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row_degree</code></em>,
+                                       <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coeffs</code></em>);</pre>
+<p>Subtracts a two-dimensional Legendre polynomial fit from a rectangular part
+of a data field.</p>
+<p>Due to the transform of coordinates to [-1,1] x [-1,1], this method can be
+used on an area of dimensions different than the area the coefficients were
+calculated for.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-subtract-legendre.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col_degree</p></td>
+<td class="parameter_description"><p>Degree of polynomial to subtract column-wise (x-coordinate).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row_degree</p></td>
+<td class="parameter_description"><p>Degree of polynomial to subtract row-wise (y-coordinate).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeffs</p></td>
+<td class="parameter_description"><p>An array of size (<em class="parameter"><code>row_degree</code></em>
++1)*(<em class="parameter"><code>col_degree</code></em>
++1) with coefficients,
+see <a class="link" href="libgwyprocess-level.html#gwy-data-field-area-fit-legendre" title="gwy_data_field_area_fit_legendre ()"><code class="function">gwy_data_field_area_fit_legendre()</code></a> for details.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-fit-poly-max"></a><h3>gwy_data_field_fit_poly_max ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_data_field_fit_poly_max (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> max_degree</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coeffs</code></em>);</pre>
+<p>Fits two-dimensional polynomial with limited total degree to a data field.</p>
+<p>See <a class="link" href="libgwyprocess-level.html#gwy-data-field-area-fit-poly-max" title="gwy_data_field_area_fit_poly_max ()"><code class="function">gwy_data_field_area_fit_poly_max()</code></a> for details.</p>
+<div class="refsect3">
+<a name="gwy-data-field-fit-poly-max.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_degree</p></td>
+<td class="parameter_description"><p>Maximum total polynomial degree, that is the maximum of m+n
+in x^n y^m terms.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeffs</p></td>
+<td class="parameter_description"><p>An array of size (<em class="parameter"><code>max_degree</code></em>
++1)*(<em class="parameter"><code>max_degree</code></em>
++2)/2 to store the
+coefficients to, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (a fresh array is allocated then).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-fit-poly-max.returns"></a><h4>Returns</h4>
+<p> Either <em class="parameter"><code>coeffs</code></em>
+if it was not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, or a newly allocated array
+with coefficients.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-fit-poly-max"></a><h3>gwy_data_field_area_fit_poly_max ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_data_field_area_fit_poly_max (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> max_degree</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coeffs</code></em>);</pre>
+<p>Fits two-dimensional polynomial with limited total degree to a rectangular
+part of a data field.</p>
+<p>See <a class="link" href="libgwyprocess-level.html#gwy-data-field-area-fit-legendre" title="gwy_data_field_area_fit_legendre ()"><code class="function">gwy_data_field_area_fit_legendre()</code></a> for description.  This function
+differs by limiting the total maximum degree, while
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-area-fit-legendre" title="gwy_data_field_area_fit_legendre ()"><code class="function">gwy_data_field_area_fit_legendre()</code></a> limits the maximum degrees in horizontal
+and vertical directions independently.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-fit-poly-max.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_degree</p></td>
+<td class="parameter_description"><p>Maximum total polynomial degree, that is the maximum of m+n
+in x^n y^m terms.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeffs</p></td>
+<td class="parameter_description"><p>An array of size (<em class="parameter"><code>max_degree</code></em>
++1)*(<em class="parameter"><code>max_degree</code></em>
++2)/2 to store the
+coefficients to, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (a fresh array is allocated then).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-area-fit-poly-max.returns"></a><h4>Returns</h4>
+<p> Either <em class="parameter"><code>coeffs</code></em>
+if it was not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, or a newly allocated array
+with coefficients.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-subtract-poly-max"></a><h3>gwy_data_field_subtract_poly_max ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_subtract_poly_max (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> max_degree</code></em>,
+                                  <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coeffs</code></em>);</pre>
+<p>Subtracts a two-dimensional polynomial with limited total degree from
+a data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-subtract-poly-max.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_degree</p></td>
+<td class="parameter_description"><p>Maximum total polynomial degree, that is the maximum of m+n
+in x^n y^m terms.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeffs</p></td>
+<td class="parameter_description"><p>An array of size (<em class="parameter"><code>row_degree</code></em>
++1)*(<em class="parameter"><code>col_degree</code></em>
++2)/2 with
+coefficients, see <a class="link" href="libgwyprocess-level.html#gwy-data-field-area-fit-poly-max" title="gwy_data_field_area_fit_poly_max ()"><code class="function">gwy_data_field_area_fit_poly_max()</code></a> for details.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-subtract-poly-max"></a><h3>gwy_data_field_area_subtract_poly_max ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_subtract_poly_max (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> max_degree</code></em>,
+                                       <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coeffs</code></em>);</pre>
+<p>Subtracts a two-dimensional polynomial with limited total degree from a
+rectangular part of a data field.</p>
+<p>Due to the transform of coordinates to [-1,1] x [-1,1], this method can be
+used on an area of dimensions different than the area the coefficients were
+calculated for.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-subtract-poly-max.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_degree</p></td>
+<td class="parameter_description"><p>Maximum total polynomial degree, that is the maximum of m+n
+in x^n y^m terms.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeffs</p></td>
+<td class="parameter_description"><p>An array of size (<em class="parameter"><code>row_degree</code></em>
++1)*(<em class="parameter"><code>col_degree</code></em>
++2)/2 with
+coefficients, see <a class="link" href="libgwyprocess-level.html#gwy-data-field-area-fit-poly-max" title="gwy_data_field_area_fit_poly_max ()"><code class="function">gwy_data_field_area_fit_poly_max()</code></a> for details.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-fit-poly"></a><h3>gwy_data_field_fit_poly ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_data_field_fit_poly (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                         <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask_field</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nterms</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *term_powers</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> exclude</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coeffs</code></em>);</pre>
+<p>Fit a given set of polynomial terms to a data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-fit-poly.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask_field</p></td>
+<td class="parameter_description"><p>Mask of values to take values into account, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for full
+<em class="parameter"><code>data_field</code></em>
+.  Values equal to 0.0 and below cause corresponding
+<em class="parameter"><code>data_field</code></em>
+samples to be ignored, values equal to 1.0 and above
+cause inclusion of corresponding <em class="parameter"><code>data_field</code></em>
+samples.  The behaviour
+for values inside (0.0, 1.0) is undefined (it may be specified
+in the future).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nterms</p></td>
+<td class="parameter_description"><p>The number of polynomial terms to take into account (half the
+number of items in <em class="parameter"><code>term_powers</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>term_powers</p></td>
+<td class="parameter_description"><p>Array of size 2*<em class="parameter"><code>nterms</code></em>
+describing the terms to fit.  Each
+terms is described by a couple of powers (powerx, powery).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>exclude</p></td>
+<td class="parameter_description"><p>Interpret values <em class="parameter"><code>w</code></em>
+in the mask as 1.0-<em class="parameter"><code>w</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeffs</p></td>
+<td class="parameter_description"><p>Array of size <em class="parameter"><code>nterms</code></em>
+to store the coefficients to, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to
+allocate a new array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-fit-poly.returns"></a><h4>Returns</h4>
+<p> Either <em class="parameter"><code>coeffs</code></em>
+if it was not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, or a newly allocated array
+with coefficients.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-11.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-fit-poly"></a><h3>gwy_data_field_area_fit_poly ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_data_field_area_fit_poly (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                              <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask_field</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nterms</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *term_powers</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> exclude</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coeffs</code></em>);</pre>
+<p>Fit a given set of polynomial terms to a rectangular part of a data field.</p>
+<p>The polynomial coefficients correspond to normalized coordinates that
+are always from the interval [-1,1] where -1 corresponds to the left/topmost
+pixel and 1 corresponds to the bottom/rightmost pixel of the area.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-fit-poly.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask_field</p></td>
+<td class="parameter_description"><p>Mask of values to take values into account, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for full
+<em class="parameter"><code>data_field</code></em>
+.  Values equal to 0.0 and below cause corresponding
+<em class="parameter"><code>data_field</code></em>
+samples to be ignored, values equal to 1.0 and above
+cause inclusion of corresponding <em class="parameter"><code>data_field</code></em>
+samples.  The behaviour
+for values inside (0.0, 1.0) is undefined (it may be specified
+in the future).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nterms</p></td>
+<td class="parameter_description"><p>The number of polynomial terms to take into account (half the
+number of items in <em class="parameter"><code>term_powers</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>term_powers</p></td>
+<td class="parameter_description"><p>Array of size 2*<em class="parameter"><code>nterms</code></em>
+describing the terms to fit.  Each
+terms is described by a couple of powers (powerx, powery).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>exclude</p></td>
+<td class="parameter_description"><p>Interpret values <em class="parameter"><code>w</code></em>
+in the mask as 1.0-<em class="parameter"><code>w</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeffs</p></td>
+<td class="parameter_description"><p>Array of size <em class="parameter"><code>nterms</code></em>
+to store the coefficients to, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to
+allocate a new array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-area-fit-poly.returns"></a><h4>Returns</h4>
+<p> Either <em class="parameter"><code>coeffs</code></em>
+if it was not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, or a newly allocated array
+with coefficients.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-11.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-subtract-poly"></a><h3>gwy_data_field_subtract_poly ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_subtract_poly (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nterms</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *term_powers</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coeffs</code></em>);</pre>
+<p>Subtract a given set of polynomial terms from a data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-subtract-poly.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nterms</p></td>
+<td class="parameter_description"><p>The number of polynomial terms to take into account (half the
+number of items in <em class="parameter"><code>term_powers</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>term_powers</p></td>
+<td class="parameter_description"><p>Array of size 2*<em class="parameter"><code>nterms</code></em>
+describing the fitter terms.  Each
+terms is described by a couple of powers (powerx, powery).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeffs</p></td>
+<td class="parameter_description"><p>Array of size <em class="parameter"><code>nterms</code></em>
+to store with the coefficients.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-11.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-subtract-poly"></a><h3>gwy_data_field_area_subtract_poly ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_subtract_poly (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nterms</code></em>,
+                                   <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *term_powers</code></em>,
+                                   <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coeffs</code></em>);</pre>
+<p>Subtract a given set of polynomial terms from a rectangular part of a data
+field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-subtract-poly.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nterms</p></td>
+<td class="parameter_description"><p>The number of polynomial terms to take into account (half the
+number of items in <em class="parameter"><code>term_powers</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>term_powers</p></td>
+<td class="parameter_description"><p>Array of size 2*<em class="parameter"><code>nterms</code></em>
+describing the fitted terms.  Each
+terms is described by a couple of powers (powerx, powery).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeffs</p></td>
+<td class="parameter_description"><p>Array of size <em class="parameter"><code>nterms</code></em>
+to store with the coefficients.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-11.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-fit-local-planes"></a><h3>gwy_data_field_area_fit_local_planes ()</h3>
+<pre class="programlisting"><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="returnvalue">GwyDataField</span></a> **
+gwy_data_field_area_fit_local_planes (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nresults</code></em>,
+                                      <em class="parameter"><code>const <a class="link" href="libgwyprocess-gwyprocessenums.html#GwyPlaneFitQuantity" title="enum GwyPlaneFitQuantity"><span class="type">GwyPlaneFitQuantity</span></a> *types</code></em>,
+                                      <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> **results</code></em>);</pre>
+<p>Fits a plane through neighbourhood of each sample in a rectangular part
+of a data field.</p>
+<p>The sample is always in the origin of its local (x,y) coordinate system,
+even if the neighbourhood is not centered about it (e.g. because sample
+is on the edge of data field).  Z-coordinate is however not centered,
+that is <em class="parameter"><code>GWY_PLANE_FIT_A</code></em>
+ is normal mean value.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-fit-local-planes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Neighbourhood size (must be at least 2).  It is centered around
+each pixel, unless <em class="parameter"><code>size</code></em>
+is even when it sticks to the right.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nresults</p></td>
+<td class="parameter_description"><p>The number of requested quantities.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>types</p></td>
+<td class="parameter_description"><p>The types of requested quantities.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>An array to store quantities to, may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to allocate a new
+one which must be freed by caller then.  If any item is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>,
+a new data field is allocated for it, existing data fields
+are resized to <em class="parameter"><code>width</code></em>
+x <em class="parameter"><code>height</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-area-fit-local-planes.returns"></a><h4>Returns</h4>
+<p> An array of data fields with requested quantities, that is
+<em class="parameter"><code>results</code></em>
+unless it was <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> and a new array was allocated.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-local-plane-quantity"></a><h3>gwy_data_field_area_local_plane_quantity ()</h3>
+<pre class="programlisting"><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="returnvalue">GwyDataField</span></a> *
+gwy_data_field_area_local_plane_quantity
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyPlaneFitQuantity" title="enum GwyPlaneFitQuantity"><span class="type">GwyPlaneFitQuantity</span></a> type</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *result</code></em>);</pre>
+<p>Convenience function to get just one quantity from
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-area-fit-local-planes" title="gwy_data_field_area_fit_local_planes ()"><code class="function">gwy_data_field_area_fit_local_planes()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-local-plane-quantity.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Neighbourhood size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>The type of requested quantity.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>A data field to store result to, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to allocate a new one.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-area-local-plane-quantity.returns"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>result</code></em>
+if it isn't <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, otherwise a newly allocated data field.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-fit-local-planes"></a><h3>gwy_data_field_fit_local_planes ()</h3>
+<pre class="programlisting"><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="returnvalue">GwyDataField</span></a> **
+gwy_data_field_fit_local_planes (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nresults</code></em>,
+                                 <em class="parameter"><code>const <a class="link" href="libgwyprocess-gwyprocessenums.html#GwyPlaneFitQuantity" title="enum GwyPlaneFitQuantity"><span class="type">GwyPlaneFitQuantity</span></a> *types</code></em>,
+                                 <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> **results</code></em>);</pre>
+<p>Fits a plane through neighbourhood of each sample in a data field.</p>
+<p>See <a class="link" href="libgwyprocess-level.html#gwy-data-field-area-fit-local-planes" title="gwy_data_field_area_fit_local_planes ()"><code class="function">gwy_data_field_area_fit_local_planes()</code></a> for details.</p>
+<div class="refsect3">
+<a name="gwy-data-field-fit-local-planes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Neighbourhood size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nresults</p></td>
+<td class="parameter_description"><p>The number of requested quantities.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>types</p></td>
+<td class="parameter_description"><p>The types of requested quantities.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>An array to store quantities to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-fit-local-planes.returns"></a><h4>Returns</h4>
+<p> An array of data fields with requested quantities.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-local-plane-quantity"></a><h3>gwy_data_field_local_plane_quantity ()</h3>
+<pre class="programlisting"><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="returnvalue">GwyDataField</span></a> *
+gwy_data_field_local_plane_quantity (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>,
+                                     <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyPlaneFitQuantity" title="enum GwyPlaneFitQuantity"><span class="type">GwyPlaneFitQuantity</span></a> type</code></em>,
+                                     <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *result</code></em>);</pre>
+<p>Convenience function to get just one quantity from
+<a class="link" href="libgwyprocess-level.html#gwy-data-field-fit-local-planes" title="gwy_data_field_fit_local_planes ()"><code class="function">gwy_data_field_fit_local_planes()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-data-field-local-plane-quantity.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Neighbourhood size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>The type of requested quantity.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>A data field to store result to, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to allocate a new one.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-local-plane-quantity.returns"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>result</code></em>
+if it isn't <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, otherwise a newly allocated data field.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

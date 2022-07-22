@@ -1,0 +1,775 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyColorAxis: Gwyddion Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Widgets Library Reference Manual">
+<link rel="up" href="DataWindowWidgets.html" title="Data Windows and Views">
+<link rel="prev" href="GwyLayerMask.html" title="GwyLayerMask">
+<link rel="next" href="standard-vector-layers.html" title="Standard Vector Layers">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyColorAxis.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyColorAxis.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GwyColorAxis.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GwyColorAxis.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="DataWindowWidgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GwyLayerMask.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="standard-vector-layers.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyColorAxis"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyColorAxis.top_of_page"></a>GwyColorAxis</span></h2>
+<p>GwyColorAxis — Simple axis with a false color scale</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyColorAxis.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="GwyColorAxis.html#GwyColorAxisMapFunc" title="GwyColorAxisMapFunc ()">*GwyColorAxisMapFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyColorAxis.html#gwy-color-axis-new" title="gwy_color_axis_new ()">gwy_color_axis_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyColorAxis.html#gwy-color-axis-new-with-range" title="gwy_color_axis_new_with_range ()">gwy_color_axis_new_with_range</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyColorAxis.html#gwy-color-axis-get-range" title="gwy_color_axis_get_range ()">gwy_color_axis_get_range</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyColorAxis.html#gwy-color-axis-set-range" title="gwy_color_axis_set_range ()">gwy_color_axis_set_range</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyColorAxis.html#gwy-color-axis-get-si-unit" title="gwy_color_axis_get_si_unit ()">gwy_color_axis_get_si_unit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyColorAxis.html#gwy-color-axis-set-si-unit" title="gwy_color_axis_set_si_unit ()">gwy_color_axis_set_si_unit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyColorAxis.html#gwy-color-axis-set-gradient" title="gwy_color_axis_set_gradient ()">gwy_color_axis_set_gradient</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyColorAxis.html#gwy-color-axis-get-gradient" title="gwy_color_axis_get_gradient ()">gwy_color_axis_get_gradient</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwydgets-gwydgetenums.html#GwyTicksStyle" title="enum GwyTicksStyle"><span class="returnvalue">GwyTicksStyle</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyColorAxis.html#gwy-color-axis-get-ticks-style" title="gwy_color_axis_get_ticks_style ()">gwy_color_axis_get_ticks_style</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyColorAxis.html#gwy-color-axis-set-ticks-style" title="gwy_color_axis_set_ticks_style ()">gwy_color_axis_set_ticks_style</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyColorAxis.html#gwy-color-axis-get-labels-visible" title="gwy_color_axis_get_labels_visible ()">gwy_color_axis_get_labels_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyColorAxis.html#gwy-color-axis-set-labels-visible" title="gwy_color_axis_set_labels_visible ()">gwy_color_axis_set_labels_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyColorAxis.html#gwy-color-axis-set-tick-map-func" title="gwy_color_axis_set_tick_map_func ()">gwy_color_axis_set_tick_map_func</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyColorAxis.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="GwyColorAxis.html#GwyColorAxis--gradient" title="The “gradient” property">gradient</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GwyColorAxis.html#GwyColorAxis--labels-visible" title="The “labels-visible” property">labels-visible</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://developer.gnome.org/doc/API/2.0/gtk/gtk3-Standard-Enumerations.html#GtkOrientation"><span class="type">GtkOrientation</span></a></td>
+<td class="property_name"><a class="link" href="GwyColorAxis.html#GwyColorAxis--orientation" title="The “orientation” property">orientation</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *</td>
+<td class="property_name"><a class="link" href="GwyColorAxis.html#GwyColorAxis--si-unit" title="The “si-unit” property">si-unit</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="libgwydgets-gwydgetenums.html#GwyTicksStyle" title="enum GwyTicksStyle"><span class="type">GwyTicksStyle</span></a></td>
+<td class="property_name"><a class="link" href="GwyColorAxis.html#GwyColorAxis--ticks-style" title="The “ticks-style” property">ticks-style</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyColorAxis.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyColorAxis.html#GwyColorAxis-struct" title="struct GwyColorAxis">GwyColorAxis</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyColorAxis.html#GwyColorAxisClass" title="struct GwyColorAxisClass">GwyColorAxisClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyColorAxis.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkObject.html#GtkObject-struct">GtkObject</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct">GtkWidget</a>
+                <span class="lineart">╰──</span> GwyColorAxis
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyColorAxis.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GwyColorAxis implements
+ AtkImplementorIface and  <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkBuildable.html#GtkBuildable-struct">GtkBuildable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwyColorAxis.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwydgets/gwydgets.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyColorAxis.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="GwyColorAxis.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GwyColorAxisMapFunc"></a><h3>GwyColorAxisMapFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GwyColorAxisMapFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="GwyColorAxis.html" title="GwyColorAxis"><span class="type">GwyColorAxis</span></a> *axis</code></em>,
+                        <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *z</code></em>,
+                        <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *mapped</code></em>,
+                        <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                        <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Type of color axis non-linear tick mapping function.</p>
+<div class="refsect3">
+<a name="GwyColorAxisMapFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>axis</p></td>
+<td class="parameter_description"><p>A color axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>z</p></td>
+<td class="parameter_description"><p>Array of length <em class="parameter"><code>n</code></em>
+of tick values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mapped</p></td>
+<td class="parameter_description"><p>Array of length <em class="parameter"><code>n</code></em>
+where values mapped to [0,1] should be placed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Length of <em class="parameter"><code>z</code></em>
+and <em class="parameter"><code>mapped</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>Data passed to <a class="link" href="GwyColorAxis.html#gwy-color-axis-set-tick-map-func" title="gwy_color_axis_set_tick_map_func ()"><code class="function">gwy_color_axis_set_tick_map_func()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-39.html#api-index-2.39">2.39</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-color-axis-new"></a><h3>gwy_color_axis_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_color_axis_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/gtk3-Standard-Enumerations.html#GtkOrientation"><span class="type">GtkOrientation</span></a> orientation</code></em>);</pre>
+<p>Creates a new color axis.</p>
+<div class="refsect3">
+<a name="gwy-color-axis-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>orientation</p></td>
+<td class="parameter_description"><p>The orientation of the axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-color-axis-new.returns"></a><h4>Returns</h4>
+<p> The newly created color axis as a <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-color-axis-new-with-range"></a><h3>gwy_color_axis_new_with_range ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_color_axis_new_with_range (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/gtk3-Standard-Enumerations.html#GtkOrientation"><span class="type">GtkOrientation</span></a> orientation</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> min</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> max</code></em>);</pre>
+<p>Creates a new color axis.</p>
+<div class="refsect3">
+<a name="gwy-color-axis-new-with-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>orientation</p></td>
+<td class="parameter_description"><p>The orientation of the axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>min</p></td>
+<td class="parameter_description"><p>The minimum.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max</p></td>
+<td class="parameter_description"><p>The maximum.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-color-axis-new-with-range.returns"></a><h4>Returns</h4>
+<p> The newly created color axis as a <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-color-axis-get-range"></a><h3>gwy_color_axis_get_range ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_color_axis_get_range (<em class="parameter"><code><a class="link" href="GwyColorAxis.html" title="GwyColorAxis"><span class="type">GwyColorAxis</span></a> *axis</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *min</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *max</code></em>);</pre>
+<p>Gets the range of a color axis.</p>
+<div class="refsect3">
+<a name="gwy-color-axis-get-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>axis</p></td>
+<td class="parameter_description"><p>A color axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>min</p></td>
+<td class="parameter_description"><p>Location to store the range maximum (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max</p></td>
+<td class="parameter_description"><p>Location to store the range minimum (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-color-axis-set-range"></a><h3>gwy_color_axis_set_range ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_color_axis_set_range (<em class="parameter"><code><a class="link" href="GwyColorAxis.html" title="GwyColorAxis"><span class="type">GwyColorAxis</span></a> *axis</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> min</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> max</code></em>);</pre>
+<p>Sets the range of a color axis.</p>
+<div class="refsect3">
+<a name="gwy-color-axis-set-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>axis</p></td>
+<td class="parameter_description"><p>A color axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>min</p></td>
+<td class="parameter_description"><p>The range minimum.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max</p></td>
+<td class="parameter_description"><p>The range maximum.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-color-axis-get-si-unit"></a><h3>gwy_color_axis_get_si_unit ()</h3>
+<pre class="programlisting"><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_color_axis_get_si_unit (<em class="parameter"><code><a class="link" href="GwyColorAxis.html" title="GwyColorAxis"><span class="type">GwyColorAxis</span></a> *axis</code></em>);</pre>
+<p>Gets the SI unit a color axis displays.</p>
+<div class="refsect3">
+<a name="gwy-color-axis-get-si-unit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>axis</p></td>
+<td class="parameter_description"><p>A color axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-color-axis-get-si-unit.returns"></a><h4>Returns</h4>
+<p> The SI unit.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-color-axis-set-si-unit"></a><h3>gwy_color_axis_set_si_unit ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_color_axis_set_si_unit (<em class="parameter"><code><a class="link" href="GwyColorAxis.html" title="GwyColorAxis"><span class="type">GwyColorAxis</span></a> *axis</code></em>,
+                            <em class="parameter"><code><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *unit</code></em>);</pre>
+<p>Sets the SI unit a color axis displays.</p>
+<div class="refsect3">
+<a name="gwy-color-axis-set-si-unit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>axis</p></td>
+<td class="parameter_description"><p>A color axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>unit</p></td>
+<td class="parameter_description"><p>A SI unit to display next to minimum and maximum value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-color-axis-set-gradient"></a><h3>gwy_color_axis_set_gradient ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_color_axis_set_gradient (<em class="parameter"><code><a class="link" href="GwyColorAxis.html" title="GwyColorAxis"><span class="type">GwyColorAxis</span></a> *axis</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *gradient</code></em>);</pre>
+<p>Sets the color gradient a color axis should use.</p>
+<div class="refsect3">
+<a name="gwy-color-axis-set-gradient.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>axis</p></td>
+<td class="parameter_description"><p>A color axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gradient</p></td>
+<td class="parameter_description"><p>Name of gradient <em class="parameter"><code>axis</code></em>
+should use.  It should exist.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-color-axis-get-gradient"></a><h3>gwy_color_axis_get_gradient ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_color_axis_get_gradient (<em class="parameter"><code><a class="link" href="GwyColorAxis.html" title="GwyColorAxis"><span class="type">GwyColorAxis</span></a> *axis</code></em>);</pre>
+<p>Gets the color gradient a color axis uses.</p>
+<div class="refsect3">
+<a name="gwy-color-axis-get-gradient.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>axis</p></td>
+<td class="parameter_description"><p>A color axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-color-axis-get-gradient.returns"></a><h4>Returns</h4>
+<p> The color gradient.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-color-axis-get-ticks-style"></a><h3>gwy_color_axis_get_ticks_style ()</h3>
+<pre class="programlisting"><a class="link" href="libgwydgets-gwydgetenums.html#GwyTicksStyle" title="enum GwyTicksStyle"><span class="returnvalue">GwyTicksStyle</span></a>
+gwy_color_axis_get_ticks_style (<em class="parameter"><code><a class="link" href="GwyColorAxis.html" title="GwyColorAxis"><span class="type">GwyColorAxis</span></a> *axis</code></em>);</pre>
+<p>Gets ticks style of a color axis.</p>
+<div class="refsect3">
+<a name="gwy-color-axis-get-ticks-style.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>axis</p></td>
+<td class="parameter_description"><p>A color axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-color-axis-get-ticks-style.returns"></a><h4>Returns</h4>
+<p> The ticks style.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-color-axis-set-ticks-style"></a><h3>gwy_color_axis_set_ticks_style ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_color_axis_set_ticks_style (<em class="parameter"><code><a class="link" href="GwyColorAxis.html" title="GwyColorAxis"><span class="type">GwyColorAxis</span></a> *axis</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwydgets-gwydgetenums.html#GwyTicksStyle" title="enum GwyTicksStyle"><span class="type">GwyTicksStyle</span></a> ticks_style</code></em>);</pre>
+<p>Sets the ticks style of a color axis.</p>
+<div class="refsect3">
+<a name="gwy-color-axis-set-ticks-style.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>axis</p></td>
+<td class="parameter_description"><p>A color axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ticks_style</p></td>
+<td class="parameter_description"><p>The ticks style to use.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-color-axis-get-labels-visible"></a><h3>gwy_color_axis_get_labels_visible ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_color_axis_get_labels_visible (<em class="parameter"><code><a class="link" href="GwyColorAxis.html" title="GwyColorAxis"><span class="type">GwyColorAxis</span></a> *axis</code></em>);</pre>
+<p>Gets the visibility of labels of a color axis.</p>
+<div class="refsect3">
+<a name="gwy-color-axis-get-labels-visible.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>axis</p></td>
+<td class="parameter_description"><p>A color axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-color-axis-get-labels-visible.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if labels are displayed, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if they are omitted.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-color-axis-set-labels-visible"></a><h3>gwy_color_axis_set_labels_visible ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_color_axis_set_labels_visible (<em class="parameter"><code><a class="link" href="GwyColorAxis.html" title="GwyColorAxis"><span class="type">GwyColorAxis</span></a> *axis</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> labels_visible</code></em>);</pre>
+<p>Sets the visibility of labels of a color axis.</p>
+<div class="refsect3">
+<a name="gwy-color-axis-set-labels-visible.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>axis</p></td>
+<td class="parameter_description"><p>A color axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>labels_visible</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to display labels with minimum and maximum values,
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to display no labels.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-color-axis-set-tick-map-func"></a><h3>gwy_color_axis_set_tick_map_func ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_color_axis_set_tick_map_func (<em class="parameter"><code><a class="link" href="GwyColorAxis.html" title="GwyColorAxis"><span class="type">GwyColorAxis</span></a> *axis</code></em>,
+                                  <em class="parameter"><code><a class="link" href="GwyColorAxis.html#GwyColorAxisMapFunc" title="GwyColorAxisMapFunc ()"><span class="type">GwyColorAxisMapFunc</span></a> func</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Set the tick mapping function for a color axis.</p>
+<p>The axis calculates tick positions as for the linear axis and then places
+them non-linearly using <em class="parameter"><code>func</code></em>
+.  Hence a mapping function should be used with
+ticks mode <a class="link" href="libgwydgets-gwydgetenums.html#GWY-TICKS-STYLE-UNLABELLED:CAPS"><code class="literal">GWY_TICKS_STYLE_UNLABELLED</code></a> because minimum tick spacing is not
+guaranteed.</p>
+<div class="refsect3">
+<a name="gwy-color-axis-set-tick-map-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>axis</p></td>
+<td class="parameter_description"><p>A color axis.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>func</p></td>
+<td class="parameter_description"><p>Tick mapping function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>Data to pass to <em class="parameter"><code>func</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-39.html#api-index-2.39">2.39</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyColorAxis.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyColorAxis-struct"></a><h3>struct GwyColorAxis</h3>
+<pre class="programlisting">struct GwyColorAxis;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyColorAxisClass"></a><h3>struct GwyColorAxisClass</h3>
+<pre class="programlisting">struct GwyColorAxisClass {
+    GtkWidgetClass parent_class;
+
+    void (*reserved1)(void);
+    void (*reserved2)(void);
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyColorAxis.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GwyColorAxis--gradient"></a><h3>The <code class="literal">“gradient”</code> property</h3>
+<pre class="programlisting">  “gradient”                 <span class="type">char</span> *</pre>
+<p>Name of color gradient the axis displays.</p>
+<p>Owner: GwyColorAxis</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyColorAxis--labels-visible"></a><h3>The <code class="literal">“labels-visible”</code> property</h3>
+<pre class="programlisting">  “labels-visible”           <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether minimum and maximum labels are visible.</p>
+<p>Owner: GwyColorAxis</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyColorAxis--orientation"></a><h3>The <code class="literal">“orientation”</code> property</h3>
+<pre class="programlisting">  “orientation”              <a href="/usr/share/gtk-doc/html/gtk3/gtk3-Standard-Enumerations.html#GtkOrientation"><span class="type">GtkOrientation</span></a></pre>
+<p>Axis orientation.</p>
+<p>Owner: GwyColorAxis</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: GTK_ORIENTATION_VERTICAL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyColorAxis--si-unit"></a><h3>The <code class="literal">“si-unit”</code> property</h3>
+<pre class="programlisting">  “si-unit”                  <a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *</pre>
+<p>SI unit to display in labels.</p>
+<p>Owner: GwyColorAxis</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyColorAxis--ticks-style"></a><h3>The <code class="literal">“ticks-style”</code> property</h3>
+<pre class="programlisting">  “ticks-style”              <a class="link" href="libgwydgets-gwydgetenums.html#GwyTicksStyle" title="enum GwyTicksStyle"><span class="type">GwyTicksStyle</span></a></pre>
+<p>The style of axis ticks.</p>
+<p>Owner: GwyColorAxis</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GWY_TICKS_STYLE_AUTO</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyColorAxis.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="GwyAxis.html" title="GwyAxis"><span class="type">GwyAxis</span></a> -- Axis for use in graphs,
+<a class="link" href="GwyRuler.html" title="GwyRuler"><span class="type">GwyRuler</span></a> -- Horizontal and vertical rulers</p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

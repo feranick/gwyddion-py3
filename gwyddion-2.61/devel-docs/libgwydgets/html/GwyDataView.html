@@ -1,0 +1,1636 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyDataView: Gwyddion Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Widgets Library Reference Manual">
+<link rel="up" href="DataWindowWidgets.html" title="Data Windows and Views">
+<link rel="prev" href="GwyDataWindow.html" title="GwyDataWindow">
+<link rel="next" href="GwyDataViewLayer.html" title="GwyDataViewLayer">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyDataView.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyDataView.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GwyDataView.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GwyDataView.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GwyDataView.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="DataWindowWidgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GwyDataWindow.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyDataViewLayer.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyDataView"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyDataView.top_of_page"></a>GwyDataView</span></h2>
+<p>GwyDataView — Data field displaying area</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyDataView.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-new" title="gwy_data_view_new ()">gwy_data_view_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyPixmapLayer.html" title="GwyPixmapLayer"><span class="returnvalue">GwyPixmapLayer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-get-base-layer" title="gwy_data_view_get_base_layer ()">gwy_data_view_get_base_layer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-set-base-layer" title="gwy_data_view_set_base_layer ()">gwy_data_view_set_base_layer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyPixmapLayer.html" title="GwyPixmapLayer"><span class="returnvalue">GwyPixmapLayer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-get-alpha-layer" title="gwy_data_view_get_alpha_layer ()">gwy_data_view_get_alpha_layer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-set-alpha-layer" title="gwy_data_view_set_alpha_layer ()">gwy_data_view_set_alpha_layer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="returnvalue">GwyVectorLayer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-get-top-layer" title="gwy_data_view_get_top_layer ()">gwy_data_view_get_top_layer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-set-top-layer" title="gwy_data_view_set_top_layer ()">gwy_data_view_set_top_layer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-get-data-prefix" title="gwy_data_view_get_data_prefix ()">gwy_data_view_get_data_prefix</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-set-data-prefix" title="gwy_data_view_set_data_prefix ()">gwy_data_view_set_data_prefix</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-get-hexcess" title="gwy_data_view_get_hexcess ()">gwy_data_view_get_hexcess</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-get-vexcess" title="gwy_data_view_get_vexcess ()">gwy_data_view_get_vexcess</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-set-zoom" title="gwy_data_view_set_zoom ()">gwy_data_view_set_zoom</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-get-zoom" title="gwy_data_view_get_zoom ()">gwy_data_view_get_zoom</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-get-real-zoom" title="gwy_data_view_get_real_zoom ()">gwy_data_view_get_real_zoom</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwyContainer.html#GwyContainer-struct"><span class="returnvalue">GwyContainer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-get-data" title="gwy_data_view_get_data ()">gwy_data_view_get_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-coords-xy-clamp" title="gwy_data_view_coords_xy_clamp ()">gwy_data_view_coords_xy_clamp</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-coords-xy-cut-line" title="gwy_data_view_coords_xy_cut_line ()">gwy_data_view_coords_xy_cut_line</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-coords-xy-to-real" title="gwy_data_view_coords_xy_to_real ()">gwy_data_view_coords_xy_to_real</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-coords-real-to-xy" title="gwy_data_view_coords_real_to_xy ()">gwy_data_view_coords_real_to_xy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-coords-real-to-xy-float" title="gwy_data_view_coords_real_to_xy_float ()">gwy_data_view_coords_real_to_xy_float</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-get-xmeasure" title="gwy_data_view_get_xmeasure ()">gwy_data_view_get_xmeasure</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-get-ymeasure" title="gwy_data_view_get_ymeasure ()">gwy_data_view_get_ymeasure</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-get-pixel-data-sizes" title="gwy_data_view_get_pixel_data_sizes ()">gwy_data_view_get_pixel_data_sizes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-get-real-data-sizes" title="gwy_data_view_get_real_data_sizes ()">gwy_data_view_get_real_data_sizes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-get-real-data-offsets" title="gwy_data_view_get_real_data_offsets ()">gwy_data_view_get_real_data_offsets</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-get-metric" title="gwy_data_view_get_metric ()">gwy_data_view_get_metric</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GdkPixbuf</span> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-get-pixbuf" title="gwy_data_view_get_pixbuf ()">gwy_data_view_get_pixbuf</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GdkPixbuf</span> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataView.html#gwy-data-view-export-pixbuf" title="gwy_data_view_export_pixbuf ()">gwy_data_view_export_pixbuf</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyDataView.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="GwyDataView.html#GwyDataView--data-prefix" title="The “data-prefix” property">data-prefix</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">double</span></td>
+<td class="property_name"><a class="link" href="GwyDataView.html#GwyDataView--zoom" title="The “zoom” property">zoom</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyDataView.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyDataView.html#GwyDataView-layer-plugged" title="The “layer-plugged” signal">layer-plugged</a></td>
+<td class="signal_flags"><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyDataView.html#GwyDataView-layer-unplugged" title="The “layer-unplugged” signal">layer-unplugged</a></td>
+<td class="signal_flags"><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyDataView.html#GwyDataView-redrawn" title="The “redrawn” signal">redrawn</a></td>
+<td class="signal_flags"><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyDataView.html#GwyDataView-resized" title="The “resized” signal">resized</a></td>
+<td class="signal_flags"><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyDataView.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyDataView.html#GwyDataView-struct" title="struct GwyDataView">GwyDataView</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyDataView.html#GwyDataViewClass" title="struct GwyDataViewClass">GwyDataViewClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyDataView.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkObject.html#GtkObject-struct">GtkObject</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct">GtkWidget</a>
+                <span class="lineart">╰──</span> GwyDataView
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyDataView.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GwyDataView implements
+ AtkImplementorIface and  <a href="/usr/share/gtk-doc/html/gtk3/GtkBuildable.html#GtkBuildable-struct">GtkBuildable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwyDataView.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwydgets/gwydgets.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyDataView.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> is a basic two-dimensional data display widget.  The actual
+rendering is performed by one or more <a class="link" href="GwyDataViewLayer.html" title="GwyDataViewLayer"><span class="type">GwyDataViewLayer</span></a>'s, pluggable into
+the data view.  Each layer generally displays different data field from
+the container supplied to <a class="link" href="GwyDataView.html#gwy-data-view-new" title="gwy_data_view_new ()"><code class="function">gwy_data_view_new()</code></a>.</p>
+<p>A base layer (set with <a class="link" href="GwyDataView.html#gwy-data-view-set-base-layer" title="gwy_data_view_set_base_layer ()"><code class="function">gwy_data_view_set_base_layer()</code></a>) must be always
+present, and normally it is always a <a class="link" href="GwyLayerBasic.html" title="GwyLayerBasic"><span class="type">GwyLayerBasic</span></a>.</p>
+<p>Other layers are optional.  Middle, or alpha, layer (set with
+<a class="link" href="GwyDataView.html#gwy-data-view-set-alpha-layer" title="gwy_data_view_set_alpha_layer ()"><code class="function">gwy_data_view_set_alpha_layer()</code></a>) used to display masks is normally always
+a <a class="link" href="GwyLayerMask.html" title="GwyLayerMask"><span class="type">GwyLayerMask</span></a>.  Top layer, if present, is a <a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="type">GwyVectorLayer</span></a> allowing to
+draw selections with mouse and otherwise interace with the view, it is set
+with <a class="link" href="GwyDataView.html#gwy-data-view-set-top-layer" title="gwy_data_view_set_top_layer ()"><code class="function">gwy_data_view_set_top_layer()</code></a>.</p>
+<p>The size of a data view is affected by two factors: zoom and outer
+constraints. If an explicit size set by window manager or by Gtk+ means, the
+view scales the displayed data to fit into this size (while keeping x/y
+ratio). Zoom controlls the size a data view requests, and can be set with
+<a class="link" href="GwyDataView.html#gwy-data-view-set-zoom" title="gwy_data_view_set_zoom ()"><code class="function">gwy_data_view_set_zoom()</code></a>.</p>
+<p>Several helper functions are available for transformation between screen
+coordinates in the view and physical coordinates in the displayed data
+field: <a class="link" href="GwyDataView.html#gwy-data-view-coords-xy-to-real" title="gwy_data_view_coords_xy_to_real ()"><code class="function">gwy_data_view_coords_xy_to_real()</code></a>, <a class="link" href="GwyDataView.html#gwy-data-view-get-xmeasure" title="gwy_data_view_get_xmeasure ()"><code class="function">gwy_data_view_get_xmeasure()</code></a>,
+<a class="link" href="GwyDataView.html#gwy-data-view-get-hexcess" title="gwy_data_view_get_hexcess ()"><code class="function">gwy_data_view_get_hexcess()</code></a>, and others. Physical coordinates are always
+taken from data field displayed by base layer.</p>
+</div>
+<div class="refsect1">
+<a name="GwyDataView.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-data-view-new"></a><h3>gwy_data_view_new ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_data_view_new (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>);</pre>
+<p>Creates a new data-displaying widget for <em class="parameter"><code>data</code></em>
+.</p>
+<p>A newly created <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> doesn't display anything.  You have to add
+some layers to it, at least a base layer with
+<a class="link" href="GwyDataView.html#gwy-data-view-set-base-layer" title="gwy_data_view_set_base_layer ()"><code class="function">gwy_data_view_set_base_layer()</code></a>, and possibly others with
+<a class="link" href="GwyDataView.html#gwy-data-view-set-alpha-layer" title="gwy_data_view_set_alpha_layer ()"><code class="function">gwy_data_view_set_alpha_layer()</code></a> and <a class="link" href="GwyDataView.html#gwy-data-view-set-top-layer" title="gwy_data_view_set_top_layer ()"><code class="function">gwy_data_view_set_top_layer()</code></a>.</p>
+<p>The top layer is special. It must be a vector layer and can receive
+mouse and keyboard events.</p>
+<p>The base layer it also special. It must be always present, and must not be
+transparent or vector.</p>
+<div class="refsect3">
+<a name="gwy-data-view-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> containing the data to display.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-view-new.returns"></a><h4>Returns</h4>
+<p> A newly created data view as a <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-get-base-layer"></a><h3>gwy_data_view_get_base_layer ()</h3>
+<pre class="programlisting"><a class="link" href="GwyPixmapLayer.html" title="GwyPixmapLayer"><span class="returnvalue">GwyPixmapLayer</span></a> *
+gwy_data_view_get_base_layer (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>);</pre>
+<p>Returns the base layer this data view currently uses.</p>
+<p>A base layer should be always present.</p>
+<div class="refsect3">
+<a name="gwy-data-view-get-base-layer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-view-get-base-layer.returns"></a><h4>Returns</h4>
+<p> The currently used base layer.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-set-base-layer"></a><h3>gwy_data_view_set_base_layer ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_view_set_base_layer (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>,
+                              <em class="parameter"><code><a class="link" href="GwyPixmapLayer.html" title="GwyPixmapLayer"><span class="type">GwyPixmapLayer</span></a> *layer</code></em>);</pre>
+<p>Plugs <em class="parameter"><code>layer</code></em>
+ to <em class="parameter"><code>data_view</code></em>
+ as the base layer.</p>
+<p>If another base layer is present, it's unplugged.</p>
+<p>The layer must not be a vector layer.  Theoretically, it can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to
+use no base layer, but then <em class="parameter"><code>data_view</code></em>
+ will probably display garbage.</p>
+<div class="refsect3">
+<a name="gwy-data-view-set-base-layer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>layer</p></td>
+<td class="parameter_description"><p>A layer to be used as the base layer for <em class="parameter"><code>data_view</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-get-alpha-layer"></a><h3>gwy_data_view_get_alpha_layer ()</h3>
+<pre class="programlisting"><a class="link" href="GwyPixmapLayer.html" title="GwyPixmapLayer"><span class="returnvalue">GwyPixmapLayer</span></a> *
+gwy_data_view_get_alpha_layer (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>);</pre>
+<p>Returns the alpha layer this data view currently uses, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none
+is present.</p>
+<div class="refsect3">
+<a name="gwy-data-view-get-alpha-layer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-view-get-alpha-layer.returns"></a><h4>Returns</h4>
+<p> The currently used alpha layer.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-set-alpha-layer"></a><h3>gwy_data_view_set_alpha_layer ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_view_set_alpha_layer (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>,
+                               <em class="parameter"><code><a class="link" href="GwyPixmapLayer.html" title="GwyPixmapLayer"><span class="type">GwyPixmapLayer</span></a> *layer</code></em>);</pre>
+<p>Plugs <em class="parameter"><code>layer</code></em>
+ to <em class="parameter"><code>data_view</code></em>
+ as the alpha layer.</p>
+<p>If another alpha layer is present, it's unplugged.</p>
+<p>The layer must not be a vector layer.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, meaning no alpha
+layer is to be used.</p>
+<div class="refsect3">
+<a name="gwy-data-view-set-alpha-layer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>layer</p></td>
+<td class="parameter_description"><p>A layer to be used as the alpha layer for <em class="parameter"><code>data_view</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-get-top-layer"></a><h3>gwy_data_view_get_top_layer ()</h3>
+<pre class="programlisting"><a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="returnvalue">GwyVectorLayer</span></a> *
+gwy_data_view_get_top_layer (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>);</pre>
+<p>Returns the top layer this data view currently uses, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none
+is present.</p>
+<div class="refsect3">
+<a name="gwy-data-view-get-top-layer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-view-get-top-layer.returns"></a><h4>Returns</h4>
+<p> The currently used top layer.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-set-top-layer"></a><h3>gwy_data_view_set_top_layer ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_view_set_top_layer (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>,
+                             <em class="parameter"><code><a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="type">GwyVectorLayer</span></a> *layer</code></em>);</pre>
+<p>Plugs <em class="parameter"><code>layer</code></em>
+ to <em class="parameter"><code>data_view</code></em>
+ as the top layer.</p>
+<p>If another top layer is present, it's unplugged.</p>
+<p>The layer must be a vector layer.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, meaning no top
+layer is to be used.</p>
+<div class="refsect3">
+<a name="gwy-data-view-set-top-layer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>layer</p></td>
+<td class="parameter_description"><p>A layer to be used as the top layer for <em class="parameter"><code>data_view</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-get-data-prefix"></a><h3>gwy_data_view_get_data_prefix ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_data_view_get_data_prefix (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>);</pre>
+<p>Gets the prefix for the container data channel that the data view is
+currently set to display.</p>
+<div class="refsect3">
+<a name="gwy-data-view-get-data-prefix.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-view-get-data-prefix.returns"></a><h4>Returns</h4>
+<p> The container data prefix (eg. "/0/data").</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-set-data-prefix"></a><h3>gwy_data_view_set_data_prefix ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_view_set_data_prefix (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *prefix</code></em>);</pre>
+<p>Sets the prefix for the container data channel to display in a data view.</p>
+<p>This function only affects where the data view itself takes parameters
+from, it does not affect layer keys.</p>
+<div class="refsect3">
+<a name="gwy-data-view-set-data-prefix.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prefix</p></td>
+<td class="parameter_description"><p>Container prefix for data  (eg. "/0/data").</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-get-hexcess"></a><h3>gwy_data_view_get_hexcess ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_view_get_hexcess (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>);</pre>
+<p>Return the horizontal excess of widget size to data size.</p>
+<p>Do not use.  Only useful for <a class="link" href="GwyDataWindow.html" title="GwyDataWindow"><span class="type">GwyDataWindow</span></a> implementation.</p>
+<div class="refsect3">
+<a name="gwy-data-view-get-hexcess.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-view-get-hexcess.returns"></a><h4>Returns</h4>
+<p> The execess.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-get-vexcess"></a><h3>gwy_data_view_get_vexcess ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_view_get_vexcess (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>);</pre>
+<p>Return the vertical excess of widget size to data size.</p>
+<p>Do not use.  Only useful for <a class="link" href="GwyDataWindow.html" title="GwyDataWindow"><span class="type">GwyDataWindow</span></a> implementation.</p>
+<div class="refsect3">
+<a name="gwy-data-view-get-vexcess.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-view-get-vexcess.returns"></a><h4>Returns</h4>
+<p> The execess.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-set-zoom"></a><h3>gwy_data_view_set_zoom ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_view_set_zoom (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> zoom</code></em>);</pre>
+<p>Sets zoom of <em class="parameter"><code>data_view</code></em>
+ to <em class="parameter"><code>zoom</code></em>
+.</p>
+<p>Zoom greater than 1 means larger image on screen and vice versa.</p>
+<p>Note window manager can prevent the window from resize and thus the zoom
+from change.</p>
+<div class="refsect3">
+<a name="gwy-data-view-set-zoom.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>zoom</p></td>
+<td class="parameter_description"><p>A new zoom value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-get-zoom"></a><h3>gwy_data_view_get_zoom ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_view_get_zoom (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>);</pre>
+<p>Returns current ideal zoom of a data view.</p>
+<p>More precisely the zoom value requested by <a class="link" href="GwyDataView.html#gwy-data-view-set-zoom" title="gwy_data_view_set_zoom ()"><code class="function">gwy_data_view_set_zoom()</code></a>, if
+it's in use (real zoom may differ a bit due to pixel rounding).  If zoom
+was set by explicite widget size change, real and requested zoom are
+considered to be the same.</p>
+<p>When a resize is queued, the new zoom value is returned.</p>
+<p>In other words, this is the zoom <em class="parameter"><code>data_view</code></em>
+ would like to have.  Use
+<a class="link" href="GwyDataView.html#gwy-data-view-get-real-zoom" title="gwy_data_view_get_real_zoom ()"><code class="function">gwy_data_view_get_real_zoom()</code></a> to get the real zoom.</p>
+<div class="refsect3">
+<a name="gwy-data-view-get-zoom.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-view-get-zoom.returns"></a><h4>Returns</h4>
+<p> The zoom as a ratio between ideal displayed size and base data
+field size.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-get-real-zoom"></a><h3>gwy_data_view_get_real_zoom ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_view_get_real_zoom (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>);</pre>
+<p>Returns current real zoom of a data view.</p>
+<p>This is the zoom value a data view may not wish to have, but was imposed
+by window manager or other constraints.  Unlike ideal zoom set by
+<a class="link" href="GwyDataView.html#gwy-data-view-set-zoom" title="gwy_data_view_set_zoom ()"><code class="function">gwy_data_view_set_zoom()</code></a>, this value cannot be set.</p>
+<p>When a resize is queued, the current (old) value is returned.</p>
+<div class="refsect3">
+<a name="gwy-data-view-get-real-zoom.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-view-get-real-zoom.returns"></a><h4>Returns</h4>
+<p> The zoom as a ratio between real displayed size and base data
+field size.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-get-data"></a><h3>gwy_data_view_get_data ()</h3>
+<pre class="programlisting"><a href="../GwyContainer.html#GwyContainer-struct"><span class="returnvalue">GwyContainer</span></a> *
+gwy_data_view_get_data (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>);</pre>
+<p>Returns the data container used by <em class="parameter"><code>data_view</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-data-view-get-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-view-get-data.returns"></a><h4>Returns</h4>
+<p> The data as a <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-coords-xy-clamp"></a><h3>gwy_data_view_coords_xy_clamp ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_view_coords_xy_clamp (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *xscr</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *yscr</code></em>);</pre>
+<p>Fixes screen coordinates <em class="parameter"><code>xscr</code></em>
+ and <em class="parameter"><code>yscr</code></em>
+ to be inside the data-displaying
+area (which can be smaller than widget size).</p>
+<div class="refsect3">
+<a name="gwy-data-view-coords-xy-clamp.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xscr</p></td>
+<td class="parameter_description"><p>A screen x-coordinate relative to widget origin.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yscr</p></td>
+<td class="parameter_description"><p>A screen y-coordinate relative to widget origin.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-coords-xy-cut-line"></a><h3>gwy_data_view_coords_xy_cut_line ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_view_coords_xy_cut_line (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *x0scr</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *y0scr</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *x1scr</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *y1scr</code></em>);</pre>
+<p>Fixes screen coordinates of line endpoints to be inside the data-displaying
+area (which can be smaller than widget size).</p>
+<div class="refsect3">
+<a name="gwy-data-view-coords-xy-cut-line.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x0scr</p></td>
+<td class="parameter_description"><p>First point screen x-coordinate relative to widget origin.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y0scr</p></td>
+<td class="parameter_description"><p>First point screen y-coordinate relative to widget origin.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x1scr</p></td>
+<td class="parameter_description"><p>Second point screen x-coordinate relative to widget origin.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y1scr</p></td>
+<td class="parameter_description"><p>Second point screen y-coordinate relative to widget origin.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-11.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-coords-xy-to-real"></a><h3>gwy_data_view_coords_xy_to_real ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_view_coords_xy_to_real (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> xscr</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> yscr</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *xreal</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *yreal</code></em>);</pre>
+<p>Recomputes screen coordinates relative to widget origin to physical
+coordinates in the sample.</p>
+<p>Note that data fields offsets are <span class="emphasis"><em>not</em></span> taken into
+account.  Coordinates <em class="parameter"><code>xreal</code></em>
+, <em class="parameter"><code>yreal</code></em>
+ are just relative coordinates to the
+top left field corner.</p>
+<div class="refsect3">
+<a name="gwy-data-view-coords-xy-to-real.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xscr</p></td>
+<td class="parameter_description"><p>A screen x-coordinate relative to widget origin.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yscr</p></td>
+<td class="parameter_description"><p>A screen y-coordinate relative to widget origin.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xreal</p></td>
+<td class="parameter_description"><p>Where the physical x-coordinate in the data sample should be stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yreal</p></td>
+<td class="parameter_description"><p>Where the physical y-coordinate in the data sample should be stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-coords-real-to-xy"></a><h3>gwy_data_view_coords_real_to_xy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_view_coords_real_to_xy (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> xreal</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> yreal</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *xscr</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *yscr</code></em>);</pre>
+<p>Recomputes physical coordinate in the sample to screen coordinate relative
+to widget origin.</p>
+<p>Note that data fields offsets are <span class="emphasis"><em>not</em></span> taken into
+account.  Coordinates <em class="parameter"><code>xreal</code></em>
+, <em class="parameter"><code>yreal</code></em>
+ are just relative coordinates to the
+top left field corner.</p>
+<div class="refsect3">
+<a name="gwy-data-view-coords-real-to-xy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xreal</p></td>
+<td class="parameter_description"><p>A physical x-coordinate in the data sample.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yreal</p></td>
+<td class="parameter_description"><p>A physical y-coordinate in the data sample.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xscr</p></td>
+<td class="parameter_description"><p>Where the screen x-coordinate relative to widget origin should be
+stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yscr</p></td>
+<td class="parameter_description"><p>Where the screen y-coordinate relative to widget origin should be
+stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-coords-real-to-xy-float"></a><h3>gwy_data_view_coords_real_to_xy_float ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_view_coords_real_to_xy_float (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> xreal</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> yreal</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *xscr</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *yscr</code></em>);</pre>
+<p>Recomputes physical coordinate in the sample to screen coordinate relative
+to widget origin, keeping them as floating point values.</p>
+<p>Note that data fields offsets are <span class="emphasis"><em>not</em></span> taken into
+account.  Coordinates <em class="parameter"><code>xreal</code></em>
+, <em class="parameter"><code>yreal</code></em>
+ are just relative coordinates to the
+top left field corner.</p>
+<div class="refsect3">
+<a name="gwy-data-view-coords-real-to-xy-float.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xreal</p></td>
+<td class="parameter_description"><p>A physical x-coordinate in the data sample.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yreal</p></td>
+<td class="parameter_description"><p>A physical y-coordinate in the data sample.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xscr</p></td>
+<td class="parameter_description"><p>Where the screen x-coordinate relative to widget origin should be
+stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yscr</p></td>
+<td class="parameter_description"><p>Where the screen y-coordinate relative to widget origin should be
+stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-get-xmeasure"></a><h3>gwy_data_view_get_xmeasure ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_view_get_xmeasure (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>);</pre>
+<p>Returns the ratio between horizontal physical lengths and horizontal
+screen lengths in pixels.</p>
+<div class="refsect3">
+<a name="gwy-data-view-get-xmeasure.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-view-get-xmeasure.returns"></a><h4>Returns</h4>
+<p> The horizontal measure.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-get-ymeasure"></a><h3>gwy_data_view_get_ymeasure ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_view_get_ymeasure (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>);</pre>
+<p>Returns the ratio between vertical physical lengths and horizontal
+screen lengths in pixels.</p>
+<div class="refsect3">
+<a name="gwy-data-view-get-ymeasure.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-view-get-ymeasure.returns"></a><h4>Returns</h4>
+<p> The vertical measure.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-get-pixel-data-sizes"></a><h3>gwy_data_view_get_pixel_data_sizes ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_view_get_pixel_data_sizes (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *xres</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *yres</code></em>);</pre>
+<p>Obtains pixel dimensions of data displayed by a data view.</p>
+<p>This is a convenience method, the same values could be obtained
+by <a href="../GwyDataField.html#gwy-data-field-get-xres"><code class="function">gwy_data_field_get_xres()</code></a> and <a href="../GwyDataField.html#gwy-data-field-get-yres"><code class="function">gwy_data_field_get_yres()</code></a> of the data
+field displayed by the base layer.</p>
+<div class="refsect3">
+<a name="gwy-data-view-get-pixel-data-sizes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xres</p></td>
+<td class="parameter_description"><p>Location to store x-resolution of displayed data (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yres</p></td>
+<td class="parameter_description"><p>Location to store y-resolution of displayed data (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-get-real-data-sizes"></a><h3>gwy_data_view_get_real_data_sizes ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_view_get_real_data_sizes (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *xreal</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *yreal</code></em>);</pre>
+<p>Obtains physical dimensions of data displayed by a data view.</p>
+<p>Physical coordinates are always taken from data field displayed by the base
+layer.  This is a convenience method, the same values could be obtained
+by <a href="../GwyDataField.html#gwy-data-field-get-xreal"><code class="function">gwy_data_field_get_xreal()</code></a> and <a href="../GwyDataField.html#gwy-data-field-get-yreal"><code class="function">gwy_data_field_get_yreal()</code></a> of the data
+field displayed by the base layer.</p>
+<div class="refsect3">
+<a name="gwy-data-view-get-real-data-sizes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xreal</p></td>
+<td class="parameter_description"><p>Location to store physical x-dimension of the displayed data
+without excess (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yreal</p></td>
+<td class="parameter_description"><p>Location to store physical y-dimension of the displayed data
+without excess (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-get-real-data-offsets"></a><h3>gwy_data_view_get_real_data_offsets ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_view_get_real_data_offsets (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *xoffset</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *yoffset</code></em>);</pre>
+<p>Obtains physical offsets of data displayed by a data view.</p>
+<p>Physical coordinates are always taken from data field displayed by the base
+layer.  This is a convenience method, the same values could be obtained
+by <a href="../GwyDataField.html#gwy-data-field-get-xoffset"><code class="function">gwy_data_field_get_xoffset()</code></a> and <a href="../GwyDataField.html#gwy-data-field-get-yoffset"><code class="function">gwy_data_field_get_yoffset()</code></a> of the data
+field displayed by the base layer.</p>
+<div class="refsect3">
+<a name="gwy-data-view-get-real-data-offsets.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xoffset</p></td>
+<td class="parameter_description"><p>Location to store physical x-offset of the top corner of
+displayed data without excess (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yoffset</p></td>
+<td class="parameter_description"><p>Location to store physical y-offset of the top corner of
+displayed data without excess (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-16.html#api-index-2.16">2.16</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-get-metric"></a><h3>gwy_data_view_get_metric ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_view_get_metric (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *metric</code></em>);</pre>
+<p>Fills metric matrix for a data view.</p>
+<p>The metric matrix essentially transforms distances in physical coordinates
+to screen distances.  It is to be used with functions like
+<a href="../libgwyddion-Math.html#gwy-math-find-nearest-point"><code class="function">gwy_math_find_nearest_point()</code></a> and <a href="../libgwyddion-Math.html#gwy-math-find-nearest-line"><code class="function">gwy_math_find_nearest_line()</code></a> when the
+distance should be screen-Euclidean.</p>
+<div class="refsect3">
+<a name="gwy-data-view-get-metric.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>metric</p></td>
+<td class="parameter_description"><p>Metric matrix 2x2 (stored in sequentially by rows: m11, m12, m12,
+m22).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-get-pixbuf"></a><h3>gwy_data_view_get_pixbuf ()</h3>
+<pre class="programlisting"><span class="returnvalue">GdkPixbuf</span> *
+gwy_data_view_get_pixbuf (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> max_width</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> max_height</code></em>);</pre>
+<p>Creates and returns a pixbuf from the data view.</p>
+<p>If the data is not square, the resulting pixbuf is also nonsquare.
+The returned pixbuf also never has an alpha channel.</p>
+<div class="refsect3">
+<a name="gwy-data-view-get-pixbuf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_width</p></td>
+<td class="parameter_description"><p>Pixbuf width that should not be exceeeded.  Value smaller than
+1 means unlimited size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_height</p></td>
+<td class="parameter_description"><p>Pixbuf height that should not be exceeeded.  Value smaller than
+1 means unlimited size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-view-get-pixbuf.returns"></a><h4>Returns</h4>
+<p> The pixbuf as a newly created <span class="type">GdkPixbuf</span>, it should be freed
+when no longer needed.  It is never larger than the actual data
+size, as <em class="parameter"><code>max_width</code></em>
+and <em class="parameter"><code>max_height</code></em>
+are only upper limits.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-view-export-pixbuf"></a><h3>gwy_data_view_export_pixbuf ()</h3>
+<pre class="programlisting"><span class="returnvalue">GdkPixbuf</span> *
+gwy_data_view_export_pixbuf (<em class="parameter"><code><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *data_view</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> zoom</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> draw_alpha</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> draw_top</code></em>);</pre>
+<p>Exports data view to a pixbuf.</p>
+<div class="refsect3">
+<a name="gwy-data-view-export-pixbuf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>zoom</p></td>
+<td class="parameter_description"><p>Zoom to export data with (unrelated to data view zoom).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>draw_alpha</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to draw alpha layer (mask).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>draw_top</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to draw top layer (selection).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-view-export-pixbuf.returns"></a><h4>Returns</h4>
+<p> A newly created pixbuf, it must be freed by caller.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyDataView.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyDataView-struct"></a><h3>struct GwyDataView</h3>
+<pre class="programlisting">struct GwyDataView;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyDataViewClass"></a><h3>struct GwyDataViewClass</h3>
+<pre class="programlisting">struct GwyDataViewClass {
+    GtkWidgetClass parent_class;
+
+    /* Signals */
+    void (*redrawn)(GwyDataView *data_view);
+    void (*resized)(GwyDataView *data_view);
+    void (*layer_plugged)(GwyDataView *data_view,
+                          GwyDataViewLayerType layer);
+    void (*layer_unplugged)(GwyDataView *data_view,
+                            GwyDataViewLayerType layer);
+
+    void (*reserved1)(void);
+    void (*reserved2)(void);
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyDataView.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GwyDataView--data-prefix"></a><h3>The <code class="literal">“data-prefix”</code> property</h3>
+<pre class="programlisting">  “data-prefix”              <span class="type">char</span> *</pre>
+<p>The :data-prefix property is the container prefix the data displayed
+by this view lies under.</p>
+<p>Note it is only used for items used by <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> itself, layers have
+their own keys.</p>
+<p>Owner: GwyDataView</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyDataView--zoom"></a><h3>The <code class="literal">“zoom”</code> property</h3>
+<pre class="programlisting">  “zoom”                     <span class="type">double</span></pre>
+<p>The :zoom property is the ratio between displayed and real data size.</p>
+<p>Owner: GwyDataView</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0.0625,16]</p>
+<p>Default value: 1</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyDataView.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GwyDataView-layer-plugged"></a><h3>The <code class="literal">“layer-plugged”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a>         *arg1,
+               <a class="link" href="libgwydgets-gwydgetenums.html#GwyDataViewLayerType" title="enum GwyDataViewLayerType"><span class="type">GwyDataViewLayerType</span></a> gwydataview,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>             user_data)</pre>
+<p>The ::layer-plugged signal is emitted when a layer is plugged into
+a <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a>.</p>
+<p>When a layer replaces an existing layer, ::layer-unplugged is emitted
+once the old layer is unplugged, then ::layer-plugged when the new
+is plugged.</p>
+<div class="refsect3">
+<a name="GwyDataView-layer-plugged.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>arg1</p></td>
+<td class="parameter_description"><p>Which layer was plugged (a <a class="link" href="libgwydgets-gwydgetenums.html#GwyDataViewLayerType" title="enum GwyDataViewLayerType"><span class="type">GwyDataViewLayerType</span></a> value).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gwydataview</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyDataView-layer-unplugged"></a><h3>The <code class="literal">“layer-unplugged”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a>         *arg1,
+               <a class="link" href="libgwydgets-gwydgetenums.html#GwyDataViewLayerType" title="enum GwyDataViewLayerType"><span class="type">GwyDataViewLayerType</span></a> gwydataview,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>             user_data)</pre>
+<p>The ::layer-unplugged signal is emitted when a layer is unplugged from
+a <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a>.</p>
+<p>When a layer replaces an existing layer, ::layer-unplugged is emitted
+once the old layer is unplugged, then ::layer-plugged when the new
+is plugged.</p>
+<div class="refsect3">
+<a name="GwyDataView-layer-unplugged.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>arg1</p></td>
+<td class="parameter_description"><p>Which layer was unplugged (a <a class="link" href="libgwydgets-gwydgetenums.html#GwyDataViewLayerType" title="enum GwyDataViewLayerType"><span class="type">GwyDataViewLayerType</span></a> value).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gwydataview</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyDataView-redrawn"></a><h3>The <code class="literal">“redrawn”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *gwydataview,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>The ::redrawn signal is emitted when <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> redraws pixbufs after
+an update.  That is, when it's the right time to get a new pixbuf from
+<a class="link" href="GwyDataView.html#gwy-data-view-get-pixbuf" title="gwy_data_view_get_pixbuf ()"><code class="function">gwy_data_view_get_pixbuf()</code></a>.</p>
+<div class="refsect3">
+<a name="GwyDataView-redrawn.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwydataview</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyDataView-resized"></a><h3>The <code class="literal">“resized”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> *gwydataview,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>The ::resized signal is emitted when <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> wants to be resized,
+that is when the dimensions of base data field changes or square mode
+is changed.
+Its purpose is to subvert the normal resizing logic of <a class="link" href="GwyDataWindow.html" title="GwyDataWindow"><span class="type">GwyDataWindow</span></a>
+(due to geometry hints, its size requests are generally ignored, so
+an explicit resize is needed).  You should usually ignore it.</p>
+<div class="refsect3">
+<a name="GwyDataView-resized.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwydataview</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyDataView.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="GwyDataWindow.html" title="GwyDataWindow"><span class="type">GwyDataWindow</span></a> -- window combining data view with other controls,
+<a class="link" href="GwyDataViewLayer.html" title="GwyDataViewLayer"><span class="type">GwyDataViewLayer</span></a> -- layers a data view is composed of,</p>
+gwypixfield --
+<p>low level functions for painting data fields,
+<a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> -- OpenGL 3D data display</p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

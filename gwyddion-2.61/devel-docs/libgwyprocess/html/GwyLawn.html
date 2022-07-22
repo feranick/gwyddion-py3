@@ -1,0 +1,2256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyLawn: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="GwySurface.html" title="GwySurface">
+<link rel="next" href="GwyCalibration.html" title="GwyCalibration">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyLawn.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyLawn.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GwyLawn.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GwyLawn.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="GwySurface.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyCalibration.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyLawn"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyLawn.top_of_page"></a>GwyLawn</span></h2>
+<p>GwyLawn — Three-dimensional data representation</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyLawn.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="GwyLawn.html#GwyCurveReduceFunction" title="GwyCurveReduceFunction ()">*GwyCurveReduceFunction</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-duplicate" title="gwy_lawn_duplicate()">gwy_lawn_duplicate</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-assign" title="gwy_lawn_assign()">gwy_lawn_assign</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyLawn.html" title="GwyLawn"><span class="returnvalue">GwyLawn</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-new" title="gwy_lawn_new ()">gwy_lawn_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyLawn.html" title="GwyLawn"><span class="returnvalue">GwyLawn</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-new-alike" title="gwy_lawn_new_alike ()">gwy_lawn_new_alike</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyLawn.html" title="GwyLawn"><span class="returnvalue">GwyLawn</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-new-part" title="gwy_lawn_new_part ()">gwy_lawn_new_part</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-data-changed" title="gwy_lawn_data_changed ()">gwy_lawn_data_changed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-copy" title="gwy_lawn_copy ()">gwy_lawn_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-get-xres" title="gwy_lawn_get_xres ()">gwy_lawn_get_xres</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-get-yres" title="gwy_lawn_get_yres ()">gwy_lawn_get_yres</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-get-xreal" title="gwy_lawn_get_xreal ()">gwy_lawn_get_xreal</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-get-yreal" title="gwy_lawn_get_yreal ()">gwy_lawn_get_yreal</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-get-xoffset" title="gwy_lawn_get_xoffset ()">gwy_lawn_get_xoffset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-get-yoffset" title="gwy_lawn_get_yoffset ()">gwy_lawn_get_yoffset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-get-n-curves" title="gwy_lawn_get_n_curves ()">gwy_lawn_get_n_curves</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-set-xreal" title="gwy_lawn_set_xreal ()">gwy_lawn_set_xreal</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-set-yreal" title="gwy_lawn_set_yreal ()">gwy_lawn_set_yreal</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-set-xoffset" title="gwy_lawn_set_xoffset ()">gwy_lawn_set_xoffset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-set-yoffset" title="gwy_lawn_set_yoffset ()">gwy_lawn_set_yoffset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-get-dx" title="gwy_lawn_get_dx ()">gwy_lawn_get_dx</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-get-dy" title="gwy_lawn_get_dy ()">gwy_lawn_get_dy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-get-si-unit-xy" title="gwy_lawn_get_si_unit_xy ()">gwy_lawn_get_si_unit_xy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-get-si-unit-curve" title="gwy_lawn_get_si_unit_curve ()">gwy_lawn_get_si_unit_curve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-set-si-unit-xy" title="gwy_lawn_set_si_unit_xy ()">gwy_lawn_set_si_unit_xy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-set-si-unit-curve" title="gwy_lawn_set_si_unit_curve ()">gwy_lawn_set_si_unit_curve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-copy-units" title="gwy_lawn_copy_units ()">gwy_lawn_copy_units</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-set-curve-label" title="gwy_lawn_set_curve_label ()">gwy_lawn_set_curve_label</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-get-curve-label" title="gwy_lawn_get_curve_label ()">gwy_lawn_get_curve_label</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../libgwyddion-GwySIValueFormat.html#GwySIValueFormat"><span class="returnvalue">GwySIValueFormat</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-get-value-format-xy" title="gwy_lawn_get_value_format_xy ()">gwy_lawn_get_value_format_xy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../libgwyddion-GwySIValueFormat.html#GwySIValueFormat"><span class="returnvalue">GwySIValueFormat</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-get-value-format-curve" title="gwy_lawn_get_value_format_curve ()">gwy_lawn_get_value_format_curve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-get-curve-length" title="gwy_lawn_get_curve_length ()">gwy_lawn_get_curve_length</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-get-curve-data" title="gwy_lawn_get_curve_data ()">gwy_lawn_get_curve_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-get-curve-data-const" title="gwy_lawn_get_curve_data_const ()">gwy_lawn_get_curve_data_const</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-set-curve-data" title="gwy_lawn_set_curve_data ()">gwy_lawn_set_curve_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-get-curves-data-const" title="gwy_lawn_get_curves_data_const ()">gwy_lawn_get_curves_data_const</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-set-curves" title="gwy_lawn_set_curves ()">gwy_lawn_set_curves</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-get-n-segments" title="gwy_lawn_get_n_segments ()">gwy_lawn_get_n_segments</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-get-segments" title="gwy_lawn_get_segments ()">gwy_lawn_get_segments</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-set-segments" title="gwy_lawn_set_segments ()">gwy_lawn_set_segments</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-get-segment-label" title="gwy_lawn_get_segment_label ()">gwy_lawn_get_segment_label</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-set-segment-label" title="gwy_lawn_set_segment_label ()">gwy_lawn_set_segment_label</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-curve-set-segments" title="gwy_lawn_curve_set_segments ()">gwy_lawn_curve_set_segments</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-clear" title="gwy_lawn_clear ()">gwy_lawn_clear</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-area-reduce-to-plane" title="gwy_lawn_area_reduce_to_plane ()">gwy_lawn_area_reduce_to_plane</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-reduce-to-plane" title="gwy_lawn_reduce_to_plane ()">gwy_lawn_reduce_to_plane</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyLawn.html" title="GwyLawn"><span class="returnvalue">GwyLawn</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-new-rotated-90" title="gwy_lawn_new_rotated_90 ()">gwy_lawn_new_rotated_90</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLawn.html#gwy-lawn-invert" title="gwy_lawn_invert ()">gwy_lawn_invert</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyLawn.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyLawn.html#GwyLawn-data-changed" title="The “data-changed” signal">data-changed</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyLawn.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyLawn.html#GwyLawn-struct" title="struct GwyLawn">GwyLawn</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyLawn.html#GwyLawnClass" title="struct GwyLawnClass">GwyLawnClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyLawn.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> GwyLawn
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyLawn.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GwyLawn implements
+ <a href="../GwySerializable.html#GwySerializable-struct">GwySerializable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwyLawn.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyLawn.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> represents 3D data arrays in Gwyddion. It is typically useful for different volume data obtained from
+SPMs, like in force volume measurements.</p>
+</div>
+<div class="refsect1">
+<a name="GwyLawn.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GwyCurveReduceFunction"></a><h3>GwyCurveReduceFunction ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+<span class="c_punctuation">(</span>*GwyCurveReduceFunction<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ncurves</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> curvelength</code></em>,
+                           <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *curvedata</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> userdata</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-duplicate"></a><h3>gwy_lawn_duplicate()</h3>
+<pre class="programlisting">#define             gwy_lawn_duplicate(lawn)</pre>
+<p>Convenience macro doing <a href="../GwySerializable.html#gwy-serializable-duplicate"><code class="function">gwy_serializable_duplicate()</code></a> with all the necessary typecasting.</p>
+<div class="refsect3">
+<a name="gwy-lawn-duplicate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn to duplicate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-assign"></a><h3>gwy_lawn_assign()</h3>
+<pre class="programlisting">#define             gwy_lawn_assign(dest, source)</pre>
+<p>Convenience macro making one data lawn identical to another.</p>
+<p>This is just a <a href="../GwySerializable.html#gwy-serializable-clone"><code class="function">gwy_serializable_clone()</code></a> wrapper with all the necessary typecasting.</p>
+<div class="refsect3">
+<a name="gwy-lawn-assign.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dest</p></td>
+<td class="parameter_description"><p>Target data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>Source data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-new"></a><h3>gwy_lawn_new ()</h3>
+<pre class="programlisting"><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="returnvalue">GwyLawn</span></a> *
+gwy_lawn_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> xres</code></em>,
+              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> yres</code></em>,
+              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> xreal</code></em>,
+              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> yreal</code></em>,
+              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ncurves</code></em>,
+              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nsegments</code></em>);</pre>
+<p>Creates a new data lawn.</p>
+<div class="refsect3">
+<a name="gwy-lawn-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>xres</p></td>
+<td class="parameter_description"><p>X resolution, i.e., the number of samples in x direction</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yres</p></td>
+<td class="parameter_description"><p>Y resolution, i.e., the number of samples in y direction</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xreal</p></td>
+<td class="parameter_description"><p>Real physical dimension in x direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yreal</p></td>
+<td class="parameter_description"><p>Real physical dimension in y direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ncurves</p></td>
+<td class="parameter_description"><p>The number of curves at each sample.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nsegments</p></td>
+<td class="parameter_description"><p>The number of curve segments.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-new.returns"></a><h4>Returns</h4>
+<p> A newly created data lawn.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-new-alike"></a><h3>gwy_lawn_new_alike ()</h3>
+<pre class="programlisting"><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="returnvalue">GwyLawn</span></a> *
+gwy_lawn_new_alike (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *model</code></em>);</pre>
+<p>Creates a new data lawn similar to an existing one.</p>
+<p>Use <a class="link" href="GwyLawn.html#gwy-lawn-duplicate" title="gwy_lawn_duplicate()"><code class="function">gwy_lawn_duplicate()</code></a> if you want to copy a data lawn including
+data.</p>
+<div class="refsect3">
+<a name="gwy-lawn-new-alike.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>model</p></td>
+<td class="parameter_description"><p>A data lawn to take resolutions, units, and labels from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-new-alike.returns"></a><h4>Returns</h4>
+<p> A newly created data lawn.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-new-part"></a><h3>gwy_lawn_new_part ()</h3>
+<pre class="programlisting"><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="returnvalue">GwyLawn</span></a> *
+gwy_lawn_new_part (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> xpos</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ypos</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> xres</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> yres</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> keep_offsets</code></em>);</pre>
+<p>Creates a new data lawn as a part of existing one.</p>
+<p>Use <a class="link" href="GwyLawn.html#gwy-lawn-duplicate" title="gwy_lawn_duplicate()"><code class="function">gwy_lawn_duplicate()</code></a> if you want to copy a whole data lawn.</p>
+<div class="refsect3">
+<a name="gwy-lawn-new-part.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn to take data from</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xpos</p></td>
+<td class="parameter_description"><p>x position where to start from</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ypos</p></td>
+<td class="parameter_description"><p>y position where to start from</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xres</p></td>
+<td class="parameter_description"><p>x resolution (width) to be extracted</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yres</p></td>
+<td class="parameter_description"><p>y resolution (height) to be extracted</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>keep_offsets</p></td>
+<td class="parameter_description"><p>keep offsets of data during extraction</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-new-part.returns"></a><h4>Returns</h4>
+<p> A newly created data lawn.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-data-changed"></a><h3>gwy_lawn_data_changed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_lawn_data_changed (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>);</pre>
+<p>Emits signal "data_changed" on a data lawn.</p>
+<div class="refsect3">
+<a name="gwy-lawn-data-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-copy"></a><h3>gwy_lawn_copy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_lawn_copy (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *src</code></em>,
+               <em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *dest</code></em>,
+               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> nondata_too</code></em>);</pre>
+<p>Copies the contents of an already allocated lawn to a lawn of the same size.</p>
+<div class="refsect3">
+<a name="gwy-lawn-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>src</p></td>
+<td class="parameter_description"><p>Source lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest</p></td>
+<td class="parameter_description"><p>Destination lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nondata_too</p></td>
+<td class="parameter_description"><p>Whether non-data (units, labels, segment information) should be copied too.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-get-xres"></a><h3>gwy_lawn_get_xres ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_lawn_get_xres (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>);</pre>
+<p>Gets the x resolution of a data lawn.</p>
+<div class="refsect3">
+<a name="gwy-lawn-get-xres.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-get-xres.returns"></a><h4>Returns</h4>
+<p> Resolution (number of data points).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-get-yres"></a><h3>gwy_lawn_get_yres ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_lawn_get_yres (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>);</pre>
+<p>Gets the y resolution of a data lawn.</p>
+<div class="refsect3">
+<a name="gwy-lawn-get-yres.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-get-yres.returns"></a><h4>Returns</h4>
+<p> Resolution (number of data points).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-get-xreal"></a><h3>gwy_lawn_get_xreal ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_lawn_get_xreal (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>);</pre>
+<p>Gets the physical size of a data lawn in the x direction.</p>
+<div class="refsect3">
+<a name="gwy-lawn-get-xreal.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-get-xreal.returns"></a><h4>Returns</h4>
+<p> Real size of a data lawn the x direction.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-get-yreal"></a><h3>gwy_lawn_get_yreal ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_lawn_get_yreal (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>);</pre>
+<p>Gets the physical size of a data lawn in the y direction.</p>
+<div class="refsect3">
+<a name="gwy-lawn-get-yreal.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-get-yreal.returns"></a><h4>Returns</h4>
+<p> Real size of a data lawn the y direction.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-get-xoffset"></a><h3>gwy_lawn_get_xoffset ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_lawn_get_xoffset (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>);</pre>
+<p>Gets the offset of data lawn origin in x direction.</p>
+<div class="refsect3">
+<a name="gwy-lawn-get-xoffset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-get-xoffset.returns"></a><h4>Returns</h4>
+<p> Offset value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-get-yoffset"></a><h3>gwy_lawn_get_yoffset ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_lawn_get_yoffset (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>);</pre>
+<p>Gets the offset of data lawn origin in y direction.</p>
+<div class="refsect3">
+<a name="gwy-lawn-get-yoffset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-get-yoffset.returns"></a><h4>Returns</h4>
+<p> Offset value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-get-n-curves"></a><h3>gwy_lawn_get_n_curves ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_lawn_get_n_curves (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>);</pre>
+<p>Gets the number of curves at each sample.</p>
+<div class="refsect3">
+<a name="gwy-lawn-get-n-curves.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-get-n-curves.returns"></a><h4>Returns</h4>
+<p> Number of curves.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-set-xreal"></a><h3>gwy_lawn_set_xreal ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_lawn_set_xreal (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> xreal</code></em>);</pre>
+<p>Sets the real x dimension of a lawn.</p>
+<div class="refsect3">
+<a name="gwy-lawn-set-xreal.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xreal</p></td>
+<td class="parameter_description"><p>New real x dimensions value</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-set-yreal"></a><h3>gwy_lawn_set_yreal ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_lawn_set_yreal (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> yreal</code></em>);</pre>
+<p>Sets the real y dimension of a lawn.</p>
+<div class="refsect3">
+<a name="gwy-lawn-set-yreal.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yreal</p></td>
+<td class="parameter_description"><p>New real y dimensions value</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-set-xoffset"></a><h3>gwy_lawn_set_xoffset ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_lawn_set_xoffset (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> xoffset</code></em>);</pre>
+<p>Sets the offset of a data lawn origin in the x direction.</p>
+<p>Note offsets don't affect any calculation.</p>
+<div class="refsect3">
+<a name="gwy-lawn-set-xoffset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xoffset</p></td>
+<td class="parameter_description"><p>New offset value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-set-yoffset"></a><h3>gwy_lawn_set_yoffset ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_lawn_set_yoffset (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> yoffset</code></em>);</pre>
+<p>Sets the offset of a data lawn origin in the y direction.</p>
+<p>Note offsets don't affect any calculation.</p>
+<div class="refsect3">
+<a name="gwy-lawn-set-yoffset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yoffset</p></td>
+<td class="parameter_description"><p>New offset value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-get-dx"></a><h3>gwy_lawn_get_dx ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_lawn_get_dx (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>);</pre>
+<p>Gets the horizontal (X) pixel size of a lawn in real units.</p>
+<p>The result is the same as gwy_lawn_get_xreal(lawn)/gwy_lawn_get_xres(lawn).</p>
+<div class="refsect3">
+<a name="gwy-lawn-get-dx.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-get-dx.returns"></a><h4>Returns</h4>
+<p> Horizontal pixel size.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-get-dy"></a><h3>gwy_lawn_get_dy ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_lawn_get_dy (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>);</pre>
+<p>Gets the vertical (Y) pixel size of a lawn in real units.</p>
+<p>The result is the same as gwy_lawn_get_yreal(lawn)/gwy_lawn_get_yres(lawn).</p>
+<div class="refsect3">
+<a name="gwy-lawn-get-dy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-get-dy.returns"></a><h4>Returns</h4>
+<p> Vertical pixel size.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-get-si-unit-xy"></a><h3>gwy_lawn_get_si_unit_xy ()</h3>
+<pre class="programlisting"><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_lawn_get_si_unit_xy (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>);</pre>
+<p>Returns x- and y-direction SI unit of a data lawn.</p>
+<div class="refsect3">
+<a name="gwy-lawn-get-si-unit-xy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-get-si-unit-xy.returns"></a><h4>Returns</h4>
+<p> SI unit corresponding to the lateral (X) dimension of the data lawn.  Its reference count is not
+incremented.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-get-si-unit-curve"></a><h3>gwy_lawn_get_si_unit_curve ()</h3>
+<pre class="programlisting"><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_lawn_get_si_unit_curve (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>);</pre>
+<p>Returns value SI unit of the n-th curve of a data lawn.</p>
+<div class="refsect3">
+<a name="gwy-lawn-get-si-unit-curve.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Index of a curve in <em class="parameter"><code>lawn</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-get-si-unit-curve.returns"></a><h4>Returns</h4>
+<p> SI unit corresponding to the "value" of the data lawn.  Its reference count is not incremented.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-set-si-unit-xy"></a><h3>gwy_lawn_set_si_unit_xy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_lawn_set_si_unit_xy (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                         <em class="parameter"><code><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *si_unit</code></em>);</pre>
+<p>Sets the SI unit corresponding to the lateral (X, Y) dimensions of a data lawn.</p>
+<p>It does not assume a reference on <em class="parameter"><code>si_unit</code></em>
+, instead it adds its own reference.</p>
+<div class="refsect3">
+<a name="gwy-lawn-set-si-unit-xy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>si_unit</p></td>
+<td class="parameter_description"><p>SI unit to be set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-set-si-unit-curve"></a><h3>gwy_lawn_set_si_unit_curve ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_lawn_set_si_unit_curve (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                            <em class="parameter"><code><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *si_unit</code></em>);</pre>
+<p>Sets the SI unit corresponding of the n-th curve of a data lawn.</p>
+<p>It does not assume a reference on <em class="parameter"><code>si_unit</code></em>
+, instead it adds its own reference.</p>
+<div class="refsect3">
+<a name="gwy-lawn-set-si-unit-curve.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Index of a curve in <em class="parameter"><code>lawn</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>si_unit</p></td>
+<td class="parameter_description"><p>SI unit to be set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-copy-units"></a><h3>gwy_lawn_copy_units ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_lawn_copy_units (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                     <em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *target</code></em>);</pre>
+<p>Sets lateral and curve units of a data lawn to match another data lawn.</p>
+<div class="refsect3">
+<a name="gwy-lawn-copy-units.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>Target data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-set-curve-label"></a><h3>gwy_lawn_set_curve_label ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_lawn_set_curve_label (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>);</pre>
+<p>Sets the label of a curve in data lawn.</p>
+<div class="refsect3">
+<a name="gwy-lawn-set-curve-label.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Index of a curve in <em class="parameter"><code>lawn</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>New curve label.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-get-curve-label"></a><h3>gwy_lawn_get_curve_label ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_lawn_get_curve_label (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>);</pre>
+<p>Gets the label of a curve in data lawn.</p>
+<div class="refsect3">
+<a name="gwy-lawn-get-curve-label.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Index of a curve in <em class="parameter"><code>lawn</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-get-curve-label.returns"></a><h4>Returns</h4>
+<p> Curve label, as a string owned by <em class="parameter"><code>lawn</code></em>
+.  It may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-get-value-format-xy"></a><h3>gwy_lawn_get_value_format_xy ()</h3>
+<pre class="programlisting"><a href="../libgwyddion-GwySIValueFormat.html#GwySIValueFormat"><span class="returnvalue">GwySIValueFormat</span></a> *
+gwy_lawn_get_value_format_xy (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                              <em class="parameter"><code><a href="../libgwyddion-gwyddionenums.html#GwySIUnitFormatStyle"><span class="type">GwySIUnitFormatStyle</span></a> style</code></em>,
+                              <em class="parameter"><code><a href="../libgwyddion-GwySIValueFormat.html#GwySIValueFormat"><span class="type">GwySIValueFormat</span></a> *format</code></em>);</pre>
+<p>Finds value format good for displaying coordinates of a data lawn.</p>
+<div class="refsect3">
+<a name="gwy-lawn-get-value-format-xy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>Unit format style.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>format</p></td>
+<td class="parameter_description"><p>A SI value format to modify, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to allocate a new one.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-get-value-format-xy.returns"></a><h4>Returns</h4>
+<p> The value format.  If <em class="parameter"><code>format</code></em>
+is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, a newly allocated format is returned, otherwise (modified) <em class="parameter"><code>format</code></em>
+itself is returned.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-get-value-format-curve"></a><h3>gwy_lawn_get_value_format_curve ()</h3>
+<pre class="programlisting"><a href="../libgwyddion-GwySIValueFormat.html#GwySIValueFormat"><span class="returnvalue">GwySIValueFormat</span></a> *
+gwy_lawn_get_value_format_curve (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                                 <em class="parameter"><code><a href="../libgwyddion-gwyddionenums.html#GwySIUnitFormatStyle"><span class="type">GwySIUnitFormatStyle</span></a> style</code></em>,
+                                 <em class="parameter"><code><a href="../libgwyddion-GwySIValueFormat.html#GwySIValueFormat"><span class="type">GwySIValueFormat</span></a> *format</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-get-curve-length"></a><h3>gwy_lawn_get_curve_length ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_lawn_get_curve_length (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<p>Gets the length of the curves at given position in a data lawn.</p>
+<div class="refsect3">
+<a name="gwy-lawn-get-curve-length.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Position in the lawn (column index).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Position in the lawn (row index).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-get-curve-length.returns"></a><h4>Returns</h4>
+<p> The curves length at given index.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-get-curve-data"></a><h3>gwy_lawn_get_curve_data ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_lawn_get_curve_data (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *curvelength</code></em>);</pre>
+<p>Gets the data array of the n-th curve at given position in a data lawn.</p>
+<p>The returned buffer is not guaranteed to be valid through whole data
+lawn life time.</p>
+<div class="refsect3">
+<a name="gwy-lawn-get-curve-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Position in the lawn (column index).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Position in the lawn (row index).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Index of a curve in <em class="parameter"><code>lawn</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>curvelength</p></td>
+<td class="parameter_description"><p>Location to store the length of the curve, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-get-curve-data.returns"></a><h4>Returns</h4>
+<p> The n-th curve data at given index.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-get-curve-data-const"></a><h3>gwy_lawn_get_curve_data_const ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_lawn_get_curve_data_const (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *curvelength</code></em>);</pre>
+<p>Gets the data array of the n-th curve at given position in a data lawn.</p>
+<div class="refsect3">
+<a name="gwy-lawn-get-curve-data-const.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Position in the lawn (column index).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Position in the lawn (row index).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Index of a curve in <em class="parameter"><code>lawn</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>curvelength</p></td>
+<td class="parameter_description"><p>To store the length of the curve (optional).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-get-curve-data-const.returns"></a><h4>Returns</h4>
+<p> The <em class="parameter"><code>n</code></em>
+-th curve data at given index.  The returned data are owned by <em class="parameter"><code>lawn</code></em>
+and must not be modified nor
+freed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-set-curve-data"></a><h3>gwy_lawn_set_curve_data ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_lawn_set_curve_data (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *curvedata</code></em>);</pre>
+<p>Sets the data of a single curve in a data lawn.</p>
+<p>The number of points remains the same since all curves at give pixel must have the same number of points.  If you
+want to change the number of points set the data of all curves together using <a class="link" href="GwyLawn.html#gwy-lawn-set-curves" title="gwy_lawn_set_curves ()"><code class="function">gwy_lawn_set_curves()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-lawn-set-curve-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Position in the lawn (column index).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Position in the lawn (row index).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Index of a curve in <em class="parameter"><code>lawn</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>curvedata</p></td>
+<td class="parameter_description"><p>New data of the <em class="parameter"><code>n</code></em>
+-th curve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-get-curves-data-const"></a><h3>gwy_lawn_get_curves_data_const ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_lawn_get_curves_data_const (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *curvelength</code></em>);</pre>
+<p>Gets the data array of all curves at given position in a data lawn.</p>
+<div class="refsect3">
+<a name="gwy-lawn-get-curves-data-const.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Position in the lawn (column index).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Position in the lawn (row index).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>curvelength</p></td>
+<td class="parameter_description"><p>To store the length of the curves (optional).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-get-curves-data-const.returns"></a><h4>Returns</h4>
+<p> The curves data at given index.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-set-curves"></a><h3>gwy_lawn_set_curves ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_lawn_set_curves (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> curvelength</code></em>,
+                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *curvesdata</code></em>,
+                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *segments</code></em>);</pre>
+<p>Sets data for all curves at given position in a data lawn.</p>
+<p>Note that passing <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> <em class="parameter"><code>segments</code></em>
+ can result in segmentation which is not valid for <em class="parameter"><code>curvelength</code></em>
+.  In such case you
+need to correct the segmentation afterwards.</p>
+<div class="refsect3">
+<a name="gwy-lawn-set-curves.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Position in the lawn (column index).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Position in the lawn (row index).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>curvelength</p></td>
+<td class="parameter_description"><p>Length of the curves.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>curvesdata</p></td>
+<td class="parameter_description"><p>Curve data array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>segments</p></td>
+<td class="parameter_description"><p>Segmentation for the curve.  May be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to leave the current segmentation unchanged.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-get-n-segments"></a><h3>gwy_lawn_get_n_segments ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_lawn_get_n_segments (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>);</pre>
+<p>Gets the number of segments marked in curves in a data lawn.</p>
+<p>All curves have the same number of segments, even empty curves.  Empty curves simply have the corresponding number
+of trivial zero-length segments.</p>
+<div class="refsect3">
+<a name="gwy-lawn-get-n-segments.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-get-n-segments.returns"></a><h4>Returns</h4>
+<p> The number of segments.  Zero is returned if no segments are marked.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-get-segments"></a><h3>gwy_lawn_get_segments ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a> *
+gwy_lawn_get_segments (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *nsegments</code></em>);</pre>
+<p>Gets the segmentation of a curve in a data lawn.</p>
+<div class="refsect3">
+<a name="gwy-lawn-get-segments.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Position in the lawn (column index).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Position in the lawn (row index).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nsegments</p></td>
+<td class="parameter_description"><p>Location where to store the number of segments, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-get-segments.returns"></a><h4>Returns</h4>
+<p> The segmentation for the curve, as an array owned by <em class="parameter"><code>lawn</code></em>
+which must not be modified nor freed.</p>
+<p>See <a class="link" href="GwyLawn.html#gwy-lawn-set-segments" title="gwy_lawn_set_segments ()"><code class="function">gwy_lawn_set_segments()</code></a> for the array format.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-set-segments"></a><h3>gwy_lawn_set_segments ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_lawn_set_segments (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nsegments</code></em>,
+                       <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *segments</code></em>);</pre>
+<p>Sets the segmentation of all curves in a data lawn.</p>
+<p>This is the only function which allows changing the number of segments.  If the number of segments changes all the
+labels are reset.</p>
+<p>See <a class="link" href="GwyLawn.html#gwy-lawn-curve-set-segments" title="gwy_lawn_curve_set_segments ()"><code class="function">gwy_lawn_curve_set_segments()</code></a> for the single-curve <em class="parameter"><code>segments</code></em>
+ array format.  When setting the data for an entire
+<em class="parameter"><code>lawn</code></em>
+ the array must contain this data for all pixels, concatenated.</p>
+<div class="refsect3">
+<a name="gwy-lawn-set-segments.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nsegments</p></td>
+<td class="parameter_description"><p>New number of segments.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>segments</p></td>
+<td class="parameter_description"><p>The new segmentation for entire <em class="parameter"><code>lawn</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-get-segment-label"></a><h3>gwy_lawn_get_segment_label ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_lawn_get_segment_label (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> segment</code></em>);</pre>
+<p>Gets the label of a curve segment in data lawn.</p>
+<div class="refsect3">
+<a name="gwy-lawn-get-segment-label.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>segment</p></td>
+<td class="parameter_description"><p>Index of a curve segment in <em class="parameter"><code>lawn</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-get-segment-label.returns"></a><h4>Returns</h4>
+<p> Segment label, as a string owned by <em class="parameter"><code>lawn</code></em>
+.  It may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-set-segment-label"></a><h3>gwy_lawn_set_segment_label ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_lawn_set_segment_label (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> segment</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>);</pre>
+<p>Sets the label of a curve segment in data lawn.</p>
+<p>Since all curves in <em class="parameter"><code>lawn</code></em>
+ are segmented into the same segments the segments share labels.  The first segment label
+corresponds to the first segment in all the curves.</p>
+<div class="refsect3">
+<a name="gwy-lawn-set-segment-label.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>segment</p></td>
+<td class="parameter_description"><p>Index of a curve segment in <em class="parameter"><code>lawn</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>New segment label.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-curve-set-segments"></a><h3>gwy_lawn_curve_set_segments ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_lawn_curve_set_segments (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *segments</code></em>);</pre>
+<p>Sets the segmentation of a curve in data lawn.</p>
+<p>All curves have the same number of segments, equal to the value returned by <a class="link" href="GwyLawn.html#gwy-lawn-get-n-segments" title="gwy_lawn_get_n_segments ()"><code class="function">gwy_lawn_get_n_segments()</code></a>.</p>
+<p>The array <em class="parameter"><code>segments</code></em>
+ contains twice as much elements as there are segments.  They are organised [<em class="parameter"><code>start₀</code></em>
+, <em class="parameter"><code>end₀</code></em>
+,
+<em class="parameter"><code>start₁</code></em>
+, <em class="parameter"><code>end₁</code></em>
+, etc.].  A segment starts at the postion <em class="parameter"><code>start</code></em>
+ and has length <em class="parameter"><code>end</code></em>
+-<em class="parameter"><code>start</code></em>
+.  In other words, <em class="parameter"><code>start</code></em>
+
+is inclusive, but <em class="parameter"><code>end</code></em>
+ is exclusive.  If a segment is zero-length even <em class="parameter"><code>start</code></em>
+ can correspond to non-existent data
+(the typical case is an empty curve).</p>
+<div class="refsect3">
+<a name="gwy-lawn-curve-set-segments.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Position in the lawn (column index).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Position in the lawn (row index).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>segments</p></td>
+<td class="parameter_description"><p>The new segmentation for the curve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-clear"></a><h3>gwy_lawn_clear ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_lawn_clear (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>);</pre>
+<p>Removes curve data at all samples (curve number, units, and labels preserved).</p>
+<div class="refsect3">
+<a name="gwy-lawn-clear.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-area-reduce-to-plane"></a><h3>gwy_lawn_area_reduce_to_plane ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_lawn_area_reduce_to_plane (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                               <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *target</code></em>,
+                               <em class="parameter"><code><a class="link" href="GwyLawn.html#GwyCurveReduceFunction" title="GwyCurveReduceFunction ()"><span class="type">GwyCurveReduceFunction</span></a> func</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> keep_offsets</code></em>);</pre>
+<p>Reduces curves data at each point of a rectangular region to a value,
+storing the results in a data field.</p>
+<div class="refsect3">
+<a name="gwy-lawn-area-reduce-to-plane.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>Datafield to be filled by summed plane. Its dimensions should be (width, height).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>func</p></td>
+<td class="parameter_description"><p>Function to reduce the curves data array to a single value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>Data passed to <em class="parameter"><code>func</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Column where to start (pixel coordinates).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Row where to start (pixel coordinates).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Pixel width of summed plane.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Pixel height of summed plane.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>keep_offsets</p></td>
+<td class="parameter_description"><p>Keep the physical offsets in extracted field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-reduce-to-plane"></a><h3>gwy_lawn_reduce_to_plane ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_lawn_reduce_to_plane (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                          <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *target</code></em>,
+                          <em class="parameter"><code><a class="link" href="GwyLawn.html#GwyCurveReduceFunction" title="GwyCurveReduceFunction ()"><span class="type">GwyCurveReduceFunction</span></a> func</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Sums all z-profiles of a data lawn to a data field.</p>
+<p>Reduces curves data at each point of the lawn to a value,
+storing the results in a data field.</p>
+<div class="refsect3">
+<a name="gwy-lawn-reduce-to-plane.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>Datafield to be filled by the summary data. It should have the same dimensions as lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>func</p></td>
+<td class="parameter_description"><p>Function to reduce the curves data array to a single value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>Data passed to <em class="parameter"><code>func</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-new-rotated-90"></a><h3>gwy_lawn_new_rotated_90 ()</h3>
+<pre class="programlisting"><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="returnvalue">GwyLawn</span></a> *
+gwy_lawn_new_rotated_90 (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> clockwise</code></em>);</pre>
+<p>Creates a new data lawn by rotating a data lawn by 90 degrees.</p>
+<div class="refsect3">
+<a name="gwy-lawn-new-rotated-90.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>clockwise</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to rotate clocwise, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to rotate anti-clockwise.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-new-rotated-90.returns"></a><h4>Returns</h4>
+<p> A newly created data lawn.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-invert"></a><h3>gwy_lawn_invert ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_lawn_invert (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> xflipped</code></em>,
+                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> yflipped</code></em>);</pre>
+<p>Flips a data lawn in place.</p>
+<p>Since real sizes cannot go backward, flipping an axis results in the corresponding offset being reset (the real
+dimension stays positive).</p>
+<p>Note that the axis parameter convention is different from the confusing one of <a class="link" href="GwyDataField.html#gwy-data-field-invert" title="gwy_data_field_invert ()"><code class="function">gwy_data_field_invert()</code></a>.  Here
+parameters simply correspond to directions that should be flipped.</p>
+<div class="refsect3">
+<a name="gwy-lawn-invert.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xflipped</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to reflect X, i.e. rows.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yflipped</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to reflect Y, i.e. columns.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyLawn.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyLawn-struct"></a><h3>struct GwyLawn</h3>
+<pre class="programlisting">struct GwyLawn;</pre>
+<p>The <a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> struct contains private data only and should be accessed using the functions below.</p>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyLawnClass"></a><h3>struct GwyLawnClass</h3>
+<pre class="programlisting">struct GwyLawnClass {
+    GObjectClass parent_class;
+
+    void (*data_changed)(GwyLawn *lawn);
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyLawn.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GwyLawn-data-changed"></a><h3>The <code class="literal">“data-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *gwylawn,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data)</pre>
+<p>The ::data-changed signal is never emitted by lawn itself.  It is intended as a means to notify others data
+line users they should update themselves.</p>
+<div class="refsect3">
+<a name="GwyLawn-data-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwylawn</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

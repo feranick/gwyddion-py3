@@ -1,0 +1,504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gwymodule-process: Gwyddion Module Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Module Library Reference Manual">
+<link rel="up" href="ModuleLibrary.html" title="Gwyddion Module Library">
+<link rel="prev" href="libgwymodule-gwymodule-file.html" title="gwymodule-file">
+<link rel="next" href="libgwymodule-gwymodule-tool.html" title="gwymodule-tool">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwymodule-gwymodule-process.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ModuleLibrary.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgwymodule-gwymodule-file.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwymodule-gwymodule-tool.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwymodule-gwymodule-process"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwymodule-gwymodule-process.top_of_page"></a>gwymodule-process</span></h2>
+<p>gwymodule-process — Data processing modules</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwymodule-gwymodule-process.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libgwymodule-gwymodule-process.html#GwyProcessFunc" title="GwyProcessFunc ()">*GwyProcessFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-process.html#gwy-process-func-register" title="gwy_process_func_register ()">gwy_process_func_register</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-process.html#gwy-process-func-run" title="gwy_process_func_run ()">gwy_process_func_run</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-process.html#gwy-process-func-exists" title="gwy_process_func_exists ()">gwy_process_func_exists</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwymodule-gwymoduleenums.html#GwyRunType" title="enum GwyRunType"><span class="returnvalue">GwyRunType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-process.html#gwy-process-func-get-run-types" title="gwy_process_func_get_run_types ()">gwy_process_func_get_run_types</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-process.html#gwy-process-func-get-menu-path" title="gwy_process_func_get_menu_path ()">gwy_process_func_get_menu_path</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-process.html#gwy-process-func-get-stock-id" title="gwy_process_func_get_stock_id ()">gwy_process_func_get_stock_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-process.html#gwy-process-func-get-tooltip" title="gwy_process_func_get_tooltip ()">gwy_process_func_get_tooltip</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-process.html#gwy-process-func-get-sensitivity-mask" title="gwy_process_func_get_sensitivity_mask ()">gwy_process_func_get_sensitivity_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-process.html#gwy-process-func-foreach" title="gwy_process_func_foreach ()">gwy_process_func_foreach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-process.html#gwy-process-func-current" title="gwy_process_func_current ()">gwy_process_func_current</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwymodule-gwymodule-process.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwymodule/gwymodule.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwymodule-gwymodule-process.description"></a><h2>Description</h2>
+<p>Data processing modules implement the actual ability to do something useful
+with data. They reigster functions that get a <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> with data
+and either modify it or create a new data from it.</p>
+</div>
+<div class="refsect1">
+<a name="libgwymodule-gwymodule-process.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GwyProcessFunc"></a><h3>GwyProcessFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GwyProcessFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                   <em class="parameter"><code><a class="link" href="libgwymodule-gwymoduleenums.html#GwyRunType" title="enum GwyRunType"><span class="type">GwyRunType</span></a> run</code></em>,
+                   <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>The type of data processing function.</p>
+<div class="refsect3">
+<a name="GwyProcessFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>The data container to operate on.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>run</p></td>
+<td class="parameter_description"><p>Run mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Function name from as registered with <a class="link" href="libgwymodule-gwymodule-process.html#gwy-process-func-register" title="gwy_process_func_register ()"><code class="function">gwy_process_func_register()</code></a>
+(single-function modules can safely ignore this argument).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-process-func-register"></a><h3>gwy_process_func_register ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_process_func_register (<em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                           <em class="parameter"><code><a class="link" href="libgwymodule-gwymodule-process.html#GwyProcessFunc" title="GwyProcessFunc ()"><span class="type">GwyProcessFunc</span></a> func</code></em>,
+                           <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *menu_path</code></em>,
+                           <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stock_id</code></em>,
+                           <em class="parameter"><code><a class="link" href="libgwymodule-gwymoduleenums.html#GwyRunType" title="enum GwyRunType"><span class="type">GwyRunType</span></a> run</code></em>,
+                           <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> sens_mask</code></em>,
+                           <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *tooltip</code></em>);</pre>
+<p>Registers a data processing function.</p>
+<p>Note: the string arguments are not copied as modules are not expected to
+vanish.  If they are constructed (non-constant) strings, do not free them.
+Should modules ever become unloadable they will get a chance to clean-up.</p>
+<div class="refsect3">
+<a name="gwy-process-func-register.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Name of function to register.  It should be a valid identifier and
+if a module registers only one function, module and function names
+should be the same.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>func</p></td>
+<td class="parameter_description"><p>The function itself.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>menu_path</p></td>
+<td class="parameter_description"><p>Menu path under Data Process menu.  The menu path should be
+marked translatabe, but passed untranslated (to allow merging
+of translated and untranslated submenus).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stock_id</p></td>
+<td class="parameter_description"><p>Stock icon id for toolbar.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>run</p></td>
+<td class="parameter_description"><p>Supported run modes.  Data processing functions can have two run
+modes: <a class="link" href="libgwymodule-gwymoduleenums.html#GWY-RUN-IMMEDIATE:CAPS"><code class="literal">GWY_RUN_IMMEDIATE</code></a> (no questions asked) and
+<a class="link" href="libgwymodule-gwymoduleenums.html#GWY-RUN-INTERACTIVE:CAPS"><code class="literal">GWY_RUN_INTERACTIVE</code></a> (a modal dialog with parameters).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sens_mask</p></td>
+<td class="parameter_description"><p>Sensitivity mask (a combination of <a href="../libgwyapp-menu.html#GwyMenuSensFlags"><span class="type">GwyMenuSensFlags</span></a> flags).
+Usually it contains <a href="../libgwyapp-menu.html#GWY-MENU-FLAG-DATA:CAPS"><span class="type">GWY_MENU_FLAG_DATA</span></a>, possibly other
+requirements.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tooltip</p></td>
+<td class="parameter_description"><p>Tooltip for this function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-process-func-register.returns"></a><h4>Returns</h4>
+<p> Normally <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>; <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> on failure.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-process-func-run"></a><h3>gwy_process_func_run ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_process_func_run (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                      <em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                      <em class="parameter"><code><a class="link" href="libgwymodule-gwymoduleenums.html#GwyRunType" title="enum GwyRunType"><span class="type">GwyRunType</span></a> run</code></em>);</pre>
+<p>Runs a data processing function identified by <em class="parameter"><code>name</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-process-func-run.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Data processing function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Data (a <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>run</p></td>
+<td class="parameter_description"><p>How the function should be run.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-process-func-exists"></a><h3>gwy_process_func_exists ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_process_func_exists (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Checks whether a data processing function exists.</p>
+<div class="refsect3">
+<a name="gwy-process-func-exists.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Data processing function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-process-func-exists.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if function <em class="parameter"><code>name</code></em>
+exists, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-process-func-get-run-types"></a><h3>gwy_process_func_get_run_types ()</h3>
+<pre class="programlisting"><a class="link" href="libgwymodule-gwymoduleenums.html#GwyRunType" title="enum GwyRunType"><span class="returnvalue">GwyRunType</span></a>
+gwy_process_func_get_run_types (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Returns run modes supported by a data processing function.</p>
+<div class="refsect3">
+<a name="gwy-process-func-get-run-types.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Data processing function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-process-func-get-run-types.returns"></a><h4>Returns</h4>
+<p> The run mode bit mask.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-process-func-get-menu-path"></a><h3>gwy_process_func_get_menu_path ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_process_func_get_menu_path (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Returns the menu path of a data processing function.</p>
+<p>The returned menu path is only the tail part registered by the function,
+i.e., without any leading "/Data Process".</p>
+<div class="refsect3">
+<a name="gwy-process-func-get-menu-path.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Data processing function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-process-func-get-menu-path.returns"></a><h4>Returns</h4>
+<p> The menu path.  The returned string is owned by the module.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-process-func-get-stock-id"></a><h3>gwy_process_func_get_stock_id ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_process_func_get_stock_id (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Gets stock icon id of a data processing  function.</p>
+<div class="refsect3">
+<a name="gwy-process-func-get-stock-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Data processing function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-process-func-get-stock-id.returns"></a><h4>Returns</h4>
+<p> The stock icon id.  The returned string is owned by the module.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-process-func-get-tooltip"></a><h3>gwy_process_func_get_tooltip ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_process_func_get_tooltip (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Gets tooltip for a data processing function.</p>
+<div class="refsect3">
+<a name="gwy-process-func-get-tooltip.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Data processing function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-process-func-get-tooltip.returns"></a><h4>Returns</h4>
+<p> The tooltip.  The returned string is owned by the module.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-process-func-get-sensitivity-mask"></a><h3>gwy_process_func_get_sensitivity_mask ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gwy_process_func_get_sensitivity_mask (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Gets menu sensititivy mask for a data processing function.</p>
+<div class="refsect3">
+<a name="gwy-process-func-get-sensitivity-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Data processing function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-process-func-get-sensitivity-mask.returns"></a><h4>Returns</h4>
+<p> The menu item sensitivity mask (a combination of <a href="../libgwyapp-menu.html#GwyMenuSensFlags"><span class="type">GwyMenuSensFlags</span></a>
+flags).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-process-func-foreach"></a><h3>gwy_process_func_foreach ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_process_func_foreach (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GFunc"><span class="type">GFunc</span></a> function</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Calls a function for each process function.</p>
+<div class="refsect3">
+<a name="gwy-process-func-foreach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>function</p></td>
+<td class="parameter_description"><p>Function to run for each process function.  It will get function
+name (constant string owned by module system) as its first
+argument, <em class="parameter"><code>user_data</code></em>
+as the second argument.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>Data to pass to <em class="parameter"><code>function</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-process-func-current"></a><h3>gwy_process_func_current ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_process_func_current (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Obtains the name of currently running data processing function.</p>
+<p>If no process function is currently running, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is returned.</p>
+<p>If multiple nested functions are running (which is not usual but technically
+possible), the innermost function name is returned.</p>
+<div class="refsect3">
+<a name="gwy-process-func-current.returns"></a><h4>Returns</h4>
+<p> The name of currently running data processing function or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-38.html#api-index-2.38">2.38</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

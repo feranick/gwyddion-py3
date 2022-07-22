@@ -1,0 +1,881 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>tip: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="libgwyprocess-stats-uncertainty.html" title="stats uncertainty">
+<link rel="next" href="libgwyprocess-MFM.html" title="MFM">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyprocess-tip.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#libgwyprocess-tip.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyprocess-stats-uncertainty.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyprocess-MFM.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyprocess-tip"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyprocess-tip.top_of_page"></a>tip</span></h2>
+<p>tip — SPM tip methods</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyprocess-tip.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libgwyprocess-tip.html#GwyTipModelFunc" title="GwyTipModelFunc ()">*GwyTipModelFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libgwyprocess-tip.html#GwyTipGuessFunc" title="GwyTipGuessFunc ()">*GwyTipGuessFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-tip.html#gwy-tip-model-get-npresets" title="gwy_tip_model_get_npresets ()">gwy_tip_model_get_npresets</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a class="link" href="libgwyprocess-tip.html#GwyTipModelPreset"><span class="returnvalue">GwyTipModelPreset</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-tip.html#gwy-tip-model-get-preset" title="gwy_tip_model_get_preset ()">gwy_tip_model_get_preset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a class="link" href="libgwyprocess-tip.html#GwyTipModelPreset"><span class="returnvalue">GwyTipModelPreset</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-tip.html#gwy-tip-model-get-preset-by-name" title="gwy_tip_model_get_preset_by_name ()">gwy_tip_model_get_preset_by_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-tip.html#gwy-tip-model-get-preset-id" title="gwy_tip_model_get_preset_id ()">gwy_tip_model_get_preset_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-tip.html#gwy-tip-model-get-preset-tip-name" title="gwy_tip_model_get_preset_tip_name ()">gwy_tip_model_get_preset_tip_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-tip.html#gwy-tip-model-get-preset-group-name" title="gwy_tip_model_get_preset_group_name ()">gwy_tip_model_get_preset_group_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-tip.html#gwy-tip-model-get-preset-nparams" title="gwy_tip_model_get_preset_nparams ()">gwy_tip_model_get_preset_nparams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a class="link" href="libgwyprocess-gwyprocessenums.html#GwyTipParamType" title="enum GwyTipParamType"><span class="returnvalue">GwyTipParamType</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-tip.html#gwy-tip-model-get-preset-params" title="gwy_tip_model_get_preset_params ()">gwy_tip_model_get_preset_params</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-tip.html#gwy-tip-model-preset-create" title="gwy_tip_model_preset_create ()">gwy_tip_model_preset_create</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-tip.html#gwy-tip-model-preset-create-for-zrange" title="gwy_tip_model_preset_create_for_zrange ()">gwy_tip_model_preset_create_for_zrange</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyDataField.html" title="GwyDataField"><span class="returnvalue">GwyDataField</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-tip.html#gwy-tip-dilation" title="gwy_tip_dilation ()">gwy_tip_dilation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyDataField.html" title="GwyDataField"><span class="returnvalue">GwyDataField</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-tip.html#gwy-tip-erosion" title="gwy_tip_erosion ()">gwy_tip_erosion</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyDataField.html" title="GwyDataField"><span class="returnvalue">GwyDataField</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-tip.html#gwy-tip-cmap" title="gwy_tip_cmap ()">gwy_tip_cmap</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyDataField.html" title="GwyDataField"><span class="returnvalue">GwyDataField</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-tip.html#gwy-tip-estimate-partial" title="gwy_tip_estimate_partial ()">gwy_tip_estimate_partial</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyDataField.html" title="GwyDataField"><span class="returnvalue">GwyDataField</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-tip.html#gwy-tip-estimate-full" title="gwy_tip_estimate_full ()">gwy_tip_estimate_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GwyTipModelPreset"></a><div class="refsect1">
+<a name="libgwyprocess-tip.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="libgwyprocess-tip.html#GwyTipModelPreset-struct" title="struct GwyTipModelPreset">GwyTipModelPreset</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-tip.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gpointer">gpointer</a>
+    <span class="lineart">╰──</span> GwyTipModelPreset
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-tip.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-tip.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-tip.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GwyTipModelFunc"></a><h3>GwyTipModelFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GwyTipModelFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *tip</code></em>,
+                    <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> height</code></em>,
+                    <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> radius</code></em>,
+                    <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> rotation</code></em>,
+                    <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *params</code></em>);</pre>
+<div class="warning"><p><code class="literal">GwyTipModelFunc</code> is deprecated and should not be used in newly-written code.</p></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyTipGuessFunc"></a><h3>GwyTipGuessFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GwyTipGuessFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data</code></em>,
+                    <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> height</code></em>,
+                    <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> radius</code></em>,
+                    <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *params</code></em>,
+                    <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *xres</code></em>,
+                    <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *yres</code></em>);</pre>
+<div class="warning"><p><code class="literal">GwyTipGuessFunc</code> is deprecated and should not be used in newly-written code.</p></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tip-model-get-npresets"></a><h3>gwy_tip_model_get_npresets ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_tip_model_get_npresets (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Find number of actual tip model presets.</p>
+<div class="refsect3">
+<a name="gwy-tip-model-get-npresets.returns"></a><h4>Returns</h4>
+<p> Number of presets.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tip-model-get-preset"></a><h3>gwy_tip_model_get_preset ()</h3>
+<pre class="programlisting">const <a class="link" href="libgwyprocess-tip.html#GwyTipModelPreset"><span class="returnvalue">GwyTipModelPreset</span></a> *
+gwy_tip_model_get_preset (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> preset_id</code></em>);</pre>
+<p>Get data related to tip preset.</p>
+<div class="refsect3">
+<a name="gwy-tip-model-get-preset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>preset_id</p></td>
+<td class="parameter_description"><p>Preset identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-tip-model-get-preset.returns"></a><h4>Returns</h4>
+<p> Chosen preset data.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tip-model-get-preset-by-name"></a><h3>gwy_tip_model_get_preset_by_name ()</h3>
+<pre class="programlisting">const <a class="link" href="libgwyprocess-tip.html#GwyTipModelPreset"><span class="returnvalue">GwyTipModelPreset</span></a> *
+gwy_tip_model_get_preset_by_name (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Get data related to preset with specified name.</p>
+<div class="refsect3">
+<a name="gwy-tip-model-get-preset-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Name of tip (e. g. "contact").</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-tip-model-get-preset-by-name.returns"></a><h4>Returns</h4>
+<p> Chosen preset data.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tip-model-get-preset-id"></a><h3>gwy_tip_model_get_preset_id ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_tip_model_get_preset_id (<em class="parameter"><code>const <a class="link" href="libgwyprocess-tip.html#GwyTipModelPreset"><span class="type">GwyTipModelPreset</span></a> *preset</code></em>);</pre>
+<p>Get preset identifier within all presets.</p>
+<div class="refsect3">
+<a name="gwy-tip-model-get-preset-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>Tip model preset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-tip-model-get-preset-id.returns"></a><h4>Returns</h4>
+<p> Preset id.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tip-model-get-preset-tip-name"></a><h3>gwy_tip_model_get_preset_tip_name ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_tip_model_get_preset_tip_name (<em class="parameter"><code>const <a class="link" href="libgwyprocess-tip.html#GwyTipModelPreset"><span class="type">GwyTipModelPreset</span></a> *preset</code></em>);</pre>
+<p>Get name of the preset (e. g. "contact").</p>
+<div class="refsect3">
+<a name="gwy-tip-model-get-preset-tip-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>Tip model preset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-tip-model-get-preset-tip-name.returns"></a><h4>Returns</h4>
+<p> Preset name.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tip-model-get-preset-group-name"></a><h3>gwy_tip_model_get_preset_group_name ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_tip_model_get_preset_group_name (<em class="parameter"><code>const <a class="link" href="libgwyprocess-tip.html#GwyTipModelPreset"><span class="type">GwyTipModelPreset</span></a> *preset</code></em>);</pre>
+<p>Get group name of preset (e. g. "analytical".)</p>
+<div class="refsect3">
+<a name="gwy-tip-model-get-preset-group-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>Tip model preset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-tip-model-get-preset-group-name.returns"></a><h4>Returns</h4>
+<p> Preset group name.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tip-model-get-preset-nparams"></a><h3>gwy_tip_model_get_preset_nparams ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_tip_model_get_preset_nparams (<em class="parameter"><code>const <a class="link" href="libgwyprocess-tip.html#GwyTipModelPreset"><span class="type">GwyTipModelPreset</span></a> *preset</code></em>);</pre>
+<p>Get number of tip preset parameters.</p>
+<div class="warning">In versions prior to 2.47 the function alwas returned zero and thus
+was useless.  You had to know the what parameters each model had and always
+pass a maximum-nparams-sized array with only the interesting elements
+containing your parameters.  Since version 2.47 it returns the true number
+of parameters used in functions such as <a class="link" href="libgwyprocess-tip.html#gwy-tip-model-preset-create" title="gwy_tip_model_preset_create ()"><code class="function">gwy_tip_model_preset_create()</code></a> and
+<a class="link" href="libgwyprocess-tip.html#gwy-tip-model-preset-create-for-zrange" title="gwy_tip_model_preset_create_for_zrange ()"><code class="function">gwy_tip_model_preset_create_for_zrange()</code></a>.  It does not return the number of
+parameters the old functions take.  They behave exactly as before.</div>
+<div class="refsect3">
+<a name="gwy-tip-model-get-preset-nparams.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>Tip model preset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-tip-model-get-preset-nparams.returns"></a><h4>Returns</h4>
+<p> Number of parameters.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tip-model-get-preset-params"></a><h3>gwy_tip_model_get_preset_params ()</h3>
+<pre class="programlisting">const <a class="link" href="libgwyprocess-gwyprocessenums.html#GwyTipParamType" title="enum GwyTipParamType"><span class="returnvalue">GwyTipParamType</span></a> *
+gwy_tip_model_get_preset_params (<em class="parameter"><code>const <a class="link" href="libgwyprocess-tip.html#GwyTipModelPreset"><span class="type">GwyTipModelPreset</span></a> *preset</code></em>);</pre>
+<p>Gets the list of parameters of a tip model preset.</p>
+<p>All tip models have parameters from a predefined set given by the
+<a class="link" href="libgwyprocess-gwyprocessenums.html#GwyTipParamType" title="enum GwyTipParamType"><span class="type">GwyTipParamType</span></a> enum.</p>
+<p>Note further items may be in principle added to the set in the future so
+you may want to avoid tip models that have parameters with an unknown
+(higher than known) id.</p>
+<div class="refsect3">
+<a name="gwy-tip-model-get-preset-params.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>Tip model preset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-tip-model-get-preset-params.returns"></a><h4>Returns</h4>
+<p> List of all tip model parameter ids in ascending order.  The array
+is owned by the library and must not be modified nor freed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tip-model-preset-create"></a><h3>gwy_tip_model_preset_create ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_tip_model_preset_create (<em class="parameter"><code>const <a class="link" href="libgwyprocess-tip.html#GwyTipModelPreset"><span class="type">GwyTipModelPreset</span></a> *preset</code></em>,
+                             <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *tip</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *params</code></em>);</pre>
+<p>Fills a data field with a preset tip model.</p>
+<p>Both pixel and physical dimensions of the <em class="parameter"><code>tip</code></em>
+ data field are preserved by
+this function.  Ensure that before using this function the <em class="parameter"><code>tip</code></em>
+ data field
+has the same pixels as target data field you want to use the tip model with.</p>
+<p>The number of parameters is the true full number of parameters as reported
+by <a class="link" href="libgwyprocess-tip.html#gwy-tip-model-get-preset-nparams" title="gwy_tip_model_get_preset_nparams ()"><code class="function">gwy_tip_model_get_preset_nparams()</code></a> and <a class="link" href="libgwyprocess-tip.html#gwy-tip-model-get-preset-params" title="gwy_tip_model_get_preset_params ()"><code class="function">gwy_tip_model_get_preset_params()</code></a>.
+And only those parameters are passed in <em class="parameter"><code>params</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-tip-model-preset-create.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>Tip model preset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tip</p></td>
+<td class="parameter_description"><p>Data field to fill with the tip model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>Parameters of the tip model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tip-model-preset-create-for-zrange"></a><h3>gwy_tip_model_preset_create_for_zrange ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_tip_model_preset_create_for_zrange
+                               (<em class="parameter"><code>const <a class="link" href="libgwyprocess-tip.html#GwyTipModelPreset"><span class="type">GwyTipModelPreset</span></a> *preset</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *tip</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> zrange</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> square</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *params</code></em>);</pre>
+<p>Fills a data field with a preset tip model, resizing it to make it suitable
+for the given value range.</p>
+<p>The dimensions of a pixel in <em class="parameter"><code>tip</code></em>
+ is preserved by this function.  Ensure
+that before using this function the <em class="parameter"><code>tip</code></em>
+ data field has the same pixels as
+target data field you want to use the tip model with.</p>
+<p>However, its dimensions will generally be changed to ensure it is optimal
+for <em class="parameter"><code>zrange</code></em>
+.  This means it is guaranteed the height difference between the
+apex and any border pixel in <em class="parameter"><code>tip</code></em>
+ is at least <em class="parameter"><code>zrange</code></em>
+, while simultaneously
+the smallest such difference is not much larger than <em class="parameter"><code>zrange</code></em>
+.</p>
+<p>The number of parameters is the true full number of parameters as reported
+by <a class="link" href="libgwyprocess-tip.html#gwy-tip-model-get-preset-nparams" title="gwy_tip_model_get_preset_nparams ()"><code class="function">gwy_tip_model_get_preset_nparams()</code></a> and <a class="link" href="libgwyprocess-tip.html#gwy-tip-model-get-preset-params" title="gwy_tip_model_get_preset_params ()"><code class="function">gwy_tip_model_get_preset_params()</code></a>.
+And only those parameters are passed in <em class="parameter"><code>params</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-tip-model-preset-create-for-zrange.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>Tip model preset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tip</p></td>
+<td class="parameter_description"><p>Data field to fill with the tip model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>zrange</p></td>
+<td class="parameter_description"><p>Range of height values in the data determining the required height
+of the tip model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>square</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to enforce a square data field (with <em class="parameter"><code>xres</code></em>
+and <em class="parameter"><code>yres</code></em>
+equal).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>Parameters of the tip model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tip-dilation"></a><h3>gwy_tip_dilation ()</h3>
+<pre class="programlisting"><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="returnvalue">GwyDataField</span></a> *
+gwy_tip_dilation (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *tip</code></em>,
+                  <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *surface</code></em>,
+                  <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *result</code></em>,
+                  <em class="parameter"><code><a href="../libgwyddion-gwyutils.html#GwySetFractionFunc"><span class="type">GwySetFractionFunc</span></a> set_fraction</code></em>,
+                  <em class="parameter"><code><a href="../libgwyddion-gwyutils.html#GwySetMessageFunc"><span class="type">GwySetMessageFunc</span></a> set_message</code></em>);</pre>
+<p>Performs the tip convolution algorithm published by Villarrubia, which is
+equivalent to morphological dilation operation.</p>
+<p>If the operation is aborted the size and contents of <em class="parameter"><code>result</code></em>
+ field is
+undefined.</p>
+<div class="refsect3">
+<a name="gwy-tip-dilation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tip</p></td>
+<td class="parameter_description"><p>Tip data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>Surface data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>Data field where to store dilated surface to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set_fraction</p></td>
+<td class="parameter_description"><p>Function that sets fraction to output (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set_message</p></td>
+<td class="parameter_description"><p>Function that sets message to output (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-tip-dilation.returns"></a><h4>Returns</h4>
+<p> Dilated surface data, i.e. <em class="parameter"><code>result</code></em>
+, on success.  May return <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+if aborted.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tip-erosion"></a><h3>gwy_tip_erosion ()</h3>
+<pre class="programlisting"><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="returnvalue">GwyDataField</span></a> *
+gwy_tip_erosion (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *tip</code></em>,
+                 <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *surface</code></em>,
+                 <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *result</code></em>,
+                 <em class="parameter"><code><a href="../libgwyddion-gwyutils.html#GwySetFractionFunc"><span class="type">GwySetFractionFunc</span></a> set_fraction</code></em>,
+                 <em class="parameter"><code><a href="../libgwyddion-gwyutils.html#GwySetMessageFunc"><span class="type">GwySetMessageFunc</span></a> set_message</code></em>);</pre>
+<p>Performs surface reconstruction (erosion) algorithm published by
+Villarrubia, which is equivalent to morphological erosion operation.</p>
+<p>If the operation is aborted the size and contents of <em class="parameter"><code>result</code></em>
+ field is
+undefined.</p>
+<div class="refsect3">
+<a name="gwy-tip-erosion.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tip</p></td>
+<td class="parameter_description"><p>Tip data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>Surface to be eroded.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>Data field where to store dilated surface to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set_fraction</p></td>
+<td class="parameter_description"><p>Function that sets fraction to output (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set_message</p></td>
+<td class="parameter_description"><p>Function that sets message to output (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-tip-erosion.returns"></a><h4>Returns</h4>
+<p> Reconstructed (eroded) surface, i.e. <em class="parameter"><code>result</code></em>
+, on success.  May
+return <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if aborted.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tip-cmap"></a><h3>gwy_tip_cmap ()</h3>
+<pre class="programlisting"><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="returnvalue">GwyDataField</span></a> *
+gwy_tip_cmap (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *tip</code></em>,
+              <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *surface</code></em>,
+              <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *result</code></em>,
+              <em class="parameter"><code><a href="../libgwyddion-gwyutils.html#GwySetFractionFunc"><span class="type">GwySetFractionFunc</span></a> set_fraction</code></em>,
+              <em class="parameter"><code><a href="../libgwyddion-gwyutils.html#GwySetMessageFunc"><span class="type">GwySetMessageFunc</span></a> set_message</code></em>);</pre>
+<p>Performs certainty map algorithm published by Villarrubia. This function
+converts all fields into form requested by "morph_lib.c" library, that is
+almost identical with original Villarubia's library. Result certainty map
+can be used as a mask of points where tip did not directly touch the
+surface.</p>
+<div class="refsect3">
+<a name="gwy-tip-cmap.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tip</p></td>
+<td class="parameter_description"><p>Tip data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>Surface data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>Data field to store ceratainty map data to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set_fraction</p></td>
+<td class="parameter_description"><p>Function that sets fraction to output (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set_message</p></td>
+<td class="parameter_description"><p>Function that sets message to output (of <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-tip-cmap.returns"></a><h4>Returns</h4>
+<p> Certainty map, i.e. <em class="parameter"><code>result</code></em>
+, on success.  May return <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if
+aborted.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tip-estimate-partial"></a><h3>gwy_tip_estimate_partial ()</h3>
+<pre class="programlisting"><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="returnvalue">GwyDataField</span></a> *
+gwy_tip_estimate_partial (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *tip</code></em>,
+                          <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *surface</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> threshold</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> use_edges</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *count</code></em>,
+                          <em class="parameter"><code><a href="../libgwyddion-gwyutils.html#GwySetFractionFunc"><span class="type">GwySetFractionFunc</span></a> set_fraction</code></em>,
+                          <em class="parameter"><code><a href="../libgwyddion-gwyutils.html#GwySetMessageFunc"><span class="type">GwySetMessageFunc</span></a> set_message</code></em>);</pre>
+<p>Performs partial blind estimation algorithm published by Villarrubia. This
+function converts all fields into form requested by "morph_lib.c" library,
+that is almost identical with original Villarubia's library. Note that the
+threshold value must be chosen sufficently high value to supress small
+fluctulations due to noise (that would lead to very sharp tip) but
+sufficiently low value to put algorithm at work. A value similar to 1/10000
+of surface range can be good. Otherwise we recommend to start with zero
+threshold and increase it slowly to observe changes and choose right value.</p>
+<div class="refsect3">
+<a name="gwy-tip-estimate-partial.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tip</p></td>
+<td class="parameter_description"><p>Tip data to be refined (allocated).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>Surface data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>threshold</p></td>
+<td class="parameter_description"><p>Threshold for noise supression.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>use_edges</p></td>
+<td class="parameter_description"><p>Whether use also edges of image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>Where to store the number of places that produced refinements to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set_fraction</p></td>
+<td class="parameter_description"><p>Function that sets fraction to output (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set_message</p></td>
+<td class="parameter_description"><p>Function that sets message to output (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-tip-estimate-partial.returns"></a><h4>Returns</h4>
+<p> Estimated tip.  May return <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if aborted.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tip-estimate-full"></a><h3>gwy_tip_estimate_full ()</h3>
+<pre class="programlisting"><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="returnvalue">GwyDataField</span></a> *
+gwy_tip_estimate_full (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *tip</code></em>,
+                       <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *surface</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> threshold</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> use_edges</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *count</code></em>,
+                       <em class="parameter"><code><a href="../libgwyddion-gwyutils.html#GwySetFractionFunc"><span class="type">GwySetFractionFunc</span></a> set_fraction</code></em>,
+                       <em class="parameter"><code><a href="../libgwyddion-gwyutils.html#GwySetMessageFunc"><span class="type">GwySetMessageFunc</span></a> set_message</code></em>);</pre>
+<p>Performs full blind estimation algorithm published by Villarrubia. This
+function converts all fields into form requested by "morph_lib.c" library,
+that is almost identical with original Villarubia's library. Note that the
+threshold value must be chosen sufficently high value to supress small
+fluctulations due to noise (that would lead to very sharp tip) but
+sufficiently low value to put algorithm at work. A value similar to 1/10000
+of surface range can be good. Otherwise we recommend to start with zero
+threshold and increase it slowly to observe changes and choose right value.</p>
+<div class="refsect3">
+<a name="gwy-tip-estimate-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tip</p></td>
+<td class="parameter_description"><p>Tip data to be refined (allocated).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>Surface data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>threshold</p></td>
+<td class="parameter_description"><p>Threshold for noise supression.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>use_edges</p></td>
+<td class="parameter_description"><p>Whether use also edges of image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>count</p></td>
+<td class="parameter_description"><p>Where to store the number of places that produced refinements to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set_fraction</p></td>
+<td class="parameter_description"><p>Function that sets fraction to output (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set_message</p></td>
+<td class="parameter_description"><p>Function that sets message to output (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-tip-estimate-full.returns"></a><h4>Returns</h4>
+<p> Estimated tip.  May return <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if aborted.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-tip.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyTipModelPreset-struct"></a><h3>struct GwyTipModelPreset</h3>
+<pre class="programlisting">struct GwyTipModelPreset;</pre>
+<div class="warning"><p><code class="literal">GwyTipModelPreset</code> is deprecated and should not be used in newly-written code.</p></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

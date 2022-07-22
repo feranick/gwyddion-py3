@@ -1,0 +1,1615 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyInventory: Gwyddion Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="prev" href="GwyEnum.html" title="GwyEnum">
+<link rel="next" href="libgwyddion-GwyRandGenSet.html" title="GwyRandGenSet">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyInventory.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyInventory.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GwyInventory.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="GwyEnum.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyddion-GwyRandGenSet.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyInventory"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyInventory.top_of_page"></a>GwyInventory</span></h2>
+<p>GwyInventory — Ordered item inventory, indexed by both name and
+position.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyInventory.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyInventory.html" title="GwyInventory"><span class="returnvalue">GwyInventory</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-new" title="gwy_inventory_new ()">gwy_inventory_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyInventory.html" title="GwyInventory"><span class="returnvalue">GwyInventory</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-new-filled" title="gwy_inventory_new_filled ()">gwy_inventory_new_filled</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyInventory.html" title="GwyInventory"><span class="returnvalue">GwyInventory</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-new-from-array" title="gwy_inventory_new_from_array ()">gwy_inventory_new_from_array</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-get-n-items" title="gwy_inventory_get_n_items ()">gwy_inventory_get_n_items</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-can-make-copies" title="gwy_inventory_can_make_copies ()">gwy_inventory_can_make_copies</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-is-const" title="gwy_inventory_is_const ()">gwy_inventory_is_const</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a class="link" href="GwyInventory.html#GwyInventoryItemType" title="struct GwyInventoryItemType"><span class="returnvalue">GwyInventoryItemType</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-get-item-type" title="gwy_inventory_get_item_type ()">gwy_inventory_get_item_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-get-item" title="gwy_inventory_get_item ()">gwy_inventory_get_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-get-item-or-default" title="gwy_inventory_get_item_or_default ()">gwy_inventory_get_item_or_default</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-get-nth-item" title="gwy_inventory_get_nth_item ()">gwy_inventory_get_nth_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-get-item-position" title="gwy_inventory_get_item_position ()">gwy_inventory_get_item_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-foreach" title="gwy_inventory_foreach ()">gwy_inventory_foreach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-find" title="gwy_inventory_find ()">gwy_inventory_find</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-set-default-item-name" title="gwy_inventory_set_default_item_name ()">gwy_inventory_set_default_item_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-get-default-item-name" title="gwy_inventory_get_default_item_name ()">gwy_inventory_get_default_item_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-get-default-item" title="gwy_inventory_get_default_item ()">gwy_inventory_get_default_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-item-updated" title="gwy_inventory_item_updated ()">gwy_inventory_item_updated</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-nth-item-updated" title="gwy_inventory_nth_item_updated ()">gwy_inventory_nth_item_updated</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-restore-order" title="gwy_inventory_restore_order ()">gwy_inventory_restore_order</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-forget-order" title="gwy_inventory_forget_order ()">gwy_inventory_forget_order</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-insert-item" title="gwy_inventory_insert_item ()">gwy_inventory_insert_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-insert-nth-item" title="gwy_inventory_insert_nth_item ()">gwy_inventory_insert_nth_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-delete-item" title="gwy_inventory_delete_item ()">gwy_inventory_delete_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-delete-nth-item" title="gwy_inventory_delete_nth_item ()">gwy_inventory_delete_nth_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-rename-item" title="gwy_inventory_rename_item ()">gwy_inventory_rename_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyInventory.html#gwy-inventory-new-item" title="gwy_inventory_new_item ()">gwy_inventory_new_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyInventory.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyInventory.html#GwyInventory-default-changed" title="The “default-changed” signal">default-changed</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-NO-RECURSE:CAPS">No Recursion</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyInventory.html#GwyInventory-item-deleted" title="The “item-deleted” signal">item-deleted</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-NO-RECURSE:CAPS">No Recursion</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyInventory.html#GwyInventory-item-inserted" title="The “item-inserted” signal">item-inserted</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-NO-RECURSE:CAPS">No Recursion</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyInventory.html#GwyInventory-item-updated" title="The “item-updated” signal">item-updated</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-NO-RECURSE:CAPS">No Recursion</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyInventory.html#GwyInventory-items-reordered" title="The “items-reordered” signal">items-reordered</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-NO-RECURSE:CAPS">No Recursion</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyInventory.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyInventory.html#GwyInventoryItemType" title="struct GwyInventoryItemType">GwyInventoryItemType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyInventory.html#GwyInventory-struct" title="struct GwyInventory">GwyInventory</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyInventory.html#GwyInventoryClass" title="struct GwyInventoryClass">GwyInventoryClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyInventory.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> GwyInventory
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyInventory.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwyddion/gwyddion.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyInventory.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> is a uniform container that offers both hash table and array
+(sorted or unsorted) interfaces.  Both types of read access are fast,
+operations that modify it may be slower.  Inventory can also maintain a
+notion of default item.</p>
+<p><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> can be used both as an actual container for some data, or just
+wrap a static array with a the same interface so the actual storage is
+opaque to inventory user.  The former kind of inventories can be created
+with <a class="link" href="GwyInventory.html#gwy-inventory-new" title="gwy_inventory_new ()"><code class="function">gwy_inventory_new()</code></a> or <a class="link" href="GwyInventory.html#gwy-inventory-new-filled" title="gwy_inventory_new_filled ()"><code class="function">gwy_inventory_new_filled()</code></a>; constant inventory
+is created with <a class="link" href="GwyInventory.html#gwy-inventory-new-from-array" title="gwy_inventory_new_from_array ()"><code class="function">gwy_inventory_new_from_array()</code></a>.  Contantess of an inventory
+can be tested with <a class="link" href="GwyInventory.html#gwy-inventory-is-const" title="gwy_inventory_is_const ()"><code class="function">gwy_inventory_is_const()</code></a>.</p>
+<p>Possible operations with data items stored in an inventory are specified
+upon inventory creation with <a class="link" href="GwyInventory.html#GwyInventoryItemType" title="struct GwyInventoryItemType"><span class="type">GwyInventoryItemType</span></a> structure.  Not all
+fields are mandatory, with items allowing more operations the inventory is
+more capable too.  For example, if items offer a method to make copies,
+<a class="link" href="GwyInventory.html#gwy-inventory-new-item" title="gwy_inventory_new_item ()"><code class="function">gwy_inventory_new_item()</code></a> can be used to directly create new items in the
+inventory (this capability can be tested with
+<a class="link" href="GwyInventory.html#gwy-inventory-can-make-copies" title="gwy_inventory_can_make_copies ()"><code class="function">gwy_inventory_can_make_copies()</code></a>).</p>
+<p>Item can have `traits', that is data that can be obtained generically. They
+are similar to <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> properties.  Actually, if items are objects, they
+should simply map object properties to traits.  But it is possible to define
+traits for simple structures too.</p>
+</div>
+<div class="refsect1">
+<a name="GwyInventory.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-inventory-new"></a><h3>gwy_inventory_new ()</h3>
+<pre class="programlisting"><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="returnvalue">GwyInventory</span></a> *
+gwy_inventory_new (<em class="parameter"><code>const <a class="link" href="GwyInventory.html#GwyInventoryItemType" title="struct GwyInventoryItemType"><span class="type">GwyInventoryItemType</span></a> *itype</code></em>);</pre>
+<p>Creates a new inventory.</p>
+<div class="refsect3">
+<a name="gwy-inventory-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>itype</p></td>
+<td class="parameter_description"><p>Type of items the inventory will contain.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-inventory-new.returns"></a><h4>Returns</h4>
+<p> The newly created inventory.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-new-filled"></a><h3>gwy_inventory_new_filled ()</h3>
+<pre class="programlisting"><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="returnvalue">GwyInventory</span></a> *
+gwy_inventory_new_filled (<em class="parameter"><code>const <a class="link" href="GwyInventory.html#GwyInventoryItemType" title="struct GwyInventoryItemType"><span class="type">GwyInventoryItemType</span></a> *itype</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nitems</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> *items</code></em>);</pre>
+<p>Creates a new inventory and fills it with items.</p>
+<div class="refsect3">
+<a name="gwy-inventory-new-filled.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>itype</p></td>
+<td class="parameter_description"><p>Type of items the inventory will contain.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nitems</p></td>
+<td class="parameter_description"><p>The number of pointers in <em class="parameter"><code>items</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>items</p></td>
+<td class="parameter_description"><p>Item pointers to fill the newly created inventory with.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-inventory-new-filled.returns"></a><h4>Returns</h4>
+<p> The newly created inventory.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-new-from-array"></a><h3>gwy_inventory_new_from_array ()</h3>
+<pre class="programlisting"><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="returnvalue">GwyInventory</span></a> *
+gwy_inventory_new_from_array (<em class="parameter"><code>const <a class="link" href="GwyInventory.html#GwyInventoryItemType" title="struct GwyInventoryItemType"><span class="type">GwyInventoryItemType</span></a> *itype</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> item_size</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nitems</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> items</code></em>);</pre>
+<p>Creates a new inventory from static item array.</p>
+<p>The inventory is neither modifiable nor sortable, it simply serves as an
+adaptor for the array <em class="parameter"><code>items</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-inventory-new-from-array.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>itype</p></td>
+<td class="parameter_description"><p>Type of items the inventory will contain.  Inventory keeps a copy
+of it, so it can be an automatic variable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>item_size</p></td>
+<td class="parameter_description"><p>Item size in bytes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nitems</p></td>
+<td class="parameter_description"><p>The number of items in <em class="parameter"><code>items</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>items</p></td>
+<td class="parameter_description"><p>An array with items.  It will be directly used as thus must
+exist through the whole lifetime of inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-inventory-new-from-array.returns"></a><h4>Returns</h4>
+<p> The newly created inventory.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-get-n-items"></a><h3>gwy_inventory_get_n_items ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gwy_inventory_get_n_items (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>);</pre>
+<p>Returns the number of items in an inventory.</p>
+<div class="refsect3">
+<a name="gwy-inventory-get-n-items.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-inventory-get-n-items.returns"></a><h4>Returns</h4>
+<p> The number of items.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-can-make-copies"></a><h3>gwy_inventory_can_make_copies ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_inventory_can_make_copies (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>);</pre>
+<p>Returns whether an inventory can create new items itself.</p>
+<p>The prerequistie is that item type is a serializable object.  It enables
+functions like <a class="link" href="GwyInventory.html#gwy-inventory-new-item" title="gwy_inventory_new_item ()"><code class="function">gwy_inventory_new_item()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-inventory-can-make-copies.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-inventory-can-make-copies.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if inventory can create new items itself.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-is-const"></a><h3>gwy_inventory_is_const ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_inventory_is_const (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>);</pre>
+<p>Returns whether an inventory is an constant inventory.</p>
+<p>Not only you cannot modify a constant inventory, but functions like
+<a class="link" href="GwyInventory.html#gwy-inventory-get-item" title="gwy_inventory_get_item ()"><code class="function">gwy_inventory_get_item()</code></a> may return pointers to constant memory.</p>
+<div class="refsect3">
+<a name="gwy-inventory-is-const.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-inventory-is-const.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if inventory is constant.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-get-item-type"></a><h3>gwy_inventory_get_item_type ()</h3>
+<pre class="programlisting">const <a class="link" href="GwyInventory.html#GwyInventoryItemType" title="struct GwyInventoryItemType"><span class="returnvalue">GwyInventoryItemType</span></a> *
+gwy_inventory_get_item_type (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>);</pre>
+<p>Returns the type of item an inventory holds.</p>
+<div class="refsect3">
+<a name="gwy-inventory-get-item-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-inventory-get-item-type.returns"></a><h4>Returns</h4>
+<p> The item type.  It is owned by inventory and must not be modified
+or freed.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-get-item"></a><h3>gwy_inventory_get_item ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+gwy_inventory_get_item (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Looks up an item in an inventory.</p>
+<div class="refsect3">
+<a name="gwy-inventory-get-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Item name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-inventory-get-item.returns"></a><h4>Returns</h4>
+<p> Item called <em class="parameter"><code>name</code></em>
+, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there is no such item.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-get-item-or-default"></a><h3>gwy_inventory_get_item_or_default ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+gwy_inventory_get_item_or_default (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>,
+                                   <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Looks up an item in an inventory, eventually falling back to default.</p>
+<p>The lookup order is: item of requested name, default item (if set), any
+inventory item, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (can happen only when inventory is empty).</p>
+<div class="refsect3">
+<a name="gwy-inventory-get-item-or-default.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Item name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-inventory-get-item-or-default.returns"></a><h4>Returns</h4>
+<p> Item called <em class="parameter"><code>name</code></em>
+, or default item.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-get-nth-item"></a><h3>gwy_inventory_get_nth_item ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+gwy_inventory_get_nth_item (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>);</pre>
+<p>Returns item on given position in an inventory.</p>
+<div class="refsect3">
+<a name="gwy-inventory-get-nth-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Item position.  It must be between zero and the number of items in
+inventory, inclusive.  If it is equal to the number of items, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+is returned.  In other words, inventory behaves like a <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated
+array, you can simply iterate over it until <a class="link" href="GwyInventory.html#gwy-inventory-get-nth-item" title="gwy_inventory_get_nth_item ()"><code class="function">gwy_inventory_get_nth_item()</code></a>
+returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-inventory-get-nth-item.returns"></a><h4>Returns</h4>
+<p> Item at given position.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-get-item-position"></a><h3>gwy_inventory_get_item_position ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gwy_inventory_get_item_position (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>,
+                                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Finds position of an item in an inventory.</p>
+<div class="refsect3">
+<a name="gwy-inventory-get-item-position.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Item name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-inventory-get-item-position.returns"></a><h4>Returns</h4>
+<p> Item position, or (guint)-1 if there is no such item.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-foreach"></a><h3>gwy_inventory_foreach ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_inventory_foreach (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Hash-Tables.html#GHFunc"><span class="type">GHFunc</span></a> function</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Calls a function on each item of an inventory, in order.</p>
+<p><em class="parameter"><code>function</code></em>
+'s first argument is item position (transformed with
+<a href="/usr/share/gtk-doc/html/glib/glib-Type-Conversion-Macros.html#GUINT-TO-POINTER:CAPS"><code class="function">GUINT_TO_POINTER()</code></a>), second is item pointer, and the last is <em class="parameter"><code>user_data</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-inventory-foreach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>function</p></td>
+<td class="parameter_description"><p>A function to call on each item.  It must not modify <em class="parameter"><code>inventory</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>Data passed to <em class="parameter"><code>function</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-find"></a><h3>gwy_inventory_find ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+gwy_inventory_find (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Hash-Tables.html#GHRFunc"><span class="type">GHRFunc</span></a> predicate</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Finds an inventory item using user-specified predicate function.</p>
+<p><em class="parameter"><code>predicate</code></em>
+ is called for each item in <em class="parameter"><code>inventory</code></em>
+ (in order) until it returns
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.  Its arguments are the same as in <a class="link" href="GwyInventory.html#gwy-inventory-foreach" title="gwy_inventory_foreach ()"><code class="function">gwy_inventory_foreach()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-inventory-find.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>predicate</p></td>
+<td class="parameter_description"><p>A function testing some item property.  It must not modify
+<em class="parameter"><code>inventory</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>Data passed to <em class="parameter"><code>predicate</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-inventory-find.returns"></a><h4>Returns</h4>
+<p> The item for which <em class="parameter"><code>predicate</code></em>
+returned <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.  If there is no
+such item in the inventory, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is returned.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-set-default-item-name"></a><h3>gwy_inventory_set_default_item_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_inventory_set_default_item_name (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>,
+                                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Sets the default of an inventory.</p>
+<p>Item <em class="parameter"><code>name</code></em>
+ must already exist in the inventory.</p>
+<div class="refsect3">
+<a name="gwy-inventory-set-default-item-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Item name, pass <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to unset default item.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-get-default-item-name"></a><h3>gwy_inventory_get_default_item_name ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_inventory_get_default_item_name (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>);</pre>
+<p>Returns the name of the default item of an inventory.</p>
+<div class="refsect3">
+<a name="gwy-inventory-get-default-item-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-inventory-get-default-item-name.returns"></a><h4>Returns</h4>
+<p> The default item name, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if no default name is set.
+Item of this name may or may not exist in the inventory.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-get-default-item"></a><h3>gwy_inventory_get_default_item ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+gwy_inventory_get_default_item (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>);</pre>
+<p>Returns the default item of an inventory.</p>
+<div class="refsect3">
+<a name="gwy-inventory-get-default-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-inventory-get-default-item.returns"></a><h4>Returns</h4>
+<p> The default item.  If there is no default item, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is returned.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-item-updated"></a><h3>gwy_inventory_item_updated ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_inventory_item_updated (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Notifies inventory an item was updated.</p>
+<p>This function makes sense primarily for non-object items, as object items
+can notify inventory via signals.</p>
+<div class="refsect3">
+<a name="gwy-inventory-item-updated.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Item name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-nth-item-updated"></a><h3>gwy_inventory_nth_item_updated ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_inventory_nth_item_updated (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>);</pre>
+<p>Notifies inventory item on given position was updated.</p>
+<p>This function makes sense primarily for non-object items, as object items
+can provide <em class="parameter"><code>watchable_signal</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-inventory-nth-item-updated.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Item position.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-restore-order"></a><h3>gwy_inventory_restore_order ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_inventory_restore_order (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>);</pre>
+<p>Assures an inventory is sorted.</p>
+<div class="refsect3">
+<a name="gwy-inventory-restore-order.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-forget-order"></a><h3>gwy_inventory_forget_order ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_inventory_forget_order (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>);</pre>
+<p>Forces an inventory to be unsorted.</p>
+<p>Item positions don't change, but future <a class="link" href="GwyInventory.html#gwy-inventory-insert-item" title="gwy_inventory_insert_item ()"><code class="function">gwy_inventory_insert_item()</code></a> won't
+try to insert items in order.</p>
+<div class="refsect3">
+<a name="gwy-inventory-forget-order.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-insert-item"></a><h3>gwy_inventory_insert_item ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+gwy_inventory_insert_item (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> item</code></em>);</pre>
+<p>Inserts an item into an inventory.</p>
+<p>Item of the same name must not exist yet.</p>
+<p>If the inventory is sorted, item is inserted to keep order.  If the
+inventory is unsorted, item is simply added to the end.</p>
+<div class="refsect3">
+<a name="gwy-inventory-insert-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>item</p></td>
+<td class="parameter_description"><p>An item to insert.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-inventory-insert-item.returns"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>item</code></em>
+, for convenience.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-insert-nth-item"></a><h3>gwy_inventory_insert_nth_item ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+gwy_inventory_insert_nth_item (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> item</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>);</pre>
+<p>Inserts an item to an explicit position in an inventory.</p>
+<p>Item of the same name must not exist yet.</p>
+<div class="refsect3">
+<a name="gwy-inventory-insert-nth-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>item</p></td>
+<td class="parameter_description"><p>An item to insert.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Position to insert <em class="parameter"><code>item</code></em>
+to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-inventory-insert-nth-item.returns"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>item</code></em>
+, for convenience.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-delete-item"></a><h3>gwy_inventory_delete_item ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_inventory_delete_item (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>,
+                           <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Deletes an item from an inventory.</p>
+<div class="refsect3">
+<a name="gwy-inventory-delete-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Name of item to delete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-inventory-delete-item.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if item was deleted.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-delete-nth-item"></a><h3>gwy_inventory_delete_nth_item ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_inventory_delete_nth_item (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>);</pre>
+<p>Deletes an item on given position from an inventory.</p>
+<div class="refsect3">
+<a name="gwy-inventory-delete-nth-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Position of <em class="parameter"><code>item</code></em>
+to delete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-inventory-delete-nth-item.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if item was deleted.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-rename-item"></a><h3>gwy_inventory_rename_item ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+gwy_inventory_rename_item (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>,
+                           <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                           <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *newname</code></em>);</pre>
+<p>Renames an inventory item.</p>
+<p>If an item of name <em class="parameter"><code>newname</code></em>
+ is already present in <em class="parameter"><code>inventory</code></em>
+, the rename
+will fail.</p>
+<div class="refsect3">
+<a name="gwy-inventory-rename-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Name of item to rename.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>newname</p></td>
+<td class="parameter_description"><p>New name of item.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-inventory-rename-item.returns"></a><h4>Returns</h4>
+<p> The item, for convenience.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-inventory-new-item"></a><h3>gwy_inventory_new_item ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>
+gwy_inventory_new_item (<em class="parameter"><code><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *inventory</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *newname</code></em>);</pre>
+<p>Creates a new item as a copy of existing one and inserts it to inventory.</p>
+<p>The newly created item can be called differently than <em class="parameter"><code>newname</code></em>
+ if that
+already exists.</p>
+<div class="refsect3">
+<a name="gwy-inventory-new-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>An inventory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Name of item to duplicate, may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to use default item (the
+same happens when <em class="parameter"><code>name</code></em>
+does not exist).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>newname</p></td>
+<td class="parameter_description"><p>Name of new item, it must not exist yet.  It may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, the
+new name is based on <em class="parameter"><code>name</code></em>
+then.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-inventory-new-item.returns"></a><h4>Returns</h4>
+<p> The newly added item.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyInventory.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyInventoryItemType"></a><h3>struct GwyInventoryItemType</h3>
+<pre class="programlisting">struct GwyInventoryItemType {
+    GType         type;
+    const gchar  *watchable_signal;
+    gboolean     (*is_fixed)       (gconstpointer item);
+    const gchar* (*get_name)       (gpointer item);
+    gint         (*compare)        (gconstpointer item1,
+                                    gconstpointer item2);
+    void         (*rename)         (gpointer item,
+                                    const gchar *newname);
+    void         (*dismantle)      (gpointer item);
+    gpointer     (*copy)           (gpointer item);
+    const GType* (*get_traits)     (gint *ntraits);
+    const gchar* (*get_trait_name) (gint i);
+    void         (*get_trait_value)(gpointer item,
+                                    gint i,
+                                    GValue *value);
+};
+</pre>
+<p>Infromation about a <a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> item type.</p>
+<p>Note only one of the fields must be always defined: <em class="parameter"><code>get_name</code></em>
+.  All the
+others give inventory (and thus inventory users) some additional powers over
+items.  They may be set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> or 0 if particular item type does not
+(want to) support this operation.</p>
+<p>The three trait methods are not used by <a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> itself, but allows
+<a href="../GwyInventoryStore.html#GwyInventoryStore-struct"><span class="type">GwyInventoryStore</span></a> to generically map item properties to virtual columns
+of a <a href="/usr/share/gtk-doc/html/gtk3/GtkTreeModel.html#GtkTreeModel-struct"><span class="type">GtkTreeModel</span></a>.  If items are objects, you will usually want to
+directly map some or all <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> properties to item traits.  If they are
+plain C structs or something else, you can easily export their data members
+as virtual <a href="/usr/share/gtk-doc/html/gtk3/GtkTreeModel.html#GtkTreeModel-struct"><span class="type">GtkTreeModel</span></a> columns by defining traits for them.</p>
+<div class="refsect3">
+<a name="GwyInventoryItemType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> <em class="structfield"><code><a name="GwyInventoryItemType.type"></a>type</code></em>;</p></td>
+<td class="struct_member_description"><p>Object type, if item is object or other type with registered GType.
+May be zero to indicate an unregistered item type.
+If items are objects, inventory takes a reference on them.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="GwyInventoryItemType.watchable-signal"></a>watchable_signal</code></em>;</p></td>
+<td class="struct_member_description"><p>Item signal name to watch, used only for objects.
+When item emits this signal, inventory emits
+"item-updated" signal for it.
+May be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to indicate no signal should be watched,
+you can still emit "item-updated" with
+<a class="link" href="GwyInventory.html#gwy-inventory-item-updated" title="gwy_inventory_item_updated ()"><code class="function">gwy_inventory_item_updated()</code></a> or
+<a class="link" href="GwyInventory.html#gwy-inventory-nth-item-updated" title="gwy_inventory_nth_item_updated ()"><code class="function">gwy_inventory_nth_item_updated()</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwyInventoryItemType.is-fixed"></a>is_fixed</code></em> ()</p></td>
+<td class="struct_member_description"><p>If not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> and returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> for some item, such an item
+cannot be removed from inventory, fixed items can be only
+added.  This is checked each time an attempt is made to remove
+an item.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwyInventoryItemType.get-name"></a>get_name</code></em> ()</p></td>
+<td class="struct_member_description"><p>Returns item name (the string is owned by item and it is assumed
+to exist until item ceases to exist or is renamed).  This
+function is obligatory.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwyInventoryItemType.compare"></a>compare</code></em> ()</p></td>
+<td class="struct_member_description"><p>Item comparation function for sorting.
+If <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, inventory never attempts to keep any item order
+and <a class="link" href="GwyInventory.html#gwy-inventory-restore-order" title="gwy_inventory_restore_order ()"><code class="function">gwy_inventory_restore_order()</code></a> does nothing.
+Otherwise inventory is sorted unless sorting is (temporarily)
+disabled with <a class="link" href="GwyInventory.html#gwy-inventory-forget-order" title="gwy_inventory_forget_order ()"><code class="function">gwy_inventory_forget_order()</code></a> or it was created
+with <a class="link" href="GwyInventory.html#gwy-inventory-new-filled" title="gwy_inventory_new_filled ()"><code class="function">gwy_inventory_new_filled()</code></a> and the initial array was
+not sorted according to <em class="parameter"><code>compare</code></em>
+.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwyInventoryItemType.rename"></a>rename</code></em> ()</p></td>
+<td class="struct_member_description"><p>Function to rename an item.  If not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, calls to
+<a class="link" href="GwyInventory.html#gwy-inventory-rename-item" title="gwy_inventory_rename_item ()"><code class="function">gwy_inventory_rename_item()</code></a> are possible.  Note items must not
+be renamed by any other means than this method, because when
+an item is renamed and inventory does not know it, very bad
+things will happen and you will lose all your good karma.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwyInventoryItemType.dismantle"></a>dismantle</code></em> ()</p></td>
+<td class="struct_member_description"><p>Called on item before it's removed from inventory.  May be
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwyInventoryItemType.copy"></a>copy</code></em> ()</p></td>
+<td class="struct_member_description"><p>Method to create a copy of an item.  If this function and <em class="parameter"><code>rename</code></em>
+are
+defined, calls to <a class="link" href="GwyInventory.html#gwy-inventory-new-item" title="gwy_inventory_new_item ()"><code class="function">gwy_inventory_new_item()</code></a> are possible.  Inventory
+sets the copy's name immediately after creation, so it normally
+does not matter which name <em class="parameter"><code>copy</code></em>
+gives it.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwyInventoryItemType.get-traits"></a>get_traits</code></em> ()</p></td>
+<td class="struct_member_description"><p>Function to get item traits.  It returns array of item trait
+<span class="type">GTypes</span> (keeping its ownership) and if <em class="parameter"><code>nitems</code></em>
+is not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>,
+it stores the length of returned array there.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwyInventoryItemType.get-trait-name"></a>get_trait_name</code></em> ()</p></td>
+<td class="struct_member_description"><p>Returns name of <em class="parameter"><code>i</code></em>
+-th trait (keeping ownership of the
+returned string).  It is not obligatory, but advisable to
+give traits names.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwyInventoryItemType.get-trait-value"></a>get_trait_value</code></em> ()</p></td>
+<td class="struct_member_description"><p>Sets <em class="parameter"><code>value</code></em>
+to value of <em class="parameter"><code>i</code></em>
+-th trait of item.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyInventory-struct"></a><h3>struct GwyInventory</h3>
+<pre class="programlisting">struct GwyInventory;</pre>
+<p>The <a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> struct contains private data only and should be accessed
+using the functions below.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyInventoryClass"></a><h3>struct GwyInventoryClass</h3>
+<pre class="programlisting">struct GwyInventoryClass {
+    GObjectClass parent_class;
+
+    /* Signals */
+    void (*item_inserted)(GwyInventory *inventory,
+                          guint position);
+    void (*item_deleted)(GwyInventory *inventory,
+                         guint position);
+    void (*item_updated)(GwyInventory *inventory,
+                         guint position);
+    void (*items_reordered)(GwyInventory *inventory,
+                            const gint *new_order);
+    void (*default_changed)(GwyInventory *inventory);
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyInventory.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GwyInventory-default-changed"></a><h3>The <code class="literal">“default-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *gwyinventory,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>The ::default-changed signal is emitted when either
+default inventory item name changes or the presence of such an item
+in the inventory changes.</p>
+<div class="refsect3">
+<a name="GwyInventory-default-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwyinventory</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-NO-RECURSE:CAPS">No Recursion</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyInventory-item-deleted"></a><h3>The <code class="literal">“item-deleted”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *gwyinventory,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a>         arg1,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>The ::item-deleted signal is emitted when an item is deleted from
+an inventory.</p>
+<div class="refsect3">
+<a name="GwyInventory-item-deleted.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwyinventory</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arg1</p></td>
+<td class="parameter_description"><p>Position an item was deleted from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-NO-RECURSE:CAPS">No Recursion</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyInventory-item-inserted"></a><h3>The <code class="literal">“item-inserted”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *gwyinventory,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a>         arg1,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>The ::item-inserted signal is emitted when an item is inserted into
+an inventory.</p>
+<div class="refsect3">
+<a name="GwyInventory-item-inserted.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwyinventory</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arg1</p></td>
+<td class="parameter_description"><p>Position an item was inserted at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-NO-RECURSE:CAPS">No Recursion</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyInventory-item-updated"></a><h3>The <code class="literal">“item-updated”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *gwyinventory,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a>         arg1,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>The ::item-updated signal is emitted when an item in an inventory
+is updated.</p>
+<div class="refsect3">
+<a name="GwyInventory-item-updated.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwyinventory</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arg1</p></td>
+<td class="parameter_description"><p>Position of updated item.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-NO-RECURSE:CAPS">No Recursion</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyInventory-items-reordered"></a><h3>The <code class="literal">“items-reordered”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *gwyinventory,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      arg1,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>The ::items-reordered signal is emitted when item in an inventory
+are reordered.</p>
+<div class="refsect3">
+<a name="GwyInventory-items-reordered.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwyinventory</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arg1</p></td>
+<td class="parameter_description"><p>New item order map as in <a href="/usr/share/gtk-doc/html/gtk3/GtkTreeModel.html#GtkTreeModel-struct"><span class="type">GtkTreeModel</span></a>,
+<em class="parameter"><code>arg1</code></em>
+[new_position] = old_position.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-NO-RECURSE:CAPS">No Recursion</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyInventory.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="GwyContainer.html" title="GwyContainer"><span class="type">GwyContainer</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

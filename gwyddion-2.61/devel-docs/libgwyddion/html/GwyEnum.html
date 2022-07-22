@@ -1,0 +1,602 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyEnum: Gwyddion Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="prev" href="libgwyddion-gwyversion.html" title="gwyversion">
+<link rel="next" href="GwyInventory.html" title="GwyInventory">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyEnum.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyEnum.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyddion-gwyversion.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyInventory.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyEnum"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyEnum.top_of_page"></a>GwyEnum</span></h2>
+<p>GwyEnum — String-integer value pair</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyEnum.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyEnum.html#gwy-string-to-enum" title="gwy_string_to_enum ()">gwy_string_to_enum</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyEnum.html#gwy-enum-to-string" title="gwy_enum_to_string ()">gwy_enum_to_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyEnum.html#gwy-enuml-to-string" title="gwy_enuml_to_string ()">gwy_enuml_to_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyEnum.html#gwy-string-to-flags" title="gwy_string_to_flags ()">gwy_string_to_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyEnum.html#gwy-flags-to-string" title="gwy_flags_to_string ()">gwy_flags_to_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyEnum.html#gwy-enum-sanitize-value" title="gwy_enum_sanitize_value ()">gwy_enum_sanitize_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyEnum.html#gwy-enum-freev" title="gwy_enum_freev ()">gwy_enum_freev</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyInventory.html" title="GwyInventory"><span class="returnvalue">GwyInventory</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyEnum.html#gwy-enum-inventory-new" title="gwy_enum_inventory_new ()">gwy_enum_inventory_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyEnum.html" title="GwyEnum"><span class="returnvalue">GwyEnum</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyEnum.html#gwy-enum-fill-from-struct" title="gwy_enum_fill_from_struct ()">gwy_enum_fill_from_struct</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyEnum.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GwyEnum.html#GwyEnum-struct" title="GwyEnum">GwyEnum</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyEnum.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gpointer">gpointer</a>
+    <span class="lineart">╰──</span> GwyEnum
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyEnum.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwyddion/gwyddion.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyEnum.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyEnum.html" title="GwyEnum"><span class="type">GwyEnum</span></a> is a simple association of a string and integer enum value used in various places in Gwyddion.  An enum
+table can be easily used as a constant <a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> base with <a class="link" href="GwyEnum.html#gwy-enum-inventory-new" title="gwy_enum_inventory_new ()"><code class="function">gwy_enum_inventory_new()</code></a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwyEnum.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-string-to-enum"></a><h3>gwy_string_to_enum ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_string_to_enum (<em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *str</code></em>,
+                    <em class="parameter"><code>const <a class="link" href="GwyEnum.html" title="GwyEnum"><span class="type">GwyEnum</span></a> *enum_table</code></em>,
+                    <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>);</pre>
+<p>Creates an integer representation of a string enum value <em class="parameter"><code>str</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-string-to-enum.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>A string containing one of <em class="parameter"><code>enum_table</code></em>
+string values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>enum_table</p></td>
+<td class="parameter_description"><p>A table of corresponding string-integer pairs.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The number of elements in <em class="parameter"><code>enum_table</code></em>
+, may be -1 when <em class="parameter"><code>enum_table</code></em>
+is terminated by a <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-string-to-enum.returns"></a><h4>Returns</h4>
+<p> The integer enum value (NOT index in the table), or -1 if <em class="parameter"><code>str</code></em>
+was not found.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-enum-to-string"></a><h3>gwy_enum_to_string ()</h3>
+<pre class="programlisting">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_enum_to_string (<em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> enumval</code></em>,
+                    <em class="parameter"><code>const <a class="link" href="GwyEnum.html" title="GwyEnum"><span class="type">GwyEnum</span></a> *enum_table</code></em>,
+                    <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>);</pre>
+<p>Creates a string representation of an integer enum value <em class="parameter"><code>enumval</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-enum-to-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>enumval</p></td>
+<td class="parameter_description"><p>A one integer value from <em class="parameter"><code>enum_table</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>enum_table</p></td>
+<td class="parameter_description"><p>A table of corresponding string-integer pairs.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The number of elements in <em class="parameter"><code>enum_table</code></em>
+, may be -1 when <em class="parameter"><code>enum_table</code></em>
+is terminated by a <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-enum-to-string.returns"></a><h4>Returns</h4>
+<p> The name as a string from <em class="parameter"><code>enum_table</code></em>
+, thus it generally should not be modified or freed, unless
+<em class="parameter"><code>enum_table</code></em>
+is supposed to be modified too. If the value is not found, an empty string is returned.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-enuml-to-string"></a><h3>gwy_enuml_to_string ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_enuml_to_string (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> enumval</code></em>,
+                     <em class="parameter"><code>...</code></em>);</pre>
+<p>Creates a string representation of an integer enum value <em class="parameter"><code>enumval</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-enuml-to-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>enumval</p></td>
+<td class="parameter_description"><p>Integer value to find.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>First enum name, first value, second enum name, second value, etc. Terminated with <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-enuml-to-string.returns"></a><h4>Returns</h4>
+<p> The corresponding enum name string argument if <em class="parameter"><code>enumval</code></em>
+matches some of them.   Otherwise <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is
+returned (this is different from <a class="link" href="GwyEnum.html#gwy-enum-to-string" title="gwy_enum_to_string ()"><code class="function">gwy_enum_to_string()</code></a> which returns an empty string).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-5.html#api-index-2.5">2.5</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-string-to-flags"></a><h3>gwy_string_to_flags ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_string_to_flags (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *str</code></em>,
+                     <em class="parameter"><code>const <a class="link" href="GwyEnum.html" title="GwyEnum"><span class="type">GwyEnum</span></a> *enum_table</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *delimiter</code></em>);</pre>
+<p>Creates an integer flag combination of its string representation <em class="parameter"><code>str</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-string-to-flags.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>A string containing one of <em class="parameter"><code>enum_table</code></em>
+string values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>enum_table</p></td>
+<td class="parameter_description"><p>A table of corresponding string-integer pairs.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The number of elements in <em class="parameter"><code>enum_table</code></em>
+, may be -1 when <em class="parameter"><code>enum_table</code></em>
+is terminated by a <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>delimiter</p></td>
+<td class="parameter_description"><p>A delimiter to split <em class="parameter"><code>str</code></em>
+on, when <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> space is used.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-string-to-flags.returns"></a><h4>Returns</h4>
+<p> All the flags present in <em class="parameter"><code>str</code></em>
+, bitwise ORer.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-flags-to-string"></a><h3>gwy_flags_to_string ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_flags_to_string (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> enumval</code></em>,
+                     <em class="parameter"><code>const <a class="link" href="GwyEnum.html" title="GwyEnum"><span class="type">GwyEnum</span></a> *enum_table</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *glue</code></em>);</pre>
+<p>Creates a string representation of integer flag combination <em class="parameter"><code>enumval</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-flags-to-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>enumval</p></td>
+<td class="parameter_description"><p>Some ORed integer flags from <em class="parameter"><code>enum_table</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>enum_table</p></td>
+<td class="parameter_description"><p>A table of corresponding string-integer pairs.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The number of elements in <em class="parameter"><code>enum_table</code></em>
+, may be -1 when <em class="parameter"><code>enum_table</code></em>
+is terminated by a <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>glue</p></td>
+<td class="parameter_description"><p>A glue to join string values with, when <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> space is used.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-flags-to-string.returns"></a><h4>Returns</h4>
+<p> The string representation as a newly allocated string.  It should be freed when no longer used.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-enum-sanitize-value"></a><h3>gwy_enum_sanitize_value ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_enum_sanitize_value (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> enumval</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> enum_type</code></em>);</pre>
+<p>Makes sure an enum value is valid.</p>
+<div class="refsect3">
+<a name="gwy-enum-sanitize-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>enumval</p></td>
+<td class="parameter_description"><p>An enum value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>enum_type</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> of a registered enum type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-enum-sanitize-value.returns"></a><h4>Returns</h4>
+<p> Either <em class="parameter"><code>enumval</code></em>
+itself if it's valid, or some valid enum value. When <em class="parameter"><code>enumval</code></em>
+is invalid and larger than
+all valid values the largest valid value is returned. Likewise if it's smaller the smallest valid value is
+returned.  If it's in range but invalid, the first enum value is returned.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-enum-freev"></a><h3>gwy_enum_freev ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_enum_freev (<em class="parameter"><code><a class="link" href="GwyEnum.html" title="GwyEnum"><span class="type">GwyEnum</span></a> *enum_table</code></em>);</pre>
+<p>Frees a dynamically allocated enum.</p>
+<p>More precisely, it frees all names of a <a class="link" href="GwyEnum.html" title="GwyEnum"><span class="type">GwyEnum</span></a> and then frees the enum itself.</p>
+<div class="refsect3">
+<a name="gwy-enum-freev.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>enum_table</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-name-terminated, dynamically allocated enum table.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-enum-inventory-new"></a><h3>gwy_enum_inventory_new ()</h3>
+<pre class="programlisting"><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="returnvalue">GwyInventory</span></a> *
+gwy_enum_inventory_new (<em class="parameter"><code>const <a class="link" href="GwyEnum.html" title="GwyEnum"><span class="type">GwyEnum</span></a> *enum_table</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>);</pre>
+<p>Convenience function to create a constant inventory from a <a class="link" href="GwyEnum.html" title="GwyEnum"><span class="type">GwyEnum</span></a>.</p>
+<p>The enum table is directly used and therefore must exist during the lifetime of the inventory.</p>
+<p>The inventory will have two traits, "name" and "value".</p>
+<div class="refsect3">
+<a name="gwy-enum-inventory-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>enum_table</p></td>
+<td class="parameter_description"><p>A table of corresponding string-integer pairs.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The number of elements in <em class="parameter"><code>enum_table</code></em>
+, may be -1 when <em class="parameter"><code>enum_table</code></em>
+is terminated by a NULL name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-enum-inventory-new.returns"></a><h4>Returns</h4>
+<p> The newly created constant inventory.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-enum-fill-from-struct"></a><h3>gwy_enum_fill_from_struct ()</h3>
+<pre class="programlisting"><a class="link" href="GwyEnum.html" title="GwyEnum"><span class="returnvalue">GwyEnum</span></a> *
+gwy_enum_fill_from_struct (<em class="parameter"><code><a class="link" href="GwyEnum.html" title="GwyEnum"><span class="type">GwyEnum</span></a> *enum_table</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> items</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> item_size</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> name_offset</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> value_offset</code></em>);</pre>
+<p>Fills an enum definition from another struct.</p>
+<p>Use <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#G-STRUCT-OFFSET:CAPS"><code class="function">G_STRUCT_OFFSET()</code></a> to obtain <em class="parameter"><code>name_offset</code></em>
+ and <em class="parameter"><code>value_offset</code></em>
+.</p>
+<p>If <em class="parameter"><code>value_offset</code></em>
+ is -1 the enum values are made equal to <em class="parameter"><code>items</code></em>
+ array indices from 0 to <em class="parameter"><code>n</code></em>
+-1.  Otherwise they
+values are taken from <em class="parameter"><code>items</code></em>
+ and can be arbitrary.</p>
+<p>If <em class="parameter"><code>enum_table</code></em>
+ is not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> and its value fields are filled (i.e. not all zeros), the function just fills the
+corresponding names according to <em class="parameter"><code>items</code></em>
+.  This allows reordering <em class="parameter"><code>enum_table</code></em>
+ with respect to <em class="parameter"><code>items</code></em>
+.</p>
+<p>In all other cases both names and values are filled in the same order as in <em class="parameter"><code>items</code></em>
+.</p>
+<p>The string names are not duplicated; they are only copied as pointers.</p>
+<div class="refsect3">
+<a name="gwy-enum-fill-from-struct.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>enum_table</p></td>
+<td class="parameter_description"><p>A table of string-integer pairs to fill, possibly <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to allocate a new one.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The number of elements in <em class="parameter"><code>enum_table</code></em>
+.  It must not be -1.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>items</p></td>
+<td class="parameter_description"><p>Struct items containing the names and values at given offsets.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>item_size</p></td>
+<td class="parameter_description"><p>Size of one item in <em class="parameter"><code>items</code></em>
+, in bytes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name_offset</p></td>
+<td class="parameter_description"><p>Offset of the name field (of gchar* type) in the struct, in bytes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value_offset</p></td>
+<td class="parameter_description"><p>Offset of the value field (of 32bit integer type) in the struct, in bytes. Pass -1 if values are
+just item indices.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-enum-fill-from-struct.returns"></a><h4>Returns</h4>
+<p> Either <em class="parameter"><code>enum_table</code></em>
+itself, or a newly allocated enum table if it was <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyEnum.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyEnum-struct"></a><h3>GwyEnum</h3>
+<pre class="programlisting">typedef struct {
+    const gchar *name;
+    gint value;
+} GwyEnum;
+</pre>
+<p>Enumerated type with named values.</p>
+<div class="refsect3">
+<a name="GwyEnum.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="GwyEnum-struct.name"></a>name</code></em>;</p></td>
+<td class="struct_member_description"><p>Value name.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GwyEnum-struct.value"></a>value</code></em>;</p></td>
+<td class="struct_member_description"><p>The (integer) enum value.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyEnum.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

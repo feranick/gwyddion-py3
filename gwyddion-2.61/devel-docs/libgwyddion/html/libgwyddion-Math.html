@@ -1,0 +1,2402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math: Gwyddion Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="prev" href="libgwyddion-gwyentities.html" title="gwyentities">
+<link rel="next" href="libgwyddion-Math-Fallback.html" title="Math Fallback">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyddion-Math.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyddion-gwyentities.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyddion-Math-Fallback.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyddion-Math"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyddion-Math.top_of_page"></a>Math</span></h2>
+<p>Math — Mathematical utility functions</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyddion-Math.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#ROUND:CAPS" title="ROUND()">ROUND</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#GWY-ROUND:CAPS" title="GWY_ROUND()">GWY_ROUND</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyddion-Math.html#GwyXY" title="GwyXY"><span class="returnvalue">GwyXY</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-xy-new" title="gwy_xy_new ()">gwy_xy_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyddion-Math.html#GwyXY" title="GwyXY"><span class="returnvalue">GwyXY</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-xy-copy" title="gwy_xy_copy ()">gwy_xy_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-xy-free" title="gwy_xy_free ()">gwy_xy_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyddion-Math.html#GwyXYZ" title="GwyXYZ"><span class="returnvalue">GwyXYZ</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-xyz-new" title="gwy_xyz_new ()">gwy_xyz_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyddion-Math.html#GwyXYZ" title="GwyXYZ"><span class="returnvalue">GwyXYZ</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-xyz-copy" title="gwy_xyz_copy ()">gwy_xyz_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-xyz-free" title="gwy_xyz_free ()">gwy_xyz_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libgwyddion-Math.html#GwyRealFunc" title="GwyRealFunc ()">*GwyRealFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-humanize-numbers" title="gwy_math_humanize_numbers ()">gwy_math_humanize_numbers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-is-in-polygon" title="gwy_math_is_in_polygon ()">gwy_math_is_in_polygon</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-find-nearest-line" title="gwy_math_find_nearest_line ()">gwy_math_find_nearest_line</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-find-nearest-point" title="gwy_math_find_nearest_point ()">gwy_math_find_nearest_point</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-lin-solve" title="gwy_math_lin_solve ()">gwy_math_lin_solve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-lin-solve-rewrite" title="gwy_math_lin_solve_rewrite ()">gwy_math_lin_solve_rewrite</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-tridiag-solve-rewrite" title="gwy_math_tridiag_solve_rewrite ()">gwy_math_tridiag_solve_rewrite</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-fit-polynom" title="gwy_math_fit_polynom ()">gwy_math_fit_polynom</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-choleski-decompose" title="gwy_math_choleski_decompose ()">gwy_math_choleski_decompose</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-choleski-solve" title="gwy_math_choleski_solve ()">gwy_math_choleski_solve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-choleski-invert" title="gwy_math_choleski_invert ()">gwy_math_choleski_invert</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-curvature" title="gwy_math_curvature ()">gwy_math_curvature</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-curvature-at-apex" title="gwy_math_curvature_at_apex ()">gwy_math_curvature_at_apex</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-curvature-at-origin" title="gwy_math_curvature_at_origin ()">gwy_math_curvature_at_origin</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-refine-maximum-1d" title="gwy_math_refine_maximum_1d ()">gwy_math_refine_maximum_1d</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-refine-maximum-2d" title="gwy_math_refine_maximum_2d ()">gwy_math_refine_maximum_2d</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-refine-maximum" title="gwy_math_refine_maximum ()">gwy_math_refine_maximum</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-find-minimum-1d" title="gwy_math_find_minimum_1d ()">gwy_math_find_minimum_1d</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-check-regular-2d-grid" title="gwy_check_regular_2d_grid ()">gwy_check_regular_2d_grid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-median" title="gwy_math_median ()">gwy_math_median</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-kth-rank" title="gwy_math_kth_rank ()">gwy_math_kth_rank</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-kth-ranks" title="gwy_math_kth_ranks ()">gwy_math_kth_ranks</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-percentiles" title="gwy_math_percentiles ()">gwy_math_percentiles</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-sort" title="gwy_math_sort ()">gwy_math_sort</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-guint-sort" title="gwy_guint_sort ()">gwy_guint_sort</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-sort-with-index" title="gwy_math_sort_with_index ()">gwy_math_sort_with_index</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-trimmed-mean" title="gwy_math_trimmed_mean ()">gwy_math_trimmed_mean</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-median-uncertainty" title="gwy_math_median_uncertainty ()">gwy_math_median_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-xlnx-int" title="gwy_xlnx_int ()">gwy_xlnx_int</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-sinc" title="gwy_sinc ()">gwy_sinc</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-canonicalize-angle" title="gwy_canonicalize_angle ()">gwy_canonicalize_angle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-Math.html#gwy-math-histogram" title="gwy_math_histogram ()">gwy_math_histogram</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-Math.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgwyddion-Math.html#GWY-SQRT3:CAPS" title="GWY_SQRT3">GWY_SQRT3</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgwyddion-Math.html#GWY-SQRT-PI:CAPS" title="GWY_SQRT_PI">GWY_SQRT_PI</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libgwyddion-Math.html#GwyXY" title="GwyXY">GwyXY</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libgwyddion-Math.html#GwyXYZ" title="GwyXYZ">GwyXYZ</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-Math.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwyddion/gwyddion.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-Math.description"></a><h2>Description</h2>
+<p>Function <a class="link" href="libgwyddion-Math.html#gwy-math-humanize-numbers" title="gwy_math_humanize_numbers ()"><code class="function">gwy_math_humanize_numbers()</code></a> deals with number representation.</p>
+<p>Nearest object finding functions <a class="link" href="libgwyddion-Math.html#gwy-math-find-nearest-line" title="gwy_math_find_nearest_line ()"><code class="function">gwy_math_find_nearest_line()</code></a> and <a class="link" href="libgwyddion-Math.html#gwy-math-find-nearest-point" title="gwy_math_find_nearest_point ()"><code class="function">gwy_math_find_nearest_point()</code></a> can be useful in
+widget and vector layer implementation.</p>
+<p>And <a class="link" href="libgwyddion-Math.html#gwy-math-lin-solve" title="gwy_math_lin_solve ()"><code class="function">gwy_math_lin_solve()</code></a>, <a class="link" href="libgwyddion-Math.html#gwy-math-lin-solve-rewrite" title="gwy_math_lin_solve_rewrite ()"><code class="function">gwy_math_lin_solve_rewrite()</code></a>, and <a class="link" href="libgwyddion-Math.html#gwy-math-fit-polynom" title="gwy_math_fit_polynom ()"><code class="function">gwy_math_fit_polynom()</code></a> are general purpose numeric
+methods.</p>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-Math.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ROUND:CAPS"></a><h3>ROUND()</h3>
+<pre class="programlisting">#define ROUND(x) ((gint)floor((x) + 0.5))
+</pre>
+<div class="warning"><p><code class="literal">ROUND</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>Rounds a number to nearest integer.  Use <a class="link" href="libgwyddion-Math.html#GWY-ROUND:CAPS" title="GWY_ROUND()"><code class="literal">GWY_ROUND</code></a> instead.</p>
+<div class="refsect3">
+<a name="ROUND.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>A double value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GWY-ROUND:CAPS"></a><h3>GWY_ROUND()</h3>
+<pre class="programlisting">#define GWY_ROUND(x) ((gint)floor((x) + 0.5))
+</pre>
+<p>Rounds a number to nearest integer.</p>
+<div class="refsect3">
+<a name="GWY-ROUND.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>A double value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-5.html#api-index-2.5">2.5</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-xy-new"></a><h3>gwy_xy_new ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyddion-Math.html#GwyXY" title="GwyXY"><span class="returnvalue">GwyXY</span></a> *
+gwy_xy_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x</code></em>,
+            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> y</code></em>);</pre>
+<p>Creates Cartesian coordinates in plane.</p>
+<p>This is mostly useful for language bindings.</p>
+<div class="refsect3">
+<a name="gwy-xy-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>X-coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Y-coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-xy-new.returns"></a><h4>Returns</h4>
+<p> New XY structure.  The result must be freed using <a class="link" href="libgwyddion-Math.html#gwy-xy-free" title="gwy_xy_free ()"><code class="function">gwy_xy_free()</code></a>, not <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-xy-copy"></a><h3>gwy_xy_copy ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyddion-Math.html#GwyXY" title="GwyXY"><span class="returnvalue">GwyXY</span></a> *
+gwy_xy_copy (<em class="parameter"><code>const <a class="link" href="libgwyddion-Math.html#GwyXY" title="GwyXY"><span class="type">GwyXY</span></a> *xy</code></em>);</pre>
+<p>Copies Cartesian coordinates in plane.</p>
+<div class="refsect3">
+<a name="gwy-xy-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>xy</p></td>
+<td class="parameter_description"><p>Cartesian coordinates in plane.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-xy-copy.returns"></a><h4>Returns</h4>
+<p> A copy of <em class="parameter"><code>xy</code></em>
+. The result must be freed using <a class="link" href="libgwyddion-Math.html#gwy-xy-free" title="gwy_xy_free ()"><code class="function">gwy_xy_free()</code></a>, not <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-xy-free"></a><h3>gwy_xy_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_xy_free (<em class="parameter"><code><a class="link" href="libgwyddion-Math.html#GwyXY" title="GwyXY"><span class="type">GwyXY</span></a> *xy</code></em>);</pre>
+<p>Frees Cartesian coordinates in plane created with <a class="link" href="libgwyddion-Math.html#gwy-xy-copy" title="gwy_xy_copy ()"><code class="function">gwy_xy_copy()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-xy-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>xy</p></td>
+<td class="parameter_description"><p>Cartesian coordinates in plane.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-xyz-new"></a><h3>gwy_xyz_new ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyddion-Math.html#GwyXYZ" title="GwyXYZ"><span class="returnvalue">GwyXYZ</span></a> *
+gwy_xyz_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x</code></em>,
+             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> y</code></em>,
+             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> z</code></em>);</pre>
+<p>Creates Cartesian coordinates in space.</p>
+<p>This is mostly useful for language bindings.</p>
+<div class="refsect3">
+<a name="gwy-xyz-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>X-coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Y-coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>z</p></td>
+<td class="parameter_description"><p>Z-coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-xyz-new.returns"></a><h4>Returns</h4>
+<p> New XYZ structure.  The result must be freed using <a class="link" href="libgwyddion-Math.html#gwy-xyz-free" title="gwy_xyz_free ()"><code class="function">gwy_xyz_free()</code></a>, not <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-xyz-copy"></a><h3>gwy_xyz_copy ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyddion-Math.html#GwyXYZ" title="GwyXYZ"><span class="returnvalue">GwyXYZ</span></a> *
+gwy_xyz_copy (<em class="parameter"><code>const <a class="link" href="libgwyddion-Math.html#GwyXYZ" title="GwyXYZ"><span class="type">GwyXYZ</span></a> *xyz</code></em>);</pre>
+<p>Copies Cartesian coordinates in space.</p>
+<div class="refsect3">
+<a name="gwy-xyz-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>xyz</p></td>
+<td class="parameter_description"><p>Cartesian coordinates in space.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-xyz-copy.returns"></a><h4>Returns</h4>
+<p> A copy of <em class="parameter"><code>xyz</code></em>
+. The result must be freed using <a class="link" href="libgwyddion-Math.html#gwy-xyz-free" title="gwy_xyz_free ()"><code class="function">gwy_xyz_free()</code></a>, not <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-xyz-free"></a><h3>gwy_xyz_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_xyz_free (<em class="parameter"><code><a class="link" href="libgwyddion-Math.html#GwyXYZ" title="GwyXYZ"><span class="type">GwyXYZ</span></a> *xyz</code></em>);</pre>
+<p>Frees Cartesian coordinates in space created with <a class="link" href="libgwyddion-Math.html#gwy-xyz-copy" title="gwy_xyz_copy ()"><code class="function">gwy_xyz_copy()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-xyz-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>xyz</p></td>
+<td class="parameter_description"><p>Cartesian coordinates in space.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyRealFunc"></a><h3>GwyRealFunc ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+<span class="c_punctuation">(</span>*GwyRealFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x</code></em>,
+                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-humanize-numbers"></a><h3>gwy_math_humanize_numbers ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_math_humanize_numbers (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> unit</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> maximum</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *precision</code></em>);</pre>
+<p>Finds a human-friendly representation for a range of numbers.</p>
+<div class="refsect3">
+<a name="gwy-math-humanize-numbers.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>unit</p></td>
+<td class="parameter_description"><p>The smallest possible step.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>maximum</p></td>
+<td class="parameter_description"><p>The maximum possible value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>precision</p></td>
+<td class="parameter_description"><p>A location to store <code class="function">printf()</code> precession, if not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-humanize-numbers.returns"></a><h4>Returns</h4>
+<p> The magnitude i.e., a power of 1000.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-is-in-polygon"></a><h3>gwy_math_is_in_polygon ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_math_is_in_polygon (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> y</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *poly</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>);</pre>
+<p>Establishes wether the test point <em class="parameter"><code>x</code></em>
+, <em class="parameter"><code>y</code></em>
+ is inside the polygon <em class="parameter"><code>poly</code></em>
+. The polygon can be defined either clockwise
+or anti-clockwise and can be a concave, convex or self-intersecting polygon.</p>
+<div class="warning"> Result can be either TRUE or FALSE if the test point is *exactly* on an edge. </div>
+<div class="refsect3">
+<a name="gwy-math-is-in-polygon.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>The x coordinate of the test point.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>The y coordinate of the test point.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>poly</p></td>
+<td class="parameter_description"><p>An array of coordinate pairs (points) that define a polygon.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The number of corners of the polygon.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-is-in-polygon.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the test point is inside poly and <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-7.html#api-index-2.7">2.7</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-find-nearest-line"></a><h3>gwy_math_find_nearest_line ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_math_find_nearest_line (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> y</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *d2min</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coords</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *metric</code></em>);</pre>
+<p>Finds the line from <em class="parameter"><code>coords</code></em>
+ nearest to the point (<em class="parameter"><code>x</code></em>
+, <em class="parameter"><code>y</code></em>
+).</p>
+<div class="refsect3">
+<a name="gwy-math-find-nearest-line.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>X-coordinate of the point to search.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Y-coordinate of the point to search.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>d2min</p></td>
+<td class="parameter_description"><p>Where to store the squared minimal distance, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The number of lines (i.e. <em class="parameter"><code>coords</code></em>
+has 4<em class="parameter"><code>n</code></em>
+items).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coords</p></td>
+<td class="parameter_description"><p>Line coordinates stored as x00, y00, x01, y01, x10, y10, etc.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>metric</p></td>
+<td class="parameter_description"><p>Metric matrix (2x2, but stored sequentially by rows: m11, m12, m21, m22), it must be positive definite.
+Vector norm is then calculated as m11*x*x + (m12 + m21)*x*y + m22*y*y. It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, standard Euclidean
+metric is then used.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-find-nearest-line.returns"></a><h4>Returns</h4>
+<p> The line number. It may return -1 if (<em class="parameter"><code>x</code></em>
+, <em class="parameter"><code>y</code></em>
+) doesn't lie in the orthogonal stripe of any of the lines.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-find-nearest-point"></a><h3>gwy_math_find_nearest_point ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_math_find_nearest_point (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> y</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *d2min</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coords</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *metric</code></em>);</pre>
+<p>Finds the point from <em class="parameter"><code>coords</code></em>
+ nearest to the point (<em class="parameter"><code>x</code></em>
+, <em class="parameter"><code>y</code></em>
+).</p>
+<div class="refsect3">
+<a name="gwy-math-find-nearest-point.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>X-coordinate of the point to search.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Y-coordinate of the point to search.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>d2min</p></td>
+<td class="parameter_description"><p>Location to store the squared minimal distance to, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The number of points (i.e. <em class="parameter"><code>coords</code></em>
+has 2<em class="parameter"><code>n</code></em>
+items).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coords</p></td>
+<td class="parameter_description"><p>Point coordinates stored as x0, y0, x1, y1, x2, y2, etc.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>metric</p></td>
+<td class="parameter_description"><p>Metric matrix (2x2, but stored sequentially by rows: m11, m12, m21, m22).  Vector norm is then calculated
+as m11*x*x + (m12 + m21)*x*y + m22*y*y. It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, standard Euclidean metric is then used.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-find-nearest-point.returns"></a><h4>Returns</h4>
+<p> The point number.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-lin-solve"></a><h3>gwy_math_lin_solve ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_math_lin_solve (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *matrix</code></em>,
+                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *rhs</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *result</code></em>);</pre>
+<p>Solve a regular system of linear equations.</p>
+<div class="refsect3">
+<a name="gwy-math-lin-solve.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The size of the system.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>matrix</p></td>
+<td class="parameter_description"><p>The matrix of the system (<em class="parameter"><code>n</code></em>
+times <em class="parameter"><code>n</code></em>
+), ordered by row, then column.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rhs</p></td>
+<td class="parameter_description"><p>The right hand side of the sytem.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>Where the result should be stored.  May be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to allocate a fresh array for the result.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-lin-solve.returns"></a><h4>Returns</h4>
+<p> The solution (<em class="parameter"><code>result</code></em>
+if it wasn't <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>), may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the matrix is singular.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-lin-solve-rewrite"></a><h3>gwy_math_lin_solve_rewrite ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_math_lin_solve_rewrite (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *matrix</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *rhs</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *result</code></em>);</pre>
+<p>Solves a regular system of linear equations.</p>
+<p>This is a memory-conservative version of <a class="link" href="libgwyddion-Math.html#gwy-math-lin-solve" title="gwy_math_lin_solve ()"><code class="function">gwy_math_lin_solve()</code></a> overwriting <em class="parameter"><code>matrix</code></em>
+ and <em class="parameter"><code>rhs</code></em>
+ with intermediate
+results.</p>
+<div class="refsect3">
+<a name="gwy-math-lin-solve-rewrite.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The size of the system.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>matrix</p></td>
+<td class="parameter_description"><p>The matrix of the system (<em class="parameter"><code>n</code></em>
+times <em class="parameter"><code>n</code></em>
+), ordered by row, then column.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rhs</p></td>
+<td class="parameter_description"><p>The right hand side of the sytem.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>Where the result should be stored.  May be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to allocate a fresh array for the result.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-lin-solve-rewrite.returns"></a><h4>Returns</h4>
+<p> The solution (<em class="parameter"><code>result</code></em>
+if it wasn't <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>), may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the matrix is singular.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-tridiag-solve-rewrite"></a><h3>gwy_math_tridiag_solve_rewrite ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_math_tridiag_solve_rewrite (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *d</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *a</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *b</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *rhs</code></em>);</pre>
+<p>Solves a tridiagonal system of linear equations.</p>
+<div class="refsect3">
+<a name="gwy-math-tridiag-solve-rewrite.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The dimension of <em class="parameter"><code>d</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>d</p></td>
+<td class="parameter_description"><p>The diagonal of a tridiagonal matrix, its contents will be overwritten.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>The above-diagonal stripe (it has <em class="parameter"><code>n</code></em>
+-1 elements).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>The below-diagonal stripe (it has <em class="parameter"><code>n</code></em>
+-1 elements).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rhs</p></td>
+<td class="parameter_description"><p>The right hand side of the system, upon return it will contain the solution.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-tridiag-solve-rewrite.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the elimination suceeded, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if the system is (numerically) singular.  The contents of <em class="parameter"><code>d</code></em>
+and
+<em class="parameter"><code>rhs</code></em>
+may be overwritten in the case of failure too, but not to any meaningful values.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-fit-polynom"></a><h3>gwy_math_fit_polynom ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_math_fit_polynom (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ndata</code></em>,
+                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *xdata</code></em>,
+                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *ydata</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coeffs</code></em>);</pre>
+<p>Fits a polynom through a general (x, y) data set.</p>
+<div class="refsect3">
+<a name="gwy-math-fit-polynom.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ndata</p></td>
+<td class="parameter_description"><p>The number of items in <em class="parameter"><code>xdata</code></em>
+, <em class="parameter"><code>ydata</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xdata</p></td>
+<td class="parameter_description"><p>Independent variable data (of size <em class="parameter"><code>ndata</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ydata</p></td>
+<td class="parameter_description"><p>Dependent variable data (of size <em class="parameter"><code>ndata</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The degree of polynom to fit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeffs</p></td>
+<td class="parameter_description"><p>An array of size <em class="parameter"><code>n</code></em>
++1 to store the coefficients to, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (a fresh array is allocated then).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-fit-polynom.returns"></a><h4>Returns</h4>
+<p> The coefficients of the polynom (<em class="parameter"><code>coeffs</code></em>
+when it was not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, otherwise a newly allocated array).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-choleski-decompose"></a><h3>gwy_math_choleski_decompose ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_math_choleski_decompose (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *matrix</code></em>);</pre>
+<p>Decomposes a symmetric positive definite matrix in place.</p>
+<div class="refsect3">
+<a name="gwy-math-choleski-decompose.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The dimension of <em class="parameter"><code>a</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>matrix</p></td>
+<td class="parameter_description"><p>Lower triangular part of a symmetric matrix, stored by rows, i.e., matrix = [a_00 a_10 a_11 a_20 a_21 a_22
+a_30 ...].</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-choleski-decompose.returns"></a><h4>Returns</h4>
+<p> Whether the matrix was really positive definite.  If <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>, the decomposition failed and <em class="parameter"><code>a</code></em>
+does not
+contain any meaningful values.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-choleski-solve"></a><h3>gwy_math_choleski_solve ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_math_choleski_solve (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *decomp</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *rhs</code></em>);</pre>
+<p>Solves a system of linear equations with predecomposed symmetric positive definite matrix <em class="parameter"><code>a</code></em>
+ and right hand side
+<em class="parameter"><code>b</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-math-choleski-solve.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The dimension of <em class="parameter"><code>a</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>decomp</p></td>
+<td class="parameter_description"><p>Lower triangular part of Choleski decomposition as computed by <a class="link" href="libgwyddion-Math.html#gwy-math-choleski-decompose" title="gwy_math_choleski_decompose ()"><code class="function">gwy_math_choleski_decompose()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rhs</p></td>
+<td class="parameter_description"><p>Right hand side vector.  Is is modified in place, on return it contains the solution.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-choleski-invert"></a><h3>gwy_math_choleski_invert ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_math_choleski_invert (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *matrix</code></em>);</pre>
+<p>Inverts a symmetric positive definite matrix in place.</p>
+<div class="refsect3">
+<a name="gwy-math-choleski-invert.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Matrix size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>matrix</p></td>
+<td class="parameter_description"><p>Lower triangular part of a symmetric matrix, stored by rows, i.e., matrix = [a_00 a_10 a_11 a_20 a_21 a_22
+a_30 ...].</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-choleski-invert.returns"></a><h4>Returns</h4>
+<p> Whether the matrix was really positive definite.  If <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>, the inversion failed and <em class="parameter"><code>matrix</code></em>
+does not
+contain any meaningful values.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-46.html#api-index-2.46">2.46</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-curvature"></a><h3>gwy_math_curvature ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gwy_math_curvature (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coeffs</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *kappa1</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *kappa2</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *phi1</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *phi2</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *xc</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *yc</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *zc</code></em>);</pre>
+<p>Calculates curvature parameters at the apex from two-dimensional quadratic polynomial coefficients.</p>
+<p>This is an old name for <a class="link" href="libgwyddion-Math.html#gwy-math-curvature-at-apex" title="gwy_math_curvature_at_apex ()"><code class="function">gwy_math_curvature_at_apex()</code></a>.  See the description there.</p>
+<div class="refsect3">
+<a name="gwy-math-curvature.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>coeffs</p></td>
+<td class="parameter_description"><p>Array of the six polynomial coefficients of a quadratic surface in the following order: 1, x, y, x², xy, y².</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>kappa1</p></td>
+<td class="parameter_description"><p>Location to store the smaller curvature to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>kappa2</p></td>
+<td class="parameter_description"><p>Location to store the larger curvature to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>phi1</p></td>
+<td class="parameter_description"><p>Location to store the direction of the smaller curvature to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>phi2</p></td>
+<td class="parameter_description"><p>Location to store the direction of the larger curvature to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xc</p></td>
+<td class="parameter_description"><p>Location to store x-coordinate of the centre of the quadratic surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yc</p></td>
+<td class="parameter_description"><p>Location to store y-coordinate of the centre of the quadratic surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>zc</p></td>
+<td class="parameter_description"><p>Location to store value at the centre of the quadratic surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-curvature.returns"></a><h4>Returns</h4>
+<p> The number of curved dimensions (0 to 2).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-curvature-at-apex"></a><h3>gwy_math_curvature_at_apex ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gwy_math_curvature_at_apex (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coeffs</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *kappa1</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *kappa2</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *phi1</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *phi2</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *xc</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *yc</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *zc</code></em>);</pre>
+<p>Calculates curvature parameters at the apex from two-dimensional quadratic polynomial coefficients.</p>
+<p>See also <a class="link" href="libgwyddion-Math.html#gwy-math-curvature-at-origin" title="gwy_math_curvature_at_origin ()"><code class="function">gwy_math_curvature_at_origin()</code></a> which computes the local surface curvature at <em class="parameter"><code>x</code></em>
+=0 and <em class="parameter"><code>y</code></em>
+=0.</p>
+<p>If the quadratic surface was obtained by fitting the dimensions of the fitted area should not differ, in the
+lateral coordinates used, by many orders from 1.  Otherwise the recognition of flat surfaces might not work.</p>
+<p>Curvatures have signs, positive mean a concave (cup-like) surface, negative mean a convex (cap-like) surface.  They
+are ordered including the sign.</p>
+<p>Directions are angles from the interval (-π/2, π/2].</p>
+<p>If the quadratic surface is degenerate, i.e. flat in at least one direction, the centre is undefined.  The centre
+is then chosen as the closest point the origin of coordinates.  For flat surfaces this means the origin is simply
+returned as the centre position.  Consequently, you should use Cartesian coordinates with origin in a natural
+centre, for instance centre of image or grain.</p>
+<div class="refsect3">
+<a name="gwy-math-curvature-at-apex.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>coeffs</p></td>
+<td class="parameter_description"><p>Array of the six polynomial coefficients of a quadratic surface in the following order: 1, x, y, x², xy, y².</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>kappa1</p></td>
+<td class="parameter_description"><p>Location to store the smaller curvature to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>kappa2</p></td>
+<td class="parameter_description"><p>Location to store the larger curvature to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>phi1</p></td>
+<td class="parameter_description"><p>Location to store the direction of the smaller curvature to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>phi2</p></td>
+<td class="parameter_description"><p>Location to store the direction of the larger curvature to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xc</p></td>
+<td class="parameter_description"><p>Location to store x-coordinate of the centre of the quadratic surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yc</p></td>
+<td class="parameter_description"><p>Location to store y-coordinate of the centre of the quadratic surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>zc</p></td>
+<td class="parameter_description"><p>Location to store value at the centre of the quadratic surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-curvature-at-apex.returns"></a><h4>Returns</h4>
+<p> The number of curved dimensions (0 to 2).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-61.html#api-index-2.61">2.61</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-curvature-at-origin"></a><h3>gwy_math_curvature_at_origin ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gwy_math_curvature_at_origin (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coeffs</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *pkappa1</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *pkappa2</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *pphi1</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *pphi2</code></em>);</pre>
+<p>Calculates curvature parameters at origin from two-dimensional quadratic polynomial coefficients.</p>
+<p>See <a class="link" href="libgwyddion-Math.html#gwy-math-curvature" title="gwy_math_curvature ()"><code class="function">gwy_math_curvature()</code></a> for discussion of scaling and sign convenrions.  This function function differs from it
+by computing the local surface curvature at <em class="parameter"><code>x</code></em>
+=0 and <em class="parameter"><code>y</code></em>
+=0, whereas <a class="link" href="libgwyddion-Math.html#gwy-math-curvature" title="gwy_math_curvature ()"><code class="function">gwy_math_curvature()</code></a> computes the curvature at
+the apex of the parabolic surface.</p>
+<p>The array <em class="parameter"><code>coeffs</code></em>
+ is consistent with <a class="link" href="libgwyddion-Math.html#gwy-math-curvature-at-apex" title="gwy_math_curvature_at_apex ()"><code class="function">gwy_math_curvature_at_apex()</code></a>, even though here the constant term is not used.</p>
+<div class="refsect3">
+<a name="gwy-math-curvature-at-origin.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>coeffs</p></td>
+<td class="parameter_description"><p>Array of the six polynomial coefficients of a quadratic surface in the following order: 1, x, y, x², xy, y².</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>kappa1</p></td>
+<td class="parameter_description"><p>Location to store the smaller curvature to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>kappa2</p></td>
+<td class="parameter_description"><p>Location to store the larger curvature to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>phi1</p></td>
+<td class="parameter_description"><p>Location to store the direction of the smaller curvature to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>phi2</p></td>
+<td class="parameter_description"><p>Location to store the direction of the larger curvature to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-curvature-at-origin.returns"></a><h4>Returns</h4>
+<p> The number of curved dimensions (0 to 2).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-61.html#api-index-2.61">2.61</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-refine-maximum-1d"></a><h3>gwy_math_refine_maximum_1d ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_math_refine_maximum_1d (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *y</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *x</code></em>);</pre>
+<p>Performs subpixel refinement of parabolic a one-dimensional maximum.</p>
+<p>The central value corresponds to x-coordinate 0, distances between values are unity.  The refinement is based by
+fitting a parabola through the maximum.  If it fails or the calculated maximum lies farther than the surrounding
+values the function sets the refined maximum to the origin and returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-math-refine-maximum-1d.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Array of length 3, containing the neighbourhood values with the maximum in the centre.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Location to store the refined <em class="parameter"><code>x</code></em>
+-coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-refine-maximum-1d.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the refinement succeeded, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it failed.  The value of <em class="parameter"><code>x</code></em>
+is usable regardless of the
+return value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-refine-maximum-2d"></a><h3>gwy_math_refine_maximum_2d ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_math_refine_maximum_2d (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *z</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *x</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *y</code></em>);</pre>
+<p>Performs subpixel refinement of parabolic a two-dimensional maximum.</p>
+<p>The central value corresponds to coordinates (0,0), distances between values are unity.  The refinement is based by
+fitting a two-dimensional parabola through the maximum.  If it fails or the calculated maximum lies farther than
+the surrounding values the function sets the refined maximum to the origin and returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-math-refine-maximum-2d.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>z</p></td>
+<td class="parameter_description"><p>Array of length 9, containing the square 3x3 neighbourhood values in matrix order and with the maximum in the
+centre.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Location to store the refined <em class="parameter"><code>x</code></em>
+-coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Location to store the refined <em class="parameter"><code>y</code></em>
+-coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-refine-maximum-2d.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the refinement succeeded, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it failed.  The values of <em class="parameter"><code>x</code></em>
+and <em class="parameter"><code>y</code></em>
+are usable regardless of
+the return value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-refine-maximum"></a><h3>gwy_math_refine_maximum ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_math_refine_maximum (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *z</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *x</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *y</code></em>);</pre>
+<p>Performs subpixel refinement of parabolic a two-dimensional maximum.</p>
+<p>An alias for <a class="link" href="libgwyddion-Math.html#gwy-math-refine-maximum-2d" title="gwy_math_refine_maximum_2d ()"><code class="function">gwy_math_refine_maximum_2d()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-math-refine-maximum.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>z</p></td>
+<td class="parameter_description"><p>Array of length 9, containing the square 3x3 neighbourhood values in matrix order and with the maximum in the
+centre.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Location to store the refined <em class="parameter"><code>x</code></em>
+-coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Location to store the refined <em class="parameter"><code>y</code></em>
+-coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-refine-maximum.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the refinement succeeded, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it failed.  The values of <em class="parameter"><code>x</code></em>
+and <em class="parameter"><code>y</code></em>
+are usable regardless of
+the return value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-42.html#api-index-2.42">2.42</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-find-minimum-1d"></a><h3>gwy_math_find_minimum_1d ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_math_find_minimum_1d (<em class="parameter"><code><a class="link" href="libgwyddion-Math.html#GwyRealFunc" title="GwyRealFunc ()"><span class="type">GwyRealFunc</span></a> function</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> a</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> b</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Finds a minimum of a real function in a finite interval.</p>
+<p>The function simply does what it says on the tin.  If there are multiple minima in [a,b] any of them can be
+returned, even though some effort to scan the interval is made.  There is no requiement for the minimum to lie
+inside [a,b]; if it occurrs at one of the endpoints, the endpoint is returned.</p>
+<div class="refsect3">
+<a name="gwy-math-find-minimum-1d.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>function</p></td>
+<td class="parameter_description"><p>Function to minimize.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>First interval endpoint.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>Second interval endpoint.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data passed to <em class="parameter"><code>function</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-51.html#api-index-2.51">2.51</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-check-regular-2d-grid"></a><h3>gwy_check_regular_2d_grid ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a> *
+gwy_check_regular_2d_grid (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *coords</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> stride</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> tolerance</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *xres</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *yres</code></em>,
+                           <em class="parameter"><code><a class="link" href="libgwyddion-Math.html#GwyXY" title="GwyXY"><span class="type">GwyXY</span></a> *xymin</code></em>,
+                           <em class="parameter"><code><a class="link" href="libgwyddion-Math.html#GwyXY" title="GwyXY"><span class="type">GwyXY</span></a> *xystep</code></em>);</pre>
+<p>Detects if points in plane form a regular rectangular grid oriented along the Cartesian axes.</p>
+<p>Points lying in one straight line are not considered to form a rectangle.</p>
+<p>When the function fails, i.e. the points do not form a regular grid, the values of output arguments are undefined.</p>
+<div class="refsect3">
+<a name="gwy-check-regular-2d-grid.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>coords</p></td>
+<td class="parameter_description"><p>Array of <em class="parameter"><code>n</code></em>
+coordinate pairs in plane.  You can also typecast <a class="link" href="libgwyddion-Math.html#GwyXY" title="GwyXY"><span class="type">GwyXY</span></a> or <a class="link" href="libgwyddion-Math.html#GwyXYZ" title="GwyXYZ"><span class="type">GwyXYZ</span></a> to doubles.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stride</p></td>
+<td class="parameter_description"><p>Actual number of double values in one block.  It must be at least 2 if <em class="parameter"><code>coords</code></em>
+contains just alternating
+<em class="parameter"><code>x</code></em>
+and <em class="parameter"><code>y</code></em>
+.  If you pass an typecast <a class="link" href="libgwyddion-Math.html#GwyXYZ" title="GwyXYZ"><span class="type">GwyXYZ</span></a> array give stride as 3, etc.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of items in <em class="parameter"><code>coords</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tolerance</p></td>
+<td class="parameter_description"><p>Relative distance from pixel center which is still considered OK.  Pass a negative value for some
+reasonable default. The maximum meaningful value is 0.5, beyond that the point would end up in
+a different pixel.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xres</p></td>
+<td class="parameter_description"><p>Location where to store the number of columns.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yres</p></td>
+<td class="parameter_description"><p>Location where to store the number of rows.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xymin</p></td>
+<td class="parameter_description"><p>Location where to store the minimum coordinates (top left corner).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xystep</p></td>
+<td class="parameter_description"><p>Location where to store the pixel size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-check-regular-2d-grid.returns"></a><h4>Returns</h4>
+<p> On success, a newly allocated array mapping grid indices (<em class="parameter"><code>i</code></em>
+*<em class="parameter"><code>xres</code></em>
++<em class="parameter"><code>j</code></em>
+) to indices in <em class="parameter"><code>coords</code></em>
+.  <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is
+returned on failure.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-48.html#api-index-2.48">2.48</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-median"></a><h3>gwy_math_median ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_math_median (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> n</code></em>,
+                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *array</code></em>);</pre>
+<p>Finds median of an array of values using Quick select algorithm.</p>
+<p>See <a class="link" href="libgwyddion-Math.html#gwy-math-kth-rank" title="gwy_math_kth_rank ()"><code class="function">gwy_math_kth_rank()</code></a> for details of how the values are shuffled.</p>
+<div class="refsect3">
+<a name="gwy-math-median.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of items in <em class="parameter"><code>array</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>array</p></td>
+<td class="parameter_description"><p>Array of doubles.  It is shuffled by this function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-median.returns"></a><h4>Returns</h4>
+<p> The median value of <em class="parameter"><code>array</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-kth-rank"></a><h3>gwy_math_kth_rank ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_math_kth_rank (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> n</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *array</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> k</code></em>);</pre>
+<p>Finds k-th item of an array of values using Quick select algorithm.</p>
+<p>The value positions change as follows.  The returned value is guaranteed to be at <em class="parameter"><code>k</code></em>
+-th position in the array (i.e.
+correctly ranked).  All other values are correctly ordered with respect to this value: preceeding values are
+smaller (or equal) and following values are larger (or equal).</p>
+<div class="refsect3">
+<a name="gwy-math-kth-rank.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of items in <em class="parameter"><code>array</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>array</p></td>
+<td class="parameter_description"><p>Array of doubles.  It is shuffled by this function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>k</p></td>
+<td class="parameter_description"><p>Rank of the value to find (from lowest to highest).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-kth-rank.returns"></a><h4>Returns</h4>
+<p> The <em class="parameter"><code>k</code></em>
+-th value of <em class="parameter"><code>array</code></em>
+if it was sorted.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-kth-ranks"></a><h3>gwy_math_kth_ranks ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_math_kth_ranks (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> n</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *array</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nk</code></em>,
+                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *k</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *values</code></em>);</pre>
+<p>Finds simultaneously several k-th items of an array of values.</p>
+<p>The values are shuffled similarly to <a class="link" href="libgwyddion-Math.html#gwy-math-kth-rank" title="gwy_math_kth_rank ()"><code class="function">gwy_math_kth_rank()</code></a>, except that the guarantee holds for all given ranks
+simultaneously.  All values with explicitly requested ranks are at their correct positions and all values lying
+between them in the array are also between them numerically.</p>
+<div class="refsect3">
+<a name="gwy-math-kth-ranks.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of items in <em class="parameter"><code>array</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>array</p></td>
+<td class="parameter_description"><p>Array of doubles.  It is shuffled by this function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nk</p></td>
+<td class="parameter_description"><p>Number of ranked values to find (sizes of arrays <em class="parameter"><code>k</code></em>
+and <em class="parameter"><code>values</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>k</p></td>
+<td class="parameter_description"><p>Ranks of the value to find.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>values</p></td>
+<td class="parameter_description"><p>Array where to store values with ranks (from smallest to highest) given in <em class="parameter"><code>k</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-percentiles"></a><h3>gwy_math_percentiles ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_math_percentiles (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> n</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *array</code></em>,
+                      <em class="parameter"><code><a class="link" href="libgwyddion-gwyddionenums.html#GwyPercentileInterpolationType" title="enum GwyPercentileInterpolationType"><span class="type">GwyPercentileInterpolationType</span></a> interp</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> np</code></em>,
+                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *p</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *values</code></em>);</pre>
+<p>Finds simultaneously several percentiles of an array of values.</p>
+<p>The values in <em class="parameter"><code>array</code></em>
+ are shuffled similarly to <a class="link" href="libgwyddion-Math.html#gwy-math-kth-ranks" title="gwy_math_kth_ranks ()"><code class="function">gwy_math_kth_ranks()</code></a>. However, it is difficult to state how exactly
+<em class="parameter"><code>p</code></em>
+ translates to the values that become correctly ranked (and it depends on <em class="parameter"><code>interp</code></em>
+).  Hence you can only assume
+the set of values is preserved.</p>
+<div class="refsect3">
+<a name="gwy-math-percentiles.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of items in <em class="parameter"><code>array</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>array</p></td>
+<td class="parameter_description"><p>Array of doubles.  It is shuffled by this function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interp</p></td>
+<td class="parameter_description"><p>Interpolation method to use for percentiles that do not correspond exactly to an integer rank.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>np</p></td>
+<td class="parameter_description"><p>Number of percentiles to find.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>p</p></td>
+<td class="parameter_description"><p>Array of size <em class="parameter"><code>np</code></em>
+with the percentiles to compute.  The values are in percents, i.e. from the range [0,100].</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>values</p></td>
+<td class="parameter_description"><p>Array where to store values with percentiles given in <em class="parameter"><code>p</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-sort"></a><h3>gwy_math_sort ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_math_sort (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> n</code></em>,
+               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *array</code></em>);</pre>
+<p>Sorts an array of doubles using a quicksort algorithm.</p>
+<p>This is usually about twice as fast as the generic quicksort function thanks to specialization for doubles.</p>
+<div class="refsect3">
+<a name="gwy-math-sort.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of items in <em class="parameter"><code>array</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>array</p></td>
+<td class="parameter_description"><p>Array of doubles to sort in place.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-guint-sort"></a><h3>gwy_guint_sort ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_guint_sort (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> n</code></em>,
+                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *array</code></em>);</pre>
+<p>Sorts an array of unsigned integers using a quicksort algorithm.</p>
+<p>This is usually about twice as fast as the generic quicksort function thanks to specialization for integers.</p>
+<div class="refsect3">
+<a name="gwy-guint-sort.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of items in <em class="parameter"><code>array</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>array</p></td>
+<td class="parameter_description"><p>Array of <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> values to sort in place.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-sort-with-index"></a><h3>gwy_math_sort_with_index ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_math_sort_with_index (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> n</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *array</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *index_array</code></em>);</pre>
+<p>Sorts an array of doubles using a quicksort algorithm, remembering the permutation.</p>
+<p>The simplest and probably most common use of <em class="parameter"><code>index_array</code></em>
+ is to fill it with numbers 0 to <em class="parameter"><code>n</code></em>
+-1 before calling
+<a class="link" href="libgwyddion-Math.html#gwy-math-sort" title="gwy_math_sort ()"><code class="function">gwy_math_sort()</code></a>.  After sorting, <em class="parameter"><code>index_array</code></em>
+[<em class="parameter"><code>i</code></em>
+] then contains the original position of the <em class="parameter"><code>i</code></em>
+-th item of the
+sorted array.</p>
+<div class="refsect3">
+<a name="gwy-math-sort-with-index.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of items in <em class="parameter"><code>array</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>array</p></td>
+<td class="parameter_description"><p>Array of doubles to sort in place.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>index_array</p></td>
+<td class="parameter_description"><p>Array of integer identifiers of the items that are permuted simultaneously with <em class="parameter"><code>array</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-trimmed-mean"></a><h3>gwy_math_trimmed_mean ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_math_trimmed_mean (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> n</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *array</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nlowest</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nhighest</code></em>);</pre>
+<p>Finds trimmed mean of an array of values.</p>
+<p>At least one value must remain after the trimming, i.e. <em class="parameter"><code>nlowest</code></em>
+ + <em class="parameter"><code>nhighest</code></em>
+ must be smaller than <em class="parameter"><code>n</code></em>
+.  Usually one
+passes the same number as both <em class="parameter"><code>nlowest</code></em>
+ and <em class="parameter"><code>nhighest</code></em>
+, but it is not a requirement.</p>
+<p>The function can be also used to calculate normal mean values as it implements efficiently the cases when no
+trimming is done at either end.</p>
+<div class="refsect3">
+<a name="gwy-math-trimmed-mean.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of items in <em class="parameter"><code>array</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>array</p></td>
+<td class="parameter_description"><p>Array of doubles.  It is shuffled by this function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nlowest</p></td>
+<td class="parameter_description"><p>The number of lowest values to discard.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nhighest</p></td>
+<td class="parameter_description"><p>The number of highest values to discard.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-trimmed-mean.returns"></a><h4>Returns</h4>
+<p> The trimmed mean.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-median-uncertainty"></a><h3>gwy_math_median_uncertainty ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_math_median_uncertainty (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> n</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *array</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *uarray</code></em>);</pre>
+<p>Find the uncertainty value corresponding to data median.</p>
+<p>Note that this is not the uncertainty arising from the calculation of the median.  It is just the uncertainty of
+the single value that happens to be the data median.  As such, the function is not very useful.</p>
+<div class="refsect3">
+<a name="gwy-math-median-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of items in <em class="parameter"><code>array</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>array</p></td>
+<td class="parameter_description"><p>Array of doubles.  It is modified by this function.  All values are kept, but their positions in the array
+change.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uarray</p></td>
+<td class="parameter_description"><p>Array of value unvertainries.  It is modified by this function. All values are kept, but their positions
+in the array change.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-median-uncertainty.returns"></a><h4>Returns</h4>
+<p> The uncertainty of the median value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-xlnx-int"></a><h3>gwy_xlnx_int ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_xlnx_int (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> x</code></em>);</pre>
+<p>Calculates natural logarithm multiplied by the argument for integers.</p>
+<p>The value for zero <em class="parameter"><code>x</code></em>
+ is taken as the limit, i.e. zero.</p>
+<p>This function is useful for entropy calculations where values of <em class="parameter"><code>n</code></em>
+*log(<em class="parameter"><code>n</code></em>
+) can be evaulated a lot for small <em class="parameter"><code>n</code></em>
+.
+Therefore, values for small arguments are tabulated.  For large arguments the function is evaluated using the
+standard <code class="function">log()</code> function which is of course slower.</p>
+<div class="refsect3">
+<a name="gwy-xlnx-int.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Value to calculate <em class="parameter"><code>x</code></em>
+*log(<em class="parameter"><code>x</code></em>
+) of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-xlnx-int.returns"></a><h4>Returns</h4>
+<p> Value of <em class="parameter"><code>x</code></em>
+*log(<em class="parameter"><code>x</code></em>
+).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-44.html#api-index-2.44">2.44</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-sinc"></a><h3>gwy_sinc ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_sinc (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x</code></em>);</pre>
+<p>Calculates the sinc function.</p>
+<p>The sinc function is equal to sin(<em class="parameter"><code>x</code></em>
+)/<em class="parameter"><code>x</code></em>
+ for non-zero <em class="parameter"><code>x</code></em>
+, and defined to the limit 1 for zero <em class="parameter"><code>x</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-sinc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Value to calculate sinc (cardinal sine) of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-sinc.returns"></a><h4>Returns</h4>
+<p> Value of sinc(<em class="parameter"><code>x</code></em>
+).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-51.html#api-index-2.51">2.51</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-canonicalize-angle"></a><h3>gwy_canonicalize_angle ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_canonicalize_angle (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> phi</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> positive</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> oriented</code></em>);</pre>
+<p>Canonicalizes an angle to requested interval.</p>
+<p>For <em class="parameter"><code>positive</code></em>
+=<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>, <em class="parameter"><code>oriented</code></em>
+=<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> the output interval is [-π/2,π/2].</p>
+<p>For <em class="parameter"><code>positive</code></em>
+=<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>, <em class="parameter"><code>oriented</code></em>
+=<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> the output interval is [-π,π].</p>
+<p>For <em class="parameter"><code>positive</code></em>
+=<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, <em class="parameter"><code>oriented</code></em>
+=<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> the output interval is [0,π).</p>
+<p>For <em class="parameter"><code>positive</code></em>
+=<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, <em class="parameter"><code>oriented</code></em>
+=<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> the output interval is [0,2π).</p>
+<div class="refsect3">
+<a name="gwy-canonicalize-angle.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>phi</p></td>
+<td class="parameter_description"><p>Angle to canonicalize, in radians.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>positive</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if a positive angle is requested, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> for outputs symmetrical around zero.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>oriented</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> for direction of a vector, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> for the direction of a line (i.e. with no distinction between
+forward and backward direction).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-canonicalize-angle.returns"></a><h4>Returns</h4>
+<p> Canonicalized angle, equivalent (in given sense) to <em class="parameter"><code>phi</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-histogram"></a><h3>gwy_math_histogram ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gwy_math_histogram (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *values</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> min</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> max</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nbins</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *counts</code></em>);</pre>
+<p>Counts the numbers of values falling into equal-sized bins.</p>
+<p>The value of <em class="parameter"><code>min</code></em>
+ must not be larger than <em class="parameter"><code>max</code></em>
+.  The values may lie outside [<em class="parameter"><code>min</code></em>
+,<em class="parameter"><code>max</code></em>
+].  They are not counted in
+the histogram, nor the returned total.</p>
+<p>Rounding rules for values exactly at the edge of two bins are arbitrary and must not be relied upon.</p>
+<div class="refsect3">
+<a name="gwy-math-histogram.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>values</p></td>
+<td class="parameter_description"><p>Values to make histogram from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of values in <em class="parameter"><code>values</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>min</p></td>
+<td class="parameter_description"><p>Minimum value to consider (left edge of histogram).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max</p></td>
+<td class="parameter_description"><p>Maximum value to consider (right edge of histogram).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nbins</p></td>
+<td class="parameter_description"><p>Number of histogram bins (number of <em class="parameter"><code>counts</code></em>
+items), a positive number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>counts</p></td>
+<td class="parameter_description"><p>Array where to store the counts.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-histogram.returns"></a><h4>Returns</h4>
+<p> The number of values inside the entire histogram, i.e. at most <em class="parameter"><code>n</code></em>
+but possibly a reduced count.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-Math.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GWY-SQRT3:CAPS"></a><h3>GWY_SQRT3</h3>
+<pre class="programlisting">#define GWY_SQRT3 1.73205080756887729352744634150587236694280525381038
+</pre>
+<p>The square root of 3.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GWY-SQRT-PI:CAPS"></a><h3>GWY_SQRT_PI</h3>
+<pre class="programlisting">#define GWY_SQRT_PI 1.77245385090551602729816748334114518279754945612237
+</pre>
+<p>The square root of pi.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyXY"></a><h3>GwyXY</h3>
+<pre class="programlisting">typedef struct {
+    gdouble x;
+    gdouble y;
+} GwyXY;
+</pre>
+<p>Representation of Cartesian coordinates in plane.</p>
+<div class="refsect3">
+<a name="GwyXY.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GwyXY.x"></a>x</code></em>;</p></td>
+<td class="struct_member_description"><p>X-coordinate.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GwyXY.y"></a>y</code></em>;</p></td>
+<td class="struct_member_description"><p>Y-coordinate.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyXYZ"></a><h3>GwyXYZ</h3>
+<pre class="programlisting">typedef struct {
+    gdouble x;
+    gdouble y;
+    gdouble z;
+} GwyXYZ;
+</pre>
+<p>Representation of Cartesian coordinates in space.</p>
+<div class="refsect3">
+<a name="GwyXYZ.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GwyXYZ.x"></a>x</code></em>;</p></td>
+<td class="struct_member_description"><p>X-coordinate.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GwyXYZ.y"></a>y</code></em>;</p></td>
+<td class="struct_member_description"><p>Y-coordinate.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GwyXYZ.z"></a>z</code></em>;</p></td>
+<td class="struct_member_description"><p>Z-coordinate.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-Math.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a>, non-linear least square fitter;</p>
+<a class="link" href="libgwyddion-Math-Fallback.html" title="Math Fallback">Math Fallback</a>,
+<p>fallback mathematical functions</p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

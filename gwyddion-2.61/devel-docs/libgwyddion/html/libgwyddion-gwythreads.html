@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gwythreads: Gwyddion Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="prev" href="libgwyddion-gwyddion.html" title="gwyddion">
+<link rel="next" href="libgwyddion-gwyentities.html" title="gwyentities">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyddion-gwythreads.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyddion-gwyddion.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyddion-gwyentities.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyddion-gwythreads"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyddion-gwythreads.top_of_page"></a>gwythreads</span></h2>
+<p>gwythreads — Multithread processing control</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyddion-gwythreads.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-gwythreads.html#gwy-threads-are-enabled" title="gwy_threads_are_enabled ()">gwy_threads_are_enabled</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-gwythreads.html#gwy-threads-set-enabled" title="gwy_threads_set_enabled ()">gwy_threads_set_enabled</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-gwythreads.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwyddion/gwyddion.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-gwythreads.description"></a><h2>Description</h2>
+<p>Gwyddion can utilise multithread processing via OpenMP.</p>
+<p>It is disabled by default.  If it is enabled, is utilised internally and
+transparently in Gwyddion functions.  No threads are exposed in the API.</p>
+<p>The only exception is that when multithread processing is enabled,
+user-supplied routines called during data processing such as <a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitFunc" title="GwyNLFitFunc ()"><span class="type">GwyNLFitFunc</span></a>
+or <span class="type">GwyCooordTransform2DFunc</span> may be called from multiple threads and must be
+reentrant.  This does not apply to <a class="link" href="libgwyddion-gwyutils.html#GwySetMessageFunc" title="GwySetMessageFunc ()"><span class="type">GwySetMessageFunc</span></a> and
+<a class="link" href="libgwyddion-gwyutils.html#GwySetFractionFunc" title="GwySetFractionFunc ()"><span class="type">GwySetFractionFunc</span></a> which are always called from the main thread.</p>
+<p>If you run programs or scripts based on Gwyddion in parallel, for instance
+in a simulation or batch data processing, it is recommended to keep
+multithread processing disabled.  For GUI programs (like Gwyddion itself) or
+tasks run serially, it can be useful to enable it.</p>
+<p>If Gwyddion was not built with multithread processing support, enabling
+threads does not do anything and <a class="link" href="libgwyddion-gwythreads.html#gwy-threads-are-enabled" title="gwy_threads_are_enabled ()"><code class="function">gwy_threads_are_enabled()</code></a> will continue to
+return <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+<p>If Gwyddion is built with OpenMP-enabled FFTW, it calls <code class="function">fftw_init_threads()</code>
+when threads are enabled and can employ multithreaded FFTW.  When mixing
+Gwyddion functions with direct FFTW utilisation, call
+<code class="function">fftw_plan_with_nthreads()</code> with your preferred number of threads before you
+create a plan.</p>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-gwythreads.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-threads-are-enabled"></a><h3>gwy_threads_are_enabled ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_threads_are_enabled (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Obtains the state of internal multithread processing.</p>
+<div class="refsect3">
+<a name="gwy-threads-are-enabled.returns"></a><h4>Returns</h4>
+<p> <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if multithread processing is enabled; <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise (this
+includes the case of Gwyddion not built with multithread processing
+support at all).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-53.html#api-index-2.53">2.53</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-threads-set-enabled"></a><h3>gwy_threads_set_enabled ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_threads_set_enabled (<em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> setting</code></em>);</pre>
+<p>Enables or disables internal multithread processing.</p>
+<p>This function can be called any time during the program life time to switch
+between single- and multithread processing.  It must be called from the main
+thread while no Gwyddion data processing functions are being executed.</p>
+<div class="refsect3">
+<a name="gwy-threads-set-enabled.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>setting</p></td>
+<td class="parameter_description"><p><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to enable multithread processing; <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to disable it.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-53.html#api-index-2.53">2.53</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

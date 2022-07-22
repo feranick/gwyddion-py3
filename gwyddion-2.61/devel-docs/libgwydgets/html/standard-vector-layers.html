@@ -1,0 +1,548 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Standard Vector Layers: Gwyddion Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Widgets Library Reference Manual">
+<link rel="up" href="DataWindowWidgets.html" title="Data Windows and Views">
+<link rel="prev" href="GwyColorAxis.html" title="GwyColorAxis">
+<link rel="next" href="GraphWidgets.html" title="Graphs">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="DataWindowWidgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GwyColorAxis.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GraphWidgets.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="standard-vector-layers"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle">Standard Vector Layers</span></h2>
+<p>Standard Vector Layers — 
+      Vector layers that are distributed with <span class="application">Gwyddion</span>
+    </p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="id-1.3.11.3"></a><h2>Overview</h2>
+<p>
+      Vector layers, implementing means how user can draw on data views, are
+      provided by layer modules, so that third party tools (implemented by
+      tool modules)
+      can define their own means of user interaction.
+    </p>
+<p>
+      There are several standard layers distributed with <span class="application">Gwyddion</span>,
+      and their features and interface is the subject of this section.
+      All layers are subclasses of <a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer">GwyVectorLayer</a>
+      sharing its basic interface.
+      Each layer lets the user draw or select different shapes, therefore each module also
+      defines its own selection object type determining the format of selection data.
+      All selections are subclasses of <a href="../GwySelection.html#GwySelection-struct">GwySelection</a>.
+      By convention, layer type Foo is called GwyLayerFoo and the corresponding selection
+      type GwySelectionFoo.
+    </p>
+<p>
+      Layers and selections sometimes have additional object properties not present in the
+      base classes, these are described here too.
+    </p>
+</div>
+<div class="refsect1">
+<a name="id-1.3.11.4"></a><h2>GwyLayerAxis, GwySelectionAxis</h2>
+<pre class="synopsis">
+<a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject*</a>    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#g-object-new">g_object_new</a>(<a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Type-Information.html#g-type-from-name">g_type_from_name</a>("GwyLayerAxis"), NULL);
+<a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject*</a>    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#g-object-new">g_object_new</a>(<a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Type-Information.html#g-type-from-name">g_type_from_name</a>("GwySelectionAxis"), NULL);
+    </pre>
+<p>
+      The layer allows selecting one or more horizontal or vertical (full-width
+      or full-height) lines, called axes.  It can be also viewes as a way to
+      select separate x or y coordinates.
+    </p>
+<p>
+      Selection data consists of single coordinates.
+      More precisely, of y-coordinates for horizontal axes and x-coordinates for vertical
+      axes.  Each coordinate represents a selected axis.
+    </p>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.3.11.4.5"></a>GwyLayerAxis properties</h3></div></div></div>
+<p>None.</p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.3.11.4.6"></a>GwySelectionAxis properties</h3></div></div></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><a name="GwySelectionAxis--orientation"></a>"<code class="literal">orientation</code>" (<a href="../libgwyprocess-gwyprocessenums.html#GwyOrientation">GwyOrientation</a> : Read / Write)</span></p></td>
+<td><p>
+              Line orientation: horizontal or vertical.
+              The default orientation is horizontal.
+            </p></td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1">
+<a name="id-1.3.11.5"></a><h2>GwyLayerCross, GwySelectionCross</h2>
+<pre class="synopsis">
+<a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject*</a>    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#g-object-new">g_object_new</a>(<a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Type-Information.html#g-type-from-name">g_type_from_name</a>("GwyLayerCross"), NULL);
+<a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject*</a>    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#g-object-new">g_object_new</a>(<a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Type-Information.html#g-type-from-name">g_type_from_name</a>("GwySelectionCross"), NULL);
+    </pre>
+<p>
+      The layer allows selecting a number of simultaneous horizontal and vertical
+      lines.  Usually the selection is displayed as a large cross, but it can
+      also show only the horizontal and vertical lines or just the cross point
+      marker.
+    </p>
+<p>
+      Selection data consists of coordinate pairs (x, y) representing selected
+      cross centres.
+    </p>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.3.11.5.5"></a>GwyLayerCross properties</h3></div></div></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><a name="GwyLayerCross--draw-horizontal"></a>"<code class="literal">draw-horizontal</code>" (gboolean : Read / Write)</span></p></td>
+<td><p>
+              Whether the horizontal line should be drawn.
+              The default is draw the horizontal line.
+            </p></td>
+</tr>
+<tr>
+<td><p><span class="term"><a name="GwyLayerCross--draw-vertical"></a>"<code class="literal">draw-vertical</code>" (gboolean : Read / Write)</span></p></td>
+<td><p>
+              Whether the vertical line should be drawn.
+              The default is draw the vertical line.
+            </p></td>
+</tr>
+<tr>
+<td><p><span class="term"><a name="GwyLayerCross--thickness"></a>"<code class="literal">thickness</code>" (gint : Read / Write)</span></p></td>
+<td><p>
+              Width of orthogonal ticks at line ends.
+              The default is no ticks.
+            </p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.3.11.5.6"></a>GwySelectionCross properties</h3></div></div></div>
+<p>None.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="id-1.3.11.6"></a><h2>GwyLayerEllipse, GwySelectionEllipse</h2>
+<pre class="synopsis">
+<a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject*</a>    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#g-object-new">g_object_new</a>(<a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Type-Information.html#g-type-from-name">g_type_from_name</a>("GwyLayerEllipse"), NULL);
+<a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject*</a>    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-new">g_object_new</a>(<a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#g-type-from-name">g_type_from_name</a>("GwySelectionEllipse"), NULL);
+    </pre>
+<p>
+      The layer allows selecting a number of ellipses.
+    </p>
+<p>
+      Selection data consists of quadruples of coordinates (x<sub>0</sub>,
+      y<sub>0</sub>, x<sub>1</sub>, y<sub>1</sub>),
+      each representing one selected ellipse, where
+      x<sub>0</sub> and y<sub>0</sub> are coordinates of one
+      bounding box corner and x<sub>1</sub> and y<sub>1</sub>
+      of the opposite corner. Each one can be any of the four bounding box corners, there
+      is no guarantee one is for example always top-left.
+    </p>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.3.11.6.5"></a>GwyLayerEllipse properties</h3></div></div></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><a name="GwyLayerEllipse--draw-reflection"></a>"<code class="literal">draw-reflection</code>" (gboolean : Read / Write)</span></p></td>
+<td><p>
+              Whether central reflection of selection should be drawn too.
+              The default is to not draw reflection.
+            </p></td>
+</tr>
+<tr>
+<td><p><span class="term"><a name="GwyLayerEllipse--snap-to-center"></a>"<code class="literal">snap-to-center</code>" (gboolean : Read / Write)</span></p></td>
+<td><p>
+              Whether the selection should snap to the center. The default is
+              not to snap.
+            </p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.3.11.6.6"></a>GwySelectionEllipse properties</h3></div></div></div>
+<p>None.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="id-1.3.11.7"></a><h2>GwyLayerLine, GwySelectionLine</h2>
+<pre class="synopsis">
+<a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject*</a>    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-new">g_object_new</a>(<a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#g-type-from-name">g_type_from_name</a>("GwyLayerLine"), NULL);
+<a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject*</a>    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-new">g_object_new</a>(<a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#g-type-from-name">g_type_from_name</a>("GwySelectionLine"), NULL);
+    </pre>
+<p>
+      The layer allows selecting one or more lines of arbitrary orientation and
+      length, optionally can display line numbers next to each line.
+    </p>
+<p>
+      Selection data consists of quadruples of coordinates (x<sub>0</sub>,
+      y<sub>0</sub>, x<sub>1</sub>, y<sub>1</sub>),
+      each representing one selected line, where
+      x<sub>0</sub> and y<sub>0</sub> are
+      coordinates of one line end and x<sub>1</sub> and y<sub>1</sub>
+      of the other end.
+    </p>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.3.11.7.5"></a>GwyLayerLine properties</h3></div></div></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><a name="GwyLayerLine--line-numbers"></a>"<code class="literal">line-numbers</code>" (gboolean : Read / Write)</span></p></td>
+<td><p>
+              Whether line numbers should be displayed next to them.
+              The default is to show line numbers.
+            </p></td>
+</tr>
+<tr>
+<td><p><span class="term"><a name="GwyLayerLine--thickness"></a>"<code class="literal">thickness</code>" (gint : Read / Write)</span></p></td>
+<td><p>
+              Width of orthogonal ticks at line ends.
+              The default is no ticks.
+            </p></td>
+</tr>
+<tr>
+<td><p><span class="term"><a name="GwyLayerLine--center-tick"></a>"<code class="literal">center-tick</code>" (gboolean : Read / Write)</span></p></td>
+<td>
+<p>
+              Whether an tick is drawn in the line centre.
+              The default is not to drawn the central tick.
+            </p>
+<p class="since">Since: 2.42</p>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.3.11.7.6"></a>GwySelectionLine properties</h3></div></div></div>
+<p>None.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="id-1.3.11.8"></a><h2>GwyLayerPoint, GwySelectionPoint</h2>
+<pre class="synopsis">
+<a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject*</a>    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-new">g_object_new</a>(<a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#g-type-from-name">g_type_from_name</a>("GwyLayerPoint"), NULL);
+<a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject*</a>    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-new">g_object_new</a>(<a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#g-type-from-name">g_type_from_name</a>("GwySelectionPoint"), NULL);
+    </pre>
+<p>
+      The layer allows selecting a number of points, either displayed as
+      crosses, crosses with concentric circles, or with no graphical
+      representation (the latter mainly useful with only one selected point).
+    </p>
+<p>
+      Selection data consists of coordinate pairs (x, y) representing selected points.
+    </p>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.3.11.8.5"></a>GwyLayerPoint properties</h3></div></div></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><a name="GwyLayerPoint--draw-marker"></a>"<code class="literal">draw-marker</code>" (gboolean : Read / Write)</span></p></td>
+<td><p>
+              If set to TRUE, points will be displayed. Otherwise they will be invisible.
+            </p></td>
+</tr>
+<tr>
+<td><p><span class="term"><a name="GwyLayerPoint--marker-radius"></a>"<code class="literal">marker-radius</code>" (gboolean : Read / Write)</span></p></td>
+<td><p>
+              Specifies the radius of the circle to draw around all selected points.
+              If set to zero and/or if "<code class="literal">draw-marker</code>" is
+              set to FALSE, no circle will be drawn.
+              The default radius is zero.
+            </p></td>
+</tr>
+<tr>
+<td><p><span class="term"><a name="GwyLayerLine--point-numbers"></a>"<code class="literal">point-numbers</code>" (gboolean : Read / Write)</span></p></td>
+<td><p>
+              Whether point numbers should be displayed next to them.
+              The default is not to show point numbers.
+            </p></td>
+</tr>
+<tr>
+<td><p><span class="term"><a name="GwyLayerLine--draw-as-vector"></a>"<code class="literal">draw-as-vector</code>" (gboolean : Read / Write)</span></p></td>
+<td><p>
+              Whether points should be instead drawn as vector from the origin.
+              This setting may interact poorly with other drawing options.
+              The default is to draw points as points.
+            </p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.3.11.8.6"></a>GwySelectionPoint properties</h3></div></div></div>
+<p>None.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="id-1.3.11.9"></a><h2>GwyLayerRectangle, GwySelectionRectangle</h2>
+<pre class="synopsis">
+<a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject*</a>    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-new">g_object_new</a>(<a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#g-type-from-name">g_type_from_name</a>("GwyLayerRectangle"), NULL);
+<a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject*</a>    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-new">g_object_new</a>(<a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#g-type-from-name">g_type_from_name</a>("GwySelectionRectangle"), NULL);
+    </pre>
+<p>
+      The layer allows selecting a number of rectangles, that can be drawn with
+      a couple of fancy/special styles.
+    </p>
+<p>
+      Selection data consists of quadruples of coordinates (x<sub>0</sub>,
+      y<sub>0</sub>, x<sub>1</sub>, y<sub>1</sub>),
+      each representing one selected rectangle, where
+      x<sub>0</sub> and y<sub>0</sub> are coordinates of one corner
+      and x<sub>1</sub> and y<sub>1</sub>
+      of the opposite corner. Each one can be any of the four rectangle corners, there
+      is no guarantee one is for example always top-left.
+    </p>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.3.11.9.5"></a>GwyLayerRectangle properties</h3></div></div></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><a name="GwyLayerRectangle--is-crop"></a>"<code class="literal">is-crop</code>" (gboolean : Read / Write)</span></p></td>
+<td><p>
+              Whether lines should be drawn always from border to border, as in the Crop tool.
+              The default is to draw just outline of the selected rectangle.
+            </p></td>
+</tr>
+<tr>
+<td><p><span class="term"><a name="GwyLayerRectangle--draw-reflection"></a>"<code class="literal">draw-reflection</code>" (gboolean : Read / Write)</span></p></td>
+<td><p>
+              Whether central reflection of selection should be drawn too.
+              The default is to not draw reflection.
+            </p></td>
+</tr>
+<tr>
+<td><p><span class="term"><a name="GwyLayerRectangle--snap-to-center"></a>"<code class="literal">snap-to-center</code>" (gboolean : Read / Write)</span></p></td>
+<td><p>
+              Whether the selection should snap to the center. The default is
+              to not snap.
+            </p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.3.11.9.6"></a>GwySelectionRectangle properties</h3></div></div></div>
+<p>None.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="id-1.3.11.10"></a><h2>GwyLayerLattice, GwySelectionLattice</h2>
+<pre class="synopsis">
+<a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject*</a>    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-new">g_object_new</a>(<a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#g-type-from-name">g_type_from_name</a>("GwyLayerLattice"), NULL);
+<a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject*</a>    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-new">g_object_new</a>(<a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#g-type-from-name">g_type_from_name</a>("GwySelectionLattice"), NULL);
+    </pre>
+<p>
+      The layer allows selecting a pair of two-dimensional vectors, that
+      represent a lattice in the plane.
+      The selection is also visualised as a lattice.
+    </p>
+<p>
+      Selection data consists of quadruples of coordinates (x<sub>0</sub>,
+      y<sub>0</sub>, x<sub>1</sub>, y<sub>1</sub>),
+      each representing the two selected lattice vectors, where
+      x<sub>0</sub> and y<sub>0</sub> are coordinates of one vector
+      and x<sub>1</sub> and y<sub>1</sub>
+      of the other.
+    </p>
+<p>
+      Although the selection can contain multiple such pairs, the layer ignores all except
+      the first one.
+    </p>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.3.11.10.6"></a>GwyLayerLattice properties</h3></div></div></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><a name="GwyLayerLattice--n-lines"></a>"<code class="literal">n-lines</code>" (guint : Read / Write)</span></p></td>
+<td><p>
+              The number of grille lines drawn along each vector.
+            </p></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.3.11.10.7"></a>GwySelectionLattice properties</h3></div></div></div>
+<p>None.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="id-1.3.11.11"></a><h2>GwyLayerProjective, GwySelectionProjective</h2>
+<pre class="synopsis">
+<a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject*</a>    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-new">g_object_new</a>(<a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#g-type-from-name">g_type_from_name</a>("GwyLayerProjective"), NULL);
+<a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject*</a>    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-new">g_object_new</a>(<a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#g-type-from-name">g_type_from_name</a>("GwySelectionProjective"), NULL);
+    </pre>
+<p>
+      The layer allows selecting tetragons representing perspective projections of
+      a rectangle in the plane.
+      The selection is visualised as the perspective rectangle, possibly with
+      a grid inside.
+    </p>
+<p>
+      Selection data consists of octuples of coordinates (x<sub>0</sub>,
+      y<sub>0</sub>, x<sub>1</sub>, y<sub>1</sub>,
+      x<sub>2</sub>, y<sub>2</sub>, x<sub>3</sub>,
+      y<sub>3</sub>),
+      each representing the four vertices 0, 1, 2 and 3, in order around the perimeter.
+    </p>
+<p>
+      Although the selection can contain multiple such tetragon, the layer ignores all except
+      the first one.
+    </p>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.3.11.11.6"></a>GwyLayerProjective properties</h3></div></div></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><a name="GwyLayerProjective--n-lines"></a>"<code class="literal">n-lines</code>" (guint : Read / Write)</span></p></td>
+<td><p>
+              The number of grille lines drawn inside the tetragon.
+            </p></td>
+</tr>
+<tr>
+<td><p><span class="term"><a name="GwyLayerProjective--convex"></a>"<code class="literal">convex</code>" (gboolean : Read / Write)</span></p></td>
+<td><p>
+              Whether editing the tetragon must leave it convex and non-degenerated.
+              The result of programatically setting a non-convex selection when convex is TRUE is undefined.
+              The default is to only allow convex tetragons.
+            </p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.3.11.11.7"></a>GwySelectionProjective properties</h3></div></div></div>
+<p>None.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="id-1.3.11.12"></a><h2>GwyLayerPath, GwySelectionPath</h2>
+<pre class="synopsis">
+<a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject*</a>    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-new">g_object_new</a>(<a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#g-type-from-name">g_type_from_name</a>("GwyLayerPath"), NULL);
+<a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject*</a>    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-new">g_object_new</a>(<a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#g-type-from-name">g_type_from_name</a>("GwySelectionPath"), NULL);
+    </pre>
+<p>
+      The layer allows selecting a long spline curve passing through given
+      points.
+    </p>
+<p>
+      Selection data consists of coordinate pairs (x, y) representing the
+      points defining the curve.  The curve is implicitly oriented from the
+      first pair to the last one.
+    </p>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.3.11.12.5"></a>GwyLayerPath properties</h3></div></div></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><a name="GwyLayerPath--thickness"></a>"<code class="literal">thickness</code>" (gint : Read / Write)</span></p></td>
+<td><p>
+              Width of orthogonal ticks at line ends.
+              The default is no ticks.
+            </p></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.3.11.12.6"></a>GwySelectionPath properties</h3></div></div></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><a name="GwySelectionPath--slackness"></a>"<code class="literal">closed</code>" (gdouble : Read / Write)</span></p></td>
+<td><p>
+              How much the curve is slack/taut, from the interval [0, sqrt(2)].
+              Value of 0 corresponds to completely taut curve, i.e. straight
+              lines connecting the points.
+              Value of 1 corresponds to free curve.
+              The default value is 1/sqrt(2).
+            </p></td>
+</tr>
+<tr>
+<td><p><span class="term"><a name="GwySelectionPath--closed"></a>"<code class="literal">closed</code>" (gboolean : Read / Write)</span></p></td>
+<td><p>
+              Whether the curve is closed, i.e. continues smoothly from the
+              last point back to the first point.
+              The default is open-ended (not closed) curve.
+            </p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

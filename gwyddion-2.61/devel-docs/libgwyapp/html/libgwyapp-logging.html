@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>logging: Gwyddion Application Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="prev" href="libgwyapp-log.html" title="log">
+<link rel="next" href="GwyParamDef.html" title="GwyParamDef">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyapp-logging.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyapp-log.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyParamDef.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyapp-logging"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyapp-logging.top_of_page"></a>logging</span></h2>
+<p>logging — Program message log</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyapp-logging.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-logging.html#gwy-app-setup-logging" title="gwy_app_setup_logging ()">gwy_app_setup_logging</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkTextBuffer.html#GtkTextBuffer-struct"><span class="returnvalue">GtkTextBuffer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-logging.html#gwy-app-get-log-text-buffer" title="gwy_app_get_log_text_buffer ()">gwy_app_get_log_text_buffer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-logging.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgwyapp-logging.html#GwyAppLoggingFlags" title="enum GwyAppLoggingFlags">GwyAppLoggingFlags</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-logging.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;app/gwyapp.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-logging.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-logging.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-app-setup-logging"></a><h3>gwy_app_setup_logging ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_setup_logging (<em class="parameter"><code><a class="link" href="libgwyapp-logging.html#GwyAppLoggingFlags" title="enum GwyAppLoggingFlags"><span class="type">GwyAppLoggingFlags</span></a> flags</code></em>);</pre>
+<p>Sets up Gwyddion GLib log handler.</p>
+<p>The log handler sends the messages to a log file or console, as Gwyddion
+usually does.  This function may not be useful in Gwyddion-based programs
+unless they try to emulate Gwyddion behaviour closely.</p>
+<div class="refsect3">
+<a name="gwy-app-setup-logging.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>Flags controlling how messages are handled.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-get-log-text-buffer"></a><h3>gwy_app_get_log_text_buffer ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkTextBuffer.html#GtkTextBuffer-struct"><span class="returnvalue">GtkTextBuffer</span></a> *
+gwy_app_get_log_text_buffer (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Obtains a text buffer with program log messages.</p>
+<p>This functions may only be called after <a class="link" href="libgwyapp-logging.html#gwy-app-setup-logging" title="gwy_app_setup_logging ()"><code class="function">gwy_app_setup_logging()</code></a> and,
+obviously, after GTK+ was intialised.</p>
+<p>The text buffer is owned by the library and must not be modified nor
+destroyed.  It will be already filled with messages occurring between
+<a class="link" href="libgwyapp-logging.html#gwy-app-setup-logging" title="gwy_app_setup_logging ()"><code class="function">gwy_app_setup_logging()</code></a> and this function call.  New messages will be
+appended to the buffer as they arrive.</p>
+<div class="refsect3">
+<a name="gwy-app-get-log-text-buffer.returns"></a><h4>Returns</h4>
+<p> Text buffer with the program log messages.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-logging.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyAppLoggingFlags"></a><h3>enum GwyAppLoggingFlags</h3>
+<p>Flags controlling where program messages are written.</p>
+<div class="refsect3">
+<a name="GwyAppLoggingFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-APP-LOGGING-TO-FILE:CAPS"></a>GWY_APP_LOGGING_TO_FILE</p></td>
+<td class="enum_member_description">
+<p>Messages go to a log file, either gwyddion.log or
+given by environment variable GWYDDION_LOGFILE.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-APP-LOGGING-TO-CONSOLE:CAPS"></a>GWY_APP_LOGGING_TO_CONSOLE</p></td>
+<td class="enum_member_description">
+<p>Messages go to standard output and standard
+error depending on message type (emulating
+where GLib sends them).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

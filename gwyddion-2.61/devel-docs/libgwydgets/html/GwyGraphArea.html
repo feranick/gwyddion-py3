@@ -1,0 +1,1017 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyGraphArea: Gwyddion Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Widgets Library Reference Manual">
+<link rel="up" href="GraphWidgets.html" title="Graphs">
+<link rel="prev" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel">
+<link rel="next" href="GwyAxis.html" title="GwyAxis">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyGraphArea.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyGraphArea.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GwyGraphArea.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GwyGraphArea.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GwyGraphArea.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="GraphWidgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GwyGraphCurveModel.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyAxis.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyGraphArea"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyGraphArea.top_of_page"></a>GwyGraphArea</span></h2>
+<p>GwyGraphArea — Layout for drawing graph curves</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyGraphArea.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphArea.html#gwy-graph-area-new" title="gwy_graph_area_new ()">gwy_graph_area_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphArea.html#gwy-graph-area-get-label" title="gwy_graph_area_get_label ()">gwy_graph_area_get_label</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphArea.html#gwy-graph-area-set-model" title="gwy_graph_area_set_model ()">gwy_graph_area_set_model</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="returnvalue">GwyGraphModel</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphArea.html#gwy-graph-area-get-model" title="gwy_graph_area_get_model ()">gwy_graph_area_get_model</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphArea.html#gwy-graph-area-get-cursor" title="gwy_graph_area_get_cursor ()">gwy_graph_area_get_cursor</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphArea.html#gwy-graph-area-set-x-range" title="gwy_graph_area_set_x_range ()">gwy_graph_area_set_x_range</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphArea.html#gwy-graph-area-set-y-range" title="gwy_graph_area_set_y_range ()">gwy_graph_area_set_y_range</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphArea.html#gwy-graph-area-set-x-grid-data" title="gwy_graph_area_set_x_grid_data ()">gwy_graph_area_set_x_grid_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphArea.html#gwy-graph-area-set-y-grid-data" title="gwy_graph_area_set_y_grid_data ()">gwy_graph_area_set_y_grid_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphArea.html#gwy-graph-area-get-x-grid-data" title="gwy_graph_area_get_x_grid_data ()">gwy_graph_area_get_x_grid_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphArea.html#gwy-graph-area-get-y-grid-data" title="gwy_graph_area_get_y_grid_data ()">gwy_graph_area_get_y_grid_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwySelection.html#GwySelection-struct"><span class="returnvalue">GwySelection</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphArea.html#gwy-graph-area-get-selection" title="gwy_graph_area_get_selection ()">gwy_graph_area_get_selection</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphArea.html#gwy-graph-area-set-status" title="gwy_graph_area_set_status ()">gwy_graph_area_set_status</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwydgets-gwydgetenums.html#GwyGraphStatusType" title="enum GwyGraphStatusType"><span class="returnvalue">GwyGraphStatusType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphArea.html#gwy-graph-area-get-status" title="gwy_graph_area_get_status ()">gwy_graph_area_get_status</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphArea.html#gwy-graph-area-draw-on-drawable" title="gwy_graph_area_draw_on_drawable ()">gwy_graph_area_draw_on_drawable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Strings.html#GString"><span class="returnvalue">GString</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphArea.html#gwy-graph-area-export-vector" title="gwy_graph_area_export_vector ()">gwy_graph_area_export_vector</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphArea.html#gwy-graph-area-enable-user-input" title="gwy_graph_area_enable_user_input ()">gwy_graph_area_enable_user_input</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphArea.html#gwy-graph-area-set-selection-editable" title="gwy_graph_area_set_selection_editable ()">gwy_graph_area_set_selection_editable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphArea.html#gwy-graph-area-edit-curve" title="gwy_graph_area_edit_curve ()">gwy_graph_area_edit_curve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyGraphArea.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type"><a class="link" href="libgwydgets-gwydgetenums.html#GwyGraphStatusType" title="enum GwyGraphStatusType"><span class="type">GwyGraphStatusType</span></a></td>
+<td class="property_name"><a class="link" href="GwyGraphArea.html#GwyGraphArea--status" title="The “status” property">status</a></td>
+<td class="property_flags">Read / Write</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyGraphArea.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyGraphArea.html#GwyGraphArea-edit-curve" title="The “edit-curve” signal">edit-curve</a></td>
+<td class="signal_flags"><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyGraphArea.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyGraphArea.html#GwyGraphArea-struct" title="struct GwyGraphArea">GwyGraphArea</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyGraphArea.html#GwyGraphAreaClass" title="struct GwyGraphAreaClass">GwyGraphAreaClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyGraphArea.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkObject.html#GtkObject-struct">GtkObject</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct">GtkWidget</a>
+                <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkContainer.html#GtkContainer-struct">GtkContainer</a>
+                    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkLayout.html#GtkLayout-struct">GtkLayout</a>
+                        <span class="lineart">╰──</span> GwyGraphArea
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyGraphArea.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GwyGraphArea implements
+ AtkImplementorIface and  <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkBuildable.html#GtkBuildable-struct">GtkBuildable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwyGraphArea.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwydgets/gwydgets.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyGraphArea.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> is the central part of <a class="link" href="GwyGraph.html" title="GwyGraph"><span class="type">GwyGraph</span></a> widget. It plots a set of
+data curves with the given plot properties.</p>
+<p>It is recommended to use it within <a class="link" href="GwyGraph.html" title="GwyGraph"><span class="type">GwyGraph</span></a>, however, it can also be used
+separately.</p>
+</div>
+<div class="refsect1">
+<a name="GwyGraphArea.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-graph-area-new"></a><h3>gwy_graph_area_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_graph_area_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new graph area widget.</p>
+<div class="refsect3">
+<a name="gwy-graph-area-new.returns"></a><h4>Returns</h4>
+<p> Newly created graph area as <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-area-get-label"></a><h3>gwy_graph_area_get_label ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_graph_area_get_label (<em class="parameter"><code><a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> *area</code></em>);</pre>
+<p>Gets the label inside a graph area.</p>
+<div class="refsect3">
+<a name="gwy-graph-area-get-label.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>area</p></td>
+<td class="parameter_description"><p>A graph area.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-area-get-label.returns"></a><h4>Returns</h4>
+<p> The graph label widget within the graph area.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-area-set-model"></a><h3>gwy_graph_area_set_model ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_area_set_model (<em class="parameter"><code><a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> *area</code></em>,
+                          <em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gmodel</code></em>);</pre>
+<p>Sets the graph model of a graph area.</p>
+<div class="refsect3">
+<a name="gwy-graph-area-set-model.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>area</p></td>
+<td class="parameter_description"><p>A graph area.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>New graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-area-get-model"></a><h3>gwy_graph_area_get_model ()</h3>
+<pre class="programlisting"><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="returnvalue">GwyGraphModel</span></a> *
+gwy_graph_area_get_model (<em class="parameter"><code><a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> *area</code></em>);</pre>
+<p>Gets the model of a graph area.</p>
+<div class="refsect3">
+<a name="gwy-graph-area-get-model.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>area</p></td>
+<td class="parameter_description"><p>A graph area.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-area-get-model.returns"></a><h4>Returns</h4>
+<p> The graph model this graph area widget displays.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-area-get-cursor"></a><h3>gwy_graph_area_get_cursor ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_area_get_cursor (<em class="parameter"><code><a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> *area</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *x_cursor</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *y_cursor</code></em>);</pre>
+<p>Gets mouse cursor related values within a graph area.</p>
+<div class="refsect3">
+<a name="gwy-graph-area-get-cursor.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>area</p></td>
+<td class="parameter_description"><p>A graph area.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x_cursor</p></td>
+<td class="parameter_description"><p>Location to store the x value corresponding to cursor position.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y_cursor</p></td>
+<td class="parameter_description"><p>Location to store the y value corresponding to cursor position.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-area-set-x-range"></a><h3>gwy_graph_area_set_x_range ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_area_set_x_range (<em class="parameter"><code><a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> *area</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x_min</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x_max</code></em>);</pre>
+<p>Sets the horizontal range a graph area displays.</p>
+<div class="refsect3">
+<a name="gwy-graph-area-set-x-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>area</p></td>
+<td class="parameter_description"><p>A graph area.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x_min</p></td>
+<td class="parameter_description"><p>The minimum x value, in real coodrinates.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x_max</p></td>
+<td class="parameter_description"><p>The maximum x value, in real coodrinates.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-area-set-y-range"></a><h3>gwy_graph_area_set_y_range ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_area_set_y_range (<em class="parameter"><code><a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> *area</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> y_min</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> y_max</code></em>);</pre>
+<p>Sets the vertical range a graph area displays.</p>
+<div class="refsect3">
+<a name="gwy-graph-area-set-y-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>area</p></td>
+<td class="parameter_description"><p>A graph area.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y_min</p></td>
+<td class="parameter_description"><p>The minimum y value, in real coodrinates.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y_max</p></td>
+<td class="parameter_description"><p>The maximum y value, in real coodrinates.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-area-set-x-grid-data"></a><h3>gwy_graph_area_set_x_grid_data ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_area_set_x_grid_data (<em class="parameter"><code><a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> *area</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> ndata</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *grid_data</code></em>);</pre>
+<p>Sets the grid data on the x-axis of a graph area</p>
+<div class="refsect3">
+<a name="gwy-graph-area-set-x-grid-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>area</p></td>
+<td class="parameter_description"><p>A graph area.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ndata</p></td>
+<td class="parameter_description"><p>The number of points in <em class="parameter"><code>grid_data</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grid_data</p></td>
+<td class="parameter_description"><p>Array of grid line positions on the x-axis (in real values,
+not pixels).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-area-set-y-grid-data"></a><h3>gwy_graph_area_set_y_grid_data ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_area_set_y_grid_data (<em class="parameter"><code><a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> *area</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> ndata</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *grid_data</code></em>);</pre>
+<p>Sets the grid data on the y-axis of a graph area</p>
+<div class="refsect3">
+<a name="gwy-graph-area-set-y-grid-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>area</p></td>
+<td class="parameter_description"><p>A graph area.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ndata</p></td>
+<td class="parameter_description"><p>The number of points in <em class="parameter"><code>grid_data</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grid_data</p></td>
+<td class="parameter_description"><p>Array of grid line positions on the y-axis (in real values,
+not pixels).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-area-get-x-grid-data"></a><h3>gwy_graph_area_get_x_grid_data ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_graph_area_get_x_grid_data (<em class="parameter"><code><a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> *area</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *ndata</code></em>);</pre>
+<p>Gets the grid data on the x-axis of a graph area.</p>
+<div class="refsect3">
+<a name="gwy-graph-area-get-x-grid-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>area</p></td>
+<td class="parameter_description"><p>A graph area.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ndata</p></td>
+<td class="parameter_description"><p>Location to store the number of returned positions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-area-get-x-grid-data.returns"></a><h4>Returns</h4>
+<p> Array of grid line positions (in real values, not pixels) owned
+by the graph area.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-area-get-y-grid-data"></a><h3>gwy_graph_area_get_y_grid_data ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_graph_area_get_y_grid_data (<em class="parameter"><code><a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> *area</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *ndata</code></em>);</pre>
+<p>Gets the grid data on the y-axis of a graph area.</p>
+<div class="refsect3">
+<a name="gwy-graph-area-get-y-grid-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>area</p></td>
+<td class="parameter_description"><p>A graph area.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ndata</p></td>
+<td class="parameter_description"><p>Location to store the number of returned positions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-area-get-y-grid-data.returns"></a><h4>Returns</h4>
+<p> Array of grid line positions (in real values, not pixels) owned
+by the graph area.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-area-get-selection"></a><h3>gwy_graph_area_get_selection ()</h3>
+<pre class="programlisting"><a href="../GwySelection.html#GwySelection-struct"><span class="returnvalue">GwySelection</span></a> *
+gwy_graph_area_get_selection (<em class="parameter"><code><a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> *area</code></em>,
+                              <em class="parameter"><code><a class="link" href="libgwydgets-gwydgetenums.html#GwyGraphStatusType" title="enum GwyGraphStatusType"><span class="type">GwyGraphStatusType</span></a> status_type</code></em>);</pre>
+<p>Gets the selection object corresponding to a status of a graph area.</p>
+<p>A selection object exists even for inactive status types (selection modes),
+therefore also selections for other modes than the currently active one can
+be requested.</p>
+<div class="refsect3">
+<a name="gwy-graph-area-get-selection.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>area</p></td>
+<td class="parameter_description"><p>A graph area.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>status_type</p></td>
+<td class="parameter_description"><p>Graph status.  Value <a class="link" href="libgwydgets-gwydgetenums.html#GWY-GRAPH-STATUS-PLAIN:CAPS"><code class="literal">GWY_GRAPH_STATUS_PLAIN</code></a> mode (which has
+no selection associated) stands for the currentl selection
+mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-area-get-selection.returns"></a><h4>Returns</h4>
+<p> The requested selection.  It is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> only if <em class="parameter"><code>status_type</code></em>
+is
+<a class="link" href="libgwydgets-gwydgetenums.html#GWY-GRAPH-STATUS-PLAIN:CAPS"><code class="literal">GWY_GRAPH_STATUS_PLAIN</code></a> and the current selection mode is
+<a class="link" href="libgwydgets-gwydgetenums.html#GWY-GRAPH-STATUS-PLAIN:CAPS"><code class="literal">GWY_GRAPH_STATUS_PLAIN</code></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-area-set-status"></a><h3>gwy_graph_area_set_status ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_area_set_status (<em class="parameter"><code><a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> *area</code></em>,
+                           <em class="parameter"><code><a class="link" href="libgwydgets-gwydgetenums.html#GwyGraphStatusType" title="enum GwyGraphStatusType"><span class="type">GwyGraphStatusType</span></a> status_type</code></em>);</pre>
+<p>Sets the status of a graph area.</p>
+<p>When the area is inside a <a class="link" href="GwyGraph.html" title="GwyGraph"><span class="type">GwyGraph</span></a>, use <a class="link" href="GwyGraph.html#gwy-graph-set-status" title="gwy_graph_set_status ()"><code class="function">gwy_graph_set_status()</code></a> instead
+(also see this function for details).</p>
+<div class="refsect3">
+<a name="gwy-graph-area-set-status.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>area</p></td>
+<td class="parameter_description"><p>A graph area.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>status_type</p></td>
+<td class="parameter_description"><p>New graph area status.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-area-get-status"></a><h3>gwy_graph_area_get_status ()</h3>
+<pre class="programlisting"><a class="link" href="libgwydgets-gwydgetenums.html#GwyGraphStatusType" title="enum GwyGraphStatusType"><span class="returnvalue">GwyGraphStatusType</span></a>
+gwy_graph_area_get_status (<em class="parameter"><code><a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> *area</code></em>);</pre>
+<p>Gets the status of a grap area.</p>
+<p>See <a class="link" href="GwyGraphArea.html#gwy-graph-area-set-status" title="gwy_graph_area_set_status ()"><code class="function">gwy_graph_area_set_status()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-graph-area-get-status.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>area</p></td>
+<td class="parameter_description"><p>A graph area.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-area-get-status.returns"></a><h4>Returns</h4>
+<p> The current graph area status.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-area-draw-on-drawable"></a><h3>gwy_graph_area_draw_on_drawable ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_area_draw_on_drawable (<em class="parameter"><code><a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> *area</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gdk2/gdk2-Drawing-Primitives.html#GdkDrawable-struct"><span class="type">GdkDrawable</span></a> *drawable</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gdk2/gdk2-Graphics-Contexts.html#GdkGC-struct"><span class="type">GdkGC</span></a> *gc</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Draws a graph area to a Gdk drawable.</p>
+<div class="refsect3">
+<a name="gwy-graph-area-draw-on-drawable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>area</p></td>
+<td class="parameter_description"><p>A graph area.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>drawable</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gdk2/gdk2-Drawing-Primitives.html#GdkDrawable-struct"><span class="type">GdkDrawable</span></a> (destination for graphics operations)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gc</p></td>
+<td class="parameter_description"><p>Graphics context.
+It is modified by this function unpredictably.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>X position in <em class="parameter"><code>drawable</code></em>
+where the graph area should be drawn</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Y position in <em class="parameter"><code>drawable</code></em>
+where the graph area should be drawn</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>width of the graph area on the drawable</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>height of the graph area on the drawable</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-area-export-vector"></a><h3>gwy_graph_area_export_vector ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Strings.html#GString"><span class="returnvalue">GString</span></a> *
+gwy_graph_area_export_vector (<em class="parameter"><code><a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> *area</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Creates PostScript representation of a graph area.</p>
+<div class="refsect3">
+<a name="gwy-graph-area-export-vector.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>area</p></td>
+<td class="parameter_description"><p>A graph area.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Bounding box origin X-coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Bounding box origin Y-coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Bounding box width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Bounding box height.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-area-export-vector.returns"></a><h4>Returns</h4>
+<p> A fragment of PostScript code representing the the graph area
+as a newly allocated <a href="/usr/share/gtk-doc/html/glib/glib-Strings.html#GString"><span class="type">GString</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-area-enable-user-input"></a><h3>gwy_graph_area_enable_user_input ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_area_enable_user_input (<em class="parameter"><code><a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> *area</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> enable</code></em>);</pre>
+<p>Enables/disables auxiliary graph area dialogs (invoked by clicking the
+mouse).</p>
+<p>Note, however, that this setting does not control editability of selections.
+Use <a class="link" href="GwyGraphArea.html#gwy-graph-area-set-selection-editable" title="gwy_graph_area_set_selection_editable ()"><code class="function">gwy_graph_area_set_selection_editable()</code></a> for that.</p>
+<div class="refsect3">
+<a name="gwy-graph-area-enable-user-input.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>area</p></td>
+<td class="parameter_description"><p>A graph area.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>enable</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to enable user interaction, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to disable it.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-area-set-selection-editable"></a><h3>gwy_graph_area_set_selection_editable ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_area_set_selection_editable (<em class="parameter"><code><a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> *area</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> setting</code></em>);</pre>
+<p>Enables/disables selection editing using mouse.</p>
+<p>When selection editing is disabled the graph area status type determines
+the selection type that can be drawn on the area.  However, the user cannot
+modify it.</p>
+<div class="refsect3">
+<a name="gwy-graph-area-set-selection-editable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>area</p></td>
+<td class="parameter_description"><p>A graph area.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>setting</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to enable selection editing, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to disable it.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-area-edit-curve"></a><h3>gwy_graph_area_edit_curve ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_area_edit_curve (<em class="parameter"><code><a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> *area</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Invokes the curve property dialog for a curve.</p>
+<p>If the dialog is already displayed, it is switched to the requested curve.</p>
+<div class="refsect3">
+<a name="gwy-graph-area-edit-curve.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>area</p></td>
+<td class="parameter_description"><p>A graph area.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>The index of the curve to edit properties of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-5.html#api-index-2.5">2.5</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyGraphArea.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyGraphArea-struct"></a><h3>struct GwyGraphArea</h3>
+<pre class="programlisting">struct GwyGraphArea;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphAreaClass"></a><h3>struct GwyGraphAreaClass</h3>
+<pre class="programlisting">struct GwyGraphAreaClass {
+    GtkLayoutClass parent_class;
+
+    void (*edit_curve)(GwyGraphArea *area,
+                       gint id);
+    void (*reserved2)(void);
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyGraphArea.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GwyGraphArea--status"></a><h3>The <code class="literal">“status”</code> property</h3>
+<pre class="programlisting">  “status”                   <a class="link" href="libgwydgets-gwydgetenums.html#GwyGraphStatusType" title="enum GwyGraphStatusType"><span class="type">GwyGraphStatusType</span></a></pre>
+<p>The type of reaction to mouse events (zoom, selections).</p>
+<p>Owner: GwyGraphArea</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GWY_GRAPH_STATUS_PLAIN</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyGraphArea.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GwyGraphArea-edit-curve"></a><h3>The <code class="literal">“edit-curve”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> *gwygraphcurvemodel,
+               <span class="type">int</span>           arg1,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>The ::data-changed signal is emitted when a curve properties are to be
+edited.</p>
+<div class="refsect3">
+<a name="GwyGraphArea-edit-curve.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwygraphcurvemodel</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arg1</p></td>
+<td class="parameter_description"><p>The index of the curve to edit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
+<p class="since">Since: <a class="link" href="api-index-2-5.html#api-index-2.5">2.5</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

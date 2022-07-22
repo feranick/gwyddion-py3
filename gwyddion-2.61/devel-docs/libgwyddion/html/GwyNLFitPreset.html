@@ -1,0 +1,654 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyNLFitPreset: Gwyddion Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="prev" href="libgwyddion-GwyNLFitter.html" title="GwyNLFitter">
+<link rel="next" href="GwyFDCurvePreset.html" title="GwyFDCurvePreset">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyNLFitPreset.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyNLFitPreset.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyddion-GwyNLFitter.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyFDCurvePreset.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyNLFitPreset"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyNLFitPreset.top_of_page"></a>GwyNLFitPreset</span></h2>
+<p>GwyNLFitPreset — NL fitter preset functions</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyNLFitPreset.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyNLFitPreset.html#gwy-nlfit-preset-get-value" title="gwy_nlfit_preset_get_value ()">gwy_nlfit_preset_get_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyNLFitPreset.html#gwy-nlfit-preset-get-formula" title="gwy_nlfit_preset_get_formula ()">gwy_nlfit_preset_get_formula</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyNLFitPreset.html#gwy-nlfit-preset-get-nparams" title="gwy_nlfit_preset_get_nparams ()">gwy_nlfit_preset_get_nparams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyNLFitPreset.html#gwy-nlfit-preset-get-param-name" title="gwy_nlfit_preset_get_param_name ()">gwy_nlfit_preset_get_param_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyNLFitPreset.html#gwy-nlfit-preset-get-param-units" title="gwy_nlfit_preset_get_param_units ()">gwy_nlfit_preset_get_param_units</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyNLFitPreset.html#gwy-nlfit-preset-guess" title="gwy_nlfit_preset_guess ()">gwy_nlfit_preset_guess</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="returnvalue">GwyNLFitter</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyNLFitPreset.html#gwy-nlfit-preset-create-fitter" title="gwy_nlfit_preset_create_fitter ()">gwy_nlfit_preset_create_fitter</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="returnvalue">GwyNLFitter</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyNLFitPreset.html#gwy-nlfit-preset-fit" title="gwy_nlfit_preset_fit ()">gwy_nlfit_preset_fit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyInventory.html" title="GwyInventory"><span class="returnvalue">GwyInventory</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyNLFitPreset.html#gwy-nlfit-presets" title="gwy_nlfit_presets ()">gwy_nlfit_presets</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyNLFitPreset.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GwyNLFitPreset.html#GwyNLFitPresetBuiltin" title="GwyNLFitPresetBuiltin">GwyNLFitPresetBuiltin</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyNLFitPreset.html#GwyNLFitPreset-struct" title="struct GwyNLFitPreset">GwyNLFitPreset</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyNLFitPreset.html#GwyNLFitPresetClass" title="struct GwyNLFitPresetClass">GwyNLFitPresetClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyNLFitPreset.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a class="link" href="GwyResource.html" title="GwyResource">GwyResource</a>
+        <span class="lineart">╰──</span> GwyNLFitPreset
+            <span class="lineart">╰──</span> <a class="link" href="GwyFDCurvePreset.html" title="GwyFDCurvePreset">GwyFDCurvePreset</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyNLFitPreset.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwyddion/gwyddion.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyNLFitPreset.description"></a><h2>Description</h2>
+<a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter">Non-linear fitter</a> presets are predefined
+<p>fitting functions, with guessing, weighting, etc. to ease fitting of
+common functions.  Most of those currently implemented are related to
+one-dimensional statistical characteristics of randomly rough surfaces,
+however, several general-purpose fitting functions are also available.</p>
+<p>The presets are identified by name and can be obtained from the
+corresponding <a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a>, see <a class="link" href="GwyNLFitPreset.html#gwy-nlfit-presets" title="gwy_nlfit_presets ()"><code class="function">gwy_nlfit_presets()</code></a>.  All their properties
+can be queried with methods such as <a class="link" href="GwyNLFitPreset.html#gwy-nlfit-preset-get-nparams" title="gwy_nlfit_preset_get_nparams ()"><code class="function">gwy_nlfit_preset_get_nparams()</code></a> or
+<a class="link" href="GwyNLFitPreset.html#gwy-nlfit-preset-get-formula" title="gwy_nlfit_preset_get_formula ()"><code class="function">gwy_nlfit_preset_get_formula()</code></a>.  A generic method to derive units of
+fitting parameters from units of fitted data is also available:
+<a class="link" href="GwyNLFitPreset.html#gwy-nlfit-preset-get-param-units" title="gwy_nlfit_preset_get_param_units ()"><code class="function">gwy_nlfit_preset_get_param_units()</code></a>.</p>
+<p>As of version 2.7 the defined functions include:</p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td><code class="literal">"Gaussian"</code></td></tr>
+<tr><td><code class="literal">"Gaussian (PSDF)"</code></td></tr>
+<tr><td><code class="literal">"Gaussian (ACF)"</code></td></tr>
+<tr><td><code class="literal">"Gaussian (HHCF)"</code></td></tr>
+<tr><td><code class="literal">"Gaussian (RPSDF)"</code></td></tr>
+<tr><td><code class="literal">"Exponential"</code></td></tr>
+<tr><td><code class="literal">"Exponential (PSDF)"</code></td></tr>
+<tr><td><code class="literal">"Exponential (ACF)"</code></td></tr>
+<tr><td><code class="literal">"Exponential (HHCF)"</code></td></tr>
+<tr><td><code class="literal">"Exponential (RPSDF)"</code></td></tr>
+<tr><td><code class="literal">"Polynomial (order 0)"</code></td></tr>
+<tr><td><code class="literal">"Polynomial (order 1)"</code></td></tr>
+<tr><td><code class="literal">"Polynomial (order 2)"</code></td></tr>
+<tr><td><code class="literal">"Polynomial (order 3)"</code></td></tr>
+<tr><td><code class="literal">"Square wave"</code></td></tr>
+<tr><td><code class="literal">"Power"</code></td></tr>
+<tr><td><code class="literal">"Lorentzian"</code></td></tr>
+<tr><td><code class="literal">"Sinc"</code></td></tr>
+</table>
+<p>The following presets are available since version 2.40:</p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td><code class="literal">"Parabolic step"</code></td></tr>
+<tr><td><code class="literal">"Two Gaussians (PSDF)"</code></td></tr>
+</table>
+<p>The following presets are available since version 2.41:</p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td><code class="literal">"Smooth bent step"</code></td></tr>
+<tr><td><code class="literal">"Smooth slanted step"</code></td></tr>
+</table>
+<p>The following presets are available since version 2.48:</p>
+<table border="0" summary="Simple list" class="simplelist"><tr><td><code class="literal">"K-correlated (PSDF)"</code></td></tr></table>
+<p>The following presets are available since version 2.49:</p>
+<table border="0" summary="Simple list" class="simplelist"><tr><td><code class="literal">"Boltzmann bent step"</code></td></tr></table>
+<p>The result of the fitting is stored in a normal <a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a>, therefore the
+typical use is:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">GwyNLFitPreset</span> <span class="o">*</span><span class="n">preset</span><span class="p">;</span>
+<span class="n">GwyNLFitter</span> <span class="o">*</span><span class="n">fitter</span><span class="p">;</span>
+<span class="n">gdouble</span> <span class="o">*</span><span class="n">params</span><span class="p">,</span> <span class="o">*</span><span class="n">errors</span><span class="p">;</span>
+
+<span class="n">preset</span> <span class="o">=</span> <span class="n">gwy_inventory_get_item</span><span class="p">(</span><span class="n">gwy_nlfit_presets</span><span class="p">(),</span> <span class="s">&quot;Gaussian&quot;</span><span class="p">);</span>
+<span class="n">params</span> <span class="o">=</span> <span class="n">g_new</span><span class="p">(</span><span class="n">gdouble</span><span class="p">,</span> <span class="n">gwy_nlfit_preset_get_nparams</span><span class="p">(</span><span class="n">preset</span><span class="p">));</span>
+<span class="n">errors</span> <span class="o">=</span> <span class="n">g_new</span><span class="p">(</span><span class="n">gdouble</span><span class="p">,</span> <span class="n">gwy_nlfit_preset_get_nparams</span><span class="p">(</span><span class="n">preset</span><span class="p">));</span>
+<span class="cm">/* Use a priori parameter value information, or: */</span>
+<span class="n">gwy_nlfit_preset_guess</span><span class="p">(</span><span class="n">preset</span><span class="p">,</span> <span class="n">ndata</span><span class="p">,</span> <span class="n">xdata</span><span class="p">,</span> <span class="n">ydata</span><span class="p">,</span> <span class="n">params</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">ok</span><span class="p">);</span>
+<span class="n">fitter</span> <span class="o">=</span> <span class="n">gwy_nlfit_preset_fit</span><span class="p">(</span><span class="n">preset</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span>
+                              <span class="n">ndata</span><span class="p">,</span> <span class="n">xdata</span><span class="p">,</span> <span class="n">ydata</span><span class="p">,</span> <span class="n">params</span><span class="p">,</span>
+                              <span class="n">params</span><span class="p">,</span> <span class="n">errors</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+
+<span class="cm">/* Examine fitting status, parameters and errors... */</span>
+
+<span class="n">g_free</span><span class="p">(</span><span class="n">params</span><span class="p">);</span>
+<span class="n">g_free</span><span class="p">(</span><span class="n">errors</span><span class="p">);</span>
+<span class="n">gwy_math_nlfit_free</span><span class="p">(</span><span class="n">fitter</span><span class="p">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+</div>
+<div class="refsect1">
+<a name="GwyNLFitPreset.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-nlfit-preset-get-value"></a><h3>gwy_nlfit_preset_get_value ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_nlfit_preset_get_value (<em class="parameter"><code><a class="link" href="GwyNLFitPreset.html" title="GwyNLFitPreset"><span class="type">GwyNLFitPreset</span></a> *preset</code></em>,
+                            <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x</code></em>,
+                            <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *params</code></em>,
+                            <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *fres</code></em>);</pre>
+<p>Calculates preset function value in a single point with given parameters.</p>
+<div class="refsect3">
+<a name="gwy-nlfit-preset-get-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>The point to compute value at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A NL fitter function preset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>Preset parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fres</p></td>
+<td class="parameter_description"><p>Set to <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if succeeds, <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> on failure.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-nlfit-preset-get-value.returns"></a><h4>Returns</h4>
+<p> The function value.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-nlfit-preset-get-formula"></a><h3>gwy_nlfit_preset_get_formula ()</h3>
+<pre class="programlisting">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_nlfit_preset_get_formula (<em class="parameter"><code><a class="link" href="GwyNLFitPreset.html" title="GwyNLFitPreset"><span class="type">GwyNLFitPreset</span></a> *preset</code></em>);</pre>
+<p>Gets function formula of <em class="parameter"><code>preset</code></em>
+ (with Pango markup).</p>
+<div class="refsect3">
+<a name="gwy-nlfit-preset-get-formula.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A NL fitter function preset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-nlfit-preset-get-formula.returns"></a><h4>Returns</h4>
+<p> The preset function formula.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-nlfit-preset-get-nparams"></a><h3>gwy_nlfit_preset_get_nparams ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_nlfit_preset_get_nparams (<em class="parameter"><code><a class="link" href="GwyNLFitPreset.html" title="GwyNLFitPreset"><span class="type">GwyNLFitPreset</span></a> *preset</code></em>);</pre>
+<p>Return the number of parameters of <em class="parameter"><code>preset</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-nlfit-preset-get-nparams.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A NL fitter function preset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-nlfit-preset-get-nparams.returns"></a><h4>Returns</h4>
+<p> The number of function parameters.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-nlfit-preset-get-param-name"></a><h3>gwy_nlfit_preset_get_param_name ()</h3>
+<pre class="programlisting">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_nlfit_preset_get_param_name (<em class="parameter"><code><a class="link" href="GwyNLFitPreset.html" title="GwyNLFitPreset"><span class="type">GwyNLFitPreset</span></a> *preset</code></em>,
+                                 <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> param</code></em>);</pre>
+<p>Gets the name of a fitting parameter of a fitter preset.</p>
+<p>The name may contain Pango markup.</p>
+<div class="refsect3">
+<a name="gwy-nlfit-preset-get-param-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A NL fitter function preset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>param</p></td>
+<td class="parameter_description"><p>A parameter number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-nlfit-preset-get-param-name.returns"></a><h4>Returns</h4>
+<p> The name of parameter <em class="parameter"><code>param</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-nlfit-preset-get-param-units"></a><h3>gwy_nlfit_preset_get_param_units ()</h3>
+<pre class="programlisting"><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_nlfit_preset_get_param_units (<em class="parameter"><code><a class="link" href="GwyNLFitPreset.html" title="GwyNLFitPreset"><span class="type">GwyNLFitPreset</span></a> *preset</code></em>,
+                                  <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> param</code></em>,
+                                  <em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *siunit_x</code></em>,
+                                  <em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *siunit_y</code></em>);</pre>
+<p>Derives the SI unit of a fitting parameter from the units of abscissa and
+ordinate.</p>
+<div class="refsect3">
+<a name="gwy-nlfit-preset-get-param-units.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A NL fitter function preset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>param</p></td>
+<td class="parameter_description"><p>A parameter number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>siunit_x</p></td>
+<td class="parameter_description"><p>SI unit of abscissa.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>siunit_y</p></td>
+<td class="parameter_description"><p>SI unit of ordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-nlfit-preset-get-param-units.returns"></a><h4>Returns</h4>
+<p> A newly created <a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> with the units of the parameter <em class="parameter"><code>param</code></em>
+.
+If the units of <em class="parameter"><code>param</code></em>
+are not representable as <a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a>,
+the result is unitless (i.e. it will be presented as a mere
+number).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-5.html#api-index-2.5">2.5</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-nlfit-preset-guess"></a><h3>gwy_nlfit_preset_guess ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_nlfit_preset_guess (<em class="parameter"><code><a class="link" href="GwyNLFitPreset.html" title="GwyNLFitPreset"><span class="type">GwyNLFitPreset</span></a> *preset</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_dat</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *x</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *y</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *params</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *fres</code></em>);</pre>
+<p>Performs initial parameter estimate for a NL fitter.</p>
+<p>The initial estimate method depends on the function used.  There is no
+absolute guarantee of quality, however if the data points approximately
+match the fitted function the fit will typically converge from the returned
+estimate.</p>
+<p>The parameters are filled also on failure, though just with some neutral
+values that should not give raise to NaNs and infinities.</p>
+<div class="refsect3">
+<a name="gwy-nlfit-preset-guess.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A NL fitter function preset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n_dat</p></td>
+<td class="parameter_description"><p>The number of data points (number of items in <em class="parameter"><code>x</code></em>
+and <em class="parameter"><code>y</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Abscissa points.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Ordinate points.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>The array to fill with estimated parameter values.  It has to be
+at least <a class="link" href="GwyNLFitPreset.html#gwy-nlfit-preset-get-nparams" title="gwy_nlfit_preset_get_nparams ()"><code class="function">gwy_nlfit_preset_get_nparams()</code></a> long.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fres</p></td>
+<td class="parameter_description"><p>Set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if succeeds, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> on failure.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-nlfit-preset-create-fitter"></a><h3>gwy_nlfit_preset_create_fitter ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="returnvalue">GwyNLFitter</span></a> *
+gwy_nlfit_preset_create_fitter (<em class="parameter"><code><a class="link" href="GwyNLFitPreset.html" title="GwyNLFitPreset"><span class="type">GwyNLFitPreset</span></a> *preset</code></em>);</pre>
+<p>Creates a non-linear least-squares fitter for a preset function.</p>
+<p>The created fitter will be of the function data type, as created with
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-new" title="gwy_math_nlfit_new ()"><code class="function">gwy_math_nlfit_new()</code></a>.</p>
+<p>If you do not need to modify the fitter settings you can use
+<a class="link" href="GwyNLFitPreset.html#gwy-nlfit-preset-fit" title="gwy_nlfit_preset_fit ()"><code class="function">gwy_nlfit_preset_fit()</code></a> directly with <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> fitter.</p>
+<div class="refsect3">
+<a name="gwy-nlfit-preset-create-fitter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A NL fitter function preset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-nlfit-preset-create-fitter.returns"></a><h4>Returns</h4>
+<p> A newly created fitter for <em class="parameter"><code>preset</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-nlfit-preset-fit"></a><h3>gwy_nlfit_preset_fit ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="returnvalue">GwyNLFitter</span></a> *
+gwy_nlfit_preset_fit (<em class="parameter"><code><a class="link" href="GwyNLFitPreset.html" title="GwyNLFitPreset"><span class="type">GwyNLFitPreset</span></a> *preset</code></em>,
+                      <em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a> *fitter</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_dat</code></em>,
+                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *x</code></em>,
+                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *y</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *params</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *err</code></em>,
+                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *fixed_param</code></em>);</pre>
+<p>Performs a nonlinear fit with a preset.</p>
+<p>See <a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-fit-full" title="gwy_math_nlfit_fit_full ()"><code class="function">gwy_math_nlfit_fit_full()</code></a> for details.</p>
+<div class="refsect3">
+<a name="gwy-nlfit-preset-fit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A NL fitter function preset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fitter</p></td>
+<td class="parameter_description"><p>A Marquardt-Levenberg nonlinear fitter already initialized for
+<em class="parameter"><code>preset</code></em>
+'s function, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n_dat</p></td>
+<td class="parameter_description"><p>The number of data points (number of items in <em class="parameter"><code>x</code></em>
+and <em class="parameter"><code>y</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Abscissa points.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Ordinate points.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>Initial parameter estimate (the number of parameters depends on
+the fitted preset and it can be obtained with
+<a class="link" href="GwyNLFitPreset.html#gwy-nlfit-preset-get-nparams" title="gwy_nlfit_preset_get_nparams ()"><code class="function">gwy_nlfit_preset_get_nparams()</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Array to store parameter errros to, may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fixed_param</p></td>
+<td class="parameter_description"><p>Which parameters should be treated as fixed (set
+corresponding element to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> for them).  May be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if
+all parameters are variable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-nlfit-preset-fit.returns"></a><h4>Returns</h4>
+<p> Either <em class="parameter"><code>fitter</code></em>
+itself, or a newly created fitter if it was <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-nlfit-presets"></a><h3>gwy_nlfit_presets ()</h3>
+<pre class="programlisting"><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="returnvalue">GwyInventory</span></a> *
+gwy_nlfit_presets (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Gets inventory with all the NLFit presets.</p>
+<div class="refsect3">
+<a name="gwy-nlfit-presets.returns"></a><h4>Returns</h4>
+<p> NLFit preset inventory.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyNLFitPreset.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyNLFitPresetBuiltin"></a><h3>GwyNLFitPresetBuiltin</h3>
+<pre class="programlisting">typedef struct _GwyNLFitPresetBuiltin GwyNLFitPresetBuiltin;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyNLFitPreset-struct"></a><h3>struct GwyNLFitPreset</h3>
+<pre class="programlisting">struct GwyNLFitPreset;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyNLFitPresetClass"></a><h3>struct GwyNLFitPresetClass</h3>
+<pre class="programlisting">struct GwyNLFitPresetClass {
+    GwyResourceClass parent_class;
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyNLFitPreset.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

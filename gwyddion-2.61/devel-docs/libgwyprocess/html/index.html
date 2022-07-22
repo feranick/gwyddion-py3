@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Gwyddion Data Processing Library Reference Manual: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="next" href="GwyDataLine.html" title="GwyDataLine">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="book">
+<div class="titlepage">
+<div>
+<div><table class="navigation" id="top" width="100%" cellpadding="2" cellspacing="0"><tr><th valign="middle"><p class="title">Gwyddion Data Processing Library Reference Manual</p></th></tr></table></div>
+<div><p class="releaseinfo">
+  For Gwyddion 2.61.
+  The latest version of this document can be found on-line at
+  <a class="ulink" href="http://gwyddion.net/documentation/libgwyprocess/index.php" target="_top">http://gwyddion.net/documentation/libgwyprocess/</a>.
+</p></div>
+</div>
+<hr>
+</div>
+<div class="toc"><dl class="toc">
+<dt>
+<span class="refentrytitle"><a href="GwyDataLine.html">GwyDataLine</a></span><span class="refpurpose"> — One-dimensional data representation</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyDataField.html">GwyDataField</a></span><span class="refpurpose"> — Two-dimensional data representation</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwySpectra.html">GwySpectra</a></span><span class="refpurpose"> — Collection of dataline representing point spectra.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyBrick.html">GwyBrick</a></span><span class="refpurpose"> — Three-dimensional data representation</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwySurface.html">GwySurface</a></span><span class="refpurpose"> — General two-dimensional data</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyLawn.html">GwyLawn</a></span><span class="refpurpose"> — Three-dimensional data representation</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyCalibration.html">GwyCalibration</a></span><span class="refpurpose"> — Resource for managing calibrations</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyCalData.html">GwyCalData</a></span><span class="refpurpose"> — General calibration data</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-arithmetic.html">arithmetic</a></span><span class="refpurpose"> — Arithmetic opetations on data fields</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyCDLine.html">cdline</a></span><span class="refpurpose"> — Critical dimension</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-correct.html">correct</a></span><span class="refpurpose"> — Data correction</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-correlation.html">correlation</a></span><span class="refpurpose"> — Correlation and crosscorrelation</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-cwt.html">cwt</a></span><span class="refpurpose"> — Continuous Wavelet Transform</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-dwt.html">dwt</a></span><span class="refpurpose"> — Discrete Wavelet Transform</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-elliptic.html">elliptic</a></span><span class="refpurpose"> — Functions to work with elliptic areas</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-filters.html">filters</a></span><span class="refpurpose"> — Convolution and other 2D data filters</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-fractals.html">fractals</a></span><span class="refpurpose"> — Fractal dimension calculation, fractal interpolation</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-grains.html">grains</a></span><span class="refpurpose"> — Grain detection and processing</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyGrainValue.html">GwyGrainValue</a></span><span class="refpurpose"> — Grain value resource type</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-hough.html">hough</a></span><span class="refpurpose"> — Hough transform</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-inttrans.html">inttrans</a></span><span class="refpurpose"> — FFT and other integral transforms</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-interpolation.html">interpolation</a></span><span class="refpurpose"> — General interpolation functions</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-level.html">level</a></span><span class="refpurpose"> — Leveling and background removal</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-linestats.html">linestats</a></span><span class="refpurpose"> — One-dimensional statistical functions</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-simpleFFT.html">simpleFFT</a></span><span class="refpurpose"> — Simple FFT algorithm</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-GwyPeaks.html">GwyPeaks</a></span><span class="refpurpose"> — Graph peak analyser</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyShapeFitPreset.html">GwyShapeFitPreset</a></span><span class="refpurpose"> — 3D geometrical shape fitting functions</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-GwySpline.html">GwySpline</a></span><span class="refpurpose"> — Sampling curves in plane</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-stats.html">stats</a></span><span class="refpurpose"> — Two-dimensional statistical functions</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-stats-uncertainty.html">stats uncertainty</a></span><span class="refpurpose"> — Uncertainties of statistical functions</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-tip.html">tip</a></span><span class="refpurpose"> — SPM tip methods</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-MFM.html">MFM</a></span><span class="refpurpose"> — Magnetic force microscopy</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-synth.html">synth</a></span><span class="refpurpose"> — Synthetic data generation</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyTriangulation.html">triangulation</a></span><span class="refpurpose"> — Delaunay and Voronoi triangulation and interpolation</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-gwyprocess.html">gwyprocess</a></span><span class="refpurpose"> — Base functions</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyprocess-gwyprocessenums.html">gwyprocessenums</a></span><span class="refpurpose"> — Common enumerations</span>
+</dt>
+<dt><span class="index"><a href="api-index-all.html">Index of all symbols</a></span></dt>
+<dt><span class="index"><a href="api-index-deprec.html">Index of deprecated symbols</a></span></dt>
+<dt><span class="index"><a href="api-index-2-1.html">Index of new symbols in 2.1</a></span></dt>
+<dt><span class="index"><a href="api-index-2-2.html">Index of new symbols in 2.2</a></span></dt>
+<dt><span class="index"><a href="api-index-2-3.html">Index of new symbols in 2.3</a></span></dt>
+<dt><span class="index"><a href="api-index-2-4.html">Index of new symbols in 2.4</a></span></dt>
+<dt><span class="index"><a href="api-index-2-5.html">Index of new symbols in 2.5</a></span></dt>
+<dt><span class="index"><a href="api-index-2-7.html">Index of new symbols in 2.7</a></span></dt>
+<dt><span class="index"><a href="api-index-2-8.html">Index of new symbols in 2.8</a></span></dt>
+<dt><span class="index"><a href="api-index-2-11.html">Index of new symbols in 2.11</a></span></dt>
+<dt><span class="index"><a href="api-index-2-12.html">Index of new symbols in 2.12</a></span></dt>
+<dt><span class="index"><a href="api-index-2-18.html">Index of new symbols in 2.18</a></span></dt>
+<dt><span class="index"><a href="api-index-2-22.html">Index of new symbols in 2.22</a></span></dt>
+<dt><span class="index"><a href="api-index-2-23.html">Index of new symbols in 2.23</a></span></dt>
+<dt><span class="index"><a href="api-index-2-26.html">Index of new symbols in 2.26</a></span></dt>
+<dt><span class="index"><a href="api-index-2-29.html">Index of new symbols in 2.29</a></span></dt>
+<dt><span class="index"><a href="api-index-2-30.html">Index of new symbols in 2.30</a></span></dt>
+<dt><span class="index"><a href="api-index-2-31.html">Index of new symbols in 2.31</a></span></dt>
+<dt><span class="index"><a href="api-index-2-32.html">Index of new symbols in 2.32</a></span></dt>
+<dt><span class="index"><a href="api-index-2-34.html">Index of new symbols in 2.34</a></span></dt>
+<dt><span class="index"><a href="api-index-2-35.html">Index of new symbols in 2.35</a></span></dt>
+<dt><span class="index"><a href="api-index-2-36.html">Index of new symbols in 2.36</a></span></dt>
+<dt><span class="index"><a href="api-index-2-37.html">Index of new symbols in 2.37</a></span></dt>
+<dt><span class="index"><a href="api-index-2-38.html">Index of new symbols in 2.38</a></span></dt>
+<dt><span class="index"><a href="api-index-2-40.html">Index of new symbols in 2.40</a></span></dt>
+<dt><span class="index"><a href="api-index-2-41.html">Index of new symbols in 2.41</a></span></dt>
+<dt><span class="index"><a href="api-index-2-42.html">Index of new symbols in 2.42</a></span></dt>
+<dt><span class="index"><a href="api-index-2-43.html">Index of new symbols in 2.43</a></span></dt>
+<dt><span class="index"><a href="api-index-2-44.html">Index of new symbols in 2.44</a></span></dt>
+<dt><span class="index"><a href="api-index-2-45.html">Index of new symbols in 2.45</a></span></dt>
+<dt><span class="index"><a href="api-index-2-46.html">Index of new symbols in 2.46</a></span></dt>
+<dt><span class="index"><a href="api-index-2-47.html">Index of new symbols in 2.47</a></span></dt>
+<dt><span class="index"><a href="api-index-2-48.html">Index of new symbols in 2.48</a></span></dt>
+<dt><span class="index"><a href="api-index-2-49.html">Index of new symbols in 2.49</a></span></dt>
+<dt><span class="index"><a href="api-index-2-50.html">Index of new symbols in 2.50</a></span></dt>
+<dt><span class="index"><a href="api-index-2-51.html">Index of new symbols in 2.51</a></span></dt>
+<dt><span class="index"><a href="api-index-2-52.html">Index of new symbols in 2.52</a></span></dt>
+<dt><span class="index"><a href="api-index-2-53.html">Index of new symbols in 2.53</a></span></dt>
+<dt><span class="index"><a href="api-index-2-54.html">Index of new symbols in 2.54</a></span></dt>
+<dt><span class="index"><a href="api-index-2-55.html">Index of new symbols in 2.55</a></span></dt>
+<dt><span class="index"><a href="api-index-2-56.html">Index of new symbols in 2.56</a></span></dt>
+<dt><span class="index"><a href="api-index-2-58.html">Index of new symbols in 2.58</a></span></dt>
+<dt><span class="index"><a href="api-index-2-59.html">Index of new symbols in 2.59</a></span></dt>
+<dt><span class="index"><a href="api-index-2-60.html">Index of new symbols in 2.60</a></span></dt>
+<dt><span class="index"><a href="api-index-2-61.html">Index of new symbols in 2.61</a></span></dt>
+</dl></div>
+<p>
+    This library contains classes representing one- and twodimensional data,
+    and all kinds of data processing methods operating on them.
+  </p>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

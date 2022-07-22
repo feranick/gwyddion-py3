@@ -1,0 +1,835 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>elliptic: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="libgwyprocess-dwt.html" title="dwt">
+<link rel="next" href="libgwyprocess-filters.html" title="filters">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyprocess-elliptic.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyprocess-dwt.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyprocess-filters.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyprocess-elliptic"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyprocess-elliptic.top_of_page"></a>elliptic</span></h2>
+<p>elliptic — Functions to work with elliptic areas</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyprocess-elliptic.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-elliptic-area-fill" title="gwy_data_field_elliptic_area_fill ()">gwy_data_field_elliptic_area_fill</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-elliptic-area-extract" title="gwy_data_field_elliptic_area_extract ()">gwy_data_field_elliptic_area_extract</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-elliptic-area-unextract" title="gwy_data_field_elliptic_area_unextract ()">gwy_data_field_elliptic_area_unextract</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-get-elliptic-area-size" title="gwy_data_field_get_elliptic_area_size ()">gwy_data_field_get_elliptic_area_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-get-elliptic-intersection" title="gwy_data_field_get_elliptic_intersection ()">gwy_data_field_get_elliptic_intersection</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-circular-area-fill" title="gwy_data_field_circular_area_fill ()">gwy_data_field_circular_area_fill</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-circular-area-extract" title="gwy_data_field_circular_area_extract ()">gwy_data_field_circular_area_extract</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-circular-area-extract-with-pos" title="gwy_data_field_circular_area_extract_with_pos ()">gwy_data_field_circular_area_extract_with_pos</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-circular-area-unextract" title="gwy_data_field_circular_area_unextract ()">gwy_data_field_circular_area_unextract</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-get-circular-area-size" title="gwy_data_field_get_circular_area_size ()">gwy_data_field_get_circular_area_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-local-maximum" title="gwy_data_field_local_maximum ()">gwy_data_field_local_maximum</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-elliptic.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-elliptic.description"></a><h2>Description</h2>
+<p>Methods for extraction and putting back data from/to elliptic and circular areas can be used to implement
+sample-wise operations, that is operations that depend only on sample value not on its position, on these areas:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">gint</span> <span class="n">n</span><span class="p">,</span> <span class="n">i</span><span class="p">;</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">g_new</span><span class="p">(</span><span class="n">gdouble</span><span class="p">,</span> <span class="n">width</span><span class="o">*</span><span class="n">height</span><span class="p">);</span>
+<span class="n">n</span> <span class="o">=</span> <span class="n">gwy_data_field_elliptic_area_extract</span><span class="p">(</span><span class="n">data_field</span><span class="p">,</span>
+                                         <span class="n">col</span><span class="p">,</span> <span class="n">row</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span>
+                                         <span class="n">data</span><span class="p">);</span>
+<span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+   <span class="p">...</span> <span class="k">do</span> <span class="n">something</span> <span class="n">with</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">...</span>
+<span class="p">}</span>
+<span class="n">gwy_data_field_elliptic_area_unextract</span><span class="p">(</span><span class="n">data_field</span><span class="p">,</span>
+                                       <span class="n">col</span><span class="p">,</span> <span class="n">row</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span>
+                                       <span class="n">data</span><span class="p">);]</span><span class="o">|</span>
+
+<span class="n">Another</span> <span class="n">possibility</span> <span class="n">is</span> <span class="n">to</span> <span class="n">use</span> <span class="err">#</span><span class="n">GwyDataLine</span> <span class="n">methods</span> <span class="n">on</span> <span class="n">the</span> <span class="n">extracted</span> <span class="n">data</span> <span class="p">(</span><span class="n">in</span> <span class="n">practice</span> <span class="n">one</span> <span class="n">would</span> <span class="n">use</span> <span class="n">the</span> <span class="n">same</span> <span class="n">data</span>
+<span class="n">line</span> <span class="n">repeatedly</span><span class="p">,</span> <span class="n">of</span> <span class="n">course</span><span class="p">)</span><span class="o">:</span>
+
+<span class="o">|</span><span class="p">[</span><span class="n">GwyDataLine</span> <span class="o">*</span><span class="n">data_line</span><span class="p">;</span>
+<span class="n">gdouble</span> <span class="o">*</span><span class="n">data</span><span class="p">;</span>
+<span class="n">gint</span> <span class="n">n</span><span class="p">;</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="n">gwy_data_field_get_elliptic_area_size</span><span class="p">(</span><span class="n">data_field</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">);</span>
+<span class="n">data_line</span> <span class="o">=</span> <span class="n">gwy_data_line_new</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">FALSE</span><span class="p">);</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">gwy_data_line_get_data</span><span class="p">(</span><span class="n">data_line</span><span class="p">);</span>
+<span class="n">gwy_data_field_elliptic_area_extract</span><span class="p">(</span><span class="n">data_field</span><span class="p">,</span>
+                                     <span class="n">col</span><span class="p">,</span> <span class="n">row</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span>
+                                     <span class="n">data</span><span class="p">);</span>
+<span class="n">gwy_data_line_pixelwise_filter</span><span class="p">(</span><span class="n">data_line</span><span class="p">,</span> <span class="p">...);</span>
+<span class="n">gwy_data_field_elliptic_area_unextract</span><span class="p">(</span><span class="n">data_field</span><span class="p">,</span>
+                                       <span class="n">col</span><span class="p">,</span> <span class="n">row</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span>
+                                       <span class="n">data</span><span class="p">);</span>
+<span class="n">g_object_unref</span><span class="p">(</span><span class="n">data_line</span><span class="p">);]</span><span class="o">|</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-elliptic.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-data-field-elliptic-area-fill"></a><h3>gwy_data_field_elliptic_area_fill ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_data_field_elliptic_area_fill (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                   <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                   <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                   <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                   <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                   <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> value</code></em>);</pre>
+<p>Fills an elliptic region of a data field with given value.</p>
+<p>The elliptic region is defined by its bounding box.  In versions prior to 2.59 the bounding box must be completely
+contained in the data field.  Since version 2.59 the ellipse can intersect the data field in any manner.</p>
+<div class="refsect3">
+<a name="gwy-data-field-elliptic-area-fill.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left bounding box column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left bounding box row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Bounding box width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Bounding box height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Value to be entered.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-elliptic-area-fill.returns"></a><h4>Returns</h4>
+<p> The number of filled values.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-elliptic-area-extract"></a><h3>gwy_data_field_elliptic_area_extract ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_data_field_elliptic_area_extract (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *data</code></em>);</pre>
+<p>Extracts values from an elliptic region of a data field.</p>
+<p>The elliptic region is defined by its bounding box.  In versions prior to 2.59 the bounding box must be completely
+contained in the data field.  Since version 2.59 the ellipse can intersect the data field in any manner.</p>
+<div class="refsect3">
+<a name="gwy-data-field-elliptic-area-extract.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left bounding box column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left bounding box row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Bounding box width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Bounding box height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Location to store the extracted values to.  Its size has to be sufficient to contain all the extracted
+values.  As a conservative estimate <em class="parameter"><code>width</code></em>
+*<em class="parameter"><code>height</code></em>
+can be used, or the size can be calculated with
+<a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-get-elliptic-area-size" title="gwy_data_field_get_elliptic_area_size ()"><code class="function">gwy_data_field_get_elliptic_area_size()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-elliptic-area-extract.returns"></a><h4>Returns</h4>
+<p> The number of extracted values.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-elliptic-area-unextract"></a><h3>gwy_data_field_elliptic_area_unextract ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_elliptic_area_unextract
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *data</code></em>);</pre>
+<p>Puts values back to an elliptic region of a data field.</p>
+<p>The elliptic region is defined by its bounding box.  In versions prior to 2.59 the bounding box must be completely
+contained in the data field.  Since version 2.59 the ellipse can intersect the data field in any manner.</p>
+<p>This method does the reverse of <a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-elliptic-area-extract" title="gwy_data_field_elliptic_area_extract ()"><code class="function">gwy_data_field_elliptic_area_extract()</code></a> allowing to implement pixel-wise filters on
+elliptic areas.  Values from <em class="parameter"><code>data</code></em>
+ are put back to the same positions <a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-elliptic-area-extract" title="gwy_data_field_elliptic_area_extract ()"><code class="function">gwy_data_field_elliptic_area_extract()</code></a> took
+them from.</p>
+<div class="refsect3">
+<a name="gwy-data-field-elliptic-area-unextract.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left bounding box column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left bounding box row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Bounding box width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Bounding box height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>The values to put back.  It must be the same array as in previous <a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-elliptic-area-extract" title="gwy_data_field_elliptic_area_extract ()"><code class="function">gwy_data_field_elliptic_area_extract()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-get-elliptic-area-size"></a><h3>gwy_data_field_get_elliptic_area_size ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_data_field_get_elliptic_area_size (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Calculates an upper bound of the number of samples in an elliptic region.</p>
+<p>This function is useful for elliptic areas more or less contained within the data field.  Otherwise the returned
+size can be overestimated a lot. Use <a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-get-elliptic-intersection" title="gwy_data_field_get_elliptic_intersection ()"><code class="function">gwy_data_field_get_elliptic_intersection()</code></a> for elliptic areas intersecting the
+data field in arbitrary manner.</p>
+<div class="refsect3">
+<a name="gwy-data-field-get-elliptic-area-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Bounding box width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Bounding box height.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-get-elliptic-area-size.returns"></a><h4>Returns</h4>
+<p> The number of pixels in an elliptic region with given rectangular bounds (or its upper bound).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-get-elliptic-intersection"></a><h3>gwy_data_field_get_elliptic_intersection ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_data_field_get_elliptic_intersection
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Calculates an upper bound of the number of samples in an elliptic region intersecting a data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-get-elliptic-intersection.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left bounding box column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left bounding box row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Bounding box width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Bounding box height.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-get-elliptic-intersection.returns"></a><h4>Returns</h4>
+<p> The number of pixels in an elliptic region with given rectangular bounds (or its upper bound).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-circular-area-fill"></a><h3>gwy_data_field_circular_area_fill ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_data_field_circular_area_fill (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> radius</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> value</code></em>);</pre>
+<p>Fills an elliptic region of a data field with given value.</p>
+<div class="refsect3">
+<a name="gwy-data-field-circular-area-fill.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Row index of circular area centre.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Column index of circular area centre.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>radius</p></td>
+<td class="parameter_description"><p>Circular area radius (in pixels).  Any value is allowed, although to get areas that do not deviate from
+true circles after pixelization too much, half-integer values are recommended, integer values are NOT
+recommended.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Value to be entered.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-circular-area-fill.returns"></a><h4>Returns</h4>
+<p> The number of filled values.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-circular-area-extract"></a><h3>gwy_data_field_circular_area_extract ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_data_field_circular_area_extract (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> radius</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *data</code></em>);</pre>
+<p>Extracts values from a circular region of a data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-circular-area-extract.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Row index of circular area centre.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Column index of circular area centre.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>radius</p></td>
+<td class="parameter_description"><p>Circular area radius (in pixels).  See <a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-circular-area-extract-with-pos" title="gwy_data_field_circular_area_extract_with_pos ()"><code class="function">gwy_data_field_circular_area_extract_with_pos()</code></a> for caveats.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Location to store the extracted values to.  See <a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-circular-area-extract-with-pos" title="gwy_data_field_circular_area_extract_with_pos ()"><code class="function">gwy_data_field_circular_area_extract_with_pos()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-circular-area-extract.returns"></a><h4>Returns</h4>
+<p> The number of extracted values.  It can be zero when the inside of the circle does not intersect with the
+data field.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-circular-area-extract-with-pos"></a><h3>gwy_data_field_circular_area_extract_with_pos ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_data_field_circular_area_extract_with_pos
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> radius</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *data</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *xpos</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *ypos</code></em>);</pre>
+<p>Extracts values with positions from a circular region of a data field.</p>
+<p>The row and column indices stored to <em class="parameter"><code>xpos</code></em>
+ and <em class="parameter"><code>ypos</code></em>
+ are relative to the area centre, i.e. to (<em class="parameter"><code>col</code></em>
+, <em class="parameter"><code>row</code></em>
+).  The
+central pixel will therefore have 0 at the corresponding position in both <em class="parameter"><code>xpos</code></em>
+ and <em class="parameter"><code>ypos</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-data-field-circular-area-extract-with-pos.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Row index of circular area centre.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Column index of circular area centre.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>radius</p></td>
+<td class="parameter_description"><p>Circular area radius (in pixels).  Any value is allowed, although to get areas that do not deviate from
+true circles after pixelization too much, half-integer values are recommended, integer radii are NOT
+recommended.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Location to store the extracted values to.  Its size has to be sufficient to contain all the extracted
+values.  As a conservative estimate (2*floor(<em class="parameter"><code>radius</code></em>
+)+1)^2 can be used, or the size can be calculated with
+<a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-get-circular-area-size" title="gwy_data_field_get_circular_area_size ()"><code class="function">gwy_data_field_get_circular_area_size()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xpos</p></td>
+<td class="parameter_description"><p>Location to store relative column indices of values in <em class="parameter"><code>data</code></em>
+to, the size requirements are the same as for
+<em class="parameter"><code>data</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ypos</p></td>
+<td class="parameter_description"><p>Location to store relative tow indices of values in <em class="parameter"><code>data</code></em>
+to, the size requirements are the same as for
+<em class="parameter"><code>data</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-circular-area-extract-with-pos.returns"></a><h4>Returns</h4>
+<p> The number of extracted values.  It can be zero when the inside of the circle does not intersect with the
+data field.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-circular-area-unextract"></a><h3>gwy_data_field_circular_area_unextract ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_circular_area_unextract
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> radius</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *data</code></em>);</pre>
+<p>Puts values back to a circular region of a data field.</p>
+<p>This method does the reverse of <a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-circular-area-extract" title="gwy_data_field_circular_area_extract ()"><code class="function">gwy_data_field_circular_area_extract()</code></a> allowing to implement pixel-wise filters on
+circular areas.  Values from <em class="parameter"><code>data</code></em>
+ are put back to the same positions <a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-circular-area-extract" title="gwy_data_field_circular_area_extract ()"><code class="function">gwy_data_field_circular_area_extract()</code></a> took
+them from.</p>
+<div class="refsect3">
+<a name="gwy-data-field-circular-area-unextract.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Row index of circular area centre.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Column index of circular area centre.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>radius</p></td>
+<td class="parameter_description"><p>Circular area radius (in pixels).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>The values to put back.  It must be the same array as in previous <a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-circular-area-unextract" title="gwy_data_field_circular_area_unextract ()"><code class="function">gwy_data_field_circular_area_unextract()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-get-circular-area-size"></a><h3>gwy_data_field_get_circular_area_size ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_data_field_get_circular_area_size (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> radius</code></em>);</pre>
+<p>Calculates an upper bound of the number of samples in a circular region.</p>
+<div class="refsect3">
+<a name="gwy-data-field-get-circular-area-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>radius</p></td>
+<td class="parameter_description"><p>Circular area radius (in pixels).</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-get-circular-area-size.returns"></a><h4>Returns</h4>
+<p> The number of pixels in a circular region with given rectangular bounds (or its upper bound).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-local-maximum"></a><h3>gwy_data_field_local_maximum ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_data_field_local_maximum (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dfield</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *x</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *y</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ax</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ay</code></em>);</pre>
+<p>Searches an elliptical area in a data field for local maximum.</p>
+<p>The area may stick outside the data field.</p>
+<p>The function first finds the maximum within the ellipse, intersected with the data field and then tries subpixel
+refinement.  The maximum is considered successfully located if it is inside the data field, i.e. not on edge, there
+is no higher value in its 8-neighbourhood, and the subpixel refinement of its position succeeds (which usually
+happens when the first two conditions are met, but not always).</p>
+<p>Even if the function returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> the values of <em class="parameter"><code>x</code></em>
+ and <em class="parameter"><code>y</code></em>
+ are reasonable, but they may not correspond to an
+actual maximum.</p>
+<p>The radii can be zero.  A single pixel is then examined, but if it is indeed a local maximum, its position is
+refined.</p>
+<div class="refsect3">
+<a name="gwy-data-field-local-maximum.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dfield</p></td>
+<td class="parameter_description"><p>A two-dimensional data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Approximate maximum <em class="parameter"><code>x</code></em>
+-location to be improved (in pixels).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Approximate maximum <em class="parameter"><code>y</code></em>
+-location to be improved (in pixels).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ax</p></td>
+<td class="parameter_description"><p>Horizontal search radius.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ay</p></td>
+<td class="parameter_description"><p>Vertical search radius.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-local-maximum.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the maximum was successfully located.  <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when the location is problematic and should not be
+used.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

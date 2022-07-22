@@ -1,0 +1,522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>app: Gwyddion Application Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="prev" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="next" href="libgwyapp-data-browser.html" title="data-browser">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyapp-app.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="index.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyapp-data-browser.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyapp-app"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyapp-app.top_of_page"></a>app</span></h2>
+<p>app — Core application interface, window management</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyapp-app.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-app.html#gwy-app-switch-tool" title="gwy_app_switch_tool ()">gwy_app_switch_tool</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-app.html#gwy-app-current-tool-name" title="gwy_app_current_tool_name ()">gwy_app_current_tool_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyTool.html" title="GwyTool"><span class="returnvalue">GwyTool</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-app.html#gwy-app-current-tool" title="gwy_app_current_tool ()">gwy_app_current_tool</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-app.html#gwy-app-add-main-accel-group" title="gwy_app_add_main_accel_group ()">gwy_app_add_main_accel_group</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-app.html#gwy-app-save-window-position" title="gwy_app_save_window_position ()">gwy_app_save_window_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-app.html#gwy-app-restore-window-position" title="gwy_app_restore_window_position ()">gwy_app_restore_window_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-app.html#gwy-app-main-window-get" title="gwy_app_main_window_get ()">gwy_app_main_window_get</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-app.html#gwy-app-main-window-set" title="gwy_app_main_window_set ()">gwy_app_main_window_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-app.html#gwy-app-data-view-change-mask-color" title="gwy_app_data_view_change_mask_color ()">gwy_app_data_view_change_mask_color</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-app.html#gwy-app-quit" title="gwy_app_quit ()">gwy_app_quit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-app.html#gwy-app-init-widget-styles" title="gwy_app_init_widget_styles ()">gwy_app_init_widget_styles</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-app.html#gwy-app-init-i18n" title="gwy_app_init_i18n ()">gwy_app_init_i18n</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-app.html#gwy-app-init-common" title="gwy_app_init_common ()">gwy_app_init_common</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-app.html#gwy-app-init-nongui" title="gwy_app_init_nongui ()">gwy_app_init_nongui</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-app.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;app/gwyapp.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-app.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-app.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-app-switch-tool"></a><h3>gwy_app_switch_tool ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_switch_tool (<em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *toolname</code></em>);</pre>
+<p>Switches the current tool to given tool.</p>
+<p>If the tool is already active it is shown when hidden and hidden when
+visible.</p>
+<div class="refsect3">
+<a name="gwy-app-switch-tool.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>toolname</p></td>
+<td class="parameter_description"><p>Tool name, that is type name of the tool object in the GLib
+type system.  This can be for instance "GwyToolGrainMeasure".</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-current-tool-name"></a><h3>gwy_app_current_tool_name ()</h3>
+<pre class="programlisting">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_app_current_tool_name (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Obtains the name of currently active tool.</p>
+<p>See <a class="link" href="libgwyapp-app.html#gwy-app-switch-tool" title="gwy_app_switch_tool ()"><code class="function">gwy_app_switch_tool()</code></a> for the name description.</p>
+<p>In some rare circumstances, this function can return <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> because no tool is active.  This includes program
+startup and shutdown and during the construction of a new <a class="link" href="GwyTool.html" title="GwyTool"><span class="type">GwyTool</span></a> object while switching tools.  Also, <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is
+typically returned outside Gwyddion in programs just using the libraries.</p>
+<div class="refsect3">
+<a name="gwy-app-current-tool-name.returns"></a><h4>Returns</h4>
+<p> The tool name.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-38.html#api-index-2.38">2.38</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-current-tool"></a><h3>gwy_app_current_tool ()</h3>
+<pre class="programlisting"><a class="link" href="GwyTool.html" title="GwyTool"><span class="returnvalue">GwyTool</span></a> *
+gwy_app_current_tool (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Obtains the currently active tool object.</p>
+<p>In some rare circumstances, this function can return <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> because no tool is active.  This includes program
+startup and shutdown and during the construction of a new <a class="link" href="GwyTool.html" title="GwyTool"><span class="type">GwyTool</span></a> object while switching tools.  Also, <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is
+typically returned outside Gwyddion in programs just using the libraries.</p>
+<div class="refsect3">
+<a name="gwy-app-current-tool.returns"></a><h4>Returns</h4>
+<p> The current tool object.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-55.html#api-index-2.55">2.55</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-add-main-accel-group"></a><h3>gwy_app_add_main_accel_group ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_add_main_accel_group (<em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWindow.html#GtkWindow-struct"><span class="type">GtkWindow</span></a> *window</code></em>);</pre>
+<p>Adds main (global) application accelerator group to a window.</p>
+<p>This includes accelerators for terminating Gwyddion, opening files, etc.</p>
+<div class="refsect3">
+<a name="gwy-app-add-main-accel-group.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>A window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-save-window-position"></a><h3>gwy_app_save_window_position ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_save_window_position (<em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWindow.html#GtkWindow-struct"><span class="type">GtkWindow</span></a> *window</code></em>,
+                              <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *prefix</code></em>,
+                              <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> position</code></em>,
+                              <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> size</code></em>);</pre>
+<p>Saves position and/or size of a window to settings.</p>
+<p>Some sanity checks are included, therefore if window position and/or size is too suspicious, it is not saved.</p>
+<div class="refsect3">
+<a name="gwy-app-save-window-position.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>A window to save position of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prefix</p></td>
+<td class="parameter_description"><p>Unique prefix in settings to store the information under.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>position</p></td>
+<td class="parameter_description"><p><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to save position information.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to save size information.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-restore-window-position"></a><h3>gwy_app_restore_window_position ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_restore_window_position (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkWindow.html#GtkWindow-struct"><span class="type">GtkWindow</span></a> *window</code></em>,
+                                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *prefix</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> grow_only</code></em>);</pre>
+<p>Restores a window position and/or size from settings.</p>
+<p>Unlike <a class="link" href="libgwyapp-app.html#gwy-app-save-window-position" title="gwy_app_save_window_position ()"><code class="function">gwy_app_save_window_position()</code></a>, this function has no <em class="parameter"><code>position</code></em>
+ and <em class="parameter"><code>size</code></em>
+ arguments, it simply restores all
+attributes that were saved.</p>
+<p>Note to restore position (not size) it should be called twice for each window to accommodate sloppy window
+managers: once before the window is shown, second time immediately after showing the window.</p>
+<p>Some sanity checks are included, therefore if saved window position and/or size is too suspicious, it is not
+restored.</p>
+<div class="refsect3">
+<a name="gwy-app-restore-window-position.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>A window to restore position of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prefix</p></td>
+<td class="parameter_description"><p>Unique prefix in settings to get the information from (the same as
+in <a class="link" href="libgwyapp-app.html#gwy-app-save-window-position" title="gwy_app_save_window_position ()"><code class="function">gwy_app_save_window_position()</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grow_only</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to only attempt set the window default size bigger than it
+requests, never smaller.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-main-window-get"></a><h3>gwy_app_main_window_get ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_app_main_window_get (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Returns Gwyddion main application window (toolbox).</p>
+<div class="refsect3">
+<a name="gwy-app-main-window-get.returns"></a><h4>Returns</h4>
+<p> The Gwyddion toolbox.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-main-window-set"></a><h3>gwy_app_main_window_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_main_window_set (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a> *window</code></em>);</pre>
+<p>Sets the main application window.</p>
+<p>This function is probably only useful in Gwyddion itself and should be ignored.</p>
+<p>It needs to be called exactly once at Gwyddion startup. It restores the toolbox position and makes
+<a class="link" href="libgwyapp-app.html#gwy-app-main-window-get" title="gwy_app_main_window_get ()"><code class="function">gwy_app_main_window_get()</code></a> work.</p>
+<div class="refsect3">
+<a name="gwy-app-main-window-set.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>A window, presumably the Gwyddion toolbox.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-data-view-change-mask-color"></a><h3>gwy_app_data_view_change_mask_color ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_data_view_change_mask_color (<em class="parameter"><code><a href="../GwyDataView.html#GwyDataView-struct"><span class="type">GwyDataView</span></a> *data_view</code></em>);</pre>
+<p>Runs mask color selector on a data view.</p>
+<p>This is a convenience function to run <a href="../libgwydgets-gwydgetutils.html#gwy-color-selector-for-mask"><code class="function">gwy_color_selector_for_mask()</code></a>, possibly taking the initial color from
+settings.</p>
+<div class="refsect3">
+<a name="gwy-app-data-view-change-mask-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view (of application's data window).  It must have a mask.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-quit"></a><h3>gwy_app_quit ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_app_quit (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Quits the application.</p>
+<p>This function may present a confirmation dialog to the user and it may let the application to continue running.  If
+it quits the application, it performs some shutdown actions and then quits the Gtk+ main loop with <a href="/usr/share/gtk-doc/html/gtk3/gtk3-General.html#gtk-main-quit"><code class="function">gtk_main_quit()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-app-quit.returns"></a><h4>Returns</h4>
+<p> Always <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to be usable as an event handler.  However, if the application is actually terminated, this
+function does not return.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-init-widget-styles"></a><h3>gwy_app_init_widget_styles ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_init_widget_styles (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Sets up style properties for special Gwyddion widgets.</p>
+<p>Normally not needed to call explicitly.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-init-i18n"></a><h3>gwy_app_init_i18n ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_init_i18n (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Initializes internationalization.</p>
+<p>Normally not needed to call explicitly.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-init-common"></a><h3>gwy_app_init_common ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_app_init_common (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>,
+                     <em class="parameter"><code>...</code></em>);</pre>
+<p>Performs common application initialization.</p>
+<p>This function can be useful in Gwyddion-based programs and includes: widget class initialisation,
+internationalisation initialisation, stock item and resource class loading, settings loading, and module
+registration.</p>
+<div class="refsect3">
+<a name="gwy-app-init-common.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Error location for settings loading error.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>List of module types to load, terminated with <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.  Possible types are "cmap", "file", "graph", "layer",
+"process", "tool", "volume" and "xyz", plus two special values "" and "all" for untyped modules (like pygwy
+or plug-in proxy) and all modules, respectively.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-init-common.returns"></a><h4>Returns</h4>
+<p> Settings loading status.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-init-nongui"></a><h3>gwy_app_init_nongui ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_init_nongui (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *option</code></em>,
+                     <em class="parameter"><code>...</code></em>);</pre>
+<p>Performs common initialisations useful in non-GUI (batch) programs utilising Gwyddion libraries.</p>
+<p>This function does not initialise GTK+ and does not set up anything related or requiring a display.  It sets up
+logging to console, runs <a href="../libgwydgets-gwydgets.html#gwy-widgets-type-init"><code class="function">gwy_widgets_type_init()</code></a>, disables undo, disables GUI for the data browser and waiting, and
+loads resources, settings and all modules.  However, it prevents the plugin-proxy and pygwy modules from loading.</p>
+<p>There are currently the following options:</p>
+<p>"enable-threads" with <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> value.  If <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> is passed <a href="../libgwyddion-gwythreads.html#gwy-threads-set-enabled"><code class="function">gwy_threads_set_enabled()</code></a> will be called with
+this settings.  By default, the multithread processing state is unchanged.</p>
+<p>"enable-pygwy" with <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> value.  If <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> is passed then pygwy will not be prevented from loading.  Passing
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> is the same as not setting the option at all.</p>
+<p>So, for instance a program wanting to enable multithread processing in Gwyddion functions (provided it is built in)
+can run</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">gwy_app_init_nongui</span><span class="p">(</span><span class="s">&quot;enable-threads&quot;</span><span class="p">,</span> <span class="n">TRUE</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+<div class="refsect3">
+<a name="gwy-app-init-nongui.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>option</p></td>
+<td class="parameter_description"><p>Name of the first initialisation option, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there are no
+options.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Value of the first option, if any, followed by another option name
+and value, etc.  Terminated by <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-55.html#api-index-2.55">2.55</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

@@ -1,0 +1,2853 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>stats uncertainty: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="libgwyprocess-stats.html" title="stats">
+<link rel="next" href="libgwyprocess-tip.html" title="tip">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyprocess-stats-uncertainty.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyprocess-stats.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyprocess-tip.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyprocess-stats-uncertainty"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyprocess-stats-uncertainty.top_of_page"></a>stats uncertainty</span></h2>
+<p>stats uncertainty — Uncertainties of statistical functions</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyprocess-stats-uncertainty.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-max-uncertainty" title="gwy_data_field_get_max_uncertainty ()">gwy_data_field_get_max_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-max-uncertainty" title="gwy_data_field_area_get_max_uncertainty ()">gwy_data_field_area_get_max_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-min-uncertainty" title="gwy_data_field_get_min_uncertainty ()">gwy_data_field_get_min_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-min-uncertainty" title="gwy_data_field_area_get_min_uncertainty ()">gwy_data_field_area_get_min_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-min-max-uncertainty" title="gwy_data_field_get_min_max_uncertainty ()">gwy_data_field_get_min_max_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-min-max-uncertainty" title="gwy_data_field_area_get_min_max_uncertainty ()">gwy_data_field_area_get_min_max_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-min-max-uncertainty-mask" title="gwy_data_field_area_get_min_max_uncertainty_mask ()">gwy_data_field_area_get_min_max_uncertainty_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-avg-uncertainty" title="gwy_data_field_get_avg_uncertainty ()">gwy_data_field_get_avg_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-avg-uncertainty" title="gwy_data_field_area_get_avg_uncertainty ()">gwy_data_field_area_get_avg_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-avg-uncertainty-mask" title="gwy_data_field_area_get_avg_uncertainty_mask ()">gwy_data_field_area_get_avg_uncertainty_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-rms-uncertainty" title="gwy_data_field_get_rms_uncertainty ()">gwy_data_field_get_rms_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-rms-uncertainty" title="gwy_data_field_area_get_rms_uncertainty ()">gwy_data_field_area_get_rms_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-rms-uncertainty-mask" title="gwy_data_field_area_get_rms_uncertainty_mask ()">gwy_data_field_area_get_rms_uncertainty_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-stats-uncertainties" title="gwy_data_field_get_stats_uncertainties ()">gwy_data_field_get_stats_uncertainties</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-stats-uncertainties" title="gwy_data_field_area_get_stats_uncertainties ()">gwy_data_field_area_get_stats_uncertainties</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-stats-uncertainties-mask" title="gwy_data_field_area_get_stats_uncertainties_mask ()">gwy_data_field_area_get_stats_uncertainties_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-acf-uncertainty" title="gwy_data_field_area_acf_uncertainty ()">gwy_data_field_area_acf_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-acf-uncertainty" title="gwy_data_field_acf_uncertainty ()">gwy_data_field_acf_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-hhcf-uncertainty" title="gwy_data_field_area_hhcf_uncertainty ()">gwy_data_field_area_hhcf_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-hhcf-uncertainty" title="gwy_data_field_hhcf_uncertainty ()">gwy_data_field_hhcf_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-surface-area-uncertainty" title="gwy_data_field_get_surface_area_uncertainty ()">gwy_data_field_get_surface_area_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-surface-area-uncertainty" title="gwy_data_field_area_get_surface_area_uncertainty ()">gwy_data_field_area_get_surface_area_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-surface-area-mask-uncertainty" title="gwy_data_field_area_get_surface_area_mask_uncertainty ()">gwy_data_field_area_get_surface_area_mask_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-median-uncertainty" title="gwy_data_field_area_get_median_uncertainty ()">gwy_data_field_area_get_median_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-median-uncertainty-mask" title="gwy_data_field_area_get_median_uncertainty_mask ()">gwy_data_field_area_get_median_uncertainty_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-median-uncertainty" title="gwy_data_field_get_median_uncertainty ()">gwy_data_field_get_median_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-dh-uncertainty" title="gwy_data_field_area_dh_uncertainty ()">gwy_data_field_area_dh_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-dh-uncertainty" title="gwy_data_field_dh_uncertainty ()">gwy_data_field_dh_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-normal-coeffs-uncertainty" title="gwy_data_field_area_get_normal_coeffs_uncertainty ()">gwy_data_field_area_get_normal_coeffs_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-normal-coeffs-uncertainty" title="gwy_data_field_get_normal_coeffs_uncertainty ()">gwy_data_field_get_normal_coeffs_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-inclination-uncertainty" title="gwy_data_field_area_get_inclination_uncertainty ()">gwy_data_field_area_get_inclination_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-inclination-uncertainty" title="gwy_data_field_get_inclination_uncertainty ()">gwy_data_field_get_inclination_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-projected-area-uncertainty" title="gwy_data_field_area_get_projected_area_uncertainty ()">gwy_data_field_area_get_projected_area_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-cdh-uncertainty" title="gwy_data_field_area_cdh_uncertainty ()">gwy_data_field_area_cdh_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-cdh-uncertainty" title="gwy_data_field_cdh_uncertainty ()">gwy_data_field_cdh_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-xder-uncertainty" title="gwy_data_field_get_xder_uncertainty ()">gwy_data_field_get_xder_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-yder-uncertainty" title="gwy_data_field_get_yder_uncertainty ()">gwy_data_field_get_yder_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-line-acf-uncertainty" title="gwy_data_line_acf_uncertainty ()">gwy_data_line_acf_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-line-cumulate-uncertainty" title="gwy_data_line_cumulate_uncertainty ()">gwy_data_line_cumulate_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-line-hhcf-uncertainty" title="gwy_data_line_hhcf_uncertainty ()">gwy_data_line_hhcf_uncertainty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-stats-uncertainty.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-stats-uncertainty.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-stats-uncertainty.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-data-field-get-max-uncertainty"></a><h3>gwy_data_field_get_max_uncertainty ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_get_max_uncertainty (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                    <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>);</pre>
+<p>Finds the uncertainty of the maximum value of a data field.</p>
+<p>Note that this is not the uncertainty arising from the calculation of the
+maximum.  It is just the uncertainty of the single value that happens to be
+the data maximum.  As such, the function is not very useful.</p>
+<div class="refsect3">
+<a name="gwy-data-field-get-max-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-get-max-uncertainty.returns"></a><h4>Returns</h4>
+<p> The uncertainty of the maximum value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-get-max-uncertainty"></a><h3>gwy_data_field_area_get_max_uncertainty ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_area_get_max_uncertainty
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyMaskingType" title="enum GwyMaskingType"><span class="type">GwyMaskingType</span></a> mode</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Finds the uncertainty of the maximum value in a rectangular part of a data
+field.</p>
+<p>Note that this is not the uncertainty arising from the calculation of the
+maximum.  It is just the uncertainty of the single value that happens to be
+the data maximum.  As such, the function is not very useful.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-max-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Mask specifying which values to take into account/exclude, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>Masking mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-max-uncertainty.returns"></a><h4>Returns</h4>
+<p> The uncertainty of the maximum value.  When the number of samples
+to calculate maximum of is zero, <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#G-MAXDOUBLE:CAPS"><code class="literal">G_MAXDOUBLE</code></a> is returned.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-get-min-uncertainty"></a><h3>gwy_data_field_get_min_uncertainty ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_get_min_uncertainty (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                    <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>);</pre>
+<p>Finds the uncertainty of the minimum value of a data field.</p>
+<p>Note that this is not the uncertainty arising from the calculation of the
+minimum.  It is just the uncertainty of the single value that happens to be
+the data minimum.  As such, the function is not very useful.</p>
+<div class="refsect3">
+<a name="gwy-data-field-get-min-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-get-min-uncertainty.returns"></a><h4>Returns</h4>
+<p> The uncertainty of the minimum value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-get-min-uncertainty"></a><h3>gwy_data_field_area_get_min_uncertainty ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_area_get_min_uncertainty
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyMaskingType" title="enum GwyMaskingType"><span class="type">GwyMaskingType</span></a> mode</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Finds the uncertainty of the minimum value in a rectangular part of a data
+field.</p>
+<p>Note that this is not the uncertainty arising from the calculation of the
+minimum.  It is just the uncertainty of the single value that happens to be
+the data minimum.  As such, the function is not very useful.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-min-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Mask specifying which values to take into account/exclude, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>Masking mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-min-uncertainty.returns"></a><h4>Returns</h4>
+<p> The uncertainty of the minimum value.  When the number of samples
+to calculate minimum of is zero, <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#G-MAXDOUBLE:CAPS"><code class="literal">G_MAXDOUBLE</code></a> is returned.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-get-min-max-uncertainty"></a><h3>gwy_data_field_get_min_max_uncertainty ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_get_min_max_uncertainty
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *min_unc</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *max_unc</code></em>);</pre>
+<p>Finds minimum and maximum values of a data field.</p>
+<p>Note that this is not the uncertainty arising from the calculation of the
+minimum and maximum.  It is just the uncertainty of the two values that
+happen to be the data minimum and maximum.  As such, the function is not
+very useful.</p>
+<div class="refsect3">
+<a name="gwy-data-field-get-min-max-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>min_unc</p></td>
+<td class="parameter_description"><p>Location to store uncertainty of minimum to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_unc</p></td>
+<td class="parameter_description"><p>Location to store uncertainty maximum to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-get-min-max-uncertainty"></a><h3>gwy_data_field_area_get_min_max_uncertainty ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_get_min_max_uncertainty
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *min_unc</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *max_unc</code></em>);</pre>
+<p>Finds uncertainties of the minimum and maximum values in a rectangular part
+of a data field.</p>
+<p>This function is equivalent to calling
+<a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-min-max-uncertainty-mask" title="gwy_data_field_area_get_min_max_uncertainty_mask ()"><code class="function">gwy_data_field_area_get_min_max_uncertainty_mask()</code></a> with masking mode
+<a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-MASK-INCLUDE:CAPS"><code class="literal">GWY_MASK_INCLUDE</code></a>.</p>
+<p>Note that this is not the uncertainty arising from the calculation of the
+minimum and maximum.  It is just the uncertainty of the two values that
+happen to be the data minimum and maximum.  As such, the function is not
+very useful.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-min-max-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Mask specifying which values to take into account/exclude, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>min_unc</p></td>
+<td class="parameter_description"><p>Location to store uncertainty of minimum to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_unc</p></td>
+<td class="parameter_description"><p>Location to store uncertainty of maximum to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-get-min-max-uncertainty-mask"></a><h3>gwy_data_field_area_get_min_max_uncertainty_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_get_min_max_uncertainty_mask
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyMaskingType" title="enum GwyMaskingType"><span class="type">GwyMaskingType</span></a> mode</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *min_unc</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *max_unc</code></em>);</pre>
+<p>Finds the uncertainties of the minimum and maximum values in a rectangular
+part of a data field.</p>
+<p>Note that this is not the uncertainty arising from the calculation of the
+minimum and maximum.  It is just the uncertainty of the two values that
+happen to be the data minimum and maximum.  As such, the function is not
+very useful.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-min-max-uncertainty-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Mask specifying which values to take into account/exclude, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>Masking mode to use.  See the introduction for description of
+masking modes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>min_unc</p></td>
+<td class="parameter_description"><p>Location to store uncertainty of minimum to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_unc</p></td>
+<td class="parameter_description"><p>Location to store uncertainty of maximum to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-get-avg-uncertainty"></a><h3>gwy_data_field_get_avg_uncertainty ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_get_avg_uncertainty (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                    <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>);</pre>
+<p>Computes the uncertainty of the average value of a data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-get-avg-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-get-avg-uncertainty.returns"></a><h4>Returns</h4>
+<p> The uncertainty of the average value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-get-avg-uncertainty"></a><h3>gwy_data_field_area_get_avg_uncertainty ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_area_get_avg_uncertainty
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Computes the uncertainty of the average value of a rectangular part of a
+data field.</p>
+<p>This function is equivalent to calling
+<em class="parameter"><code><a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-avg-uncertainty-mask" title="gwy_data_field_area_get_avg_uncertainty_mask ()"><code class="function">gwy_data_field_area_get_avg_uncertainty_mask()</code></a></code></em>
+ with masking mode
+<a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-MASK-INCLUDE:CAPS"><code class="literal">GWY_MASK_INCLUDE</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-avg-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Mask specifying which values to take into account/exclude, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-avg-uncertainty.returns"></a><h4>Returns</h4>
+<p> The uncertainty of the average value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-get-avg-uncertainty-mask"></a><h3>gwy_data_field_area_get_avg_uncertainty_mask ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_area_get_avg_uncertainty_mask
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyMaskingType" title="enum GwyMaskingType"><span class="type">GwyMaskingType</span></a> mode</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Computes the uncertainty of the average value of a rectangular part of a
+data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-avg-uncertainty-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Mask specifying which values to take into account/exclude, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>Masking mode to use.  See the introduction for description of
+masking modes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-avg-uncertainty-mask.returns"></a><h4>Returns</h4>
+<p> The uncertainty of the average value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-get-rms-uncertainty"></a><h3>gwy_data_field_get_rms_uncertainty ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_get_rms_uncertainty (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                    <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>);</pre>
+<p>Computes uncertainty of  root mean square value of a data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-get-rms-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-get-rms-uncertainty.returns"></a><h4>Returns</h4>
+<p> The uncertainty of the root mean square value.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-get-rms-uncertainty"></a><h3>gwy_data_field_area_get_rms_uncertainty ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_area_get_rms_uncertainty
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Computes uncertainty of root mean square value of a rectangular part of a
+data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-rms-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Mask specifying which values to take into account/exclude, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-rms-uncertainty.returns"></a><h4>Returns</h4>
+<p> The uncertainty of root mean square value.</p>
+<p>This function is equivalent to calling
+<em class="parameter"><code><a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-rms-uncertainty-mask" title="gwy_data_field_area_get_rms_uncertainty_mask ()"><code class="function">gwy_data_field_area_get_rms_uncertainty_mask()</code></a></code></em>
+with masking mode
+<a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-MASK-INCLUDE:CAPS"><code class="literal">GWY_MASK_INCLUDE</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-get-rms-uncertainty-mask"></a><h3>gwy_data_field_area_get_rms_uncertainty_mask ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_area_get_rms_uncertainty_mask
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyMaskingType" title="enum GwyMaskingType"><span class="type">GwyMaskingType</span></a> mode</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Computes uncertainty of root mean square value of deviations of a
+rectangular part of a data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-rms-uncertainty-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Mask specifying which values to take into account/exclude, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>Masking mode to use.  See the introduction for description of
+masking modes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-rms-uncertainty-mask.returns"></a><h4>Returns</h4>
+<p> The uncertainty of root mean square value of deviations from the
+mean value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-get-stats-uncertainties"></a><h3>gwy_data_field_get_stats_uncertainties ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_get_stats_uncertainties
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *avg_unc</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *ra_unc</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *rms_unc</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *skew_unc</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *kurtosis_unc</code></em>);</pre>
+<p>Computes the uncertainties of the basic statistical quantities of a data
+field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-get-stats-uncertainties.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>avg_unc</p></td>
+<td class="parameter_description"><p>Where uncertainty of average height value of the surface should be stored,
+or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ra_unc</p></td>
+<td class="parameter_description"><p>Where uncertainty of average value of irregularities should be stored,
+or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rms_unc</p></td>
+<td class="parameter_description"><p>Where uncertainty of root mean square value of irregularities (Rq) should be
+stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>skew_unc</p></td>
+<td class="parameter_description"><p>Where uncertainty of skew (symmetry of height distribution) should be stored, or
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>kurtosis_unc</p></td>
+<td class="parameter_description"><p>Where uncertainty of kurtosis (peakedness of height ditribution) should be
+stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-get-stats-uncertainties"></a><h3>gwy_data_field_area_get_stats_uncertainties ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_get_stats_uncertainties
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *avg_unc</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *ra_unc</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *rms_unc</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *skew_unc</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *kurtosis_unc</code></em>);</pre>
+<p>Computes the uncertainties of the basic statistical quantities of a rectangular part of a data field.</p>
+<p>This function is equivalent to calling <em class="parameter"><code><a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-stats-uncertainties-mask" title="gwy_data_field_area_get_stats_uncertainties_mask ()"><code class="function">gwy_data_field_area_get_stats_uncertainties_mask()</code></a></code></em>
+
+with masking mode <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-MASK-INCLUDE:CAPS"><code class="literal">GWY_MASK_INCLUDE</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-stats-uncertainties.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Mask specifying which values to take into account/exclude, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>avg_unc</p></td>
+<td class="parameter_description"><p>Where uncertainty of average height value of the surface should be stored,
+or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ra_unc</p></td>
+<td class="parameter_description"><p>Where uncertainty of average value of irregularities should be stored,
+or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rms_unc</p></td>
+<td class="parameter_description"><p>Where uncertainty of root mean square value of irregularities (Rq) should be
+stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>skew_unc</p></td>
+<td class="parameter_description"><p>Where uncertainty of skew (symmetry of height distribution) should be stored, or
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>kurtosis_unc</p></td>
+<td class="parameter_description"><p>Where uncertainty of kurtosis (peakedness of height ditribution) should be
+stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-get-stats-uncertainties-mask"></a><h3>gwy_data_field_area_get_stats_uncertainties_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_get_stats_uncertainties_mask
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyMaskingType" title="enum GwyMaskingType"><span class="type">GwyMaskingType</span></a> mode</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *avg_unc</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *ra_unc</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *rms_unc</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *skew_unc</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *kurtosis_unc</code></em>);</pre>
+<p>Computes the uncertainties of the basic statistical quantities of a
+rectangular part of a data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-stats-uncertainties-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Mask specifying which values to take into account/exclude, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>Masking mode to use.  See the introduction for description of
+masking modes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>avg_unc</p></td>
+<td class="parameter_description"><p>Where uncertainty of average height value of the surface should be
+stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ra_unc</p></td>
+<td class="parameter_description"><p>Where uncertainty of average value of irregularities should be
+stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rms_unc</p></td>
+<td class="parameter_description"><p>Where uncertainty of root mean square value of irregularities (Rq)
+should be stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>skew_unc</p></td>
+<td class="parameter_description"><p>Where uncertainty of skew (symmetry of height distribution)
+should be stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>kurtosis_unc</p></td>
+<td class="parameter_description"><p>Where uncertainty of kurtosis (peakedness of height
+ditribution) should be stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-acf-uncertainty"></a><h3>gwy_data_field_area_acf_uncertainty ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_acf_uncertainty (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                     <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                     <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *target_line</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                     <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyOrientation" title="enum GwyOrientation"><span class="type">GwyOrientation</span></a> orientation</code></em>,
+                                     <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interpolation</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nstats</code></em>);</pre>
+<p>Calculates the uncertainty of the one-dimensional autocorrelation function of a rectangular part of
+a data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-acf-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_line</p></td>
+<td class="parameter_description"><p>A data line to store the uncertainties of the distribution to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>orientation</p></td>
+<td class="parameter_description"><p>Orientation of lines (ACF is simply averaged over the
+other orientation).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>Interpolation to use when <em class="parameter"><code>nstats</code></em>
+is given and requires
+resampling.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nstats</p></td>
+<td class="parameter_description"><p>The number of samples to take on the distribution function.  If
+nonpositive, <em class="parameter"><code>width</code></em>
+(<em class="parameter"><code>height</code></em>
+) is used.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-acf-uncertainty"></a><h3>gwy_data_field_acf_uncertainty ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_acf_uncertainty (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *target_line</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyOrientation" title="enum GwyOrientation"><span class="type">GwyOrientation</span></a> orientation</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interpolation</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nstats</code></em>);</pre>
+<p>Calculates uncertainty of one-dimensional autocorrelation function of a data
+field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-acf-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_line</p></td>
+<td class="parameter_description"><p>A data line to store the uncertainties of the distribution to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>orientation</p></td>
+<td class="parameter_description"><p>Orientation of lines (ACF is simply averaged over the
+other orientation).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>Interpolation to use when <em class="parameter"><code>nstats</code></em>
+is given and requires
+resampling.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nstats</p></td>
+<td class="parameter_description"><p>The number of samples the resulting line should have.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-hhcf-uncertainty"></a><h3>gwy_data_field_area_hhcf_uncertainty ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_hhcf_uncertainty (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                      <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                      <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *target_line</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                      <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyOrientation" title="enum GwyOrientation"><span class="type">GwyOrientation</span></a> orientation</code></em>,
+                                      <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interpolation</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nstats</code></em>);</pre>
+<p>Calculates uncertainty of the one-dimensional autocorrelation function of a
+rectangular part of a data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-hhcf-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_line</p></td>
+<td class="parameter_description"><p>A data line to store the distribution to.  It will be
+resampled to requested width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>orientation</p></td>
+<td class="parameter_description"><p>Orientation of lines (HHCF is simply averaged over the
+other orientation).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>Interpolation to use when <em class="parameter"><code>nstats</code></em>
+is given and requires
+resampling.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nstats</p></td>
+<td class="parameter_description"><p>The number of samples the resulting line should have.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-hhcf-uncertainty"></a><h3>gwy_data_field_hhcf_uncertainty ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_hhcf_uncertainty (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                 <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                 <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *target_line</code></em>,
+                                 <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyOrientation" title="enum GwyOrientation"><span class="type">GwyOrientation</span></a> orientation</code></em>,
+                                 <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interpolation</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nstats</code></em>);</pre>
+<p>Calculates uncertainty of one-dimensional autocorrelation function of a data
+field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-hhcf-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_line</p></td>
+<td class="parameter_description"><p>A data line to store the distribution to.  It will be
+resampled to requested width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>orientation</p></td>
+<td class="parameter_description"><p>Orientation of lines (HHCF is simply averaged over the
+other orientation).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>Interpolation to use when <em class="parameter"><code>nstats</code></em>
+is given and requires
+resampling.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nstats</p></td>
+<td class="parameter_description"><p>The number of samples the resulting line should have.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-get-surface-area-uncertainty"></a><h3>gwy_data_field_get_surface_area_uncertainty ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_get_surface_area_uncertainty
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncx_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncy_field</code></em>);</pre>
+<p>Computes uncertainty of surface area of a data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-get-surface-area-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncx_field</p></td>
+<td class="parameter_description"><p>The uncertainty in the x direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncy_field</p></td>
+<td class="parameter_description"><p>The uncertainty in the y direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-get-surface-area-uncertainty.returns"></a><h4>Returns</h4>
+<p> uncertainty of surface area</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-get-surface-area-uncertainty"></a><h3>gwy_data_field_area_get_surface_area_uncertainty ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_area_get_surface_area_uncertainty
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncx_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncy_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Computes uncertainty of surface area of a rectangular part of a data field.</p>
+<p>This function is equivalent to calling
+<em class="parameter"><code><a class="link" href="libgwyprocess-stats.html#gwy-data-field-area-get-surface-area-mask" title="gwy_data_field_area_get_surface_area_mask ()"><code class="function">gwy_data_field_area_get_surface_area_mask()</code></a></code></em>
+
+with masking mode <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-MASK-INCLUDE:CAPS"><code class="literal">GWY_MASK_INCLUDE</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-surface-area-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncx_field</p></td>
+<td class="parameter_description"><p>The uncertainty in the x direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncy_field</p></td>
+<td class="parameter_description"><p>The uncertainty in the y direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Mask specifying which values to take into account/exclude, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-surface-area-uncertainty.returns"></a><h4>Returns</h4>
+<p> The uncertainty of surface area.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-get-surface-area-mask-uncertainty"></a><h3>gwy_data_field_area_get_surface_area_mask_uncertainty ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_area_get_surface_area_mask_uncertainty
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncx_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncy_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyMaskingType" title="enum GwyMaskingType"><span class="type">GwyMaskingType</span></a> mode</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Computes uncertainty of surface area of a rectangular part of a data field.</p>
+<p>This quantity makes sense only if the lateral dimensions and values of
+<em class="parameter"><code>data_field</code></em>
+ are the same physical quantities.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-surface-area-mask-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncx_field</p></td>
+<td class="parameter_description"><p>The uncertainty in the x direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncy_field</p></td>
+<td class="parameter_description"><p>The uncertainty in the y direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Mask specifying which values to take into account/exclude, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>Masking mode to use.  See the introduction for description of
+masking modes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-surface-area-mask-uncertainty.returns"></a><h4>Returns</h4>
+<p> The uncertainty of the surface area.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-get-median-uncertainty"></a><h3>gwy_data_field_area_get_median_uncertainty ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_area_get_median_uncertainty
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Computes uncertainty of median value of a data field area.</p>
+<p>This function is equivalent to calling
+<em class="parameter"><code><a class="link" href="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-median-uncertainty-mask" title="gwy_data_field_area_get_median_uncertainty_mask ()"><code class="function">gwy_data_field_area_get_median_uncertainty_mask()</code></a></code></em>
+
+with masking mode <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-MASK-INCLUDE:CAPS"><code class="literal">GWY_MASK_INCLUDE</code></a>.</p>
+<p>Note that this is not the uncertainty arising from the calculation of the
+median.  It is just the uncertainty of the single value that happens to be
+the data median.  As such, the function is not very useful.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-median-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty field</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Mask specifying which values to take into account/exclude, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-median-uncertainty.returns"></a><h4>Returns</h4>
+<p> The uncertainty of the median value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-get-median-uncertainty-mask"></a><h3>gwy_data_field_area_get_median_uncertainty_mask ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_area_get_median_uncertainty_mask
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyMaskingType" title="enum GwyMaskingType"><span class="type">GwyMaskingType</span></a> mode</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Computes uncertainty of median value of a data field area.</p>
+<p>Note that this is not the uncertainty arising from the calculation of the
+median.  It is just the uncertainty of the single value that happens to be
+the data median.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-median-uncertainty-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty field</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Mask specifying which values to take into account/exclude, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>Masking mode to use.  See the introduction for description of
+masking modes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-median-uncertainty-mask.returns"></a><h4>Returns</h4>
+<p> The uncertainty of the median value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-get-median-uncertainty"></a><h3>gwy_data_field_get_median_uncertainty ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_get_median_uncertainty (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                       <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>);</pre>
+<p>Computes uncertainty of median value of a data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-get-median-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>The corresponding uncertainty field</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-get-median-uncertainty.returns"></a><h4>Returns</h4>
+<p> The uncertainty of the median value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-dh-uncertainty"></a><h3>gwy_data_field_area_dh_uncertainty ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_dh_uncertainty (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                    <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                    <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                                    <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *target_line</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nstats</code></em>);</pre>
+<p>Calculates uncertainty of distribution of heights in a rectangular part of
+data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-dh-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>Corresponding uncertainty field</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Mask specifying which values to take into account/exclude, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_line</p></td>
+<td class="parameter_description"><p>A data line to store the distribution to.  It will be
+resampled to requested width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nstats</p></td>
+<td class="parameter_description"><p>The number of samples to take on the distribution function.  If
+nonpositive, a suitable resolution is determined automatically.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-dh-uncertainty"></a><h3>gwy_data_field_dh_uncertainty ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_dh_uncertainty (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                               <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                               <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *target_line</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nstats</code></em>);</pre>
+<p>Calculates uncertainty of distribution of heights in a data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-dh-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>Corresponding uncertainty field</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_line</p></td>
+<td class="parameter_description"><p>A data line to store the distribution to.  It will be
+resampled to requested width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nstats</p></td>
+<td class="parameter_description"><p>The number of samples to take on the distribution function.  If
+nonpositive, a suitable resolution is determined automatically.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-get-normal-coeffs-uncertainty"></a><h3>gwy_data_field_area_get_normal_coeffs_uncertainty ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_get_normal_coeffs_uncertainty
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncx_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncy_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *nx</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *ny</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *nz</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *ux</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *uy</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *uz</code></em>);</pre>
+<p>Computes squared uncertainty of average normal vector of an area of a data
+field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-normal-coeffs-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>Corresponding uncertainty field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncx_field</p></td>
+<td class="parameter_description"><p>The uncertainty in the x direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncy_field</p></td>
+<td class="parameter_description"><p>The uncertainty in the y direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nx</p></td>
+<td class="parameter_description"><p>Where x-component of average normal vector should be stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ny</p></td>
+<td class="parameter_description"><p>Where y-component of average normal vector should be stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nz</p></td>
+<td class="parameter_description"><p>Where z-component of average normal vector should be stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ux</p></td>
+<td class="parameter_description"><p>Where uncertainty of x-component of average normal vector should be
+stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uy</p></td>
+<td class="parameter_description"><p>Where  uncertainty of y-component of average normal vector should be
+stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uz</p></td>
+<td class="parameter_description"><p>Where  uncertainty of z-component of average normal vector should be
+stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-get-normal-coeffs-uncertainty"></a><h3>gwy_data_field_get_normal_coeffs_uncertainty ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_get_normal_coeffs_uncertainty
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncx_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncy_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *nx</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *ny</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *nz</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *ux</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *uy</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *uz</code></em>);</pre>
+<p>Computes squared uncertainty of average normal vector of a data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-get-normal-coeffs-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>Corresponding uncertainty field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncx_field</p></td>
+<td class="parameter_description"><p>Corresponding uncertainty field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncy_field</p></td>
+<td class="parameter_description"><p>Corresponding uncertainty field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nx</p></td>
+<td class="parameter_description"><p>Where x-component of average normal vector should be stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ny</p></td>
+<td class="parameter_description"><p>Where y-component of average normal vector should be stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nz</p></td>
+<td class="parameter_description"><p>Where z-component of average normal vector should be stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ux</p></td>
+<td class="parameter_description"><p>Where x-component of uncertainty of the normal vector should be stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uy</p></td>
+<td class="parameter_description"><p>Where y-component of  uncertainty of the normal vector should be stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uz</p></td>
+<td class="parameter_description"><p>Where z-component of  uncertainty of the normal vector should be stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-get-inclination-uncertainty"></a><h3>gwy_data_field_area_get_inclination_uncertainty ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_get_inclination_uncertainty
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncx_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncy_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *utheta</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *uphi</code></em>);</pre>
+<p>Calculates the uncertainty of the inclination of the image (polar and azimuth angle).</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-get-inclination-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>Corresponding uncertainty field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncx_field</p></td>
+<td class="parameter_description"><p>Corresponding uncertainty field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncy_field</p></td>
+<td class="parameter_description"><p>Corresponding uncertainty field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>utheta</p></td>
+<td class="parameter_description"><p>Where theta angle (in radians) should be stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uphi</p></td>
+<td class="parameter_description"><p>Where phi angle (in radians) should be stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-get-inclination-uncertainty"></a><h3>gwy_data_field_get_inclination_uncertainty ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_get_inclination_uncertainty
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncx_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncy_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *utheta</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *uphi</code></em>);</pre>
+<p>Calculates the uncertainty of the inclination of the image (polar and azimuth angle).</p>
+<div class="refsect3">
+<a name="gwy-data-field-get-inclination-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>Corresponding uncertainty field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncx_field</p></td>
+<td class="parameter_description"><p>Corresponding uncertainty field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncy_field</p></td>
+<td class="parameter_description"><p>Corresponding uncertainty field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>utheta</p></td>
+<td class="parameter_description"><p>Where theta angle (in radians) should be stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uphi</p></td>
+<td class="parameter_description"><p>Where phi angle (in radians) should be stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-get-projected-area-uncertainty"></a><h3>gwy_data_field_area_get_projected_area_uncertainty ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_area_get_projected_area_uncertainty
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nn</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncx_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncy_field</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-cdh-uncertainty"></a><h3>gwy_data_field_area_cdh_uncertainty ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_cdh_uncertainty (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                     <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                     <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                                     <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *target_line</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nstats</code></em>);</pre>
+<p>Calculates uncertainty of the cumulative distribution of heights in a
+rectangular part of the data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-cdh-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Mask specifying which values to take into account/exclude, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>Corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_line</p></td>
+<td class="parameter_description"><p>A data line to store the distribution to.  It will be
+resampled to requested width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nstats</p></td>
+<td class="parameter_description"><p>The number of samples to take on the distribution function.  If
+nonpositive, a suitable resolution is determined automatically.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-cdh-uncertainty"></a><h3>gwy_data_field_cdh_uncertainty ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_cdh_uncertainty (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *target_line</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nstats</code></em>);</pre>
+<p>Calculates uncertainty of the cumulative distribution of heights in a data
+field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-cdh-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uncz_field</p></td>
+<td class="parameter_description"><p>Corresponding uncertainty data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_line</p></td>
+<td class="parameter_description"><p>A data line to store the distribution to.  It will be
+resampled to requested width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nstats</p></td>
+<td class="parameter_description"><p>The number of samples to take on the distribution function.  If
+nonpositive, a suitable resolution is determined automatically.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-get-xder-uncertainty"></a><h3>gwy_data_field_get_xder_uncertainty ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_get_xder_uncertainty (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                     <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                     <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncx_field</code></em>,
+                                     <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncy_field</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-get-yder-uncertainty"></a><h3>gwy_data_field_get_yder_uncertainty ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_get_yder_uncertainty (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                     <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncz_field</code></em>,
+                                     <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncx_field</code></em>,
+                                     <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *uncy_field</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-acf-uncertainty"></a><h3>gwy_data_line_acf_uncertainty ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_line_acf_uncertainty (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                               <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *uline</code></em>,
+                               <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *target_line</code></em>);</pre>
+<p>Computes squared uncertainty of  autocorrelation function and stores the values in
+<em class="parameter"><code>target_line</code></em>
+</p>
+<div class="refsect3">
+<a name="gwy-data-line-acf-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uline</p></td>
+<td class="parameter_description"><p>A corresponding uncertainty line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_line</p></td>
+<td class="parameter_description"><p>Data line to store the uncertainty of the autocorrelation function to.  It will be
+resized to <em class="parameter"><code>data_line</code></em>
+size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-cumulate-uncertainty"></a><h3>gwy_data_line_cumulate_uncertainty ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_line_cumulate_uncertainty (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *uncz_line</code></em>);</pre>
+<p>Calculates the uncertainty of a cummulative distribution from the
+uncertainty of the original distribution.</p>
+<div class="refsect3">
+<a name="gwy-data-line-cumulate-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>uncz_line</p></td>
+<td class="parameter_description"><p>The uncertainty data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-hhcf-uncertainty"></a><h3>gwy_data_line_hhcf_uncertainty ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_line_hhcf_uncertainty (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *uline</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *target_line</code></em>);</pre>
+<p>Computes uncertainty squared of the height-height correlation function and
+stores results in <em class="parameter"><code>target_line</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-data-line-hhcf-uncertainty.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uline</p></td>
+<td class="parameter_description"><p>A corresponding uncertainty line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_line</p></td>
+<td class="parameter_description"><p>Data line to store uncertainty of height-height function to.
+It will be resized to <em class="parameter"><code>data_line</code></em>
+size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

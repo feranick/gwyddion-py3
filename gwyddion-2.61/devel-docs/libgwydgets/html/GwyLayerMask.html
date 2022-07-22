@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyLayerMask: Gwyddion Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Widgets Library Reference Manual">
+<link rel="up" href="DataWindowWidgets.html" title="Data Windows and Views">
+<link rel="prev" href="GwyLayerBasic.html" title="GwyLayerBasic">
+<link rel="next" href="GwyColorAxis.html" title="GwyColorAxis">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyLayerMask.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyLayerMask.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GwyLayerMask.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="DataWindowWidgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GwyLayerBasic.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyColorAxis.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyLayerMask"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyLayerMask.top_of_page"></a>GwyLayerMask</span></h2>
+<p>GwyLayerMask — Display data as color mask</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyLayerMask.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyPixmapLayer.html" title="GwyPixmapLayer"><span class="returnvalue">GwyPixmapLayer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyLayerMask.html#gwy-layer-mask-new" title="gwy_layer_mask_new ()">gwy_layer_mask_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLayerMask.html#gwy-layer-mask-set-color-key" title="gwy_layer_mask_set_color_key ()">gwy_layer_mask_set_color_key</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyLayerMask.html#gwy-layer-mask-get-color-key" title="gwy_layer_mask_get_color_key ()">gwy_layer_mask_get_color_key</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../libgwydraw-GwyRGBA.html#GwyRGBA"><span class="returnvalue">GwyRGBA</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyLayerMask.html#gwy-layer-mask-get-color" title="gwy_layer_mask_get_color ()">gwy_layer_mask_get_color</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyLayerMask.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="GwyLayerMask.html#GwyLayerMask--color-key" title="The “color-key” property">color-key</a></td>
+<td class="property_flags">Read / Write</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyLayerMask.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyLayerMask.html#GwyLayerMask-struct" title="struct GwyLayerMask">GwyLayerMask</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyLayerMask.html#GwyLayerMaskClass" title="struct GwyLayerMaskClass">GwyLayerMaskClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyLayerMask.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkObject.html#GtkObject-struct">GtkObject</a>
+            <span class="lineart">╰──</span> <a class="link" href="GwyDataViewLayer.html" title="GwyDataViewLayer">GwyDataViewLayer</a>
+                <span class="lineart">╰──</span> <a class="link" href="GwyPixmapLayer.html" title="GwyPixmapLayer">GwyPixmapLayer</a>
+                    <span class="lineart">╰──</span> GwyLayerMask
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyLayerMask.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwydgets/gwydgets.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyLayerMask.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyLayerMask.html" title="GwyLayerMask"><span class="type">GwyLayerMask</span></a> is a data view layer that can paint data as a color mask with
+varying opacity.  It is not normally usable outside a <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a>.</p>
+<p>The layer takes all infromation from its parent <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a>, therefore you
+do not set its properties directly, but you change them in the corresponding
+<a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> and/or use methods like <a class="link" href="GwyLayerMask.html#gwy-layer-mask-set-color-key" title="gwy_layer_mask_set_color_key ()"><code class="function">gwy_layer_mask_set_color_key()</code></a> to
+make the layer read a different value from the container.</p>
+</div>
+<div class="refsect1">
+<a name="GwyLayerMask.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-layer-mask-new"></a><h3>gwy_layer_mask_new ()</h3>
+<pre class="programlisting"><a class="link" href="GwyPixmapLayer.html" title="GwyPixmapLayer"><span class="returnvalue">GwyPixmapLayer</span></a> *
+gwy_layer_mask_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new mask layer.</p>
+<p>By default, is uses a transparent color (thus not displaying anything).</p>
+<div class="refsect3">
+<a name="gwy-layer-mask-new.returns"></a><h4>Returns</h4>
+<p> The newly created layer.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-layer-mask-set-color-key"></a><h3>gwy_layer_mask_set_color_key ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_layer_mask_set_color_key (<em class="parameter"><code><a class="link" href="GwyLayerMask.html" title="GwyLayerMask"><span class="type">GwyLayerMask</span></a> *mask_layer</code></em>,
+                              <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *prefix</code></em>);</pre>
+<p>Sets the container key of colour components of a mask layer.</p>
+<div class="refsect3">
+<a name="gwy-layer-mask-set-color-key.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mask_layer</p></td>
+<td class="parameter_description"><p>A mask layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prefix</p></td>
+<td class="parameter_description"><p>Prefix of keys identifying mask color components, "/red", "/green",
+"/blue", and "/alpha" is appended to it to get the individual
+keys.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-layer-mask-get-color-key"></a><h3>gwy_layer_mask_get_color_key ()</h3>
+<pre class="programlisting">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_layer_mask_get_color_key (<em class="parameter"><code><a class="link" href="GwyLayerMask.html" title="GwyLayerMask"><span class="type">GwyLayerMask</span></a> *mask_layer</code></em>);</pre>
+<p>Gets prefix identifying color components.</p>
+<div class="refsect3">
+<a name="gwy-layer-mask-get-color-key.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mask_layer</p></td>
+<td class="parameter_description"><p>A mask layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-layer-mask-get-color-key.returns"></a><h4>Returns</h4>
+<p> The prefix, or <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if it isn't set.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-layer-mask-get-color"></a><h3>gwy_layer_mask_get_color ()</h3>
+<pre class="programlisting"><a href="../libgwydraw-GwyRGBA.html#GwyRGBA"><span class="returnvalue">GwyRGBA</span></a>
+gwy_layer_mask_get_color (<em class="parameter"><code><a class="link" href="GwyLayerMask.html" title="GwyLayerMask"><span class="type">GwyLayerMask</span></a> *mask_layer</code></em>);</pre>
+<p>Returns the color used by a mask layer.</p>
+<div class="refsect3">
+<a name="gwy-layer-mask-get-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mask_layer</p></td>
+<td class="parameter_description"><p>A mask layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-layer-mask-get-color.returns"></a><h4>Returns</h4>
+<p> The color as <a href="../libgwydraw-GwyRGBA.html#GwyRGBA"><span class="type">GwyRGBA</span></a>.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyLayerMask.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyLayerMask-struct"></a><h3>struct GwyLayerMask</h3>
+<pre class="programlisting">struct GwyLayerMask;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyLayerMaskClass"></a><h3>struct GwyLayerMaskClass</h3>
+<pre class="programlisting">struct GwyLayerMaskClass {
+    GwyPixmapLayerClass parent_class;
+
+    void (*reserved1)(void);
+    void (*reserved2)(void);
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyLayerMask.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GwyLayerMask--color-key"></a><h3>The <code class="literal">“color-key”</code> property</h3>
+<pre class="programlisting">  “color-key”                <span class="type">char</span> *</pre>
+<p>The :color-key property is the container key used to identify mask color
+in container.</p>
+<p>Owner: GwyLayerMask</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyLayerMask.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> -- data display widget,
+<a class="link" href="GwyLayerBasic.html" title="GwyLayerBasic"><span class="type">GwyLayerBasic</span></a> -- display data colored with a gradient,
+<a href="../libgwydraw-GwyRGBA.html#GwyRGBA"><span class="type">GwyRGBA</span></a> -- color representation</p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

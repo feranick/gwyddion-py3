@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Gwyddion Application Library Reference Manual: Gwyddion Application Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="next" href="libgwyapp-app.html" title="app">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="book">
+<div class="titlepage">
+<div>
+<div><table class="navigation" id="top" width="100%" cellpadding="2" cellspacing="0"><tr><th valign="middle"><p class="title">Gwyddion Application Library Reference Manual</p></th></tr></table></div>
+<div><p class="releaseinfo">
+  For Gwyddion 2.61.
+  The latest version of this document can be found on-line at
+  <a class="ulink" href="http://gwyddion.net/documentation/libgwyapp/index.php" target="_top">http://gwyddion.net/documentation/libgwyapp/</a>.
+</p></div>
+</div>
+<hr>
+</div>
+<div class="toc"><dl class="toc">
+<dt>
+<span class="refentrytitle"><a href="libgwyapp-app.html">app</a></span><span class="refpurpose"> — Core application interface, window management</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyapp-data-browser.html">data-browser</a></span><span class="refpurpose"> — Data browser</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyDataChooser.html">GwyDataChooser</a></span><span class="refpurpose"> — Data object choosers</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyapp-settings.html">settings</a></span><span class="refpurpose"> — Application and module settings</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyapp-file.html">file</a></span><span class="refpurpose"> — High level file functions</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyapp-filelist.html">filelist</a></span><span class="refpurpose"> — Document history</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyapp-funcuse.html">funcuse</a></span><span class="refpurpose"> — Gather function use statistics</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyResourceEditor.html">GwyResourceEditor</a></span><span class="refpurpose"> — Base/helper class for resource editors</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyapp-GwyGLMaterialEditor.html">GwyGLMaterialEditor</a></span><span class="refpurpose"> — OpenGL material editor</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyapp-GwyGradientEditor.html">GwyGradientEditor</a></span><span class="refpurpose"> — Color gradient editor</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyapp-menu.html">menu</a></span><span class="refpurpose"> — Menu and sensitivity functions</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyapp-meta.html">meta</a></span><span class="refpurpose"> — Metadata browser</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyapp-undo.html">undo</a></span><span class="refpurpose"> — Undo and redo facility</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyapp-help.html">help</a></span><span class="refpurpose"> — User guide access</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyapp-log.html">log</a></span><span class="refpurpose"> — Logging data processing operations</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyapp-logging.html">logging</a></span><span class="refpurpose"> — Program message log</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyParamDef.html">GwyParamDef</a></span><span class="refpurpose"> — Module parameter definitions</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyParams.html">GwyParams</a></span><span class="refpurpose"> — Module parameter value sets</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyParamTable.html">GwyParamTable</a></span><span class="refpurpose"> — User interface for parameter sets</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyDialog.html">GwyDialog</a></span><span class="refpurpose"> — Data processing module dialog</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyTool.html">GwyTool</a></span><span class="refpurpose"> — Base class for tools</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyPlainTool.html">GwyPlainTool</a></span><span class="refpurpose"> — Base class for simple tools</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyapp-module-utils.html">module utils</a></span><span class="refpurpose"> — Module utility functions</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyapp-file-module-utils.html">file module utils</a></span><span class="refpurpose"> — Utility functions for file modules</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyapp-synth-module-utils.html">synth module utils</a></span><span class="refpurpose"> — Helper functions for data synthesis modules</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyResultsExport.html">GwyResultsExport</a></span><span class="refpurpose"> — Controls for value set export</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyapp-Validate.html">Validate</a></span><span class="refpurpose"> — Check data sanity and consistency</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwyapp-wait.html">wait</a></span><span class="refpurpose"> — Informing the world we are busy</span>
+</dt>
+<dt><span class="index"><a href="api-index-all.html">Index of all symbols</a></span></dt>
+<dt><span class="index"><a href="api-index-deprec.html">Index of deprecated symbols</a></span></dt>
+<dt><span class="index"><a href="api-index-2-3.html">Index of new symbols in 2.3</a></span></dt>
+<dt><span class="index"><a href="api-index-2-7.html">Index of new symbols in 2.7</a></span></dt>
+<dt><span class="index"><a href="api-index-2-9.html">Index of new symbols in 2.9</a></span></dt>
+<dt><span class="index"><a href="api-index-2-14.html">Index of new symbols in 2.14</a></span></dt>
+<dt><span class="index"><a href="api-index-2-18.html">Index of new symbols in 2.18</a></span></dt>
+<dt><span class="index"><a href="api-index-2-21.html">Index of new symbols in 2.21</a></span></dt>
+<dt><span class="index"><a href="api-index-2-23.html">Index of new symbols in 2.23</a></span></dt>
+<dt><span class="index"><a href="api-index-2-32.html">Index of new symbols in 2.32</a></span></dt>
+<dt><span class="index"><a href="api-index-2-33.html">Index of new symbols in 2.33</a></span></dt>
+<dt><span class="index"><a href="api-index-2-35.html">Index of new symbols in 2.35</a></span></dt>
+<dt><span class="index"><a href="api-index-2-38.html">Index of new symbols in 2.38</a></span></dt>
+<dt><span class="index"><a href="api-index-2-41.html">Index of new symbols in 2.41</a></span></dt>
+<dt><span class="index"><a href="api-index-2-42.html">Index of new symbols in 2.42</a></span></dt>
+<dt><span class="index"><a href="api-index-2-43.html">Index of new symbols in 2.43</a></span></dt>
+<dt><span class="index"><a href="api-index-2-45.html">Index of new symbols in 2.45</a></span></dt>
+<dt><span class="index"><a href="api-index-2-46.html">Index of new symbols in 2.46</a></span></dt>
+<dt><span class="index"><a href="api-index-2-47.html">Index of new symbols in 2.47</a></span></dt>
+<dt><span class="index"><a href="api-index-2-48.html">Index of new symbols in 2.48</a></span></dt>
+<dt><span class="index"><a href="api-index-2-49.html">Index of new symbols in 2.49</a></span></dt>
+<dt><span class="index"><a href="api-index-2-50.html">Index of new symbols in 2.50</a></span></dt>
+<dt><span class="index"><a href="api-index-2-51.html">Index of new symbols in 2.51</a></span></dt>
+<dt><span class="index"><a href="api-index-2-53.html">Index of new symbols in 2.53</a></span></dt>
+<dt><span class="index"><a href="api-index-2-54.html">Index of new symbols in 2.54</a></span></dt>
+<dt><span class="index"><a href="api-index-2-55.html">Index of new symbols in 2.55</a></span></dt>
+<dt><span class="index"><a href="api-index-2-59.html">Index of new symbols in 2.59</a></span></dt>
+<dt><span class="index"><a href="api-index-2-60.html">Index of new symbols in 2.60</a></span></dt>
+<dt><span class="index"><a href="api-index-2-61.html">Index of new symbols in 2.61</a></span></dt>
+</dl></div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

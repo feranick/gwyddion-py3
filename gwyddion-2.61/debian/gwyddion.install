@@ -1,0 +1,10 @@
+usr/bin/
+usr/lib/*/gwyddion/modules/
+usr/share/man/man1/
+usr/lib/*/gwyddion/perl/
+usr/lib/*/gwyddion/ruby/
+usr/share/man/man3/
+usr/share/applications/
+usr/share/icons
+usr/share/metainfo
+usr/share/doc/gwyddion/plugins

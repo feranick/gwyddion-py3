@@ -1,0 +1,465 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>settings: Gwyddion Application Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="prev" href="GwyDataChooser.html" title="GwyDataChooser">
+<link rel="next" href="libgwyapp-file.html" title="file">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyapp-settings.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="GwyDataChooser.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyapp-file.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyapp-settings"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyapp-settings.top_of_page"></a>settings</span></h2>
+<p>settings — Application and module settings</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyapp-settings.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-settings.html#gwy-app-settings-error-quark" title="gwy_app_settings_error_quark ()">gwy_app_settings_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwyContainer.html#GwyContainer-struct"><span class="returnvalue">GwyContainer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-settings.html#gwy-app-settings-get" title="gwy_app_settings_get ()">gwy_app_settings_get</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-settings.html#gwy-app-settings-free" title="gwy_app_settings_free ()">gwy_app_settings_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-settings.html#gwy-app-settings-save" title="gwy_app_settings_save ()">gwy_app_settings_save</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-settings.html#gwy-app-settings-load" title="gwy_app_settings_load ()">gwy_app_settings_load</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-settings.html#gwy-app-settings-create-config-dir" title="gwy_app_settings_create_config_dir ()">gwy_app_settings_create_config_dir</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-settings.html#gwy-app-settings-get-module-dirs" title="gwy_app_settings_get_module_dirs ()">gwy_app_settings_get_module_dirs</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-settings.html#gwy-app-settings-get-settings-filename" title="gwy_app_settings_get_settings_filename ()">gwy_app_settings_get_settings_filename</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-settings.html#gwy-app-settings-get-log-filename" title="gwy_app_settings_get_log_filename ()">gwy_app_settings_get_log_filename</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-settings.html#gwy-app-settings-get-recent-file-list-filename" title="gwy_app_settings_get_recent_file_list_filename ()">gwy_app_settings_get_recent_file_list_filename</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-settings.html#gwy-app-gl-init" title="gwy_app_gl_init ()">gwy_app_gl_init</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-settings.html#gwy-app-gl-is-ok" title="gwy_app_gl_is_ok ()">gwy_app_gl_is_ok</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-settings.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgwyapp-settings.html#GWY-APP-SETTINGS-ERROR:CAPS" title="GWY_APP_SETTINGS_ERROR">GWY_APP_SETTINGS_ERROR</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgwyapp-settings.html#GwyAppSettingsError" title="enum GwyAppSettingsError">GwyAppSettingsError</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-settings.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;app/gwyapp.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-settings.description"></a><h2>Description</h2>
+<p>All application and module settings are stored in a one big <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> which can be obtained by
+<a class="link" href="libgwyapp-settings.html#gwy-app-settings-get" title="gwy_app_settings_get ()"><code class="function">gwy_app_settings_get()</code></a>. Then you can use <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> functions to get and save settings.</p>
+<p>The rest of the setting manipulating functions is normally useful only in the main application.</p>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-settings.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-app-settings-error-quark"></a><h3>gwy_app_settings_error_quark ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+gwy_app_settings_error_quark (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Returns error domain for application settings operations.</p>
+<p>See and use <a class="link" href="libgwyapp-settings.html#GWY-APP-SETTINGS-ERROR:CAPS" title="GWY_APP_SETTINGS_ERROR"><code class="literal">GWY_APP_SETTINGS_ERROR</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-app-settings-error-quark.returns"></a><h4>Returns</h4>
+<p> The error domain.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-settings-get"></a><h3>gwy_app_settings_get ()</h3>
+<pre class="programlisting"><a href="../GwyContainer.html#GwyContainer-struct"><span class="returnvalue">GwyContainer</span></a> *
+gwy_app_settings_get (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Gets the Gwyddion settings.</p>
+<p>The program settings are a <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> automatically loaded at program startup and saved ad its exit.  For
+storing persistent module data manually you should use <code class="literal">"/module/YOUR_MODULE_NAME/"</code> prefix.
+However, in common cases you should use <a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> and <a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> which can handle the dirty work themselves.</p>
+<div class="refsect3">
+<a name="gwy-app-settings-get.returns"></a><h4>Returns</h4>
+<p> The settings as a <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-settings-free"></a><h3>gwy_app_settings_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_settings_free (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Frees Gwyddion settings.</p>
+<p>Should not be called only by main application.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-settings-save"></a><h3>gwy_app_settings_save ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_app_settings_save (<em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+                       <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Saves the settings.</p>
+<p>Use <a class="link" href="libgwyapp-settings.html#gwy-app-settings-get-settings-filename" title="gwy_app_settings_get_settings_filename ()"><code class="function">gwy_app_settings_get_settings_filename()</code></a> to obtain a suitable default filename.</p>
+<div class="refsect3">
+<a name="gwy-app-settings-save.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>A filename to save the settings to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Location to store loading error to, or <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-settings-save.returns"></a><h4>Returns</h4>
+<p> Whether it succeeded.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-settings-load"></a><h3>gwy_app_settings_load ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_app_settings_load (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Loads settings file.</p>
+<div class="refsect3">
+<a name="gwy-app-settings-load.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>A filename to read settings from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Location to store loading error to, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-settings-load.returns"></a><h4>Returns</h4>
+<p> Whether it succeeded.  In either case you can call <a class="link" href="libgwyapp-settings.html#gwy-app-settings-get" title="gwy_app_settings_get ()"><code class="function">gwy_app_settings_get()</code></a> then to obtain either the loaded
+settings or the old ones (if failed), or an empty <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-settings-create-config-dir"></a><h3>gwy_app_settings_create_config_dir ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_app_settings_create_config_dir (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Create gwyddion config directory.</p>
+<div class="refsect3">
+<a name="gwy-app-settings-create-config-dir.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Location to store loading error to, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-settings-create-config-dir.returns"></a><h4>Returns</h4>
+<p> Whether it succeeded (also returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the directory already
+exists).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-settings-get-module-dirs"></a><h3>gwy_app_settings_get_module_dirs ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **
+gwy_app_settings_get_module_dirs (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Returns a list of directories to search modules in.</p>
+<div class="refsect3">
+<a name="gwy-app-settings-get-module-dirs.returns"></a><h4>Returns</h4>
+<p> The list of module directories as a newly allocated array of newly allocated strings, to be freed with
+<a href="/usr/share/gtk-doc/html/glib/glib-String-Utility-Functions.html#g-strfreev"><code class="function">g_strfreev()</code></a> when not longer needed.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-settings-get-settings-filename"></a><h3>gwy_app_settings_get_settings_filename ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_app_settings_get_settings_filename
+                               (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Returns a suitable human-readable settings file name.</p>
+<div class="refsect3">
+<a name="gwy-app-settings-get-settings-filename.returns"></a><h4>Returns</h4>
+<p> The file name as a newly allocated string.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-settings-get-log-filename"></a><h3>gwy_app_settings_get_log_filename ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_app_settings_get_log_filename (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Returns a suitable log file name.</p>
+<div class="refsect3">
+<a name="gwy-app-settings-get-log-filename.returns"></a><h4>Returns</h4>
+<p> The file name as a newly allocated string.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-settings-get-recent-file-list-filename"></a><h3>gwy_app_settings_get_recent_file_list_filename ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_app_settings_get_recent_file_list_filename
+                               (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Returns a suitable recent file list file name.</p>
+<div class="refsect3">
+<a name="gwy-app-settings-get-recent-file-list-filename.returns"></a><h4>Returns</h4>
+<p> The file name as a newly allocated string.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-gl-init"></a><h3>gwy_app_gl_init ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_app_gl_init (<em class="parameter"><code><span class="type">int</span> *argc</code></em>,
+                 <em class="parameter"><code><span class="type">char</span> ***argv</code></em>);</pre>
+<p>Checks for working OpenGL and initializes it.</p>
+<p>When OpenGL support is not compiled in, this function does not do anything. When OpenGL is supported, it calls
+<code class="function">gtk_gl_init_check()</code> and <a href="../libgwydgets-gwydgets.html#gwy-widgets-gl-init"><code class="function">gwy_widgets_gl_init()</code></a> (if the former succeeeds).</p>
+<div class="refsect3">
+<a name="gwy-app-gl-init.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>argc</p></td>
+<td class="parameter_description"><p>Address of the argc parameter of <code class="function">main()</code>. Passed to <code class="function">gtk_gl_init_check()</code>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>argv</p></td>
+<td class="parameter_description"><p>Address of the argv parameter of <code class="function">main()</code>. Passed to <code class="function">gtk_gl_init_check()</code>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-gl-init.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if OpenGL initialization succeeeded.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-gl-is-ok"></a><h3>gwy_app_gl_is_ok ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_app_gl_is_ok (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Returns OpenGL availability.</p>
+<div class="refsect3">
+<a name="gwy-app-gl-is-ok.returns"></a><h4>Returns</h4>
+<p> The return value is the same as the return value of <a class="link" href="libgwyapp-settings.html#gwy-app-gl-init" title="gwy_app_gl_init ()"><code class="function">gwy_app_gl_init()</code></a> which needs to be called prior to
+this function (until then, the return value is always <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>).</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-settings.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GWY-APP-SETTINGS-ERROR:CAPS"></a><h3>GWY_APP_SETTINGS_ERROR</h3>
+<pre class="programlisting">#define GWY_APP_SETTINGS_ERROR gwy_app_settings_error_quark()
+</pre>
+<p>Error domain for application settings operations. Errors in this domain will be from the <a class="link" href="libgwyapp-settings.html#GwyAppSettingsError" title="enum GwyAppSettingsError"><span class="type">GwyAppSettingsError</span></a>
+enumeration. See <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> for information on error domains.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyAppSettingsError"></a><h3>enum GwyAppSettingsError</h3>
+<p>Error codes returned by application settings functions.</p>
+<div class="refsect3">
+<a name="GwyAppSettingsError.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-APP-SETTINGS-ERROR-FILE:CAPS"></a>GWY_APP_SETTINGS_ERROR_FILE</p></td>
+<td class="enum_member_description">
+<p>Settings file is not readable or writable.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-APP-SETTINGS-ERROR-CORRUPT:CAPS"></a>GWY_APP_SETTINGS_ERROR_CORRUPT</p></td>
+<td class="enum_member_description">
+<p>Settings file contents is corrupted.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-APP-SETTINGS-ERROR-CFGDIR:CAPS"></a>GWY_APP_SETTINGS_ERROR_CFGDIR</p></td>
+<td class="enum_member_description">
+<p>User configuration directory is not readable or writable or it does not exist and
+its creation failed.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-APP-SETTINGS-ERROR-EMPTY:CAPS"></a>GWY_APP_SETTINGS_ERROR_EMPTY</p></td>
+<td class="enum_member_description">
+<p>Settings file is empty (Since 2.45).  This was previously reported as
+<a class="link" href="libgwyapp-settings.html#GWY-APP-SETTINGS-ERROR-CORRUPT:CAPS"><code class="literal">GWY_APP_SETTINGS_ERROR_CORRUPT</code></a> but empty settings files can be overwritten without
+losing anything.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-settings.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a>, <a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> -- a higher level module settings interface</p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

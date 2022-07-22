@@ -1,0 +1,1205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>inttrans: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="libgwyprocess-hough.html" title="hough">
+<link rel="next" href="libgwyprocess-interpolation.html" title="interpolation">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyprocess-inttrans.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyprocess-hough.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyprocess-interpolation.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyprocess-inttrans"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyprocess-inttrans.top_of_page"></a>inttrans</span></h2>
+<p>inttrans — FFT and other integral transforms</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyprocess-inttrans.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-inttrans.html#gwy-fft-find-nice-size" title="gwy_fft_find_nice_size ()">gwy_fft_find_nice_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-inttrans.html#gwy-data-line-fft" title="gwy_data_line_fft ()">gwy_data_line_fft</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-inttrans.html#gwy-data-line-part-fft" title="gwy_data_line_part_fft ()">gwy_data_line_part_fft</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-inttrans.html#gwy-data-line-fft-raw" title="gwy_data_line_fft_raw ()">gwy_data_line_fft_raw</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-inttrans.html#gwy-data-line-zoom-fft" title="gwy_data_line_zoom_fft ()">gwy_data_line_zoom_fft</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-1dfft" title="gwy_data_field_1dfft ()">gwy_data_field_1dfft</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-area-1dfft" title="gwy_data_field_area_1dfft ()">gwy_data_field_area_1dfft</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-1dfft-raw" title="gwy_data_field_1dfft_raw ()">gwy_data_field_1dfft_raw</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-2dfft" title="gwy_data_field_2dfft ()">gwy_data_field_2dfft</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-area-2dfft" title="gwy_data_field_area_2dfft ()">gwy_data_field_area_2dfft</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-2dfft-raw" title="gwy_data_field_2dfft_raw ()">gwy_data_field_2dfft_raw</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-2dfft-humanize" title="gwy_data_field_2dfft_humanize ()">gwy_data_field_2dfft_humanize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-2dfft-dehumanize" title="gwy_data_field_2dfft_dehumanize ()">gwy_data_field_2dfft_dehumanize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-fft-postprocess" title="gwy_data_field_fft_postprocess ()">gwy_data_field_fft_postprocess</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-fft-filter-1d" title="gwy_data_field_fft_filter_1d ()">gwy_data_field_fft_filter_1d</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-cwt" title="gwy_data_field_cwt ()">gwy_data_field_cwt</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-inttrans.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-inttrans.description"></a><h2>Description</h2>
+<p>There are two main groups of FFT functions.</p>
+<p>High-level functions such as <a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-2dfft" title="gwy_data_field_2dfft ()"><code class="function">gwy_data_field_2dfft()</code></a>, <a class="link" href="libgwyprocess-inttrans.html#gwy-data-line-fft" title="gwy_data_line_fft ()"><code class="function">gwy_data_line_fft()</code></a> can perform windowing, leveling and other
+pre- and postprocessing. This makes them suitable for calculation of spectral densities and other statistical
+characteristics.</p>
+<p>Low-level functions have <code class="literal">raw</code> appended to their name: <a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-2dfft-raw" title="gwy_data_field_2dfft_raw ()"><code class="function">gwy_data_field_2dfft_raw()</code></a>,
+<a class="link" href="libgwyprocess-inttrans.html#gwy-data-line-fft-raw" title="gwy_data_line_fft_raw ()"><code class="function">gwy_data_line_fft_raw()</code></a>.  They perform no other operations on the data beside the transform itself. This makes them
+suitable for applications where both forward and inverse transform is performed.</p>
+<p>Both types of functions wrap <a class="ulink" href="http://fftw.org/" target="_top">FFTW3</a> routines.</p>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-inttrans.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-fft-find-nice-size"></a><h3>gwy_fft_find_nice_size ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_fft_find_nice_size (<em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>);</pre>
+<p>Finds a nice-for-FFT array size.</p>
+<p>Here ‘nice’ means three properties are guaranteed: it is greater than or equal to <em class="parameter"><code>size</code></em>
+; it can be directly used
+with current FFT backend without scaling (since 2.8 this is true for any size); and the transform is fast, i.e. the
+number is highly factorable.</p>
+<p>To be compatible with Gwyddion &lt;= 2.7 one has to pass only data fields and lines with sizes returned by this
+function to raw integral transforms. Otherwise this function is mainly useful if you extend and pad the input data
+for other reasons and thus have the freedom to choose a convenient transform size.</p>
+<div class="refsect3">
+<a name="gwy-fft-find-nice-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Transform size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-fft-find-nice-size.returns"></a><h4>Returns</h4>
+<p> A nice FFT array size.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-fft"></a><h3>gwy_data_line_fft ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_line_fft (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *rsrc</code></em>,
+                   <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *isrc</code></em>,
+                   <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *rdest</code></em>,
+                   <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *idest</code></em>,
+                   <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyWindowingType" title="enum GwyWindowingType"><span class="type">GwyWindowingType</span></a> windowing</code></em>,
+                   <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyTransformDirection" title="enum GwyTransformDirection"><span class="type">GwyTransformDirection</span></a> direction</code></em>,
+                   <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interpolation</code></em>,
+                   <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> preserverms</code></em>,
+                   <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> level</code></em>);</pre>
+<p>Calculates Fast Fourier Transform of a data line.</p>
+<p>A windowing or data leveling can be applied if requested.</p>
+<div class="refsect3">
+<a name="gwy-data-line-fft.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rsrc</p></td>
+<td class="parameter_description"><p>Real input data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>isrc</p></td>
+<td class="parameter_description"><p>Imaginary input data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rdest</p></td>
+<td class="parameter_description"><p>Real output data line.  It will be resized to the size of the input data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>idest</p></td>
+<td class="parameter_description"><p>Imaginary output data line.  It will be resized to the size of the input data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>windowing</p></td>
+<td class="parameter_description"><p>Windowing mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>FFT direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>Interpolation type. Ignored since 2.8 as no resampling is performed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>preserverms</p></td>
+<td class="parameter_description"><p><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to preserve RMS value while windowing.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>level</p></td>
+<td class="parameter_description"><p>0 to perform no leveling, 1 to subtract mean value, 2 to subtract line (the number can be interpreted as
+the first polynomial degree to keep, but only the enumerated three values are available).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-part-fft"></a><h3>gwy_data_line_part_fft ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_line_part_fft (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *rsrc</code></em>,
+                        <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *isrc</code></em>,
+                        <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *rdest</code></em>,
+                        <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *idest</code></em>,
+                        <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> from</code></em>,
+                        <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> len</code></em>,
+                        <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyWindowingType" title="enum GwyWindowingType"><span class="type">GwyWindowingType</span></a> windowing</code></em>,
+                        <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyTransformDirection" title="enum GwyTransformDirection"><span class="type">GwyTransformDirection</span></a> direction</code></em>,
+                        <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interpolation</code></em>,
+                        <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> preserverms</code></em>,
+                        <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> level</code></em>);</pre>
+<p>Calculates Fast Fourier Transform of a part of a data line.</p>
+<p>A windowing or data leveling can be applied if requested.</p>
+<div class="refsect3">
+<a name="gwy-data-line-part-fft.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rsrc</p></td>
+<td class="parameter_description"><p>Real input data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>isrc</p></td>
+<td class="parameter_description"><p>Imaginary input data line. Since 2.7 it can be <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for real-to-complex transforms.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rdest</p></td>
+<td class="parameter_description"><p>Real output data line, it will be resized to <em class="parameter"><code>len</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>idest</p></td>
+<td class="parameter_description"><p>Imaginary output data line, it will be resized to <em class="parameter"><code>len</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from</p></td>
+<td class="parameter_description"><p>The index in input lines to start from (inclusive).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>len</p></td>
+<td class="parameter_description"><p>Lenght of data line part, it must be at least 2.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>windowing</p></td>
+<td class="parameter_description"><p>Windowing mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>FFT direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>Interpolation type. Ignored since 2.8 as no resampling is performed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>preserverms</p></td>
+<td class="parameter_description"><p><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to preserve RMS value while windowing.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>level</p></td>
+<td class="parameter_description"><p>0 to perform no leveling, 1 to subtract mean value, 2 to subtract line (the number can be interpreted as
+the first polynomial degree to keep, but only the enumerated three values are available).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-fft-raw"></a><h3>gwy_data_line_fft_raw ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_line_fft_raw (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *rsrc</code></em>,
+                       <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *isrc</code></em>,
+                       <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *rdest</code></em>,
+                       <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *idest</code></em>,
+                       <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyTransformDirection" title="enum GwyTransformDirection"><span class="type">GwyTransformDirection</span></a> direction</code></em>);</pre>
+<p>Calculates Fast Fourier Transform of a data line.</p>
+<p>No leveling, windowing nor scaling is performed.</p>
+<p>The normalisation of FFT is symmetrical, so transformations in both directions are unitary.</p>
+<p>Since 2.8 the dimensions need not to be from the set of sizes returned by <a class="link" href="libgwyprocess-inttrans.html#gwy-fft-find-nice-size" title="gwy_fft_find_nice_size ()"><code class="function">gwy_fft_find_nice_size()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-data-line-fft-raw.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rsrc</p></td>
+<td class="parameter_description"><p>Real input data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>isrc</p></td>
+<td class="parameter_description"><p>Imaginary input data line.  Since 2.7 it can be <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for real-to-complex transform.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rdest</p></td>
+<td class="parameter_description"><p>Real output data line.  It will be resized to the size of the input data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>idest</p></td>
+<td class="parameter_description"><p>Imaginary output data line.  It will be resized to the size of the input data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>FFT direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-1.html#api-index-2.1">2.1</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-zoom-fft"></a><h3>gwy_data_line_zoom_fft ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_line_zoom_fft (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *rsrc</code></em>,
+                        <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *isrc</code></em>,
+                        <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *rdest</code></em>,
+                        <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *idest</code></em>,
+                        <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> m</code></em>,
+                        <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> f0</code></em>,
+                        <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> f1</code></em>);</pre>
+<p>Computes Zoom FFT of a data line.</p>
+<p>The output is DFTs, but computed for an arbitrary linear sequence of frequencies. The frequencies do not have to
+be in any relation to the data sampling step.</p>
+<p>The first item of output corresponds exactly to <em class="parameter"><code>f0</code></em>
+ and the last exactly to <em class="parameter"><code>f1</code></em>
+.  So the frequency sampling step
+will be (<em class="parameter"><code>f1</code></em>
+ − <em class="parameter"><code>f0</code></em>
+)/(<em class="parameter"><code>m</code></em>
+ − 1), instead of the more usual division by <em class="parameter"><code>m</code></em>
+. To follow the usual Gwyddion conventions,
+the output data line real size will be (<em class="parameter"><code>f1</code></em>
+ − <em class="parameter"><code>f0</code></em>
+)/(<em class="parameter"><code>m</code></em>
+ − 1)*<em class="parameter"><code>m</code></em>
+. If it seems confusing, just take the output as
+indexed by integers and work with that.</p>
+<p>Frequency step of one corresponds to the normal DFT frequency step. Therefore, passing <em class="parameter"><code>f0</code></em>
+=0, <em class="parameter"><code>f1</code></em>
+=<em class="parameter"><code>n</code></em>
+-1 (where <em class="parameter"><code>rsrc</code></em>
+
+has <em class="parameter"><code>n</code></em>
+ points) and <em class="parameter"><code>m</code></em>
+=<em class="parameter"><code>n</code></em>
+ reproduces FFT, except more slowly. The result is normalised as raw FFT and the units
+of the output data lines are unchanged.</p>
+<p>The transform direction is always forward.</p>
+<div class="refsect3">
+<a name="gwy-data-line-zoom-fft.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rsrc</p></td>
+<td class="parameter_description"><p>Real input data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>isrc</p></td>
+<td class="parameter_description"><p>Imaginary input data line.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for real-to-complex transform.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rdest</p></td>
+<td class="parameter_description"><p>Real output data line.  It will be resized to <em class="parameter"><code>m</code></em>
+samples.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>idest</p></td>
+<td class="parameter_description"><p>Imaginary output data line.  It will be resized to <em class="parameter"><code>m</code></em>
+samples.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>f0</p></td>
+<td class="parameter_description"><p>The first spatial frequency, measured in DFT frequency steps.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>f1</p></td>
+<td class="parameter_description"><p>The last spatial frequency, measured in DFT frequency steps.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>m</p></td>
+<td class="parameter_description"><p>The number of frequencies to compute. It must be at least 2.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-61.html#api-index-2.61">2.61</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-1dfft"></a><h3>gwy_data_field_1dfft ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_1dfft (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *rin</code></em>,
+                      <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *iin</code></em>,
+                      <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *rout</code></em>,
+                      <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *iout</code></em>,
+                      <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyOrientation" title="enum GwyOrientation"><span class="type">GwyOrientation</span></a> orientation</code></em>,
+                      <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyWindowingType" title="enum GwyWindowingType"><span class="type">GwyWindowingType</span></a> windowing</code></em>,
+                      <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyTransformDirection" title="enum GwyTransformDirection"><span class="type">GwyTransformDirection</span></a> direction</code></em>,
+                      <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interpolation</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> preserverms</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> level</code></em>);</pre>
+<p>Transforms all rows or columns in a data field with Fast Fourier Transform.</p>
+<p>If requested a windowing and/or leveling is applied to preprocess data to obtain reasonable results.</p>
+<div class="refsect3">
+<a name="gwy-data-field-1dfft.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rin</p></td>
+<td class="parameter_description"><p>Real input data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iin</p></td>
+<td class="parameter_description"><p>Imaginary input data field.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for real-to-complex transform which can be somewhat faster than
+complex-to-complex transform.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rout</p></td>
+<td class="parameter_description"><p>Real output data field, it will be resized to area size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iout</p></td>
+<td class="parameter_description"><p>Imaginary output data field, it will be resized to area size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>orientation</p></td>
+<td class="parameter_description"><p>Orientation: pass <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-ORIENTATION-HORIZONTAL:CAPS"><code class="literal">GWY_ORIENTATION_HORIZONTAL</code></a> to transform rows, <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-ORIENTATION-VERTICAL:CAPS"><code class="literal">GWY_ORIENTATION_VERTICAL</code></a> to
+transform columns.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>windowing</p></td>
+<td class="parameter_description"><p>Windowing type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>FFT direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>Interpolation type. Ignored since 2.8 as no resampling is performed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>preserverms</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to preserve RMS while windowing.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>level</p></td>
+<td class="parameter_description"><p>0 to perform no leveling, 1 to subtract mean value, 2 to subtract line (the number can be interpreted as
+the first polynomial degree to keep, but only the enumerated three values are available).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-1dfft"></a><h3>gwy_data_field_area_1dfft ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_1dfft (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *rin</code></em>,
+                           <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *iin</code></em>,
+                           <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *rout</code></em>,
+                           <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *iout</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                           <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyOrientation" title="enum GwyOrientation"><span class="type">GwyOrientation</span></a> orientation</code></em>,
+                           <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyWindowingType" title="enum GwyWindowingType"><span class="type">GwyWindowingType</span></a> windowing</code></em>,
+                           <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyTransformDirection" title="enum GwyTransformDirection"><span class="type">GwyTransformDirection</span></a> direction</code></em>,
+                           <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interpolation</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> preserverms</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> level</code></em>);</pre>
+<p>Transforms all rows or columns in a rectangular part of a data field with Fast Fourier Transform.</p>
+<p>If requested a windowing and/or leveling is applied to preprocess data to obtain reasonable results.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-1dfft.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rin</p></td>
+<td class="parameter_description"><p>Real input data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iin</p></td>
+<td class="parameter_description"><p>Imaginary input data field.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for real-to-complex transform which can be somewhat faster than
+complex-to-complex transform.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rout</p></td>
+<td class="parameter_description"><p>Real output data field, it will be resized to area size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iout</p></td>
+<td class="parameter_description"><p>Imaginary output data field, it will be resized to area size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns), must be at least 2 for horizontal transforms.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows), must be at least 2 for vertical transforms.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>orientation</p></td>
+<td class="parameter_description"><p>Orientation: pass <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-ORIENTATION-HORIZONTAL:CAPS"><code class="literal">GWY_ORIENTATION_HORIZONTAL</code></a> to transform rows, <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-ORIENTATION-VERTICAL:CAPS"><code class="literal">GWY_ORIENTATION_VERTICAL</code></a> to
+transform columns.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>windowing</p></td>
+<td class="parameter_description"><p>Windowing type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>FFT direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>Interpolation type. Ignored since 2.8 as no resampling is performed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>preserverms</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to preserve RMS while windowing.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>level</p></td>
+<td class="parameter_description"><p>0 to perform no leveling, 1 to subtract mean value, 2 to subtract lines (the number can be interpreted as
+the first polynomial degree to keep, but only the enumerated three values are available).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-1dfft-raw"></a><h3>gwy_data_field_1dfft_raw ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_1dfft_raw (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *rin</code></em>,
+                          <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *iin</code></em>,
+                          <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *rout</code></em>,
+                          <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *iout</code></em>,
+                          <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyOrientation" title="enum GwyOrientation"><span class="type">GwyOrientation</span></a> orientation</code></em>,
+                          <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyTransformDirection" title="enum GwyTransformDirection"><span class="type">GwyTransformDirection</span></a> direction</code></em>);</pre>
+<p>Transforms all rows or columns in a data field with Fast Fourier Transform.</p>
+<p>No leveling, windowing nor scaling is performed.</p>
+<p>The normalisation of FFT is symmetrical, so transformations in both directions are unitary.</p>
+<p>Since 2.8 the dimensions need not to be from the set of sizes returned by <a class="link" href="libgwyprocess-inttrans.html#gwy-fft-find-nice-size" title="gwy_fft_find_nice_size ()"><code class="function">gwy_fft_find_nice_size()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-data-field-1dfft-raw.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rin</p></td>
+<td class="parameter_description"><p>Real input data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iin</p></td>
+<td class="parameter_description"><p>Imaginary input data field.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for real-to-complex transform.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rout</p></td>
+<td class="parameter_description"><p>Real output data field, it will be resized to <em class="parameter"><code>rin</code></em>
+size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iout</p></td>
+<td class="parameter_description"><p>Imaginary output data field, it will be resized to <em class="parameter"><code>rin</code></em>
+size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>orientation</p></td>
+<td class="parameter_description"><p>Orientation: pass <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-ORIENTATION-HORIZONTAL:CAPS"><code class="literal">GWY_ORIENTATION_HORIZONTAL</code></a> to transform rows, <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-ORIENTATION-VERTICAL:CAPS"><code class="literal">GWY_ORIENTATION_VERTICAL</code></a> to
+transform columns.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>FFT direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-1.html#api-index-2.1">2.1</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-2dfft"></a><h3>gwy_data_field_2dfft ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_2dfft (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *rin</code></em>,
+                      <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *iin</code></em>,
+                      <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *rout</code></em>,
+                      <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *iout</code></em>,
+                      <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyWindowingType" title="enum GwyWindowingType"><span class="type">GwyWindowingType</span></a> windowing</code></em>,
+                      <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyTransformDirection" title="enum GwyTransformDirection"><span class="type">GwyTransformDirection</span></a> direction</code></em>,
+                      <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interpolation</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> preserverms</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> level</code></em>);</pre>
+<p>Calculates 2D Fast Fourier Transform of a rectangular a data field.</p>
+<p>If requested a windowing and/or leveling is applied to preprocess data to obtain reasonable results.</p>
+<p>Lateral dimensions, offsets and units are unchanged.  See <a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-fft-postprocess" title="gwy_data_field_fft_postprocess ()"><code class="function">gwy_data_field_fft_postprocess()</code></a> for that.</p>
+<div class="refsect3">
+<a name="gwy-data-field-2dfft.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rin</p></td>
+<td class="parameter_description"><p>Real input data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iin</p></td>
+<td class="parameter_description"><p>Imaginary input data field.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for real-to-complex transform which can be somewhat faster than
+complex-to-complex transform.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rout</p></td>
+<td class="parameter_description"><p>Real output data field, it will be resized to area size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iout</p></td>
+<td class="parameter_description"><p>Imaginary output data field, it will be resized to area size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>windowing</p></td>
+<td class="parameter_description"><p>Windowing type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>FFT direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>Interpolation type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>preserverms</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to preserve RMS while windowing.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>level</p></td>
+<td class="parameter_description"><p>0 to perform no leveling, 1 to subtract mean value, 2 to subtract plane (the number can be interpreted as
+the first polynomial degree to keep, but only the enumerated three values are available).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-2dfft"></a><h3>gwy_data_field_area_2dfft ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_2dfft (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *rin</code></em>,
+                           <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *iin</code></em>,
+                           <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *rout</code></em>,
+                           <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *iout</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                           <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyWindowingType" title="enum GwyWindowingType"><span class="type">GwyWindowingType</span></a> windowing</code></em>,
+                           <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyTransformDirection" title="enum GwyTransformDirection"><span class="type">GwyTransformDirection</span></a> direction</code></em>,
+                           <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interpolation</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> preserverms</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> level</code></em>);</pre>
+<p>Calculates 2D Fast Fourier Transform of a rectangular area of a data field.</p>
+<p>If requested a windowing and/or leveling is applied to preprocess data to
+obtain reasonable results.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-2dfft.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rin</p></td>
+<td class="parameter_description"><p>Real input data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iin</p></td>
+<td class="parameter_description"><p>Imaginary input data field.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for real-to-complex transform which can be somewhat faster than
+complex-to-complex transform.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rout</p></td>
+<td class="parameter_description"><p>Real output data field, it will be resized to area size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iout</p></td>
+<td class="parameter_description"><p>Imaginary output data field, it will be resized to area size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns), must be at least 2.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows), must be at least 2.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>windowing</p></td>
+<td class="parameter_description"><p>Windowing type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>FFT direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>Interpolation type. Ignored since 2.8 as no resampling is performed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>preserverms</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to preserve RMS while windowing.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>level</p></td>
+<td class="parameter_description"><p>0 to perform no leveling, 1 to subtract mean value, 2 to subtract plane (the number can be interpreted as
+the first polynomial degree to keep, but only the enumerated three values are available).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-2dfft-raw"></a><h3>gwy_data_field_2dfft_raw ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_2dfft_raw (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *rin</code></em>,
+                          <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *iin</code></em>,
+                          <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *rout</code></em>,
+                          <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *iout</code></em>,
+                          <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyTransformDirection" title="enum GwyTransformDirection"><span class="type">GwyTransformDirection</span></a> direction</code></em>);</pre>
+<p>Calculates 2D Fast Fourier Transform of a data field.</p>
+<p>No leveling, windowing nor scaling is performed.</p>
+<p>The normalisation of FFT is symmetrical, so transformations in both directions are unitary.</p>
+<p>Since 2.8 the dimensions need not to be from the set of sizes returned by <a class="link" href="libgwyprocess-inttrans.html#gwy-fft-find-nice-size" title="gwy_fft_find_nice_size ()"><code class="function">gwy_fft_find_nice_size()</code></a>.</p>
+<p>Lateral dimensions, offsets and units are unchanged.  See <a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-fft-postprocess" title="gwy_data_field_fft_postprocess ()"><code class="function">gwy_data_field_fft_postprocess()</code></a> for that.</p>
+<p>Since 2.53 <em class="parameter"><code>iout</code></em>
+ can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for complex-to-real transforms.  Note that this means Hermitean symmetry of the input
+data is assumed, i.e. about half of the input is ignored.  If you want to extract the real part of a complex
+transform, you must pass a non-<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> <em class="parameter"><code>iout</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-data-field-2dfft-raw.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rin</p></td>
+<td class="parameter_description"><p>Real input data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iin</p></td>
+<td class="parameter_description"><p>Imaginary input data field.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for real-to-complex transform.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rout</p></td>
+<td class="parameter_description"><p>Real output data field, it will be resized to <em class="parameter"><code>rin</code></em>
+size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iout</p></td>
+<td class="parameter_description"><p>Imaginary output data field, it will be resized to <em class="parameter"><code>rin</code></em>
+size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>FFT direction.  It should be <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-TRANSFORM-DIRECTION-FORWARD:CAPS"><code class="literal">GWY_TRANSFORM_DIRECTION_FORWARD</code></a> for real-to-complex transforms and
+<a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-TRANSFORM-DIRECTION-BACKWARD:CAPS"><code class="literal">GWY_TRANSFORM_DIRECTION_BACKWARD</code></a> for complex-to-real transforms.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-1.html#api-index-2.1">2.1</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-2dfft-humanize"></a><h3>gwy_data_field_2dfft_humanize ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_2dfft_humanize (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>);</pre>
+<p>Rearranges 2D FFT output to a human-friendly form.</p>
+<p>Top-left, top-right, bottom-left and bottom-right sub-rectangles are swapped to obtain a humanized 2D FFT output
+with (0,0) in the centre.</p>
+<p>More precisely, for even field dimensions the equally-sized blocks starting with the Nyquist frequency and with the
+zero frequency (constant component) will exchange places.  For odd field dimensions, the block containing the zero
+frequency is one item larger and the constant component will actually end up in the exact centre.</p>
+<p>Also note if both dimensions are even, this function is involutory and identical to
+<a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-2dfft-dehumanize" title="gwy_data_field_2dfft_dehumanize ()"><code class="function">gwy_data_field_2dfft_dehumanize()</code></a>.  However, if any dimension is odd, <a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-2dfft-humanize" title="gwy_data_field_2dfft_humanize ()"><code class="function">gwy_data_field_2dfft_humanize()</code></a> and
+<a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-2dfft-dehumanize" title="gwy_data_field_2dfft_dehumanize ()"><code class="function">gwy_data_field_2dfft_dehumanize()</code></a> are different, therefore they must be paired properly.</p>
+<div class="refsect3">
+<a name="gwy-data-field-2dfft-humanize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-2dfft-dehumanize"></a><h3>gwy_data_field_2dfft_dehumanize ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_2dfft_dehumanize (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>);</pre>
+<p>Rearranges 2D FFT output back from the human-friendly form.</p>
+<p>Top-left, top-right, bottom-left and bottom-right sub-rectangles are swapped to reshuffle a humanized 2D FFT output
+back into the natural positions.</p>
+<p>See <a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-2dfft-humanize" title="gwy_data_field_2dfft_humanize ()"><code class="function">gwy_data_field_2dfft_humanize()</code></a> for discussion.</p>
+<div class="refsect3">
+<a name="gwy-data-field-2dfft-dehumanize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-fft-postprocess"></a><h3>gwy_data_field_fft_postprocess ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_fft_postprocess (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> humanize</code></em>);</pre>
+<p>Updates units, dimensions and offsets for a 2D FFT-processed field.</p>
+<p>The field is expected to have dimensions and units of the original direct-space data.  The lateral units and
+resolutions are updated to correspond to its Fourier transform.</p>
+<p>The real dimensions are set for spatial frequencies, not wavevectors. For wavevector lateral coordinates, mutiply
+all real dimensions and offsets by 2*<a href="/usr/share/gtk-doc/html/glib/glib-Numerical-Definitions.html#G-PI:CAPS"><code class="literal">G_PI</code></a>.</p>
+<p>If <em class="parameter"><code>humanize</code></em>
+ is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> <a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-2dfft-humanize" title="gwy_data_field_2dfft_humanize ()"><code class="function">gwy_data_field_2dfft_humanize()</code></a> is applied to the field data and the lateral offsets are set
+accordingly.  Otherwise the offsets are cleared.</p>
+<p>Value units are kept intact.</p>
+<div class="refsect3">
+<a name="gwy-data-field-fft-postprocess.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>humanize</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to rearrange data to have the frequency origin in the centre.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-38.html#api-index-2.38">2.38</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-fft-filter-1d"></a><h3>gwy_data_field_fft_filter_1d ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_fft_filter_1d (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                              <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *result_field</code></em>,
+                              <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *weights</code></em>,
+                              <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyOrientation" title="enum GwyOrientation"><span class="type">GwyOrientation</span></a> orientation</code></em>,
+                              <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interpolation</code></em>);</pre>
+<p>Performs 1D FFT filtering of a data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-fft-filter-1d.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to filter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result_field</p></td>
+<td class="parameter_description"><p>A data field to store the result to.  It will be resampled to <em class="parameter"><code>data_field</code></em>
+'s size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>weights</p></td>
+<td class="parameter_description"><p>Filter weights for the lower half of the spectrum (the other half is symmetric).  Its size can be
+arbitrary, it will be interpolated.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>orientation</p></td>
+<td class="parameter_description"><p>Filter direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>The interpolation to use for resampling.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-cwt"></a><h3>gwy_data_field_cwt ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_cwt (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                    <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interpolation</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> scale</code></em>,
+                    <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#Gwy2DCWTWaveletType" title="enum Gwy2DCWTWaveletType"><span class="type">Gwy2DCWTWaveletType</span></a> wtype</code></em>);</pre>
+<p>Computes a continuous wavelet transform (CWT) at given scale and using given wavelet.</p>
+<div class="refsect3">
+<a name="gwy-data-field-cwt.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>Interpolation type. Ignored since 2.8 as no resampling is performed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>scale</p></td>
+<td class="parameter_description"><p>Wavelet scale.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>wtype</p></td>
+<td class="parameter_description"><p>Wavelet type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

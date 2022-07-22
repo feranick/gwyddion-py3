@@ -1,0 +1,2289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyResults: Gwyddion Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="prev" href="GwyStringList.html" title="GwyStringList">
+<link rel="next" href="libgwyddion-gwymd5.html" title="gwymd5">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyResults.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyResults.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="GwyStringList.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyddion-gwymd5.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyResults"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyResults.top_of_page"></a>GwyResults</span></h2>
+<p>GwyResults — Reported set of scalar results</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyResults.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyResults.html" title="GwyResults"><span class="returnvalue">GwyResults</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-new" title="gwy_results_new ()">gwy_results_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyResults.html" title="GwyResults"><span class="returnvalue">GwyResults</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-copy" title="gwy_results_copy ()">gwy_results_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-add-header" title="gwy_results_add_header ()">gwy_results_add_header</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-add-separator" title="gwy_results_add_separator ()">gwy_results_add_separator</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-add-value" title="gwy_results_add_value ()">gwy_results_add_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-add-format" title="gwy_results_add_format ()">gwy_results_add_format</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-add-value-str" title="gwy_results_add_value_str ()">gwy_results_add_value_str</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-add-value-x" title="gwy_results_add_value_x ()">gwy_results_add_value_x</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-add-value-y" title="gwy_results_add_value_y ()">gwy_results_add_value_y</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-add-value-z" title="gwy_results_add_value_z ()">gwy_results_add_value_z</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-add-value-plain" title="gwy_results_add_value_plain ()">gwy_results_add_value_plain</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-add-value-int" title="gwy_results_add_value_int ()">gwy_results_add_value_int</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-add-value-angle" title="gwy_results_add_value_angle ()">gwy_results_add_value_angle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-add-value-percents" title="gwy_results_add_value_percents ()">gwy_results_add_value_percents</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-add-value-yesno" title="gwy_results_add_value_yesno ()">gwy_results_add_value_yesno</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-add-covariance-matrix" title="gwy_results_add_covariance_matrix ()">gwy_results_add_covariance_matrix</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-add-covariance-matrixv" title="gwy_results_add_covariance_matrixv ()">gwy_results_add_covariance_matrixv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-bind-formats" title="gwy_results_bind_formats ()">gwy_results_bind_formats</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-unbind-formats" title="gwy_results_unbind_formats ()">gwy_results_unbind_formats</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-set-unit" title="gwy_results_set_unit ()">gwy_results_set_unit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-set-unit-str" title="gwy_results_set_unit_str ()">gwy_results_set_unit_str</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-fill-values" title="gwy_results_fill_values ()">gwy_results_fill_values</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-fill-values-with-errors" title="gwy_results_fill_values_with_errors ()">gwy_results_fill_values_with_errors</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-fill-format" title="gwy_results_fill_format ()">gwy_results_fill_format</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-fill-covariance-matrix" title="gwy_results_fill_covariance_matrix ()">gwy_results_fill_covariance_matrix</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-set-na" title="gwy_results_set_na ()">gwy_results_set_na</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-set-nav" title="gwy_results_set_nav ()">gwy_results_set_nav</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-create-report" title="gwy_results_create_report ()">gwy_results_create_report</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-get-label" title="gwy_results_get_label ()">gwy_results_get_label</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-get-symbol" title="gwy_results_get_symbol ()">gwy_results_get_symbol</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-get-label-with-symbol" title="gwy_results_get_label_with_symbol ()">gwy_results_get_label_with_symbol</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-get-value" title="gwy_results_get_value ()">gwy_results_get_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-get-error" title="gwy_results_get_error ()">gwy_results_get_error</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-get-value-with-error" title="gwy_results_get_value_with_error ()">gwy_results_get_value_with_error</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-get-units" title="gwy_results_get_units ()">gwy_results_get_units</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-get-full" title="gwy_results_get_full ()">gwy_results_get_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-results-value-is-na" title="gwy_results_value_is_na ()">gwy_results_value_is_na</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-format-result-table-row" title="gwy_format_result_table_row ()">gwy_format_result_table_row</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-format-result-table-rowv" title="gwy_format_result_table_rowv ()">gwy_format_result_table_rowv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-format-result-table-strings" title="gwy_format_result_table_strings ()">gwy_format_result_table_strings</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-format-result-table-stringsv" title="gwy_format_result_table_stringsv ()">gwy_format_result_table_stringsv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResults.html#gwy-format-result-table-mixed" title="gwy_format_result_table_mixed ()">gwy_format_result_table_mixed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyResults.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GwyResults.html#GwyResultsValueType" title="enum GwyResultsValueType">GwyResultsValueType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GwyResults.html#GwyResultsReportType" title="enum GwyResultsReportType">GwyResultsReportType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyResults.html#GwyResults-struct" title="struct GwyResults">GwyResults</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyResults.html#GwyResultsClass" title="struct GwyResultsClass">GwyResultsClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyResults.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> GwyResults
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyResults.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwyddion/gwyddion.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyResults.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> is a helper for formatting ordered sets of scalar values for display and reports.</p>
+<p>After creation, add rows with values to the report with functions such as <a class="link" href="GwyResults.html#gwy-results-add-value" title="gwy_results_add_value ()"><code class="function">gwy_results_add_value()</code></a>.  Simplified
+functions exists for common cases.  A value which have the dimension of <em class="parameter"><code>x</code></em>
+ can be added using
+<a class="link" href="GwyResults.html#gwy-results-add-value-x" title="gwy_results_add_value_x ()"><code class="function">gwy_results_add_value_x()</code></a>.  There are functions for angles, percentages, yes/no values, etc. and also report
+headers (sections) and separators.</p>
+<p>Each value has a string <em class="parameter"><code>id</code></em>
+ which can be used later to refer to it in functions such as <a class="link" href="GwyResults.html#gwy-results-set-na" title="gwy_results_set_na ()"><code class="function">gwy_results_set_na()</code></a>
+(marking a value not available) or <a class="link" href="GwyResults.html#gwy-results-get-value" title="gwy_results_get_value ()"><code class="function">gwy_results_get_value()</code></a> (getting formatted value for display).</p>
+<p>Normal values also have units.  You can give a fixed unit string using the "unit-str" parameter of
+<a class="link" href="GwyResults.html#gwy-results-add-value" title="gwy_results_add_value ()"><code class="function">gwy_results_add_value()</code></a>.  However, usually one specifies just the dimensionality by passing "power-x", "power-y",
+etc. parameters (or implicitly using function like <a class="link" href="GwyResults.html#gwy-results-add-value-x" title="gwy_results_add_value_x ()"><code class="function">gwy_results_add_value_x()</code></a>). The units of <em class="parameter"><code>x</code></em>
+ are then set with
+<a class="link" href="GwyResults.html#gwy-results-set-unit" title="gwy_results_set_unit ()"><code class="function">gwy_results_set_unit()</code></a> with unit name "x" and <a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> derives the units of individual values itself.</p>
+<p>Once <a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> is set up, numeric values can be filled using <a class="link" href="GwyResults.html#gwy-results-fill-values" title="gwy_results_fill_values ()"><code class="function">gwy_results_fill_values()</code></a> or its alternatives.  You
+can then obtain individual values formatted for display using <a class="link" href="GwyResults.html#gwy-results-get-value" title="gwy_results_get_value ()"><code class="function">gwy_results_get_value()</code></a>, <a class="link" href="GwyResults.html#gwy-results-get-full" title="gwy_results_get_full ()"><code class="function">gwy_results_get_full()</code></a>, etc.
+Or you can format an entire report with all the values using <a class="link" href="GwyResults.html#gwy-results-create-report" title="gwy_results_create_report ()"><code class="function">gwy_results_create_report()</code></a> -- this is useful for
+saving the report to a text file.  This can be repeated any number of times.</p>
+<p>The labels passed during construction must persist through the <a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> lifetime.  They should be essentially
+always static translatable strings marked with <a class="link" href="libgwyddion-gwymacros.html#N-:CAPS" title="N_()"><code class="function">N_()</code></a>, but left untranslated.</p>
+<p>Filling values is relatively cheap and does not invoke any formatting. Formatting only happens when strings or
+reports are actually requested, and then all values are formatted at once (and remembered).  Therefore, an
+efficient usage of <a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> is to fill all values first and then request whichever formatted values you want.
+Do not set and format values one by one (it would also prevent format binding from working in any useful way).</p>
+</div>
+<div class="refsect1">
+<a name="GwyResults.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-results-new"></a><h3>gwy_results_new ()</h3>
+<pre class="programlisting"><a class="link" href="GwyResults.html" title="GwyResults"><span class="returnvalue">GwyResults</span></a> *
+gwy_results_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new empty set of reported scalar values.</p>
+<div class="refsect3">
+<a name="gwy-results-new.returns"></a><h4>Returns</h4>
+<p> A new set of reported scalar values.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-copy"></a><h3>gwy_results_copy ()</h3>
+<pre class="programlisting"><a class="link" href="GwyResults.html" title="GwyResults"><span class="returnvalue">GwyResults</span></a> *
+gwy_results_copy (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>);</pre>
+<p>Creates a copy of a set of reported scalar values.</p>
+<div class="refsect3">
+<a name="gwy-results-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-results-copy.returns"></a><h4>Returns</h4>
+<p> A new <a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> which is an exact copy of <em class="parameter"><code>results</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-add-header"></a><h3>gwy_results_add_header ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_add_header (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                        <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>);</pre>
+<p>Appends a header line to the set of reported scalar values.</p>
+<div class="refsect3">
+<a name="gwy-results-add-header.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>Header text (untranslated).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-add-separator"></a><h3>gwy_results_add_separator ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_add_separator (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>);</pre>
+<p>Appends a separator line to the set of reported scalar values.</p>
+<div class="refsect3">
+<a name="gwy-results-add-separator.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-add-value"></a><h3>gwy_results_add_value ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_add_value (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                       <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                       <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>,
+                       <em class="parameter"><code>...</code></em>);</pre>
+<p>Appends a general value line to a set of reported scalar values.</p>
+<p>Possible keys include:</p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="literal">"type"</code>, value type (<a class="link" href="GwyResults.html#GwyResultsValueType" title="enum GwyResultsValueType"><span class="type">GwyResultsValueType</span></a>)</td></tr>
+<tr><td>
+<code class="literal">"power-t"</code>, power of unit <em class="parameter"><code>t</code></em> (<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>)</td></tr>
+<tr><td>
+<code class="literal">"power-u"</code>, power of unit <em class="parameter"><code>u</code></em> (<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>, since 2.52)</td></tr>
+<tr><td>
+<code class="literal">"power-v"</code>, power of unit <em class="parameter"><code>v</code></em> (<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>, since 2.52)</td></tr>
+<tr><td>
+<code class="literal">"power-x"</code>, power of unit <em class="parameter"><code>x</code></em> (<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>)</td></tr>
+<tr><td>
+<code class="literal">"power-y"</code>, power of unit <em class="parameter"><code>y</code></em> (<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>)</td></tr>
+<tr><td>
+<code class="literal">"power-z"</code>, power of unit <em class="parameter"><code>z</code></em> (<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>)</td></tr>
+<tr><td>
+<code class="literal">"power-w"</code>, power of unit <em class="parameter"><code>w</code></em> (<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>)</td></tr>
+<tr><td>
+<code class="literal">"is-angle"</code>, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the quantity should converted to degrees for humans, this overrides any unit powers (<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>)</td></tr>
+<tr><td>
+<code class="literal">"is-fitting-param"</code>, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the quantity should be reported as fixed parameter when it does not have error set (<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>)</td></tr>
+<tr><td>
+<code class="literal">"is-percents"</code>, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the quantity should converted to percents for humans, this overrides any unit powers (<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>)</td></tr>
+<tr><td>
+<code class="literal">"unit-str"</code>, fixed unit, this overrides any unit powers (<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*)</td></tr>
+<tr><td>
+<code class="literal">"translate-unit"</code>, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the fixed unit should be translated for humans (<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>)</td></tr>
+<tr><td>
+<code class="literal">"translate-string"</code>, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if string values should be translated for humans (<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>)</td></tr>
+<tr><td>
+<code class="literal">"symbol"</code>, optional untranslatable symbol for the quantity (<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*)</td></tr>
+</table>
+<p>The type of value passed to <a class="link" href="GwyResults.html#gwy-results-fill-values" title="gwy_results_fill_values ()"><code class="function">gwy_results_fill_values()</code></a> must match the type given here.  The default properties are
+floating point value, zero unit powers, no fixed unit string, and all boolean properties <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+<p>In most cases this function is not necessary and you can use one of the convenience functions such as
+<a class="link" href="GwyResults.html#gwy-results-add-value-z" title="gwy_results_add_value_z ()"><code class="function">gwy_results_add_value_z()</code></a> or <a class="link" href="GwyResults.html#gwy-results-add-value-angle" title="gwy_results_add_value_angle ()"><code class="function">gwy_results_add_value_angle()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-results-add-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier (unique in <em class="parameter"><code>results</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>Value label text (untranslated).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated sequence of key, value pairs specifying value properties.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-add-format"></a><h3>gwy_results_add_format ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_add_format (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> translate_format</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *format</code></em>,
+                        <em class="parameter"><code>...</code></em>);</pre>
+<p>Appends a formatted value line to a set of reported scalar values.</p>
+<p>This function creates a line that can contain multiple individual fields and must be filled using
+<a class="link" href="GwyResults.html#gwy-results-fill-format" title="gwy_results_fill_format ()"><code class="function">gwy_results_fill_format()</code></a>.</p>
+<p>The format string contains replaceable fields of the form "%{name}c" where <em class="parameter"><code>name</code></em>
+ is the field name, used later in
+<a class="link" href="GwyResults.html#gwy-results-fill-format" title="gwy_results_fill_format ()"><code class="function">gwy_results_fill_format()</code></a> and <em class="parameter"><code>c</code></em>
+ is the format character which can be one of</p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td>
+<code class="literal">"y"</code>, yes/no value (<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>)</td></tr>
+<tr><td>
+<code class="literal">"i"</code>, integer value (<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>)</td></tr>
+<tr><td>
+<code class="literal">"s"</code>, string value (<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*)</td></tr>
+<tr><td>
+<code class="literal">"v"</code>, floating point value with units (<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a>)</td></tr>
+</table>
+<p>All indivdual "v" fields share one value format and units.</p>
+<div class="refsect3">
+<a name="gwy-results-add-format.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier (unique in <em class="parameter"><code>results</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>Value label text (untranslated).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>translate_format</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to translate the format string when formatting for humans.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>format</p></td>
+<td class="parameter_description"><p>Format string for the value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated sequence of key, value pairs specifying value properties.  See <a class="link" href="GwyResults.html#gwy-results-add-value" title="gwy_results_add_value ()"><code class="function">gwy_results_add_value()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-add-value-str"></a><h3>gwy_results_add_value_str ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_add_value_str (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                           <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                           <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>);</pre>
+<p>Appends a string value line to a set of reported scalar values.</p>
+<p>The corresponding value should be passed as <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*.</p>
+<div class="refsect3">
+<a name="gwy-results-add-value-str.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier (unique in <em class="parameter"><code>results</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>Value label text (untranslated).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-add-value-x"></a><h3>gwy_results_add_value_x ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_add_value_x (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>);</pre>
+<p>Appends an <em class="parameter"><code>x</code></em>
+-like floating point value line to a set of reported scalar values.</p>
+<p>The corresponding value should be passed as <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a>.</p>
+<div class="refsect3">
+<a name="gwy-results-add-value-x.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier (unique in <em class="parameter"><code>results</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>Value label text (untranslated).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-add-value-y"></a><h3>gwy_results_add_value_y ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_add_value_y (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>);</pre>
+<p>Appends an <em class="parameter"><code>y</code></em>
+-like floating point value line to a set of reported scalar values.</p>
+<p>The corresponding value should be passed as <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a>.</p>
+<div class="refsect3">
+<a name="gwy-results-add-value-y.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier (unique in <em class="parameter"><code>results</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>Value label text (untranslated).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-61.html#api-index-2.61">2.61</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-add-value-z"></a><h3>gwy_results_add_value_z ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_add_value_z (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>);</pre>
+<p>Appends a <em class="parameter"><code>z</code></em>
+-like floating point value line to a set of reported scalar values.</p>
+<p>The corresponding value should be passed as <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a>.</p>
+<div class="refsect3">
+<a name="gwy-results-add-value-z.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier (unique in <em class="parameter"><code>results</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>Value label text (untranslated).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-add-value-plain"></a><h3>gwy_results_add_value_plain ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_add_value_plain (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>);</pre>
+<p>Appends a unitless floating point value line to a set of reported scalar values.</p>
+<p>The corresponding value should be passed as <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a>.</p>
+<div class="refsect3">
+<a name="gwy-results-add-value-plain.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier (unique in <em class="parameter"><code>results</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>Value label text (untranslated).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-add-value-int"></a><h3>gwy_results_add_value_int ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_add_value_int (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                           <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                           <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>);</pre>
+<p>Appends an integer value line to a set of reported scalar values.</p>
+<p>The corresponding value should be passed as <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>.</p>
+<div class="refsect3">
+<a name="gwy-results-add-value-int.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier (unique in <em class="parameter"><code>results</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>Value label text (untranslated).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-add-value-angle"></a><h3>gwy_results_add_value_angle ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_add_value_angle (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>);</pre>
+<p>Appends an angle-like floating point value line to a set of reported scalar values.</p>
+<p>The corresponding value should be passed as <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a>.</p>
+<div class="refsect3">
+<a name="gwy-results-add-value-angle.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier (unique in <em class="parameter"><code>results</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>Value label text (untranslated).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-add-value-percents"></a><h3>gwy_results_add_value_percents ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_add_value_percents (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>);</pre>
+<p>Appends a percent-like floating point value line to a set of reported scalar values.</p>
+<p>The corresponding value should be passed as <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a>.</p>
+<div class="refsect3">
+<a name="gwy-results-add-value-percents.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier (unique in <em class="parameter"><code>results</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>Value label text (untranslated).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-add-value-yesno"></a><h3>gwy_results_add_value_yesno ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_add_value_yesno (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>);</pre>
+<p>Appends a yes/no value line to a set of reported scalar values.</p>
+<p>The corresponding value should be passed as <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> (which is the same as <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>).</p>
+<div class="refsect3">
+<a name="gwy-results-add-value-yesno.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier (unique in <em class="parameter"><code>results</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>Value label text (untranslated).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-add-covariance-matrix"></a><h3>gwy_results_add_covariance_matrix ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_add_covariance_matrix (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                                   <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                                   <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>,
+                                   <em class="parameter"><code>...</code></em>);</pre>
+<p>Appends a covariance matrix to a set of reported scalar values.</p>
+<p>Covariance matrices are multi-line.  They cannot be formatted using the standard functions such as
+<a class="link" href="GwyResults.html#gwy-results-get-value" title="gwy_results_get_value ()"><code class="function">gwy_results_get_value()</code></a>.  They are also omitted when formatting as CSV (<a class="link" href="GwyResults.html#GWY-RESULTS-REPORT-CSV:CAPS"><code class="literal">GWY_RESULTS_REPORT_CSV</code></a>) because CSV
+requires the same number of values on each line.</p>
+<div class="refsect3">
+<a name="gwy-results-add-covariance-matrix.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier (unique in <em class="parameter"><code>results</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>Value label text (untranslated).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Sequence of <em class="parameter"><code>n</code></em>
+parameter symbols (as <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*), where <em class="parameter"><code>n</code></em>
+is the matrix dimension.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-add-covariance-matrixv"></a><h3>gwy_results_add_covariance_matrixv ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_add_covariance_matrixv (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **symbols</code></em>);</pre>
+<p>Appends a covariance matrix to a set of reported scalar values.</p>
+<p>See <a class="link" href="GwyResults.html#gwy-results-add-covariance-matrix" title="gwy_results_add_covariance_matrix ()"><code class="function">gwy_results_add_covariance_matrix()</code></a> for discussion.</p>
+<div class="refsect3">
+<a name="gwy-results-add-covariance-matrixv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier (unique in <em class="parameter"><code>results</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>Value label text (untranslated).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Matrix dimension.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>symbols</p></td>
+<td class="parameter_description"><p>Array of <em class="parameter"><code>n</code></em>
+parameter symbols (as <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-bind-formats"></a><h3>gwy_results_bind_formats ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_bind_formats (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                          <em class="parameter"><code>...</code></em>);</pre>
+<p>Binds formats of several floating point values together.</p>
+<p>This is useful when you do not want one of related values displayed in nm and another in µm (for instance), just
+because it is somewhat larger.</p>
+<p>The values must already exist in <em class="parameter"><code>results</code></em>
+.  Only values of the same type can be bound together -- and binding has
+any useful purpose for floating point values anyway.  The values must also have the same unit powers.</p>
+<p>Rebinding a value that is already bound to another group is not allowed. However it is possible to add more values
+to the group of the first value (<em class="parameter"><code>id</code></em>
+).  Single-value groups are not created.</p>
+<div class="refsect3">
+<a name="gwy-results-bind-formats.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>First value identifier to bind.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Identifiers of other values to bind, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-unbind-formats"></a><h3>gwy_results_unbind_formats ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_unbind_formats (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                            <em class="parameter"><code>...</code></em>);</pre>
+<p>Unbinds formats of floating point values.</p>
+<p>The values are removed from their respective groups.  It is not necessary for them to belong to the same group, or
+to any group.</p>
+<div class="refsect3">
+<a name="gwy-results-unbind-formats.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>First value identifier to unbind.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Identifiers of other values to unbind, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-set-unit"></a><h3>gwy_results_set_unit ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_set_unit (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                      <em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *unit</code></em>);</pre>
+<p>Sets the unit corresponding to one axis in a set of reported scalar values, from an SI unit.</p>
+<p>Unit names "u" and "v" are available since 2.52.</p>
+<div class="refsect3">
+<a name="gwy-results-set-unit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Unit name, one of "t", "w", "x", "y" or "z".</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>unit</p></td>
+<td class="parameter_description"><p>The SI unit to use (<em class="parameter"><code>results</code></em>
+makes a copy; it does not take a reference).  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-set-unit-str"></a><h3>gwy_results_set_unit_str ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_set_unit_str (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *unitstr</code></em>);</pre>
+<p>Sets the unit corresponding to one axis in a set of reported scalar values, from a string.</p>
+<p>Unit names "u" and "v" are available since 2.52.</p>
+<div class="refsect3">
+<a name="gwy-results-set-unit-str.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Unit name, one of "t", "u", "v", "w", "x", "y" or "z".</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>unitstr</p></td>
+<td class="parameter_description"><p>The unit to use, as a string.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-fill-values"></a><h3>gwy_results_fill_values ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_fill_values (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                         <em class="parameter"><code>...</code></em>);</pre>
+<p>Fills the numerical values in a set of reported scalar values.</p>
+<p>The types must correspond to the types given upon construction.</p>
+<p>This function cannot be used for values created with <a class="link" href="GwyResults.html#gwy-results-add-format" title="gwy_results_add_format ()"><code class="function">gwy_results_add_format()</code></a>.  Use <a class="link" href="GwyResults.html#gwy-results-fill-format" title="gwy_results_fill_format ()"><code class="function">gwy_results_fill_format()</code></a>.</p>
+<p>If a value was previously set to N.A. using <a class="link" href="GwyResults.html#gwy-results-set-na" title="gwy_results_set_na ()"><code class="function">gwy_results_set_na()</code></a>, filling its value removes this status.</p>
+<div class="refsect3">
+<a name="gwy-results-fill-values.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Sequence of id, value pairs specifying the individual values, terminated by <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-fill-values-with-errors"></a><h3>gwy_results_fill_values_with_errors ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_fill_values_with_errors (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                                     <em class="parameter"><code>...</code></em>);</pre>
+<p>Fills the numerical values and their errors in a set of reported scalar values.</p>
+<p>Do not set errors for yes/no values; it makes no sense.</p>
+<p>See <a class="link" href="GwyResults.html#gwy-results-fill-values" title="gwy_results_fill_values ()"><code class="function">gwy_results_fill_values()</code></a> for further remarks.</p>
+<div class="refsect3">
+<a name="gwy-results-fill-values-with-errors.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Sequence of id, value, error triples specifying the individual values, terminated by <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-fill-format"></a><h3>gwy_results_fill_format ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_fill_format (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                         <em class="parameter"><code>...</code></em>);</pre>
+<p>Fills the values for a formatted line in a set of reported scalar values.</p>
+<p>Even though the value is not atomic and may contain several individual fields, they have to be filled all in one
+function call.</p>
+<div class="refsect3">
+<a name="gwy-results-fill-format.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>List of names (string) and values (corresponding data type), terminated by <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-fill-covariance-matrix"></a><h3>gwy_results_fill_covariance_matrix ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_fill_covariance_matrix (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *fixed_params</code></em>,
+                                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *covar_matrix</code></em>);</pre>
+<p>Fills a covariance matrix in a set of reported scalar values.</p>
+<p>The value must have been created using <a class="link" href="GwyResults.html#gwy-results-add-covariance-matrix" title="gwy_results_add_covariance_matrix ()"><code class="function">gwy_results_add_covariance_matrix()</code></a> or <a class="link" href="GwyResults.html#gwy-results-add-covariance-matrixv" title="gwy_results_add_covariance_matrixv ()"><code class="function">gwy_results_add_covariance_matrixv()</code></a>.</p>
+<p>Matrix <em class="parameter"><code>covar_matrix</code></em>
+ is passed as a lower left triangular part of a symmetric matrix, the same way as <a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a>
+returns it.  The number of elements is <em class="parameter"><code>n</code></em>
+*(<em class="parameter"><code>n</code></em>
++1)/2 where <em class="parameter"><code>n</code></em>
+ is the matrix dimension, equal to the number of
+symbols.  The length of <em class="parameter"><code>fixed_params</code></em>
+ is <em class="parameter"><code>n</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-results-fill-covariance-matrix.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fixed_params</p></td>
+<td class="parameter_description"><p>Which parameters were fixed (their covariances are excluded in the report).  Can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if all
+parameters were free or you do not care.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>covar_matrix</p></td>
+<td class="parameter_description"><p>Full covariance matrix (including elements for fixed parameters).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-set-na"></a><h3>gwy_results_set_na ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_set_na (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                    <em class="parameter"><code>...</code></em>);</pre>
+<p>Sets values in reported scalar values to N.A.</p>
+<p>Such values are excluded from text reports and some representation of N.A. is returned when their formatted values
+are explicitly requested.</p>
+<p>The N.A. state is removed simply by filling a value.</p>
+<div class="refsect3">
+<a name="gwy-results-set-na.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>First value identifier to set to N.A.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Identifiers of other values to set to N.A., <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-set-nav"></a><h3>gwy_results_set_nav ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_results_set_nav (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **id</code></em>);</pre>
+<p>Sets values in reported scalar values to N.A.</p>
+<p>See <a class="link" href="GwyResults.html#gwy-results-set-na" title="gwy_results_set_na ()"><code class="function">gwy_results_set_na()</code></a> for discussion.</p>
+<div class="refsect3">
+<a name="gwy-results-set-nav.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of strings in array <em class="parameter"><code>id</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Array of value identifiers to set to N.A.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-create-report"></a><h3>gwy_results_create_report ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_results_create_report (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                           <em class="parameter"><code><a class="link" href="GwyResults.html#GwyResultsReportType" title="enum GwyResultsReportType"><span class="type">GwyResultsReportType</span></a> report_type</code></em>);</pre>
+<p>Formats a text report for a set of scalar values.</p>
+<p>Value lines that have never been filled or were declared N.A. using <a class="link" href="GwyResults.html#gwy-results-set-na" title="gwy_results_set_na ()"><code class="function">gwy_results_set_na()</code></a> are skipped in the report.</p>
+<div class="refsect3">
+<a name="gwy-results-create-report.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>report_type</p></td>
+<td class="parameter_description"><p>Requested report style.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-results-create-report.returns"></a><h4>Returns</h4>
+<p> A newly allocated string with the report.  The caller must free it with <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-get-label"></a><h3>gwy_results_get_label ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_results_get_label (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                       <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>);</pre>
+<p>Gets the label corresponding to a value in a set of reported scalar values.</p>
+<div class="refsect3">
+<a name="gwy-results-get-label.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-results-get-label.returns"></a><h4>Returns</h4>
+<p> A string owned by <em class="parameter"><code>results</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-get-symbol"></a><h3>gwy_results_get_symbol ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_results_get_symbol (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>);</pre>
+<p>Gets the symbol corresponding to a value in a set of reported scalar values.</p>
+<div class="refsect3">
+<a name="gwy-results-get-symbol.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-results-get-symbol.returns"></a><h4>Returns</h4>
+<p> A string owned by <em class="parameter"><code>results</code></em>
+.  An empty string is returned when the value has no symbol.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-get-label-with-symbol"></a><h3>gwy_results_get_label_with_symbol ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_results_get_label_with_symbol (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                                   <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>);</pre>
+<p>Gets the label and symbol corresponding to a value in a set of reported scalar values.</p>
+<div class="refsect3">
+<a name="gwy-results-get-label-with-symbol.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-results-get-label-with-symbol.returns"></a><h4>Returns</h4>
+<p> A string owned by <em class="parameter"><code>results</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-get-value"></a><h3>gwy_results_get_value ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_results_get_value (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                       <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>);</pre>
+<p>Provides one formatted value in a set of reported scalar values.</p>
+<p>This function returns just the value, without error or units.</p>
+<div class="refsect3">
+<a name="gwy-results-get-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-results-get-value.returns"></a><h4>Returns</h4>
+<p> A string owned by <em class="parameter"><code>results</code></em>
+.  It must not be modified.  It is only valid until another <em class="parameter"><code>results</code></em>
+method
+call.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-get-error"></a><h3>gwy_results_get_error ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_results_get_error (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                       <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>);</pre>
+<p>Provides one formatted error in a set of reported scalar values.</p>
+<p>This function returns just the error, without value or units.</p>
+<div class="refsect3">
+<a name="gwy-results-get-error.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-results-get-error.returns"></a><h4>Returns</h4>
+<p> A string owned by <em class="parameter"><code>results</code></em>
+.  It must not be modified.  It is only valid until another <em class="parameter"><code>results</code></em>
+method
+call.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-get-value-with-error"></a><h3>gwy_results_get_value_with_error ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_results_get_value_with_error (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                                  <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>);</pre>
+<p>Provides one formatted value with error in a set of reported scalar values.</p>
+<p>This function returns the value with error, but without units.  If there is no error the returned string is
+identical to what <a class="link" href="GwyResults.html#gwy-results-get-value" title="gwy_results_get_value ()"><code class="function">gwy_results_get_value()</code></a> returns.</p>
+<div class="refsect3">
+<a name="gwy-results-get-value-with-error.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-results-get-value-with-error.returns"></a><h4>Returns</h4>
+<p> A string owned by <em class="parameter"><code>results</code></em>
+.  It must not be modified.  It is only valid until another <em class="parameter"><code>results</code></em>
+method
+call.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-get-units"></a><h3>gwy_results_get_units ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_results_get_units (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                       <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>);</pre>
+<p>Provides formatted units in a set of reported scalar values.</p>
+<p>This function returns just the units, without value.</p>
+<div class="refsect3">
+<a name="gwy-results-get-units.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-results-get-units.returns"></a><h4>Returns</h4>
+<p> A string owned by <em class="parameter"><code>results</code></em>
+.  It must not be modified.  It is only valid until another <em class="parameter"><code>results</code></em>
+method
+call.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-get-full"></a><h3>gwy_results_get_full ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_results_get_full (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>);</pre>
+<p>Provides formatted value with units in a set of reported scalar values.</p>
+<p>This function returns the entire formatted value.</p>
+<div class="refsect3">
+<a name="gwy-results-get-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-results-get-full.returns"></a><h4>Returns</h4>
+<p> A string owned by <em class="parameter"><code>results</code></em>
+.  It must not be modified.  It is only valid until another <em class="parameter"><code>results</code></em>
+method
+call.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-results-value-is-na"></a><h3>gwy_results_value_is_na ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_results_value_is_na (<em class="parameter"><code><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> *results</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>);</pre>
+<p>Checks whether a value in a set of reported scalar values is invalid.</p>
+<p>A value is valid if it was set to a finite value and was has not been made N.A. using <a class="link" href="GwyResults.html#gwy-results-set-na" title="gwy_results_set_na ()"><code class="function">gwy_results_set_na()</code></a> since.
+Otherwise it is invalid and this function returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-results-value-is-na.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>A set of reported scalar values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Value identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-results-value-is-na.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the value is invalid.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-format-result-table-row"></a><h3>gwy_format_result_table_row ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_format_result_table_row (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Strings.html#GString"><span class="type">GString</span></a> *str</code></em>,
+                             <em class="parameter"><code><a class="link" href="GwyResults.html#GwyResultsReportType" title="enum GwyResultsReportType"><span class="type">GwyResultsReportType</span></a> report_type</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                             <em class="parameter"><code>...</code></em>);</pre>
+<p>Formats a row of tabular results.</p>
+<p>This is a helper function for formatting tabular results.  It appends formatted sequence of real numbers to the
+string <em class="parameter"><code>str</code></em>
+ and adds a newline.</p>
+<p>Only <a class="link" href="GwyResults.html#GWY-RESULTS-REPORT-TABSEP:CAPS"><code class="literal">GWY_RESULTS_REPORT_TABSEP</code></a> and <a class="link" href="GwyResults.html#GWY-RESULTS-REPORT-CSV:CAPS"><code class="literal">GWY_RESULTS_REPORT_CSV</code></a> are valid styles for tabular data.</p>
+<p>When the <a class="link" href="GwyResults.html#GWY-RESULTS-REPORT-MACHINE:CAPS"><code class="literal">GWY_RESULTS_REPORT_MACHINE</code></a> flag is included, the caller should generally also pass the values in base
+units (without any powers of 10), although this function has no means to actually enforce it.</p>
+<div class="refsect3">
+<a name="gwy-format-result-table-row.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>String to append formatted row to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>report_type</p></td>
+<td class="parameter_description"><p>Requested report style.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Sequence of <em class="parameter"><code>n</code></em>
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> values to format.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-format-result-table-rowv"></a><h3>gwy_format_result_table_rowv ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_format_result_table_rowv (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Strings.html#GString"><span class="type">GString</span></a> *str</code></em>,
+                              <em class="parameter"><code><a class="link" href="GwyResults.html#GwyResultsReportType" title="enum GwyResultsReportType"><span class="type">GwyResultsReportType</span></a> report_type</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *values</code></em>);</pre>
+<p>Formats a row of tabular results.</p>
+<p>This is a helper function for formatting tabular results.  It appends formatted sequence of real numbers to the
+string <em class="parameter"><code>str</code></em>
+ and adds a newline.</p>
+<p>See <a class="link" href="GwyResults.html#gwy-format-result-table-row" title="gwy_format_result_table_row ()"><code class="function">gwy_format_result_table_row()</code></a> for discussion.</p>
+<div class="refsect3">
+<a name="gwy-format-result-table-rowv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>String to append formatted row to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>report_type</p></td>
+<td class="parameter_description"><p>Requested report style.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>values</p></td>
+<td class="parameter_description"><p>Array of <em class="parameter"><code>n</code></em>
+real numbers to format.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-format-result-table-strings"></a><h3>gwy_format_result_table_strings ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_format_result_table_strings (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Strings.html#GString"><span class="type">GString</span></a> *str</code></em>,
+                                 <em class="parameter"><code><a class="link" href="GwyResults.html#GwyResultsReportType" title="enum GwyResultsReportType"><span class="type">GwyResultsReportType</span></a> report_type</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                                 <em class="parameter"><code>...</code></em>);</pre>
+<p>Formats a row of string tabular results.</p>
+<p>This is a helper function for formatting tabular results, usually used for table headers.</p>
+<p>It appends the strings delimited with tabulators or as CSV to the string <em class="parameter"><code>str</code></em>
+ and adds a newline. Only
+<a class="link" href="GwyResults.html#GWY-RESULTS-REPORT-TABSEP:CAPS"><code class="literal">GWY_RESULTS_REPORT_TABSEP</code></a> and <a class="link" href="GwyResults.html#GWY-RESULTS-REPORT-CSV:CAPS"><code class="literal">GWY_RESULTS_REPORT_CSV</code></a> are valid styles for tabular data.</p>
+<p>The <a class="link" href="GwyResults.html#GWY-RESULTS-REPORT-MACHINE:CAPS"><code class="literal">GWY_RESULTS_REPORT_MACHINE</code></a> flags has no effect.</p>
+<div class="refsect3">
+<a name="gwy-format-result-table-strings.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>String to append formatted header row to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>report_type</p></td>
+<td class="parameter_description"><p>Requested report style.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Sequence of <em class="parameter"><code>n</code></em>
+strings to format.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-format-result-table-stringsv"></a><h3>gwy_format_result_table_stringsv ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_format_result_table_stringsv (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Strings.html#GString"><span class="type">GString</span></a> *str</code></em>,
+                                  <em class="parameter"><code><a class="link" href="GwyResults.html#GwyResultsReportType" title="enum GwyResultsReportType"><span class="type">GwyResultsReportType</span></a> report_type</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                                  <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **values</code></em>);</pre>
+<p>Formats a row of string tabular results.</p>
+<p>This is a helper function for formatting tabular results, usually used for table headers.</p>
+<p>It appends the strings delimited with tabulators or as CSV to the string <em class="parameter"><code>str</code></em>
+ and adds a newline. Only
+<a class="link" href="GwyResults.html#GWY-RESULTS-REPORT-TABSEP:CAPS"><code class="literal">GWY_RESULTS_REPORT_TABSEP</code></a> and <a class="link" href="GwyResults.html#GWY-RESULTS-REPORT-CSV:CAPS"><code class="literal">GWY_RESULTS_REPORT_CSV</code></a> are valid styles for tabular data.</p>
+<p>The <a class="link" href="GwyResults.html#GWY-RESULTS-REPORT-MACHINE:CAPS"><code class="literal">GWY_RESULTS_REPORT_MACHINE</code></a> flag has no effect.</p>
+<div class="refsect3">
+<a name="gwy-format-result-table-stringsv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>String to append formatted header row to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>report_type</p></td>
+<td class="parameter_description"><p>Requested report style.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>values</p></td>
+<td class="parameter_description"><p>Array of <em class="parameter"><code>n</code></em>
+strings to format.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-format-result-table-mixed"></a><h3>gwy_format_result_table_mixed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_format_result_table_mixed (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Strings.html#GString"><span class="type">GString</span></a> *str</code></em>,
+                               <em class="parameter"><code><a class="link" href="GwyResults.html#GwyResultsReportType" title="enum GwyResultsReportType"><span class="type">GwyResultsReportType</span></a> report_type</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *fields</code></em>,
+                               <em class="parameter"><code>...</code></em>);</pre>
+<p>This is a helper function for formatting tabular results.  It appends formatted sequence of values to the string
+<em class="parameter"><code>str</code></em>
+ and adds a newline.</p>
+<p>Only <a class="link" href="GwyResults.html#GWY-RESULTS-REPORT-TABSEP:CAPS"><code class="literal">GWY_RESULTS_REPORT_TABSEP</code></a> and <a class="link" href="GwyResults.html#GWY-RESULTS-REPORT-CSV:CAPS"><code class="literal">GWY_RESULTS_REPORT_CSV</code></a> are valid styles for tabular data.</p>
+<p>When the <a class="link" href="GwyResults.html#GWY-RESULTS-REPORT-MACHINE:CAPS"><code class="literal">GWY_RESULTS_REPORT_MACHINE</code></a> flag is included, the caller should generally also pass floating point values
+in base units (without any powers of 10), although this function has no means to actually enforce it.</p>
+<div class="refsect3">
+<a name="gwy-format-result-table-mixed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>String to append formatted row to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>report_type</p></td>
+<td class="parameter_description"><p>Requested report style.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fields</p></td>
+<td class="parameter_description"><p>String listing the <em class="parameter"><code>n</code></em>
+fields in the row, which must be one of "isvy", as described in
+<a class="link" href="GwyResults.html#gwy-results-add-format" title="gwy_results_add_format ()"><code class="function">gwy_results_add_format()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Sequence of <em class="parameter"><code>n</code></em>
+values to format, of types corresponding to <em class="parameter"><code>fields</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-54.html#api-index-2.54">2.54</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyResults.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyResultsValueType"></a><h3>enum GwyResultsValueType</h3>
+<p>Type of a scalar value in <a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a>.</p>
+<p>Yes/no values never have units.  Strings and integers can have units, if you specify them.  The units are always
+formatted as base (without any power of 10 prefix).</p>
+<div class="refsect3">
+<a name="GwyResultsValueType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-RESULTS-VALUE-FLOAT:CAPS"></a>GWY_RESULTS_VALUE_FLOAT</p></td>
+<td class="enum_member_description">
+<p>Floating point number (<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a>).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-RESULTS-VALUE-STRING:CAPS"></a>GWY_RESULTS_VALUE_STRING</p></td>
+<td class="enum_member_description">
+<p>String (<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-RESULTS-VALUE-INT:CAPS"></a>GWY_RESULTS_VALUE_INT</p></td>
+<td class="enum_member_description">
+<p>Integer (<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-RESULTS-VALUE-YESNO:CAPS"></a>GWY_RESULTS_VALUE_YESNO</p></td>
+<td class="enum_member_description">
+<p>Yes/no value (<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyResultsReportType"></a><h3>enum GwyResultsReportType</h3>
+<p>Style options for a text report created with <a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a>.</p>
+<p>Multi-value lines created with <a class="link" href="GwyResults.html#gwy-results-add-format" title="gwy_results_add_format ()"><code class="function">gwy_results_add_format()</code></a> are also split into four parts with
+<a class="link" href="GwyResults.html#GWY-RESULTS-REPORT-TABSEP:CAPS"><code class="literal">GWY_RESULTS_REPORT_TABSEP</code></a> and <a class="link" href="GwyResults.html#GWY-RESULTS-REPORT-CSV:CAPS"><code class="literal">GWY_RESULTS_REPORT_CSV</code></a>. The value part corresponds to the format and thus can be
+complicated. The error part is always empty.</p>
+<div class="refsect3">
+<a name="GwyResultsReportType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-RESULTS-REPORT-COLON:CAPS"></a>GWY_RESULTS_REPORT_COLON</p></td>
+<td class="enum_member_description">
+<p>Classic export with labels followed by colons and values (possibly errors) with units,
+aligned for readability.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-RESULTS-REPORT-TABSEP:CAPS"></a>GWY_RESULTS_REPORT_TABSEP</p></td>
+<td class="enum_member_description">
+<p>Four tab-separated columns: label, value, error and units.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-RESULTS-REPORT-CSV:CAPS"></a>GWY_RESULTS_REPORT_CSV</p></td>
+<td class="enum_member_description">
+<p>Four comma-separated quoted columns label, value, error and units.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-RESULTS-REPORT-MACHINE:CAPS"></a>GWY_RESULTS_REPORT_MACHINE</p></td>
+<td class="enum_member_description">
+<p>Machine-readable report with base units, C number format (decimal dot) and
+untranslated labels.  This is a flag and can be combined with other values.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyResults-struct"></a><h3>struct GwyResults</h3>
+<pre class="programlisting">struct GwyResults;</pre>
+<p><a class="link" href="GwyResults.html" title="GwyResults"><span class="type">GwyResults</span></a> is an opaque data structure and should be only manipulated with the functions below.</p>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyResultsClass"></a><h3>struct GwyResultsClass</h3>
+<pre class="programlisting">struct GwyResultsClass {
+    GObjectClass parent_class;
+};
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

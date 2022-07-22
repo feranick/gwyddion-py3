@@ -1,0 +1,2238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyParams: Gwyddion Application Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="prev" href="GwyParamDef.html" title="GwyParamDef">
+<link rel="next" href="GwyParamTable.html" title="GwyParamTable">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyParams.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyParams.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="GwyParamDef.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyParamTable.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyParams"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyParams.top_of_page"></a>GwyParams</span></h2>
+<p>GwyParams — Module parameter value sets</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyParams.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyParams.html" title="GwyParams"><span class="returnvalue">GwyParams</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-new" title="gwy_params_new ()">gwy_params_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-set-def" title="gwy_params_set_def ()">gwy_params_set_def</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="returnvalue">GwyParamDef</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-get-def" title="gwy_params_get_def ()">gwy_params_get_def</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyParams.html" title="GwyParams"><span class="returnvalue">GwyParams</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-new-from-settings" title="gwy_params_new_from_settings ()">gwy_params_new_from_settings</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-load-from-settings" title="gwy_params_load_from_settings ()">gwy_params_load_from_settings</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyParams.html" title="GwyParams"><span class="returnvalue">GwyParams</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-duplicate" title="gwy_params_duplicate ()">gwy_params_duplicate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-save-to-settings" title="gwy_params_save_to_settings ()">gwy_params_save_to_settings</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-reset-all" title="gwy_params_reset_all ()">gwy_params_reset_all</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-reset" title="gwy_params_reset ()">gwy_params_reset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-get-boolean" title="gwy_params_get_boolean ()">gwy_params_get_boolean</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-set-boolean" title="gwy_params_set_boolean ()">gwy_params_set_boolean</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-get-enum" title="gwy_params_get_enum ()">gwy_params_get_enum</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../libgwyprocess-gwyprocessenums.html#GwyMaskingType"><span class="returnvalue">GwyMaskingType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-get-masking" title="gwy_params_get_masking ()">gwy_params_get_masking</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-set-enum" title="gwy_params_set_enum ()">gwy_params_set_enum</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-get-flags" title="gwy_params_get_flags ()">gwy_params_get_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-set-flags" title="gwy_params_set_flags ()">gwy_params_set_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-set-flag" title="gwy_params_set_flag ()">gwy_params_set_flag</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwyResults.html#GwyResultsReportType"><span class="returnvalue">GwyResultsReportType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-get-report-type" title="gwy_params_get_report_type ()">gwy_params_get_report_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-set-report-type" title="gwy_params_set_report_type ()">gwy_params_set_report_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-get-int" title="gwy_params_get_int ()">gwy_params_get_int</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-set-int" title="gwy_params_set_int ()">gwy_params_set_int</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-get-double" title="gwy_params_get_double ()">gwy_params_get_double</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-set-double" title="gwy_params_set_double ()">gwy_params_set_double</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-get-string" title="gwy_params_get_string ()">gwy_params_get_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-set-string" title="gwy_params_set_string ()">gwy_params_set_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-set-unit" title="gwy_params_set_unit ()">gwy_params_set_unit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-get-unit" title="gwy_params_get_unit ()">gwy_params_get_unit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-set-resource" title="gwy_params_set_resource ()">gwy_params_set_resource</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwyResource.html#GwyResource-struct"><span class="returnvalue">GwyResource</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-get-resource" title="gwy_params_get_resource ()">gwy_params_get_resource</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../libgwydraw-GwyRGBA.html#GwyRGBA"><span class="returnvalue">GwyRGBA</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-get-color" title="gwy_params_get_color ()">gwy_params_get_color</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-set-color" title="gwy_params_set_color ()">gwy_params_set_color</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="returnvalue">GwyAppDataId</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-get-data-id" title="gwy_params_get_data_id ()">gwy_params_get_data_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-data-id-is-none" title="gwy_params_data_id_is_none ()">gwy_params_data_id_is_none</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwyDataField.html#GwyDataField-struct"><span class="returnvalue">GwyDataField</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-get-image" title="gwy_params_get_image ()">gwy_params_get_image</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwyDataField.html#GwyDataField-struct"><span class="returnvalue">GwyDataField</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-get-mask" title="gwy_params_get_mask ()">gwy_params_get_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwyGraphModel.html#GwyGraphModel-struct"><span class="returnvalue">GwyGraphModel</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-get-graph" title="gwy_params_get_graph ()">gwy_params_get_graph</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwyBrick.html#GwyBrick-struct"><span class="returnvalue">GwyBrick</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-get-volume" title="gwy_params_get_volume ()">gwy_params_get_volume</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwySurface.html#GwySurface-struct"><span class="returnvalue">GwySurface</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-get-xyz" title="gwy_params_get_xyz ()">gwy_params_get_xyz</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwyLawn.html#GwyLawn-struct"><span class="returnvalue">GwyLawn</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-get-curve-map" title="gwy_params_get_curve_map ()">gwy_params_get_curve_map</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-set-image-id" title="gwy_params_set_image_id ()">gwy_params_set_image_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-set-graph-id" title="gwy_params_set_graph_id ()">gwy_params_set_graph_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-set-volume-id" title="gwy_params_set_volume_id ()">gwy_params_set_volume_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-set-xyz-id" title="gwy_params_set_xyz_id ()">gwy_params_set_xyz_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-set-curve-map-id" title="gwy_params_set_curve_map_id ()">gwy_params_set_curve_map_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-set-curve" title="gwy_params_set_curve ()">gwy_params_set_curve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParams.html#gwy-params-randomize-seed" title="gwy_params_randomize_seed ()">gwy_params_randomize_seed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyParams.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyParams.html#GwyParams-struct" title="struct GwyParams">GwyParams</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyParams.html#GwyParamsClass" title="struct GwyParamsClass">GwyParamsClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyParams.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> GwyParams
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyParams.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;app/gwyapp.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyParams.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> represents a set of module parameter values.  Usually it is created by loading the values from settings
+using <a class="link" href="GwyParams.html#gwy-params-new-from-settings" title="gwy_params_new_from_settings ()"><code class="function">gwy_params_new_from_settings()</code></a>.  It can also be created as empty – it is necessary to tie it to a definition
+set using <a class="link" href="GwyParams.html#gwy-params-set-def" title="gwy_params_set_def ()"><code class="function">gwy_params_set_def()</code></a> then.  In any case, the tie to the definitions is permanent.  If you need parameter
+value set for different definitions create a new object.</p>
+<p><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> is a “dumb” object, replacing a plain C struct holding the parameter values.  Beside making sure
+parameter values stay in defined ranges, it does not do much.  In particular it does not emit any singals.</p>
+<p>Each parameter type has its own getters and setters, such as <a class="link" href="GwyParams.html#gwy-params-get-boolean" title="gwy_params_get_boolean ()"><code class="function">gwy_params_get_boolean()</code></a> and <a class="link" href="GwyParams.html#gwy-params-set-boolean" title="gwy_params_set_boolean ()"><code class="function">gwy_params_set_boolean()</code></a>.
+For a few parameter types there may also be dedicated helper functions such as <a class="link" href="GwyParams.html#gwy-params-get-masking" title="gwy_params_get_masking ()"><code class="function">gwy_params_get_masking()</code></a> which
+encapsulate common logic when dealing with these parameter.</p>
+<p>The setters and reset functions should be seldom needed.  When running module GUI, parameter values should be set
+by <a class="link" href="GwyParamTable.html" title="GwyParamTable"><span class="type">GwyParamTable</span></a> functions to ensure the updates cascade as expected.  <a class="link" href="GwyParamTable.html" title="GwyParamTable"><span class="type">GwyParamTable</span></a> also has a reset function.
+Setters do not cause any GUI response and, hence, has no place in most modules as they would lead to an
+inconsistent state.  Sometimes, however, setting parameter values directly can be useful in non-GUI paths which
+perform extra validation or ensure complex invariants.</p>
+</div>
+<div class="refsect1">
+<a name="GwyParams.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-params-new"></a><h3>gwy_params_new ()</h3>
+<pre class="programlisting"><a class="link" href="GwyParams.html" title="GwyParams"><span class="returnvalue">GwyParams</span></a> *
+gwy_params_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new empty parameter value set.</p>
+<p>The created object is empty (and useless) until parameter definitions are set with <a class="link" href="GwyParams.html#gwy-params-set-def" title="gwy_params_set_def ()"><code class="function">gwy_params_set_def()</code></a>.  However,
+in modules the parameters are normally instantiated using <a class="link" href="GwyParams.html#gwy-params-new-from-settings" title="gwy_params_new_from_settings ()"><code class="function">gwy_params_new_from_settings()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-params-new.returns"></a><h4>Returns</h4>
+<p> A new empty parameter value set.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-set-def"></a><h3>gwy_params_set_def ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_params_set_def (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                    <em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>);</pre>
+<p>Sets the definitions of parameters a <a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> should use.</p>
+<p>Once set, the definitions are fixed.  One <a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> object cannot be used with multiple definitions.</p>
+<div class="refsect3">
+<a name="gwy-params-set-def.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>Set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-get-def"></a><h3>gwy_params_get_def ()</h3>
+<pre class="programlisting"><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="returnvalue">GwyParamDef</span></a> *
+gwy_params_get_def (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>);</pre>
+<p>Gets the definitions object for a parameter set.</p>
+<div class="refsect3">
+<a name="gwy-params-get-def.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-get-def.returns"></a><h4>Returns</h4>
+<p> The set of parameter definitions.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-new-from-settings"></a><h3>gwy_params_new_from_settings ()</h3>
+<pre class="programlisting"><a class="link" href="GwyParams.html" title="GwyParams"><span class="returnvalue">GwyParams</span></a> *
+gwy_params_new_from_settings (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>);</pre>
+<p>Creates a new parameter value set with given definition and loads values from settings.</p>
+<p>The definitions <em class="parameter"><code>pardef</code></em>
+ must have function name set.</p>
+<div class="refsect3">
+<a name="gwy-params-new-from-settings.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>Set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-new-from-settings.returns"></a><h4>Returns</h4>
+<p> A new parameter value set.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-load-from-settings"></a><h3>gwy_params_load_from_settings ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_params_load_from_settings (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>);</pre>
+<p>Loads a parameter value set from settings.</p>
+<p>The corresponding definitions must have function name set.  It is usually more convenient to create and load the
+parameters at the same time using <a class="link" href="GwyParams.html#gwy-params-new-from-settings" title="gwy_params_new_from_settings ()"><code class="function">gwy_params_new_from_settings()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-params-load-from-settings.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A set of parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-duplicate"></a><h3>gwy_params_duplicate ()</h3>
+<pre class="programlisting"><a class="link" href="GwyParams.html" title="GwyParams"><span class="returnvalue">GwyParams</span></a> *
+gwy_params_duplicate (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>);</pre>
+<p>Creates a duplicate of a set of parameter values.</p>
+<div class="refsect3">
+<a name="gwy-params-duplicate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A set of parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-duplicate.returns"></a><h4>Returns</h4>
+<p> A new empty parameter value set.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-save-to-settings"></a><h3>gwy_params_save_to_settings ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_params_save_to_settings (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>);</pre>
+<p>Saves a parameter value set to settings.</p>
+<p>The associated definitions must have function name set.</p>
+<div class="refsect3">
+<a name="gwy-params-save-to-settings.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-reset-all"></a><h3>gwy_params_reset_all ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_params_reset_all (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *prefix</code></em>);</pre>
+<p>Resets all parameters in a parameter value set to default values.</p>
+<p>This function is seldom needed.  See the introduction for discussion.</p>
+<div class="refsect3">
+<a name="gwy-params-reset-all.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prefix</p></td>
+<td class="parameter_description"><p>The prefix (leading path component) limiting parameters to reset.  Pass empty string or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to reset all
+parameters.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-reset"></a><h3>gwy_params_reset ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_params_reset (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Resets a single parameter in a parameter value set to the default value.</p>
+<p>This function is seldom needed.  See the introduction for discussion.</p>
+<div class="refsect3">
+<a name="gwy-params-reset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-reset.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if parameter value has changed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-get-boolean"></a><h3>gwy_params_get_boolean ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_params_get_boolean (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Gets the value of a boolean parameter.</p>
+<p>This function can be used with any boolean-valued parameter, even if it is more complex/specific than a plain
+boolean.</p>
+<div class="refsect3">
+<a name="gwy-params-get-boolean.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-get-boolean.returns"></a><h4>Returns</h4>
+<p> The boolean parameter value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-set-boolean"></a><h3>gwy_params_set_boolean ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_params_set_boolean (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> value</code></em>);</pre>
+<p>Sets the value of a plain boolean parameter.</p>
+<p>This function is seldom needed.  See the introduction for discussion.</p>
+<p>This function can only be used with plain boolean parameters defined by <a class="link" href="GwyParamDef.html#gwy-param-def-add-boolean" title="gwy_param_def_add_boolean ()"><code class="function">gwy_param_def_add_boolean()</code></a>.  More
+complex/specific parameters need to be set using dedicated setters.</p>
+<div class="refsect3">
+<a name="gwy-params-set-boolean.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Value to set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-set-boolean.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if parameter value has changed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-get-enum"></a><h3>gwy_params_get_enum ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_params_get_enum (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Gets the value of a enum parameter.</p>
+<p>This function can be used with any enum-valued parameter, even if it is more complex/specific than a plain
+enum.</p>
+<div class="refsect3">
+<a name="gwy-params-get-enum.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-get-enum.returns"></a><h4>Returns</h4>
+<p> The enum parameter value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-get-masking"></a><h3>gwy_params_get_masking ()</h3>
+<pre class="programlisting"><a href="../libgwyprocess-gwyprocessenums.html#GwyMaskingType"><span class="returnvalue">GwyMaskingType</span></a>
+gwy_params_get_masking (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                        <em class="parameter"><code><a href="../GwyDataField.html#GwyDataField-struct"><span class="type">GwyDataField</span></a> **mask</code></em>);</pre>
+<p>Gets the value of a masking type enum parameter, consistently with a mask field.</p>
+<p>If <em class="parameter"><code>mask</code></em>
+ is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> the returned value is simply the parameter value.</p>
+<p>If <em class="parameter"><code>mask</code></em>
+ is a pointer then <em class="parameter"><code>mask</code></em>
+ and the return value can be modified.  The function will set <em class="parameter"><code>mask</code></em>
+ to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if
+masking is <a href="../libgwyprocess-gwyprocessenums.html#GWY-MASK-IGNORE:CAPS"><code class="literal">GWY_MASK_IGNORE</code></a>.  Conversely, it will return <a href="../libgwyprocess-gwyprocessenums.html#GWY-MASK-IGNORE:CAPS"><code class="literal">GWY_MASK_IGNORE</code></a> if <em class="parameter"><code>mask</code></em>
+ is a pointer to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> data
+field.  In short, if a <em class="parameter"><code>mask</code></em>
+ argument is passed a non-ignore masking mode is guaranteed to coincide with non-<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+mask.</p>
+<div class="refsect3">
+<a name="gwy-params-get-masking.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Pointer to mask data field to update (can also be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-get-masking.returns"></a><h4>Returns</h4>
+<p> The masking enum parameter value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-set-enum"></a><h3>gwy_params_set_enum ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_params_set_enum (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> value</code></em>);</pre>
+<p>Sets the value of a generic enum parameter.</p>
+<p>This function is seldom needed.  See the introduction for discussion.</p>
+<p>This function can only be used with plain enum parameters defined by <a class="link" href="GwyParamDef.html#gwy-param-def-add-gwyenum" title="gwy_param_def_add_gwyenum ()"><code class="function">gwy_param_def_add_gwyenum()</code></a> or
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-enum" title="gwy_param_def_add_enum ()"><code class="function">gwy_param_def_add_enum()</code></a>.  More complex/specific parameters need to be set using dedicated setters.</p>
+<div class="refsect3">
+<a name="gwy-params-set-enum.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Value to set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-set-enum.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if parameter value has changed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-get-flags"></a><h3>gwy_params_get_flags ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gwy_params_get_flags (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Gets the value of a flags parameter.</p>
+<p>This function can be used with any flags-valued parameter, even if it is more complex/specific than a plain
+flag set.</p>
+<div class="refsect3">
+<a name="gwy-params-get-flags.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-get-flags.returns"></a><h4>Returns</h4>
+<p> The fags parameter value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-set-flags"></a><h3>gwy_params_set_flags ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_params_set_flags (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> value</code></em>);</pre>
+<p>Sets the value of a generic flags parameter.</p>
+<p>This function is seldom needed.  See the introduction for discussion.</p>
+<p>This function can only be used with plain flags parameters defined by <a class="link" href="GwyParamDef.html#gwy-param-def-add-gwyflags" title="gwy_param_def_add_gwyflags ()"><code class="function">gwy_param_def_add_gwyflags()</code></a>.  More
+complex/specific parameters need to be set using dedicated setters.</p>
+<div class="refsect3">
+<a name="gwy-params-set-flags.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Value to set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-set-flags.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if parameter value has changed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-set-flag"></a><h3>gwy_params_set_flag ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_params_set_flag (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> flag</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> value</code></em>);</pre>
+<p>Modifies the value of a generic flags parameter.</p>
+<p>This function is seldom needed.  See the introduction for discussion.</p>
+<p>This function can only be used with plain flags parameters defined by <a class="link" href="GwyParamDef.html#gwy-param-def-add-gwyflags" title="gwy_param_def_add_gwyflags ()"><code class="function">gwy_param_def_add_gwyflags()</code></a>.  More
+complex/specific parameters need to be set using dedicated setters.</p>
+<div class="refsect3">
+<a name="gwy-params-set-flag.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flag</p></td>
+<td class="parameter_description"><p>The flag bit to set or unset (it can be actually a flag combination).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to set the flag, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to unset the flag.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-set-flag.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if parameter value has changed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-get-report-type"></a><h3>gwy_params_get_report_type ()</h3>
+<pre class="programlisting"><a href="../GwyResults.html#GwyResultsReportType"><span class="returnvalue">GwyResultsReportType</span></a>
+gwy_params_get_report_type (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Gets the value of a report type parameter.</p>
+<p>This function can only be used with a parameter defined by <a class="link" href="GwyParamDef.html#gwy-param-def-add-report-type" title="gwy_param_def_add_report_type ()"><code class="function">gwy_param_def_add_report_type()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-params-get-report-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-get-report-type.returns"></a><h4>Returns</h4>
+<p> The report type parameter value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-set-report-type"></a><h3>gwy_params_set_report_type ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_params_set_report_type (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                            <em class="parameter"><code><a href="../GwyResults.html#GwyResultsReportType"><span class="type">GwyResultsReportType</span></a> value</code></em>);</pre>
+<p>Sets the value of a report type parameter.</p>
+<p>This function is seldom needed.  See the introduction for discussion.</p>
+<p>This function can only be used with parameters defined by <a class="link" href="GwyParamDef.html#gwy-param-def-add-report-type" title="gwy_param_def_add_report_type ()"><code class="function">gwy_param_def_add_report_type()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-params-set-report-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Value to set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-set-report-type.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if parameter value has changed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-get-int"></a><h3>gwy_params_get_int ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_params_get_int (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Gets the value of a plain integer parameter.</p>
+<p>This function can be used with any integer-valued parameter, even if it is more complex/specific than a plain
+integer.</p>
+<p>It can also be used to get a random seed parameter value.  The seed value does not change between calls unless
+<a class="link" href="GwyParams.html#gwy-params-randomize-seed" title="gwy_params_randomize_seed ()"><code class="function">gwy_params_randomize_seed()</code></a> has been called.</p>
+<div class="refsect3">
+<a name="gwy-params-get-int.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-get-int.returns"></a><h4>Returns</h4>
+<p> The integer parameter value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-set-int"></a><h3>gwy_params_set_int ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_params_set_int (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> value</code></em>);</pre>
+<p>Sets the value of a integer parameter.</p>
+<p>This function is seldom needed.  See the introduction for discussion.</p>
+<p>This function can only be used with plain integer parameters defined by <a class="link" href="GwyParamDef.html#gwy-param-def-add-int" title="gwy_param_def_add_int ()"><code class="function">gwy_param_def_add_int()</code></a> and random seeds
+created with <a class="link" href="GwyParamDef.html#gwy-param-def-add-seed" title="gwy_param_def_add_seed ()"><code class="function">gwy_param_def_add_seed()</code></a>.  More complex/specific parameters need to be set using dedicated setters.</p>
+<div class="refsect3">
+<a name="gwy-params-set-int.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Value to set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-set-int.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if parameter value has changed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-get-double"></a><h3>gwy_params_get_double ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_params_get_double (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Gets the value of a floating point parameter.</p>
+<p>This function can be used with any double-valued parameter, even if it is more complex/specific than a plain
+double.</p>
+<div class="refsect3">
+<a name="gwy-params-get-double.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-get-double.returns"></a><h4>Returns</h4>
+<p> The floating point parameter value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-set-double"></a><h3>gwy_params_set_double ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_params_set_double (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> value</code></em>);</pre>
+<p>Sets the value of a plain floating point parameter.</p>
+<p>This function is seldom needed.  See the introduction for discussion.</p>
+<p>This function can only be used with plain floating point parameters defined by <a class="link" href="GwyParamDef.html#gwy-param-def-add-double" title="gwy_param_def_add_double ()"><code class="function">gwy_param_def_add_double()</code></a> and
+simple transformed parameters such as <a class="link" href="GwyParamDef.html#gwy-param-def-add-angle" title="gwy_param_def_add_angle ()"><code class="function">gwy_param_def_add_angle()</code></a> or <a class="link" href="GwyParamDef.html#gwy-param-def-add-percentage" title="gwy_param_def_add_percentage ()"><code class="function">gwy_param_def_add_percentage()</code></a>.  More
+complex/specific parameters need to be set using dedicated setters.</p>
+<div class="refsect3">
+<a name="gwy-params-set-double.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Value to set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-set-double.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if parameter value has changed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-get-string"></a><h3>gwy_params_get_string ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_params_get_string (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Gets the value of a string parameter.</p>
+<p>This function can be used with any string-valued parameter (for instance units and resource names), even if it is
+more complex/specific than a plain string.</p>
+<div class="refsect3">
+<a name="gwy-params-get-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-get-string.returns"></a><h4>Returns</h4>
+<p> The string parameter value.  It is owned by <em class="parameter"><code>params</code></em>
+and it is only guaranteed to be valid until the
+parameter change (or the object is destroyed).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-set-string"></a><h3>gwy_params_set_string ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_params_set_string (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                       <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *value</code></em>);</pre>
+<p>Sets the value of a string parameter.</p>
+<p>This function is seldom needed.  See the introduction for discussion.</p>
+<div class="refsect3">
+<a name="gwy-params-set-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A set of parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Value to set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-set-string.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if parameter value has changed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-set-unit"></a><h3>gwy_params_set_unit ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_params_set_unit (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *value</code></em>);</pre>
+<p>Sets the value of a unit parameter.</p>
+<p>This function is seldom needed.  See the introduction for discussion.</p>
+<div class="refsect3">
+<a name="gwy-params-set-unit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A set of parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Value to set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-set-unit.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if parameter value has changed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-get-unit"></a><h3>gwy_params_get_unit ()</h3>
+<pre class="programlisting"><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_params_get_unit (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *power10</code></em>);</pre>
+<p>Gets an SI unit object for a unit parameter.</p>
+<p>Use <a class="link" href="GwyParams.html#gwy-params-get-string" title="gwy_params_get_string ()"><code class="function">gwy_params_get_string()</code></a> if you simply want the unit string.</p>
+<p>The returned object is not guaranteed to be updated automatically when the parameter changes.  It must not be
+assumed it will persist past the destruction of <em class="parameter"><code>params</code></em>
+.  Briefly, do not keep it around.</p>
+<div class="refsect3">
+<a name="gwy-params-get-unit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A set of parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>power10</p></td>
+<td class="parameter_description"><p>Location where to store the power of 10 (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-get-unit.returns"></a><h4>Returns</h4>
+<p> An SI unit, owned by <em class="parameter"><code>params</code></em>
+.  It must not be modified nor freed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-set-resource"></a><h3>gwy_params_set_resource ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_params_set_resource (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *value</code></em>);</pre>
+<p>Sets the value of a resource name parameter.</p>
+<p>This function is seldom needed.  See the introduction for discussion.</p>
+<div class="refsect3">
+<a name="gwy-params-set-resource.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A set of parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Value to set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-set-resource.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if parameter value has changed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-get-resource"></a><h3>gwy_params_get_resource ()</h3>
+<pre class="programlisting"><a href="../GwyResource.html#GwyResource-struct"><span class="returnvalue">GwyResource</span></a> *
+gwy_params_get_resource (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Gets the resource object of a resource name parameter.</p>
+<div class="refsect3">
+<a name="gwy-params-get-resource.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A set of parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-get-resource.returns"></a><h4>Returns</h4>
+<p> The resource object corresponding to the parameter value.  A default value is returned if the resource
+does not exist.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-61.html#api-index-2.61">2.61</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-get-color"></a><h3>gwy_params_get_color ()</h3>
+<pre class="programlisting"><a href="../libgwydraw-GwyRGBA.html#GwyRGBA"><span class="returnvalue">GwyRGBA</span></a>
+gwy_params_get_color (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Gets the value of a colour parameter.</p>
+<div class="refsect3">
+<a name="gwy-params-get-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A set of parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-get-color.returns"></a><h4>Returns</h4>
+<p> The colour parameter value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-set-color"></a><h3>gwy_params_set_color ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_params_set_color (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                      <em class="parameter"><code><a href="../libgwydraw-GwyRGBA.html#GwyRGBA"><span class="type">GwyRGBA</span></a> value</code></em>);</pre>
+<p>Sets the value of a colour parameter.</p>
+<p>This function is seldom needed.  See the introduction for discussion.</p>
+<div class="refsect3">
+<a name="gwy-params-set-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A set of parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Value to set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-set-color.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if parameter value has changed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-get-data-id"></a><h3>gwy_params_get_data_id ()</h3>
+<pre class="programlisting"><a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="returnvalue">GwyAppDataId</span></a>
+gwy_params_get_data_id (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Gets the value of a data identifier parameter.</p>
+<p>This function can be used with any specific identifier-valued parameter, even though they have dedicated creators
+and setters.</p>
+<div class="refsect3">
+<a name="gwy-params-get-data-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-get-data-id.returns"></a><h4>Returns</h4>
+<p> The data identifier parameter value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-data-id-is-none"></a><h3>gwy_params_data_id_is_none ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_params_data_id_is_none (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Checks if data identifier parameter is set to no-data.</p>
+<p>This convenience function can be used with any specific identifier-valued parameter.</p>
+<div class="refsect3">
+<a name="gwy-params-data-id-is-none.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-data-id-is-none.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the data identifier parameter is no-data and <a class="link" href="GwyParams.html#gwy-params-get-data-id" title="gwy_params_get_data_id ()"><code class="function">gwy_params_get_data_id()</code></a> would return
+<a class="link" href="GwyDataChooser.html#GWY-APP-DATA-ID-NONE:CAPS" title="GWY_APP_DATA_ID_NONE"><code class="literal">GWY_APP_DATA_ID_NONE</code></a>; <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise if some real data object is selected.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-get-image"></a><h3>gwy_params_get_image ()</h3>
+<pre class="programlisting"><a href="../GwyDataField.html#GwyDataField-struct"><span class="returnvalue">GwyDataField</span></a> *
+gwy_params_get_image (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Gets the data field object for an image identifier parameter.</p>
+<p>This is a more convenient alternative to <a class="link" href="GwyParams.html#gwy-params-get-data-id" title="gwy_params_get_data_id ()"><code class="function">gwy_params_get_data_id()</code></a> since it fetches and checks the object.</p>
+<div class="refsect3">
+<a name="gwy-params-get-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-get-image.returns"></a><h4>Returns</h4>
+<p> The image data field, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the parameter is none (or the image no longer exists).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-get-mask"></a><h3>gwy_params_get_mask ()</h3>
+<pre class="programlisting"><a href="../GwyDataField.html#GwyDataField-struct"><span class="returnvalue">GwyDataField</span></a> *
+gwy_params_get_mask (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Gets the data field object for an mask identifier parameter.</p>
+<p>This is a more convenient alternative to <a class="link" href="GwyParams.html#gwy-params-get-data-id" title="gwy_params_get_data_id ()"><code class="function">gwy_params_get_data_id()</code></a> since it fetches and checks the object.</p>
+<div class="refsect3">
+<a name="gwy-params-get-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-get-mask.returns"></a><h4>Returns</h4>
+<p> The mask data field, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the parameter is none (or the image no longer exists).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-get-graph"></a><h3>gwy_params_get_graph ()</h3>
+<pre class="programlisting"><a href="../GwyGraphModel.html#GwyGraphModel-struct"><span class="returnvalue">GwyGraphModel</span></a> *
+gwy_params_get_graph (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Gets the graph model object for a graph identifier parameter.</p>
+<p>This is a more convenient alternative to <a class="link" href="GwyParams.html#gwy-params-get-data-id" title="gwy_params_get_data_id ()"><code class="function">gwy_params_get_data_id()</code></a> since it fetches and checks the object.</p>
+<div class="refsect3">
+<a name="gwy-params-get-graph.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-get-graph.returns"></a><h4>Returns</h4>
+<p> The graph model of the graph, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the parameter is none (or the graph no longer exists).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-get-volume"></a><h3>gwy_params_get_volume ()</h3>
+<pre class="programlisting"><a href="../GwyBrick.html#GwyBrick-struct"><span class="returnvalue">GwyBrick</span></a> *
+gwy_params_get_volume (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Gets the brick object for a volume data identifier parameter.</p>
+<p>This is a more convenient alternative to <a class="link" href="GwyParams.html#gwy-params-get-data-id" title="gwy_params_get_data_id ()"><code class="function">gwy_params_get_data_id()</code></a> since it fetches and checks the object.</p>
+<div class="refsect3">
+<a name="gwy-params-get-volume.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-get-volume.returns"></a><h4>Returns</h4>
+<p> The volume data brick, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the parameter is none (or the volume data no longer exist).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-get-xyz"></a><h3>gwy_params_get_xyz ()</h3>
+<pre class="programlisting"><a href="../GwySurface.html#GwySurface-struct"><span class="returnvalue">GwySurface</span></a> *
+gwy_params_get_xyz (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Gets the surface object for a xyz data identifier parameter.</p>
+<p>This is a more convenient alternative to <a class="link" href="GwyParams.html#gwy-params-get-data-id" title="gwy_params_get_data_id ()"><code class="function">gwy_params_get_data_id()</code></a> since it fetches and checks the object.</p>
+<div class="refsect3">
+<a name="gwy-params-get-xyz.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-get-xyz.returns"></a><h4>Returns</h4>
+<p> The xyz data surface, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the parameter is none (or the xyz data no longer exist).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-get-curve-map"></a><h3>gwy_params_get_curve_map ()</h3>
+<pre class="programlisting"><a href="../GwyLawn.html#GwyLawn-struct"><span class="returnvalue">GwyLawn</span></a> *
+gwy_params_get_curve_map (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Gets the lawn object for a curve map data identifier parameter.</p>
+<p>This is a more convenient alternative to <a class="link" href="GwyParams.html#gwy-params-get-data-id" title="gwy_params_get_data_id ()"><code class="function">gwy_params_get_data_id()</code></a> since it fetches and checks the object.</p>
+<div class="refsect3">
+<a name="gwy-params-get-curve-map.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-get-curve-map.returns"></a><h4>Returns</h4>
+<p> The curve map data lawn, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the parameter is none (or the curve map data no longer exist).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-set-image-id"></a><h3>gwy_params_set_image_id ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_params_set_image_id (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                         <em class="parameter"><code><a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="type">GwyAppDataId</span></a> value</code></em>);</pre>
+<p>Sets the value of an image identifier parameter.</p>
+<p>This function is seldom needed.  See the introduction for discussion.</p>
+<p>If <em class="parameter"><code>value</code></em>
+ is not <a class="link" href="GwyDataChooser.html#GWY-APP-DATA-ID-NONE:CAPS" title="GWY_APP_DATA_ID_NONE"><code class="literal">GWY_APP_DATA_ID_NONE</code></a> then the image identified by <em class="parameter"><code>value</code></em>
+ must currently exist.</p>
+<div class="refsect3">
+<a name="gwy-params-set-image-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A set of parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Value to set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-set-image-id.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if parameter value has changed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-set-graph-id"></a><h3>gwy_params_set_graph_id ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_params_set_graph_id (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                         <em class="parameter"><code><a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="type">GwyAppDataId</span></a> value</code></em>);</pre>
+<p>Sets the value of a graph identifier parameter.</p>
+<p>This function is seldom needed.  See the introduction for discussion.</p>
+<p>If <em class="parameter"><code>value</code></em>
+ is not <a class="link" href="GwyDataChooser.html#GWY-APP-DATA-ID-NONE:CAPS" title="GWY_APP_DATA_ID_NONE"><code class="literal">GWY_APP_DATA_ID_NONE</code></a> then the graph identified by <em class="parameter"><code>value</code></em>
+ must currently exist.</p>
+<div class="refsect3">
+<a name="gwy-params-set-graph-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A set of parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Value to set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-set-graph-id.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if parameter value has changed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-set-volume-id"></a><h3>gwy_params_set_volume_id ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_params_set_volume_id (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                          <em class="parameter"><code><a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="type">GwyAppDataId</span></a> value</code></em>);</pre>
+<p>Sets the value of a volume data identifier parameter.</p>
+<p>If <em class="parameter"><code>value</code></em>
+ is not <a class="link" href="GwyDataChooser.html#GWY-APP-DATA-ID-NONE:CAPS" title="GWY_APP_DATA_ID_NONE"><code class="literal">GWY_APP_DATA_ID_NONE</code></a> then the volume data identified by <em class="parameter"><code>value</code></em>
+ must currently exist.</p>
+<p>This function is seldom needed.  See the introduction for discussion.</p>
+<div class="refsect3">
+<a name="gwy-params-set-volume-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A set of parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Value to set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-set-xyz-id"></a><h3>gwy_params_set_xyz_id ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_params_set_xyz_id (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                       <em class="parameter"><code><a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="type">GwyAppDataId</span></a> value</code></em>);</pre>
+<p>Sets the value of an xyz data identifier parameter.</p>
+<p>This function is seldom needed.  See the introduction for discussion.</p>
+<p>If <em class="parameter"><code>value</code></em>
+ is not <a class="link" href="GwyDataChooser.html#GWY-APP-DATA-ID-NONE:CAPS" title="GWY_APP_DATA_ID_NONE"><code class="literal">GWY_APP_DATA_ID_NONE</code></a> then the XYZ data identified by <em class="parameter"><code>value</code></em>
+ must currently exist.</p>
+<div class="refsect3">
+<a name="gwy-params-set-xyz-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A set of parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Value to set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-set-xyz-id.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if parameter value has changed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-set-curve-map-id"></a><h3>gwy_params_set_curve_map_id ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_params_set_curve_map_id (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                             <em class="parameter"><code><a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="type">GwyAppDataId</span></a> value</code></em>);</pre>
+<p>Sets the value of a curve map data identifier parameter.</p>
+<p>This function is seldom needed.  See the introduction for discussion.</p>
+<p>If <em class="parameter"><code>value</code></em>
+ is not <a class="link" href="GwyDataChooser.html#GWY-APP-DATA-ID-NONE:CAPS" title="GWY_APP_DATA_ID_NONE"><code class="literal">GWY_APP_DATA_ID_NONE</code></a> then the curve map data identified by <em class="parameter"><code>value</code></em>
+ must currently exist.</p>
+<div class="refsect3">
+<a name="gwy-params-set-curve-map-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A set of parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Value to set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-set-curve-map-id.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if parameter value has changed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-set-curve"></a><h3>gwy_params_set_curve ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_params_set_curve (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> value</code></em>);</pre>
+<p>Sets the value of a graph or lawn curve number parameter.</p>
+<p>This function is seldom needed.  See the introduction for discussion.</p>
+<div class="refsect3">
+<a name="gwy-params-set-curve.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A set of parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Value to set (a non-negative integer or -1).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-set-curve.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if parameter value has changed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-params-randomize-seed"></a><h3>gwy_params_randomize_seed ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_params_randomize_seed (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Randomizes the value of a random seed parameter.</p>
+<p>You can use <a class="link" href="GwyParams.html#gwy-params-get-int" title="gwy_params_get_int ()"><code class="function">gwy_params_get_int()</code></a> any number of times afterwards and obtain the same value.</p>
+<p>This function is seldom needed.  See the introduction for discussion.  In the usual setup the seed is randomised
+when loaded from settings if the controlling randomization boolean is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.  Furthermore, <a class="link" href="GwyParamTable.html" title="GwyParamTable"><span class="type">GwyParamTable</span></a> knows to
+randomize the seed when the randomization button is pressed.</p>
+<div class="refsect3">
+<a name="gwy-params-randomize-seed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A set of parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-params-randomize-seed.returns"></a><h4>Returns</h4>
+<p> The new random seed value (for convenience).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyParams.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyParams-struct"></a><h3>struct GwyParams</h3>
+<pre class="programlisting">struct GwyParams;</pre>
+<p>Object representing a set of parameter values.</p>
+<p>The <a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> struct contains no public fields.</p>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyParamsClass"></a><h3>struct GwyParamsClass</h3>
+<pre class="programlisting">struct GwyParamsClass {
+    GObjectClass parent;
+};
+</pre>
+<p>Class of parameter value sets.</p>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

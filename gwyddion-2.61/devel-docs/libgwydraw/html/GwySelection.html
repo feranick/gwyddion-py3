@@ -1,0 +1,1130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwySelection: Gwyddion Drawing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Drawing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Drawing Library Reference Manual">
+<link rel="prev" href="libgwydraw-gwypixfield.html" title="gwypixfield">
+<link rel="next" href="libgwydraw-gwydrawenums.html" title="gwydrawenums">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwySelection.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwySelection.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GwySelection.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GwySelection.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GwySelection.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwydraw-gwypixfield.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwydraw-gwydrawenums.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwySelection"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwySelection.top_of_page"></a>GwySelection</span></h2>
+<p>GwySelection — Data selection base class</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwySelection.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="GwySelection.html#GwySelectionFilterFunc" title="GwySelectionFilterFunc ()">*GwySelectionFilterFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwySelection.html#gwy-selection-duplicate" title="gwy_selection_duplicate()">gwy_selection_duplicate</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwySelection.html#gwy-selection-assign" title="gwy_selection_assign()">gwy_selection_assign</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwySelection.html#gwy-selection-get-object-size" title="gwy_selection_get_object_size ()">gwy_selection_get_object_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySelection.html#gwy-selection-clear" title="gwy_selection_clear ()">gwy_selection_clear</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwySelection.html#gwy-selection-get-object" title="gwy_selection_get_object ()">gwy_selection_get_object</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwySelection.html#gwy-selection-set-object" title="gwy_selection_set_object ()">gwy_selection_set_object</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySelection.html#gwy-selection-delete-object" title="gwy_selection_delete_object ()">gwy_selection_delete_object</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwySelection.html#gwy-selection-get-data" title="gwy_selection_get_data ()">gwy_selection_get_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySelection.html#gwy-selection-set-data" title="gwy_selection_set_data ()">gwy_selection_set_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwySelection.html#gwy-selection-get-max-objects" title="gwy_selection_get_max_objects ()">gwy_selection_get_max_objects</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySelection.html#gwy-selection-set-max-objects" title="gwy_selection_set_max_objects ()">gwy_selection_set_max_objects</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwySelection.html#gwy-selection-is-full" title="gwy_selection_is_full ()">gwy_selection_is_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySelection.html#gwy-selection-crop" title="gwy_selection_crop ()">gwy_selection_crop</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySelection.html#gwy-selection-move" title="gwy_selection_move ()">gwy_selection_move</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySelection.html#gwy-selection-filter" title="gwy_selection_filter ()">gwy_selection_filter</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySelection.html#gwy-selection-changed" title="gwy_selection_changed ()">gwy_selection_changed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySelection.html#gwy-selection-finished" title="gwy_selection_finished ()">gwy_selection_finished</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwySelection.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="GwySelection.html#GwySelection--max-objects" title="The “max-objects” property">max-objects</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="GwySelection.html#GwySelection--object-size" title="The “object-size” property">object-size</a></td>
+<td class="property_flags">Read</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwySelection.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwySelection.html#GwySelection-changed" title="The “changed” signal">changed</a></td>
+<td class="signal_flags"><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwySelection.html#GwySelection-finished" title="The “finished” signal">finished</a></td>
+<td class="signal_flags"><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwySelection.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwySelection.html#GwySelection-struct" title="struct GwySelection">GwySelection</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwySelection.html#GwySelectionClass" title="struct GwySelectionClass">GwySelectionClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwySelection.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> GwySelection
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwySelection.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GwySelection implements
+ <a href="../GwySerializable.html#GwySerializable-struct">GwySerializable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwySelection.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libdraw/gwydraw.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwySelection.description"></a><h2>Description</h2>
+<p><a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> is an abstract class representing data selections.  Particular
+selection types are defined by vector layer modules.</p>
+<p>Selections behave as flat arrays of coordinates.  They are however logically
+split into selection objects (points, lines, rectangles), characteristic for
+each selection type. For example, to describe a horizontal line one needs
+only one coordinate, for a point two coordinates are needed, rectangle or
+arbitrary line need four.  <a class="link" href="GwySelection.html#gwy-selection-get-object-size" title="gwy_selection_get_object_size ()"><code class="function">gwy_selection_get_object_size()</code></a> can be used to
+generically determine the number of coordinates used to describe a one
+selection object.</p>
+<p>The number of selection objects in a selection can vary,
+<a class="link" href="GwySelection.html#gwy-selection-set-max-objects" title="gwy_selection_set_max_objects ()"><code class="function">gwy_selection_set_max_objects()</code></a> sets the maximum possible number.  Functions
+for getting and setting individual selection objects
+(<a class="link" href="GwySelection.html#gwy-selection-get-object" title="gwy_selection_get_object ()"><code class="function">gwy_selection_get_object()</code></a>, <a class="link" href="GwySelection.html#gwy-selection-set-object" title="gwy_selection_set_object ()"><code class="function">gwy_selection_set_object()</code></a>) or complete
+selection (<a class="link" href="GwySelection.html#gwy-selection-get-data" title="gwy_selection_get_data ()"><code class="function">gwy_selection_get_data()</code></a>, <a class="link" href="GwySelection.html#gwy-selection-set-data" title="gwy_selection_set_data ()"><code class="function">gwy_selection_set_data()</code></a>) are
+available.  The method <a class="link" href="GwySelection.html#gwy-selection-set-data" title="gwy_selection_set_data ()"><code class="function">gwy_selection_set_data()</code></a> with <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> second argument
+is also used to determine the number of selected object.</p>
+</div>
+<div class="refsect1">
+<a name="GwySelection.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GwySelectionFilterFunc"></a><h3>GwySelectionFilterFunc ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<span class="c_punctuation">(</span>*GwySelectionFilterFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> *selection</code></em>,
+                           <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>,
+                           <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<p>Type of selection filtering function.</p>
+<div class="refsect3">
+<a name="GwySelectionFilterFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>selection</p></td>
+<td class="parameter_description"><p>A selection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Index of object to consider.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>User data passed to <a class="link" href="GwySelection.html#gwy-selection-filter" title="gwy_selection_filter ()"><code class="function">gwy_selection_filter()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="GwySelectionFilterFunc.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> for objects that should be kept, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> for objects that
+should be removed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-16.html#api-index-2.16">2.16</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-selection-duplicate"></a><h3>gwy_selection_duplicate()</h3>
+<pre class="programlisting">#define             gwy_selection_duplicate(selection)</pre>
+<p>Convenience macro doing <a href="../GwySerializable.html#gwy-serializable-duplicate"><code class="function">gwy_serializable_duplicate()</code></a> with all the necessary
+typecasting.</p>
+<div class="refsect3">
+<a name="gwy-selection-duplicate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>selection</p></td>
+<td class="parameter_description"><p>An selection to duplicate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-selection-assign"></a><h3>gwy_selection_assign()</h3>
+<pre class="programlisting">#define             gwy_selection_assign(dest, source)</pre>
+<p>Convenience macro making one selection identical to another.</p>
+<p>This is just a <a href="../GwySerializable.html#gwy-serializable-clone"><code class="function">gwy_serializable_clone()</code></a> wrapper with all the necessary
+typecasting.</p>
+<div class="refsect3">
+<a name="gwy-selection-assign.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dest</p></td>
+<td class="parameter_description"><p>Target selection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>Source selection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-52.html#api-index-2.52">2.52</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-selection-get-object-size"></a><h3>gwy_selection_get_object_size ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gwy_selection_get_object_size (<em class="parameter"><code><a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> *selection</code></em>);</pre>
+<p>Gets the number of coordinates that make up a one selection object.</p>
+<div class="refsect3">
+<a name="gwy-selection-get-object-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>selection</p></td>
+<td class="parameter_description"><p>A selection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-selection-get-object-size.returns"></a><h4>Returns</h4>
+<p> The number of coordinates in one selection object.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-selection-clear"></a><h3>gwy_selection_clear ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_selection_clear (<em class="parameter"><code><a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> *selection</code></em>);</pre>
+<p>Clears a selection.</p>
+<div class="refsect3">
+<a name="gwy-selection-clear.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>selection</p></td>
+<td class="parameter_description"><p>A selection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-selection-get-object"></a><h3>gwy_selection_get_object ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_selection_get_object (<em class="parameter"><code><a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> *selection</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *data</code></em>);</pre>
+<p>Gets one selection object.</p>
+<div class="refsect3">
+<a name="gwy-selection-get-object.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>selection</p></td>
+<td class="parameter_description"><p>A selection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Index of object to get.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Array to store selection object data to.  Object data is an
+array of coordinates whose precise meaning is defined by particular
+selection types.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-selection-get-object.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if there was such an object and <em class="parameter"><code>data</code></em>
+was filled.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-selection-set-object"></a><h3>gwy_selection_set_object ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_selection_set_object (<em class="parameter"><code><a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> *selection</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *data</code></em>);</pre>
+<p>Sets one selection object.</p>
+<p>This method can be also used to append objects (if the maximum number is
+not exceeded).  Since there cannot be holes in the object list, <em class="parameter"><code>i</code></em>
+ must be
+then equal to either the number of selected objects or special value -1
+meaning append to end.</p>
+<div class="refsect3">
+<a name="gwy-selection-set-object.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>selection</p></td>
+<td class="parameter_description"><p>A selection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Index of object to set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Object selection data.  It's an array of coordinates whose precise
+meaning is defined by particular selection types.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-selection-set-object.returns"></a><h4>Returns</h4>
+<p> The index of actually set object (useful namely when <em class="parameter"><code>i</code></em>
+is -1).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-selection-delete-object"></a><h3>gwy_selection_delete_object ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_selection_delete_object (<em class="parameter"><code><a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> *selection</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>);</pre>
+<p>Deletes a one selection object.</p>
+<p>Since there cannot be holes in the object list, the rest of selection
+objects is moved to close the gap.</p>
+<div class="refsect3">
+<a name="gwy-selection-delete-object.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>selection</p></td>
+<td class="parameter_description"><p>A selection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Index of object to delete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-selection-get-data"></a><h3>gwy_selection_get_data ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_selection_get_data (<em class="parameter"><code><a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> *selection</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *data</code></em>);</pre>
+<p>Gets selection data.</p>
+<div class="refsect3">
+<a name="gwy-selection-get-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>selection</p></td>
+<td class="parameter_description"><p>A selection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Array to store selection data to.  Selection data is an
+array of coordinates whose precise meaning is defined by particular
+selection types.  It may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-selection-get-data.returns"></a><h4>Returns</h4>
+<p> The number of selected objects.  This is *not* the required size
+of <em class="parameter"><code>data</code></em>
+, which must be at least <a class="link" href="GwySelection.html#gwy-selection-get-object-size" title="gwy_selection_get_object_size ()"><code class="function">gwy_selection_get_object_size()</code></a>
+times larger.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-selection-set-data"></a><h3>gwy_selection_set_data ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_selection_set_data (<em class="parameter"><code><a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> *selection</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nselected</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *data</code></em>);</pre>
+<p>Sets selection data.</p>
+<div class="refsect3">
+<a name="gwy-selection-set-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>selection</p></td>
+<td class="parameter_description"><p>A selection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nselected</p></td>
+<td class="parameter_description"><p>The number of selected objects.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Selection data, that is an array <em class="parameter"><code>nselected</code></em>
+*
+<a class="link" href="GwySelection.html#gwy-selection-get-object-size" title="gwy_selection_get_object_size ()"><code class="function">gwy_selection_get_object_size()</code></a> long with selected object
+coordinates.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-selection-get-max-objects"></a><h3>gwy_selection_get_max_objects ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gwy_selection_get_max_objects (<em class="parameter"><code><a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> *selection</code></em>);</pre>
+<p>Gets the maximum number of selected objects.</p>
+<div class="refsect3">
+<a name="gwy-selection-get-max-objects.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>selection</p></td>
+<td class="parameter_description"><p>A selection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-selection-get-max-objects.returns"></a><h4>Returns</h4>
+<p> The maximum number of selected objects;</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-selection-set-max-objects"></a><h3>gwy_selection_set_max_objects ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_selection_set_max_objects (<em class="parameter"><code><a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> *selection</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> max_objects</code></em>);</pre>
+<p>Sets the maximum number of objects allowed to select.</p>
+<p>When selection reaches this number of selected objects, it emits
+"finished" signal.</p>
+<div class="refsect3">
+<a name="gwy-selection-set-max-objects.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>selection</p></td>
+<td class="parameter_description"><p>A selection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_objects</p></td>
+<td class="parameter_description"><p>The maximum number of objects allowed to select.  Note
+particular selection types may allow only specific values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-selection-is-full"></a><h3>gwy_selection_is_full ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_selection_is_full (<em class="parameter"><code><a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> *selection</code></em>);</pre>
+<p>Checks whether the maximum number of objects is selected.</p>
+<div class="refsect3">
+<a name="gwy-selection-is-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>selection</p></td>
+<td class="parameter_description"><p>A selection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-selection-is-full.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> when the maximum possible number of objects is selected,
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-selection-crop"></a><h3>gwy_selection_crop ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_selection_crop (<em class="parameter"><code><a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> *selection</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> xmin</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> ymin</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> xmax</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> ymax</code></em>);</pre>
+<p>Limits objects in a selection to a rectangle.</p>
+<p>Objects that are fully outside specified rectangle are removed.  Objects
+partially outside may be removed or cut, depending on what makes sense for
+the specific selection type.  If the selection class does not implement this
+method then all objects are removed.</p>
+<div class="refsect3">
+<a name="gwy-selection-crop.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>selection</p></td>
+<td class="parameter_description"><p>A selection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xmin</p></td>
+<td class="parameter_description"><p>Minimum x-coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ymin</p></td>
+<td class="parameter_description"><p>Minimum y-coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xmax</p></td>
+<td class="parameter_description"><p>Maximum x-coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ymax</p></td>
+<td class="parameter_description"><p>Maximum y-coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-16.html#api-index-2.16">2.16</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-selection-move"></a><h3>gwy_selection_move ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_selection_move (<em class="parameter"><code><a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> *selection</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> vx</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> vy</code></em>);</pre>
+<p>Moves entire selection in plane by given vector.</p>
+<p>If a selection class does not implement this operation the selection remains
+unchanged.  Bult-in selection classes generally implement this operation if
+it is meaningful.  For some, such as GwySelectionLattice, it is not
+meaningful and moving GwySelectionLattice thus does not do anything.</p>
+<div class="refsect3">
+<a name="gwy-selection-move.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>selection</p></td>
+<td class="parameter_description"><p>A selection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>vx</p></td>
+<td class="parameter_description"><p>Value to add to all x-coordinates.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>vy</p></td>
+<td class="parameter_description"><p>Value to add to all y-coordinates.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-43.html#api-index-2.43">2.43</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-selection-filter"></a><h3>gwy_selection_filter ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_selection_filter (<em class="parameter"><code><a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> *selection</code></em>,
+                      <em class="parameter"><code><a class="link" href="GwySelection.html#GwySelectionFilterFunc" title="GwySelectionFilterFunc ()"><span class="type">GwySelectionFilterFunc</span></a> filter</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<p>Removes selection objects matching certain criteria.</p>
+<div class="refsect3">
+<a name="gwy-selection-filter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>selection</p></td>
+<td class="parameter_description"><p>A selection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filter</p></td>
+<td class="parameter_description"><p>Function returning <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> for objects that should be kept, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>
+for objects that should be removed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>User data passed to <em class="parameter"><code>filter</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-16.html#api-index-2.16">2.16</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-selection-changed"></a><h3>gwy_selection_changed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_selection_changed (<em class="parameter"><code><a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> *selection</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> i</code></em>);</pre>
+<p>Emits "changed" signal on a selection.</p>
+<div class="refsect3">
+<a name="gwy-selection-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>selection</p></td>
+<td class="parameter_description"><p>A selection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Index of object that changed.  Use -1 when not applicable, e.g., when
+complete selection was changed, cleared, or truncated.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-selection-finished"></a><h3>gwy_selection_finished ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_selection_finished (<em class="parameter"><code><a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> *selection</code></em>);</pre>
+<p>Emits "finished" signal on a selection.</p>
+<div class="refsect3">
+<a name="gwy-selection-finished.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>selection</p></td>
+<td class="parameter_description"><p>A selection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwySelection.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwySelection-struct"></a><h3>struct GwySelection</h3>
+<pre class="programlisting">struct GwySelection;</pre>
+<p>The <a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> struct describes an abstract selection as a collection
+of coordinates.  It should not be accessed directly except selection
+class implementation.</p>
+<div class="refsect3">
+<a name="GwySelection.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwySelectionClass"></a><h3>struct GwySelectionClass</h3>
+<pre class="programlisting">struct GwySelectionClass {
+    guint object_size;
+
+    /* Virtual table */
+    void (*clear)(GwySelection *selection);
+    gboolean(*get_object)(GwySelection *selection,
+                          gint i,
+                          gdouble *data);
+    gint (*set_object)(GwySelection *selection,
+                       gint i,
+                       const gdouble *data);
+    void (*delete_object)(GwySelection *selection,
+                          gint i);
+    gint (*get_data)(GwySelection *selection,
+                     gdouble *data);
+    void (*set_data)(GwySelection *selection,
+                     gint nselected,
+                     const gdouble *data);
+    void (*set_max_objects)(GwySelection *selection,
+                            guint max_objects);
+
+    /* Signals */
+    void (*changed)(GwySelection *selection,
+                    gint i);
+    void (*finished)(GwySelection *selection);
+};
+</pre>
+<p>The virtual methods and data memebers of <a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a>s.</p>
+<p>Typically, the only field subclasses set in their class init method is
+<em class="parameter"><code>object_size</code></em>
+.  The methods are implemented generically in <a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a>
+and need not be overriden.</p>
+<div class="refsect3">
+<a name="GwySelectionClass.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GwySelectionClass.object-size"></a>object_size</code></em>;</p></td>
+<td class="struct_member_description"><p>The number of coordinates that form one selection object.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwySelectionClass.clear"></a>clear</code></em> ()</p></td>
+<td class="struct_member_description"><p>The <a class="link" href="GwySelection.html#gwy-selection-clear" title="gwy_selection_clear ()"><code class="function">gwy_selection_clear()</code></a> virtual method.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwySelectionClass.get-object"></a>get_object</code></em> ()</p></td>
+<td class="struct_member_description"><p>The <a class="link" href="GwySelection.html#gwy-selection-get-object" title="gwy_selection_get_object ()"><code class="function">gwy_selection_get_object()</code></a> virtual method.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwySelectionClass.set-object"></a>set_object</code></em> ()</p></td>
+<td class="struct_member_description"><p>The <a class="link" href="GwySelection.html#gwy-selection-set-object" title="gwy_selection_set_object ()"><code class="function">gwy_selection_set_object()</code></a> virtual method.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwySelectionClass.delete-object"></a>delete_object</code></em> ()</p></td>
+<td class="struct_member_description"><p>The <a class="link" href="GwySelection.html#gwy-selection-delete-object" title="gwy_selection_delete_object ()"><code class="function">gwy_selection_delete_object()</code></a> virtual method.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwySelectionClass.get-data"></a>get_data</code></em> ()</p></td>
+<td class="struct_member_description"><p>The <a class="link" href="GwySelection.html#gwy-selection-get-data" title="gwy_selection_get_data ()"><code class="function">gwy_selection_get_data()</code></a> virtual method.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwySelectionClass.set-data"></a>set_data</code></em> ()</p></td>
+<td class="struct_member_description"><p>The <a class="link" href="GwySelection.html#gwy-selection-set-data" title="gwy_selection_set_data ()"><code class="function">gwy_selection_set_data()</code></a> virtual method.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwySelectionClass.set-max-objects"></a>set_max_objects</code></em> ()</p></td>
+<td class="struct_member_description"><p>The <a class="link" href="GwySelection.html#gwy-selection-set-max-objects" title="gwy_selection_set_max_objects ()"><code class="function">gwy_selection_set_max_objects()</code></a> virtual method.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwySelectionClass.changed"></a>changed</code></em> ()</p></td>
+<td class="struct_member_description"><p>The "changed" signal virtual method.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwySelectionClass.finished"></a>finished</code></em> ()</p></td>
+<td class="struct_member_description"><p>The "finished" signal virtual method.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwySelection.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GwySelection--max-objects"></a><h3>The <code class="literal">“max-objects”</code> property</h3>
+<pre class="programlisting">  “max-objects”              <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Maximum number of objects that can be selected.</p>
+<p>Owner: GwySelection</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &lt;= 65536</p>
+<p>Default value: 1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwySelection--object-size"></a><h3>The <code class="literal">“object-size”</code> property</h3>
+<pre class="programlisting">  “object-size”              <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Number of coordinates in one selection object.</p>
+<p>Owner: GwySelection</p>
+<p>Flags: Read</p>
+<p>Allowed values: &lt;= 1024</p>
+<p>Default value: 0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwySelection.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GwySelection-changed"></a><h3>The <code class="literal">“changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> *gwyselection,
+               <span class="type">int</span>           arg1,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>The ::changed signal is emitted whenever selection changes.</p>
+<div class="refsect3">
+<a name="GwySelection-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwyselection</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arg1</p></td>
+<td class="parameter_description"><p>Changed object position hint.  If the value is nonnegative, only
+this object has changed.  If it's negative, the selection has
+to be treated as completely changed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwySelection-finished"></a><h3>The <code class="literal">“finished”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> *gwyselection,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>The ::finished signal is emitted when selection is finished.</p>
+<p>What exactly finished means is defined by corresponding
+<a href="../GwyVectorLayer.html#GwyVectorLayer-struct"><span class="type">GwyVectorLayer</span></a>, but normally it involves user stopped changing
+a selection object. Selections never emit this signal themselves.</p>
+<div class="refsect3">
+<a name="GwySelection-finished.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwyselection</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwySelection.see-also"></a><h2>See Also</h2>
+<p><a href="../GwyVectorLayer.html#GwyVectorLayer-struct"><span class="type">GwyVectorLayer</span></a> -- uses <a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> for selections,
+<a href="../GwyGraphArea.html#GwyGraphArea-struct"><span class="type">GwyGraphArea</span></a> -- uses <a class="link" href="GwySelection.html" title="GwySelection"><span class="type">GwySelection</span></a> for selections</p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

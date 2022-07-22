@@ -1,0 +1,774 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyDialog: Gwyddion Application Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="prev" href="GwyParamTable.html" title="GwyParamTable">
+<link rel="next" href="GwyTool.html" title="GwyTool">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyDialog.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyDialog.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GwyDialog.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="GwyParamTable.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyTool.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyDialog"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyDialog.top_of_page"></a>GwyDialog</span></h2>
+<p>GwyDialog — Data processing module dialog</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyDialog.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="GwyDialog.html#GwyDialogPreviewFunc" title="GwyDialogPreviewFunc ()">*GwyDialogPreviewFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDialog.html#gwy-dialog-new" title="gwy_dialog_new ()">gwy_dialog_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDialog.html#gwy-dialog-add-buttons" title="gwy_dialog_add_buttons ()">gwy_dialog_add_buttons</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDialog.html#gwy-dialog-add-content" title="gwy_dialog_add_content ()">gwy_dialog_add_content</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDialog.html#gwy-dialog-add-param-table" title="gwy_dialog_add_param_table ()">gwy_dialog_add_param_table</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDialog.html#gwy-dialog-remove-param-table" title="gwy_dialog_remove_param_table ()">gwy_dialog_remove_param_table</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDialog.html#gwy-dialog-set-preview-func" title="gwy_dialog_set_preview_func ()">gwy_dialog_set_preview_func</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDialog.html#gwy-dialog-set-instant-updates-param" title="gwy_dialog_set_instant_updates_param ()">gwy_dialog_set_instant_updates_param</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyDialog.html#GwyDialogOutcome" title="enum GwyDialogOutcome"><span class="returnvalue">GwyDialogOutcome</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDialog.html#gwy-dialog-run" title="gwy_dialog_run ()">gwy_dialog_run</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDialog.html#gwy-dialog-invalidate" title="gwy_dialog_invalidate ()">gwy_dialog_invalidate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDialog.html#gwy-dialog-have-result" title="gwy_dialog_have_result ()">gwy_dialog_have_result</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyDialog.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GwyDialog.html#GwyDialogOutcome" title="enum GwyDialogOutcome">GwyDialogOutcome</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GwyDialog.html#GwyPreviewType" title="enum GwyPreviewType">GwyPreviewType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GwyDialog.html#GwyResponseType" title="enum GwyResponseType">GwyResponseType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyDialog.html#GwyDialog-struct" title="struct GwyDialog">GwyDialog</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyDialog.html#GwyDialogClass" title="struct GwyDialogClass">GwyDialogClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyDialog.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkObject.html#GtkObject-struct">GtkObject</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct">GtkWidget</a>
+                <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkContainer.html#GtkContainer-struct">GtkContainer</a>
+                    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkBin.html#GtkBin-struct">GtkBin</a>
+                        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWindow.html#GtkWindow-struct">GtkWindow</a>
+                            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkDialog.html#GtkDialog-struct">GtkDialog</a>
+                                <span class="lineart">╰──</span> GwyDialog
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyDialog.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GwyDialog implements
+ AtkImplementorIface and  <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkBuildable.html#GtkBuildable-struct">GtkBuildable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwyDialog.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;app/gwyapp.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyDialog.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyDialog.html" title="GwyDialog"><span class="type">GwyDialog</span></a> is a <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkDialog.html#GtkDialog-struct"><span class="type">GtkDialog</span></a> suitable for most data processing modules (including volume data, graph, etc.).
+It offers simplified construction functions <a class="link" href="GwyDialog.html#gwy-dialog-new" title="gwy_dialog_new ()"><code class="function">gwy_dialog_new()</code></a>, <a class="link" href="GwyDialog.html#gwy-dialog-add-buttons" title="gwy_dialog_add_buttons ()"><code class="function">gwy_dialog_add_buttons()</code></a> and <a class="link" href="GwyDialog.html#gwy-dialog-add-content" title="gwy_dialog_add_content ()"><code class="function">gwy_dialog_add_content()</code></a>.</p>
+<p>The main feature is integration with <a class="link" href="GwyParamTable.html" title="GwyParamTable"><span class="type">GwyParamTable</span></a>.  Parameter tables are registered using
+<a class="link" href="GwyDialog.html#gwy-dialog-add-param-table" title="gwy_dialog_add_param_table ()"><code class="function">gwy_dialog_add_param_table()</code></a>.  The dialog can then perform some simple tasks itself.  For instance with
+<a class="link" href="GwyDialog.html#gwy-dialog-set-instant-updates-param" title="gwy_dialog_set_instant_updates_param ()"><code class="function">gwy_dialog_set_instant_updates_param()</code></a> the sensitivity of an Update button is handled automatically together with
+a part of the preview redrawing logic if you set up a preview function with <a class="link" href="GwyDialog.html#gwy-dialog-set-preview-func" title="gwy_dialog_set_preview_func ()"><code class="function">gwy_dialog_set_preview_func()</code></a>.</p>
+<p><a class="link" href="GwyDialog.html" title="GwyDialog"><span class="type">GwyDialog</span></a> also handles the state change logic typical for Gwyddion data processing modules.  The function
+<a class="link" href="GwyDialog.html#gwy-dialog-run" title="gwy_dialog_run ()"><code class="function">gwy_dialog_run()</code></a> only exits when the dialog finishes with some kind of conclusion what to do next, see
+<a class="link" href="GwyDialog.html#GwyDialogOutcome" title="enum GwyDialogOutcome"><span class="type">GwyDialogOutcome</span></a>.  Other response can either be handled completely automatically, for instance GWY_RESPONSE_RESET
+and GWY_RESPONSE_UPDATE, or in cooperation with the module which connects to the GtkDialog::response signal.</p>
+</div>
+<div class="refsect1">
+<a name="GwyDialog.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GwyDialogPreviewFunc"></a><h3>GwyDialogPreviewFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GwyDialogPreviewFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Protoype of <a class="link" href="GwyDialog.html" title="GwyDialog"><span class="type">GwyDialog</span></a> preview functions.</p>
+<div class="refsect3">
+<a name="GwyDialogPreviewFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data to passed to <a class="link" href="GwyDialog.html#gwy-dialog-set-preview-func" title="gwy_dialog_set_preview_func ()"><code class="function">gwy_dialog_set_preview_func()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-dialog-new"></a><h3>gwy_dialog_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_dialog_new (<em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>);</pre>
+<p>Creates a new data processing module dialog window.</p>
+<p>The dialog is modal by default.</p>
+<div class="refsect3">
+<a name="gwy-dialog-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>title</p></td>
+<td class="parameter_description"><p>Title of the dialog window or <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-dialog-new.returns"></a><h4>Returns</h4>
+<p> A new data processing module dialog window.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-dialog-add-buttons"></a><h3>gwy_dialog_add_buttons ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_dialog_add_buttons (<em class="parameter"><code><a class="link" href="GwyDialog.html" title="GwyDialog"><span class="type">GwyDialog</span></a> *dialog</code></em>,
+                        <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> response_id</code></em>,
+                        <em class="parameter"><code>...</code></em>);</pre>
+<p>Adds stock buttons to data processing module dialog window.</p>
+<p>Beside <a class="link" href="GwyDialog.html#GwyResponseType" title="enum GwyResponseType"><span class="type">GwyResponseType</span></a>, the following GTK+ responses are recognised and handled automatically.</p>
+<p><a href="/usr/share/gtk-doc/html/gtk3/GtkDialog.html#GTK-RESPONSE-OK:CAPS"><code class="literal">GTK_RESPONSE_OK</code></a> or <a href="/usr/share/gtk-doc/html/gtk3/GtkDialog.html#GTK-RESPONSE-ACCEPT:CAPS"><code class="literal">GTK_RESPONSE_ACCEPT</code></a> creates an OK button which finishes the dialog with result
+<a class="link" href="GwyDialog.html#GWY-DIALOG-PROCEED:CAPS"><code class="literal">GWY_DIALOG_PROCEED</code></a> (or <a class="link" href="GwyDialog.html#GWY-DIALOG-HAVE-RESULT:CAPS"><code class="literal">GWY_DIALOG_HAVE_RESULT</code></a> if result has been calculated).</p>
+<p><a href="/usr/share/gtk-doc/html/gtk3/GtkDialog.html#GTK-RESPONSE-CANCEL:CAPS"><code class="literal">GTK_RESPONSE_CANCEL</code></a> or <a href="/usr/share/gtk-doc/html/gtk3/GtkDialog.html#GTK-RESPONSE-REJECT:CAPS"><code class="literal">GTK_RESPONSE_REJECT</code></a> creates a Cancelbutton which finishes the dialog with result
+<a class="link" href="GwyDialog.html#GWY-DIALOG-CANCEL:CAPS"><code class="literal">GWY_DIALOG_CANCEL</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-dialog-add-buttons.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dialog</p></td>
+<td class="parameter_description"><p>A data processing module dialog window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>response_id</p></td>
+<td class="parameter_description"><p>Response identifier from either <a href="/usr/share/gtk-doc/html/gtk3/GtkDialog.html#GtkResponseType"><span class="type">GtkResponseType</span></a> or <a class="link" href="GwyDialog.html#GwyResponseType" title="enum GwyResponseType"><span class="type">GwyResponseType</span></a> enum.  Not all <a href="/usr/share/gtk-doc/html/gtk3/GtkDialog.html#GtkResponseType"><span class="type">GtkResponseType</span></a>
+values may do something useful.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>List of more response identifiers, terminated by 0.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-dialog-add-content"></a><h3>gwy_dialog_add_content ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_dialog_add_content (<em class="parameter"><code><a class="link" href="GwyDialog.html" title="GwyDialog"><span class="type">GwyDialog</span></a> *dialog</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a> *child</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> expand</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> fill</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> padding</code></em>);</pre>
+<p>Adds a widget to the data processing module dialog window content area.</p>
+<p>By tradition, the dialog content is in a vertical <a href="/usr/share/gtk-doc/html/gtk3/GtkBox.html#GtkBox-struct"><span class="type">GtkBox</span></a>.  Parameters <em class="parameter"><code>expand</code></em>
+, <em class="parameter"><code>fill</code></em>
+ and <em class="parameter"><code>padding</code></em>
+ have the same
+meaning as in <a href="/usr/share/gtk-doc/html/gtk3/GtkBox.html#gtk-box-pack-start"><code class="function">gtk_box_pack_start()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-dialog-add-content.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dialog</p></td>
+<td class="parameter_description"><p>A data processing module dialog window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>child</p></td>
+<td class="parameter_description"><p>Child widget to add.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>expand</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the <em class="parameter"><code>child</code></em>
+is to be given extra space allocated to the content area.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fill</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if space given by <em class="parameter"><code>expand</code></em>
+option is actually allocated to <em class="parameter"><code>child</code></em>
+, rather than just padding it</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>padding</p></td>
+<td class="parameter_description"><p>Extra space to put between <em class="parameter"><code>child</code></em>
+and its neighbours, including outer edges.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-dialog-add-param-table"></a><h3>gwy_dialog_add_param_table ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_dialog_add_param_table (<em class="parameter"><code><a class="link" href="GwyDialog.html" title="GwyDialog"><span class="type">GwyDialog</span></a> *dialog</code></em>,
+                            <em class="parameter"><code><a class="link" href="GwyParamTable.html" title="GwyParamTable"><span class="type">GwyParamTable</span></a> *partable</code></em>);</pre>
+<p>Registers a parameter table with a data processing module dialog window.</p>
+<p>This function does not pack the table's widget anywhere; it just registers the table with <em class="parameter"><code>dialog</code></em>
+.  Pack the
+table's widget obtained <a class="link" href="GwyParamTable.html#gwy-param-table-widget" title="gwy_param_table_widget ()"><code class="function">gwy_param_table_widget()</code></a> to the dialog using <a class="link" href="GwyDialog.html#gwy-dialog-add-content" title="gwy_dialog_add_content ()"><code class="function">gwy_dialog_add_content()</code></a> or some other
+container widget.</p>
+<p>All parameters in all parameter tables in a <a class="link" href="GwyDialog.html" title="GwyDialog"><span class="type">GwyDialog</span></a> must have unique ids.  This is because parameters are
+commonly refered to only by the id.  When this condition is satisfied, different parameter tables can correspond to
+different <a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> definition sets.  Normally, however, multiple tables provide controls for different subsets
+of parameters defined by one <a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a>.</p>
+<p>If multiple tables are added, parameters in any table can be changed inside a <a class="link" href="GwyParamTable.html#GwyParamTable-param-changed" title="The “param-changed” signal"><span class="type">“param-changed”</span></a>
+callback without triggering infinite recursion.  This is because <a class="link" href="GwyDialog.html" title="GwyDialog"><span class="type">GwyDialog</span></a> prevents recursion also during
+cross-updates.</p>
+<p>Usually, you can just connect all <a class="link" href="GwyParamTable.html#GwyParamTable-param-changed" title="The “param-changed” signal"><span class="type">“param-changed”</span></a> signals to the same handler and ignore which table
+emitted the signal.  All the useful information is in the parameter id.</p>
+<p>The dialog consumes the floating reference of <em class="parameter"><code>partable</code></em>
+.  Usually this has the desired effect that <em class="parameter"><code>dialog</code></em>
+ becomes
+the only owner and the table is destroyed when <em class="parameter"><code>dialog</code></em>
+ finishes.  However, if you want to later use
+<a class="link" href="GwyDialog.html#gwy-dialog-remove-param-table" title="gwy_dialog_remove_param_table ()"><code class="function">gwy_dialog_remove_param_table()</code></a> without destroying the table you need to explicitly add your own reference.</p>
+<div class="refsect3">
+<a name="gwy-dialog-add-param-table.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dialog</p></td>
+<td class="parameter_description"><p>A data processing module dialog window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>partable</p></td>
+<td class="parameter_description"><p>Parameter table to add.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-dialog-remove-param-table"></a><h3>gwy_dialog_remove_param_table ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_dialog_remove_param_table (<em class="parameter"><code><a class="link" href="GwyDialog.html" title="GwyDialog"><span class="type">GwyDialog</span></a> *dialog</code></em>,
+                               <em class="parameter"><code><a class="link" href="GwyParamTable.html" title="GwyParamTable"><span class="type">GwyParamTable</span></a> *partable</code></em>);</pre>
+<p>Removes a parameter table from a data processing module dialog window.</p>
+<p>Removal releases the reference <em class="parameter"><code>dialog</code></em>
+ holds on <em class="parameter"><code>partable</code></em>
+.  If you have not added your own reference <em class="parameter"><code>partable</code></em>
+ will
+be destroyed when it is removed.</p>
+<div class="refsect3">
+<a name="gwy-dialog-remove-param-table.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dialog</p></td>
+<td class="parameter_description"><p>A data processing module dialog window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>partable</p></td>
+<td class="parameter_description"><p>Parameter table to remove.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-dialog-set-preview-func"></a><h3>gwy_dialog_set_preview_func ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_dialog_set_preview_func (<em class="parameter"><code><a class="link" href="GwyDialog.html" title="GwyDialog"><span class="type">GwyDialog</span></a> *dialog</code></em>,
+                             <em class="parameter"><code><a class="link" href="GwyDialog.html#GwyPreviewType" title="enum GwyPreviewType"><span class="type">GwyPreviewType</span></a> prevtype</code></em>,
+                             <em class="parameter"><code><a class="link" href="GwyDialog.html#GwyDialogPreviewFunc" title="GwyDialogPreviewFunc ()"><span class="type">GwyDialogPreviewFunc</span></a> preview</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> destroy</code></em>);</pre>
+<p>Sets the preview function for a data processing module dialog.</p>
+<p>The preview function is called automatically when the dialog receives <a class="link" href="GwyDialog.html#GWY-RESPONSE-UPDATE:CAPS"><code class="literal">GWY_RESPONSE_UPDATE</code></a> response and/or after
+<a class="link" href="GwyDialog.html#gwy-dialog-invalidate" title="gwy_dialog_invalidate ()"><code class="function">gwy_dialog_invalidate()</code></a>.  Use <a class="link" href="GwyDialog.html#gwy-dialog-set-instant-updates-param" title="gwy_dialog_set_instant_updates_param ()"><code class="function">gwy_dialog_set_instant_updates_param()</code></a> if you have a parameter controlling instant
+updates.</p>
+<div class="refsect3">
+<a name="gwy-dialog-set-preview-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dialog</p></td>
+<td class="parameter_description"><p>A data processing module dialog window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prevtype</p></td>
+<td class="parameter_description"><p>Preview style to use.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>preview</p></td>
+<td class="parameter_description"><p>Function which performs the preview (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for <a class="link" href="GwyDialog.html#GWY-PREVIEW-NONE:CAPS"><code class="literal">GWY_PREVIEW_NONE</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data to pass to <em class="parameter"><code>preview</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>destroy</p></td>
+<td class="parameter_description"><p>Function to call to free <em class="parameter"><code>user_data</code></em>
+(or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-dialog-set-instant-updates-param"></a><h3>gwy_dialog_set_instant_updates_param ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_dialog_set_instant_updates_param (<em class="parameter"><code><a class="link" href="GwyDialog.html" title="GwyDialog"><span class="type">GwyDialog</span></a> *dialog</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Sets the id of instant updates parameter for a data processing module dialog window.</p>
+<p>The parameter must be a boolean.  When it is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> previews are immediate and the dialog button corresponding to
+<a class="link" href="GwyDialog.html#GWY-RESPONSE-UPDATE:CAPS"><code class="literal">GWY_RESPONSE_UPDATE</code></a> is insensitive.  When it is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> previews are manual, on pressing the dialog button which
+is now sensitive.</p>
+<p>Setting the instant updates parameter makes the sensitivity of update dialog button automatic.  If you need more
+control over it do not use this function.</p>
+<div class="refsect3">
+<a name="gwy-dialog-set-instant-updates-param.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dialog</p></td>
+<td class="parameter_description"><p>A data processing module dialog window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-dialog-run"></a><h3>gwy_dialog_run ()</h3>
+<pre class="programlisting"><a class="link" href="GwyDialog.html#GwyDialogOutcome" title="enum GwyDialogOutcome"><span class="returnvalue">GwyDialogOutcome</span></a>
+gwy_dialog_run (<em class="parameter"><code><a class="link" href="GwyDialog.html" title="GwyDialog"><span class="type">GwyDialog</span></a> *dialog</code></em>);</pre>
+<p>Runs a data processing module dialog window.</p>
+<p>This function does not return until the dialog finishes with a final outcome.  The final outcome is usually either
+cancellation or an OK response, as indicated by the return value.  Other response types – preview, parameter reset
+or help – are generally handled inside and do not cause this function to return.  Furthermore, the dialog is always
+destroyed when the function returns.  These are the main differences from <a href="/usr/share/gtk-doc/html/gtk3/GtkDialog.html#gtk-dialog-run"><code class="function">gtk_dialog_run()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-dialog-run.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>dialog</p></td>
+<td class="parameter_description"><p>A data processing module dialog window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-dialog-run.returns"></a><h4>Returns</h4>
+<p> The final outcome of the dialog.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-dialog-invalidate"></a><h3>gwy_dialog_invalidate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_dialog_invalidate (<em class="parameter"><code><a class="link" href="GwyDialog.html" title="GwyDialog"><span class="type">GwyDialog</span></a> *dialog</code></em>);</pre>
+<p>Notifies a data processing module dialog preview is no longer valid.</p>
+<p>This function should be called from <a class="link" href="GwyParamTable.html#GwyParamTable-param-changed" title="The “param-changed” signal"><span class="type">“param-changed”</span></a> when a parameter influencing the result has
+changed.  This means most parameter changes.  Some parameter do require invalidation, for instance target graphs or
+mask colours.</p>
+<p>The function can have multiple effects.  In all cases it resets the result state back to having no results
+(nullifying any previous <a class="link" href="GwyDialog.html#gwy-dialog-have-result" title="gwy_dialog_have_result ()"><code class="function">gwy_dialog_have_result()</code></a>).  Furthermore, if the preview style is <a class="link" href="GwyDialog.html#GWY-PREVIEW-IMMEDIATE:CAPS"><code class="literal">GWY_PREVIEW_IMMEDIATE</code></a>
+and instant updates are enabled it queues up a preview recomputation.  The preview is added as an idle source to
+the GTK+ main loop.  Therefore, <a class="link" href="GwyDialog.html#gwy-dialog-invalidate" title="gwy_dialog_invalidate ()"><code class="function">gwy_dialog_invalidate()</code></a> can be safely called multiple times in succession without
+triggering multiple recomputations.</p>
+<div class="refsect3">
+<a name="gwy-dialog-invalidate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>dialog</p></td>
+<td class="parameter_description"><p>A data processing module dialog window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-dialog-have-result"></a><h3>gwy_dialog_have_result ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_dialog_have_result (<em class="parameter"><code><a class="link" href="GwyDialog.html" title="GwyDialog"><span class="type">GwyDialog</span></a> *dialog</code></em>);</pre>
+<p>Notifies a data processing module dialog preview that results are available.</p>
+<p>Modules may not have any other means of preview than the full computation of the final result.  It is then useful
+to keep track whether it has been already computed to prevent unnecessary work.</p>
+<p>Calling this function makes <a class="link" href="GwyDialog.html#gwy-dialog-run" title="gwy_dialog_run ()"><code class="function">gwy_dialog_run()</code></a> return <a class="link" href="GwyDialog.html#GWY-DIALOG-HAVE-RESULT:CAPS"><code class="literal">GWY_DIALOG_HAVE_RESULT</code></a> instead of the usual OK response
+<a class="link" href="GwyDialog.html#GWY-DIALOG-PROCEED:CAPS"><code class="literal">GWY_DIALOG_PROCEED</code></a>.  This indicates the result do not need to be recalculated (presumably you stored them in
+a safe place).  The state is reset back to no results by <a class="link" href="GwyDialog.html#gwy-dialog-invalidate" title="gwy_dialog_invalidate ()"><code class="function">gwy_dialog_invalidate()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-dialog-have-result.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>dialog</p></td>
+<td class="parameter_description"><p>A data processing module dialog window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyDialog.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyDialogOutcome"></a><h3>enum GwyDialogOutcome</h3>
+<p>Type of conclusion from a data processing module dialog.</p>
+<div class="refsect3">
+<a name="GwyDialogOutcome.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-DIALOG-CANCEL:CAPS"></a>GWY_DIALOG_CANCEL</p></td>
+<td class="enum_member_description">
+<p>The dialog was cancelled or destroyed.  The module should save changed parameters but no data
+should be modified.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-DIALOG-PROCEED:CAPS"></a>GWY_DIALOG_PROCEED</p></td>
+<td class="enum_member_description">
+<p>The computation should proceed.  Normally this means the user pressed the OK button.  If the
+results are already available <a class="link" href="GwyDialog.html#GWY-DIALOG-HAVE-RESULT:CAPS"><code class="literal">GWY_DIALOG_HAVE_RESULT</code></a> is used instead.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-DIALOG-HAVE-RESULT:CAPS"></a>GWY_DIALOG_HAVE_RESULT</p></td>
+<td class="enum_member_description">
+<p>The computation has already been done.  This response is used when
+<a class="link" href="GwyDialog.html#gwy-dialog-have-result" title="gwy_dialog_have_result ()"><code class="function">gwy_dialog_have_result()</code></a> has been called since the last <a class="link" href="GwyDialog.html#gwy-dialog-invalidate" title="gwy_dialog_invalidate ()"><code class="function">gwy_dialog_invalidate()</code></a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyPreviewType"></a><h3>enum GwyPreviewType</h3>
+<p>Style of preview in a data processing dialog.</p>
+<div class="refsect3">
+<a name="GwyPreviewType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-PREVIEW-NONE:CAPS"></a>GWY_PREVIEW_NONE</p></td>
+<td class="enum_member_description">
+<p>There is no preview.  This is the default if you do not set any preview function.  It does not
+make much sense to use it when setting up a preview function.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-PREVIEW-IMMEDIATE:CAPS"></a>GWY_PREVIEW_IMMEDIATE</p></td>
+<td class="enum_member_description">
+<p>Preview occurs immediately, either unconditionally or controlled by an instant updates
+checkbox.  Dialog invalidation queues a preview if instant updates are not disabled.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-PREVIEW-UPON-REQUEST:CAPS"></a>GWY_PREVIEW_UPON_REQUEST</p></td>
+<td class="enum_member_description">
+<p>Preview is only upon request, usually by pressing a button with response
+<a class="link" href="GwyDialog.html#GWY-RESPONSE-UPDATE:CAPS"><code class="literal">GWY_RESPONSE_UPDATE</code></a>.  Dialog invalidation does not queue a preview.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyResponseType"></a><h3>enum GwyResponseType</h3>
+<p>Type of predefined dialog response types.</p>
+<div class="refsect3">
+<a name="GwyResponseType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-RESPONSE-RESET:CAPS"></a>GWY_RESPONSE_RESET</p></td>
+<td class="enum_member_description">
+<p>Reset of all parameters (that do not have the no-reset flag set).  Adding it to a <a class="link" href="GwyDialog.html" title="GwyDialog"><span class="type">GwyDialog</span></a>
+creates a Reset button which is normally handled fully by the dialog itself.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-RESPONSE-UPDATE:CAPS"></a>GWY_RESPONSE_UPDATE</p></td>
+<td class="enum_member_description">
+<p>Update of the preview.  Adding it to a <a class="link" href="GwyDialog.html" title="GwyDialog"><span class="type">GwyDialog</span></a> creates an Update button which is normally
+handled fully by the dialog itself (including sensitivity tied to an instant updates
+parameter).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-RESPONSE-CLEAR:CAPS"></a>GWY_RESPONSE_CLEAR</p></td>
+<td class="enum_member_description">
+<p>Clearing/resetting of selection.  Adding it to a <a class="link" href="GwyDialog.html" title="GwyDialog"><span class="type">GwyDialog</span></a> creates a Clear button.  You need
+to connect to <span class="type">“response”</span> and handle the response yourself.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyDialog-struct"></a><h3>struct GwyDialog</h3>
+<pre class="programlisting">struct GwyDialog;</pre>
+<p>Object representing a set of parameter definitions.</p>
+<p>The <a class="link" href="GwyDialog.html" title="GwyDialog"><span class="type">GwyDialog</span></a> struct contains no public fields.</p>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyDialogClass"></a><h3>struct GwyDialogClass</h3>
+<pre class="programlisting">struct GwyDialogClass {
+    GtkDialogClass parent;
+};
+</pre>
+<p>Class of parameter definition sets.</p>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

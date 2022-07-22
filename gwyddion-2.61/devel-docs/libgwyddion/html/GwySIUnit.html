@@ -1,0 +1,1165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwySIUnit: Gwyddion Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="prev" href="libgwyddion-GwyExpr.html" title="GwyExpr">
+<link rel="next" href="libgwyddion-GwySIValueFormat.html" title="GwySIValueFormat">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwySIUnit.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwySIUnit.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GwySIUnit.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GwySIUnit.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyddion-GwyExpr.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyddion-GwySIValueFormat.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwySIUnit"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwySIUnit.top_of_page"></a>GwySIUnit</span></h2>
+<p>GwySIUnit — SI unit representation, physical quantitiy formatting</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwySIUnit.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwySIUnit.html#gwy-si-unit-duplicate" title="gwy_si_unit_duplicate()">gwy_si_unit_duplicate</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwySIUnit.html#gwy-si-unit-assign" title="gwy_si_unit_assign()">gwy_si_unit_assign</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySIUnit.html#gwy-si-unit-new" title="gwy_si_unit_new ()">gwy_si_unit_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySIUnit.html#gwy-si-unit-new-parse" title="gwy_si_unit_new_parse ()">gwy_si_unit_new_parse</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySIUnit.html#gwy-si-unit-set-from-string" title="gwy_si_unit_set_from_string ()">gwy_si_unit_set_from_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySIUnit.html#gwy-si-unit-set-from-string-parse" title="gwy_si_unit_set_from_string_parse ()">gwy_si_unit_set_from_string_parse</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySIUnit.html#gwy-si-unit-get-string" title="gwy_si_unit_get_string ()">gwy_si_unit_get_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySIUnit.html#gwy-si-unit-multiply" title="gwy_si_unit_multiply ()">gwy_si_unit_multiply</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySIUnit.html#gwy-si-unit-divide" title="gwy_si_unit_divide ()">gwy_si_unit_divide</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySIUnit.html#gwy-si-unit-power" title="gwy_si_unit_power ()">gwy_si_unit_power</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySIUnit.html#gwy-si-unit-nth-root" title="gwy_si_unit_nth_root ()">gwy_si_unit_nth_root</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySIUnit.html#gwy-si-unit-power-multiply" title="gwy_si_unit_power_multiply ()">gwy_si_unit_power_multiply</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySIUnit.html#gwy-si-unit-factor-to-base" title="gwy_si_unit_factor_to_base ()">gwy_si_unit_factor_to_base</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwySIUnit.html#gwy-si-unit-equal" title="gwy_si_unit_equal ()">gwy_si_unit_equal</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwySIUnit.html#gwy-si-unit-equal-string" title="gwy_si_unit_equal_string ()">gwy_si_unit_equal_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyddion-GwySIValueFormat.html#GwySIValueFormat" title="GwySIValueFormat"><span class="returnvalue">GwySIValueFormat</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySIUnit.html#gwy-si-unit-get-format" title="gwy_si_unit_get_format ()">gwy_si_unit_get_format</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyddion-GwySIValueFormat.html#GwySIValueFormat" title="GwySIValueFormat"><span class="returnvalue">GwySIValueFormat</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySIUnit.html#gwy-si-unit-get-format-for-power10" title="gwy_si_unit_get_format_for_power10 ()">gwy_si_unit_get_format_for_power10</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyddion-GwySIValueFormat.html#GwySIValueFormat" title="GwySIValueFormat"><span class="returnvalue">GwySIValueFormat</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySIUnit.html#gwy-si-unit-get-format-with-resolution" title="gwy_si_unit_get_format_with_resolution ()">gwy_si_unit_get_format_with_resolution</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyddion-GwySIValueFormat.html#GwySIValueFormat" title="GwySIValueFormat"><span class="returnvalue">GwySIValueFormat</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySIUnit.html#gwy-si-unit-get-format-with-digits" title="gwy_si_unit_get_format_with_digits ()">gwy_si_unit_get_format_with_digits</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwySIUnit.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwySIUnit.html#GwySIUnit-value-changed" title="The “value-changed” signal">value-changed</a></td>
+<td class="signal_flags"><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwySIUnit.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwySIUnit.html#GwySIUnit-struct" title="struct GwySIUnit">GwySIUnit</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwySIUnit.html#GwySIUnitClass" title="struct GwySIUnitClass">GwySIUnitClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwySIUnit.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> GwySIUnit
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwySIUnit.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GwySIUnit implements
+ <a class="link" href="GwySerializable.html" title="GwySerializable">GwySerializable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwySIUnit.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwyddion/gwyddion.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwySIUnit.description"></a><h2>Description</h2>
+<p><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> object represents a physical SI unit (or any other unit), it can be created from a unit string with
+<a class="link" href="GwySIUnit.html#gwy-si-unit-new" title="gwy_si_unit_new ()"><code class="function">gwy_si_unit_new()</code></a>.</p>
+<p>GwySIUnit is also responsible for prefixes selection and generally formatting of physical quantities (see also
+gwymath for pure number formatting functions).  There are several functions computing value format (as
+a <a class="link" href="libgwyddion-GwySIValueFormat.html#GwySIValueFormat" title="GwySIValueFormat"><span class="type">GwySIValueFormat</span></a> structure) with given resolution -- <a class="link" href="GwySIUnit.html#gwy-si-unit-get-format-with-resolution" title="gwy_si_unit_get_format_with_resolution ()"><code class="function">gwy_si_unit_get_format_with_resolution()</code></a>, or number of
+significant digits -- <a class="link" href="GwySIUnit.html#gwy-si-unit-get-format-with-digits" title="gwy_si_unit_get_format_with_digits ()"><code class="function">gwy_si_unit_get_format_with_digits()</code></a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwySIUnit.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-si-unit-duplicate"></a><h3>gwy_si_unit_duplicate()</h3>
+<pre class="programlisting">#define             gwy_si_unit_duplicate(siunit)</pre>
+<p>Convenience macro doing <a class="link" href="GwySerializable.html#gwy-serializable-duplicate" title="gwy_serializable_duplicate ()"><code class="function">gwy_serializable_duplicate()</code></a> with all the necessary typecasting.</p>
+<div class="refsect3">
+<a name="gwy-si-unit-duplicate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>siunit</p></td>
+<td class="parameter_description"><p>An SI unit to duplicate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-si-unit-assign"></a><h3>gwy_si_unit_assign()</h3>
+<pre class="programlisting">#define             gwy_si_unit_assign(dest, source)</pre>
+<p>Convenience macro making one SI unit equal to another.</p>
+<p>This is just a <a class="link" href="GwySerializable.html#gwy-serializable-clone" title="gwy_serializable_clone ()"><code class="function">gwy_serializable_clone()</code></a> wrapper with all the necessary typecasting.</p>
+<div class="refsect3">
+<a name="gwy-si-unit-assign.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dest</p></td>
+<td class="parameter_description"><p>Target SI unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>Source SI unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-51.html#api-index-2.51">2.51</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-si-unit-new"></a><h3>gwy_si_unit_new ()</h3>
+<pre class="programlisting"><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_si_unit_new (<em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *unit_string</code></em>);</pre>
+<p>Creates a new SI unit from string representation.</p>
+<p>Unit string represents unit with no prefixes (e. g. "m", "N", "A", etc.)</p>
+<div class="refsect3">
+<a name="gwy-si-unit-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>unit_string</p></td>
+<td class="parameter_description"><p>Unit string (it can be <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for an empty unit).</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-si-unit-new.returns"></a><h4>Returns</h4>
+<p> A new SI unit.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-si-unit-new-parse"></a><h3>gwy_si_unit_new_parse ()</h3>
+<pre class="programlisting"><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_si_unit_new_parse (<em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *unit_string</code></em>,
+                       <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *power10</code></em>);</pre>
+<p>Creates a new SI unit from string representation.</p>
+<p>This is a more powerful version of <a class="link" href="GwySIUnit.html#gwy-si-unit-new" title="gwy_si_unit_new ()"><code class="function">gwy_si_unit_new()</code></a>: <em class="parameter"><code>unit_string</code></em>
+ may be a relatively complex unit, with prefixes,
+like "pA/s" or "km^2". Beside conversion to a base SI unit like "A/s" or "m^2" it also computes the power of 10 one
+has to multiply the base unit with to get an equivalent of <em class="parameter"><code>unit_string</code></em>
+.</p>
+<p>For example, for <code class="literal">"pA/s"</code> it will store -12 to <em class="parameter"><code>power10</code></em>
+ because 1 pA/s is 1e-12 A/s, for
+<code class="literal">"km^2"</code> it will store 6 to <em class="parameter"><code>power10</code></em>
+ because 1 km^2 is 1e6 m^2.</p>
+<div class="refsect3">
+<a name="gwy-si-unit-new-parse.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>unit_string</p></td>
+<td class="parameter_description"><p>Unit string (it can be <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for an empty unit).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>power10</p></td>
+<td class="parameter_description"><p>Where power of 10 should be stored (or <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-si-unit-new-parse.returns"></a><h4>Returns</h4>
+<p> A new SI unit.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-si-unit-set-from-string"></a><h3>gwy_si_unit_set_from_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_si_unit_set_from_string (<em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *siunit</code></em>,
+                             <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *unit_string</code></em>);</pre>
+<p>Sets string that represents unit.</p>
+<p>It must be base unit with no prefixes (e. g. "m", "N", "A", etc.).</p>
+<div class="refsect3">
+<a name="gwy-si-unit-set-from-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>siunit</p></td>
+<td class="parameter_description"><p>An SI unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>unit_string</p></td>
+<td class="parameter_description"><p>Unit string to set <em class="parameter"><code>siunit</code></em>
+from (it can be <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for an empty unit).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-si-unit-set-from-string-parse"></a><h3>gwy_si_unit_set_from_string_parse ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_si_unit_set_from_string_parse (<em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *siunit</code></em>,
+                                   <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *unit_string</code></em>,
+                                   <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *power10</code></em>);</pre>
+<p>Changes an SI unit according to string representation.</p>
+<p>This is a more powerful version of <a class="link" href="GwySIUnit.html#gwy-si-unit-set-from-string" title="gwy_si_unit_set_from_string ()"><code class="function">gwy_si_unit_set_from_string()</code></a>, please see <a class="link" href="GwySIUnit.html#gwy-si-unit-new-parse" title="gwy_si_unit_new_parse ()"><code class="function">gwy_si_unit_new_parse()</code></a> for some
+discussion.</p>
+<div class="refsect3">
+<a name="gwy-si-unit-set-from-string-parse.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>siunit</p></td>
+<td class="parameter_description"><p>An SI unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>unit_string</p></td>
+<td class="parameter_description"><p>Unit string to set <em class="parameter"><code>siunit</code></em>
+from (it can be <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for an empty
+unit).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>power10</p></td>
+<td class="parameter_description"><p>Where power of 10 should be stored (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-si-unit-get-string"></a><h3>gwy_si_unit_get_string ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_si_unit_get_string (<em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *siunit</code></em>,
+                        <em class="parameter"><code><a class="link" href="libgwyddion-gwyddionenums.html#GwySIUnitFormatStyle" title="enum GwySIUnitFormatStyle"><span class="type">GwySIUnitFormatStyle</span></a> style</code></em>);</pre>
+<p>Obtains string representing a SI unit.</p>
+<div class="refsect3">
+<a name="gwy-si-unit-get-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>siunit</p></td>
+<td class="parameter_description"><p>An SI unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>Unit format style.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-si-unit-get-string.returns"></a><h4>Returns</h4>
+<p> A newly allocated string that represents the base unit (with no prefixes).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-si-unit-multiply"></a><h3>gwy_si_unit_multiply ()</h3>
+<pre class="programlisting"><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_si_unit_multiply (<em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *siunit1</code></em>,
+                      <em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *siunit2</code></em>,
+                      <em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *result</code></em>);</pre>
+<p>Multiplies two SI units.</p>
+<div class="refsect3">
+<a name="gwy-si-unit-multiply.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>siunit1</p></td>
+<td class="parameter_description"><p>An SI unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>siunit2</p></td>
+<td class="parameter_description"><p>An SI unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>An SI unit to set to product of <em class="parameter"><code>siunit1</code></em>
+and <em class="parameter"><code>siunit2</code></em>
+.  It is safe to pass one of <em class="parameter"><code>siunit1</code></em>
+, <em class="parameter"><code>siunit2</code></em>
+. It
+can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> too, a new SI unit is created then and returned.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-si-unit-multiply.returns"></a><h4>Returns</h4>
+<p> When <em class="parameter"><code>result</code></em>
+is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, a newly created SI unit that has to be dereferenced when no longer used later.
+Otherwise <em class="parameter"><code>result</code></em>
+itself is simply returned, its reference count is NOT increased.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-si-unit-divide"></a><h3>gwy_si_unit_divide ()</h3>
+<pre class="programlisting"><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_si_unit_divide (<em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *siunit1</code></em>,
+                    <em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *siunit2</code></em>,
+                    <em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *result</code></em>);</pre>
+<p>Divides two SI units.</p>
+<div class="refsect3">
+<a name="gwy-si-unit-divide.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>siunit1</p></td>
+<td class="parameter_description"><p>An SI unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>siunit2</p></td>
+<td class="parameter_description"><p>An SI unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>An SI unit to set to quotient of <em class="parameter"><code>siunit1</code></em>
+and <em class="parameter"><code>siunit2</code></em>
+.  It is safe to pass one of <em class="parameter"><code>siunit1</code></em>
+, <em class="parameter"><code>siunit2</code></em>
+. It
+can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> too, a new SI unit is created then and returned.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-si-unit-divide.returns"></a><h4>Returns</h4>
+<p> When <em class="parameter"><code>result</code></em>
+is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, a newly created SI unit that has to be dereferenced when no longer used later.
+Otherwise <em class="parameter"><code>result</code></em>
+itself is simply returned, its reference count is NOT increased.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-si-unit-power"></a><h3>gwy_si_unit_power ()</h3>
+<pre class="programlisting"><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_si_unit_power (<em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *siunit</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> power</code></em>,
+                   <em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *result</code></em>);</pre>
+<p>Computes a power of an SI unit.</p>
+<div class="refsect3">
+<a name="gwy-si-unit-power.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>siunit</p></td>
+<td class="parameter_description"><p>An SI unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>power</p></td>
+<td class="parameter_description"><p>Power to raise <em class="parameter"><code>siunit</code></em>
+to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>An SI unit to set to power of <em class="parameter"><code>siunit</code></em>
+.  It is safe to pass <em class="parameter"><code>siunit</code></em>
+itself.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> too, a new SI
+unit is created then and returned.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-si-unit-power.returns"></a><h4>Returns</h4>
+<p> When <em class="parameter"><code>result</code></em>
+is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, a newly created SI unit that has to be dereferenced when no longer used later.
+Otherwise <em class="parameter"><code>result</code></em>
+itself is simply returned, its reference count is NOT increased.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-si-unit-nth-root"></a><h3>gwy_si_unit_nth_root ()</h3>
+<pre class="programlisting"><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_si_unit_nth_root (<em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *siunit</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ipower</code></em>,
+                      <em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *result</code></em>);</pre>
+<p>Calulates n-th root of an SI unit.</p>
+<p>This operation fails if the result would have fractional powers that are not representable by <a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a>.</p>
+<div class="refsect3">
+<a name="gwy-si-unit-nth-root.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>siunit</p></td>
+<td class="parameter_description"><p>An SI unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ipower</p></td>
+<td class="parameter_description"><p>The root to take: 2 means a quadratic root, 3 means cubic root, etc.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>An SI unit to set to power of <em class="parameter"><code>siunit</code></em>
+.  It is safe to pass <em class="parameter"><code>siunit</code></em>
+itself.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> too, a new SI
+unit is created then and returned.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-si-unit-nth-root.returns"></a><h4>Returns</h4>
+<p> On success: When <em class="parameter"><code>result</code></em>
+is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, a newly created SI unit that has to be dereferenced when no longer used
+later, otherwise <em class="parameter"><code>result</code></em>
+itself is simply returned, its reference count is NOT increased. On failure <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+is always returned.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-5.html#api-index-2.5">2.5</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-si-unit-power-multiply"></a><h3>gwy_si_unit_power_multiply ()</h3>
+<pre class="programlisting"><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_si_unit_power_multiply (<em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *siunit1</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> power1</code></em>,
+                            <em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *siunit2</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> power2</code></em>,
+                            <em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *result</code></em>);</pre>
+<p>Computes the product of two SI units raised to arbitrary powers.</p>
+<p>This is the most complex SI unit arithmetic function.  It can be easily chained when more than two units are to be
+multiplied.</p>
+<div class="refsect3">
+<a name="gwy-si-unit-power-multiply.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>siunit1</p></td>
+<td class="parameter_description"><p>An SI unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>power1</p></td>
+<td class="parameter_description"><p>Power to raise <em class="parameter"><code>siunit1</code></em>
+to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>siunit2</p></td>
+<td class="parameter_description"><p>An SI unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>power2</p></td>
+<td class="parameter_description"><p>Power to raise <em class="parameter"><code>siunit2</code></em>
+to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>An SI unit to set to <em class="parameter"><code>siunit1</code></em>
+^<em class="parameter"><code>power1</code></em>
+*<em class="parameter"><code>siunit2</code></em>
+^<em class="parameter"><code>power2</code></em>
+. It is safe to pass <em class="parameter"><code>siunit1</code></em>
+or <em class="parameter"><code>siunit2</code></em>
+.  It can
+be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> too, a new SI unit is created then and returned.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-si-unit-power-multiply.returns"></a><h4>Returns</h4>
+<p> When <em class="parameter"><code>result</code></em>
+is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, a newly created SI unit that has to be dereferenced when no longer used later.
+Otherwise <em class="parameter"><code>result</code></em>
+itself is simply returned, its reference count is NOT increased.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-si-unit-factor-to-base"></a><h3>gwy_si_unit_factor_to_base ()</h3>
+<pre class="programlisting"><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_si_unit_factor_to_base (<em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *siunit</code></em>,
+                            <em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *result</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *mfactor</code></em>);</pre>
+<p>Factors a possibly derived SI unit to base units.</p>
+<p>For instance, if <em class="parameter"><code>siunit</code></em>
+ was set to "N/m" the result will be "kg/s^2".</p>
+<p>Normally the result will consist only of the base seven SI units.  However, recognised non-SI units (and
+pseudounits) in <em class="parameter"><code>siunit</code></em>
+, such as "px" are left intact in the decomposition.</p>
+<p>Also note that the decomposition is done to prefixable units. Kilogram is not prefixable (gram is) and there is no
+general way to keep the kilo- on the kilograms when deriving units for different powers of 10.  Therefore, the
+calculated factor corresponds to decomposition to grams.</p>
+<p>You must multiply the corresponding data with <em class="parameter"><code>factor</code></em>
+ if you intend to use the <em class="parameter"><code>result</code></em>
+ for them instead of <em class="parameter"><code>unit</code></em>
+!</p>
+<div class="refsect3">
+<a name="gwy-si-unit-factor-to-base.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>siunit</p></td>
+<td class="parameter_description"><p>An SI unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>An SI unit to set to decomposed <em class="parameter"><code>siunit</code></em>
+.  It is safe to pass <em class="parameter"><code>siunit</code></em>
+itself.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> too, a new
+SI unit is created then and returned.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mfactor</p></td>
+<td class="parameter_description"><p>Location to store multiplicative factor between <em class="parameter"><code>siunit</code></em>
+and <em class="parameter"><code>result</code></em>
+.  For instance, for electronvolt the
+value 1.60217653e-16 would be stored (the factor 1000 comes from kilogram).  Pass <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if you are only
+interested dimension equality.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-si-unit-factor-to-base.returns"></a><h4>Returns</h4>
+<p> When <em class="parameter"><code>result</code></em>
+is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, a newly created SI unit that has to be dereferenced when no longer used later.
+Otherwise <em class="parameter"><code>result</code></em>
+itself is simply returned, its reference count is NOT increased.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-51.html#api-index-2.51">2.51</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-si-unit-equal"></a><h3>gwy_si_unit_equal ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_si_unit_equal (<em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *siunit</code></em>,
+                   <em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *siunit2</code></em>);</pre>
+<p>Checks whether two SI units are equal.</p>
+<div class="refsect3">
+<a name="gwy-si-unit-equal.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>siunit</p></td>
+<td class="parameter_description"><p>First unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>siunit2</p></td>
+<td class="parameter_description"><p>Second unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-si-unit-equal.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the units are equal.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-si-unit-equal-string"></a><h3>gwy_si_unit_equal_string ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_si_unit_equal_string (<em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *siunit</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *unit_string</code></em>);</pre>
+<p>Checks whether an SI unit corresponds to given string.</p>
+<p>Any power-of-ten prefixes are ignored.  This function is mostly useful for quick comparison with simple units such
+as "m" and for checking whether a unit is non-empty (by comparing with <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> or an empty string).</p>
+<div class="refsect3">
+<a name="gwy-si-unit-equal-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>siunit</p></td>
+<td class="parameter_description"><p>An SI unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>unit_string</p></td>
+<td class="parameter_description"><p>Unit string (it can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for an empty unit).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-si-unit-equal-string.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the units is equivalent to the given string.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-si-unit-get-format"></a><h3>gwy_si_unit_get_format ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyddion-GwySIValueFormat.html#GwySIValueFormat" title="GwySIValueFormat"><span class="returnvalue">GwySIValueFormat</span></a> *
+gwy_si_unit_get_format (<em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *siunit</code></em>,
+                        <em class="parameter"><code><a class="link" href="libgwyddion-gwyddionenums.html#GwySIUnitFormatStyle" title="enum GwySIUnitFormatStyle"><span class="type">GwySIUnitFormatStyle</span></a> style</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> value</code></em>,
+                        <em class="parameter"><code><a class="link" href="libgwyddion-GwySIValueFormat.html#GwySIValueFormat" title="GwySIValueFormat"><span class="type">GwySIValueFormat</span></a> *format</code></em>);</pre>
+<p>Finds a good format for representing a value.</p>
+<p>The values should be then printed as value/<em class="parameter"><code>format-&gt;magnitude</code></em>
+ [<em class="parameter"><code>format-&gt;units</code></em>
+] with <em class="parameter"><code>format-&gt;precision</code></em>
+ decimal
+places.</p>
+<div class="refsect3">
+<a name="gwy-si-unit-get-format.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>siunit</p></td>
+<td class="parameter_description"><p>An SI unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>Unit format style.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Value the format should be suitable for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>format</p></td>
+<td class="parameter_description"><p>A value format to set-up, may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, a new value format is allocated then.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-si-unit-get-format.returns"></a><h4>Returns</h4>
+<p> The value format.  If <em class="parameter"><code>format</code></em>
+was <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, a newly allocated format is returned, otherwise (modified)
+<em class="parameter"><code>format</code></em>
+itself is returned.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-si-unit-get-format-for-power10"></a><h3>gwy_si_unit_get_format_for_power10 ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyddion-GwySIValueFormat.html#GwySIValueFormat" title="GwySIValueFormat"><span class="returnvalue">GwySIValueFormat</span></a> *
+gwy_si_unit_get_format_for_power10 (<em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *siunit</code></em>,
+                                    <em class="parameter"><code><a class="link" href="libgwyddion-gwyddionenums.html#GwySIUnitFormatStyle" title="enum GwySIUnitFormatStyle"><span class="type">GwySIUnitFormatStyle</span></a> style</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> power10</code></em>,
+                                    <em class="parameter"><code><a class="link" href="libgwyddion-GwySIValueFormat.html#GwySIValueFormat" title="GwySIValueFormat"><span class="type">GwySIValueFormat</span></a> *format</code></em>);</pre>
+<p>Finds format for representing a specific power-of-10 multiple of a unit.</p>
+<p>The values should be then printed as value/<em class="parameter"><code>format-&gt;magnitude</code></em>
+ [<em class="parameter"><code>format-&gt;units</code></em>
+] with <em class="parameter"><code>format-&gt;precision</code></em>
+ decimal
+places.</p>
+<p>This function does not change the precision field of <em class="parameter"><code>format</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-si-unit-get-format-for-power10.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>siunit</p></td>
+<td class="parameter_description"><p>An SI unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>Unit format style.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>power10</p></td>
+<td class="parameter_description"><p>Power of 10, in the same sense as <a class="link" href="GwySIUnit.html#gwy-si-unit-new-parse" title="gwy_si_unit_new_parse ()"><code class="function">gwy_si_unit_new_parse()</code></a> returns it.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>format</p></td>
+<td class="parameter_description"><p>A value format to set-up, may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, a new value format is allocated then.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-si-unit-get-format-for-power10.returns"></a><h4>Returns</h4>
+<p> The value format.  If <em class="parameter"><code>format</code></em>
+was <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, a newly allocated format is returned, otherwise (modified)
+<em class="parameter"><code>format</code></em>
+itself is returned.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-si-unit-get-format-with-resolution"></a><h3>gwy_si_unit_get_format_with_resolution ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyddion-GwySIValueFormat.html#GwySIValueFormat" title="GwySIValueFormat"><span class="returnvalue">GwySIValueFormat</span></a> *
+gwy_si_unit_get_format_with_resolution
+                               (<em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *siunit</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyddion-gwyddionenums.html#GwySIUnitFormatStyle" title="enum GwySIUnitFormatStyle"><span class="type">GwySIUnitFormatStyle</span></a> style</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> maximum</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> resolution</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyddion-GwySIValueFormat.html#GwySIValueFormat" title="GwySIValueFormat"><span class="type">GwySIValueFormat</span></a> *format</code></em>);</pre>
+<p>Finds a good format for representing a range of values with given resolution.</p>
+<p>The values should be then printed as value/<em class="parameter"><code>format-&gt;magnitude</code></em>
+ [<em class="parameter"><code>format-&gt;units</code></em>
+] with <em class="parameter"><code>format-&gt;precision</code></em>
+ decimal
+places.</p>
+<div class="refsect3">
+<a name="gwy-si-unit-get-format-with-resolution.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>siunit</p></td>
+<td class="parameter_description"><p>An SI unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>Unit format style.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>maximum</p></td>
+<td class="parameter_description"><p>The maximum value to be represented.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>resolution</p></td>
+<td class="parameter_description"><p>The smallest step (approximately) that should make a visible difference in the representation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>format</p></td>
+<td class="parameter_description"><p>A value format to set-up, may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, a new value format is allocated then.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-si-unit-get-format-with-resolution.returns"></a><h4>Returns</h4>
+<p> The value format.  If <em class="parameter"><code>format</code></em>
+was <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, a newly allocated format is returned, otherwise (modified)
+<em class="parameter"><code>format</code></em>
+itself is returned.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-si-unit-get-format-with-digits"></a><h3>gwy_si_unit_get_format_with_digits ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyddion-GwySIValueFormat.html#GwySIValueFormat" title="GwySIValueFormat"><span class="returnvalue">GwySIValueFormat</span></a> *
+gwy_si_unit_get_format_with_digits (<em class="parameter"><code><a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *siunit</code></em>,
+                                    <em class="parameter"><code><a class="link" href="libgwyddion-gwyddionenums.html#GwySIUnitFormatStyle" title="enum GwySIUnitFormatStyle"><span class="type">GwySIUnitFormatStyle</span></a> style</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> maximum</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> sdigits</code></em>,
+                                    <em class="parameter"><code><a class="link" href="libgwyddion-GwySIValueFormat.html#GwySIValueFormat" title="GwySIValueFormat"><span class="type">GwySIValueFormat</span></a> *format</code></em>);</pre>
+<p>Finds a good format for representing a values with given number of significant digits.</p>
+<p>The values should be then printed as value/<em class="parameter"><code>format-&gt;magnitude</code></em>
+ [<em class="parameter"><code>format-&gt;units</code></em>
+] with <em class="parameter"><code>format-&gt;precision</code></em>
+ decimal
+places.</p>
+<div class="refsect3">
+<a name="gwy-si-unit-get-format-with-digits.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>siunit</p></td>
+<td class="parameter_description"><p>An SI unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>Unit format style.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>maximum</p></td>
+<td class="parameter_description"><p>The maximum value to be represented.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sdigits</p></td>
+<td class="parameter_description"><p>The number of significant digits the value should have.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>format</p></td>
+<td class="parameter_description"><p>A value format to set-up, may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, a new value format is allocated then.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-si-unit-get-format-with-digits.returns"></a><h4>Returns</h4>
+<p> The value format.  If <em class="parameter"><code>format</code></em>
+was <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, a newly allocated format is returned, otherwise (modified)
+<em class="parameter"><code>format</code></em>
+itself is returned.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwySIUnit.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwySIUnit-struct"></a><h3>struct GwySIUnit</h3>
+<pre class="programlisting">struct GwySIUnit;</pre>
+<p>The <a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> struct contains private data only and should be accessed
+using the functions below.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwySIUnitClass"></a><h3>struct GwySIUnitClass</h3>
+<pre class="programlisting">struct GwySIUnitClass {
+    GObjectClass parent_class;
+
+    void (*value_changed)(GwySIUnit *siunit);
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwySIUnit.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GwySIUnit-value-changed"></a><h3>The <code class="literal">“value-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> *gwysiunit,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>   user_data)</pre>
+<p>The ::value-changed signal is emitted whenever SI unit changes.</p>
+<div class="refsect3">
+<a name="GwySIUnit-value-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwysiunit</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

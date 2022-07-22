@@ -1,0 +1,1489 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gwymodule-file: Gwyddion Module Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Module Library Reference Manual">
+<link rel="up" href="ModuleLibrary.html" title="Gwyddion Module Library">
+<link rel="prev" href="libgwymodule-gwymoduleloader.html" title="gwymoduleloader">
+<link rel="next" href="libgwymodule-gwymodule-process.html" title="gwymodule-process">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwymodule-gwymodule-file.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ModuleLibrary.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgwymodule-gwymoduleloader.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwymodule-gwymodule-process.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwymodule-gwymodule-file"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwymodule-gwymodule-file.top_of_page"></a>gwymodule-file</span></h2>
+<p>gwymodule-file — File loading and saving modules</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwymodule-gwymodule-file.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libgwymodule-gwymodule-file.html#GwyFileDetectFunc" title="GwyFileDetectFunc ()">*GwyFileDetectFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwyContainer.html#GwyContainer-struct"><span class="returnvalue">GwyContainer</span></a> *
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libgwymodule-gwymodule-file.html#GwyFileLoadFunc" title="GwyFileLoadFunc ()">*GwyFileLoadFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libgwymodule-gwymodule-file.html#GwyFileSaveFunc" title="GwyFileSaveFunc ()">*GwyFileSaveFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-register" title="gwy_file_func_register ()">gwy_file_func_register</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-run-detect" title="gwy_file_func_run_detect ()">gwy_file_func_run_detect</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwyContainer.html#GwyContainer-struct"><span class="returnvalue">GwyContainer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-run-load" title="gwy_file_func_run_load ()">gwy_file_func_run_load</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-run-save" title="gwy_file_func_run_save ()">gwy_file_func_run_save</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-run-export" title="gwy_file_func_run_export ()">gwy_file_func_run_export</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-exists" title="gwy_file_func_exists ()">gwy_file_func_exists</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwymodule-gwymoduleenums.html#GwyFileOperationType" title="enum GwyFileOperationType"><span class="returnvalue">GwyFileOperationType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-get-operations" title="gwy_file_func_get_operations ()">gwy_file_func_get_operations</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-get-description" title="gwy_file_func_get_description ()">gwy_file_func_get_description</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-foreach" title="gwy_file_func_foreach ()">gwy_file_func_foreach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-current" title="gwy_file_func_current ()">gwy_file_func_current</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-detect" title="gwy_file_detect ()">gwy_file_detect</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-detect-with-score" title="gwy_file_detect_with_score ()">gwy_file_detect_with_score</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwyContainer.html#GwyContainer-struct"><span class="returnvalue">GwyContainer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-load" title="gwy_file_load ()">gwy_file_load</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwyContainer.html#GwyContainer-struct"><span class="returnvalue">GwyContainer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-load-with-func" title="gwy_file_load_with_func ()">gwy_file_load_with_func</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwymodule-gwymoduleenums.html#GwyFileOperationType" title="enum GwyFileOperationType"><span class="returnvalue">GwyFileOperationType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-save" title="gwy_file_save ()">gwy_file_save</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwymodule-gwymoduleenums.html#GwyFileOperationType" title="enum GwyFileOperationType"><span class="returnvalue">GwyFileOperationType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-save-with-func" title="gwy_file_save_with_func ()">gwy_file_save_with_func</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-get-is-detectable" title="gwy_file_func_get_is_detectable ()">gwy_file_func_get_is_detectable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-set-is-detectable" title="gwy_file_func_set_is_detectable ()">gwy_file_func_set_is_detectable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-get-data-info" title="gwy_file_get_data_info ()">gwy_file_get_data_info</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-get-filename-sys" title="gwy_file_get_filename_sys ()">gwy_file_get_filename_sys</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-file.html#gwy-module-file-error-quark" title="gwy_module_file_error_quark ()">gwy_module_file_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwymodule-gwymodule-file.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgwymodule-gwymodule-file.html#GWY-FILE-DETECT-BUFFER-SIZE:CAPS" title="GWY_FILE_DETECT_BUFFER_SIZE">GWY_FILE_DETECT_BUFFER_SIZE</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgwymodule-gwymodule-file.html#GWY-MODULE-FILE-ERROR:CAPS" title="GWY_MODULE_FILE_ERROR">GWY_MODULE_FILE_ERROR</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgwymodule-gwymodule-file.html#GwyModuleFileError" title="enum GwyModuleFileError">GwyModuleFileError</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libgwymodule-gwymodule-file.html#GwyFileDetectInfo" title="GwyFileDetectInfo">GwyFileDetectInfo</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwymodule-gwymodule-file.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwymodule/gwymodule.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwymodule-gwymodule-file.description"></a><h2>Description</h2>
+<p>File modules implement file loading, saving and file type detection
+functions.  Not all fuctions has to be implemented, a file module can be
+import-only or export-only.  If it does not implement file type detection,
+files of this type can be read/written only on user's explicite request.</p>
+<p>For file module writers, the only useful function here is the registration
+function <a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-register" title="gwy_file_func_register ()"><code class="function">gwy_file_func_register()</code></a> and the signatures of particular file
+operations: <a class="link" href="libgwymodule-gwymodule-file.html#GwyFileDetectFunc" title="GwyFileDetectFunc ()"><span class="type">GwyFileDetectFunc</span></a>, <a class="link" href="libgwymodule-gwymodule-file.html#GwyFileLoadFunc" title="GwyFileLoadFunc ()"><span class="type">GwyFileLoadFunc</span></a>, and <a class="link" href="libgwymodule-gwymodule-file.html#GwyFileSaveFunc" title="GwyFileSaveFunc ()"><span class="type">GwyFileSaveFunc</span></a>.</p>
+</div>
+<div class="refsect1">
+<a name="libgwymodule-gwymodule-file.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GwyFileDetectFunc"></a><h3>GwyFileDetectFunc ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+<span class="c_punctuation">(</span>*GwyFileDetectFunc<span class="c_punctuation">)</span> (<em class="parameter"><code>const <a class="link" href="libgwymodule-gwymodule-file.html#GwyFileDetectInfo" title="GwyFileDetectInfo"><span class="type">GwyFileDetectInfo</span></a> *fileinfo</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> only_name</code></em>,
+                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>The type of file type detection function.</p>
+<p>When called with <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> <em class="parameter"><code>only_name</code></em>
+ it should not try to access the file.</p>
+<div class="refsect3">
+<a name="GwyFileDetectFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>fileinfo</p></td>
+<td class="parameter_description"><p>Information about file to detect the filetype of,
+see <a class="link" href="libgwymodule-gwymodule-file.html#GwyFileDetectInfo" title="GwyFileDetectInfo"><span class="type">GwyFileDetectInfo</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>only_name</p></td>
+<td class="parameter_description"><p>Whether the type should be guessed only from file name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Function name from as registered with <a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-register" title="gwy_file_func_register ()"><code class="function">gwy_file_func_register()</code></a>
+(single-function modules can safely ignore this argument).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="GwyFileDetectFunc.returns"></a><h4>Returns</h4>
+<p> An integer likehood score (see <a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-run-detect" title="gwy_file_func_run_detect ()"><code class="function">gwy_file_func_run_detect()</code></a> for
+description).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyFileLoadFunc"></a><h3>GwyFileLoadFunc ()</h3>
+<pre class="programlisting"><a href="../GwyContainer.html#GwyContainer-struct"><span class="returnvalue">GwyContainer</span></a> *
+<span class="c_punctuation">(</span>*GwyFileLoadFunc<span class="c_punctuation">)</span> (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+                    <em class="parameter"><code><a class="link" href="libgwymodule-gwymoduleenums.html#GwyRunType" title="enum GwyRunType"><span class="type">GwyRunType</span></a> mode</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>,
+                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>The type of file loading function.</p>
+<div class="refsect3">
+<a name="GwyFileLoadFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>A file name to load data from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>Run mode, this is either <em class="parameter"><code>GWY_RUN_NONINTERACTIVE</code></em>
+or <em class="parameter"><code>GWY_RUN_INTERACTIVE</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Return location for a <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Function name from as registered with <a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-register" title="gwy_file_func_register ()"><code class="function">gwy_file_func_register()</code></a>
+(single-function modules can safely ignore this argument).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="GwyFileLoadFunc.returns"></a><h4>Returns</h4>
+<p> A newly created data container, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> on failure.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyFileSaveFunc"></a><h3>GwyFileSaveFunc ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<span class="c_punctuation">(</span>*GwyFileSaveFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+                    <em class="parameter"><code><a class="link" href="libgwymodule-gwymoduleenums.html#GwyRunType" title="enum GwyRunType"><span class="type">GwyRunType</span></a> mode</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>,
+                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>The type of file saving function.</p>
+<div class="refsect3">
+<a name="GwyFileSaveFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> to save.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>A file name to save <em class="parameter"><code>data</code></em>
+as.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>Run mode, this is either <em class="parameter"><code>GWY_RUN_NONINTERACTIVE</code></em>
+or <em class="parameter"><code>GWY_RUN_INTERACTIVE</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Return location for a <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Function name from as registered with <a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-register" title="gwy_file_func_register ()"><code class="function">gwy_file_func_register()</code></a>
+(single-function modules can safely ignore this argument).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="GwyFileSaveFunc.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if file save succeeded, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-file-func-register"></a><h3>gwy_file_func_register ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_file_func_register (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *description</code></em>,
+                        <em class="parameter"><code><a class="link" href="libgwymodule-gwymodule-file.html#GwyFileDetectFunc" title="GwyFileDetectFunc ()"><span class="type">GwyFileDetectFunc</span></a> detect</code></em>,
+                        <em class="parameter"><code><a class="link" href="libgwymodule-gwymodule-file.html#GwyFileLoadFunc" title="GwyFileLoadFunc ()"><span class="type">GwyFileLoadFunc</span></a> load</code></em>,
+                        <em class="parameter"><code><a class="link" href="libgwymodule-gwymodule-file.html#GwyFileSaveFunc" title="GwyFileSaveFunc ()"><span class="type">GwyFileSaveFunc</span></a> save</code></em>,
+                        <em class="parameter"><code><a class="link" href="libgwymodule-gwymodule-file.html#GwyFileSaveFunc" title="GwyFileSaveFunc ()"><span class="type">GwyFileSaveFunc</span></a> export_</code></em>);</pre>
+<p>Registered a file function.</p>
+<p>At least one of <em class="parameter"><code>load</code></em>
+, <em class="parameter"><code>save</code></em>
+, and <em class="parameter"><code>export_</code></em>
+ must be non-<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.  See
+<a class="link" href="libgwymodule-gwymoduleenums.html#GwyFileOperationType" title="enum GwyFileOperationType"><span class="type">GwyFileOperationType</span></a> for differences between save and export.</p>
+<p>Note: the string arguments are not copied as modules are not expected to
+vanish.  If they are constructed (non-constant) strings, do not free them.
+Should modules ever become unloadable they will get chance to clean-up.</p>
+<div class="refsect3">
+<a name="gwy-file-func-register.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Name of function to register.  It should be a valid identifier and
+if a module registers only one function, module and function names
+should be the same.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>description</p></td>
+<td class="parameter_description"><p>File type description (will be used in file type selectors).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>detect</p></td>
+<td class="parameter_description"><p>Detection function.  It may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, files of such a type can
+can be then loaded and saved only on explict user request.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>load</p></td>
+<td class="parameter_description"><p>File load/import function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>save</p></td>
+<td class="parameter_description"><p>File save function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>export_</p></td>
+<td class="parameter_description"><p>File export function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-file-func-register.returns"></a><h4>Returns</h4>
+<p> Normally <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>; <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> on failure.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-file-func-run-detect"></a><h3>gwy_file_func_run_detect ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_file_func_run_detect (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> only_name</code></em>);</pre>
+<p>Runs a file type detection function identified by <em class="parameter"><code>name</code></em>
+.</p>
+<p>Value of <em class="parameter"><code>only_name</code></em>
+ should be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the file doesn't exist (is to be
+written) so its contents can't be used for file type detection.</p>
+<p>This is a low-level function, consider using <a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-detect" title="gwy_file_detect ()"><code class="function">gwy_file_detect()</code></a> if you
+simply want to detect a file type.</p>
+<div class="refsect3">
+<a name="gwy-file-func-run-detect.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>A file type function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>A file name to detect.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>only_name</p></td>
+<td class="parameter_description"><p>Whether to use only file name for a guess, or try to actually
+access the file.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-file-func-run-detect.returns"></a><h4>Returns</h4>
+<p> An integer score expressing the likehood of the file being
+loadable as this type. A basic scale is 20 for a good extension,
+100 for good magic header, more for more thorough tests.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-file-func-run-load"></a><h3>gwy_file_func_run_load ()</h3>
+<pre class="programlisting"><a href="../GwyContainer.html#GwyContainer-struct"><span class="returnvalue">GwyContainer</span></a> *
+gwy_file_func_run_load (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+                        <em class="parameter"><code><a class="link" href="libgwymodule-gwymoduleenums.html#GwyRunType" title="enum GwyRunType"><span class="type">GwyRunType</span></a> mode</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Runs a file load function identified by <em class="parameter"><code>name</code></em>
+.</p>
+<p>This is a low-level function, consider using <a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-load" title="gwy_file_load ()"><code class="function">gwy_file_load()</code></a> if you
+simply want to load a file.</p>
+<div class="refsect3">
+<a name="gwy-file-func-run-load.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>A file load function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>A file name to load data from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>Run mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Return location for a <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-file-func-run-load.returns"></a><h4>Returns</h4>
+<p> A new <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> with data from <em class="parameter"><code>filename</code></em>
+, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-file-func-run-save"></a><h3>gwy_file_func_run_save ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_file_func_run_save (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                        <em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+                        <em class="parameter"><code><a class="link" href="libgwymodule-gwymoduleenums.html#GwyRunType" title="enum GwyRunType"><span class="type">GwyRunType</span></a> mode</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Runs a file save function identified by <em class="parameter"><code>name</code></em>
+.</p>
+<p>It guarantees the container lifetime spans through the actual file saving,
+so the module function doesn't have to care about it.</p>
+<p>This is a low-level function, consider using <a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-save" title="gwy_file_save ()"><code class="function">gwy_file_save()</code></a> if you
+simply want to save a file.</p>
+<div class="refsect3">
+<a name="gwy-file-func-run-save.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>A file save function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> to save.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>A file name to save <em class="parameter"><code>data</code></em>
+as.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>Run mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Return location for a <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-file-func-run-save.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if file save succeeded, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-file-func-run-export"></a><h3>gwy_file_func_run_export ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_file_func_run_export (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                          <em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+                          <em class="parameter"><code><a class="link" href="libgwymodule-gwymoduleenums.html#GwyRunType" title="enum GwyRunType"><span class="type">GwyRunType</span></a> mode</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Runs a file export function identified by <em class="parameter"><code>name</code></em>
+.</p>
+<p>It guarantees the container lifetime spans through the actual file saving,
+so the module function doesn't have to care about it.</p>
+<p>This is a low-level function, consider using <a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-save" title="gwy_file_save ()"><code class="function">gwy_file_save()</code></a> if you
+simply want to save a file.</p>
+<div class="refsect3">
+<a name="gwy-file-func-run-export.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>A file save function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> to save.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>A file name to save <em class="parameter"><code>data</code></em>
+as.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>Run mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Return location for a <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-file-func-run-export.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if file save succeeded, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-file-func-exists"></a><h3>gwy_file_func_exists ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_file_func_exists (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Checks whether a file type function exists.</p>
+<div class="refsect3">
+<a name="gwy-file-func-exists.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>File type function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-file-func-exists.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if function <em class="parameter"><code>name</code></em>
+exists, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-file-func-get-operations"></a><h3>gwy_file_func_get_operations ()</h3>
+<pre class="programlisting"><a class="link" href="libgwymodule-gwymoduleenums.html#GwyFileOperationType" title="enum GwyFileOperationType"><span class="returnvalue">GwyFileOperationType</span></a>
+gwy_file_func_get_operations (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Returns operations supported by a file type function.</p>
+<div class="refsect3">
+<a name="gwy-file-func-get-operations.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>File type function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-file-func-get-operations.returns"></a><h4>Returns</h4>
+<p> The file operation bit mask, zero if <em class="parameter"><code>name</code></em>
+does not exist.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-file-func-get-description"></a><h3>gwy_file_func_get_description ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_file_func_get_description (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Gets file function description.</p>
+<p>That is, the <em class="parameter"><code>description</code></em>
+ argument of <a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-register" title="gwy_file_func_register ()"><code class="function">gwy_file_func_register()</code></a> .</p>
+<div class="refsect3">
+<a name="gwy-file-func-get-description.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>File type function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-file-func-get-description.returns"></a><h4>Returns</h4>
+<p> File function description, as a string owned by module loader.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-file-func-foreach"></a><h3>gwy_file_func_foreach ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_file_func_foreach (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GFunc"><span class="type">GFunc</span></a> function</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Calls a function for each file function.</p>
+<div class="refsect3">
+<a name="gwy-file-func-foreach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>function</p></td>
+<td class="parameter_description"><p>Function to run for each file function.  It will get function
+name (constant string owned by module system) as its first
+argument, <em class="parameter"><code>user_data</code></em>
+as the second argument.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>Data to pass to <em class="parameter"><code>function</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-file-func-current"></a><h3>gwy_file_func_current ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_file_func_current (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Obtains the name of currently running file type function.</p>
+<p>Detection routines are not included, only load, save and export functions.</p>
+<p>If no file type function is currently running, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is returned.</p>
+<p>If multiple nested functions are running (which is not usual but technically
+possible), the innermost function name is returned.</p>
+<div class="refsect3">
+<a name="gwy-file-func-current.returns"></a><h4>Returns</h4>
+<p> The name of currently running file type function or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-38.html#api-index-2.38">2.38</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-file-detect"></a><h3>gwy_file_detect ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_file_detect (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> only_name</code></em>,
+                 <em class="parameter"><code><a class="link" href="libgwymodule-gwymoduleenums.html#GwyFileOperationType" title="enum GwyFileOperationType"><span class="type">GwyFileOperationType</span></a> operations</code></em>);</pre>
+<p>Detects the type of a file.</p>
+<div class="refsect3">
+<a name="gwy-file-detect.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>A file name to detect type of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>only_name</p></td>
+<td class="parameter_description"><p>Whether to use only file name for a guess, or try to actually
+access the file.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operations</p></td>
+<td class="parameter_description"><p>The file operations the file type must support (it must
+support all of them to be considered).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-file-detect.returns"></a><h4>Returns</h4>
+<p> The type name (i.e., the same name as passed to
+e.g. <a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-run-load" title="gwy_file_func_run_load ()"><code class="function">gwy_file_func_run_load()</code></a>) of most probable type of <em class="parameter"><code>filename</code></em>
+,
+or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there's no probable one.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-file-detect-with-score"></a><h3>gwy_file_detect_with_score ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_file_detect_with_score (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> only_name</code></em>,
+                            <em class="parameter"><code><a class="link" href="libgwymodule-gwymoduleenums.html#GwyFileOperationType" title="enum GwyFileOperationType"><span class="type">GwyFileOperationType</span></a> operations</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *score</code></em>);</pre>
+<p>Detects the type of a file and gives the score.</p>
+<div class="refsect3">
+<a name="gwy-file-detect-with-score.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>A file name to detect type of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>only_name</p></td>
+<td class="parameter_description"><p>Whether to use only file name for a guess, or try to actually</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operations</p></td>
+<td class="parameter_description"><p>The file operations the file type must support (it must</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>score</p></td>
+<td class="parameter_description"><p>Location to store the maximum score (corresponding to the returned
+type) to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-file-detect-with-score.returns"></a><h4>Returns</h4>
+<p> The type name (i.e., the same name as passed to
+e.g. <a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-run-load" title="gwy_file_func_run_load ()"><code class="function">gwy_file_func_run_load()</code></a>) of most probable type of <em class="parameter"><code>filename</code></em>
+,
+or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there's no probable one.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-1.html#api-index-2.1">2.1</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-file-load"></a><h3>gwy_file_load ()</h3>
+<pre class="programlisting"><a href="../GwyContainer.html#GwyContainer-struct"><span class="returnvalue">GwyContainer</span></a> *
+gwy_file_load (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+               <em class="parameter"><code><a class="link" href="libgwymodule-gwymoduleenums.html#GwyRunType" title="enum GwyRunType"><span class="type">GwyRunType</span></a> mode</code></em>,
+               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Loads a data file, autodetecting its type.</p>
+<div class="refsect3">
+<a name="gwy-file-load.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>A file name to load data from, in GLib encoding.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>Run mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Return location for a <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-file-load.returns"></a><h4>Returns</h4>
+<p> A new <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> with data from <em class="parameter"><code>filename</code></em>
+, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-file-load-with-func"></a><h3>gwy_file_load_with_func ()</h3>
+<pre class="programlisting"><a href="../GwyContainer.html#GwyContainer-struct"><span class="returnvalue">GwyContainer</span></a> *
+gwy_file_load_with_func (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+                         <em class="parameter"><code><a class="link" href="libgwymodule-gwymoduleenums.html#GwyRunType" title="enum GwyRunType"><span class="type">GwyRunType</span></a> mode</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **name</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Loads a data file, autodetecting its type.</p>
+<div class="refsect3">
+<a name="gwy-file-load-with-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>A file name to load data from, in GLib encoding.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>Run mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Location to store the name of file load function used to load the
+file, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.  If an error occurs outside the module, e.g. failure
+to recognise the file type, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is stored to <em class="parameter"><code>name</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Return location for a <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-file-load-with-func.returns"></a><h4>Returns</h4>
+<p> A new <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> with data from <em class="parameter"><code>filename</code></em>
+, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-25.html#api-index-2.25">2.25</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-file-save"></a><h3>gwy_file_save ()</h3>
+<pre class="programlisting"><a class="link" href="libgwymodule-gwymoduleenums.html#GwyFileOperationType" title="enum GwyFileOperationType"><span class="returnvalue">GwyFileOperationType</span></a>
+gwy_file_save (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+               <em class="parameter"><code><a class="link" href="libgwymodule-gwymoduleenums.html#GwyRunType" title="enum GwyRunType"><span class="type">GwyRunType</span></a> mode</code></em>,
+               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Saves a data file, deciding to save as what type from the file name.</p>
+<p>It tries to find a module implementing <a class="link" href="libgwymodule-gwymoduleenums.html#GWY-FILE-OPERATION-SAVE:CAPS"><code class="literal">GWY_FILE_OPERATION_SAVE</code></a> first, when
+it does not succeed, it falls back to <a class="link" href="libgwymodule-gwymoduleenums.html#GWY-FILE-OPERATION-EXPORT:CAPS"><code class="literal">GWY_FILE_OPERATION_EXPORT</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-file-save.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> to save.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>A file name to save the data as, in GLib encoding.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>Run mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Return location for a <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-file-save.returns"></a><h4>Returns</h4>
+<p> The save operation that was actually realized on success, zero
+on failure.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-file-save-with-func"></a><h3>gwy_file_save_with_func ()</h3>
+<pre class="programlisting"><a class="link" href="libgwymodule-gwymoduleenums.html#GwyFileOperationType" title="enum GwyFileOperationType"><span class="returnvalue">GwyFileOperationType</span></a>
+gwy_file_save_with_func (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+                         <em class="parameter"><code><a class="link" href="libgwymodule-gwymoduleenums.html#GwyRunType" title="enum GwyRunType"><span class="type">GwyRunType</span></a> mode</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **name</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Saves a data file, deciding to save as what type from the file name.</p>
+<p>It tries to find a module implementing <a class="link" href="libgwymodule-gwymoduleenums.html#GWY-FILE-OPERATION-SAVE:CAPS"><code class="literal">GWY_FILE_OPERATION_SAVE</code></a> first, when
+it does not succeed, it falls back to <a class="link" href="libgwymodule-gwymoduleenums.html#GWY-FILE-OPERATION-EXPORT:CAPS"><code class="literal">GWY_FILE_OPERATION_EXPORT</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-file-save-with-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> to save.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>A file name to save the data as, in GLib encoding.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>Run mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Location to store the name of file load function used to save the
+file, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.  If an error occurs outside the module, e.g. failure
+to recognise the file type, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is stored to <em class="parameter"><code>name</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Return location for a <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-file-save-with-func.returns"></a><h4>Returns</h4>
+<p> The save operation that was actually realized on success, zero
+on failure.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-25.html#api-index-2.25">2.25</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-file-func-get-is-detectable"></a><h3>gwy_file_func_get_is_detectable ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_file_func_get_is_detectable (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Returns if the file format is reasonably detectable.</p>
+<p>This is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> for all file types that define a detection method unless they
+explicitly call <a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-set-is-detectable" title="gwy_file_func_set_is_detectable ()"><code class="function">gwy_file_func_set_is_detectable()</code></a> to set the file format
+non-detectable in spite of providing a detection method.</p>
+<p>If files that can be actually loaded as a given type form a subset of files
+that are detected as this format, which is normaly the case, it makes no
+sense to let the user explicitly choose between these formats.  Hence,
+detectable formats normally are not explicitly offered.</p>
+<div class="refsect3">
+<a name="gwy-file-func-get-is-detectable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>File type function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-file-func-get-is-detectable.returns"></a><h4>Returns</h4>
+<p> If the file format is detectable.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-file-func-set-is-detectable"></a><h3>gwy_file_func_set_is_detectable ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_file_func_set_is_detectable (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> is_detectable</code></em>);</pre>
+<p>Sets the detectability status of a file format.</p>
+<p>See <a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-get-is-detectable" title="gwy_file_func_get_is_detectable ()"><code class="function">gwy_file_func_get_is_detectable()</code></a> for details.  The only rare case when
+it makes sense to call this function is when a detection function is
+provided for some reason, however, this function is not really able to
+detect the format.  For instance, the fallback detection method of the
+Gwyddion rawfile module.</p>
+<div class="refsect3">
+<a name="gwy-file-func-set-is-detectable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>File type function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>is_detectable</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to define format as detectable, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> as
+non-detectable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-file-get-data-info"></a><h3>gwy_file_get_data_info ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_file_get_data_info (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **name</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **filename_sys</code></em>);</pre>
+<p>Gets file information about a data.</p>
+<p>The information is set on two ocasions: file load and successful file save.
+File export does not set it.</p>
+<div class="refsect3">
+<a name="gwy-file-get-data-info.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Location to store file type (that is file function name) of <em class="parameter"><code>data</code></em>
+,
+or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.  The returned string is owned by module system.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename_sys</p></td>
+<td class="parameter_description"><p>Location to store file name of <em class="parameter"><code>data</code></em>
+(in GLib encoding), or
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.  The returned string is owned by module system and is
+valid only until the container is destroyed or saved again.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-file-get-data-info.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if information about <em class="parameter"><code>data</code></em>
+was found and <em class="parameter"><code>name</code></em>
+and/or
+<em class="parameter"><code>filename</code></em>
+was filled.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-file-get-filename-sys"></a><h3>gwy_file_get_filename_sys ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_file_get_filename_sys (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>);</pre>
+<p>Gets the file name corresponding to a data container.</p>
+<p>The file name is set on two ocasions: file load and successful file save.
+File export does not set it.</p>
+<div class="refsect3">
+<a name="gwy-file-get-filename-sys.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-file-get-filename-sys.returns"></a><h4>Returns</h4>
+<p> File name of <em class="parameter"><code>data</code></em>
+(in GLib encoding), or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.  The returned
+string is owned by module system and is valid only until the
+container is destroyed or saved again.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-36.html#api-index-2.36">2.36</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-module-file-error-quark"></a><h3>gwy_module_file_error_quark ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+gwy_module_file_error_quark (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Returns error domain for file module functions.</p>
+<p>See and use <a class="link" href="libgwymodule-gwymodule-file.html#GWY-MODULE-FILE-ERROR:CAPS" title="GWY_MODULE_FILE_ERROR"><code class="literal">GWY_MODULE_FILE_ERROR</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-module-file-error-quark.returns"></a><h4>Returns</h4>
+<p> The error domain.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgwymodule-gwymodule-file.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GWY-FILE-DETECT-BUFFER-SIZE:CAPS"></a><h3>GWY_FILE_DETECT_BUFFER_SIZE</h3>
+<pre class="programlisting">#define GWY_FILE_DETECT_BUFFER_SIZE 4096U
+</pre>
+<p>The size of <a class="link" href="libgwymodule-gwymodule-file.html#GwyFileDetectInfo" title="GwyFileDetectInfo"><span class="type">GwyFileDetectInfo</span></a> buffer for initial part of file.  It should
+be enough for any normal kind of magic header test.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GWY-MODULE-FILE-ERROR:CAPS"></a><h3>GWY_MODULE_FILE_ERROR</h3>
+<pre class="programlisting">#define GWY_MODULE_FILE_ERROR gwy_module_file_error_quark()
+</pre>
+<p>Error domain for file module operations.  Errors in this domain will be from
+the <a class="link" href="libgwymodule-gwymodule-file.html#GwyModuleFileError" title="enum GwyModuleFileError"><span class="type">GwyModuleFileError</span></a> enumeration. See <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> for information on
+error domains.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyModuleFileError"></a><h3>enum GwyModuleFileError</h3>
+<p>Error codes returned by file module operations.</p>
+<p>File module functions can return any of these codes, except
+<em class="parameter"><code>GWY_MODULE_FILE_ERROR_UNIMPLEMENTED</code></em>
+ which is normally only returned by
+high-level functions <a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-load" title="gwy_file_load ()"><code class="function">gwy_file_load()</code></a> and <a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-save" title="gwy_file_save ()"><code class="function">gwy_file_save()</code></a>.  Module functions
+can return it only when they are called with a wrong function name.</p>
+<div class="refsect3">
+<a name="GwyModuleFileError.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MODULE-FILE-ERROR-CANCELED:CAPS"></a>GWY_MODULE_FILE_ERROR_CANCELED</p></td>
+<td class="enum_member_description">
+<p>Interactive operation was cancelled by
+user.  (Since 2.45)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MODULE-FILE-ERROR-CANCELLED:CAPS"></a>GWY_MODULE_FILE_ERROR_CANCELLED</p></td>
+<td class="enum_member_description">
+<p>Alias for <a class="link" href="libgwymodule-gwymodule-file.html#GWY-MODULE-FILE-ERROR-CANCELED:CAPS"><code class="literal">GWY_MODULE_FILE_ERROR_CANCELED</code></a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MODULE-FILE-ERROR-UNIMPLEMENTED:CAPS"></a>GWY_MODULE_FILE_ERROR_UNIMPLEMENTED</p></td>
+<td class="enum_member_description">
+<p>No module implements requested
+operation.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MODULE-FILE-ERROR-IO:CAPS"></a>GWY_MODULE_FILE_ERROR_IO</p></td>
+<td class="enum_member_description">
+<p>Input/output error occured.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MODULE-FILE-ERROR-DATA:CAPS"></a>GWY_MODULE_FILE_ERROR_DATA</p></td>
+<td class="enum_member_description">
+<p>Data is corrupted or in an unsupported format.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MODULE-FILE-ERROR-INTERACTIVE:CAPS"></a>GWY_MODULE_FILE_ERROR_INTERACTIVE</p></td>
+<td class="enum_member_description">
+<p>Operation requires user input, but
+it was run as <a class="link" href="libgwymodule-gwymoduleenums.html#GWY-RUN-NONINTERACTIVE:CAPS"><code class="literal">GWY_RUN_NONINTERACTIVE</code></a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MODULE-FILE-ERROR-SPECIFIC:CAPS"></a>GWY_MODULE_FILE_ERROR_SPECIFIC</p></td>
+<td class="enum_member_description">
+<p>Specific module errors that do not fall
+into any other category (such as the
+failure to initialize a library used to
+read the data).  Seldom used.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyFileDetectInfo"></a><h3>GwyFileDetectInfo</h3>
+<pre class="programlisting">typedef struct {
+    const gchar *name;
+    const gchar *name_lowercase;
+    gsize file_size;
+    guint buffer_len;
+    const guchar *head;
+    const guchar *tail;
+} GwyFileDetectInfo;
+</pre>
+<p>File detection data for <a class="link" href="libgwymodule-gwymodule-file.html#GwyFileDetectFunc" title="GwyFileDetectFunc ()"><span class="type">GwyFileDetectFunc</span></a>.</p>
+<p>It contains the common information file type detection routines need to
+obtain.  It is shared between file detection functions and they must not
+modify its contents.  Some fields are set only when the detection routines
+are to check the file contents, these are marked `Undefined if <em class="parameter"><code>only_name</code></em>
+'.</p>
+<p>The <em class="parameter"><code>head</code></em>
+ and <em class="parameter"><code>tail</code></em>
+ buffers are always nul-terminated and thus safely usable
+with string functions.  When file is shorter than
+<em class="parameter"><code>GWY_FILE_DETECT_BUFFER_SIZE</code></em>
+ bytes, <code class="literal">'\0'</code> is appended
+to the end (therefore <em class="parameter"><code>buffer_len</code></em>
+ = <em class="parameter"><code>file_size</code></em>
+ + 1), otherwise the last
+byte is overwritten with <code class="literal">'\0'</code>.  In either case the
+last byte of <em class="parameter"><code>head</code></em>
+ and <em class="parameter"><code>tail</code></em>
+ cannot be assumed to be identical as in
+the file (or being a part of the file at all).</p>
+<div class="refsect3">
+<a name="GwyFileDetectInfo.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="GwyFileDetectInfo.name"></a>name</code></em>;</p></td>
+<td class="struct_member_description"><p>File name, in GLib filename encoding.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="GwyFileDetectInfo.name-lowercase"></a>name_lowercase</code></em>;</p></td>
+<td class="struct_member_description"><p>File name in lowercase (for eventual case-insensitive
+name check).</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> <em class="structfield"><code><a name="GwyFileDetectInfo.file-size"></a>file_size</code></em>;</p></td>
+<td class="struct_member_description"><p>File size in bytes.  Undefined if <em class="parameter"><code>only_name</code></em>
+.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GwyFileDetectInfo.buffer-len"></a>buffer_len</code></em>;</p></td>
+<td class="struct_member_description"><p>The size of <em class="parameter"><code>head</code></em>
+and <em class="parameter"><code>tail</code></em>
+in bytes.  Normally it's
+<em class="parameter"><code>GWY_FILE_DETECT_BUFFER_SIZE</code></em>
+except when file is shorter than
+that.  Undefined if <em class="parameter"><code>only_name</code></em>
+.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *<em class="structfield"><code><a name="GwyFileDetectInfo.head"></a>head</code></em>;</p></td>
+<td class="struct_member_description"><p>Initial part of file.  Undefined if <em class="parameter"><code>only_name</code></em>
+.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *<em class="structfield"><code><a name="GwyFileDetectInfo.tail"></a>tail</code></em>;</p></td>
+<td class="struct_member_description"><p>Final part of file.  Undefined if <em class="parameter"><code>only_name</code></em>
+.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

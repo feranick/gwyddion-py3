@@ -1,0 +1,1037 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyGrainValue: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="libgwyprocess-grains.html" title="grains">
+<link rel="next" href="libgwyprocess-hough.html" title="hough">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyGrainValue.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyGrainValue.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyprocess-grains.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyprocess-hough.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyGrainValue"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyGrainValue.top_of_page"></a>GwyGrainValue</span></h2>
+<p>GwyGrainValue — Grain value resource type</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyGrainValue.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyGrainValue.html#GwyGrainValueGroup" title="enum GwyGrainValueGroup"><span class="returnvalue">GwyGrainValueGroup</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGrainValue.html#gwy-grain-value-get-group" title="gwy_grain_value_get_group ()">gwy_grain_value_get_group</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGrainValue.html#gwy-grain-value-get-symbol" title="gwy_grain_value_get_symbol ()">gwy_grain_value_get_symbol</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGrainValue.html#gwy-grain-value-set-symbol" title="gwy_grain_value_set_symbol ()">gwy_grain_value_set_symbol</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGrainValue.html#gwy-grain-value-get-symbol-markup" title="gwy_grain_value_get_symbol_markup ()">gwy_grain_value_get_symbol_markup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGrainValue.html#gwy-grain-value-set-symbol-markup" title="gwy_grain_value_set_symbol_markup ()">gwy_grain_value_set_symbol_markup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGrainValue.html#gwy-grain-value-get-power-xy" title="gwy_grain_value_get_power_xy ()">gwy_grain_value_get_power_xy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGrainValue.html#gwy-grain-value-set-power-xy" title="gwy_grain_value_set_power_xy ()">gwy_grain_value_set_power_xy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGrainValue.html#gwy-grain-value-get-power-z" title="gwy_grain_value_get_power_z ()">gwy_grain_value_get_power_z</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGrainValue.html#gwy-grain-value-set-power-z" title="gwy_grain_value_set_power_z ()">gwy_grain_value_set_power_z</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyGrainValue.html#GwyGrainValueFlags" title="enum GwyGrainValueFlags"><span class="returnvalue">GwyGrainValueFlags</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGrainValue.html#gwy-grain-value-get-flags" title="gwy_grain_value_get_flags ()">gwy_grain_value_get_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGrainValue.html#gwy-grain-value-set-flags" title="gwy_grain_value_set_flags ()">gwy_grain_value_set_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyprocess-gwyprocessenums.html#GwyGrainQuantity" title="enum GwyGrainQuantity"><span class="returnvalue">GwyGrainQuantity</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGrainValue.html#gwy-grain-value-get-quantity" title="gwy_grain_value_get_quantity ()">gwy_grain_value_get_quantity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGrainValue.html#gwy-grain-value-get-expression" title="gwy_grain_value_get_expression ()">gwy_grain_value_get_expression</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGrainValue.html#gwy-grain-value-set-expression" title="gwy_grain_value_set_expression ()">gwy_grain_value_set_expression</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGrainValue.html#gwy-grain-value-group-name" title="gwy_grain_value_group_name ()">gwy_grain_value_group_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwyInventory.html#GwyInventory-struct"><span class="returnvalue">GwyInventory</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGrainValue.html#gwy-grain-values" title="gwy_grain_values ()">gwy_grain_values</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyGrainValue.html" title="GwyGrainValue"><span class="returnvalue">GwyGrainValue</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGrainValue.html#gwy-grain-values-get-grain-value" title="gwy_grain_values_get_grain_value ()">gwy_grain_values_get_grain_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyGrainValue.html" title="GwyGrainValue"><span class="returnvalue">GwyGrainValue</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGrainValue.html#gwy-grain-values-get-grain-value-by-symbol" title="gwy_grain_values_get_grain_value_by_symbol ()">gwy_grain_values_get_grain_value_by_symbol</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyGrainValue.html" title="GwyGrainValue"><span class="returnvalue">GwyGrainValue</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGrainValue.html#gwy-grain-values-get-builtin-grain-value" title="gwy_grain_values_get_builtin_grain_value ()">gwy_grain_values_get_builtin_grain_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGrainValue.html#gwy-grain-values-calculate" title="gwy_grain_values_calculate ()">gwy_grain_values_calculate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyGrainValue.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GwyGrainValue.html#GwyGrainValueGroup" title="enum GwyGrainValueGroup">GwyGrainValueGroup</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GwyGrainValue.html#GwyGrainValueFlags" title="enum GwyGrainValueFlags">GwyGrainValueFlags</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GwyGrainValue.html#GwyGrainValueData" title="GwyGrainValueData">GwyGrainValueData</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyGrainValue.html#GwyGrainValue-struct" title="struct GwyGrainValue">GwyGrainValue</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyGrainValue.html#GwyGrainValueClass" title="struct GwyGrainValueClass">GwyGrainValueClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyGrainValue.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="../GwyResource.html#GwyResource-struct">GwyResource</a>
+        <span class="lineart">╰──</span> GwyGrainValue
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyGrainValue.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyGrainValue.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="GwyGrainValue.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-grain-value-get-group"></a><h3>gwy_grain_value_get_group ()</h3>
+<pre class="programlisting"><a class="link" href="GwyGrainValue.html#GwyGrainValueGroup" title="enum GwyGrainValueGroup"><span class="returnvalue">GwyGrainValueGroup</span></a>
+gwy_grain_value_get_group (<em class="parameter"><code><a class="link" href="GwyGrainValue.html" title="GwyGrainValue"><span class="type">GwyGrainValue</span></a> *gvalue</code></em>);</pre>
+<p>Gets the group of a grain value.</p>
+<p>All user-defined grain values belong to <a class="link" href="GwyGrainValue.html#GWY-GRAIN-VALUE-GROUP-USER:CAPS"><code class="literal">GWY_GRAIN_VALUE_GROUP_USER</code></a> group,
+built-in grain values belong to other groups.</p>
+<div class="refsect3">
+<a name="gwy-grain-value-get-group.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gvalue</p></td>
+<td class="parameter_description"><p>A grain value object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-grain-value-get-group.returns"></a><h4>Returns</h4>
+<p> The group of <em class="parameter"><code>gvalue</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-grain-value-get-symbol"></a><h3>gwy_grain_value_get_symbol ()</h3>
+<pre class="programlisting">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_grain_value_get_symbol (<em class="parameter"><code><a class="link" href="GwyGrainValue.html" title="GwyGrainValue"><span class="type">GwyGrainValue</span></a> *gvalue</code></em>);</pre>
+<p>Gets the plain symbol representing a grain value.</p>
+<p>The plain symbol is used in expressions.  It has to be a valid
+identifier and it should be easy to type.  (Note currently it is not
+possible to use user-defined grain quantities in expressions for other
+user-defined grain quantities.)</p>
+<div class="refsect3">
+<a name="gwy-grain-value-get-symbol.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gvalue</p></td>
+<td class="parameter_description"><p>A grain value object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-grain-value-get-symbol.returns"></a><h4>Returns</h4>
+<p> Plain symbol of <em class="parameter"><code>gvalue</code></em>
+, owned by <em class="parameter"><code>gvalue</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-grain-value-set-symbol"></a><h3>gwy_grain_value_set_symbol ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_grain_value_set_symbol (<em class="parameter"><code><a class="link" href="GwyGrainValue.html" title="GwyGrainValue"><span class="type">GwyGrainValue</span></a> *gvalue</code></em>,
+                            <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *symbol</code></em>);</pre>
+<p>Sets the plain symbol representing a grain value.</p>
+<p>See <a class="link" href="GwyGrainValue.html#gwy-grain-value-get-symbol" title="gwy_grain_value_get_symbol ()"><code class="function">gwy_grain_value_get_symbol()</code></a> for details.</p>
+<div class="refsect3">
+<a name="gwy-grain-value-set-symbol.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gvalue</p></td>
+<td class="parameter_description"><p>A grain value object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>symbol</p></td>
+<td class="parameter_description"><p>The new symbol.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-grain-value-get-symbol-markup"></a><h3>gwy_grain_value_get_symbol_markup ()</h3>
+<pre class="programlisting">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_grain_value_get_symbol_markup (<em class="parameter"><code><a class="link" href="GwyGrainValue.html" title="GwyGrainValue"><span class="type">GwyGrainValue</span></a> *gvalue</code></em>);</pre>
+<p>Gets the rich text symbol representing a grain value.</p>
+<p>The returned value can contain Pango markup and is suitable for instance
+for graph axis labels.</p>
+<div class="refsect3">
+<a name="gwy-grain-value-get-symbol-markup.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gvalue</p></td>
+<td class="parameter_description"><p>A grain value object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-grain-value-get-symbol-markup.returns"></a><h4>Returns</h4>
+<p> Rich text symbol of <em class="parameter"><code>gvalue</code></em>
+, owned by <em class="parameter"><code>gvalue</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-grain-value-set-symbol-markup"></a><h3>gwy_grain_value_set_symbol_markup ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_grain_value_set_symbol_markup (<em class="parameter"><code><a class="link" href="GwyGrainValue.html" title="GwyGrainValue"><span class="type">GwyGrainValue</span></a> *gvalue</code></em>,
+                                   <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *symbol</code></em>);</pre>
+<p>Sets the rich text symbol representing a grain value.</p>
+<p>See <a class="link" href="GwyGrainValue.html#gwy-grain-value-get-symbol-markup" title="gwy_grain_value_get_symbol_markup ()"><code class="function">gwy_grain_value_get_symbol_markup()</code></a> for details.</p>
+<div class="refsect3">
+<a name="gwy-grain-value-set-symbol-markup.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gvalue</p></td>
+<td class="parameter_description"><p>A grain value object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>symbol</p></td>
+<td class="parameter_description"><p>The new symbol.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-grain-value-get-power-xy"></a><h3>gwy_grain_value_get_power_xy ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_grain_value_get_power_xy (<em class="parameter"><code><a class="link" href="GwyGrainValue.html" title="GwyGrainValue"><span class="type">GwyGrainValue</span></a> *gvalue</code></em>);</pre>
+<p>Gets the power of lateral dimensions in a grain value.</p>
+<p>The units of a grain value are determined as the product of lateral units
+and value units, raised to certain powers.  For instance lengths in the
+horizontal plane have xy power of 1 and areas have 2, whereas volumes have
+xy power of 2 and value power of 1.</p>
+<div class="refsect3">
+<a name="gwy-grain-value-get-power-xy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gvalue</p></td>
+<td class="parameter_description"><p>A grain value object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-grain-value-get-power-xy.returns"></a><h4>Returns</h4>
+<p> The power of lateral dimensions.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-grain-value-set-power-xy"></a><h3>gwy_grain_value_set_power_xy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_grain_value_set_power_xy (<em class="parameter"><code><a class="link" href="GwyGrainValue.html" title="GwyGrainValue"><span class="type">GwyGrainValue</span></a> *gvalue</code></em>,
+                              <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> power_xy</code></em>);</pre>
+<p>Sets the power of lateral dimensions in a grain value.</p>
+<div class="refsect3">
+<a name="gwy-grain-value-set-power-xy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gvalue</p></td>
+<td class="parameter_description"><p>A grain value object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>power_xy</p></td>
+<td class="parameter_description"><p>The new lateral dimensions power.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-grain-value-get-power-z"></a><h3>gwy_grain_value_get_power_z ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_grain_value_get_power_z (<em class="parameter"><code><a class="link" href="GwyGrainValue.html" title="GwyGrainValue"><span class="type">GwyGrainValue</span></a> *gvalue</code></em>);</pre>
+<p>Gets the power of value (height) in a grain value.</p>
+<p>See <a class="link" href="GwyGrainValue.html#gwy-grain-value-get-power-xy" title="gwy_grain_value_get_power_xy ()"><code class="function">gwy_grain_value_get_power_xy()</code></a> for details.</p>
+<div class="refsect3">
+<a name="gwy-grain-value-get-power-z.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gvalue</p></td>
+<td class="parameter_description"><p>A grain value object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-grain-value-get-power-z.returns"></a><h4>Returns</h4>
+<p> The power of value (height).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-grain-value-set-power-z"></a><h3>gwy_grain_value_set_power_z ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_grain_value_set_power_z (<em class="parameter"><code><a class="link" href="GwyGrainValue.html" title="GwyGrainValue"><span class="type">GwyGrainValue</span></a> *gvalue</code></em>,
+                             <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> power_z</code></em>);</pre>
+<p>Sets the power of value (height) in a grain value.</p>
+<div class="refsect3">
+<a name="gwy-grain-value-set-power-z.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gvalue</p></td>
+<td class="parameter_description"><p>A grain value object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>power_z</p></td>
+<td class="parameter_description"><p>The new value (height) power.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-grain-value-get-flags"></a><h3>gwy_grain_value_get_flags ()</h3>
+<pre class="programlisting"><a class="link" href="GwyGrainValue.html#GwyGrainValueFlags" title="enum GwyGrainValueFlags"><span class="returnvalue">GwyGrainValueFlags</span></a>
+gwy_grain_value_get_flags (<em class="parameter"><code><a class="link" href="GwyGrainValue.html" title="GwyGrainValue"><span class="type">GwyGrainValue</span></a> *gvalue</code></em>);</pre>
+<p>Obtains the special attributes of a grain quantity.</p>
+<div class="refsect3">
+<a name="gwy-grain-value-get-flags.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gvalue</p></td>
+<td class="parameter_description"><p>A grain value object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-grain-value-get-flags.returns"></a><h4>Returns</h4>
+<p> The special attribute flags set on <em class="parameter"><code>gvalue</code></em>
+.  See
+<a class="link" href="GwyGrainValue.html#GwyGrainValueFlags" title="enum GwyGrainValueFlags"><span class="type">GwyGrainValueFlags</span></a> for their description.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-grain-value-set-flags"></a><h3>gwy_grain_value_set_flags ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_grain_value_set_flags (<em class="parameter"><code><a class="link" href="GwyGrainValue.html" title="GwyGrainValue"><span class="type">GwyGrainValue</span></a> *gvalue</code></em>,
+                           <em class="parameter"><code><a class="link" href="GwyGrainValue.html#GwyGrainValueFlags" title="enum GwyGrainValueFlags"><span class="type">GwyGrainValueFlags</span></a> flags</code></em>);</pre>
+<p>Sets the special attributes of a grain quantity.</p>
+<p>The value of <em class="parameter"><code>flags</code></em>
+ determines the complete new set of flags.  To set
+individual flags, obtain the current set with <a class="link" href="GwyGrainValue.html#gwy-grain-value-get-flags" title="gwy_grain_value_get_flags ()"><code class="function">gwy_grain_value_get_flags()</code></a>
+first and then set/unset individual flags.</p>
+<div class="refsect3">
+<a name="gwy-grain-value-set-flags.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gvalue</p></td>
+<td class="parameter_description"><p>A grain value object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>The special attributes to set on <em class="parameter"><code>gvalue</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-grain-value-get-quantity"></a><h3>gwy_grain_value_get_quantity ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyGrainQuantity" title="enum GwyGrainQuantity"><span class="returnvalue">GwyGrainQuantity</span></a>
+gwy_grain_value_get_quantity (<em class="parameter"><code><a class="link" href="GwyGrainValue.html" title="GwyGrainValue"><span class="type">GwyGrainValue</span></a> *gvalue</code></em>);</pre>
+<p>Gets the built-in grain quantity corresponding to a grain value.</p>
+<div class="refsect3">
+<a name="gwy-grain-value-get-quantity.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gvalue</p></td>
+<td class="parameter_description"><p>A grain value object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-grain-value-get-quantity.returns"></a><h4>Returns</h4>
+<p> The corresponding built-in <a class="link" href="libgwyprocess-gwyprocessenums.html#GwyGrainQuantity" title="enum GwyGrainQuantity"><span class="type">GwyGrainQuantity</span></a> if <em class="parameter"><code>gvalue</code></em>
+is a
+built-it grain value, -1 if <em class="parameter"><code>gvalue</code></em>
+is an user-defined grain value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-grain-value-get-expression"></a><h3>gwy_grain_value_get_expression ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_grain_value_get_expression (<em class="parameter"><code><a class="link" href="GwyGrainValue.html" title="GwyGrainValue"><span class="type">GwyGrainValue</span></a> *gvalue</code></em>);</pre>
+<p>Gets the expression of a user-defined grain value.</p>
+<div class="refsect3">
+<a name="gwy-grain-value-get-expression.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gvalue</p></td>
+<td class="parameter_description"><p>A grain value object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-grain-value-get-expression.returns"></a><h4>Returns</h4>
+<p> The expression as a string owned by <em class="parameter"><code>gvalue</code></em>
+, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>gvalue</code></em>
+is a built-in grain value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-grain-value-set-expression"></a><h3>gwy_grain_value_set_expression ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_grain_value_set_expression (<em class="parameter"><code><a class="link" href="GwyGrainValue.html" title="GwyGrainValue"><span class="type">GwyGrainValue</span></a> *gvalue</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *expression</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Sets the expression of a user-defined grain value.</p>
+<p>It is an error to call this function on a built-in quantity.</p>
+<div class="refsect3">
+<a name="gwy-grain-value-set-expression.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gvalue</p></td>
+<td class="parameter_description"><p>A grain value object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>expression</p></td>
+<td class="parameter_description"><p>New grain value expression.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Return location for the error, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to ignore errors.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-grain-value-set-expression.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the expression is compilable and references only known
+grain quantities.  <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> is the expression is not calculable,
+in this case the <em class="parameter"><code>gvalue</code></em>
+'s expression is unchanged.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-grain-value-group-name"></a><h3>gwy_grain_value_group_name ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_grain_value_group_name (<em class="parameter"><code><a class="link" href="GwyGrainValue.html#GwyGrainValueGroup" title="enum GwyGrainValueGroup"><span class="type">GwyGrainValueGroup</span></a> group</code></em>);</pre>
+<p>Obtains the name of a grain value group.</p>
+<div class="refsect3">
+<a name="gwy-grain-value-group-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>group</p></td>
+<td class="parameter_description"><p>Grain value group.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-grain-value-group-name.returns"></a><h4>Returns</h4>
+<p> The grain value group name as a constant untranslated string,
+owned by the library.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-grain-values"></a><h3>gwy_grain_values ()</h3>
+<pre class="programlisting"><a href="../GwyInventory.html#GwyInventory-struct"><span class="returnvalue">GwyInventory</span></a> *
+gwy_grain_values (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Gets the inventory with all the grain values.</p>
+<div class="refsect3">
+<a name="gwy-grain-values.returns"></a><h4>Returns</h4>
+<p> Grain value inventory.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-grain-values-get-grain-value"></a><h3>gwy_grain_values_get_grain_value ()</h3>
+<pre class="programlisting"><a class="link" href="GwyGrainValue.html" title="GwyGrainValue"><span class="returnvalue">GwyGrainValue</span></a> *
+gwy_grain_values_get_grain_value (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Convenience function to get a grain quantity from <a class="link" href="GwyGrainValue.html#gwy-grain-values" title="gwy_grain_values ()"><code class="function">gwy_grain_values()</code></a> by
+name.</p>
+<div class="refsect3">
+<a name="gwy-grain-values-get-grain-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Grain quantity name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-grain-values-get-grain-value.returns"></a><h4>Returns</h4>
+<p> Grain quantity identified by <em class="parameter"><code>name</code></em>
+or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there is no such
+grain quantity.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-grain-values-get-grain-value-by-symbol"></a><h3>gwy_grain_values_get_grain_value_by_symbol ()</h3>
+<pre class="programlisting"><a class="link" href="GwyGrainValue.html" title="GwyGrainValue"><span class="returnvalue">GwyGrainValue</span></a> *
+gwy_grain_values_get_grain_value_by_symbol
+                               (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *symbol</code></em>);</pre>
+<p>Convenience function to get a grain quantity from <a class="link" href="GwyGrainValue.html#gwy-grain-values" title="gwy_grain_values ()"><code class="function">gwy_grain_values()</code></a> by
+its symbol.</p>
+<div class="refsect3">
+<a name="gwy-grain-values-get-grain-value-by-symbol.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>symbol</p></td>
+<td class="parameter_description"><p>Grain quantity symbol.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-grain-values-get-grain-value-by-symbol.returns"></a><h4>Returns</h4>
+<p> Grain quantity with smybol <em class="parameter"><code>symbol</code></em>
+or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there is no such
+grain quantity.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-37.html#api-index-2.37">2.37</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-grain-values-get-builtin-grain-value"></a><h3>gwy_grain_values_get_builtin_grain_value ()</h3>
+<pre class="programlisting"><a class="link" href="GwyGrainValue.html" title="GwyGrainValue"><span class="returnvalue">GwyGrainValue</span></a> *
+gwy_grain_values_get_builtin_grain_value
+                               (<em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyGrainQuantity" title="enum GwyGrainQuantity"><span class="type">GwyGrainQuantity</span></a> quantity</code></em>);</pre>
+<p>Obtains the built-in grain value corresponding to given enum value.</p>
+<div class="refsect3">
+<a name="gwy-grain-values-get-builtin-grain-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>quantity</p></td>
+<td class="parameter_description"><p>A <a class="link" href="libgwyprocess-gwyprocessenums.html#GwyGrainQuantity" title="enum GwyGrainQuantity"><span class="type">GwyGrainQuantity</span></a> value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-grain-values-get-builtin-grain-value.returns"></a><h4>Returns</h4>
+<p> The built-in grain value corresponding to <em class="parameter"><code>quantity</code></em>
+, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there
+is no such grain value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-grain-values-calculate"></a><h3>gwy_grain_values_calculate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_grain_values_calculate (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nvalues</code></em>,
+                            <em class="parameter"><code><a class="link" href="GwyGrainValue.html" title="GwyGrainValue"><span class="type">GwyGrainValue</span></a> **gvalues</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> **results</code></em>,
+                            <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ngrains</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *grains</code></em>);</pre>
+<p>Calculates a set of grain values.</p>
+<p>See also <a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-get-quantities" title="gwy_data_field_grains_get_quantities ()"><code class="function">gwy_data_field_grains_get_quantities()</code></a> for a simplier function
+for built-in grain values.</p>
+<div class="refsect3">
+<a name="gwy-grain-values-calculate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>nvalues</p></td>
+<td class="parameter_description"><p>Number of items in <em class="parameter"><code>gvalues</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gvalues</p></td>
+<td class="parameter_description"><p>Array of grain value objects.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p>Array of length <em class="parameter"><code>nvalues</code></em>
+of arrays of length <em class="parameter"><code>ngrains</code></em>
++1 of doubles
+to put the calculated values to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>Data field used for marking.  For some values its values
+are not used, but its dimensions determine the dimensions of
+<em class="parameter"><code>grains</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grains</p></td>
+<td class="parameter_description"><p>Grain numbers filled with <a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()"><code class="function">gwy_data_field_number_grains()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ngrains</p></td>
+<td class="parameter_description"><p>The number of grains as returned by
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()"><code class="function">gwy_data_field_number_grains()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyGrainValue.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyGrainValueGroup"></a><h3>enum GwyGrainValueGroup</h3>
+<div class="refsect3">
+<a name="GwyGrainValueGroup.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-GRAIN-VALUE-GROUP-ID:CAPS"></a>GWY_GRAIN_VALUE_GROUP_ID</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-GRAIN-VALUE-GROUP-POSITION:CAPS"></a>GWY_GRAIN_VALUE_GROUP_POSITION</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-GRAIN-VALUE-GROUP-VALUE:CAPS"></a>GWY_GRAIN_VALUE_GROUP_VALUE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-GRAIN-VALUE-GROUP-AREA:CAPS"></a>GWY_GRAIN_VALUE_GROUP_AREA</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-GRAIN-VALUE-GROUP-VOLUME:CAPS"></a>GWY_GRAIN_VALUE_GROUP_VOLUME</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-GRAIN-VALUE-GROUP-BOUNDARY:CAPS"></a>GWY_GRAIN_VALUE_GROUP_BOUNDARY</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-GRAIN-VALUE-GROUP-SLOPE:CAPS"></a>GWY_GRAIN_VALUE_GROUP_SLOPE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-GRAIN-VALUE-GROUP-CURVATURE:CAPS"></a>GWY_GRAIN_VALUE_GROUP_CURVATURE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-GRAIN-VALUE-GROUP-MOMENT:CAPS"></a>GWY_GRAIN_VALUE_GROUP_MOMENT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-GRAIN-VALUE-GROUP-USER:CAPS"></a>GWY_GRAIN_VALUE_GROUP_USER</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGrainValueFlags"></a><h3>enum GwyGrainValueFlags</h3>
+<p>Special attributes of grain values.</p>
+<div class="refsect3">
+<a name="GwyGrainValueFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-GRAIN-VALUE-SAME-UNITS:CAPS"></a>GWY_GRAIN_VALUE_SAME_UNITS</p></td>
+<td class="enum_member_description">
+<p>Certain grain quantities, such as the surface
+area or absolute inclination, are only
+meaningful if value (height) is the same
+physical quantity as lateral dimensions.  These
+have this flag set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-GRAIN-VALUE-IS-ANGLE:CAPS"></a>GWY_GRAIN_VALUE_IS_ANGLE</p></td>
+<td class="enum_member_description">
+<p>Angular quantities are internally always
+calculated in radians, however they can be
+presented in degrees in the user interface.
+To enable such special handling, set this
+flag to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGrainValueData"></a><h3>GwyGrainValueData</h3>
+<pre class="programlisting">typedef struct {
+    GwyGrainValueGroup group;
+    gchar *symbol_markup;
+    gchar *symbol;
+    gchar *reserveds;
+    gint power_xy;
+    gint power_z;
+    guint flags;
+    gint reservedi;
+} GwyGrainValueData;
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGrainValue-struct"></a><h3>struct GwyGrainValue</h3>
+<pre class="programlisting">struct GwyGrainValue;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGrainValueClass"></a><h3>struct GwyGrainValueClass</h3>
+<pre class="programlisting">struct GwyGrainValueClass {
+    GwyResourceClass parent_class;
+
+    void (*reserved1)(void);
+    void (*reserved2)(void);
+};
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

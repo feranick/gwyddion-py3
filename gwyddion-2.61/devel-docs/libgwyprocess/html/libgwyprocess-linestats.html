@@ -1,0 +1,2203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>linestats: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="libgwyprocess-level.html" title="level">
+<link rel="next" href="libgwyprocess-simpleFFT.html" title="simpleFFT">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyprocess-linestats.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyprocess-level.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyprocess-simpleFFT.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyprocess-linestats"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyprocess-linestats.top_of_page"></a>linestats</span></h2>
+<p>linestats — One-dimensional statistical functions</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyprocess-linestats.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-get-max" title="gwy_data_line_get_max ()">gwy_data_line_get_max</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-get-min" title="gwy_data_line_get_min ()">gwy_data_line_get_min</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-get-min-max" title="gwy_data_line_get_min_max ()">gwy_data_line_get_min_max</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-min-pos-i" title="gwy_data_line_min_pos_i ()">gwy_data_line_min_pos_i</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-max-pos-i" title="gwy_data_line_max_pos_i ()">gwy_data_line_max_pos_i</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-min-pos-r" title="gwy_data_line_min_pos_r ()">gwy_data_line_min_pos_r</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-max-pos-r" title="gwy_data_line_max_pos_r ()">gwy_data_line_max_pos_r</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-get-avg" title="gwy_data_line_get_avg ()">gwy_data_line_get_avg</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-get-rms" title="gwy_data_line_get_rms ()">gwy_data_line_get_rms</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-get-tan-beta0" title="gwy_data_line_get_tan_beta0 ()">gwy_data_line_get_tan_beta0</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-get-variation" title="gwy_data_line_get_variation ()">gwy_data_line_get_variation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-get-sum" title="gwy_data_line_get_sum ()">gwy_data_line_get_sum</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-get-ra" title="gwy_data_line_get_ra ()">gwy_data_line_get_ra</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-get-skew" title="gwy_data_line_get_skew ()">gwy_data_line_get_skew</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-get-kurtosis" title="gwy_data_line_get_kurtosis ()">gwy_data_line_get_kurtosis</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-part-get-max" title="gwy_data_line_part_get_max ()">gwy_data_line_part_get_max</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-part-get-min" title="gwy_data_line_part_get_min ()">gwy_data_line_part_get_min</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-part-get-min-max" title="gwy_data_line_part_get_min_max ()">gwy_data_line_part_get_min_max</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-part-get-avg" title="gwy_data_line_part_get_avg ()">gwy_data_line_part_get_avg</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-part-get-rms" title="gwy_data_line_part_get_rms ()">gwy_data_line_part_get_rms</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-part-get-tan-beta0" title="gwy_data_line_part_get_tan_beta0 ()">gwy_data_line_part_get_tan_beta0</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-part-get-variation" title="gwy_data_line_part_get_variation ()">gwy_data_line_part_get_variation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-part-get-sum" title="gwy_data_line_part_get_sum ()">gwy_data_line_part_get_sum</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-part-get-ra" title="gwy_data_line_part_get_ra ()">gwy_data_line_part_get_ra</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-part-get-skew" title="gwy_data_line_part_get_skew ()">gwy_data_line_part_get_skew</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-part-get-kurtosis" title="gwy_data_line_part_get_kurtosis ()">gwy_data_line_part_get_kurtosis</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-get-modus" title="gwy_data_line_get_modus ()">gwy_data_line_get_modus</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-part-get-modus" title="gwy_data_line_part_get_modus ()">gwy_data_line_part_get_modus</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-get-median" title="gwy_data_line_get_median ()">gwy_data_line_get_median</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-part-get-median" title="gwy_data_line_part_get_median ()">gwy_data_line_part_get_median</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-get-length" title="gwy_data_line_get_length ()">gwy_data_line_get_length</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-get-xpm" title="gwy_data_line_get_xpm ()">gwy_data_line_get_xpm</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-get-xvm" title="gwy_data_line_get_xvm ()">gwy_data_line_get_xvm</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-get-xtm" title="gwy_data_line_get_xtm ()">gwy_data_line_get_xtm</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-get-kth-peaks" title="gwy_data_line_get_kth_peaks ()">gwy_data_line_get_kth_peaks</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-count-peaks" title="gwy_data_line_count_peaks ()">gwy_data_line_count_peaks</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-distribution" title="gwy_data_line_distribution ()">gwy_data_line_distribution</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-dh" title="gwy_data_line_dh ()">gwy_data_line_dh</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-cdh" title="gwy_data_line_cdh ()">gwy_data_line_cdh</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-da" title="gwy_data_line_da ()">gwy_data_line_da</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-cda" title="gwy_data_line_cda ()">gwy_data_line_cda</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-acf" title="gwy_data_line_acf ()">gwy_data_line_acf</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-hhcf" title="gwy_data_line_hhcf ()">gwy_data_line_hhcf</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-linestats.html#gwy-data-line-psdf" title="gwy_data_line_psdf ()">gwy_data_line_psdf</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-linestats.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-linestats.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-linestats.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-data-line-get-max"></a><h3>gwy_data_line_get_max ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_get_max (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>);</pre>
+<p>Finds the maximum value of a data line.</p>
+<div class="refsect3">
+<a name="gwy-data-line-get-max.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-get-max.returns"></a><h4>Returns</h4>
+<p> The maximum value.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-get-min"></a><h3>gwy_data_line_get_min ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_get_min (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>);</pre>
+<p>Finds the minimum value of a data line.</p>
+<div class="refsect3">
+<a name="gwy-data-line-get-min.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-get-min.returns"></a><h4>Returns</h4>
+<p> The minimum value.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-get-min-max"></a><h3>gwy_data_line_get_min_max ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_line_get_min_max (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *min</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *max</code></em>);</pre>
+<p>Finds the minimum and maximum values of a data line.</p>
+<p>Since 2.42</p>
+<div class="refsect3">
+<a name="gwy-data-line-get-min-max.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>min</p></td>
+<td class="parameter_description"><p>Location to store minimum to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max</p></td>
+<td class="parameter_description"><p>Location to store maximum to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-min-pos-i"></a><h3>gwy_data_line_min_pos_i ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_min_pos_i (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>);</pre>
+<p>Finds the minimum pixel position of a data line.</p>
+<p>For historical reasons the value is returned as double, but it is always
+an integer.</p>
+<div class="refsect3">
+<a name="gwy-data-line-min-pos-i.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-min-pos-i.returns"></a><h4>Returns</h4>
+<p> The minimum pixel position.</p>
+<p>Since 2.48</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-max-pos-i"></a><h3>gwy_data_line_max_pos_i ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_max_pos_i (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>);</pre>
+<p>Finds the maximum pixel position of a data line.</p>
+<p>For historical reasons the value is returned as double, but it is always
+an integer.</p>
+<div class="refsect3">
+<a name="gwy-data-line-max-pos-i.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-max-pos-i.returns"></a><h4>Returns</h4>
+<p> The maximum pixel position.</p>
+<p>Since 2.48</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-min-pos-r"></a><h3>gwy_data_line_min_pos_r ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_min_pos_r (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>);</pre>
+<p>Finds the real minimum position in a data line.</p>
+<div class="refsect3">
+<a name="gwy-data-line-min-pos-r.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-min-pos-r.returns"></a><h4>Returns</h4>
+<p> Real position for the minimum.</p>
+<p>Since 2.48</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-max-pos-r"></a><h3>gwy_data_line_max_pos_r ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_max_pos_r (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>);</pre>
+<p>Finds the real maximum position in a data line.</p>
+<div class="refsect3">
+<a name="gwy-data-line-max-pos-r.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-max-pos-r.returns"></a><h4>Returns</h4>
+<p> Real position for the maximum.</p>
+<p>Since 2.48</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-get-avg"></a><h3>gwy_data_line_get_avg ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_get_avg (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>);</pre>
+<p>Computes average value of a data line.</p>
+<div class="refsect3">
+<a name="gwy-data-line-get-avg.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-get-avg.returns"></a><h4>Returns</h4>
+<p> Average value</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-get-rms"></a><h3>gwy_data_line_get_rms ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_get_rms (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>);</pre>
+<p>Computes root mean square value of a data line.</p>
+<div class="refsect3">
+<a name="gwy-data-line-get-rms.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-get-rms.returns"></a><h4>Returns</h4>
+<p> Root mean square deviation of values.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-get-tan-beta0"></a><h3>gwy_data_line_get_tan_beta0 ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_get_tan_beta0 (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>);</pre>
+<p>Computes root mean square slope in a data line.</p>
+<div class="refsect3">
+<a name="gwy-data-line-get-tan-beta0.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-get-tan-beta0.returns"></a><h4>Returns</h4>
+<p> Root mean square slope within a given interval.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-get-variation"></a><h3>gwy_data_line_get_variation ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_get_variation (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>);</pre>
+<p>Computes the total variation of a data line.</p>
+<p>See <a class="link" href="libgwyprocess-linestats.html#gwy-data-line-part-get-variation" title="gwy_data_line_part_get_variation ()"><code class="function">gwy_data_line_part_get_variation()</code></a> for definition and discussion.</p>
+<div class="refsect3">
+<a name="gwy-data-line-get-variation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-get-variation.returns"></a><h4>Returns</h4>
+<p> The total variation.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-42.html#api-index-2.42">2.42</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-get-sum"></a><h3>gwy_data_line_get_sum ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_get_sum (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>);</pre>
+<p>Computes sum of all values in a data line.</p>
+<div class="refsect3">
+<a name="gwy-data-line-get-sum.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-get-sum.returns"></a><h4>Returns</h4>
+<p> sum of all the values.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-get-ra"></a><h3>gwy_data_line_get_ra ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_get_ra (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>);</pre>
+<p>Computes the mean absolute deviation of a data line.</p>
+<div class="refsect3">
+<a name="gwy-data-line-get-ra.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-get-ra.returns"></a><h4>Returns</h4>
+<p> The mean absolute deviation of height values.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-42.html#api-index-2.42">2.42</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-get-skew"></a><h3>gwy_data_line_get_skew ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_get_skew (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>);</pre>
+<p>Computes the skew of a data line.</p>
+<div class="refsect3">
+<a name="gwy-data-line-get-skew.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-get-skew.returns"></a><h4>Returns</h4>
+<p> The skew of height values.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-42.html#api-index-2.42">2.42</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-get-kurtosis"></a><h3>gwy_data_line_get_kurtosis ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_get_kurtosis (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>);</pre>
+<p>Computes the kurtosis of a data line.</p>
+<div class="refsect3">
+<a name="gwy-data-line-get-kurtosis.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-get-kurtosis.returns"></a><h4>Returns</h4>
+<p> The kurtosis of height values.</p>
+<p>Note the kurtosis returned by this function returns is the excess kurtosis
+which is zero for the Gaussian distribution (not 3).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-42.html#api-index-2.42">2.42</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-part-get-max"></a><h3>gwy_data_line_part_get_max ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_part_get_max (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> from</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to</code></em>);</pre>
+<p>Finds the maximum value of a part of a data line.</p>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-max.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from</p></td>
+<td class="parameter_description"><p>Index the line part starts at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>to</p></td>
+<td class="parameter_description"><p>Index the line part ends at + 1.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-max.returns"></a><h4>Returns</h4>
+<p> Maximum within given interval.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-part-get-min"></a><h3>gwy_data_line_part_get_min ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_part_get_min (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> from</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to</code></em>);</pre>
+<p>Finds the minimum value of a part of a data line.</p>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-min.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from</p></td>
+<td class="parameter_description"><p>Index the line part starts at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>to</p></td>
+<td class="parameter_description"><p>Index the line part ends at + 1.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-min.returns"></a><h4>Returns</h4>
+<p> Minimum within given interval.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-part-get-min-max"></a><h3>gwy_data_line_part_get_min_max ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_line_part_get_min_max (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> from</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *min</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *max</code></em>);</pre>
+<p>Finds the minimum and maximum values of a part of a data line.</p>
+<p>Since 2.42</p>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-min-max.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from</p></td>
+<td class="parameter_description"><p>Index the line part starts at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>to</p></td>
+<td class="parameter_description"><p>Index the line part ends at + 1.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>min</p></td>
+<td class="parameter_description"><p>Location to store minimum to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max</p></td>
+<td class="parameter_description"><p>Location to store maximum to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-part-get-avg"></a><h3>gwy_data_line_part_get_avg ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_part_get_avg (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> from</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to</code></em>);</pre>
+<p>Computes mean value of all values in a part of a data line.</p>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-avg.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from</p></td>
+<td class="parameter_description"><p>Index the line part starts at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>to</p></td>
+<td class="parameter_description"><p>Index the line part ends at + 1.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-avg.returns"></a><h4>Returns</h4>
+<p> Average value within given interval.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-part-get-rms"></a><h3>gwy_data_line_part_get_rms ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_part_get_rms (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> from</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to</code></em>);</pre>
+<p>Computes root mean square value of a part of a data line.</p>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-rms.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from</p></td>
+<td class="parameter_description"><p>Index the line part starts at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>to</p></td>
+<td class="parameter_description"><p>Index the line part ends at + 1.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-rms.returns"></a><h4>Returns</h4>
+<p> Root mean square deviation of heights within a given interval</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-part-get-tan-beta0"></a><h3>gwy_data_line_part_get_tan_beta0 ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_part_get_tan_beta0 (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> from</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to</code></em>);</pre>
+<p>Computes root mean square slope in a part of a data line.</p>
+<p>This is the root mean square of value derivatives, it is also proportional
+to the second derivative of both HHCF and ACF at zero.</p>
+<p>This roughness quantity is also known as Dq.</p>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-tan-beta0.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from</p></td>
+<td class="parameter_description"><p>Index the line part starts at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>to</p></td>
+<td class="parameter_description"><p>Index the line part ends at + 1.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-tan-beta0.returns"></a><h4>Returns</h4>
+<p> Root mean square slope within a given interval.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-part-get-variation"></a><h3>gwy_data_line_part_get_variation ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_part_get_variation (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> from</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to</code></em>);</pre>
+<p>Computes the total variation of a part of a data line.</p>
+<p>The total variation is estimated as the integral of the absolute value of
+local gradient.  For one dimensional data, the variation reduces to the
+integral of absolute value of the derivative.  Its units are thus the same
+as the value units of the line.  See also
+<a class="link" href="libgwyprocess-stats.html#gwy-data-field-area-get-variation" title="gwy_data_field_area_get_variation ()"><code class="function">gwy_data_field_area_get_variation()</code></a> for some more discussion.</p>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-variation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from</p></td>
+<td class="parameter_description"><p>Index the line part starts at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>to</p></td>
+<td class="parameter_description"><p>Index the line part ends at + 1.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-variation.returns"></a><h4>Returns</h4>
+<p> The total variation within a given interval.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-42.html#api-index-2.42">2.42</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-part-get-sum"></a><h3>gwy_data_line_part_get_sum ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_part_get_sum (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> from</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to</code></em>);</pre>
+<p>Computes sum of all values in a part of a data line.</p>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-sum.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from</p></td>
+<td class="parameter_description"><p>Index the line part starts at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>to</p></td>
+<td class="parameter_description"><p>Index the line part ends at + 1.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-sum.returns"></a><h4>Returns</h4>
+<p> Sum of all values within the interval.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-part-get-ra"></a><h3>gwy_data_line_part_get_ra ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_part_get_ra (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> from</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to</code></em>);</pre>
+<p>Computes mean absolute deviation value of a part of a data line.</p>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-ra.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from</p></td>
+<td class="parameter_description"><p>Index the line part starts at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>to</p></td>
+<td class="parameter_description"><p>Index the line part ends at + 1.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-ra.returns"></a><h4>Returns</h4>
+<p> Mean absolute deviation of heights within a given interval.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-part-get-skew"></a><h3>gwy_data_line_part_get_skew ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_part_get_skew (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> from</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to</code></em>);</pre>
+<p>Computes skew value of a part of a data line.</p>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-skew.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from</p></td>
+<td class="parameter_description"><p>Index the line part starts at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>to</p></td>
+<td class="parameter_description"><p>Index the line part ends at + 1.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-skew.returns"></a><h4>Returns</h4>
+<p> Skew of heights within a given interval.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-part-get-kurtosis"></a><h3>gwy_data_line_part_get_kurtosis ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_part_get_kurtosis (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> from</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to</code></em>);</pre>
+<p>Computes kurtosis value of a part of a data line.</p>
+<p>Note the kurtosis returned by this function returns is the excess kurtosis
+which is zero for the Gaussian distribution (not 3).</p>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-kurtosis.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from</p></td>
+<td class="parameter_description"><p>Index the line part starts at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>to</p></td>
+<td class="parameter_description"><p>Index the line part ends at + 1.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-kurtosis.returns"></a><h4>Returns</h4>
+<p> Kurtosis of heights within a given interval.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-get-modus"></a><h3>gwy_data_line_get_modus ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_get_modus (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> histogram_steps</code></em>);</pre>
+<p>Finds approximate modus of a data line.</p>
+<p>See <a class="link" href="libgwyprocess-linestats.html#gwy-data-line-part-get-modus" title="gwy_data_line_part_get_modus ()"><code class="function">gwy_data_line_part_get_modus()</code></a> for details and caveats.</p>
+<div class="refsect3">
+<a name="gwy-data-line-get-modus.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>histogram_steps</p></td>
+<td class="parameter_description"><p>Number of histogram steps used for modus searching,
+pass a nonpositive number to autosize.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-get-modus.returns"></a><h4>Returns</h4>
+<p> The modus.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-part-get-modus"></a><h3>gwy_data_line_part_get_modus ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_part_get_modus (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> from</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> histogram_steps</code></em>);</pre>
+<p>Finds approximate modus of a data line part.</p>
+<p>As each number in the data line is usually unique, this function does not
+return modus of the data itself, but modus of a histogram.</p>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-modus.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from</p></td>
+<td class="parameter_description"><p>The index in <em class="parameter"><code>data_line</code></em>
+to start from (inclusive).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>to</p></td>
+<td class="parameter_description"><p>The index in <em class="parameter"><code>data_line</code></em>
+to stop (noninclusive).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>histogram_steps</p></td>
+<td class="parameter_description"><p>Number of histogram steps used for modus searching,
+pass a nonpositive number to autosize.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-modus.returns"></a><h4>Returns</h4>
+<p> The modus.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-get-median"></a><h3>gwy_data_line_get_median ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_get_median (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>);</pre>
+<p>Finds median of a data line.</p>
+<div class="refsect3">
+<a name="gwy-data-line-get-median.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-get-median.returns"></a><h4>Returns</h4>
+<p> The median.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-1.html#api-index-2.1">2.1</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-part-get-median"></a><h3>gwy_data_line_part_get_median ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_part_get_median (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> from</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> to</code></em>);</pre>
+<p>Finds median of a data line part.</p>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-median.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from</p></td>
+<td class="parameter_description"><p>The index in <em class="parameter"><code>data_line</code></em>
+to start from (inclusive).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>to</p></td>
+<td class="parameter_description"><p>The index in <em class="parameter"><code>data_line</code></em>
+to stop (noninclusive).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-part-get-median.returns"></a><h4>Returns</h4>
+<p> The median.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-1.html#api-index-2.1">2.1</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-get-length"></a><h3>gwy_data_line_get_length ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_get_length (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>);</pre>
+<p>Calculates physical length of a data line.</p>
+<p>The length is calculated from approximation by straight segments between
+values.</p>
+<div class="refsect3">
+<a name="gwy-data-line-get-length.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line to compute length of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-get-length.returns"></a><h4>Returns</h4>
+<p> The line length.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-get-xpm"></a><h3>gwy_data_line_get_xpm ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_get_xpm (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> m</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> k</code></em>);</pre>
+<p>Calculates a peak roughness quantity for a data line.</p>
+<p>Depending on <em class="parameter"><code>m</code></em>
+ and <em class="parameter"><code>k</code></em>
+, the function can calculate
+Average Maximum Profile Peak Height <em class="parameter"><code>Rpm</code></em>
+
+or Maximum Profile Peak Height <em class="parameter"><code>Rp</code></em>
+, <em class="parameter"><code>Pp</code></em>
+, <em class="parameter"><code>Wp</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-data-line-get-xpm.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>m</p></td>
+<td class="parameter_description"><p>Number of sampling lengths.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>k</p></td>
+<td class="parameter_description"><p>Number of peaks to consider.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-get-xpm.returns"></a><h4>Returns</h4>
+<p> The peak roughness quantity defined by <em class="parameter"><code>m</code></em>
+and <em class="parameter"><code>k</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-42.html#api-index-2.42">2.42</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-get-xvm"></a><h3>gwy_data_line_get_xvm ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_get_xvm (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> m</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> k</code></em>);</pre>
+<p>Calculates a valley roughness quantity for a data line.</p>
+<p>Depending on <em class="parameter"><code>m</code></em>
+ and <em class="parameter"><code>k</code></em>
+, the function can calculate
+Average Maximum Profile Valley Depth <em class="parameter"><code>Rvm</code></em>
+
+or Maximum Profile Peak Depth <em class="parameter"><code>Rv</code></em>
+, <em class="parameter"><code>Pv</code></em>
+, <em class="parameter"><code>Wv</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-data-line-get-xvm.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>m</p></td>
+<td class="parameter_description"><p>Number of sampling lengths.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>k</p></td>
+<td class="parameter_description"><p>Number of valleys to consider.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-get-xvm.returns"></a><h4>Returns</h4>
+<p> The valley roughness quantity defined by <em class="parameter"><code>m</code></em>
+and <em class="parameter"><code>k</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-42.html#api-index-2.42">2.42</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-get-xtm"></a><h3>gwy_data_line_get_xtm ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_line_get_xtm (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> m</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> k</code></em>);</pre>
+<p>Calculates a total roughness quantity for a data line.</p>
+<p>The total quantity is just the sum of the corresponding quantities obtained
+by <a class="link" href="libgwyprocess-linestats.html#gwy-data-line-get-xpm" title="gwy_data_line_get_xpm ()"><code class="function">gwy_data_line_get_xpm()</code></a> and <a class="link" href="libgwyprocess-linestats.html#gwy-data-line-get-xvm" title="gwy_data_line_get_xvm ()"><code class="function">gwy_data_line_get_xvm()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-data-line-get-xtm.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>m</p></td>
+<td class="parameter_description"><p>Number of sampling lengths.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>k</p></td>
+<td class="parameter_description"><p>Number of peaks and valleys to consider.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-get-xtm.returns"></a><h4>Returns</h4>
+<p> The total roughness quantity defined by <em class="parameter"><code>m</code></em>
+and <em class="parameter"><code>k</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-42.html#api-index-2.42">2.42</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-get-kth-peaks"></a><h3>gwy_data_line_get_kth_peaks ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_data_line_get_kth_peaks (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> m</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> rank</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> peaks</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> average</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> pthreshold</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> vthreshold</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *peakvalues</code></em>);</pre>
+<p>Calculate k-th largers peaks or valleys in a data line split into given
+number of sampling lengths.</p>
+<p>This is a general function that can be used as the base for various standard
+roughness quantities such as Rp, Rpm, Rv, Rvm or R3z.  It is assumed
+the line is already levelled, the form removed, etc.</p>
+<p>See <a class="link" href="libgwyprocess-linestats.html#gwy-data-line-count-peaks" title="gwy_data_line_count_peaks ()"><code class="function">gwy_data_line_count_peaks()</code></a> for the description what is considered
+a peak.</p>
+<p>For larger thresholds and/or short lines some sampling lengths may not
+contain the requested number of peaks.  If there are any peaks at all, the
+smallest peak height (even though it is not <em class="parameter"><code>rank</code></em>
+-th) is used.  If there
+are no peaks, a large negative value is stored in the corresponding
+<em class="parameter"><code>peakvalues</code></em>
+ item.</p>
+<div class="refsect3">
+<a name="gwy-data-line-get-kth-peaks.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>m</p></td>
+<td class="parameter_description"><p>Number of sampling lengths the line is split into.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rank</p></td>
+<td class="parameter_description"><p>Rank of the peak to find.  One means the highest peak, three the
+third highers, etc.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>peaks</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> for peaks, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> for valleys.  If you pass <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>, swap
+the meanings of peaks and valleys in the description.  Valley
+depths are positive.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>average</p></td>
+<td class="parameter_description"><p>Calculate the average of the first <em class="parameter"><code>rank</code></em>
+peaks instead of the
+height of <em class="parameter"><code>rank</code></em>
+-th peak.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pthreshold</p></td>
+<td class="parameter_description"><p>Peak height threshold.  Peaks must stick above this threshold.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>vthreshold</p></td>
+<td class="parameter_description"><p>Valley depth threshold.  Valleys must fall below this
+threshold.  The depth is a positive value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>peakvalues</p></td>
+<td class="parameter_description"><p>Array of length at least <em class="parameter"><code>m</code></em>
+where the peak heights in each
+sampling length should be stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-get-kth-peaks.returns"></a><h4>Returns</h4>
+<p> The actual number of peaks found (i.e. number of positive values
+in <em class="parameter"><code>peakvalues</code></em>
+).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-count-peaks"></a><h3>gwy_data_line_count_peaks ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_data_line_count_peaks (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> peaks</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> pthreshold</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> vthreshold</code></em>);</pre>
+<p>Counts peaks or valleys defined by thresholds in a data line.</p>
+<p>Peak is defined as a part of the profile that extends above the peak
+threshold and is separarted by valleys that extend below the valley
+threshold.  For non-zero thresholds there may be parts between that are
+neither peaks not valleys because the local maxima in them are
+insignificant.</p>
+<p>In either case, values of <em class="parameter"><code>pthreshold</code></em>
+ and <em class="parameter"><code>vthreshold</code></em>
+ must be non-negative.
+Usually one passes the same value for both.</p>
+<div class="refsect3">
+<a name="gwy-data-line-count-peaks.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>peaks</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> for peaks, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> for valleys.  If you pass <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>, swap
+the meanings of peaks and valleys in the description.  Valley
+depths are positive.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pthreshold</p></td>
+<td class="parameter_description"><p>Peak height threshold.  Peaks must stick above this threshold.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>vthreshold</p></td>
+<td class="parameter_description"><p>Valley depth threshold.  Valleys must fall below this
+threshold.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-count-peaks.returns"></a><h4>Returns</h4>
+<p> The number of peaks found.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-distribution"></a><h3>gwy_data_line_distribution ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_line_distribution (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                            <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *distribution</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> ymin</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> ymax</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> normalize_to_unity</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nstats</code></em>);</pre>
+<p>Calculates the distribution of data line values.</p>
+<p>This function is quite similar to <a class="link" href="libgwyprocess-linestats.html#gwy-data-line-dh" title="gwy_data_line_dh ()"><code class="function">gwy_data_line_dh()</code></a>, the differences are:
+output normalization (chosen to make the integral unity), output units
+(again set to make the integral unity), automated binning.</p>
+<p>Note the <em class="parameter"><code>i</code></em>
+-th bin is [<em class="parameter"><code>i</code></em>
+*<em class="parameter"><code>dx</code></em>
++<em class="parameter"><code>off</code></em>
+,(<em class="parameter"><code>i</code></em>
++1)*<em class="parameter"><code>dx</code></em>
++<em class="parameter"><code>off</code></em>
+] so the central value
+you probably want to use for plotting is (<em class="parameter"><code>i</code></em>
++0.5)*<em class="parameter"><code>dx</code></em>
++<em class="parameter"><code>off</code></em>
+ (where <em class="parameter"><code>dx</code></em>
+ is
+the <em class="parameter"><code>distribution</code></em>
+ data line pixel size, <em class="parameter"><code>off</code></em>
+ is its offset).</p>
+<p>If all values are equal and <em class="parameter"><code>ymin</code></em>
+, <em class="parameter"><code>ymax</code></em>
+ are not explictly specified, the
+range is chosen as [<em class="parameter"><code>v</code></em>
+-|<em class="parameter"><code>v</code></em>
+|/2,<em class="parameter"><code>v</code></em>
++|<em class="parameter"><code>v</code></em>
+/2] where <em class="parameter"><code>v</code></em>
+ is the unique value,
+except when <em class="parameter"><code>v</code></em>
+=0, in which case the range is set to [-1,1].</p>
+<div class="refsect3">
+<a name="gwy-data-line-distribution.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>distribution</p></td>
+<td class="parameter_description"><p>Data line to put the distribution of <em class="parameter"><code>data_line</code></em>
+values to.
+It will be resampled to <em class="parameter"><code>nstats</code></em>
+samples (or the automatically
+chosen number of bins).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ymin</p></td>
+<td class="parameter_description"><p>Start of value range, pass <em class="parameter"><code>ymin</code></em>
+= <em class="parameter"><code>ymax</code></em>
+= 0.0 for the full range.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ymax</p></td>
+<td class="parameter_description"><p>End of value range.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>normalize_to_unity</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to normalize the integral to unity (including
+setting y-units of output to the inverse of x-units),
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to keep plain counts in the output (and set
+y-units to none).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nstats</p></td>
+<td class="parameter_description"><p>The requested number of histogram bins, pass a non-positive number
+to automatically choose a suitable number of bins.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-dh"></a><h3>gwy_data_line_dh ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_line_dh (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                  <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *target_line</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> ymin</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> ymax</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nsteps</code></em>);</pre>
+<p>Computes distribution of heights in interval [<em class="parameter"><code>ymin</code></em>
+, <em class="parameter"><code>ymax</code></em>
+).</p>
+<p>If the interval is (0, 0) it computes the distribution from
+real data minimum and maximum value.</p>
+<div class="refsect3">
+<a name="gwy-data-line-dh.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_line</p></td>
+<td class="parameter_description"><p>Data line to store height distribution function to.
+It will be resized to <em class="parameter"><code>nsteps</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ymin</p></td>
+<td class="parameter_description"><p>Height distribution minimum value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ymax</p></td>
+<td class="parameter_description"><p>Height distribution maximum value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nsteps</p></td>
+<td class="parameter_description"><p>Number of histogram steps.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-cdh"></a><h3>gwy_data_line_cdh ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_line_cdh (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                   <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *target_line</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> ymin</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> ymax</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nsteps</code></em>);</pre>
+<p>Computes cumulative distribution of heighs in interval [<em class="parameter"><code>ymin</code></em>
+, <em class="parameter"><code>ymax</code></em>
+).</p>
+<p>If the interval is (0, 0) it computes the distribution from
+real data minimum and maximum value.</p>
+<div class="refsect3">
+<a name="gwy-data-line-cdh.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_line</p></td>
+<td class="parameter_description"><p>Data line to store height distribution function to.
+It will be resized to <em class="parameter"><code>nsteps</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ymin</p></td>
+<td class="parameter_description"><p>Height distribution minimum value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ymax</p></td>
+<td class="parameter_description"><p>Height distribution maximum value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nsteps</p></td>
+<td class="parameter_description"><p>Number of histogram steps.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-da"></a><h3>gwy_data_line_da ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_line_da (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                  <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *target_line</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> ymin</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> ymax</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nsteps</code></em>);</pre>
+<p>Computes distribution of angles in interval [<em class="parameter"><code>ymin</code></em>
+, <em class="parameter"><code>ymax</code></em>
+).</p>
+<p>If the interval is (0, 0) it computes the distribution from
+real data minimum and maximum angle value.</p>
+<div class="refsect3">
+<a name="gwy-data-line-da.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_line</p></td>
+<td class="parameter_description"><p>Data line to store angle distribution function to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ymin</p></td>
+<td class="parameter_description"><p>Angle distribution minimum value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ymax</p></td>
+<td class="parameter_description"><p>Angle distribution maximum value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nsteps</p></td>
+<td class="parameter_description"><p>Mumber of angular histogram steps.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-cda"></a><h3>gwy_data_line_cda ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_line_cda (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                   <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *target_line</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> ymin</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> ymax</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nsteps</code></em>);</pre>
+<p>Computes cumulative distribution of angles in interval [<em class="parameter"><code>ymin</code></em>
+, <em class="parameter"><code>ymax</code></em>
+).</p>
+<p>If the interval is (0, 0) it computes the distribution from
+real data minimum and maximum angle value.</p>
+<div class="refsect3">
+<a name="gwy-data-line-cda.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_line</p></td>
+<td class="parameter_description"><p>Data line to store angle distribution function to.
+It will be resized to <em class="parameter"><code>nsteps</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ymin</p></td>
+<td class="parameter_description"><p>Angle distribution minimum value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ymax</p></td>
+<td class="parameter_description"><p>Angle distribution maximum value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nsteps</p></td>
+<td class="parameter_description"><p>Number of angular histogram steps.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-acf"></a><h3>gwy_data_line_acf ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_line_acf (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                   <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *target_line</code></em>);</pre>
+<p>Coputes autocorrelation function and stores the values in
+<em class="parameter"><code>target_line</code></em>
+</p>
+<p>Up to version 2.53 it did not set the output units properly.</p>
+<div class="refsect3">
+<a name="gwy-data-line-acf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_line</p></td>
+<td class="parameter_description"><p>Data line to store autocorrelation function to.  It will be
+resized to <em class="parameter"><code>data_line</code></em>
+size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-hhcf"></a><h3>gwy_data_line_hhcf ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_line_hhcf (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                    <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *target_line</code></em>);</pre>
+<p>Computes height-height correlation function and stores results in
+<em class="parameter"><code>target_line</code></em>
+.</p>
+<p>Up to version 2.53 it did not set the output units properly.</p>
+<div class="refsect3">
+<a name="gwy-data-line-hhcf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_line</p></td>
+<td class="parameter_description"><p>Data line to store height-height function to.  It will be
+resized to <em class="parameter"><code>data_line</code></em>
+size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-psdf"></a><h3>gwy_data_line_psdf ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_line_psdf (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                    <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *target_line</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> windowing</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> interpolation</code></em>);</pre>
+<p>Calculates the power spectral density function of a data line.</p>
+<p>Up to version 2.45 it destroyed the input data and did not set the output
+units properly.</p>
+<div class="refsect3">
+<a name="gwy-data-line-psdf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_line</p></td>
+<td class="parameter_description"><p>Data line to store power spectral density function to.
+It will be resized to <em class="parameter"><code>data_line</code></em>
+size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>windowing</p></td>
+<td class="parameter_description"><p>Windowing method to use.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>Interpolation type.
+Ignored since 2.8 as no resampling is performed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

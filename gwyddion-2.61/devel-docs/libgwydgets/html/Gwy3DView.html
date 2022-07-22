@@ -1,0 +1,1162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Gwy3DView: Gwyddion Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Widgets Library Reference Manual">
+<link rel="up" href="Widgets3D.html" title="3D Widgets">
+<link rel="prev" href="Widgets3D.html" title="3D Widgets">
+<link rel="next" href="Gwy3DWindow.html" title="Gwy3DWindow">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#Gwy3DView.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#Gwy3DView.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#Gwy3DView.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#Gwy3DView.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="Widgets3D.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="Widgets3D.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="Gwy3DWindow.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="Gwy3DView"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="Gwy3DView.top_of_page"></a>Gwy3DView</span></h2>
+<p>Gwy3DView — OpenGL 3D data display</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="Gwy3DView.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-new" title="gwy_3d_view_new ()">gwy_3d_view_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-get-setup-prefix" title="gwy_3d_view_get_setup_prefix ()">gwy_3d_view_get_setup_prefix</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-set-setup-prefix" title="gwy_3d_view_set_setup_prefix ()">gwy_3d_view_set_setup_prefix</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-get-data-key" title="gwy_3d_view_get_data_key ()">gwy_3d_view_get_data_key</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-set-data-key" title="gwy_3d_view_set_data_key ()">gwy_3d_view_set_data_key</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-set-ovlay" title="gwy_3d_view_set_ovlay ()">gwy_3d_view_set_ovlay</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-get-gradient-key" title="gwy_3d_view_get_gradient_key ()">gwy_3d_view_get_gradient_key</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-set-gradient-key" title="gwy_3d_view_set_gradient_key ()">gwy_3d_view_set_gradient_key</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-get-material-key" title="gwy_3d_view_get_material_key ()">gwy_3d_view_get_material_key</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-set-material-key" title="gwy_3d_view_set_material_key ()">gwy_3d_view_set_material_key</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-get-reduced-size" title="gwy_3d_view_get_reduced_size ()">gwy_3d_view_get_reduced_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-set-reduced-size" title="gwy_3d_view_set_reduced_size ()">gwy_3d_view_set_reduced_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwydgets-gwydgetenums.html#Gwy3DMovement" title="enum Gwy3DMovement"><span class="returnvalue">Gwy3DMovement</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-get-movement-type" title="gwy_3d_view_get_movement_type ()">gwy_3d_view_get_movement_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-set-movement-type" title="gwy_3d_view_set_movement_type ()">gwy_3d_view_set_movement_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GdkPixbuf</span> *
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-get-pixbuf" title="gwy_3d_view_get_pixbuf ()">gwy_3d_view_get_pixbuf</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GdkPixbuf</span> *
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-get-pixbuf-with-alpha" title="gwy_3d_view_get_pixbuf_with_alpha ()">gwy_3d_view_get_pixbuf_with_alpha</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="Gwy3DLabel.html" title="Gwy3DLabel"><span class="returnvalue">Gwy3DLabel</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-get-label" title="gwy_3d_view_get_label ()">gwy_3d_view_get_label</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="Gwy3DSetup.html" title="Gwy3DSetup"><span class="returnvalue">Gwy3DSetup</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-get-setup" title="gwy_3d_view_get_setup ()">gwy_3d_view_get_setup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwyContainer.html#GwyContainer-struct"><span class="returnvalue">GwyContainer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-get-data" title="gwy_3d_view_get_data ()">gwy_3d_view_get_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-get-scale-range" title="gwy_3d_view_get_scale_range ()">gwy_3d_view_get_scale_range</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-set-scale-range" title="gwy_3d_view_set_scale_range ()">gwy_3d_view_set_scale_range</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-class-disable-axis-drawing" title="gwy_3d_view_class_disable_axis_drawing ()">gwy_3d_view_class_disable_axis_drawing</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-get-mask-key" title="gwy_3d_view_get_mask_key ()">gwy_3d_view_get_mask_key</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="Gwy3DView.html#gwy-3d-view-set-mask-key" title="gwy_3d_view_set_mask_key ()">gwy_3d_view_set_mask_key</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="Gwy3DView.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="Gwy3DView.html#Gwy3DView--data-key" title="The “data-key” property">data-key</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="Gwy3DView.html#Gwy3DView--gradient-key" title="The “gradient-key” property">gradient-key</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="Gwy3DView.html#Gwy3DView--mask-key" title="The “mask-key” property">mask-key</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="Gwy3DView.html#Gwy3DView--material-key" title="The “material-key” property">material-key</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="libgwydgets-gwydgetenums.html#Gwy3DMovement" title="enum Gwy3DMovement"><span class="type">Gwy3DMovement</span></a></td>
+<td class="property_name"><a class="link" href="Gwy3DView.html#Gwy3DView--movement-type" title="The “movement-type” property">movement-type</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="Gwy3DView.html#Gwy3DView--reduced-size" title="The “reduced-size” property">reduced-size</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="Gwy3DView.html#Gwy3DView--setup-prefix" title="The “setup-prefix” property">setup-prefix</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="Gwy3DView.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="Gwy3DView.html#Gwy3DView-struct" title="struct Gwy3DView">Gwy3DView</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="Gwy3DView.html#Gwy3DViewClass" title="struct Gwy3DViewClass">Gwy3DViewClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="Gwy3DView.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkObject.html#GtkObject-struct">GtkObject</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct">GtkWidget</a>
+                <span class="lineart">╰──</span> Gwy3DView
+</pre>
+</div>
+<div class="refsect1">
+<a name="Gwy3DView.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+Gwy3DView implements
+ AtkImplementorIface and  <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkBuildable.html#GtkBuildable-struct">GtkBuildable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="Gwy3DView.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwydgets/gwydgets.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="Gwy3DView.description"></a><h2>Description</h2>
+<p><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> displays a data field as a threedimensional heightfield using OpenGL. You can create a new 3D view for
+a data container with <a class="link" href="Gwy3DView.html#gwy-3d-view-new" title="gwy_3d_view_new ()"><code class="function">gwy_3d_view_new()</code></a>.  By default, it inherits properties like palette from <a class="link" href="GwyDataView.html" title="GwyDataView">data view</a> settings, but supports separate settings -- see
+<a class="link" href="Gwy3DView.html#gwy-3d-view-set-gradient-key" title="gwy_3d_view_set_gradient_key ()"><code class="function">gwy_3d_view_set_gradient_key()</code></a> et al.</p>
+<p><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> allows the user to interactively rotate, scale, z-scale the data or move lights, depending on its <a class="link" href="libgwydgets-gwydgetenums.html#Gwy3DMovement" title="enum Gwy3DMovement">movement state</a>. There are no controls provided for mode change, you have to provide
+some yourself and set the movement mode with <a class="link" href="Gwy3DView.html#gwy-3d-view-set-movement-type" title="gwy_3d_view_set_movement_type ()"><code class="function">gwy_3d_view_set_movement_type()</code></a>.</p>
+<p>You have initialize GtkGLExt with <code class="function">gtk_gl_init_check()</code> and then Gwyddion's OpenGL with <a class="link" href="libgwydgets-gwydgets.html#gwy-widgets-gl-init" title="gwy_widgets_gl_init ()"><code class="function">gwy_widgets_gl_init()</code></a> before
+you can use <a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a>.  These functions may not always succeed, see their description for more.  If OpenGL
+initialization fails (possibly because its support was not compiled in) <a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> cannot be even instantiated.</p>
+</div>
+<div class="refsect1">
+<a name="Gwy3DView.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-3d-view-new"></a><h3>gwy_3d_view_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_3d_view_new (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>);</pre>
+<p>Creates a new threedimensional OpenGL display of <em class="parameter"><code>data</code></em>
+.</p>
+<p>The widget is initialized from container <em class="parameter"><code>data</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> containing the data to display.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-3d-view-new.returns"></a><h4>Returns</h4>
+<p> The new OpenGL 3D widget as a <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-get-setup-prefix"></a><h3>gwy_3d_view_get_setup_prefix ()</h3>
+<pre class="programlisting">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_3d_view_get_setup_prefix (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>);</pre>
+<p>Gets prefix identifying 3D view setup in the container.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-get-setup-prefix.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-3d-view-get-setup-prefix.returns"></a><h4>Returns</h4>
+<p> The setup key prefix.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-set-setup-prefix"></a><h3>gwy_3d_view_set_setup_prefix ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_3d_view_set_setup_prefix (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *key</code></em>);</pre>
+<p>Sets the prefix of 3D view parameters in the container.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-set-setup-prefix.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>Container string prefix for keys identifying the view setup parameters.  The <a class="link" href="Gwy3DSetup.html" title="Gwy3DSetup"><span class="type">Gwy3DSetup</span></a> is stored at key
+<code class="literal">"/setup"</code> under this prefix.  Label objects are also stored under this prefix.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-get-data-key"></a><h3>gwy_3d_view_get_data_key ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_3d_view_get_data_key (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>);</pre>
+<p>Gets the container key identifying the data field to visualize in a 3D view.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-get-data-key.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-3d-view-get-data-key.returns"></a><h4>Returns</h4>
+<p> The string key, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if it isn't set.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-set-data-key"></a><h3>gwy_3d_view_set_data_key ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_3d_view_set_data_key (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *key</code></em>);</pre>
+<p>Sets the container key identifying the data field to visualize in a 3D view.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-set-data-key.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>Container string key identifying the data field to visualize.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-set-ovlay"></a><h3>gwy_3d_view_set_ovlay ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_3d_view_set_ovlay (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>,
+                       <em class="parameter"><code><a class="link" href="GwyPixmapLayer.html" title="GwyPixmapLayer"><span class="type">GwyPixmapLayer</span></a> **ovlays</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> novlays</code></em>);</pre>
+<p>Sets overlays for a 3D view.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-set-ovlay.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ovlays</p></td>
+<td class="parameter_description"><p>List of <em class="parameter"><code>novlays</code></em>
+pixmap layers usable as overlays.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>novlays</p></td>
+<td class="parameter_description"><p>Number of items in <em class="parameter"><code>ovlays</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-26.html#api-index-2.26">2.26</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-get-gradient-key"></a><h3>gwy_3d_view_get_gradient_key ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_3d_view_get_gradient_key (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>);</pre>
+<p>Gets the container key identifying the colour gradient used to visualize data in a 3D view.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-get-gradient-key.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-3d-view-get-gradient-key.returns"></a><h4>Returns</h4>
+<p> The string key, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if it isn't set.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-set-gradient-key"></a><h3>gwy_3d_view_set_gradient_key ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_3d_view_set_gradient_key (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *key</code></em>);</pre>
+<p>Sets the container key identifying the color gradient to use to visualize data in a 3D view.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-set-gradient-key.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>Container string key identifying the color gradient to use for gradient visualization mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-get-material-key"></a><h3>gwy_3d_view_get_material_key ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_3d_view_get_material_key (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>);</pre>
+<p>Gets the key identifying the GL material used to visualize data in a 3D
+view.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-get-material-key.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-3d-view-get-material-key.returns"></a><h4>Returns</h4>
+<p> The string key, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if it isn't set.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-set-material-key"></a><h3>gwy_3d_view_set_material_key ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_3d_view_set_material_key (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *key</code></em>);</pre>
+<p>Sets the container key of the GL material used to visualize data in a 3D view.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-set-material-key.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>Container string key identifying the color material to use for material visualization mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-get-reduced-size"></a><h3>gwy_3d_view_get_reduced_size ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gwy_3d_view_get_reduced_size (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>);</pre>
+<p>Returns the reduced data size of a 3D view.</p>
+<p>See <a class="link" href="Gwy3DView.html#gwy-3d-view-set-reduced-size" title="gwy_3d_view_set_reduced_size ()"><code class="function">gwy_3d_view_set_reduced_size()</code></a> for details.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-get-reduced-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-3d-view-get-reduced-size.returns"></a><h4>Returns</h4>
+<p> The reduced data size.</p>
+<p>Note since 2.44 the reduced size has no influence because the 3D view does not downsample anything.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-set-reduced-size"></a><h3>gwy_3d_view_set_reduced_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_3d_view_set_reduced_size (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> reduced_size</code></em>);</pre>
+<p>Sets the reduced data size of a 3D view.</p>
+<p>Data larger than reduced size may be shown downsampled during transforms and other changes to speed up the
+rendering.  Final, full-size rendering is then performed after a timeout.</p>
+<p>In case of the original data are not square, the <em class="parameter"><code>reduced_size</code></em>
+ is the greater size of the downsampled data, the
+other dimension is proportional to the original size.</p>
+<p>Changes in reduced size do not cause immediate redraw when an operation is pending and the view is shown in reduced
+size.  It only affects future downsampling.</p>
+<p>Note since 2.44 the reduced size has no influence because the 3D view does not downsample anything.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-set-reduced-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>reduced_size</p></td>
+<td class="parameter_description"><p>New reduced data size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-get-movement-type"></a><h3>gwy_3d_view_get_movement_type ()</h3>
+<pre class="programlisting"><a class="link" href="libgwydgets-gwydgetenums.html#Gwy3DMovement" title="enum Gwy3DMovement"><span class="returnvalue">Gwy3DMovement</span></a>
+gwy_3d_view_get_movement_type (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>);</pre>
+<p>Returns a movement type describing actual type of response on the mouse motion event.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-get-movement-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-3d-view-get-movement-type.returns"></a><h4>Returns</h4>
+<p> Actual type of response on the mouse motion event</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-set-movement-type"></a><h3>gwy_3d_view_set_movement_type ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_3d_view_set_movement_type (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>,
+                               <em class="parameter"><code><a class="link" href="libgwydgets-gwydgetenums.html#Gwy3DMovement" title="enum Gwy3DMovement"><span class="type">Gwy3DMovement</span></a> movement</code></em>);</pre>
+<p>Sets the type of widget response on the mouse motion event.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-set-movement-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>movement</p></td>
+<td class="parameter_description"><p>A new type of response on the mouse motion event.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-get-pixbuf"></a><h3>gwy_3d_view_get_pixbuf ()</h3>
+<pre class="programlisting"><span class="returnvalue">GdkPixbuf</span> *
+gwy_3d_view_get_pixbuf (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>);</pre>
+<p>Copies the contents of the 3D view framebuffer to a GdkPixbuf.</p>
+<p>The size of the pixbuf is indentical to the size of the widget.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-get-pixbuf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-3d-view-get-pixbuf.returns"></a><h4>Returns</h4>
+<p> A newly allocated GdkPixbuf a copy of the framebuffer.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-get-pixbuf-with-alpha"></a><h3>gwy_3d_view_get_pixbuf_with_alpha ()</h3>
+<pre class="programlisting"><span class="returnvalue">GdkPixbuf</span> *
+gwy_3d_view_get_pixbuf_with_alpha (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>);</pre>
+<p>Creates a GdkPixbuf from the contents of the 3D view framebuffer, with transparent background.</p>
+<p>The size of the pixbuf is indentical to the size of the widget.</p>
+<p>The rendered surface is cut perfectly.  However, if the scene contains also antialiased labels, these are cut in
+a way which currently only works with a white background.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-get-pixbuf-with-alpha.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-3d-view-get-pixbuf-with-alpha.returns"></a><h4>Returns</h4>
+<p> A newly allocated GdkPixbuf a copy of the framebuffer.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-54.html#api-index-2.54">2.54</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-get-label"></a><h3>gwy_3d_view_get_label ()</h3>
+<pre class="programlisting"><a class="link" href="Gwy3DLabel.html" title="Gwy3DLabel"><span class="returnvalue">Gwy3DLabel</span></a> *
+gwy_3d_view_get_label (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>,
+                       <em class="parameter"><code><a class="link" href="libgwydgets-gwydgetenums.html#Gwy3DViewLabel" title="enum Gwy3DViewLabel"><span class="type">Gwy3DViewLabel</span></a> label</code></em>);</pre>
+<p>Gets requested 3D label object of a 3D view.</p>
+<p>This is a convenience method that can be used instead of fetching the label object from the data container.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-get-label.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>Label type to obtain.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-3d-view-get-label.returns"></a><h4>Returns</h4>
+<p> The 3D label object representing <em class="parameter"><code>label</code></em>
+in <em class="parameter"><code>gwy3dview</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-get-setup"></a><h3>gwy_3d_view_get_setup ()</h3>
+<pre class="programlisting"><a class="link" href="Gwy3DSetup.html" title="Gwy3DSetup"><span class="returnvalue">Gwy3DSetup</span></a> *
+gwy_3d_view_get_setup (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>);</pre>
+<p>Gets the 3D setup object of a 3D view.</p>
+<p>This is a convenience method that can be used instead of fetching the setup object from the data container.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-get-setup.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-3d-view-get-setup.returns"></a><h4>Returns</h4>
+<p> The corresponding 3D setup.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-get-data"></a><h3>gwy_3d_view_get_data ()</h3>
+<pre class="programlisting"><a href="../GwyContainer.html#GwyContainer-struct"><span class="returnvalue">GwyContainer</span></a> *
+gwy_3d_view_get_data (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>);</pre>
+<p>Returns the data container this 3D view displays.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-get-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-3d-view-get-data.returns"></a><h4>Returns</h4>
+<p> The container as a <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-get-scale-range"></a><h3>gwy_3d_view_get_scale_range ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_3d_view_get_scale_range (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *min_scale</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *max_scale</code></em>);</pre>
+<p>Obtains the minimum and maximum zoom of a 3D data view</p>
+<div class="refsect3">
+<a name="gwy-3d-view-get-scale-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>min_scale</p></td>
+<td class="parameter_description"><p>Location to put minimum scale, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_scale</p></td>
+<td class="parameter_description"><p>Location to put maximum scale, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-set-scale-range"></a><h3>gwy_3d_view_set_scale_range ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_3d_view_set_scale_range (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> min_scale</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> max_scale</code></em>);</pre>
+<p>Sets the minimum and maximum zoom of a 3D data view.</p>
+<p>Recommended zoom values are 0.5 - 5.0.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-set-scale-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>min_scale</p></td>
+<td class="parameter_description"><p>Minimum zoom of the 3D data view, pass 0.0 to keep the current value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_scale</p></td>
+<td class="parameter_description"><p>Maximum zoom of the 3D data view, pass 0.0 to keep the current value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-class-disable-axis-drawing"></a><h3>gwy_3d_view_class_disable_axis_drawing ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_3d_view_class_disable_axis_drawing
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> disable</code></em>);</pre>
+<p>Globally disables drawing of 3D view axes.</p>
+<p>If axis drawing is disabled, axes are never drawn.  If it is not disabled, their rendering depends on the 3D view
+setup.</p>
+<p>This function is a hack and exists to work around various GL implementations that crash on pixmap drawing
+operations.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-class-disable-axis-drawing.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>disable</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to disable 3D view axes globally, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to enable them.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-14.html#api-index-2.14">2.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-get-mask-key"></a><h3>gwy_3d_view_get_mask_key ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_3d_view_get_mask_key (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>);</pre>
+<p>Gets the container key identifying the mask field for visualisation in a 3D view.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-get-mask-key.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-3d-view-get-mask-key.returns"></a><h4>Returns</h4>
+<p> The string key, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if it isn't set.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-3d-view-set-mask-key"></a><h3>gwy_3d_view_set_mask_key ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_3d_view_set_mask_key (<em class="parameter"><code><a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a> *gwy3dview</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *key</code></em>);</pre>
+<p>Sets the container key identifying the mask field for visualisation in a 3D view.</p>
+<div class="refsect3">
+<a name="gwy-3d-view-set-mask-key.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwy3dview</p></td>
+<td class="parameter_description"><p>A 3D data view widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>Container string key identifying the mask field for visualisation</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="Gwy3DView.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="Gwy3DView-struct"></a><h3>struct Gwy3DView</h3>
+<pre class="programlisting">struct Gwy3DView;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gwy3DViewClass"></a><h3>struct Gwy3DViewClass</h3>
+<pre class="programlisting">struct Gwy3DViewClass {
+    GtkWidgetClass parent_class;
+
+    gpointer list_pool;
+
+    void (*reserved1)(void);
+    void (*reserved2)(void);
+    void (*reserved3)(void);
+    void (*reserved4)(void);
+    void (*reserved5)(void);
+    void (*reserved6)(void);
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="Gwy3DView.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="Gwy3DView--data-key"></a><h3>The <code class="literal">“data-key”</code> property</h3>
+<pre class="programlisting">  “data-key”                 <span class="type">char</span> *</pre>
+<p>Key identifying data field in container.</p>
+<p>Owner: Gwy3DView</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gwy3DView--gradient-key"></a><h3>The <code class="literal">“gradient-key”</code> property</h3>
+<pre class="programlisting">  “gradient-key”             <span class="type">char</span> *</pre>
+<p>Key identifying color gradient in container.</p>
+<p>Owner: Gwy3DView</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gwy3DView--mask-key"></a><h3>The <code class="literal">“mask-key”</code> property</h3>
+<pre class="programlisting">  “mask-key”                 <span class="type">char</span> *</pre>
+<p>Key identifying mask field in container.</p>
+<p>Owner: Gwy3DView</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gwy3DView--material-key"></a><h3>The <code class="literal">“material-key”</code> property</h3>
+<pre class="programlisting">  “material-key”             <span class="type">char</span> *</pre>
+<p>Key identifying GL material in container.</p>
+<p>Owner: Gwy3DView</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gwy3DView--movement-type"></a><h3>The <code class="literal">“movement-type”</code> property</h3>
+<pre class="programlisting">  “movement-type”            <a class="link" href="libgwydgets-gwydgetenums.html#Gwy3DMovement" title="enum Gwy3DMovement"><span class="type">Gwy3DMovement</span></a></pre>
+<p>The :movement-type property represents type of action on user pointer
+drag.</p>
+<p>Owner: Gwy3DView</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GWY_3D_MOVEMENT_NONE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gwy3DView--reduced-size"></a><h3>The <code class="literal">“reduced-size”</code> property</h3>
+<pre class="programlisting">  “reduced-size”             <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>The :reduced-size is the size of downsampled data in quick preview.</p>
+<p>Note since 2.44 the reduced size has no influence because the 3D view does not downsample anything.</p>
+<p>Owner: Gwy3DView</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [2,G_MAXINT]</p>
+<p>Default value: 96</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="Gwy3DView--setup-prefix"></a><h3>The <code class="literal">“setup-prefix”</code> property</h3>
+<pre class="programlisting">  “setup-prefix”             <span class="type">char</span> *</pre>
+<p>Key prefix identifying view settings and labels in container.</p>
+<p>Owner: Gwy3DView</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="Gwy3DView.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="Gwy3DWindow.html" title="Gwy3DWindow"><span class="type">Gwy3DWindow</span></a> -- window combining 3D view with controls,
+<a href="../GwyGLMaterial.html#GwyGLMaterial-struct"><span class="type">GwyGLMaterial</span></a> -- OpenGL materials,
+<a class="link" href="Gwy3DLabel.html" title="Gwy3DLabel"><span class="type">Gwy3DLabel</span></a> -- Labels on 3D view,
+<a class="link" href="Gwy3DSetup.html" title="Gwy3DSetup"><span class="type">Gwy3DSetup</span></a> -- 3D scene setup</p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

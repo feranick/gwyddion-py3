@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Validate: Gwyddion Application Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="prev" href="GwyResultsExport.html" title="GwyResultsExport">
+<link rel="next" href="libgwyapp-wait.html" title="wait">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyapp-Validate.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="GwyResultsExport.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyapp-wait.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyapp-Validate"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyapp-Validate.top_of_page"></a>Validate</span></h2>
+<p>Validate — Check data sanity and consistency</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyapp-Validate.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-Validate.html#gwy-data-validate" title="gwy_data_validate ()">gwy_data_validate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-Validate.html#gwy-data-error-desrcibe" title="gwy_data_error_desrcibe ()">gwy_data_error_desrcibe</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-Validate.html#gwy-data-validation-failure-list-free" title="gwy_data_validation_failure_list_free ()">gwy_data_validation_failure_list_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-Validate.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgwyapp-Validate.html#GwyDataError" title="enum GwyDataError">GwyDataError</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgwyapp-Validate.html#GwyDataValidateFlags" title="enum GwyDataValidateFlags">GwyDataValidateFlags</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libgwyapp-Validate.html#GwyDataValidationFailure" title="GwyDataValidationFailure">GwyDataValidationFailure</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-Validate.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;app/gwyapp.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-Validate.description"></a><h2>Description</h2>
+<p>A <a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> can be used to represent all sorts of data.  However, Gwyddion, the application, follows certain
+conventions in data organization. Function <a class="link" href="libgwyapp-Validate.html#gwy-data-validate" title="gwy_data_validate ()"><code class="function">gwy_data_validate()</code></a> checks whether the data actually follows them. This
+includes but is not limited to representability of keys in ASCII, conformance to the key naming convention, types
+of objects and other items corresponding to expectation, string values being valid UTF-8 and no stray secondary
+data.</p>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-Validate.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-data-validate"></a><h3>gwy_data_validate ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+gwy_data_validate (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                   <em class="parameter"><code><a class="link" href="libgwyapp-Validate.html#GwyDataValidateFlags" title="enum GwyDataValidateFlags"><span class="type">GwyDataValidateFlags</span></a> flags</code></em>);</pre>
+<p>Checks the contents of a data file.</p>
+<p>If <a class="link" href="libgwyapp-Validate.html#GWY-DATA-VALIDATE-CORRECT:CAPS"><code class="literal">GWY_DATA_VALIDATE_CORRECT</code></a> is given in <em class="parameter"><code>flags</code></em>
+, correctable problems are corrected.  At present correctable
+problems are those that can be fixed by removal of the offending data.</p>
+<div class="refsect3">
+<a name="gwy-data-validate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Data container.  It should not be managed by the data browser (yet) if flags contain
+<a class="link" href="libgwyapp-Validate.html#GWY-DATA-VALIDATE-CORRECT:CAPS"><code class="literal">GWY_DATA_VALIDATE_CORRECT</code></a> (because things can in principle break during the correction) or
+<a class="link" href="libgwyapp-Validate.html#GWY-DATA-VALIDATE-REF-COUNT:CAPS"><code class="literal">GWY_DATA_VALIDATE_REF_COUNT</code></a> (because the application took some references).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>Validation flags.  Some influence what is checked, some determine what to do when problems are found.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-validate.returns"></a><h4>Returns</h4>
+<p> List of errors found, free with <a class="link" href="libgwyapp-Validate.html#gwy-data-validation-failure-list-free" title="gwy_data_validation_failure_list_free ()"><code class="function">gwy_data_validation_failure_list_free()</code></a>. The list is independent on
+whether <a class="link" href="libgwyapp-Validate.html#GWY-DATA-VALIDATE-CORRECT:CAPS"><code class="literal">GWY_DATA_VALIDATE_CORRECT</code></a> is given in flags, even though the offending items may be no longer
+exist in the container after correction.  If <a class="link" href="libgwyapp-Validate.html#GWY-DATA-VALIDATE-NO-REPORT:CAPS"><code class="literal">GWY_DATA_VALIDATE_NO_REPORT</code></a> is present in flags, <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is
+always returned.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-9.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-error-desrcibe"></a><h3>gwy_data_error_desrcibe ()</h3>
+<pre class="programlisting">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_data_error_desrcibe (<em class="parameter"><code><a class="link" href="libgwyapp-Validate.html#GwyDataError" title="enum GwyDataError"><span class="type">GwyDataError</span></a> error</code></em>);</pre>
+<p>Describes a data validation error type.</p>
+<div class="refsect3">
+<a name="gwy-data-error-desrcibe.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Data validation error type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-error-desrcibe.returns"></a><h4>Returns</h4>
+<p> Error description as an untranslated string owned by the library.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-9.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-validation-failure-list-free"></a><h3>gwy_data_validation_failure_list_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_validation_failure_list_free (<em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *list</code></em>);</pre>
+<p>Frees a data validation failure list.</p>
+<div class="refsect3">
+<a name="gwy-data-validation-failure-list-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>list</p></td>
+<td class="parameter_description"><p>Failure list returned by <a class="link" href="libgwyapp-Validate.html#gwy-data-validate" title="gwy_data_validate ()"><code class="function">gwy_data_validate()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-9.html#api-index-2.9">2.9</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-Validate.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyDataError"></a><h3>enum GwyDataError</h3>
+<p>Type of data validation errors.</p>
+<div class="refsect3">
+<a name="GwyDataError.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-DATA-ERROR-KEY-FORMAT:CAPS"></a>GWY_DATA_ERROR_KEY_FORMAT</p></td>
+<td class="enum_member_description">
+<p>Key format is invalid (e.g. does not start with <a href="../GwyContainer.html#GWY-CONTAINER-PATHSEP:CAPS"><code class="literal">GWY_CONTAINER_PATHSEP</code></a>).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-DATA-ERROR-KEY-CHARACTERS:CAPS"></a>GWY_DATA_ERROR_KEY_CHARACTERS</p></td>
+<td class="enum_member_description">
+<p>Key contains unprintable characters or characters not representable in ASCII.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-DATA-ERROR-KEY-UNKNOWN:CAPS"></a>GWY_DATA_ERROR_KEY_UNKNOWN</p></td>
+<td class="enum_member_description">
+<p>Key does not correspond to any data item known to this version of Gwyddion.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-DATA-ERROR-KEY-ID:CAPS"></a>GWY_DATA_ERROR_KEY_ID</p></td>
+<td class="enum_member_description">
+<p>Key corresponds to a data item with bogus id number.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-DATA-ERROR-ITEM-TYPE:CAPS"></a>GWY_DATA_ERROR_ITEM_TYPE</p></td>
+<td class="enum_member_description">
+<p>Wrong item type (for instance an integer at key <code class="literal">"/0/data"</code>).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-DATA-ERROR-NON-UTF8-STRING:CAPS"></a>GWY_DATA_ERROR_NON_UTF8_STRING</p></td>
+<td class="enum_member_description">
+<p>String value is not valid UTF-8.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-DATA-ERROR-REF-COUNT:CAPS"></a>GWY_DATA_ERROR_REF_COUNT</p></td>
+<td class="enum_member_description">
+<p>Reference count is higher than 1.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-DATA-ERROR-STRAY-SECONDARY-DATA:CAPS"></a>GWY_DATA_ERROR_STRAY_SECONDARY_DATA</p></td>
+<td class="enum_member_description">
+<p>Secondary data item (e.g. mask, selection or visibility) without
+a corresponding valid primary data item.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-9.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyDataValidateFlags"></a><h3>enum GwyDataValidateFlags</h3>
+<p>Flags controlling <a class="link" href="libgwyapp-Validate.html#gwy-data-validate" title="gwy_data_validate ()"><code class="function">gwy_data_validate()</code></a> behaviour.</p>
+<p>Note passing <em class="parameter"><code>GWY_DATA_VALIDATE_NO_REPORT</code></em>
+ is allowed only if <em class="parameter"><code>GWY_DATA_VALIDATE_CORRECT</code></em>
+ is present too.</p>
+<div class="refsect3">
+<a name="GwyDataValidateFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-DATA-VALIDATE-UNKNOWN:CAPS"></a>GWY_DATA_VALIDATE_UNKNOWN</p></td>
+<td class="enum_member_description">
+<p>Report all unknown keys as <a class="link" href="libgwyapp-Validate.html#GWY-DATA-ERROR-KEY-UNKNOWN:CAPS"><code class="literal">GWY_DATA_ERROR_KEY_UNKNOWN</code></a> errors.  Note while a data item
+unknown to the current version of Gwyddion can come from a newer version therefore it
+can be in certain sense valid.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-DATA-VALIDATE-REF-COUNT:CAPS"></a>GWY_DATA_VALIDATE_REF_COUNT</p></td>
+<td class="enum_member_description">
+<p>Report all object items with reference count higher than 1 as
+<a class="link" href="libgwyapp-Validate.html#GWY-DATA-ERROR-REF-COUNT:CAPS"><code class="literal">GWY_DATA_ERROR_REF_COUNT</code></a> errors.  Obviously this makes sense only with `fresh' data
+containers.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-DATA-VALIDATE-ALL:CAPS"></a>GWY_DATA_VALIDATE_ALL</p></td>
+<td class="enum_member_description">
+<p>All above flags combined.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-DATA-VALIDATE-CORRECT:CAPS"></a>GWY_DATA_VALIDATE_CORRECT</p></td>
+<td class="enum_member_description">
+<p>Attempt to correct problems.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-DATA-VALIDATE-NO-REPORT:CAPS"></a>GWY_DATA_VALIDATE_NO_REPORT</p></td>
+<td class="enum_member_description">
+<p>Do not report problems.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-9.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyDataValidationFailure"></a><h3>GwyDataValidationFailure</h3>
+<pre class="programlisting">typedef struct {
+    GwyDataError error;
+    GQuark key;
+    gchar *details;
+} GwyDataValidationFailure;
+</pre>
+<p>Information about one data validate error.</p>
+<p>Note the structure may contain more private fields.</p>
+<div class="refsect3">
+<a name="GwyDataValidationFailure.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="libgwyapp-Validate.html#GwyDataError" title="enum GwyDataError"><span class="type">GwyDataError</span></a> <em class="structfield"><code><a name="GwyDataValidationFailure.error"></a>error</code></em>;</p></td>
+<td class="struct_member_description"><p>Error type.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> <em class="structfield"><code><a name="GwyDataValidationFailure.key"></a>key</code></em>;</p></td>
+<td class="struct_member_description"><p>Key of the problematic data item.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="GwyDataValidationFailure.details"></a>details</code></em>;</p></td>
+<td class="struct_member_description"><p>Error details, may be <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for some types of <em class="parameter"><code>error</code></em>
+.  This is a dynamically allocated string owned by
+the caller, however, he normally frees the complete errors lists with
+<a class="link" href="libgwyapp-Validate.html#gwy-data-validation-failure-list-free" title="gwy_data_validation_failure_list_free ()"><code class="function">gwy_data_validation_failure_list_free()</code></a> which frees these fields too.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-9.html#api-index-2.9">2.9</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

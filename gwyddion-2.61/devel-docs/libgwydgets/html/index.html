@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Gwyddion Widgets Library Reference Manual: Gwyddion Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Widgets Library Reference Manual">
+<link rel="next" href="DataWindowWidgets.html" title="Data Windows and Views">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="book">
+<div class="titlepage">
+<div>
+<div><table class="navigation" id="top" width="100%" cellpadding="2" cellspacing="0"><tr><th valign="middle"><p class="title">Gwyddion Widgets Library Reference Manual</p></th></tr></table></div>
+<div><p class="releaseinfo">
+  For Gwyddion 2.61.
+  The latest version of this document can be found on-line at
+  <a class="ulink" href="http://gwyddion.net/documentation/libgwydgets/index.php" target="_top">http://gwyddion.net/documentation/libgwydgets/</a>.
+</p></div>
+</div>
+<hr>
+</div>
+<div class="toc"><dl class="toc">
+<dt><span class="chapter"><a href="DataWindowWidgets.html">Data Windows and Views</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="GwyDataWindow.html">GwyDataWindow</a></span><span class="refpurpose"> — Data display window</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyDataView.html">GwyDataView</a></span><span class="refpurpose"> — Data field displaying area</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyDataViewLayer.html">GwyDataViewLayer</a></span><span class="refpurpose"> — Layer GwyDataView is composed of</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyPixmapLayer.html">GwyPixmapLayer</a></span><span class="refpurpose"> — Base class for GwyDataView pixmap layers</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyVectorLayer.html">GwyVectorLayer</a></span><span class="refpurpose"> — Base class for GwyDataView vector (interactive) layers</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyLayerBasic.html">GwyLayerBasic</a></span><span class="refpurpose"> — Display data colored with a gradient</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyLayerMask.html">GwyLayerMask</a></span><span class="refpurpose"> — Display data as color mask</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyColorAxis.html">GwyColorAxis</a></span><span class="refpurpose"> — Simple axis with a false color scale</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="standard-vector-layers.html">Standard Vector Layers</a></span><span class="refpurpose"> — 
+      Vector layers that are distributed with <span class="application">Gwyddion</span>
+    </span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="GraphWidgets.html">Graphs</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="GwyGraph.html">GwyGraph</a></span><span class="refpurpose"> — Widget for displaying graphs</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyGraphWindow.html">GwyGraphWindow</a></span><span class="refpurpose"> — Graph display window</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyGraphModel.html">GwyGraphModel</a></span><span class="refpurpose"> — Representation of a graph</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyGraphCurveModel.html">GwyGraphCurveModel</a></span><span class="refpurpose"> — Representation of one graph curve</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyGraphArea.html">GwyGraphArea</a></span><span class="refpurpose"> — Layout for drawing graph curves</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyAxis.html">GwyAxis</a></span><span class="refpurpose"> — Axis with ticks and labels</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwydgets-GwyGraphBasics.html">GwyGraphBasics</a></span><span class="refpurpose"> — Common graph functions and utilities</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyGraphLabel.html">GwyGraphLabel</a></span><span class="refpurpose"> — Graph curve key</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyGraphData.html">GwyGraphData</a></span><span class="refpurpose"> — Graph data table</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyGraphCurves.html">GwyGraphCurves</a></span><span class="refpurpose"> — Graph curve list</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyGraphCorner.html">GwyGraphCorner</a></span><span class="refpurpose"> — Graph corners</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwySelectionGraph1DArea.html">GwySelectionGraph1DArea</a></span><span class="refpurpose"> — Graph region selection</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwySelectionGraphArea.html">GwySelectionGraphArea</a></span><span class="refpurpose"> — Area-wise graph selection</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwySelectionGraphLine.html">GwySelectionGraphLine</a></span><span class="refpurpose"> — Single coordinate graph selection</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwySelectionGraphPoint.html">GwySelectionGraphPoint</a></span><span class="refpurpose"> — Point-wise graph selection</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwySelectionGraphZoom.html">GwySelectionGraphZoom</a></span><span class="refpurpose"> — Graph zoom selection</span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="Widgets3D.html">3D Widgets</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="Gwy3DView.html">Gwy3DView</a></span><span class="refpurpose"> — OpenGL 3D data display</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="Gwy3DWindow.html">Gwy3DWindow</a></span><span class="refpurpose"> — 3D data display window</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="Gwy3DSetup.html">Gwy3DSetup</a></span><span class="refpurpose"> — 3D scene setup</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="Gwy3DLabel.html">Gwy3DLabel</a></span><span class="refpurpose"> — Label on Gwy3DView</span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="GeneralWidgets.html">General Widgets</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="GwyAdjustBar.html">GwyAdjustBar</a></span><span class="refpurpose"> — Compact adjustment visualisation and modification</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyColorButton.html">GwyColorButton</a></span><span class="refpurpose"> — A color displaying button</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyCurve.html">GwyCurve</a></span><span class="refpurpose"> — Widget that displays editable curves</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyRuler.html">GwyRuler</a></span><span class="refpurpose"> — Base class for GwyHRuler and GwyVRuler</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyHRuler.html">GwyHRuler</a></span><span class="refpurpose"> — Horizontal ruler, similar to GtkRuler</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyVRuler.html">GwyVRuler</a></span><span class="refpurpose"> — Vertical ruler, similar to GtkRuler</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyMarkerBox.html">GwyMarkerBox</a></span><span class="refpurpose"> — Base class for box with movable markers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyHMarkerBox.html">GwyHMarkerBox</a></span><span class="refpurpose"> — A box with movable horizontal markers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwySciText.html">GwySciText</a></span><span class="refpurpose"> — Text entry with markup and special symbol helper widgets</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyStatusbar.html">GwyStatusbar</a></span><span class="refpurpose"> — Statusbar with Pango markup support</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyShader.html">GwyShader</a></span><span class="refpurpose"> — Spherical angle selector</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyInventoryStore.html">GwyInventoryStore</a></span><span class="refpurpose"> — GtkTreeModel wrapper around GwyInventory</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwyNullStore.html">GwyNullStore</a></span><span class="refpurpose"> — GtkTreeModel wrapper around nothing</span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="WidgetUtilities.html">Widget Utilities</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="libgwydgets-gwydgets.html">gwydgets</a></span><span class="refpurpose"> — Base functions</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwydgets-gwydgetenums.html">gwydgetenums</a></span><span class="refpurpose"> — Common enumerations</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwydgets-gwydgetutils.html">gwydgetutils</a></span><span class="refpurpose"> — Miscellaneous widget utilities</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwydgets-gwystock.html">gwystock</a></span><span class="refpurpose"> — Stock icons</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwydgets-gwyoptionmenus.html">gwyoptionmenus</a></span><span class="refpurpose"> — Resource selectors</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwydgets-gwygrainvaluemenu.html">gwygrainvaluemenu</a></span><span class="refpurpose"> — Grain value display/selector</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwydgets-gwycombobox.html">gwycombobox</a></span><span class="refpurpose"> — Combo box constructors</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwydgets-gwyradiobuttons.html">gwyradiobuttons</a></span><span class="refpurpose"> — Radio button constructors for enums</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgwydgets-gwycheckboxes.html">gwycheckboxes</a></span><span class="refpurpose"> — Check box group constructors for flags</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GwySensitivityGroup.html">GwySensitivityGroup</a></span><span class="refpurpose"> — Control widget sensitivity by flags</span>
+</dt>
+</dl></dd>
+<dt><span class="index"><a href="api-index-all.html">Index of all symbols</a></span></dt>
+<dt><span class="index"><a href="api-index-deprec.html">Index of deprecated symbols</a></span></dt>
+<dt><span class="index"><a href="api-index-2-1.html">Index of new symbols in 2.1</a></span></dt>
+<dt><span class="index"><a href="api-index-2-3.html">Index of new symbols in 2.3</a></span></dt>
+<dt><span class="index"><a href="api-index-2-5.html">Index of new symbols in 2.5</a></span></dt>
+<dt><span class="index"><a href="api-index-2-7.html">Index of new symbols in 2.7</a></span></dt>
+<dt><span class="index"><a href="api-index-2-8.html">Index of new symbols in 2.8</a></span></dt>
+<dt><span class="index"><a href="api-index-2-11.html">Index of new symbols in 2.11</a></span></dt>
+<dt><span class="index"><a href="api-index-2-14.html">Index of new symbols in 2.14</a></span></dt>
+<dt><span class="index"><a href="api-index-2-16.html">Index of new symbols in 2.16</a></span></dt>
+<dt><span class="index"><a href="api-index-2-22.html">Index of new symbols in 2.22</a></span></dt>
+<dt><span class="index"><a href="api-index-2-23.html">Index of new symbols in 2.23</a></span></dt>
+<dt><span class="index"><a href="api-index-2-26.html">Index of new symbols in 2.26</a></span></dt>
+<dt><span class="index"><a href="api-index-2-29.html">Index of new symbols in 2.29</a></span></dt>
+<dt><span class="index"><a href="api-index-2-34.html">Index of new symbols in 2.34</a></span></dt>
+<dt><span class="index"><a href="api-index-2-37.html">Index of new symbols in 2.37</a></span></dt>
+<dt><span class="index"><a href="api-index-2-38.html">Index of new symbols in 2.38</a></span></dt>
+<dt><span class="index"><a href="api-index-2-39.html">Index of new symbols in 2.39</a></span></dt>
+<dt><span class="index"><a href="api-index-2-41.html">Index of new symbols in 2.41</a></span></dt>
+<dt><span class="index"><a href="api-index-2-42.html">Index of new symbols in 2.42</a></span></dt>
+<dt><span class="index"><a href="api-index-2-43.html">Index of new symbols in 2.43</a></span></dt>
+<dt><span class="index"><a href="api-index-2-45.html">Index of new symbols in 2.45</a></span></dt>
+<dt><span class="index"><a href="api-index-2-46.html">Index of new symbols in 2.46</a></span></dt>
+<dt><span class="index"><a href="api-index-2-48.html">Index of new symbols in 2.48</a></span></dt>
+<dt><span class="index"><a href="api-index-2-49.html">Index of new symbols in 2.49</a></span></dt>
+<dt><span class="index"><a href="api-index-2-50.html">Index of new symbols in 2.50</a></span></dt>
+<dt><span class="index"><a href="api-index-2-51.html">Index of new symbols in 2.51</a></span></dt>
+<dt><span class="index"><a href="api-index-2-52.html">Index of new symbols in 2.52</a></span></dt>
+<dt><span class="index"><a href="api-index-2-53.html">Index of new symbols in 2.53</a></span></dt>
+<dt><span class="index"><a href="api-index-2-54.html">Index of new symbols in 2.54</a></span></dt>
+<dt><span class="index"><a href="api-index-2-56.html">Index of new symbols in 2.56</a></span></dt>
+<dt><span class="index"><a href="api-index-2-57.html">Index of new symbols in 2.57</a></span></dt>
+<dt><span class="index"><a href="api-index-2-59.html">Index of new symbols in 2.59</a></span></dt>
+<dt><span class="index"><a href="api-index-2-60.html">Index of new symbols in 2.60</a></span></dt>
+<dt><span class="index"><a href="api-index-2-61.html">Index of new symbols in 2.61</a></span></dt>
+</dl></div>
+<p>
+    This library contains Gwyddion extension Gtk+ widgets and widget
+    utilities.
+  </p>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

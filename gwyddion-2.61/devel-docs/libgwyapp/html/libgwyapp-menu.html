@@ -1,0 +1,926 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>menu: Gwyddion Application Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="prev" href="libgwyapp-GwyGradientEditor.html" title="GwyGradientEditor">
+<link rel="next" href="libgwyapp-meta.html" title="meta">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyapp-menu.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyapp-GwyGradientEditor.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyapp-meta.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyapp-menu"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyapp-menu.top_of_page"></a>menu</span></h2>
+<p>menu — Menu and sensitivity functions</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyapp-menu.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-menu.html#gwy-app-build-process-menu" title="gwy_app_build_process_menu ()">gwy_app_build_process_menu</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-menu.html#gwy-app-process-menu-add-run-last" title="gwy_app_process_menu_add_run_last ()">gwy_app_process_menu_add_run_last</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../libgwymodule-gwymoduleenums.html#GwyRunType"><span class="returnvalue">GwyRunType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-menu.html#gwy-app-run-process-func" title="gwy_app_run_process_func ()">gwy_app_run_process_func</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-menu.html#gwy-app-run-process-func-in-mode" title="gwy_app_run_process_func_in_mode ()">gwy_app_run_process_func_in_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-menu.html#gwy-app-build-graph-menu" title="gwy_app_build_graph_menu ()">gwy_app_build_graph_menu</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-menu.html#gwy-app-run-graph-func" title="gwy_app_run_graph_func ()">gwy_app_run_graph_func</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-menu.html#gwy-app-build-volume-menu" title="gwy_app_build_volume_menu ()">gwy_app_build_volume_menu</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../libgwymodule-gwymoduleenums.html#GwyRunType"><span class="returnvalue">GwyRunType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-menu.html#gwy-app-run-volume-func" title="gwy_app_run_volume_func ()">gwy_app_run_volume_func</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-menu.html#gwy-app-run-volume-func-in-mode" title="gwy_app_run_volume_func_in_mode ()">gwy_app_run_volume_func_in_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-menu.html#gwy-app-build-xyz-menu" title="gwy_app_build_xyz_menu ()">gwy_app_build_xyz_menu</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../libgwymodule-gwymoduleenums.html#GwyRunType"><span class="returnvalue">GwyRunType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-menu.html#gwy-app-run-xyz-func" title="gwy_app_run_xyz_func ()">gwy_app_run_xyz_func</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-menu.html#gwy-app-run-xyz-func-in-mode" title="gwy_app_run_xyz_func_in_mode ()">gwy_app_run_xyz_func_in_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-menu.html#gwy-app-build-curve-map-menu" title="gwy_app_build_curve_map_menu ()">gwy_app_build_curve_map_menu</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../libgwymodule-gwymoduleenums.html#GwyRunType"><span class="returnvalue">GwyRunType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-menu.html#gwy-app-run-curve-map-func" title="gwy_app_run_curve_map_func ()">gwy_app_run_curve_map_func</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-menu.html#gwy-app-run-curve-map-func-in-mode" title="gwy_app_run_curve_map_func_in_mode ()">gwy_app_run_curve_map_func_in_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-menu.html#gwy-app-menu-recent-files-update" title="gwy_app_menu_recent_files_update ()">gwy_app_menu_recent_files_update</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-menu.html#gwy-app-menu-recent-files-get" title="gwy_app_menu_recent_files_get ()">gwy_app_menu_recent_files_get</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkTooltip.html#GtkTooltip-struct"><span class="returnvalue">GtkTooltips</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-menu.html#gwy-app-get-tooltips" title="gwy_app_get_tooltips ()">gwy_app_get_tooltips</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwySensitivityGroup.html#GwySensitivityGroup-struct"><span class="returnvalue">GwySensitivityGroup</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-menu.html#gwy-app-sensitivity-get-group" title="gwy_app_sensitivity_get_group ()">gwy_app_sensitivity_get_group</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-menu.html#gwy-app-sensitivity-add-widget" title="gwy_app_sensitivity_add_widget ()">gwy_app_sensitivity_add_widget</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-menu.html#gwy-app-sensitivity-set-state" title="gwy_app_sensitivity_set_state ()">gwy_app_sensitivity_set_state</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-menu.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgwyapp-menu.html#GwyMenuSensFlags" title="enum GwyMenuSensFlags">GwyMenuSensFlags</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-menu.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;app/gwyapp.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-menu.description"></a><h2>Description</h2>
+<p>Menu and toolbox item sensitivity is updated by main application whenever its state changes.  Possible states that
+may affect widget sesitivity are defined in <a class="link" href="libgwyapp-menu.html#GwyMenuSensFlags" title="enum GwyMenuSensFlags"><span class="type">GwyMenuSensFlags</span></a>.</p>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-menu.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-app-build-process-menu"></a><h3>gwy_app_build_process_menu ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_app_build_process_menu (<em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/gtk/gtk3-Keyboard-Accelerators.html#GtkAccelGroup-struct"><span class="type">GtkAccelGroup</span></a> *accel_group</code></em>);</pre>
+<p>Constructs the application <span class="guimenu">Data Process</span> menu.</p>
+<p>The menu is created from data processing functions registered by modules, therefore module registration has to be
+done first for this function to make sense.</p>
+<div class="refsect3">
+<a name="gwy-app-build-process-menu.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>accel_group</p></td>
+<td class="parameter_description"><p>Acceleration group to be associated with the menu.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-build-process-menu.returns"></a><h4>Returns</h4>
+<p> A newly ceated data processing menu (a <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkMenu.html#GtkMenu-struct"><span class="type">GtkMenu</span></a>).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-process-menu-add-run-last"></a><h3>gwy_app_process_menu_add_run_last ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_process_menu_add_run_last (<em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a> *menu</code></em>);</pre>
+<p>Adds <span class="guimenuitem">Re-show Last</span> and <span class="guimenuitem">Repeat Last</span> items to application data
+process menu.</p>
+<p>This function is essentially useful only for toolbox construction.</p>
+<div class="refsect3">
+<a name="gwy-app-process-menu-add-run-last.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>menu</p></td>
+<td class="parameter_description"><p>Menu created with <a class="link" href="libgwyapp-menu.html#gwy-app-build-process-menu" title="gwy_app_build_process_menu ()"><code class="function">gwy_app_build_process_menu()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-run-process-func"></a><h3>gwy_app_run_process_func ()</h3>
+<pre class="programlisting"><a href="../libgwymodule-gwymoduleenums.html#GwyRunType"><span class="returnvalue">GwyRunType</span></a>
+gwy_app_run_process_func (<em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Runs a data processing function on the current data.</p>
+<p>From the run modes function <em class="parameter"><code>name</code></em>
+ supports, the most interactive one is
+selected.</p>
+<div class="refsect3">
+<a name="gwy-app-run-process-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>A data processing function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-run-process-func.returns"></a><h4>Returns</h4>
+<p> The actually used mode (nonzero), or 0 on failure.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-run-process-func-in-mode"></a><h3>gwy_app_run_process_func_in_mode ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_run_process_func_in_mode (<em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                  <em class="parameter"><code><a href="../libgwymodule-gwymoduleenums.html#GwyRunType"><span class="type">GwyRunType</span></a> run</code></em>);</pre>
+<p>Runs a data processing function on current data in specified mode.</p>
+<div class="refsect3">
+<a name="gwy-app-run-process-func-in-mode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>A data processing function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>run</p></td>
+<td class="parameter_description"><p>A run mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-build-graph-menu"></a><h3>gwy_app_build_graph_menu ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_app_build_graph_menu (<em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/gtk/gtk3-Keyboard-Accelerators.html#GtkAccelGroup-struct"><span class="type">GtkAccelGroup</span></a> *accel_group</code></em>);</pre>
+<p>Constructs the application <span class="guimenu">Graph</span> menu.</p>
+<p>The menu is created from graph functions registered by modules, therefore module registration has to be done first
+for this function to make sense.</p>
+<div class="refsect3">
+<a name="gwy-app-build-graph-menu.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>accel_group</p></td>
+<td class="parameter_description"><p>Acceleration group to be associated with the menu.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-build-graph-menu.returns"></a><h4>Returns</h4>
+<p> A newly ceated graph menu (a <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkMenu.html#GtkMenu-struct"><span class="type">GtkMenu</span></a>).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-run-graph-func"></a><h3>gwy_app_run_graph_func ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_run_graph_func (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Runs a graph function on the current graph.</p>
+<div class="refsect3">
+<a name="gwy-app-run-graph-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>A graph function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-build-volume-menu"></a><h3>gwy_app_build_volume_menu ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_app_build_volume_menu (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/gtk3-Keyboard-Accelerators.html#GtkAccelGroup-struct"><span class="type">GtkAccelGroup</span></a> *accel_group</code></em>);</pre>
+<p>Constructs the application <span class="guimenu">Volume Data</span> menu.</p>
+<p>The menu is created from volume data processing functions registered by modules, therefore module registration has
+to be done first for this function to make sense.</p>
+<div class="refsect3">
+<a name="gwy-app-build-volume-menu.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>accel_group</p></td>
+<td class="parameter_description"><p>Acceleration group to be associated with the menu.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-build-volume-menu.returns"></a><h4>Returns</h4>
+<p> A newly ceated volume data processing menu (a <a href="/usr/share/gtk-doc/html/gtk3/GtkMenu.html#GtkMenu-struct"><span class="type">GtkMenu</span></a>).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-32.html#api-index-2.32">2.32</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-run-volume-func"></a><h3>gwy_app_run_volume_func ()</h3>
+<pre class="programlisting"><a href="../libgwymodule-gwymoduleenums.html#GwyRunType"><span class="returnvalue">GwyRunType</span></a>
+gwy_app_run_volume_func (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Runs a volume data processing function on the current data.</p>
+<p>From the run modes function <em class="parameter"><code>name</code></em>
+ supports, the most interactive one is selected.</p>
+<div class="refsect3">
+<a name="gwy-app-run-volume-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>A volume data processing function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-run-volume-func.returns"></a><h4>Returns</h4>
+<p> The actually used mode (nonzero), or 0 on failure.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-32.html#api-index-2.32">2.32</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-run-volume-func-in-mode"></a><h3>gwy_app_run_volume_func_in_mode ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_run_volume_func_in_mode (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                 <em class="parameter"><code><a href="../libgwymodule-gwymoduleenums.html#GwyRunType"><span class="type">GwyRunType</span></a> run</code></em>);</pre>
+<p>Runs a volume data processing function on current data in specified mode.</p>
+<div class="refsect3">
+<a name="gwy-app-run-volume-func-in-mode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>A volume data processing function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>run</p></td>
+<td class="parameter_description"><p>A run mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-32.html#api-index-2.32">2.32</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-build-xyz-menu"></a><h3>gwy_app_build_xyz_menu ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_app_build_xyz_menu (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/gtk3-Keyboard-Accelerators.html#GtkAccelGroup-struct"><span class="type">GtkAccelGroup</span></a> *accel_group</code></em>);</pre>
+<p>Constructs the application <span class="guimenu">XYZ Data</span> menu.</p>
+<p>The menu is created from XYZ data processing functions registered by modules, therefore module registration has to
+be done first for this function to make sense.</p>
+<div class="refsect3">
+<a name="gwy-app-build-xyz-menu.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>accel_group</p></td>
+<td class="parameter_description"><p>Acceleration group to be associated with the menu.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-build-xyz-menu.returns"></a><h4>Returns</h4>
+<p> A newly ceated XYZ data processing menu (a <a href="/usr/share/gtk-doc/html/gtk3/GtkMenu.html#GtkMenu-struct"><span class="type">GtkMenu</span></a>).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-run-xyz-func"></a><h3>gwy_app_run_xyz_func ()</h3>
+<pre class="programlisting"><a href="../libgwymodule-gwymoduleenums.html#GwyRunType"><span class="returnvalue">GwyRunType</span></a>
+gwy_app_run_xyz_func (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Runs a XYZ data processing function on the current data.</p>
+<p>From the run modes function <em class="parameter"><code>name</code></em>
+ supports, the most interactive one is selected.</p>
+<div class="refsect3">
+<a name="gwy-app-run-xyz-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>A XYZ data processing function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-run-xyz-func.returns"></a><h4>Returns</h4>
+<p> The actually used mode (nonzero), or 0 on failure.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-run-xyz-func-in-mode"></a><h3>gwy_app_run_xyz_func_in_mode ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_run_xyz_func_in_mode (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                              <em class="parameter"><code><a href="../libgwymodule-gwymoduleenums.html#GwyRunType"><span class="type">GwyRunType</span></a> run</code></em>);</pre>
+<p>Runs a XYZ data processing function on current data in specified mode.</p>
+<div class="refsect3">
+<a name="gwy-app-run-xyz-func-in-mode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>A XYZ data processing function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>run</p></td>
+<td class="parameter_description"><p>A run mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-build-curve-map-menu"></a><h3>gwy_app_build_curve_map_menu ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_app_build_curve_map_menu (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/gtk3-Keyboard-Accelerators.html#GtkAccelGroup-struct"><span class="type">GtkAccelGroup</span></a> *accel_group</code></em>);</pre>
+<p>Constructs the application <span class="guimenu">Curve Maps</span> menu.</p>
+<p>The menu is created from curve map data processing functions registered by modules, therefore module registration
+has to be done first for this function to make sense.</p>
+<div class="refsect3">
+<a name="gwy-app-build-curve-map-menu.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>accel_group</p></td>
+<td class="parameter_description"><p>Acceleration group to be associated with the menu.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-build-curve-map-menu.returns"></a><h4>Returns</h4>
+<p> A newly ceated curve map data processing menu (a <a href="/usr/share/gtk-doc/html/gtk3/GtkMenu.html#GtkMenu-struct"><span class="type">GtkMenu</span></a>).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-run-curve-map-func"></a><h3>gwy_app_run_curve_map_func ()</h3>
+<pre class="programlisting"><a href="../libgwymodule-gwymoduleenums.html#GwyRunType"><span class="returnvalue">GwyRunType</span></a>
+gwy_app_run_curve_map_func (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Runs a curve map processing function on the current data.</p>
+<p>From the run modes function <em class="parameter"><code>name</code></em>
+ supports, the most interactive one is selected.</p>
+<div class="refsect3">
+<a name="gwy-app-run-curve-map-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>A curve map processing function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-run-curve-map-func.returns"></a><h4>Returns</h4>
+<p> The actually used mode (nonzero), or 0 on failure.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-run-curve-map-func-in-mode"></a><h3>gwy_app_run_curve_map_func_in_mode ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_run_curve_map_func_in_mode (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                    <em class="parameter"><code><a href="../libgwymodule-gwymoduleenums.html#GwyRunType"><span class="type">GwyRunType</span></a> run</code></em>);</pre>
+<p>Runs a curve map processing function on current data in specified mode.</p>
+<div class="refsect3">
+<a name="gwy-app-run-curve-map-func-in-mode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>A curve map processing function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>run</p></td>
+<td class="parameter_description"><p>A run mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-menu-recent-files-update"></a><h3>gwy_app_menu_recent_files_update ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_menu_recent_files_update (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *recent_files</code></em>);</pre>
+<p>Updates recent file menu.</p>
+<p>If the list of files is longer than the maximum number of recent file menu
+items, only the maximum number is shown.</p>
+<div class="refsect3">
+<a name="gwy-app-menu-recent-files-update.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>recent_files</p></td>
+<td class="parameter_description"><p>A list of recent file names, in UTF-8.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-menu-recent-files-get"></a><h3>gwy_app_menu_recent_files_get ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_app_menu_recent_files_get (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Gets the application recent files menu.</p>
+<p>The menu is initially empty and can be updated with <a class="link" href="libgwyapp-menu.html#gwy-app-menu-recent-files-update" title="gwy_app_menu_recent_files_update ()"><code class="function">gwy_app_menu_recent_files_update()</code></a>.  This function is
+essentially useful only for toolbox construction.</p>
+<div class="refsect3">
+<a name="gwy-app-menu-recent-files-get.returns"></a><h4>Returns</h4>
+<p> The recent files menu (a <a href="/usr/share/gtk-doc/html/gtk3/GtkMenu.html#GtkMenu-struct"><span class="type">GtkMenu</span></a>).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-get-tooltips"></a><h3>gwy_app_get_tooltips ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkTooltip.html#GtkTooltip-struct"><span class="returnvalue">GtkTooltips</span></a> *
+gwy_app_get_tooltips (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="warning"><p><code class="literal">gwy_app_get_tooltips</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>Gets the application-wide tooltips instance.</p>
+<p>Do not use.  Use <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#gtk-widget-set-tooltip-text"><code class="function">gtk_widget_set_tooltip_text()</code></a> or <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#gtk-widget-set-tooltip-markup"><code class="function">gtk_widget_set_tooltip_markup()</code></a> instead.</p>
+<div class="refsect3">
+<a name="gwy-app-get-tooltips.returns"></a><h4>Returns</h4>
+<p> The global tooltips instance.  No reference is added, you can add yours, but the returned object will
+exist to the end of program anyway.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-sensitivity-get-group"></a><h3>gwy_app_sensitivity_get_group ()</h3>
+<pre class="programlisting"><a href="../GwySensitivityGroup.html#GwySensitivityGroup-struct"><span class="returnvalue">GwySensitivityGroup</span></a> *
+gwy_app_sensitivity_get_group (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Gets the application-wide widget sensitvity group.</p>
+<p>The flags to be used with this sensitvity group are defined in <a class="link" href="libgwyapp-menu.html#GwyMenuSensFlags" title="enum GwyMenuSensFlags"><span class="type">GwyMenuSensFlags</span></a>.</p>
+<div class="refsect3">
+<a name="gwy-app-sensitivity-get-group.returns"></a><h4>Returns</h4>
+<p> The global sensitvity group instead.  No reference is added, you can add yours, but the returned object
+will exist to the end of program anyway.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-sensitivity-add-widget"></a><h3>gwy_app_sensitivity_add_widget ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_sensitivity_add_widget (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a> *widget</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyapp-menu.html#GwyMenuSensFlags" title="enum GwyMenuSensFlags"><span class="type">GwyMenuSensFlags</span></a> mask</code></em>);</pre>
+<p>Adds a widget to the application-wide widget sensitvity group.</p>
+<p>The semantics of this function is the same as <a href="../GwySensitivityGroup.html#gwy-sensitivity-group-add-widget"><code class="function">gwy_sensitivity_group_add_widget()</code></a> (in fact, it's a simple wrapper
+around it).</p>
+<div class="refsect3">
+<a name="gwy-app-sensitivity-add-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>widget</p></td>
+<td class="parameter_description"><p>Widget to add.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Which flags the widget is sensitive to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-sensitivity-set-state"></a><h3>gwy_app_sensitivity_set_state ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_sensitivity_set_state (<em class="parameter"><code><a class="link" href="libgwyapp-menu.html#GwyMenuSensFlags" title="enum GwyMenuSensFlags"><span class="type">GwyMenuSensFlags</span></a> affected_mask</code></em>,
+                               <em class="parameter"><code><a class="link" href="libgwyapp-menu.html#GwyMenuSensFlags" title="enum GwyMenuSensFlags"><span class="type">GwyMenuSensFlags</span></a> state</code></em>);</pre>
+<p>Sets the state of application-wide widget sensitvity group.</p>
+<p>The semantics of this function is the same as <a href="../GwySensitivityGroup.html#gwy-sensitivity-group-set-state"><code class="function">gwy_sensitivity_group_set_state()</code></a> (in fact, it's a simple wrapper
+around it).</p>
+<div class="refsect3">
+<a name="gwy-app-sensitivity-set-state.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>affected_mask</p></td>
+<td class="parameter_description"><p>Which bits in <em class="parameter"><code>state</code></em>
+to copy to state.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>state</p></td>
+<td class="parameter_description"><p>The new state (masked with <em class="parameter"><code>affected_mask</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-menu.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyMenuSensFlags"></a><h3>enum GwyMenuSensFlags</h3>
+<p>Global application sensitivity flags.</p>
+<p>They represent various application states that may be preconditions for widgets to become sensitive.</p>
+<div class="refsect3">
+<a name="GwyMenuSensFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MENU-FLAG-DATA:CAPS"></a>GWY_MENU_FLAG_DATA</p></td>
+<td class="enum_member_description">
+<p>There is at least a one data window present.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MENU-FLAG-UNDO:CAPS"></a>GWY_MENU_FLAG_UNDO</p></td>
+<td class="enum_member_description">
+<p>There is something to undo (for current data window).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MENU-FLAG-REDO:CAPS"></a>GWY_MENU_FLAG_REDO</p></td>
+<td class="enum_member_description">
+<p>There is something to redo (for current data window).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MENU-FLAG-GRAPH:CAPS"></a>GWY_MENU_FLAG_GRAPH</p></td>
+<td class="enum_member_description">
+<p>There is at least a one graph window present.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MENU-FLAG-LAST-PROC:CAPS"></a>GWY_MENU_FLAG_LAST_PROC</p></td>
+<td class="enum_member_description">
+<p>There is a last-run data processing function to rerun.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MENU-FLAG-LAST-GRAPH:CAPS"></a>GWY_MENU_FLAG_LAST_GRAPH</p></td>
+<td class="enum_member_description">
+<p>There is a last-run graph function to rerun.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MENU-FLAG-DATA-MASK:CAPS"></a>GWY_MENU_FLAG_DATA_MASK</p></td>
+<td class="enum_member_description">
+<p>There is a mask on the data.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MENU-FLAG-DATA-SHOW:CAPS"></a>GWY_MENU_FLAG_DATA_SHOW</p></td>
+<td class="enum_member_description">
+<p>There is a presentation on the data.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MENU-FLAG-3D:CAPS"></a>GWY_MENU_FLAG_3D</p></td>
+<td class="enum_member_description">
+<p>A 3D view is present.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MENU-FLAG-FILE:CAPS"></a>GWY_MENU_FLAG_FILE</p></td>
+<td class="enum_member_description">
+<p>A file is open, with any type of data (Since 2.5).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MENU-FLAG-VOLUME:CAPS"></a>GWY_MENU_FLAG_VOLUME</p></td>
+<td class="enum_member_description">
+<p>There is at least one volume data window present (Since 2.32).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MENU-FLAG-XYZ:CAPS"></a>GWY_MENU_FLAG_XYZ</p></td>
+<td class="enum_member_description">
+<p>There is at least one XYZ surface data window present (Since 2.45).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MENU-FLAG-CURVE-MAP:CAPS"></a>GWY_MENU_FLAG_CURVE_MAP</p></td>
+<td class="enum_member_description">
+<p>There is at least one <a href="../GwyLawn.html#GwyLawn-struct"><span class="type">GwyLawn</span></a> curve map window present (Since 2.60).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MENU-FLAG-GRAPH-CURVE:CAPS"></a>GWY_MENU_FLAG_GRAPH_CURVE</p></td>
+<td class="enum_member_description">
+<p>There current graph window contains at least one curve (Since 2.60).  This ensures a
+graph function will not be run on an empty graph.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MENU-FLAG-MASK:CAPS"></a>GWY_MENU_FLAG_MASK</p></td>
+<td class="enum_member_description">
+<p>All the bits combined.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

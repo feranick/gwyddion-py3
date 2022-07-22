@@ -1,0 +1,1667 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwySurface: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="GwyBrick.html" title="GwyBrick">
+<link rel="next" href="GwyLawn.html" title="GwyLawn">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwySurface.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwySurface.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GwySurface.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GwySurface.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="GwyBrick.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyLawn.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwySurface"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwySurface.top_of_page"></a>GwySurface</span></h2>
+<p>GwySurface — General two-dimensional data</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwySurface.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-duplicate" title="gwy_surface_duplicate()">gwy_surface_duplicate</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-assign" title="gwy_surface_assign()">gwy_surface_assign</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-clone" title="gwy_surface_clone()">gwy_surface_clone</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwySurface.html" title="GwySurface"><span class="returnvalue">GwySurface</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-new" title="gwy_surface_new ()">gwy_surface_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwySurface.html" title="GwySurface"><span class="returnvalue">GwySurface</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-new-sized" title="gwy_surface_new_sized ()">gwy_surface_new_sized</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwySurface.html" title="GwySurface"><span class="returnvalue">GwySurface</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-new-from-data" title="gwy_surface_new_from_data ()">gwy_surface_new_from_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwySurface.html" title="GwySurface"><span class="returnvalue">GwySurface</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-new-alike" title="gwy_surface_new_alike ()">gwy_surface_new_alike</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwySurface.html" title="GwySurface"><span class="returnvalue">GwySurface</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-new-part" title="gwy_surface_new_part ()">gwy_surface_new_part</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../libgwyddion-Math.html#GwyXYZ"><span class="returnvalue">GwyXYZ</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-get-data" title="gwy_surface_get_data ()">gwy_surface_get_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="../libgwyddion-Math.html#GwyXYZ"><span class="returnvalue">GwyXYZ</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-get-data-const" title="gwy_surface_get_data_const ()">gwy_surface_get_data_const</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-get-npoints" title="gwy_surface_get_npoints ()">gwy_surface_get_npoints</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-data-changed" title="gwy_surface_data_changed ()">gwy_surface_data_changed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-copy" title="gwy_surface_copy ()">gwy_surface_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-invalidate" title="gwy_surface_invalidate ()">gwy_surface_invalidate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-set-from-data-field" title="gwy_surface_set_from_data_field ()">gwy_surface_set_from_data_field</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-set-from-data-field-mask" title="gwy_surface_set_from_data_field_mask ()">gwy_surface_set_from_data_field_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-get-si-unit-xy" title="gwy_surface_get_si_unit_xy ()">gwy_surface_get_si_unit_xy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-get-si-unit-z" title="gwy_surface_get_si_unit_z ()">gwy_surface_get_si_unit_z</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-set-si-unit-xy" title="gwy_surface_set_si_unit_xy ()">gwy_surface_set_si_unit_xy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-set-si-unit-z" title="gwy_surface_set_si_unit_z ()">gwy_surface_set_si_unit_z</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../libgwyddion-GwySIValueFormat.html#GwySIValueFormat"><span class="returnvalue">GwySIValueFormat</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-get-value-format-xy" title="gwy_surface_get_value_format_xy ()">gwy_surface_get_value_format_xy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../libgwyddion-GwySIValueFormat.html#GwySIValueFormat"><span class="returnvalue">GwySIValueFormat</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-get-value-format-z" title="gwy_surface_get_value_format_z ()">gwy_surface_get_value_format_z</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-copy-units" title="gwy_surface_copy_units ()">gwy_surface_copy_units</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-data-field-copy-units-to-surface" title="gwy_data_field_copy_units_to_surface ()">gwy_data_field_copy_units_to_surface</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-copy-units-to-data-field" title="gwy_surface_copy_units_to_data_field ()">gwy_surface_copy_units_to_data_field</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../libgwyddion-Math.html#GwyXYZ"><span class="returnvalue">GwyXYZ</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-get" title="gwy_surface_get ()">gwy_surface_get</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-set" title="gwy_surface_set ()">gwy_surface_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-get-xrange" title="gwy_surface_get_xrange ()">gwy_surface_get_xrange</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-get-yrange" title="gwy_surface_get_yrange ()">gwy_surface_get_yrange</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-get-min-max" title="gwy_surface_get_min_max ()">gwy_surface_get_min_max</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="../libgwyddion-Math.html#GwyXYZ"><span class="returnvalue">GwyXYZ</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-get-data-full" title="gwy_surface_get_data_full ()">gwy_surface_get_data_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-set-data-full" title="gwy_surface_set_data_full ()">gwy_surface_set_data_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-xy-is-compatible" title="gwy_surface_xy_is_compatible ()">gwy_surface_xy_is_compatible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwySurface.html" title="GwySurface"><span class="returnvalue">GwySurface</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-reduce-points" title="gwy_surface_reduce_points ()">gwy_surface_reduce_points</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySurface.html#gwy-surface-resize" title="gwy_surface_resize ()">gwy_surface_resize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwySurface.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwySurface.html#GwySurface-data-changed" title="The “data-changed” signal">data-changed</a></td>
+<td class="signal_flags"><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwySurface.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwySurface.html#GwySurface-struct" title="struct GwySurface">GwySurface</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwySurface.html#GwySurfaceClass" title="struct GwySurfaceClass">GwySurfaceClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwySurface.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> GwySurface
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwySurface.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GwySurface implements
+ <a href="../GwySerializable.html#GwySerializable-struct">GwySerializable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwySurface.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwySurface.description"></a><h2>Description</h2>
+<p><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> represents general, i.e. possibly unevenly spaced, two-dimensional data, also called XYZ data.</p>
+<p>Surface points are stored in a flat array <a class="link" href="GwySurface.html#GwySurface-struct.data"><span class="type">GwySurface-struct.data</span></a> of <a href="../libgwyddion-Math.html#GwyXYZ"><span class="type">GwyXYZ</span></a> values.</p>
+<p>Unlike <a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a>, a surface can also be empty, i.e. contain zero points.</p>
+</div>
+<div class="refsect1">
+<a name="GwySurface.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-surface-duplicate"></a><h3>gwy_surface_duplicate()</h3>
+<pre class="programlisting">#define             gwy_surface_duplicate(surface)</pre>
+<p>Duplicates a surface.</p>
+<p>This is a convenience wrapper of <a href="../GwySerializable.html#gwy-serializable-duplicate"><code class="function">gwy_serializable_duplicate()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-surface-duplicate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-assign"></a><h3>gwy_surface_assign()</h3>
+<pre class="programlisting">#define             gwy_surface_assign(dest, source)</pre>
+<p>Convenience macro making one data surface identical to another.</p>
+<p>This is just a <a href="../GwySerializable.html#gwy-serializable-clone"><code class="function">gwy_serializable_clone()</code></a> wrapper with all the necessary typecasting.</p>
+<div class="refsect3">
+<a name="gwy-surface-assign.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dest</p></td>
+<td class="parameter_description"><p>Target data surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>Source data surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-52.html#api-index-2.52">2.52</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-clone"></a><h3>gwy_surface_clone()</h3>
+<pre class="programlisting">#define gwy_surface_clone(dest, src) (gwy_serializable_clone(G_OBJECT(dest), G_OBJECT(src)))
+</pre>
+<div class="warning"><p><code class="literal">gwy_surface_clone</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>Copies the value of a surface.</p>
+<p>This is a convenience wrapper of <a href="../GwySerializable.html#gwy-serializable-clone"><code class="function">gwy_serializable_clone()</code></a>.</p>
+<p>Use <a class="link" href="GwySurface.html#gwy-surface-assign" title="gwy_surface_assign()"><code class="function">gwy_surface_assign()</code></a> instead for consistency.  Note that the argument order is reversed!</p>
+<div class="refsect3">
+<a name="gwy-surface-clone.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dest</p></td>
+<td class="parameter_description"><p>Destination surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>src</p></td>
+<td class="parameter_description"><p>Source surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-new"></a><h3>gwy_surface_new ()</h3>
+<pre class="programlisting"><a class="link" href="GwySurface.html" title="GwySurface"><span class="returnvalue">GwySurface</span></a> *
+gwy_surface_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new empty surface.</p>
+<p>The surface will not contain any points. This parameterless constructor exists mainly for language bindings,
+<a class="link" href="GwySurface.html#gwy-surface-new-from-data" title="gwy_surface_new_from_data ()"><code class="function">gwy_surface_new_from_data()</code></a> is usually more useful.</p>
+<div class="refsect3">
+<a name="gwy-surface-new.returns"></a><h4>Returns</h4>
+<p> A new empty surface.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-new-sized"></a><h3>gwy_surface_new_sized ()</h3>
+<pre class="programlisting"><a class="link" href="GwySurface.html" title="GwySurface"><span class="returnvalue">GwySurface</span></a> *
+gwy_surface_new_sized (<em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>);</pre>
+<p>Creates a new surface with preallocated size.</p>
+<p>The surface will contain the speficied number of points with uninitialised
+values.</p>
+<div class="refsect3">
+<a name="gwy-surface-new-sized.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of points.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-surface-new-sized.returns"></a><h4>Returns</h4>
+<p> A new surface.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-new-from-data"></a><h3>gwy_surface_new_from_data ()</h3>
+<pre class="programlisting"><a class="link" href="GwySurface.html" title="GwySurface"><span class="returnvalue">GwySurface</span></a> *
+gwy_surface_new_from_data (<em class="parameter"><code>const <a href="../libgwyddion-Math.html#GwyXYZ"><span class="type">GwyXYZ</span></a> *points</code></em>,
+                           <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>);</pre>
+<p>Creates a new surface, filling it with provided points.</p>
+<div class="refsect3">
+<a name="gwy-surface-new-from-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>points</p></td>
+<td class="parameter_description"><p>Array of <em class="parameter"><code>n</code></em>
+points with the surface data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of points.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-surface-new-from-data.returns"></a><h4>Returns</h4>
+<p> A new surface.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-new-alike"></a><h3>gwy_surface_new_alike ()</h3>
+<pre class="programlisting"><a class="link" href="GwySurface.html" title="GwySurface"><span class="returnvalue">GwySurface</span></a> *
+gwy_surface_new_alike (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *model</code></em>);</pre>
+<p>Creates a new empty surface similar to another surface.</p>
+<p>The units of the new surface will be identical to those of <em class="parameter"><code>model</code></em>
+ but the new surface will not contain any points.
+Use <a class="link" href="GwySurface.html#gwy-surface-duplicate" title="gwy_surface_duplicate()"><code class="function">gwy_surface_duplicate()</code></a> to completely duplicate a surface including data.</p>
+<div class="refsect3">
+<a name="gwy-surface-new-alike.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>model</p></td>
+<td class="parameter_description"><p>A surface to use as the template.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-surface-new-alike.returns"></a><h4>Returns</h4>
+<p> A new empty surface.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-new-part"></a><h3>gwy_surface_new_part ()</h3>
+<pre class="programlisting"><a class="link" href="GwySurface.html" title="GwySurface"><span class="returnvalue">GwySurface</span></a> *
+gwy_surface_new_part (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>,
+                      <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> xfrom</code></em>,
+                      <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> xto</code></em>,
+                      <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> yfrom</code></em>,
+                      <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> yto</code></em>);</pre>
+<p>Creates a new surface as a part of another surface.</p>
+<p>The new surface consits of data with lateral coordinates within the specified ranges (inclusively).  It may be
+empty.</p>
+<p>Data are physically copied, i.e. changing the new surface data does not change <em class="parameter"><code>surface</code></em>
+'s data and vice versa.</p>
+<div class="refsect3">
+<a name="gwy-surface-new-part.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xfrom</p></td>
+<td class="parameter_description"><p>Minimum x-coordinate value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xto</p></td>
+<td class="parameter_description"><p>Maximum x-coordinate value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yfrom</p></td>
+<td class="parameter_description"><p>Minimum y-coordinate value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yto</p></td>
+<td class="parameter_description"><p>Maximum y-coordinate value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-surface-new-part.returns"></a><h4>Returns</h4>
+<p> A new surface.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-get-data"></a><h3>gwy_surface_get_data ()</h3>
+<pre class="programlisting"><a href="../libgwyddion-Math.html#GwyXYZ"><span class="returnvalue">GwyXYZ</span></a> *
+gwy_surface_get_data (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>);</pre>
+<p>Gets the raw XYZ data array of a surface.</p>
+<p>The returned buffer is not guaranteed to be valid through whole data surface life time.</p>
+<p>This function invalidates any cached information, use <a class="link" href="GwySurface.html#gwy-surface-get-data-const" title="gwy_surface_get_data_const ()"><code class="function">gwy_surface_get_data_const()</code></a> if you are not going to change
+the data.</p>
+<p>See <a class="link" href="GwySurface.html#gwy-surface-invalidate" title="gwy_surface_invalidate ()"><code class="function">gwy_surface_invalidate()</code></a> for some discussion.</p>
+<div class="refsect3">
+<a name="gwy-surface-get-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-surface-get-data.returns"></a><h4>Returns</h4>
+<p> The surface XYZ data as a pointer to an array of <a class="link" href="GwySurface.html#gwy-surface-get-npoints" title="gwy_surface_get_npoints ()"><code class="function">gwy_surface_get_npoints()</code></a> items.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-get-data-const"></a><h3>gwy_surface_get_data_const ()</h3>
+<pre class="programlisting">const <a href="../libgwyddion-Math.html#GwyXYZ"><span class="returnvalue">GwyXYZ</span></a> *
+gwy_surface_get_data_const (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>);</pre>
+<p>Gets the raw XYZ data array of a surface, read-only.</p>
+<p>The returned buffer is not guaranteed to be valid through whole data field life time.</p>
+<p>Use <a class="link" href="GwySurface.html#gwy-surface-get-data" title="gwy_surface_get_data ()"><code class="function">gwy_surface_get_data()</code></a> if you want to change the data.</p>
+<p>See <a class="link" href="GwySurface.html#gwy-surface-invalidate" title="gwy_surface_invalidate ()"><code class="function">gwy_surface_invalidate()</code></a> for some discussion.</p>
+<div class="refsect3">
+<a name="gwy-surface-get-data-const.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-surface-get-data-const.returns"></a><h4>Returns</h4>
+<p> The surface XYZ data as a pointer to an array of <a class="link" href="GwySurface.html#gwy-surface-get-npoints" title="gwy_surface_get_npoints ()"><code class="function">gwy_surface_get_npoints()</code></a> items.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-get-npoints"></a><h3>gwy_surface_get_npoints ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gwy_surface_get_npoints (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>);</pre>
+<p>Gets the number of points in an XYZ surface.</p>
+<div class="refsect3">
+<a name="gwy-surface-get-npoints.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-surface-get-npoints.returns"></a><h4>Returns</h4>
+<p> The number of points.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-data-changed"></a><h3>gwy_surface_data_changed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_surface_data_changed (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>);</pre>
+<p>Emits signal GwySurface::data-changed on a surface.</p>
+<div class="refsect3">
+<a name="gwy-surface-data-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-copy"></a><h3>gwy_surface_copy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_surface_copy (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *src</code></em>,
+                  <em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *dest</code></em>);</pre>
+<p>Copies the data of a surface to another surface of the same dimensions.</p>
+<p>Only the data points are copied.  To make a surface completely identical to another, including units and change of
+dimensions, you can use <a class="link" href="GwySurface.html#gwy-surface-clone" title="gwy_surface_clone()"><code class="function">gwy_surface_clone()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-surface-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>src</p></td>
+<td class="parameter_description"><p>Source surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest</p></td>
+<td class="parameter_description"><p>Destination surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-invalidate"></a><h3>gwy_surface_invalidate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_surface_invalidate (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>);</pre>
+<p>Invalidates cached surface statistics.</p>
+<p>Cached statistics include ranges returned by <a class="link" href="GwySurface.html#gwy-surface-get-xrange" title="gwy_surface_get_xrange ()"><code class="function">gwy_surface_get_xrange()</code></a>, <a class="link" href="GwySurface.html#gwy-surface-get-yrange" title="gwy_surface_get_yrange ()"><code class="function">gwy_surface_get_yrange()</code></a> and
+<a class="link" href="GwySurface.html#gwy-surface-get-min-max" title="gwy_surface_get_min_max ()"><code class="function">gwy_surface_get_min_max()</code></a>, the fingerprint for <a class="link" href="GwySurface.html#gwy-surface-xy-is-compatible" title="gwy_surface_xy_is_compatible ()"><code class="function">gwy_surface_xy_is_compatible()</code></a> and and possibly other
+characteristics in the future.</p>
+<p>See <a class="link" href="GwyDataField.html#gwy-data-field-invalidate" title="gwy_data_field_invalidate ()"><code class="function">gwy_data_field_invalidate()</code></a> for discussion of invalidation and examples.</p>
+<div class="refsect3">
+<a name="gwy-surface-invalidate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-set-from-data-field"></a><h3>gwy_surface_set_from_data_field ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_surface_set_from_data_field (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>,
+                                 <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>);</pre>
+<p>Fills the data of a surface from a data field.</p>
+<p>The number of points in the new surface will be equal to the number of points in the field.  Lateral coordinates
+will be equal to the corresponding <em class="parameter"><code>data_field</code></em>
+ coordinates; values will be created in regular grid according to
+<em class="parameter"><code>data_field</code></em>
+'s physical size and offset.</p>
+<p>Lateral and value units will correspond to <em class="parameter"><code>data_field</code></em>
+'s units.  This means the field needs to have identical <em class="parameter"><code>x</code></em>
+
+and <em class="parameter"><code>y</code></em>
+ units.</p>
+<div class="refsect3">
+<a name="gwy-surface-set-from-data-field.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A two-dimensional data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-set-from-data-field-mask"></a><h3>gwy_surface_set_from_data_field_mask ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_surface_set_from_data_field_mask (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>,
+                                      <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                      <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                                      <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyMaskingType" title="enum GwyMaskingType"><span class="type">GwyMaskingType</span></a> masking</code></em>);</pre>
+<p>Fills the data of a surface from a data field, possibly using masking.</p>
+<div class="refsect3">
+<a name="gwy-surface-set-from-data-field-mask.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A two-dimensional data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Mask of pixels to include from/exclude, or <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>masking</p></td>
+<td class="parameter_description"><p>Masking mode to use.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-46.html#api-index-2.46">2.46</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-get-si-unit-xy"></a><h3>gwy_surface_get_si_unit_xy ()</h3>
+<pre class="programlisting"><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_surface_get_si_unit_xy (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>);</pre>
+<p>Returns lateral SI unit of a surface.</p>
+<div class="refsect3">
+<a name="gwy-surface-get-si-unit-xy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-surface-get-si-unit-xy.returns"></a><h4>Returns</h4>
+<p> SI unit corresponding to the lateral (XY) dimensions of the surface. Its reference count is not
+incremented.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-get-si-unit-z"></a><h3>gwy_surface_get_si_unit_z ()</h3>
+<pre class="programlisting"><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_surface_get_si_unit_z (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>);</pre>
+<p>Returns value SI unit of a surface.</p>
+<div class="refsect3">
+<a name="gwy-surface-get-si-unit-z.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-surface-get-si-unit-z.returns"></a><h4>Returns</h4>
+<p> SI unit corresponding to the "height" (Z) dimension of the surface. Its reference count is not
+incremented.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-set-si-unit-xy"></a><h3>gwy_surface_set_si_unit_xy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_surface_set_si_unit_xy (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>,
+                            <em class="parameter"><code><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *si_unit</code></em>);</pre>
+<p>Sets the SI unit corresponding to the lateral (XY) dimensions of a surface.</p>
+<p>It does not assume a reference on <em class="parameter"><code>si_unit</code></em>
+, instead it adds its own reference.</p>
+<div class="refsect3">
+<a name="gwy-surface-set-si-unit-xy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>si_unit</p></td>
+<td class="parameter_description"><p>SI unit to be set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-set-si-unit-z"></a><h3>gwy_surface_set_si_unit_z ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_surface_set_si_unit_z (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>,
+                           <em class="parameter"><code><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *si_unit</code></em>);</pre>
+<p>Sets the SI unit corresponding to the "height" (Z) dimension of a surface.</p>
+<p>It does not assume a reference on <em class="parameter"><code>si_unit</code></em>
+, instead it adds its own reference.</p>
+<div class="refsect3">
+<a name="gwy-surface-set-si-unit-z.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>si_unit</p></td>
+<td class="parameter_description"><p>SI unit to be set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-get-value-format-xy"></a><h3>gwy_surface_get_value_format_xy ()</h3>
+<pre class="programlisting"><a href="../libgwyddion-GwySIValueFormat.html#GwySIValueFormat"><span class="returnvalue">GwySIValueFormat</span></a> *
+gwy_surface_get_value_format_xy (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>,
+                                 <em class="parameter"><code><a href="../libgwyddion-gwyddionenums.html#GwySIUnitFormatStyle"><span class="type">GwySIUnitFormatStyle</span></a> style</code></em>,
+                                 <em class="parameter"><code><a href="../libgwyddion-GwySIValueFormat.html#GwySIValueFormat"><span class="type">GwySIValueFormat</span></a> *format</code></em>);</pre>
+<p>Finds value format good for displaying coordinates of a surface.</p>
+<div class="refsect3">
+<a name="gwy-surface-get-value-format-xy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>Unit format style.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>format</p></td>
+<td class="parameter_description"><p>A SI value format to modify, or <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to allocate a new one.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-surface-get-value-format-xy.returns"></a><h4>Returns</h4>
+<p> The value format.  If <em class="parameter"><code>format</code></em>
+is <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, a newly allocated format is returned, otherwise (modified) <em class="parameter"><code>format</code></em>
+itself is returned.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-get-value-format-z"></a><h3>gwy_surface_get_value_format_z ()</h3>
+<pre class="programlisting"><a href="../libgwyddion-GwySIValueFormat.html#GwySIValueFormat"><span class="returnvalue">GwySIValueFormat</span></a> *
+gwy_surface_get_value_format_z (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>,
+                                <em class="parameter"><code><a href="../libgwyddion-gwyddionenums.html#GwySIUnitFormatStyle"><span class="type">GwySIUnitFormatStyle</span></a> style</code></em>,
+                                <em class="parameter"><code><a href="../libgwyddion-GwySIValueFormat.html#GwySIValueFormat"><span class="type">GwySIValueFormat</span></a> *format</code></em>);</pre>
+<p>Finds value format good for displaying values of a surface.</p>
+<div class="refsect3">
+<a name="gwy-surface-get-value-format-z.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>Unit format style.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>format</p></td>
+<td class="parameter_description"><p>A SI value format to modify, or <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to allocate a new one.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-surface-get-value-format-z.returns"></a><h4>Returns</h4>
+<p> The value format.  If <em class="parameter"><code>format</code></em>
+is <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, a newly allocated format is returned, otherwise (modified) <em class="parameter"><code>format</code></em>
+itself is returned.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-copy-units"></a><h3>gwy_surface_copy_units ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_surface_copy_units (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>,
+                        <em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *target</code></em>);</pre>
+<p>Sets lateral and value units of a surface to match another surface.</p>
+<div class="refsect3">
+<a name="gwy-surface-copy-units.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>Target surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-copy-units-to-surface"></a><h3>gwy_data_field_copy_units_to_surface ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_copy_units_to_surface (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                      <em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>);</pre>
+<p>Sets lateral and value units of a surface to match a data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-copy-units-to-surface.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A two-dimensional data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-46.html#api-index-2.46">2.46</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-copy-units-to-data-field"></a><h3>gwy_surface_copy_units_to_data_field ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_surface_copy_units_to_data_field (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>,
+                                      <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>);</pre>
+<p>Sets lateral and value units of a data field to match a surface.</p>
+<div class="refsect3">
+<a name="gwy-surface-copy-units-to-data-field.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A two-dimensional data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-46.html#api-index-2.46">2.46</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-get"></a><h3>gwy_surface_get ()</h3>
+<pre class="programlisting"><a href="../libgwyddion-Math.html#GwyXYZ"><span class="returnvalue">GwyXYZ</span></a>
+gwy_surface_get (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>,
+                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> pos</code></em>);</pre>
+<p>Obtains a single surface point.</p>
+<p>This function exists <span class="emphasis"><em>only for language bindings</em></span> as it is very slow compared to simply
+accessing <em class="parameter"><code>data</code></em>
+ in <a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> directly in C.</p>
+<div class="refsect3">
+<a name="gwy-surface-get.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pos</p></td>
+<td class="parameter_description"><p>Position in <em class="parameter"><code>surface</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-surface-get.returns"></a><h4>Returns</h4>
+<p> The point at <em class="parameter"><code>pos</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-set"></a><h3>gwy_surface_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_surface_set (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>,
+                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> pos</code></em>,
+                 <em class="parameter"><code><a href="../libgwyddion-Math.html#GwyXYZ"><span class="type">GwyXYZ</span></a> point</code></em>);</pre>
+<p>Sets a single surface value.</p>
+<p>This function exists <span class="emphasis"><em>only for language bindings</em></span> as it is very slow compared to simply
+accessing <em class="parameter"><code>data</code></em>
+ in <a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> directly in C.</p>
+<div class="refsect3">
+<a name="gwy-surface-set.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pos</p></td>
+<td class="parameter_description"><p>Position in <em class="parameter"><code>surface</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>point</p></td>
+<td class="parameter_description"><p>Point to store at given position.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-get-xrange"></a><h3>gwy_surface_get_xrange ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_surface_get_xrange (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *min</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *max</code></em>);</pre>
+<p>Gets the range of X coordinates of a surface.</p>
+<p>This information is cached.</p>
+<div class="refsect3">
+<a name="gwy-surface-get-xrange.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>min</p></td>
+<td class="parameter_description"><p>Location where to store the minimum value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max</p></td>
+<td class="parameter_description"><p>Location where to store the maximum value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-get-yrange"></a><h3>gwy_surface_get_yrange ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_surface_get_yrange (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *min</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *max</code></em>);</pre>
+<p>Gets the range of Y coordinates of a surface.</p>
+<p>This information is cached.</p>
+<div class="refsect3">
+<a name="gwy-surface-get-yrange.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>min</p></td>
+<td class="parameter_description"><p>Location where to store the minimum value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max</p></td>
+<td class="parameter_description"><p>Location where to store the maximum value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-get-min-max"></a><h3>gwy_surface_get_min_max ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_surface_get_min_max (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *min</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *max</code></em>);</pre>
+<p>Gets the range of Z values of a surface.</p>
+<p>This information is cached.</p>
+<div class="refsect3">
+<a name="gwy-surface-get-min-max.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>min</p></td>
+<td class="parameter_description"><p>Location where to store the minimum value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max</p></td>
+<td class="parameter_description"><p>Location where to store the maximum value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-get-data-full"></a><h3>gwy_surface_get_data_full ()</h3>
+<pre class="programlisting">const <a href="../libgwyddion-Math.html#GwyXYZ"><span class="returnvalue">GwyXYZ</span></a> *
+gwy_surface_get_data_full (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *n</code></em>);</pre>
+<p>Provides the values of an entire surface as a flat array.</p>
+<p>This function, paired with <a class="link" href="GwySurface.html#gwy-surface-set-data-full" title="gwy_surface_set_data_full ()"><code class="function">gwy_surface_set_data_full()</code></a> can be namely useful in language bindings.</p>
+<p>Note that this function returns a pointer directly to <em class="parameter"><code>surface</code></em>
+'s data.</p>
+<div class="refsect3">
+<a name="gwy-surface-get-data-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Location to store the count of extracted data points.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-surface-get-data-full.returns"></a><h4>Returns</h4>
+<p> The array containing the surface points.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-set-data-full"></a><h3>gwy_surface_set_data_full ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_surface_set_data_full (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>,
+                           <em class="parameter"><code>const <a href="../libgwyddion-Math.html#GwyXYZ"><span class="type">GwyXYZ</span></a> *points</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>);</pre>
+<p>Puts back values from a flat array to an entire data surface.</p>
+<p>If you do not have an array of <a href="../libgwyddion-Math.html#GwyXYZ"><span class="type">GwyXYZ</span></a> and want to fill the data sequentially, use <a class="link" href="GwySurface.html#gwy-surface-resize" title="gwy_surface_resize ()"><code class="function">gwy_surface_resize()</code></a> and
+<a class="link" href="GwySurface.html#gwy-surface-get-data" title="gwy_surface_get_data ()"><code class="function">gwy_surface_get_data()</code></a>.</p>
+<p>See <a class="link" href="GwySurface.html#gwy-surface-get-data-full" title="gwy_surface_get_data_full ()"><code class="function">gwy_surface_get_data_full()</code></a> for a discussion.</p>
+<div class="refsect3">
+<a name="gwy-surface-set-data-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>points</p></td>
+<td class="parameter_description"><p>Data points to copy to the surface.  They replace whatever points are in <em class="parameter"><code>surface</code></em>
+now.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The number of points in <em class="parameter"><code>data</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-xy-is-compatible"></a><h3>gwy_surface_xy_is_compatible ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_surface_xy_is_compatible (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>,
+                              <em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *othersurface</code></em>);</pre>
+<p>Checks whether the XY positions of two surfaces are compatible.</p>
+<p>Compatible XY positions mean the XY units are the same and the points are the same.  Two surfaces that have the
+same set of XY points but in different orders are <span class="emphasis"><em>not</em></span> considered compatible.  This is because
+the points at the same index in <em class="parameter"><code>data</code></em>
+ are different and thus calculations involving data from the two surfaces are
+impossible.  It is necessary to match the points order in the two surfaces to make this possible.</p>
+<p>This information is cached.</p>
+<div class="refsect3">
+<a name="gwy-surface-xy-is-compatible.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>othersurface</p></td>
+<td class="parameter_description"><p>Another surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-surface-xy-is-compatible.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the surfaces are XY-position compatible, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if they are not.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-reduce-points"></a><h3>gwy_surface_reduce_points ()</h3>
+<pre class="programlisting"><a class="link" href="GwySurface.html" title="GwySurface"><span class="returnvalue">GwySurface</span></a> *
+gwy_surface_reduce_points (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> npoints</code></em>);</pre>
+<p>Creates a similar surface with smaller number of points.</p>
+<p>The functions attempts to choose points from the original surface to cover its full area, even though points from
+dense regions are still more likely to be found in the result than points from sparse regions.  As the main purpose
+to enable quick rough operations that may take long time with the full surface, the focus is on speed not fidelity.</p>
+<p>The function may employ random selection and thus be be non-deterministic.</p>
+<div class="refsect3">
+<a name="gwy-surface-reduce-points.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>npoints</p></td>
+<td class="parameter_description"><p>Requested number of points in the reduced surface.  If it is not smaller than the number of points in
+<em class="parameter"><code>surface</code></em>
+then the function behaves like <a class="link" href="GwySurface.html#gwy-surface-duplicate" title="gwy_surface_duplicate()"><code class="function">gwy_surface_duplicate()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-surface-reduce-points.returns"></a><h4>Returns</h4>
+<p> A newly created <a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> with reduced number of points.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-48.html#api-index-2.48">2.48</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-surface-resize"></a><h3>gwy_surface_resize ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_surface_resize (<em class="parameter"><code><a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *surface</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> npoints</code></em>);</pre>
+<p>Changes the number of points in a surface.</p>
+<p>If the number of points decreases then the first <em class="parameter"><code>npoints</code></em>
+ points will be kept.  If the number of points increases
+the new points will be uninitialised.  Although usually you would overwrite all the points after using this
+function.</p>
+<p>Use <a class="link" href="GwySurface.html#gwy-surface-set-data-full" title="gwy_surface_set_data_full ()"><code class="function">gwy_surface_set_data_full()</code></a> if you already have an array of <a href="../libgwyddion-Math.html#GwyXYZ"><span class="type">GwyXYZ</span></a> to fill the surface data with.</p>
+<div class="refsect3">
+<a name="gwy-surface-resize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>npoints</p></td>
+<td class="parameter_description"><p>New number of points in the surface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-61.html#api-index-2.61">2.61</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwySurface.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwySurface-struct"></a><h3>struct GwySurface</h3>
+<pre class="programlisting">struct GwySurface {
+    guint n;
+    GwyXYZ *data;
+};
+</pre>
+<p>Object representing surface data.</p>
+<p>The <a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> struct contains some public fields that can be directly accessed for reading.  To set them, you
+must use the <a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> methods.</p>
+<div class="refsect3">
+<a name="GwySurface.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GwySurface-struct.n"></a>n</code></em>;</p></td>
+<td class="struct_member_description"><p>Number of points.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="../libgwyddion-Math.html#GwyXYZ"><span class="type">GwyXYZ</span></a> *<em class="structfield"><code><a name="GwySurface-struct.data"></a>data</code></em>;</p></td>
+<td class="struct_member_description"><p>Surface data.  See the introductory section for details.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwySurfaceClass"></a><h3>struct GwySurfaceClass</h3>
+<pre class="programlisting">struct GwySurfaceClass {
+    GObjectClass g_object_class;
+
+    void (*data_changed)(GwySurface *surface);
+};
+</pre>
+<p>Class of surfaces.</p>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwySurface.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GwySurface-data-changed"></a><h3>The <code class="literal">“data-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> *gwysurface,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)</pre>
+<p>The ::data-changed signal is never emitted by surface itself.  It is intended as a means to notify others data
+field users they should update themselves.</p>
+<div class="refsect3">
+<a name="GwySurface-data-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwysurface</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwySurface.html" title="GwySurface"><span class="type">GwySurface</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

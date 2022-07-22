@@ -1,0 +1,1453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyShapeFitPreset: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="libgwyprocess-GwyPeaks.html" title="GwyPeaks">
+<link rel="next" href="libgwyprocess-GwySpline.html" title="GwySpline">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyShapeFitPreset.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyShapeFitPreset.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyprocess-GwyPeaks.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyprocess-GwySpline.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyShapeFitPreset"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyShapeFitPreset.top_of_page"></a>GwyShapeFitPreset</span></h2>
+<p>GwyShapeFitPreset — 3D geometrical shape fitting functions</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyShapeFitPreset.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-needs-same-units" title="gwy_shape_fit_preset_needs_same_units ()">gwy_shape_fit_preset_needs_same_units</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-nparams" title="gwy_shape_fit_preset_get_nparams ()">gwy_shape_fit_preset_get_nparams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-param-name" title="gwy_shape_fit_preset_get_param_name ()">gwy_shape_fit_preset_get_param_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-param-description" title="gwy_shape_fit_preset_get_param_description ()">gwy_shape_fit_preset_get_param_description</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../libgwyddion-gwyddionenums.html#GwyNLFitParamFlags"><span class="returnvalue">GwyNLFitParamFlags</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-param-flags" title="gwy_shape_fit_preset_get_param_flags ()">gwy_shape_fit_preset_get_param_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-param-units" title="gwy_shape_fit_preset_get_param_units ()">gwy_shape_fit_preset_get_param_units</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-param-power-xy" title="gwy_shape_fit_preset_get_param_power_xy ()">gwy_shape_fit_preset_get_param_power_xy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-param-power-z" title="gwy_shape_fit_preset_get_param_power_z ()">gwy_shape_fit_preset_get_param_power_z</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-nsecondary" title="gwy_shape_fit_preset_get_nsecondary ()">gwy_shape_fit_preset_get_nsecondary</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-secondary-name" title="gwy_shape_fit_preset_get_secondary_name ()">gwy_shape_fit_preset_get_secondary_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-secondary-description" title="gwy_shape_fit_preset_get_secondary_description ()">gwy_shape_fit_preset_get_secondary_description</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../libgwyddion-gwyddionenums.html#GwyNLFitParamFlags"><span class="returnvalue">GwyNLFitParamFlags</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-secondary-flags" title="gwy_shape_fit_preset_get_secondary_flags ()">gwy_shape_fit_preset_get_secondary_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-secondary-value" title="gwy_shape_fit_preset_get_secondary_value ()">gwy_shape_fit_preset_get_secondary_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-secondary-error" title="gwy_shape_fit_preset_get_secondary_error ()">gwy_shape_fit_preset_get_secondary_error</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-secondary-units" title="gwy_shape_fit_preset_get_secondary_units ()">gwy_shape_fit_preset_get_secondary_units</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-secondary-power-xy" title="gwy_shape_fit_preset_get_secondary_power_xy ()">gwy_shape_fit_preset_get_secondary_power_xy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-secondary-power-z" title="gwy_shape_fit_preset_get_secondary_power_z ()">gwy_shape_fit_preset_get_secondary_power_z</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-setup" title="gwy_shape_fit_preset_setup ()">gwy_shape_fit_preset_setup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-guess" title="gwy_shape_fit_preset_guess ()">gwy_shape_fit_preset_guess</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-value" title="gwy_shape_fit_preset_get_value ()">gwy_shape_fit_preset_get_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-calculate-z" title="gwy_shape_fit_preset_calculate_z ()">gwy_shape_fit_preset_calculate_z</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-calculate-xyz" title="gwy_shape_fit_preset_calculate_xyz ()">gwy_shape_fit_preset_calculate_xyz</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../libgwyddion-GwyNLFitter.html#GwyNLFitter"><span class="returnvalue">GwyNLFitter</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-create-fitter" title="gwy_shape_fit_preset_create_fitter ()">gwy_shape_fit_preset_create_fitter</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../libgwyddion-GwyNLFitter.html#GwyNLFitter"><span class="returnvalue">GwyNLFitter</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-fit" title="gwy_shape_fit_preset_fit ()">gwy_shape_fit_preset_fit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../libgwyddion-GwyNLFitter.html#GwyNLFitter"><span class="returnvalue">GwyNLFitter</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-quick-fit" title="gwy_shape_fit_preset_quick_fit ()">gwy_shape_fit_preset_quick_fit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwyInventory.html#GwyInventory-struct"><span class="returnvalue">GwyInventory</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-presets" title="gwy_shape_fit_presets ()">gwy_shape_fit_presets</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyShapeFitPreset.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyShapeFitPreset.html#GwyShapeFitPreset-struct" title="struct GwyShapeFitPreset">GwyShapeFitPreset</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyShapeFitPreset.html#GwyShapeFitPresetClass" title="struct GwyShapeFitPresetClass">GwyShapeFitPresetClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyShapeFitPreset.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="../GwyResource.html#GwyResource-struct">GwyResource</a>
+        <span class="lineart">╰──</span> GwyShapeFitPreset
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyShapeFitPreset.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyShapeFitPreset.description"></a><h2>Description</h2>
+<a href="../libgwyddion-GwyNLFitter.html#GwyNLFitter">Non-linear fitter</a> 3D geometrical shape presets are predefined fitting functions
+<p>that can be used to determine the parameters of various features in images and XYZ data.</p>
+<p>As of version 2.47 the defined functions include:</p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td><code class="literal">"Grating (simple)"</code></td></tr>
+<tr><td><code class="literal">"Grating (3-level)"</code></td></tr>
+<tr><td><code class="literal">"Holes"</code></td></tr>
+<tr><td><code class="literal">"Sphere"</code></td></tr>
+<tr><td><code class="literal">"Cylinder (lying)"</code></td></tr>
+<tr><td><code class="literal">"Gaussian"</code></td></tr>
+<tr><td><code class="literal">"Lorentzian"</code></td></tr>
+<tr><td><code class="literal">"Pyramid (diamond)"</code></td></tr>
+<tr><td><code class="literal">"Parabolic bump"</code></td></tr>
+<tr><td><code class="literal">"Ring"</code></td></tr>
+</table>
+<p>Since version 2.53 they also include:</p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td><code class="literal">"Cone"</code></td></tr>
+<tr><td><code class="literal">"Plane"</code></td></tr>
+<tr><td><code class="literal">"Pyramid (3-sided)"</code></td></tr>
+<tr><td><code class="literal">"Step (one-sided)"</code></td></tr>
+<tr><td><code class="literal">"Step (two-sided)"</code></td></tr>
+</table>
+<p>Since version 2.54 they also include:</p>
+<table border="0" summary="Simple list" class="simplelist"><tr><td><code class="literal">"Cylinder"</code></td></tr></table>
+<p>Since version 2.56 they also include:</p>
+<table border="0" summary="Simple list" class="simplelist"><tr><td><code class="literal">"Half-sphere"</code></td></tr></table>
+<p>Since version 2.57 they also include:</p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td><code class="literal">"Smooth cone"</code></td></tr>
+<tr><td><code class="literal">"Smooth pyramid"</code></td></tr>
+<tr><td><code class="literal">"Smooth pyramid (3-sided)"</code></td></tr>
+</table>
+<p>Since version 2.59 they also include:</p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td><code class="literal">"Exponential"</code></td></tr>
+<tr><td><code class="literal">"Lunette"</code></td></tr>
+</table>
+<p>Since version 2.61 they also include:</p>
+<table border="0" summary="Simple list" class="simplelist"><tr><td><code class="literal">"Pyramid (rectangle)"</code></td></tr></table>
+</div>
+<div class="refsect1">
+<a name="GwyShapeFitPreset.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-needs-same-units"></a><h3>gwy_shape_fit_preset_needs_same_units ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_shape_fit_preset_needs_same_units (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>);</pre>
+<p>Reports if a 3D geometrical shape fitter preset requires the same lateral and value units.</p>
+<p>For instance, fitting a sphere is meaningless if the horizontal and vertical radii would be different physical
+quantities.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-needs-same-units.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-needs-same-units.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the function requires the same lateral and value units.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-get-nparams"></a><h3>gwy_shape_fit_preset_get_nparams ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gwy_shape_fit_preset_get_nparams (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>);</pre>
+<p>Reports the number of parameters of a 3D geometrical shape fitter preset.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-nparams.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-nparams.returns"></a><h4>Returns</h4>
+<p> The number of function parameters.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-get-param-name"></a><h3>gwy_shape_fit_preset_get_param_name ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_shape_fit_preset_get_param_name (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> i</code></em>);</pre>
+<p>Gets the name of a fitting parameter of a 3D geometrical shape fitter preset.</p>
+<p>The name may contain Pango markup.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-param-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Parameter number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-param-name.returns"></a><h4>Returns</h4>
+<p> The name of the <em class="parameter"><code>i</code></em>
+-th parameter.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-get-param-description"></a><h3>gwy_shape_fit_preset_get_param_description ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_shape_fit_preset_get_param_description
+                               (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> i</code></em>);</pre>
+<p>Gets the description of a fitting parameter of a 3D geometrical shape fitter preset.</p>
+<p>The description may contain Pango markup.  It may also be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the parameter is currently undescribed.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-param-description.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Parameter number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-param-description.returns"></a><h4>Returns</h4>
+<p> The description of the <em class="parameter"><code>i</code></em>
+-th parameter, possibly <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-61.html#api-index-2.61">2.61</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-get-param-flags"></a><h3>gwy_shape_fit_preset_get_param_flags ()</h3>
+<pre class="programlisting"><a href="../libgwyddion-gwyddionenums.html#GwyNLFitParamFlags"><span class="returnvalue">GwyNLFitParamFlags</span></a>
+gwy_shape_fit_preset_get_param_flags (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> i</code></em>);</pre>
+<p>Gets the properties of a fitting parameter of a 3D geometrical shape fitter preset.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-param-flags.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Parameter number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-param-flags.returns"></a><h4>Returns</h4>
+<p> The flags of the <em class="parameter"><code>i</code></em>
+-th parameter.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-get-param-units"></a><h3>gwy_shape_fit_preset_get_param_units ()</h3>
+<pre class="programlisting"><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_shape_fit_preset_get_param_units (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> i</code></em>,
+                                      <em class="parameter"><code><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *siunit_xy</code></em>,
+                                      <em class="parameter"><code><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *siunit_z</code></em>);</pre>
+<p>Derives the SI unit of a fitting parameter from the units of abscissa and ordinate.</p>
+<p>Note that angle parameters are by default in radians and thus unitless. If you want to convert them to degrees for
+presentation to the user you must do it explicitly.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-param-units.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Parameter number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>siunit_xy</p></td>
+<td class="parameter_description"><p>SI unit of lateral coordinates.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>siunit_z</p></td>
+<td class="parameter_description"><p>SI unit of values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-param-units.returns"></a><h4>Returns</h4>
+<p> A newly created <a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> with the units of the <em class="parameter"><code>i</code></em>
+-th parameter.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-get-param-power-xy"></a><h3>gwy_shape_fit_preset_get_param_power_xy ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_shape_fit_preset_get_param_power_xy
+                               (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> i</code></em>);</pre>
+<p>Gets the power of abscissa units in a shape fitting parameter.</p>
+<p>Usually it is easier to let <a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-param-units" title="gwy_shape_fit_preset_get_param_units ()"><code class="function">gwy_shape_fit_preset_get_param_units()</code></a> derive the parameter units.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-param-power-xy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Parameter number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-param-power-xy.returns"></a><h4>Returns</h4>
+<p> The power of abscissa in the parameter.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-get-param-power-z"></a><h3>gwy_shape_fit_preset_get_param_power_z ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_shape_fit_preset_get_param_power_z
+                               (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> i</code></em>);</pre>
+<p>Gets the power of ordinate units in a shape fitting parameter.</p>
+<p>Usually it is easier to let <a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-param-units" title="gwy_shape_fit_preset_get_param_units ()"><code class="function">gwy_shape_fit_preset_get_param_units()</code></a> derive the parameter units.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-param-power-z.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Parameter number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-param-power-z.returns"></a><h4>Returns</h4>
+<p> The power of ordinate in the parameter.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-get-nsecondary"></a><h3>gwy_shape_fit_preset_get_nsecondary ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gwy_shape_fit_preset_get_nsecondary (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>);</pre>
+<p>Reports the number of secondary (derived) quantities of a 3D geometrical shape fitter preset.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-nsecondary.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-nsecondary.returns"></a><h4>Returns</h4>
+<p> The number of secondary quantities.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-get-secondary-name"></a><h3>gwy_shape_fit_preset_get_secondary_name ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_shape_fit_preset_get_secondary_name
+                               (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> i</code></em>);</pre>
+<p>Gets the name of a secondary (derived) quantity of a 3D geometrical shape fitter preset.</p>
+<p>The name may contain Pango markup.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-secondary-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Secondary quantity number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-secondary-name.returns"></a><h4>Returns</h4>
+<p> The name of the <em class="parameter"><code>i</code></em>
+-th secondary quantity.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-get-secondary-description"></a><h3>gwy_shape_fit_preset_get_secondary_description ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_shape_fit_preset_get_secondary_description
+                               (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> i</code></em>);</pre>
+<p>Gets the description of a secondary quantity of a 3D geometrical shape fitter preset.</p>
+<p>The description may contain Pango markup.  It may also be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the quantity is currently undescribed.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-secondary-description.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Secondary quantity number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-secondary-description.returns"></a><h4>Returns</h4>
+<p> The description of the <em class="parameter"><code>i</code></em>
+-th secondary quantity, possibly <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-61.html#api-index-2.61">2.61</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-get-secondary-flags"></a><h3>gwy_shape_fit_preset_get_secondary_flags ()</h3>
+<pre class="programlisting"><a href="../libgwyddion-gwyddionenums.html#GwyNLFitParamFlags"><span class="returnvalue">GwyNLFitParamFlags</span></a>
+gwy_shape_fit_preset_get_secondary_flags
+                               (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> i</code></em>);</pre>
+<p>Gets the properties of a secondary (derived) quantity of a 3D geometrical shape fitter preset.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-secondary-flags.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Secondary quantity number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-secondary-flags.returns"></a><h4>Returns</h4>
+<p> The flags of the <em class="parameter"><code>i</code></em>
+-th secondary quantity.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-get-secondary-value"></a><h3>gwy_shape_fit_preset_get_secondary_value ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_shape_fit_preset_get_secondary_value
+                               (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> i</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *param</code></em>);</pre>
+<p>Calculates the value of a secondary (derived) quantity of a 3D geometrical shape fitter preset.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-secondary-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Secondary quantity number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>param</p></td>
+<td class="parameter_description"><p>Values of fitting parameters for function <em class="parameter"><code>preset</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-secondary-value.returns"></a><h4>Returns</h4>
+<p> The value of the <em class="parameter"><code>i</code></em>
+-th secondary quantity.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-get-secondary-error"></a><h3>gwy_shape_fit_preset_get_secondary_error ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_shape_fit_preset_get_secondary_error
+                               (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> i</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *param</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *error</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *correl</code></em>);</pre>
+<p>Calculates the error of a secondary (derived) quantity of a 3D geometrical shape fitter preset.</p>
+<p>The error is calculated by numerical differentiation of the function and applying the law of error propagation.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-secondary-error.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Secondary quantity number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>param</p></td>
+<td class="parameter_description"><p>Values of fitting parameters for function <em class="parameter"><code>preset</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Values of errors of fitting parameters for function <em class="parameter"><code>preset</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>correl</p></td>
+<td class="parameter_description"><p>Parameter correlation matrix for function <em class="parameter"><code>preset</code></em>
+(passed as lower triangular matrix).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-secondary-error.returns"></a><h4>Returns</h4>
+<p> The error of the <em class="parameter"><code>i</code></em>
+-th secondary quantity.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-get-secondary-units"></a><h3>gwy_shape_fit_preset_get_secondary_units ()</h3>
+<pre class="programlisting"><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_shape_fit_preset_get_secondary_units
+                               (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> i</code></em>,
+                                <em class="parameter"><code><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *siunit_xy</code></em>,
+                                <em class="parameter"><code><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *siunit_z</code></em>);</pre>
+<p>Derives the SI unit of a secondary (derived) quantity from the units of abscissa and ordinate.</p>
+<p>Note that angle parameters are by default in radians and thus unitless. If you want to convert them to degrees for
+presentation to the user you must do it explicitly.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-secondary-units.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Secondary quantity number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>siunit_xy</p></td>
+<td class="parameter_description"><p>SI unit of lateral coordinates.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>siunit_z</p></td>
+<td class="parameter_description"><p>SI unit of values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-secondary-units.returns"></a><h4>Returns</h4>
+<p> A newly created <a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> with the units of the <em class="parameter"><code>i</code></em>
+-th secondary quantity.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-get-secondary-power-xy"></a><h3>gwy_shape_fit_preset_get_secondary_power_xy ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_shape_fit_preset_get_secondary_power_xy
+                               (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> i</code></em>);</pre>
+<p>Gets the power of abscissa units in a shape fitting secondary (derived) quantity.</p>
+<p>Usually it is easier to let <a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-secondary-units" title="gwy_shape_fit_preset_get_secondary_units ()"><code class="function">gwy_shape_fit_preset_get_secondary_units()</code></a> derive the quantity units.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-secondary-power-xy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Secondary quantity number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-secondary-power-xy.returns"></a><h4>Returns</h4>
+<p> The power of abscissa in the secondary quantity.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-get-secondary-power-z"></a><h3>gwy_shape_fit_preset_get_secondary_power_z ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_shape_fit_preset_get_secondary_power_z
+                               (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> i</code></em>);</pre>
+<p>Gets the power of ordinate units in a shape fitting secondary (derived) quantity.</p>
+<p>Usually it is easier to let <a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-secondary-units" title="gwy_shape_fit_preset_get_secondary_units ()"><code class="function">gwy_shape_fit_preset_get_secondary_units()</code></a> derive the quantity units.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-secondary-power-z.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Secondary quantity number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-secondary-power-z.returns"></a><h4>Returns</h4>
+<p> The power of ordinate in the secondary quantity.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-setup"></a><h3>gwy_shape_fit_preset_setup ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_shape_fit_preset_setup (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>,
+                            <em class="parameter"><code>const <a href="../libgwyddion-Math.html#GwyXYZ"><span class="type">GwyXYZ</span></a> *points</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *params</code></em>);</pre>
+<p>Initialises parameter values of a 3D geometrical shape fitter preset.</p>
+<p>The parameters are quickly set to reasonable values that roughly correspond to the ranges of the data points.  They
+may serve as starting values for manual experimentation but often will not be good enough as initial parameter
+estimates for the fit.  See also <a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-guess" title="gwy_shape_fit_preset_guess ()"><code class="function">gwy_shape_fit_preset_guess()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-setup.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>points</p></td>
+<td class="parameter_description"><p>Array of XYZ data to fit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of data points.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>The array to fill with initialised parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-guess"></a><h3>gwy_shape_fit_preset_guess ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_shape_fit_preset_guess (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>,
+                            <em class="parameter"><code>const <a href="../libgwyddion-Math.html#GwyXYZ"><span class="type">GwyXYZ</span></a> *points</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *params</code></em>);</pre>
+<p>Estimates parameter values of a 3D geometrical shape fitter preset.</p>
+<p>This function tries to find initial parameter estimates that are good enough for the fit the converge.  Of course,
+it is not guaranteed it always succeeds.  For some shapes it can be noticeably slower than
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-setup" title="gwy_shape_fit_preset_setup ()"><code class="function">gwy_shape_fit_preset_setup()</code></a>.</p>
+<p>The estimate may not be deterministic.  For large point sets some estimates are carried out using a randomly
+selected subset of points.</p>
+<p>If the function cannot find how the data points could correspond to the preset geometrical shape it return <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.
+Parameter values are still set. However, in this case they may be no better than from <a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-setup" title="gwy_shape_fit_preset_setup ()"><code class="function">gwy_shape_fit_preset_setup()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-guess.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>points</p></td>
+<td class="parameter_description"><p>Array of XYZ data to fit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of data points.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>The array to fill with initialised parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-guess.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the estimation succeeded, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it failed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-get-value"></a><h3>gwy_shape_fit_preset_get_value ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_shape_fit_preset_get_value (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> y</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *params</code></em>);</pre>
+<p>Calculates the value of a 3D geometrical shape fitter preset in a single point.</p>
+<p>If you want multiple values you should use either <a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-calculate-z" title="gwy_shape_fit_preset_calculate_z ()"><code class="function">gwy_shape_fit_preset_calculate_z()</code></a> or
+<a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-calculate-xyz" title="gwy_shape_fit_preset_calculate_xyz ()"><code class="function">gwy_shape_fit_preset_calculate_xyz()</code></a> instead of calling this function in a cycle.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>X-coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Y-coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>Fitting parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-get-value.returns"></a><h4>Returns</h4>
+<p> The calculated function value in (<em class="parameter"><code>x</code></em>
+,<em class="parameter"><code>y</code></em>
+).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-calculate-z"></a><h3>gwy_shape_fit_preset_calculate_z ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_shape_fit_preset_calculate_z (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>,
+                                  <em class="parameter"><code>const <a href="../libgwyddion-Math.html#GwyXYZ"><span class="type">GwyXYZ</span></a> *points</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *z</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                                  <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *params</code></em>);</pre>
+<p>Calculates values of a 3D geometrical shape fitter preset in an array of points.</p>
+<p>The z-coordinates in <em class="parameter"><code>points</code></em>
+ are ignored.  Only the lateral coordinates are used.</p>
+<p>See also <a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-calculate-xyz" title="gwy_shape_fit_preset_calculate_xyz ()"><code class="function">gwy_shape_fit_preset_calculate_xyz()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-calculate-z.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>points</p></td>
+<td class="parameter_description"><p>Array of <em class="parameter"><code>n</code></em>
+XYZ data defining the lateral coordinates.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>z</p></td>
+<td class="parameter_description"><p>Array length <em class="parameter"><code>n</code></em>
+to fill with calculated values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of items in <em class="parameter"><code>points</code></em>
+and <em class="parameter"><code>z</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>Fitting parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-calculate-xyz"></a><h3>gwy_shape_fit_preset_calculate_xyz ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_shape_fit_preset_calculate_xyz (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>,
+                                    <em class="parameter"><code><a href="../libgwyddion-Math.html#GwyXYZ"><span class="type">GwyXYZ</span></a> *points</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *params</code></em>);</pre>
+<p>Calculates values of a 3D geometrical shape fitter preset in an array of points.</p>
+<p>See also <a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-calculate-z" title="gwy_shape_fit_preset_calculate_z ()"><code class="function">gwy_shape_fit_preset_calculate_z()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-calculate-xyz.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>points</p></td>
+<td class="parameter_description"><p>Array of <em class="parameter"><code>n</code></em>
+XYZ data defining the lateral coordinates.  The z-coordinates will be filled with the
+calculated values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of items in <em class="parameter"><code>points</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>Fitting parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-create-fitter"></a><h3>gwy_shape_fit_preset_create_fitter ()</h3>
+<pre class="programlisting"><a href="../libgwyddion-GwyNLFitter.html#GwyNLFitter"><span class="returnvalue">GwyNLFitter</span></a> *
+gwy_shape_fit_preset_create_fitter (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>);</pre>
+<p>Creates a non-linear least-squares fitter for a 3D geometrical shape.</p>
+<p>The created fitter will be of the opaque indexed data type, as created with <a href="../libgwyddion-GwyNLFitter.html#gwy-math-nlfit-new-idx"><code class="function">gwy_math_nlfit_new_idx()</code></a>.</p>
+<p>If you do not need to modify the fitter settings you can use <a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-fit" title="gwy_shape_fit_preset_fit ()"><code class="function">gwy_shape_fit_preset_fit()</code></a> directly with <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> fitter.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-create-fitter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-create-fitter.returns"></a><h4>Returns</h4>
+<p> A newly created fitter for <em class="parameter"><code>preset</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-fit"></a><h3>gwy_shape_fit_preset_fit ()</h3>
+<pre class="programlisting"><a href="../libgwyddion-GwyNLFitter.html#GwyNLFitter"><span class="returnvalue">GwyNLFitter</span></a> *
+gwy_shape_fit_preset_fit (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>,
+                          <em class="parameter"><code><a href="../libgwyddion-GwyNLFitter.html#GwyNLFitter"><span class="type">GwyNLFitter</span></a> *fitter</code></em>,
+                          <em class="parameter"><code>const <a href="../libgwyddion-Math.html#GwyXYZ"><span class="type">GwyXYZ</span></a> *points</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *params</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *fixed_param</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *rss</code></em>);</pre>
+<p>Performs a non-linear least-squares fit with a 3D geometrical shape fitter.</p>
+<p>If you pass <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> <em class="parameter"><code>fitter</code></em>
+ the function creates one for you and immediately performs the fit.  If you want to modify
+the fitter settings beforehand or set callback functions create it using <a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-create-fitter" title="gwy_shape_fit_preset_create_fitter ()"><code class="function">gwy_shape_fit_preset_create_fitter()</code></a> and
+pass to this function.  The fitter must be created for the same preset.</p>
+<p>Additional quantities such as parameter errors or the correlation matrix can be obtained from the fitter. See
+<a href="../libgwyddion-GwyNLFitter.html#gwy-math-nlfit-fit-full"><code class="function">gwy_math_nlfit_fit_full()</code></a> for details.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-fit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fitter</p></td>
+<td class="parameter_description"><p>A Marquardt-Levenberg nonlinear fitter already initialized for <em class="parameter"><code>preset</code></em>
+'s function, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>points</p></td>
+<td class="parameter_description"><p>Array of <em class="parameter"><code>n</code></em>
+XYZ data defining the lateral coordinates and values to fit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of items in <em class="parameter"><code>points</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>Fitting parameters filled with initial estimates (the fitting starts from the provided values).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fixed_param</p></td>
+<td class="parameter_description"><p>Which parameters should be treated as fixed (set corresponding element to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> for them).  May be
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if all parameters are free.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rss</p></td>
+<td class="parameter_description"><p>Location to store the residual sum of squares, as returned by <a href="../libgwyddion-GwyNLFitter.html#gwy-math-nlfit-fit-idx"><code class="function">gwy_math_nlfit_fit_idx()</code></a>, may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-fit.returns"></a><h4>Returns</h4>
+<p> Either <em class="parameter"><code>fitter</code></em>
+itself, or a newly created fitter if it was <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-preset-quick-fit"></a><h3>gwy_shape_fit_preset_quick_fit ()</h3>
+<pre class="programlisting"><a href="../libgwyddion-GwyNLFitter.html#GwyNLFitter"><span class="returnvalue">GwyNLFitter</span></a> *
+gwy_shape_fit_preset_quick_fit (<em class="parameter"><code><a class="link" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset"><span class="type">GwyShapeFitPreset</span></a> *preset</code></em>,
+                                <em class="parameter"><code><a href="../libgwyddion-GwyNLFitter.html#GwyNLFitter"><span class="type">GwyNLFitter</span></a> *fitter</code></em>,
+                                <em class="parameter"><code>const <a href="../libgwyddion-Math.html#GwyXYZ"><span class="type">GwyXYZ</span></a> *points</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *params</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *fixed_param</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *rss</code></em>);</pre>
+<p>Performs a rough non-linear least-squares fit with a 3D geometrical shape fitter.</p>
+<p>See <a class="link" href="GwyShapeFitPreset.html#gwy-shape-fit-preset-fit" title="gwy_shape_fit_preset_fit ()"><code class="function">gwy_shape_fit_preset_fit()</code></a> for discussion.  This functions differs by using a reduced number of points to
+perform the fit (unless the input set is small) and may also set fitter parameters to make the least squares method
+terminate faster.  The input points are reduced the same way as in <a class="link" href="GwySurface.html#gwy-surface-reduce-points" title="gwy_surface_reduce_points ()"><code class="function">gwy_surface_reduce_points()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-quick-fit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preset</p></td>
+<td class="parameter_description"><p>A 3D geometrical shape fitting function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fitter</p></td>
+<td class="parameter_description"><p>A Marquardt-Levenberg nonlinear fitter already initialized for <em class="parameter"><code>preset</code></em>
+'s function, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>points</p></td>
+<td class="parameter_description"><p>Array of <em class="parameter"><code>n</code></em>
+XYZ data defining the lateral coordinates and values to fit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of items in <em class="parameter"><code>points</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>Fitting parameters filled with initial estimates (the fitting starts from the provided values).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fixed_param</p></td>
+<td class="parameter_description"><p>Which parameters should be treated as fixed (set corresponding element to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> for them).  May be
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if all parameters are free.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rss</p></td>
+<td class="parameter_description"><p>Location to store the residual sum of squares, as returned by <a href="../libgwyddion-GwyNLFitter.html#gwy-math-nlfit-fit-idx"><code class="function">gwy_math_nlfit_fit_idx()</code></a>, may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-shape-fit-preset-quick-fit.returns"></a><h4>Returns</h4>
+<p> Either <em class="parameter"><code>fitter</code></em>
+itself, or a newly created fitter if it was <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-48.html#api-index-2.48">2.48</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-shape-fit-presets"></a><h3>gwy_shape_fit_presets ()</h3>
+<pre class="programlisting"><a href="../GwyInventory.html#GwyInventory-struct"><span class="returnvalue">GwyInventory</span></a> *
+gwy_shape_fit_presets (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Gets inventory with all the 3D geometric shape fitting presets.</p>
+<div class="refsect3">
+<a name="gwy-shape-fit-presets.returns"></a><h4>Returns</h4>
+<p> 3D geometric shape fitting preset inventory.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyShapeFitPreset.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyShapeFitPreset-struct"></a><h3>struct GwyShapeFitPreset</h3>
+<pre class="programlisting">struct GwyShapeFitPreset;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyShapeFitPresetClass"></a><h3>struct GwyShapeFitPresetClass</h3>
+<pre class="programlisting">struct GwyShapeFitPresetClass {
+    GwyResourceClass parent_class;
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyShapeFitPreset.see-also"></a><h2>See Also</h2>
+<p><a href="../libgwyddion-GwyNLFitter.html#GwyNLFitter"><span class="type">GwyNLFitter</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

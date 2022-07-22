@@ -1,0 +1,1319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>module utils: Gwyddion Application Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="prev" href="GwyPlainTool.html" title="GwyPlainTool">
+<link rel="next" href="libgwyapp-file-module-utils.html" title="file module utils">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyapp-module-utils.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="GwyPlainTool.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyapp-file-module-utils.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyapp-module-utils"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyapp-module-utils.top_of_page"></a>module utils</span></h2>
+<p>module utils — Module utility functions</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyapp-module-utils.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libgwyapp-module-utils.html#GwySaveAuxiliaryCreate" title="GwySaveAuxiliaryCreate ()">*GwySaveAuxiliaryCreate</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libgwyapp-module-utils.html#GwySaveAuxiliaryDestroy" title="GwySaveAuxiliaryDestroy ()">*GwySaveAuxiliaryDestroy</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-module-utils.html#gwy-save-auxiliary-data" title="gwy_save_auxiliary_data ()">gwy_save_auxiliary_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-module-utils.html#gwy-save-auxiliary-with-callback" title="gwy_save_auxiliary_with_callback ()">gwy_save_auxiliary_with_callback</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-module-utils.html#gwy-module-data-load" title="gwy_module_data_load ()">gwy_module_data_load</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-module-utils.html#gwy-module-data-save" title="gwy_module_data_save ()">gwy_module_data_save</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">FILE</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-module-utils.html#gwy-module-data-fopen" title="gwy_module_data_fopen ()">gwy_module_data_fopen</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-module-utils.html#gwy-set-data-preview-size" title="gwy_set_data_preview_size ()">gwy_set_data_preview_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-module-utils.html#gwy-require-image-same-units" title="gwy_require_image_same_units ()">gwy_require_image_same_units</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-module-utils.html#gwy-require-square-image" title="gwy_require_square_image ()">gwy_require_square_image</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-module-utils.html#gwy-create-preview" title="gwy_create_preview ()">gwy_create_preview</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-module-utils.html#gwy-create-dialog-preview-hbox" title="gwy_create_dialog_preview_hbox ()">gwy_create_dialog_preview_hbox</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwySelection.html#GwySelection-struct"><span class="returnvalue">GwySelection</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-module-utils.html#gwy-create-preview-vector-layer" title="gwy_create_preview_vector_layer ()">gwy_create_preview_vector_layer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-module-utils.html#gwy-param-active-page-link-to-notebook" title="gwy_param_active_page_link_to_notebook ()">gwy_param_active_page_link_to_notebook</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-module-utils.html#gwy-app-add-graph-or-curves" title="gwy_app_add_graph_or_curves ()">gwy_app_add_graph_or_curves</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-module-utils.html#gwy-preview-surface-to-datafield" title="gwy_preview_surface_to_datafield ()">gwy_preview_surface_to_datafield</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-module-utils.html#gwy-app-wait-preview-data-field" title="gwy_app_wait_preview_data_field ()">gwy_app_wait_preview_data_field</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-module-utils.html#gwy-app-data-id-verify-channel" title="gwy_app_data_id_verify_channel ()">gwy_app_data_id_verify_channel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-module-utils.html#gwy-app-data-id-verify-graph" title="gwy_app_data_id_verify_graph ()">gwy_app_data_id_verify_graph</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-module-utils.html#gwy-app-data-id-verify-volume" title="gwy_app_data_id_verify_volume ()">gwy_app_data_id_verify_volume</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-module-utils.html#gwy-app-data-id-verify-xyz" title="gwy_app_data_id_verify_xyz ()">gwy_app_data_id_verify_xyz</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-module-utils.html#gwy-app-data-id-verify-curve-map" title="gwy_app_data_id_verify_curve_map ()">gwy_app_data_id_verify_curve_map</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-module-utils.html#gwy-app-data-id-verify-spectra" title="gwy_app_data_id_verify_spectra ()">gwy_app_data_id_verify_spectra</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-module-utils.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgwyapp-module-utils.html#GwyPreviewSurfaceFlags" title="enum GwyPreviewSurfaceFlags">GwyPreviewSurfaceFlags</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-module-utils.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;app/gwymoduleutils.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-module-utils.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-module-utils.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GwySaveAuxiliaryCreate"></a><h3>GwySaveAuxiliaryCreate ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+<span class="c_punctuation">(</span>*GwySaveAuxiliaryCreate<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gssize"><span class="type">gssize</span></a> *data_len</code></em>);</pre>
+<p>The type of auxiliary saved data creation function.</p>
+<div class="refsect3">
+<a name="GwySaveAuxiliaryCreate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>The data passed to <a class="link" href="libgwyapp-module-utils.html#gwy-save-auxiliary-with-callback" title="gwy_save_auxiliary_with_callback ()"><code class="function">gwy_save_auxiliary_with_callback()</code></a> as <em class="parameter"><code>user_data</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data_len</p></td>
+<td class="parameter_description"><p>The length of the returned data in bytes.  Leaving it unset has the same effect as setting it to
+a negative value.  See <a class="link" href="libgwyapp-module-utils.html#gwy-save-auxiliary-data" title="gwy_save_auxiliary_data ()"><code class="function">gwy_save_auxiliary_data()</code></a> for details.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="GwySaveAuxiliaryCreate.returns"></a><h4>Returns</h4>
+<p> The data to save.  It must not return <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-3.html#api-index-2.3">2.3</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwySaveAuxiliaryDestroy"></a><h3>GwySaveAuxiliaryDestroy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GwySaveAuxiliaryDestroy<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *data</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>The type of auxiliary saved data destruction function.</p>
+<div class="refsect3">
+<a name="GwySaveAuxiliaryDestroy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>The data returned by the corresponding <a class="link" href="libgwyapp-module-utils.html#GwySaveAuxiliaryCreate" title="GwySaveAuxiliaryCreate ()"><span class="type">GwySaveAuxiliaryCreate</span></a> function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>The data passed to <a class="link" href="libgwyapp-module-utils.html#gwy-save-auxiliary-with-callback" title="gwy_save_auxiliary_with_callback ()"><code class="function">gwy_save_auxiliary_with_callback()</code></a> as <em class="parameter"><code>user_data</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-3.html#api-index-2.3">2.3</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-save-auxiliary-data"></a><h3>gwy_save_auxiliary_data ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_save_auxiliary_data (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkWindow.html#GtkWindow-struct"><span class="type">GtkWindow</span></a> *parent</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gssize"><span class="type">gssize</span></a> data_len</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *data</code></em>);</pre>
+<p>Saves a report or other auxiliary data to a user specified file.</p>
+<p>This is actually a simple <a class="link" href="libgwyapp-module-utils.html#gwy-save-auxiliary-with-callback" title="gwy_save_auxiliary_with_callback ()"><code class="function">gwy_save_auxiliary_with_callback()</code></a> wrapper, see its description for details.</p>
+<div class="refsect3">
+<a name="gwy-save-auxiliary-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>title</p></td>
+<td class="parameter_description"><p>File chooser dialog title.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>Parent window for the file chooser dialog (may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data_len</p></td>
+<td class="parameter_description"><p>The length of <em class="parameter"><code>data</code></em>
+in bytes.  Pass -1 if <em class="parameter"><code>data</code></em>
+is text, it must be nul-terminated then and it will be
+saved in text mode (this matters if the operating system distinguishes between text and binary).
+A non-negative value causes the data to be saved as binary.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>The data to save.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-save-auxiliary-data.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the data was saved, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it was not saved for any reason.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-3.html#api-index-2.3">2.3</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-save-auxiliary-with-callback"></a><h3>gwy_save_auxiliary_with_callback ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_save_auxiliary_with_callback (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkWindow.html#GtkWindow-struct"><span class="type">GtkWindow</span></a> *parent</code></em>,
+                                  <em class="parameter"><code><a class="link" href="libgwyapp-module-utils.html#GwySaveAuxiliaryCreate" title="GwySaveAuxiliaryCreate ()"><span class="type">GwySaveAuxiliaryCreate</span></a> create</code></em>,
+                                  <em class="parameter"><code><a class="link" href="libgwyapp-module-utils.html#GwySaveAuxiliaryDestroy" title="GwySaveAuxiliaryDestroy ()"><span class="type">GwySaveAuxiliaryDestroy</span></a> destroy</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Saves a report or other auxiliary data to a user specified file.</p>
+<div class="refsect3">
+<a name="gwy-save-auxiliary-with-callback.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>title</p></td>
+<td class="parameter_description"><p>File chooser dialog title.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>Parent window for the file chooser dialog (may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>create</p></td>
+<td class="parameter_description"><p>Function to create the data (it will not be called if the user cancels the saving).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>destroy</p></td>
+<td class="parameter_description"><p>Function to destroy the data (if will be called iff <em class="parameter"><code>create</code></em>
+will be called), it may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data passed to <em class="parameter"><code>create</code></em>
+and <em class="parameter"><code>destroy</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-save-auxiliary-with-callback.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the data was saved, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it was not saved for any reason (I/O error, cancellation, overwrite
+cancellation, etc.).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-3.html#api-index-2.3">2.3</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-module-data-load"></a><h3>gwy_module_data_load ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_module_data_load (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *modname</code></em>,
+                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **contents</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *length</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Load module data file from the user directory.</p>
+<p>The function wraps <a href="/usr/share/gtk-doc/html/glib/glib-File-Utilities.html#g-file-get-contents"><code class="function">g_file_get_contents()</code></a>, forming the full file name automatically.</p>
+<p>The error can be from <a href="/usr/share/gtk-doc/html/glib/glib-File-Utilities.html#G-FILE-ERROR:CAPS"><code class="literal">G_FILE_ERROR</code></a> domain.  Usually, however, you only need the return value and consider the file
+simply not existing yet when the function fails.</p>
+<div class="refsect3">
+<a name="gwy-module-data-load.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>modname</p></td>
+<td class="parameter_description"><p>Module name (determines the subdirectory).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>Name of the file to load.  In GLib encoding, but it really should be just ASCII.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>contents</p></td>
+<td class="parameter_description"><p>Location to store the allocated file contents.  Use <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> to free it.  It is set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> when the
+file cannot be loaded.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>length</p></td>
+<td class="parameter_description"><p>Location to the length of the contents in bytes, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Location for error, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-module-data-load.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the file was loaded.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-51.html#api-index-2.51">2.51</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-module-data-save"></a><h3>gwy_module_data_save ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_module_data_save (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *modname</code></em>,
+                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *contents</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gssize"><span class="type">gssize</span></a> length</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Saves module data file to the user directory.</p>
+<p>The function wraps <a href="/usr/share/gtk-doc/html/glib/glib-File-Utilities.html#g-file-set-contents"><code class="function">g_file_set_contents()</code></a>, forming the full file name automatically and handling subdirectory
+creation.</p>
+<p>The error can be from <a href="/usr/share/gtk-doc/html/glib/glib-File-Utilities.html#G-FILE-ERROR:CAPS"><code class="literal">G_FILE_ERROR</code></a> domain.</p>
+<div class="refsect3">
+<a name="gwy-module-data-save.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>modname</p></td>
+<td class="parameter_description"><p>Module name (determines the subdirectory).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>Name of the file to save.  In GLib encoding, but it really should be just ASCII.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>contents</p></td>
+<td class="parameter_description"><p>File contents to write.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>length</p></td>
+<td class="parameter_description"><p>Length of <em class="parameter"><code>contents</code></em>
+, or -1 if it is a NUL-terminated string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Location for error, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-module-data-save.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the file was saved.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-51.html#api-index-2.51">2.51</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-module-data-fopen"></a><h3>gwy_module_data_fopen ()</h3>
+<pre class="programlisting"><span class="returnvalue">FILE</span> *
+gwy_module_data_fopen (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *modname</code></em>,
+                       <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+                       <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *mode</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Opens a module data file in the user directory.</p>
+<p>The function wraps <a href="../libgwyddion-gwyutils.html#gwy-fopen"><code class="function">gwy_fopen()</code></a>, forming the full file name automatically and handling subdirectory creation.</p>
+<p>The error can be from <a href="/usr/share/gtk-doc/html/glib/glib-File-Utilities.html#G-FILE-ERROR:CAPS"><code class="literal">G_FILE_ERROR</code></a> domain.</p>
+<div class="refsect3">
+<a name="gwy-module-data-fopen.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>modname</p></td>
+<td class="parameter_description"><p>Module name (determines the subdirectory).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>Name of the file to save.  In GLib encoding, but it really should be just ASCII.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>File open mode, as in <code class="function">fopen()</code>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Location for error, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-module-data-fopen.returns"></a><h4>Returns</h4>
+<p> A file handle if the file was opened as requested, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> on failure.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-51.html#api-index-2.51">2.51</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-set-data-preview-size"></a><h3>gwy_set_data_preview_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_set_data_preview_size (<em class="parameter"><code><a href="../GwyDataView.html#GwyDataView-struct"><span class="type">GwyDataView</span></a> *data_view</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> max_size</code></em>);</pre>
+<p>Sets up data view zoom to not exceed specified size.</p>
+<p>Before calling this function, data keys have be set, data fields and layers have to be present and physically
+square mode set in the container. Sizing of both pixel-wise square and physically square displays is performed
+correctly.</p>
+<div class="refsect3">
+<a name="gwy-set-data-preview-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view used for module preview.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_size</p></td>
+<td class="parameter_description"><p>Maximum allowed <em class="parameter"><code>data_view</code></em>
+size (width and height).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-7.html#api-index-2.7">2.7</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-require-image-same-units"></a><h3>gwy_require_image_same_units ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_require_image_same_units (<em class="parameter"><code><a href="../GwyDataField.html#GwyDataField-struct"><span class="type">GwyDataField</span></a> *field</code></em>,
+                              <em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Checks if data field has equal lateral and value units, possibly showing error message.</p>
+<p>If the data field does not have the same lateral and value units a simple error message dialog is shown for <em class="parameter"><code>data</code></em>
+
+and <em class="parameter"><code>id</code></em>
+.  This is only done if other GUI functions (like progress bars for waiting) are enabled.</p>
+<div class="refsect3">
+<a name="gwy-require-image-same-units.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>field</p></td>
+<td class="parameter_description"><p>The data field to check.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Data container with the data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>The id of <em class="parameter"><code>field</code></em>
+in <em class="parameter"><code>data</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Error message prefix, usually module function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-require-image-same-units.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the units are the same, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-require-square-image"></a><h3>gwy_require_square_image ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_require_square_image (<em class="parameter"><code><a href="../GwyDataField.html#GwyDataField-struct"><span class="type">GwyDataField</span></a> *field</code></em>,
+                          <em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Checks if data field has the same horizontal and vertical pixel dimensions, possibly showing error message.</p>
+<p>If the data field is not square a simple error message dialog is shown for <em class="parameter"><code>data</code></em>
+ and <em class="parameter"><code>id</code></em>
+.  This is only done if
+other GUI functions (like progress bars for waiting) are enabled.</p>
+<div class="refsect3">
+<a name="gwy-require-square-image.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>field</p></td>
+<td class="parameter_description"><p>The data field to check.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Data container with the data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>The id of <em class="parameter"><code>field</code></em>
+in <em class="parameter"><code>data</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Error message prefix, usually module function name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-require-square-image.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the data field is square, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-create-preview"></a><h3>gwy_create_preview ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_create_preview (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> have_mask</code></em>);</pre>
+<p>Creates and sets up a preview widget for use in modules.</p>
+<div class="refsect3">
+<a name="gwy-create-preview.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Data container with images to preview.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Data id of preview image in <em class="parameter"><code>data</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Preview size.  Prefrably one of the standard sizes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>have_mask</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the preview will have mask and should be set up so.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-create-preview.returns"></a><h4>Returns</h4>
+<p> A new data view widget with the preview.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-create-dialog-preview-hbox"></a><h3>gwy_create_dialog_preview_hbox ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_create_dialog_preview_hbox (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkDialog.html#GtkDialog-struct"><span class="type">GtkDialog</span></a> *dialog</code></em>,
+                                <em class="parameter"><code><a href="../GwyDataView.html#GwyDataView-struct"><span class="type">GwyDataView</span></a> *dataview</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> pack_end</code></em>);</pre>
+<p>Creates the typical data processing dialog hbox with a preview.</p>
+<p>The box is added to the dialog.</p>
+<div class="refsect3">
+<a name="gwy-create-dialog-preview-hbox.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dialog</p></td>
+<td class="parameter_description"><p>A data processing dialog.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dataview</p></td>
+<td class="parameter_description"><p>Preview data view, usually created by <a class="link" href="libgwyapp-module-utils.html#gwy-create-preview" title="gwy_create_preview ()"><code class="function">gwy_create_preview()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pack_end</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to pack the data view to the end; <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to pack it to the start.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-create-dialog-preview-hbox.returns"></a><h4>Returns</h4>
+<p> A new <a href="/usr/share/gtk-doc/html/gtk3/GtkBox.html#GtkBox-struct"><span class="type">GtkBox</span></a> widget.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-create-preview-vector-layer"></a><h3>gwy_create_preview_vector_layer ()</h3>
+<pre class="programlisting"><a href="../GwySelection.html#GwySelection-struct"><span class="returnvalue">GwySelection</span></a> *
+gwy_create_preview_vector_layer (<em class="parameter"><code><a href="../GwyDataView.html#GwyDataView-struct"><span class="type">GwyDataView</span></a> *dataview</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> max_objects</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> editable</code></em>);</pre>
+<p>Creates and sets up a vector layer for use in module previews.</p>
+<p>The selection's key will have the form "/0/select/lcname", where <em class="parameter"><code>lcname</code></em>
+ is the lowercase version of <em class="parameter"><code>name</code></em>
+.  You
+can query the layer using <a href="../GwyDataView.html#GwyDataView-struct"><span class="type">GwyDataView</span></a> functions.</p>
+<p>Parameters <em class="parameter"><code>max_objects</code></em>
+ and <em class="parameter"><code>editable</code></em>
+ exist for convenience.  The corresponding properties can be modified later.</p>
+<p>In typical scenarios this function is also suitable for switching vector layers in the preview.  Simply create
+a different layer and the current one will be discarded – this assumes you do not keep the old layer object around.
+Selections are kept in <em class="parameter"><code>dataview</code></em>
+'s data, so they will be automatically restored when switching back and forth.</p>
+<div class="refsect3">
+<a name="gwy-create-preview-vector-layer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dataview</p></td>
+<td class="parameter_description"><p>Preview data view, usually created by <a class="link" href="libgwyapp-module-utils.html#gwy-create-preview" title="gwy_create_preview ()"><code class="function">gwy_create_preview()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Data id of preview image in <em class="parameter"><code>dataview</code></em>
+'s data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Layer/selection type name, without the GwyLayer/GwySelection prefix.  So usually "Point", "Line" or
+"Rectangle".</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_objects</p></td>
+<td class="parameter_description"><p>Maximum number of objects in the selection.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>editable</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> for a user-editable selection, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to disable editing.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-create-preview-vector-layer.returns"></a><h4>Returns</h4>
+<p> The layer's selection.  No reference is added; use <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a> if you want to keep the selection
+around after the preview is destroyed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-61.html#api-index-2.61">2.61</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-active-page-link-to-notebook"></a><h3>gwy_param_active_page_link_to_notebook ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_active_page_link_to_notebook
+                               (<em class="parameter"><code><a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> *params</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkNotebook.html#GtkNotebook-struct"><span class="type">GtkNotebook</span></a> *notebook</code></em>);</pre>
+<p>Connects an active page parameter to a notebook.</p>
+<p>This function should be called after the notebook was fully constructed.  The active notebook page is set according
+to the parameter (clamping values that refer to non-existent pages).  Future page switches will update the
+parameter value, allowing to simply save it to settings when the module dialog is finished.</p>
+<div class="refsect3">
+<a name="gwy-param-active-page-link-to-notebook.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>A parameter value set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>notebook</p></td>
+<td class="parameter_description"><p>A notebook widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-add-graph-or-curves"></a><h3>gwy_app_add_graph_or_curves ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_app_add_graph_or_curves (<em class="parameter"><code><a href="../GwyGraphModel.html#GwyGraphModel-struct"><span class="type">GwyGraphModel</span></a> *gmodel</code></em>,
+                             <em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                             <em class="parameter"><code>const <a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="type">GwyAppDataId</span></a> *target_graph</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> colorstep</code></em>);</pre>
+<p>Puts the curves of a graph to another graph if possible, or adds the graph as new.</p>
+<p>If the units of <em class="parameter"><code>gmodel</code></em>
+ are compatible with the units of the graph identified by <em class="parameter"><code>target_graph</code></em>
+ the curves are
+copied to the target graph with <a href="../GwyGraphModel.html#gwy-graph-model-append-curves"><code class="function">gwy_graph_model_append_curves()</code></a>.</p>
+<p>In all other cases, including when <em class="parameter"><code>target_graph</code></em>
+ does not refer to any existing graph, the graph model is added to
+<em class="parameter"><code>data</code></em>
+ as a new graph.</p>
+<p>Either way, the caller usually need to release its own reference afterwards.</p>
+<p>This function is useful particularly in modules that create graphs and can be run non-interactively.</p>
+<div class="refsect3">
+<a name="gwy-app-add-graph-or-curves.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>A graph model with curves to add.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Data container where the graph would be added.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_graph</p></td>
+<td class="parameter_description"><p>Graph where curves would be added.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>colorstep</p></td>
+<td class="parameter_description"><p>Curve block size as in <a href="../GwyGraphModel.html#gwy-graph-model-append-curves"><code class="function">gwy_graph_model_append_curves()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-add-graph-or-curves.returns"></a><h4>Returns</h4>
+<p> The numerical identifier of the newly-created graph of one was created.  Value -1 is returned if curves
+were added to <em class="parameter"><code>target_graph</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-41.html#api-index-2.41">2.41</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-preview-surface-to-datafield"></a><h3>gwy_preview_surface_to_datafield ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_preview_surface_to_datafield (<em class="parameter"><code><a href="../GwySurface.html#GwySurface-struct"><span class="type">GwySurface</span></a> *surface</code></em>,
+                                  <em class="parameter"><code><a href="../GwyDataField.html#GwyDataField-struct"><span class="type">GwyDataField</span></a> *dfield</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> max_xres</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> max_yres</code></em>,
+                                  <em class="parameter"><code><a class="link" href="libgwyapp-module-utils.html#GwyPreviewSurfaceFlags" title="enum GwyPreviewSurfaceFlags"><span class="type">GwyPreviewSurfaceFlags</span></a> flags</code></em>);</pre>
+<p>Renders a preview of a XYZ data surface to a data field.</p>
+<div class="refsect3">
+<a name="gwy-preview-surface-to-datafield.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>surface</p></td>
+<td class="parameter_description"><p>A surface representing a XYZ data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dfield</p></td>
+<td class="parameter_description"><p>A data field to fill with <em class="parameter"><code>surface</code></em>
+preview.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_xres</p></td>
+<td class="parameter_description"><p>Maximum width of the preview, it must be at least 2.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_yres</p></td>
+<td class="parameter_description"><p>Maximum height of the preview, it must be at least 2.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>Flags modifying the behaviour.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-46.html#api-index-2.46">2.46</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-wait-preview-data-field"></a><h3>gwy_app_wait_preview_data_field ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_app_wait_preview_data_field (<em class="parameter"><code><a href="../GwyDataField.html#GwyDataField-struct"><span class="type">GwyDataField</span></a> *dfield</code></em>,
+                                 <em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Helper function for progressive animated preview.</p>
+<p>This is a wrapper for <a class="link" href="libgwyapp-wait.html#gwy-app-wait-set-preview-widget" title="gwy_app_wait_set_preview_widget ()"><code class="function">gwy_app_wait_set_preview_widget()</code></a> which creates a simple image preview displaying <em class="parameter"><code>dfield</code></em>
+.
+Call <a href="../GwyDataField.html#gwy-data-field-data-changed"><code class="function">gwy_data_field_data_changed()</code></a> on it to redraw the preview.</p>
+<p>No preview is created if progress bars are disabled, see <a class="link" href="libgwyapp-wait.html#gwy-app-wait-set-enabled" title="gwy_app_wait_set_enabled ()"><code class="function">gwy_app_wait_set_enabled()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-app-wait-preview-data-field.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dfield</p></td>
+<td class="parameter_description"><p>A data field used for preview.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Data container with source image (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Source image id (or -1).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-wait-preview-data-field.returns"></a><h4>Returns</h4>
+<p> The created <a href="../GwyDataView.html#GwyDataView-struct"><span class="type">GwyDataView</span></a> with the preview (possibly <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not preview was actually created).  Usually
+you can ignore it.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-data-id-verify-channel"></a><h3>gwy_app_data_id_verify_channel ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_app_data_id_verify_channel (<em class="parameter"><code><a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="type">GwyAppDataId</span></a> *id</code></em>);</pre>
+<p>Checks if numerical channel identifiers correspond to an existing channel.</p>
+<p>If either the data contained referenced in <em class="parameter"><code>id</code></em>
+ or the channel does not exist the structure is cleared to
+<a class="link" href="GwyDataChooser.html#GWY-APP-DATA-ID-NONE:CAPS" title="GWY_APP_DATA_ID_NONE"><code class="literal">GWY_APP_DATA_ID_NONE</code></a> and the function returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.  If it represents an existing channel it is kept intact and
+the function returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-app-data-id-verify-channel.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Numerical identifiers of a channel in data managed by the data browser.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-data-id-verify-channel.returns"></a><h4>Returns</h4>
+<p> Whether <em class="parameter"><code>id</code></em>
+refers to an existing channel now.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-41.html#api-index-2.41">2.41</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-data-id-verify-graph"></a><h3>gwy_app_data_id_verify_graph ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_app_data_id_verify_graph (<em class="parameter"><code><a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="type">GwyAppDataId</span></a> *id</code></em>);</pre>
+<p>Checks if numerical graph identifiers correspond to an existing graph.</p>
+<p>If either the data contained referenced in <em class="parameter"><code>id</code></em>
+ or the graph model does not exist the structure is cleared to
+<a class="link" href="GwyDataChooser.html#GWY-APP-DATA-ID-NONE:CAPS" title="GWY_APP_DATA_ID_NONE"><code class="literal">GWY_APP_DATA_ID_NONE</code></a> and the function returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.  If it represents an existing graph it is kept intact and
+the function returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-app-data-id-verify-graph.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Numerical identifiers of a graph in data managed by the data browser.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-data-id-verify-graph.returns"></a><h4>Returns</h4>
+<p> Whether <em class="parameter"><code>id</code></em>
+refers to an existing graph now.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-41.html#api-index-2.41">2.41</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-data-id-verify-volume"></a><h3>gwy_app_data_id_verify_volume ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_app_data_id_verify_volume (<em class="parameter"><code><a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="type">GwyAppDataId</span></a> *id</code></em>);</pre>
+<p>Checks if numerical volume data identifiers correspond to existing volume data.</p>
+<p>If either the data contained referenced in <em class="parameter"><code>id</code></em>
+ or the volume data does not exist the structure is cleared to
+<a class="link" href="GwyDataChooser.html#GWY-APP-DATA-ID-NONE:CAPS" title="GWY_APP_DATA_ID_NONE"><code class="literal">GWY_APP_DATA_ID_NONE</code></a> and the function returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.  If it represents existing volume data it is kept intact and
+the function returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-app-data-id-verify-volume.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Numerical identifiers of volume data in data managed by the data browser.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-data-id-verify-volume.returns"></a><h4>Returns</h4>
+<p> Whether <em class="parameter"><code>id</code></em>
+refers to existing volume data now.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-41.html#api-index-2.41">2.41</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-data-id-verify-xyz"></a><h3>gwy_app_data_id_verify_xyz ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_app_data_id_verify_xyz (<em class="parameter"><code><a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="type">GwyAppDataId</span></a> *id</code></em>);</pre>
+<p>Checks if numerical XYZ data identifiers correspond to existing XYZ data.</p>
+<p>If either the data contained referenced in <em class="parameter"><code>id</code></em>
+ or the XYZ data does not exist the structure is cleared to
+<a class="link" href="GwyDataChooser.html#GWY-APP-DATA-ID-NONE:CAPS" title="GWY_APP_DATA_ID_NONE"><code class="literal">GWY_APP_DATA_ID_NONE</code></a> and the function returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.  If it represents existing XYZ data it is kept intact and
+the function returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-app-data-id-verify-xyz.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Numerical identifiers of XYZ data in data managed by the data browser.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-data-id-verify-xyz.returns"></a><h4>Returns</h4>
+<p> Whether <em class="parameter"><code>id</code></em>
+refers to existing XYZ data now.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-46.html#api-index-2.46">2.46</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-data-id-verify-curve-map"></a><h3>gwy_app_data_id_verify_curve_map ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_app_data_id_verify_curve_map (<em class="parameter"><code><a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="type">GwyAppDataId</span></a> *id</code></em>);</pre>
+<p>Checks if numerical curve map data identifiers correspond to existing curve map data.</p>
+<p>If either the data contained referenced in <em class="parameter"><code>id</code></em>
+ or the curve map data does not exist the structure is cleared to
+<a class="link" href="GwyDataChooser.html#GWY-APP-DATA-ID-NONE:CAPS" title="GWY_APP_DATA_ID_NONE"><code class="literal">GWY_APP_DATA_ID_NONE</code></a> and the function returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.  If it represents existing curve map data it is kept intact
+and the function returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-app-data-id-verify-curve-map.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Numerical identifiers of curve map data in data managed by the data browser.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-data-id-verify-curve-map.returns"></a><h4>Returns</h4>
+<p> Whether <em class="parameter"><code>id</code></em>
+refers to existing curve map data now.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-46.html#api-index-2.46">2.46</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-data-id-verify-spectra"></a><h3>gwy_app_data_id_verify_spectra ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_app_data_id_verify_spectra (<em class="parameter"><code><a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="type">GwyAppDataId</span></a> *id</code></em>);</pre>
+<p>Checks if numerical spectra identifiers correspond to existing spectra.</p>
+<p>If either the data contained referenced in <em class="parameter"><code>id</code></em>
+ or the spectra does not exist the structure is cleared to
+<a class="link" href="GwyDataChooser.html#GWY-APP-DATA-ID-NONE:CAPS" title="GWY_APP_DATA_ID_NONE"><code class="literal">GWY_APP_DATA_ID_NONE</code></a> and the function returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.  If it represents existing spectra it is kept intact and the
+function return <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-app-data-id-verify-spectra.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Numerical identifiers of spectra in data managed by the data browser.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-data-id-verify-spectra.returns"></a><h4>Returns</h4>
+<p> Whether <em class="parameter"><code>id</code></em>
+refers to existing spectra now.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-41.html#api-index-2.41">2.41</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-module-utils.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyPreviewSurfaceFlags"></a><h3>enum GwyPreviewSurfaceFlags</h3>
+<p>Type of behaviour modifying flags that can be passed to
+<a class="link" href="libgwyapp-module-utils.html#gwy-preview-surface-to-datafield" title="gwy_preview_surface_to_datafield ()"><code class="function">gwy_preview_surface_to_datafield()</code></a>.</p>
+<div class="refsect3">
+<a name="GwyPreviewSurfaceFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-PREVIEW-SURFACE-DENSITY:CAPS"></a>GWY_PREVIEW_SURFACE_DENSITY</p></td>
+<td class="enum_member_description">
+<p>Render a point density map instead of the data.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-PREVIEW-SURFACE-FILL:CAPS"></a>GWY_PREVIEW_SURFACE_FILL</p></td>
+<td class="enum_member_description">
+<p>Make the data field as large as the specified resolutions at least in one dimension (it
+can be prevented in the other by different aspect ratio).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-46.html#api-index-2.46">2.46</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

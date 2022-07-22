@@ -1,0 +1,624 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyGLMaterial: Gwyddion Drawing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Drawing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Drawing Library Reference Manual">
+<link rel="prev" href="GwyGradient.html" title="GwyGradient">
+<link rel="next" href="libgwydraw-gwypixfield.html" title="gwypixfield">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyGLMaterial.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyGLMaterial.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="GwyGradient.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwydraw-gwypixfield.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyGLMaterial"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyGLMaterial.top_of_page"></a>GwyGLMaterial</span></h2>
+<p>GwyGLMaterial — OpenGL material representation</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyGLMaterial.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="returnvalue">GwyRGBA</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGLMaterial.html#gwy-gl-material-get-ambient" title="gwy_gl_material_get_ambient ()">gwy_gl_material_get_ambient</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGLMaterial.html#gwy-gl-material-set-ambient" title="gwy_gl_material_set_ambient ()">gwy_gl_material_set_ambient</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="returnvalue">GwyRGBA</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGLMaterial.html#gwy-gl-material-get-diffuse" title="gwy_gl_material_get_diffuse ()">gwy_gl_material_get_diffuse</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGLMaterial.html#gwy-gl-material-set-diffuse" title="gwy_gl_material_set_diffuse ()">gwy_gl_material_set_diffuse</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="returnvalue">GwyRGBA</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGLMaterial.html#gwy-gl-material-get-specular" title="gwy_gl_material_get_specular ()">gwy_gl_material_get_specular</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGLMaterial.html#gwy-gl-material-set-specular" title="gwy_gl_material_set_specular ()">gwy_gl_material_set_specular</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="returnvalue">GwyRGBA</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGLMaterial.html#gwy-gl-material-get-emission" title="gwy_gl_material_get_emission ()">gwy_gl_material_get_emission</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGLMaterial.html#gwy-gl-material-set-emission" title="gwy_gl_material_set_emission ()">gwy_gl_material_set_emission</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGLMaterial.html#gwy-gl-material-get-shininess" title="gwy_gl_material_get_shininess ()">gwy_gl_material_get_shininess</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGLMaterial.html#gwy-gl-material-set-shininess" title="gwy_gl_material_set_shininess ()">gwy_gl_material_set_shininess</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGLMaterial.html#gwy-gl-material-sample-to-pixbuf" title="gwy_gl_material_sample_to_pixbuf ()">gwy_gl_material_sample_to_pixbuf</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGLMaterial.html#gwy-gl-material-reset" title="gwy_gl_material_reset ()">gwy_gl_material_reset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwyInventory.html#GwyInventory-struct"><span class="returnvalue">GwyInventory</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGLMaterial.html#gwy-gl-materials" title="gwy_gl_materials ()">gwy_gl_materials</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyGLMaterial.html" title="GwyGLMaterial"><span class="returnvalue">GwyGLMaterial</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGLMaterial.html#gwy-gl-materials-get-gl-material" title="gwy_gl_materials_get_gl_material ()">gwy_gl_materials_get_gl_material</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyGLMaterial.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="GwyGLMaterial.html#GWY-GL-MATERIAL-DEFAULT:CAPS" title="GWY_GL_MATERIAL_DEFAULT">GWY_GL_MATERIAL_DEFAULT</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="GwyGLMaterial.html#GWY-GL-MATERIAL-NONE:CAPS" title="GWY_GL_MATERIAL_NONE">GWY_GL_MATERIAL_NONE</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyGLMaterial.html#GwyGLMaterial-struct" title="struct GwyGLMaterial">GwyGLMaterial</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyGLMaterial.html#GwyGLMaterialClass" title="struct GwyGLMaterialClass">GwyGLMaterialClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyGLMaterial.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="../GwyResource.html#GwyResource-struct">GwyResource</a>
+        <span class="lineart">╰──</span> GwyGLMaterial
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyGLMaterial.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libdraw/gwydraw.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyGLMaterial.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyGLMaterial.html" title="GwyGLMaterial"><span class="type">GwyGLMaterial</span></a> represents an OpenGL material.  Its properties directly map
+to corresponding OpenGL material characteristics, all are in the range
+[0,1].</p>
+<p>Gradient objects can be obtained from <a class="link" href="GwyGLMaterial.html#gwy-gl-materials-get-gl-material" title="gwy_gl_materials_get_gl_material ()"><code class="function">gwy_gl_materials_get_gl_material()</code></a>.
+New GL materials can be created with <a href="../GwyInventory.html#gwy-inventory-new-item"><code class="function">gwy_inventory_new_item()</code></a> on the
+<a href="../GwyInventory.html#GwyInventory-struct"><span class="type">GwyInventory</span></a> returned by <a class="link" href="GwyGLMaterial.html#gwy-gl-materials" title="gwy_gl_materials ()"><code class="function">gwy_gl_materials()</code></a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwyGLMaterial.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-gl-material-get-ambient"></a><h3>gwy_gl_material_get_ambient ()</h3>
+<pre class="programlisting">const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="returnvalue">GwyRGBA</span></a> *
+gwy_gl_material_get_ambient (<em class="parameter"><code><a class="link" href="GwyGLMaterial.html" title="GwyGLMaterial"><span class="type">GwyGLMaterial</span></a> *gl_material</code></em>);</pre>
+<p>Gets the ambient reflectance of a GL material.</p>
+<div class="refsect3">
+<a name="gwy-gl-material-get-ambient.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gl_material</p></td>
+<td class="parameter_description"><p>A GL material.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-gl-material-get-ambient.returns"></a><h4>Returns</h4>
+<p> Ambient reflectance (owned by GL material, must not be modified
+nor freed).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gl-material-set-ambient"></a><h3>gwy_gl_material_set_ambient ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_gl_material_set_ambient (<em class="parameter"><code><a class="link" href="GwyGLMaterial.html" title="GwyGLMaterial"><span class="type">GwyGLMaterial</span></a> *gl_material</code></em>,
+                             <em class="parameter"><code>const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *ambient</code></em>);</pre>
+<p>Sets the ambient reflectance of a GL material.</p>
+<div class="refsect3">
+<a name="gwy-gl-material-set-ambient.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gl_material</p></td>
+<td class="parameter_description"><p>A GL material.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ambient</p></td>
+<td class="parameter_description"><p>Ambient reflectance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gl-material-get-diffuse"></a><h3>gwy_gl_material_get_diffuse ()</h3>
+<pre class="programlisting">const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="returnvalue">GwyRGBA</span></a> *
+gwy_gl_material_get_diffuse (<em class="parameter"><code><a class="link" href="GwyGLMaterial.html" title="GwyGLMaterial"><span class="type">GwyGLMaterial</span></a> *gl_material</code></em>);</pre>
+<p>Gets the diffuse reflectance of a GL material.</p>
+<div class="refsect3">
+<a name="gwy-gl-material-get-diffuse.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gl_material</p></td>
+<td class="parameter_description"><p>A GL material.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-gl-material-get-diffuse.returns"></a><h4>Returns</h4>
+<p> Diffuse reflectance (owned by GL material, must not be modified
+nor freed).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gl-material-set-diffuse"></a><h3>gwy_gl_material_set_diffuse ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_gl_material_set_diffuse (<em class="parameter"><code><a class="link" href="GwyGLMaterial.html" title="GwyGLMaterial"><span class="type">GwyGLMaterial</span></a> *gl_material</code></em>,
+                             <em class="parameter"><code>const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *diffuse</code></em>);</pre>
+<p>Sets the diffuse reflectance of a GL material.</p>
+<div class="refsect3">
+<a name="gwy-gl-material-set-diffuse.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gl_material</p></td>
+<td class="parameter_description"><p>A GL material.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>diffuse</p></td>
+<td class="parameter_description"><p>Diffuse reflectance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gl-material-get-specular"></a><h3>gwy_gl_material_get_specular ()</h3>
+<pre class="programlisting">const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="returnvalue">GwyRGBA</span></a> *
+gwy_gl_material_get_specular (<em class="parameter"><code><a class="link" href="GwyGLMaterial.html" title="GwyGLMaterial"><span class="type">GwyGLMaterial</span></a> *gl_material</code></em>);</pre>
+<p>Gets the specular reflectance of a GL material.</p>
+<div class="refsect3">
+<a name="gwy-gl-material-get-specular.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gl_material</p></td>
+<td class="parameter_description"><p>A GL material.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-gl-material-get-specular.returns"></a><h4>Returns</h4>
+<p> Specular reflectance (owned by GL material, must not be modified
+nor freed).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gl-material-set-specular"></a><h3>gwy_gl_material_set_specular ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_gl_material_set_specular (<em class="parameter"><code><a class="link" href="GwyGLMaterial.html" title="GwyGLMaterial"><span class="type">GwyGLMaterial</span></a> *gl_material</code></em>,
+                              <em class="parameter"><code>const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *specular</code></em>);</pre>
+<p>Sets the specular reflectance of a GL material.</p>
+<div class="refsect3">
+<a name="gwy-gl-material-set-specular.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gl_material</p></td>
+<td class="parameter_description"><p>A GL material.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>specular</p></td>
+<td class="parameter_description"><p>Specular reflectance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gl-material-get-emission"></a><h3>gwy_gl_material_get_emission ()</h3>
+<pre class="programlisting">const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="returnvalue">GwyRGBA</span></a> *
+gwy_gl_material_get_emission (<em class="parameter"><code><a class="link" href="GwyGLMaterial.html" title="GwyGLMaterial"><span class="type">GwyGLMaterial</span></a> *gl_material</code></em>);</pre>
+<p>Gets the emission component of a GL material.</p>
+<div class="refsect3">
+<a name="gwy-gl-material-get-emission.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gl_material</p></td>
+<td class="parameter_description"><p>A GL material.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-gl-material-get-emission.returns"></a><h4>Returns</h4>
+<p> Emission component (owned by GL material, must not be modified
+nor freed).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gl-material-set-emission"></a><h3>gwy_gl_material_set_emission ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_gl_material_set_emission (<em class="parameter"><code><a class="link" href="GwyGLMaterial.html" title="GwyGLMaterial"><span class="type">GwyGLMaterial</span></a> *gl_material</code></em>,
+                              <em class="parameter"><code>const <a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> *emission</code></em>);</pre>
+<p>Sets the emission component of a GL material.</p>
+<div class="refsect3">
+<a name="gwy-gl-material-set-emission.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gl_material</p></td>
+<td class="parameter_description"><p>A GL material.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>emission</p></td>
+<td class="parameter_description"><p>Emission component.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gl-material-get-shininess"></a><h3>gwy_gl_material_get_shininess ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_gl_material_get_shininess (<em class="parameter"><code><a class="link" href="GwyGLMaterial.html" title="GwyGLMaterial"><span class="type">GwyGLMaterial</span></a> *gl_material</code></em>);</pre>
+<p>Gets the shininess value of a GL material.</p>
+<div class="refsect3">
+<a name="gwy-gl-material-get-shininess.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gl_material</p></td>
+<td class="parameter_description"><p>A GL material.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-gl-material-get-shininess.returns"></a><h4>Returns</h4>
+<p> The shininess value (in range 0..1, not 0..128).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gl-material-set-shininess"></a><h3>gwy_gl_material_set_shininess ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_gl_material_set_shininess (<em class="parameter"><code><a class="link" href="GwyGLMaterial.html" title="GwyGLMaterial"><span class="type">GwyGLMaterial</span></a> *gl_material</code></em>,
+                               <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> shininess</code></em>);</pre>
+<p>Sets the shininess value of a GL material.</p>
+<div class="refsect3">
+<a name="gwy-gl-material-set-shininess.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gl_material</p></td>
+<td class="parameter_description"><p>A GL material.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>shininess</p></td>
+<td class="parameter_description"><p>Shinniness value (in range 0..1, not 0..128).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gl-material-sample-to-pixbuf"></a><h3>gwy_gl_material_sample_to_pixbuf ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_gl_material_sample_to_pixbuf (<em class="parameter"><code><a class="link" href="GwyGLMaterial.html" title="GwyGLMaterial"><span class="type">GwyGLMaterial</span></a> *gl_material</code></em>,
+                                  <em class="parameter"><code><span class="type">GdkPixbuf</span> *pixbuf</code></em>);</pre>
+<p>Samples GL material to a provided pixbuf.</p>
+<div class="refsect3">
+<a name="gwy-gl-material-sample-to-pixbuf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gl_material</p></td>
+<td class="parameter_description"><p>A GL material to sample.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pixbuf</p></td>
+<td class="parameter_description"><p>A pixbuf to sample gl_material to (in horizontal direction).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gl-material-reset"></a><h3>gwy_gl_material_reset ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_gl_material_reset (<em class="parameter"><code><a class="link" href="GwyGLMaterial.html" title="GwyGLMaterial"><span class="type">GwyGLMaterial</span></a> *gl_material</code></em>);</pre>
+<p>Resets a GL material to default values.</p>
+<div class="refsect3">
+<a name="gwy-gl-material-reset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gl_material</p></td>
+<td class="parameter_description"><p>A GL material.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gl-materials"></a><h3>gwy_gl_materials ()</h3>
+<pre class="programlisting"><a href="../GwyInventory.html#GwyInventory-struct"><span class="returnvalue">GwyInventory</span></a> *
+gwy_gl_materials (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Gets inventory with all the GL materials.</p>
+<div class="refsect3">
+<a name="gwy-gl-materials.returns"></a><h4>Returns</h4>
+<p> GL material inventory.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-gl-materials-get-gl-material"></a><h3>gwy_gl_materials_get_gl_material ()</h3>
+<pre class="programlisting"><a class="link" href="GwyGLMaterial.html" title="GwyGLMaterial"><span class="returnvalue">GwyGLMaterial</span></a> *
+gwy_gl_materials_get_gl_material (<em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Convenience function to get a GL material from <a class="link" href="GwyGLMaterial.html#gwy-gl-materials" title="gwy_gl_materials ()"><code class="function">gwy_gl_materials()</code></a> by name.</p>
+<div class="refsect3">
+<a name="gwy-gl-materials-get-gl-material.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>GL material name.  May be <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to get the default GL material.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-gl-materials-get-gl-material.returns"></a><h4>Returns</h4>
+<p> GL material identified by <em class="parameter"><code>name</code></em>
+or the default GL material if <em class="parameter"><code>name</code></em>
+does not exist.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyGLMaterial.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GWY-GL-MATERIAL-DEFAULT:CAPS"></a><h3>GWY_GL_MATERIAL_DEFAULT</h3>
+<pre class="programlisting">#define GWY_GL_MATERIAL_DEFAULT "OpenGL-Default"
+</pre>
+<p>The name of the default OpenGL material.</p>
+<p>It is guaranteed to always exist.</p>
+<p>Note this is not the same as user's default material which corresponds to
+the default item in <a class="link" href="GwyGLMaterial.html#gwy-gl-materials" title="gwy_gl_materials ()"><code class="function">gwy_gl_materials()</code></a> inventory and it change over time.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GWY-GL-MATERIAL-NONE:CAPS"></a><h3>GWY_GL_MATERIAL_NONE</h3>
+<pre class="programlisting">#define GWY_GL_MATERIAL_NONE    "None"
+</pre>
+<p>The name of special void material with all characteristics zero.</p>
+<p>It is guaranteed to exist, but you should rarely actually need it.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGLMaterial-struct"></a><h3>struct GwyGLMaterial</h3>
+<pre class="programlisting">struct GwyGLMaterial;</pre>
+<p>The <a class="link" href="GwyGLMaterial.html" title="GwyGLMaterial"><span class="type">GwyGLMaterial</span></a> struct contains private data only and should be accessed
+using the functions below.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGLMaterialClass"></a><h3>struct GwyGLMaterialClass</h3>
+<pre class="programlisting">struct GwyGLMaterialClass {
+};
+</pre>
+<p><a class="link" href="GwyGLMaterial.html#GwyGLMaterialClass" title="struct GwyGLMaterialClass"><span class="type">GwyGLMaterialClass</span></a> does not contain any public members.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyGLMaterial.see-also"></a><h2>See Also</h2>
+<p><a href="../Gwy3DView.html#Gwy3DView-struct"><span class="type">Gwy3DView</span></a> -- 3D data display widget,
+<a class="link" href="libgwydraw-GwyRGBA.html#GwyRGBA" title="GwyRGBA"><span class="type">GwyRGBA</span></a> -- representation of color components,
+<a href="../GwyInventory.html#GwyInventory-struct"><span class="type">GwyInventory</span></a> -- the container holding all GL materials</p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

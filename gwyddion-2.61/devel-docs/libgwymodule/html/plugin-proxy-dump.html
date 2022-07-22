@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Dump Format: Gwyddion Module Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Module Library Reference Manual">
+<link rel="up" href="PluginProxyReference.html" title="Plug-in Proxy Reference">
+<link rel="prev" href="plugin-proxy-file.html" title="File Type Plug-ins">
+<link rel="next" href="plugin-proxy-rgi.html" title="RGI Registration Method">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="PluginProxyReference.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="plugin-proxy-file.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="plugin-proxy-rgi.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="plugin-proxy-dump"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle">Dump Format</span></h2>
+<p>Dump Format — 
+      Dumb dump file format used for data exchange between plug-in proxy and
+      plug-ins
+    </p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="id-1.4.5.3"></a><h2>Purpose</h2>
+<p>
+      The dumb dump file format is used for data exchange between plug-in proxy
+      and plug-ins.  It is <span class="emphasis"><em>not</em></span> and never has been intended
+      for permantent data storage.  If you are looking for a simple file
+      format Gwyddion can read and write then you are looking for
+      <a class="ulink" href="http://gwyddion.net/documentation/user-guide-en/gsf.html" target="_top">GSF</a>.
+    </p>
+</div>
+<div class="refsect1">
+<a name="id-1.4.5.4"></a><h2>Overall Structure</h2>
+<p>
+      The dump format consists of text lines, except for the actual data
+      samples which are for efficiency reasons stored as arrays of (binary)
+      IEEE double precision numbers.
+    </p>
+<p>
+      Since dump files contain binary data (along with text lines)
+      they have to be always opened in binary mode to avoid end-of-line
+      conversions (on systems distinguishing between text and binary files).
+      Unix end-of-lines are always used, i.e., lines are always terminated
+      by a single LF (line feed) character, ASCII 0x0a.  Plugin-proxy
+      always writes data with Unix end-of-lines and although it may read
+      dumps with CRLF end-of-lines without problems too, don't count on it.
+    </p>
+</div>
+<div class="refsect1">
+<a name="id-1.4.5.5"></a><h2>String Data</h2>
+<p>The text lines have the form
+      <code class="literal"><em class="parameter"><code>key</code></em>=<em class="parameter"><code>value</code></em></code>.
+      The keys are keys in data <a href="../GwyContainer.html#GwyContainer-struct">container</a>
+      created for the data, and the values are corresponding values.
+      Except for a few special keys specified below, all values are stored
+      as strings.
+    </p>
+<p>
+      There are only a few types of data you may expect to find in or 
+      want to write to a dump file:
+      </p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
+          Data fields.  They use some specific keys and you can read more
+          about them
+          <a class="link" href="plugin-proxy-dump.html#plugin-proxy-dump-data-fields">below</a>.
+        </li>
+<li class="listitem">
+          Metadata about the data.  They start with <code class="literal">/meta/</code>
+          followed by an arbitrary key string.  Not used directly by
+          <span class="application">Gwyddion</span>, but will appear in Metadata Browser.
+        </li>
+<li class="listitem">
+          Queer stuff (everything else).  It's best to ignore it.
+        </li>
+</ul></div>
+<p>
+    </p>
+</div>
+<div class="refsect1">
+<a name="id-1.4.5.6"></a><h2>Data Fields</h2>
+<p>
+      The data samples themselves are stored as a sequence of binary IEEE
+      double precision floating point numbers in little-endian byte order.
+      The array is
+      preceded by line <code class="literal">/0/data=[</code> and
+      a single left bracket <code class="literal">[</code> (with no newline after).
+      The data samples are closed by a sequence of two right brackets
+      <code class="literal">]]</code> and a single LF character.
+      The end of data field marker serves as a check the data was read
+      correctly, as its size must be know beforehand.
+    </p>
+<p>
+      To be more precise, <code class="literal">/0/data</code> is the name of the
+      main data field. As data fields can generally have arbitrary names
+      and left bracket is a valid value, a <code class="literal">[</code> as a value
+      marks start of a data field if and only if the next line starts with a
+      <code class="literal">[</code> too.  Otherwise it is a regular metadata value.
+    </p>
+<p>
+      The data samples are stored in `screen' order.  That means they are
+      ordered by lines (rows), starting from the uppermost one, and inside
+      lines they are ordered by column, from left to right.
+    </p>
+<p>
+      The resolutions and physical dimensions are specified using special
+      keys <code class="literal">/0/data/xres</code>, <code class="literal">/0/data/yres</code>,
+      <code class="literal">/0/data/xreal</code>, and <code class="literal">/0/data/yreal</code>.
+      Since the resolutions must be obviously known before data samples can
+      be read, the lines
+      <code class="literal">/0/data/xres=<em class="parameter"><code>x-resolution</code></em></code>
+      and
+      <code class="literal">/0/data/yres=<em class="parameter"><code>y-resolution</code></em></code>
+      must appear somewhere before them in the file.  It is also strongly
+      recommended to specify physical dimensions too, though it is not
+      strictly necessary if you don't mind some bogus default value (like
+      1 meter) is substituted then.
+    </p>
+<p>
+      All the values are in base SI units, i.e., dimensions are in meters
+      (not micrometers, nanometres, or kilometres), currents in ampers
+      (not picoampers), etc.  The base units can be specified using the
+      <code class="literal">/0/data/unit-xy</code> (lateral) and
+      <code class="literal">/0/data/unit-z</code> (value, height) keys.
+      If not specified, meters are assumed.
+    </p>
+</div>
+<div class="refsect1">
+<a name="id-1.4.5.7"></a><h2>Example</h2>
+<p>
+      A dump file with a single data field <code class="literal">"/0/data"</code>
+      thus could look (replacing binary data with dots):
+    </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="o">/</span><span class="mi">0</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">xres</span><span class="o">=</span><span class="mi">240</span>
+<span class="o">/</span><span class="mi">0</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">yres</span><span class="o">=</span><span class="mi">240</span>
+<span class="o">/</span><span class="mi">0</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">xreal</span><span class="o">=</span><span class="mf">4.1e-08</span>
+<span class="o">/</span><span class="mi">0</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">yreal</span><span class="o">=</span><span class="mf">4.1e-08</span>
+<span class="o">/</span><span class="mi">0</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">unit</span><span class="o">-</span><span class="n">xy</span><span class="o">=</span><span class="n">m</span>
+<span class="o">/</span><span class="mi">0</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">unit</span><span class="o">-</span><span class="n">z</span><span class="o">=</span><span class="n">m</span>
+<span class="o">/</span><span class="mi">0</span><span class="o">/</span><span class="n">data</span><span class="o">=</span><span class="p">[</span>
+<span class="p">[...</span>
+<span class="p">...</span>
+<span class="p">...]]</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+      This file would describe square data of size 240 × 240 samples
+      and physical dimension 41nm × 41nm, with height as value.
+    </p>
+<p>
+      If you want to pass mask (or presentation) instead of the main data,
+      just replace the <code class="literal">/0/data</code> with
+      <code class="literal">/0/mask</code> (or <code class="literal">/0/show</code>) in the
+      previous description.  If they are present in the data, they are
+      always written to the dump, so you don't need anything special to
+      read them.
+    </p>
+</div>
+<div class="refsect1">
+<a name="id-1.4.5.8"></a><h2>Reference Implementations</h2>
+<p>
+      A few sample dump format implementations are included in <span class="application">Gwyddion</span>
+      source distribution (see the directory
+      <code class="filename">plugins/file</code> and the <code class="filename">README</code>
+      there).
+    </p>
+<p>
+      For several languages they were implemented as [language] modules that
+      can be simply imported and used in your plug-in.  The others have to
+      carry the implementation with them if they want to use it.
+    </p>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.4.5.8.4"></a>Using library implementations directly</h3></div></div></div>
+<p>
+        Following languages can benefit from language modules: Perl, Python,
+        and Ruby.  As of <span class="application">Gwyddion</span> 1.6 their
+        installation and import was finally standardized (in previous
+        versions they were be installed into a hardly predictable directory
+        that might or might not be in actual module search path for the
+        language).
+      </p>
+<p>
+        Plugin-proxy
+        export an environment variable <code class="varname">GWYPLUGINLIB</code> that
+        points to top-level directory of plug-in library modules.  It
+        contains a subdirectory for each language (<code class="filename">perl</code>,
+        <code class="filename">python</code>, etc.).  A plug-in should add
+        corresponding subdirectory to its module search path –
+        that is to <code class="varname">@INC</code> in Perl, <code class="varname">sys.path</code>
+        in Python, and <code class="varname">$:</code> in Ruby.  Then the module can
+        be imported as usual.  Please see the sample modules for possible
+        implementations.
+      </p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.4.5.8.5"></a>C</h3></div></div></div>
+<p>
+        The plug-in proxy itself is always the most complete reference
+        C implementation.  See namely
+        <code class="function">text_dump_export()</code> and
+        <code class="function">text_dump_import()</code> functions
+        in <code class="filename">modules/plugin-proxy.c</code>.
+        Note this file has a special licensing exception, you can
+        freely study it for the purpose of creation of <span class="application">Gwyddion</span> plug-ins
+        without becoming `tainted'.
+      </p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.4.5.8.6"></a>C++</h3></div></div></div>
+<p>
+        A sample C++ data-processing plug-in is included in <span class="application">Gwyddion</span>
+        distribution since version 1.4.
+        It is divided to a simple class implementing dump file reading and
+        writing (<code class="filename">dump.cc</code>, <code class="filename">dump.hh</code>)
+        and the plug-in itself (<code class="filename">invert_cpp.cc</code>).
+        These files are in the public domain.
+      </p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.4.5.8.7"></a>Perl</h3></div></div></div>
+<p>
+        A Perl module <code class="systemitem">Gwyddion::dump</code>
+        handling reading and writing dump files
+        is distributed as a part of <span class="application">Gwyddion</span>
+        since version 1.4.
+        This module is in the public domain.
+      </p>
+<p>
+        A sample Perl data-processing plug-in using
+        <code class="systemitem">Gwyddion::dump</code> is included
+        in the source distribution:
+        <code class="filename">plugins/process/invert_perl.pl</code>.
+        This script is in the public domain.
+      </p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.4.5.8.8"></a>Python</h3></div></div></div>
+<p>
+        A Python module <code class="systemitem">Gwyddion.dump</code>
+        handling reading and writing dump files
+        is distributed as a part of <span class="application">Gwyddion</span>
+        since version 1.4.
+        This module is in the public domain.
+      </p>
+<p>
+        A sample Python data-processing plug-in using
+        <code class="systemitem">Gwyddion.dump</code> is included
+        in the source distribution:
+        <code class="filename">plugins/process/invert_python.py</code>.
+        This script is in the public domain.
+      </p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.4.5.8.9"></a>Ruby</h3></div></div></div>
+<p>
+        A Ruby module <code class="systemitem">gwyddion/dump</code>
+        handling reading and writing dump files
+        is distributed as a part of <span class="application">Gwyddion</span>
+        since version 1.6.
+        This module is in the public domain.
+      </p>
+<p>
+        Two sample Ruby data-processing plug-ins using
+        <code class="systemitem">gwyddion/dump</code>, one for vanilla
+        Ruby and one making use of
+        <code class="systemitem">NArray</code>, are included
+        in the source distribution:
+        <code class="filename">plugins/process/invert_ruby.py</code> and
+        <code class="filename">plugins/process/invert_narray.py</code>.
+        These scripts are in the public domain.
+      </p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.4.5.8.10"></a>Pascal/Delphi</h3></div></div></div>
+<p>
+        A sample Pascal/Delphi data-processing plug-in is included in <span class="application">Gwyddion</span>
+        distribution since version 1.4.
+        The plug-in is implemented in the Delphi Pascal dialect, so it
+        should work with FreePascal and Delphi.
+      </p>
+<p>
+        It is divied to GwyddionDump unit
+        (<code class="filename">GwyddionDump.pas</code>) implementing dump format
+        reading and writing and the plug-in itself
+        (<code class="filename">invert_pascal.pas</code>).
+        These files are in the public domain.
+      </p>
+</div>
+<div class="sect2">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="id-1.4.5.8.11"></a>FORTRAN</h3></div></div></div>
+<p>
+        Work on a sample FORTRAN plug-in is in progress.
+      </p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

@@ -1,0 +1,1261 @@
+<?xml version="1.0"?>
+<mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
+<!-- This is a GENERATED file. -->
+<!-- From module accurexii-txt.c -->
+<mime-type type="application/x-accurexii-txt">
+  <comment>Accurex II text data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="[Header Section]">
+      <match type="string" offset="16:240" value="Stage Type"/>
+    </match>
+  </magic>
+</mime-type>
+
+<!-- From module afmw-spec.c -->
+<mime-type type="application/x-afm-workshop-spectra">
+  <comment>AFM Workshop spectroscopy data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="Force-Distance Curve">
+      <match type="string" offset="20:24" value="File format:\t">
+        <match type="string" offset="30:48" value="Date:\t"/>
+      </match>
+    </match>
+  </magic>
+</mime-type>
+
+<!-- From module aistfile.c -->
+<mime-type type="application/x-aist-nt-spm">
+  <comment>AIST-NT SPM data</comment>
+  <glob pattern="*.aist"/>
+  <glob pattern="*.AIST"/>
+</mime-type>
+
+<!-- From module alicona.c -->
+<mime-type type="application/x-alicona-imaging-al3d">
+  <comment></comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="AliconaImaging\x00\x0d\x0a"/>
+  </magic>
+  <glob pattern="*.al3d"/>
+  <glob pattern="*.AL3D"/>
+</mime-type>
+
+<!-- From module ambfile.c -->
+<mime-type type="application/x-ambios-amb">
+  <comment>Ambios AMB data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="Binary TrueMap Data File \\ Ambios File Format\r\n"/>
+  </magic>
+  <glob pattern="*.amb"/>
+  <glob pattern="*.AMB"/>
+</mime-type>
+
+<!-- From module ambprofile.c -->
+<mime-type type="application/x-ambios-profile-xml">
+  <comment>Ambios XML profile data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="&lt;?xml">
+      <match type="string" offset="40:120" value="&lt;ProfilometerData&gt;">
+         <match type="string" offset="60:140" value="&lt;Header&gt;"/>
+      </match>
+    </match>
+  </magic>
+</mime-type>
+
+<!-- From module anasys_xml.c -->
+<mime-type type="application/x-analysis-studio-axd">
+  <comment>Analysis Studio AXD data</comment>
+  <glob pattern="*.axd"/>
+  <glob pattern="*.AXD"/>
+</mime-type>
+
+<mime-type type="application/x-analysis-studio-axz">
+  <comment>Analysis Studio AXZ compressed data</comment>
+  <glob pattern="*.axz"/>
+  <glob pattern="*.AXZ"/>
+</mime-type>
+
+<!-- From module anfatec.c -->
+<mime-type type="application/x-anfatec-spm">
+  <comment>Anfatec SPM data parameters</comment>
+  <magic priority="80">
+    <match type="string" offset="0:160" value=";ANFATEC Parameterfile"/>
+  </magic>
+</mime-type>
+
+<!-- From module apedaxfile.c -->
+<mime-type type="application/x-ape-dax-spm">
+  <comment>A.P.E. Research DAX SPM data</comment>
+  <glob pattern="*.dax"/>
+  <glob pattern="*.DAX"/>
+</mime-type>
+
+<!-- From module apefile.c -->
+<mime-type type="application/x-ape-spm">
+  <comment>A.P.E. Research SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="234" value="APERES"/>
+  </magic>
+  <magic priority="80">
+    <match type="byte" offset="0" value="2">
+      <match type="little16" offset="3" value="7">
+        <match type="byte" offset="1" value="0"/>
+        <match type="byte" offset="1" value="1"/>
+        <match type="byte" offset="1" value="2"/>
+        <match type="byte" offset="1" value="3"/>
+        <match type="byte" offset="1" value="4"/>
+      </match>
+    </match>
+  </magic>
+</mime-type>
+
+<!-- Module asciiexport.c contains no magic. -->
+<!-- Module assing-afm.c contains no magic. -->
+<!-- From module attocube.c -->
+<mime-type type="application/x-attocube-asc">
+  <comment>Attocube ASCII data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="# Daisy "/>
+  </magic>
+  <glob pattern="*.asc"/>
+  <glob pattern="*.ASC"/>
+</mime-type>
+
+<!-- From module bcrfile.c -->
+<mime-type type="application/x-bcr-spm">
+  <comment>BCR SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="fileformat = bcrstm\n"/>
+    <match type="string" offset="0" value="f\0i\0l\0e\0f\0o\0r\0m\0a\0t\0 \0=\0 \0b\0c\0r\0s\0t\0m\0_\0u\0n\0i\0c\0o\0d\0e\0\n\0"/>
+  </magic>
+  <glob pattern="*.bcr"/>
+</mime-type>
+
+<mime-type type="application/x-bcrf-spm">
+  <comment>BCRF SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="fileformat = bcrf\n"/>
+    <match type="string" offset="0" value="f\0i\0l\0e\0f\0o\0r\0m\0a\0t\0 \0=\0 \0b\0c\0r\0f\0_\0u\0n\0i\0c\0o\0d\0e\0\n\0"/>
+  </magic>
+  <glob pattern="*.bcrf"/>
+</mime-type>
+
+<!-- From module burleigh.c -->
+<mime-type type="application/x-burleigh-spm">
+  <comment>Burleigh SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="\xff\x06@\x00"/>
+  </magic>
+</mime-type>
+
+<!-- From module burleigh_bii.c -->
+<mime-type type="application/x-burleigh-bii-spm">
+  <comment>Burleigh BII SPM data</comment>
+  <magic priority="30">
+    <match type="string" offset="0" value="BM6"/>
+  </magic>
+  <glob pattern="*.bii"/>
+  <glob pattern="*.BII"/>
+</mime-type>
+
+<!-- From module burleigh_exp.c -->
+<mime-type type="application/x-burleigh-export-spm">
+  <comment>Burleigh exported SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value=".Image Data"/>
+  </magic>
+</mime-type>
+
+<!-- From module codevfile.c -->
+<mime-type type="application/x-code-v-int">
+  <comment>Code V interferogram data</comment>
+  <glob pattern="*.int"/>
+  <glob pattern="*.INT"/>
+</mime-type>
+
+<!-- From module createc.c -->
+<mime-type type="application/x-createc-spm">
+  <comment>Createc SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="[Parameter]\r\nDAC-Type"/>
+    <match type="string" offset="0" value="[Paramet32]\r\nDAC-Type"/>
+    <match type="string" offset="0" value="[Paramco32]\r\nDAC-Type"/>
+  </magic>
+</mime-type>
+
+<!-- From module csmfile.c -->
+<mime-type type="application/x-benyuan-csm-spm">
+  <comment>Benyuan CSM data</comment>
+  <glob pattern="*.csm"/>
+  <glob pattern="*.CSM"/>
+</mime-type>
+
+<!-- From module dektakvca.c -->
+<mime-type type="application/x-dektak-opdx">
+  <comment>Dektak OPDx profilometry data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="VCA DATA\x01\x00\x00\x55"/>
+  </magic>
+</mime-type>
+
+<!-- From module dektakxml.c -->
+<mime-type type="application/x-dektak-xml">
+  <comment>Dektak XML profilometry data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="&lt;?xml">
+      <match type="string" offset="20:60" value="&lt;DataContainer typeid=&quot;125&quot;"/>
+    </match>
+  </magic>
+</mime-type>
+
+<!-- Module dimensionfile.c contains no magic. -->
+<!-- From module dm3file.c -->
+<mime-type type="application/x-dm3-tem">
+  <comment>Digital Micrograph DM3 TEM data</comment>
+  <glob pattern="*.dm3"/>
+  <glob pattern="*.DM3"/>
+</mime-type>
+
+<mime-type type="application/x-dm4-tem">
+  <comment>Digital Micrograph DM4 TEM data</comment>
+  <glob pattern="*.dm4"/>
+  <glob pattern="*.DM4"/>
+</mime-type>
+
+<!-- From module dmefile.c -->
+<mime-type type="application/x-dme-spm">
+  <comment>DME SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="RSCOPE"/>
+  </magic>
+</mime-type>
+
+<!-- From module dumbfile.c -->
+<mime-type type="application/x-gwyddion-dump-spm">
+  <comment>Gwyddion dumb dump data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="/0/data/"/>
+  </magic>
+  <glob pattern="*.dump"/>
+  <glob pattern="*.DUMP"/>
+</mime-type>
+
+<!-- From module ecsfile.c -->
+<mime-type type="application/x-ecs-spm">
+  <comment>ECS SPM data</comment>
+  <magic priority="50">
+    <match type="string" offset="0" value="\xa0\x00\x00"/>
+  </magic>
+</mime-type>
+
+<!-- From module evovisxml.c -->
+<mime-type type="application/x-evovis-xml">
+  <comment>Evovis XML profilometry data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="&lt;?xml">
+      <match type="string" offset="20:60" value="&lt;root Class=&quot;MeasurementSet&quot;"/>
+    </match>
+  </magic>
+</mime-type>
+
+<!-- From module ezdfile.c -->
+<mime-type type="application/x-nanosurf-spm">
+  <comment>Nanosurf SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="[DataSet]\r\n"/>
+  </magic>
+  <glob pattern="*.ezd"/>
+  <glob pattern="*.EZD"/>
+  <glob pattern="*.nid"/>
+  <glob pattern="*.NID"/>
+</mime-type>
+
+<!-- From module femtoscan-txt.c -->
+<mime-type type="application/x-femtoscan-txt">
+  <comment>FemtoScan text SPM data</comment>
+  <magic priority="60">
+    <match type="string" offset="0" value="\tX,nm\t0\t"/>
+  </magic>
+</mime-type>
+
+<!-- From module femtoscan.c -->
+<mime-type type="application/x-femtoscan-spm">
+  <comment>FemtoScan SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="\\*Surface file list\n"/>
+  </magic>
+</mime-type>
+
+<!-- Module file.c contains no magic. -->
+<!-- Module fitsfile.c contains no magic. -->
+<!-- Module formats3d.c contains no magic. -->
+<!-- From module gdeffile.c -->
+<mime-type type="application/x-gdef-spm">
+  <comment>DME GDEF SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="GDEF\x00"/>
+  </magic>
+</mime-type>
+
+<!-- From module gsffile.c -->
+<mime-type type="application/x-gsf-spm">
+  <comment>Gwyddion Simple Field data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="Gwyddion Simple Field 1.0\n"/>
+  </magic>
+  <glob pattern="*.gsf"/>
+  <glob pattern="*.GSF"/>
+</mime-type>
+
+<!-- From module gwyfile.c -->
+<mime-type type="application/x-gwyddion-spm">
+  <comment>Gwyddion SPM data</comment>
+  <magic priority="100">
+    <match type="string" offset="0" value="GWYOGwyContainer"/>
+    <match type="string" offset="0" value="GWYPGwyContainer"/>
+  </magic>
+  <glob pattern="*.gwy"/>
+  <glob pattern="*.GWY"/>
+</mime-type>
+
+<!-- From module gxyzffile.c -->
+<mime-type type="application/x-gxyzf-spm">
+  <comment>Gwyddion XYZ data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="Gwyddion XYZ Field 1.0\n"/>
+  </magic>
+  <glob pattern="*.gxyzf"/>
+  <glob pattern="*.GXYZF"/>
+</mime-type>
+
+<!-- Module hdf4file.c contains no magic. -->
+<!-- Module hdf5file.c contains no magic. -->
+<!-- From module hitachi-afm.c -->
+<mime-type type="application/x-hitachi-spm">
+  <comment>Hitachi SPM data</comment>
+    <magic priority="80">
+    <match type="string" offset="0" value="AFM/Ver. "/>
+  </magic>
+</mime-type>
+
+<!-- From module hitachi-sem.c -->
+<mime-type type="application/x-hitachi-sem">
+  <comment>Hitachi SEM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="[SemImageFile]"/>
+  </magic>
+</mime-type>
+
+<!-- From module igorfile.c -->
+<mime-type type="application/x-igor-binary-wave">
+  <comment>Igor binary wave</comment>
+  <glob pattern="*.ibw"/>
+  <glob pattern="*.IBW"/>
+</mime-type>
+
+<!-- Module imgexport.c contains no magic. -->
+<!-- From module intelliwave.c -->
+<mime-type type="application/x-intelliwave-esd">
+  <comment>IntelliWave interferometric ESD data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="ESD "/>
+  </magic>
+  <glob pattern="*.esd"/>
+  <glob pattern="*.ESD"/>
+</mime-type>
+
+<!-- From module intematix.c -->
+<mime-type type="application/x-intematix-spm">
+  <comment>Intematix SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="II\x2a\x00">
+      <match type="string" offset="8:160" value="Intematix"/>
+    </match>
+  </magic>
+  <glob pattern="*.sdf"/>
+  <glob pattern="*.SDF"/>
+</mime-type>
+
+<!-- From module iso28600.c -->
+<mime-type type="application/x-iso28600-spm">
+  <comment>ISO 28600:2011 SPM data transfer format</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="ISO/TC 201 SPM data transfer format"/>
+  </magic>
+  <glob pattern="*.spm"/>
+  <glob pattern="*.SPM"/>
+</mime-type>
+
+<!-- From module jeol.c -->
+<mime-type type="application/x-jeol-spm">
+  <comment>JEOL SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="II\x2a\x00\xd4\x17\x00\x00\x00\x04">
+      <match type="string" offset="160" value="Measured by"/>
+      <match type="string" offset="160" value="Mesuared by"/>
+    </match>
+  </magic>
+</mime-type>
+
+<!-- Module jeoltem.c contains no magic. -->
+<!-- From module jpkscan.c -->
+<mime-type type="application/x-jpk-image-scan">
+  <comment>JPK image scan</comment>
+  <magic priority="10">
+    <match type="string" offset="0" value="MM\x00\x2a"/>
+  </magic>
+  <glob pattern="*.jpk"/>
+  <glob pattern="*.JPK"/>
+  <glob pattern="*.jpk-force"/>
+  <glob pattern="*.JPK-FORCE"/>
+  <glob pattern="*.jpk-force-map"/>
+  <glob pattern="*.JPK-FORCE-MAP"/>
+  <glob pattern="*.jpk-qi-image"/>
+  <glob pattern="*.JPK-QI-IMAGE"/>
+  <glob pattern="*.jpk-qi-data"/>
+  <glob pattern="*.JPK-QI-DATA"/>
+</mime-type>
+
+<!-- From module jspmfile.c -->
+<mime-type type="application/x-jeol-jspm">
+  <comment>JEOL JSPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="II\x2a\x00">
+      <match type="string" offset="30" value="JEOL SPM">
+        <match type="string" offset="62" value="WinSPM "/>
+      </match>
+    </match>
+  </magic>
+</mime-type>
+
+<!-- From module keyence.c -->
+<mime-type type="application/x-keyence-vk4">
+  <comment>Keyence VK4 profilometry data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="VK4_"/>
+  </magic>
+</mime-type>
+
+<mime-type type="application/x-keyence-vk6">
+  <comment>Keyence VK6 profilometry data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="VK6">
+      <match type="string" offset="7" value="BM"/>
+    </match>
+  </magic>
+</mime-type>
+
+<!-- From module leica.c -->
+<mime-type type="application/x-leica-spm">
+  <comment>Leica LIF File</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="\x70\x00\x00\x00"/>
+  </magic>
+  <glob pattern="*.lif"/>
+  <glob pattern="*.LIF"/>
+</mime-type>
+
+<!-- From module lextfile.c -->
+<mime-type type="application/x-olympus-lext-4000">
+  <comment>Olympus LEXT 4000</comment>
+  <magic priority="10">
+    <match type="string" offset="0" value="II\x2a\x00"/>
+  </magic>
+  <glob pattern="*.lext"/>
+  <glob pattern="*.LEXT"/>
+</mime-type>
+
+<!-- Module magellan.c contains no magic. -->
+<!-- From module mapvue.c -->
+<mime-type type="application/x-mapvue">
+  <comment>MapVue data file</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="\x57\x04\x02\x00"/>
+    <match type="string" offset="0" value="\xae\x08\x02\x00"/>
+  </magic>
+  <glob pattern="*.map"/>
+  <glob pattern="*.MAP"/>
+</mime-type>
+
+<!-- Module matfile.c contains no magic. -->
+<!-- From module metropro.c -->
+<mime-type type="application/x-zygo-spm">
+  <comment>Zygo SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="\x88\x1b\x03\x6f"/>
+    <match type="string" offset="0" value="\x88\x1b\x03\x70"/>
+    <match type="string" offset="0" value="\x88\x1b\x03\x71"/>
+  </magic>
+</mime-type>
+
+<!-- From module microprof.c -->
+<mime-type type="application/x-microprof-txt">
+  <comment>MicroProf FRT text data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="HeaderLines"/>
+  </magic>
+</mime-type>
+
+<mime-type type="application/x-microprof">
+  <comment>MicroProf FRT data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="FRTM_"/>
+  </magic>
+</mime-type>
+
+<!-- From module miffile.c -->
+<mime-type type="application/x-mif-spm">
+  <comment>DME MIF SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="MIF\x01\x00"/>
+  </magic>
+</mime-type>
+
+<!-- From module mifile.c -->
+<mime-type type="application/x-mi-spm">
+  <comment>Molecular Imaging SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="fileType      Image"/>
+    <match type="string" offset="0" value="fileType      Spectroscopy"/>
+  </magic>
+  <glob pattern="*.mi"/>
+  <glob pattern="*.MI"/>
+</mime-type>
+
+<!-- From module mulfile.c -->
+<mime-type type="application/x-mul-spm">
+  <comment>Aarhus MUL SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="\x01\x00\x03\x00\x00\x00"/>
+  </magic>
+  <glob pattern="*.mul"/>
+  <glob pattern="*.MUL"/>
+</mime-type>
+
+<!-- From module nanoeducator.c -->
+<mime-type type="application/x-nanoeducator-spm">
+  <comment>Nanoeducator SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="\x19(C) STM Data File System \x00\x00\x00\x00"/>
+  </magic>
+  <glob pattern="*.mspm"/>
+  <glob pattern="*.MSPM"/>
+</mime-type>
+
+<!-- From module nanomagnetics.c -->
+<mime-type type="application/x-nanomagnetics-spm">
+  <comment>Nanomagnetics AFM data</comment>
+  <magic priority="100">
+    <match type="string" offset="0" value="NMI3"/>
+    <match type="string" offset="0" value="NMI5"/>
+  </magic>
+  <glob pattern="*.nmi"/>
+  <glob pattern="*.NMI"/>
+</mime-type>
+
+<!-- From module nanonics.c -->
+<mime-type type="application/x-nanonics-spm">
+  <comment>Nanonics SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="NAN File\n-Start Header-"/>
+  </magic>
+  <glob pattern="*.nan"/>
+  <glob pattern="*.NAN"/>
+</mime-type>
+
+<!-- From module nanonis-spec.c -->
+<mime-type type="application/x-nanonis-spectra">
+  <comment>Nanonis SPM spectroscopy data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="Experiment\t">
+      <match type="string" offset="12:40" value="Date\t">
+        <match type="string" offset="36:80" value="User\t"/>
+      </match>
+    </match>
+  </magic>
+</mime-type>
+
+<!-- From module nanonis.c -->
+<mime-type type="application/x-nanonis-spm">
+  <comment>Nanonis SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value=":NANONIS_VERSION:"/>
+  </magic>
+  <glob pattern="*.sxm"/>
+  <glob pattern="*.SXM"/>
+</mime-type>
+
+<!-- From module nanoobserver.c -->
+<mime-type type="application/x-nanoobserver-spm">
+  <comment>NanoObserver SPM data</comment>
+  <glob pattern="*.nao"/>
+  <glob pattern="*.NAO"/>
+</mime-type>
+
+<!-- From module nanoscan.c -->
+<mime-type type="application/x-nanoscan-spm">
+  <comment>NanoScan SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="&lt;?xml">
+      <match type="string" offset="40:120" value="xmlns=&quot;http://www.swissprobe.com/SPM&quot;"/>
+    </match>
+  </magic>
+</mime-type>
+
+<!-- From module nanoscantech.c -->
+<mime-type type="application/x-nanoscantech-spm">
+  <comment>NanoScanTech SPM data</comment>
+  <glob pattern="*.nstdat"/>
+  <glob pattern="*.NSTDAT"/>
+</mime-type>
+
+<!-- From module nanoscope-ii.c -->
+<mime-type type="application/x-nanoscope-ii-spm">
+  <comment>Nanoscope II SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="Data_File_Type 7\r\n"/>
+  </magic>
+</mime-type>
+
+<!-- From module nanoscope.c -->
+<mime-type type="application/x-nanoscope-iii-spm">
+  <comment>Nanoscope III SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="\\*File list\r\n"/>
+    <match type="string" offset="0" value="\\*EC File list\r\n"/>
+    <match type="string" offset="0" value="?*File list\r\n"/>
+  </magic>
+</mime-type>
+
+<!-- Module nanosystemz.c contains no magic. -->
+<!-- From module nanotop.c -->
+<mime-type type="application/x-nanotop-spm">
+  <comment>Nanotop SPM data</comment>
+  <glob pattern="*.spm"/>
+  <glob pattern="*.SPM"/>
+</mime-type>
+
+<!-- Module netcdf.c contains no magic. -->
+<!-- From module nmmxyz.c -->
+<mime-type type="application/x-nano-measuring-machine-spm">
+  <comment>Nano Measuring Machine data header</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="------------------------------------------"/>
+    <match type="string" offset="44" value="Scan procedure description file"/>
+  </magic>
+  <glob pattern="*.dsc"/>
+  <glob pattern="*.DSC"/>
+</mime-type>
+
+<!-- From module nova-asc.c -->
+<mime-type type="application/x-nova-asc">
+  <comment>Nova ASCII data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="File Format = ASCII\r\n"/>
+  </magic>
+</mime-type>
+
+<!-- From module nrrdfile.c -->
+<mime-type type="application/x-nearly-raw-raster-data">
+  <comment>Nearly raw raster data (NRRD)</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="NRRD000"/>
+  </magic>
+  <glob pattern="*.nrrd"/>
+  <glob pattern="*.NRRD"/>
+</mime-type>
+
+<!-- From module nt-mdt.c -->
+<mime-type type="application/x-nt-mdt-spm">
+  <comment>NT-MDT SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="\x01\xb0\x93\xff"/>
+  </magic>
+  <glob pattern="*.mdt"/>
+  <glob pattern="*.MDT"/>
+</mime-type>
+
+<!-- Module nxiifile.c contains no magic. -->
+<!-- From module oirfile.c -->
+<mime-type type="application/x-olympus-oir">
+  <comment>Olympus OIR data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="OLYMPUSRAWFORMAT"/>
+  </magic>
+  <glob pattern="*.oir"/>
+  <glob pattern="*.OIR"/>
+</mime-type>
+
+<mime-type type="application/x-olympus-poir">
+  <comment>Olympus packed OIR data</comment>
+  <glob pattern="*.poir"/>
+  <glob pattern="*.POIR"/>
+</mime-type>
+
+<!-- From module oldmda.c -->
+<mime-type type="application/x-oldmda-spm">
+  <comment>NTMDT old MDA Spectra data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="&lt;?xml">
+      <match type="string" offset="20:60" value="&lt;MDAList&gt;"/>
+    </match>
+  </magic>
+  <glob pattern="*.sxml"/>
+  <glob pattern="*.SXML"/>
+</mime-type>
+
+<!-- From module ols.c -->
+<mime-type type="application/x-olympus-lext-3000">
+  <comment>Olympus LEXT 3000</comment>
+  <magic priority="10">
+    <match type="string" offset="0" value="II\x2a\x00"/>
+  </magic>
+  <glob pattern="*.ols"/>
+  <glob pattern="*.OLS"/>
+</mime-type>
+
+<!-- From module ometiff.c -->
+<mime-type type="application/x-ome-tiff">
+  <comment>Open Microscopy OME-TIFF</comment>
+  <magic priority="10">
+    <match type="string" offset="0" value="II\x2a\x00"/>
+    <match type="string" offset="0" value="II\x2b\x00"/>
+    <match type="string" offset="0" value="MM\x00\x2a"/>
+    <match type="string" offset="0" value="MM\x00\x2b"/>
+  </magic>
+  <glob pattern="*.ome.tiff"/>
+  <glob pattern="*.ome.tif"/>
+  <glob pattern="*.OME.TIFF"/>
+  <glob pattern="*.OME.TIF"/>
+</mime-type>
+
+<!-- From module omicron.c -->
+<mime-type type="application/x-omicron-spm">
+  <comment>Omicron SCALA data parameters</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value=";">
+      <match type="string" offset="0:160" value="Omicron SPM Control"/>
+    </match>
+  </magic>
+  <glob pattern="*.par"/>
+  <glob pattern="*.PAR"/>
+</mime-type>
+
+<!-- From module omicronflat.c -->
+<mime-type type="application/x-omicron-flat">
+  <comment>Omicron flat file format</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="FLAT0100"/>
+  </magic>
+  <glob pattern="*.*_flat"/>
+  <glob pattern="*.*_FLAT"/>
+</mime-type>
+
+<!-- From module omicronmatrix.c -->
+<mime-type type="application/x-omicron-matrix-spm">
+  <comment>Omicron MATRIX SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="ONTMATRX0101TLKB"/>
+    <match type="string" offset="0" value="ONTMATRX0101ATEM"/>
+  </magic>
+  <glob pattern="*.mtrx"/>
+  <glob pattern="*.MTRX"/>
+</mime-type>
+
+<!-- From module opdfile.c -->
+<mime-type type="application/x-wyko-opd">
+  <comment>Wyko OPD data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="\x01\x00Directory"/>
+  </magic>
+  <glob pattern="*.opd"/>
+  <glob pattern="*.OPD"/>
+</mime-type>
+
+<mime-type type="application/x-wyko-asc">
+  <comment>Wyko ASCII data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="Wyko ASCII Data File Format 0\t0\t1"/>
+  </magic>
+  <glob pattern="*.asc"/>
+  <glob pattern="*.ASC"/>
+</mime-type>
+
+<!-- From module opengps.c -->
+<mime-type type="application/x-iso5436-2-spm">
+  <comment>ISO 5436-2 OpenGPS X3P data</comment>
+  <glob pattern="*.x3p"/>
+  <glob pattern="*.X3P"/>
+</mime-type>
+
+<!-- Module phoenix.c contains no magic. -->
+<!-- Module pixmap.c contains no magic. -->
+<!-- From module pltfile.c -->
+<mime-type type="application/x-nanosurf-plt-spm">
+  <comment>Nanosurf PLT data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="#Channel: ">
+      <match type="string" offset="12:32" value="#Frame  :"/>
+    </match>
+  </magic>
+  <glob pattern="*.plt"/>
+  <glob pattern="*.PLT"/>
+</mime-type>
+
+<!-- From module pnifile.c -->
+<mime-type type="application/x-pni-spm">
+  <comment>PNI SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="\0\0\0\0001.0"/>
+    <match type="string" offset="0" value="\315\315\315\3151.0"/>
+    <match type="string" offset="0" value="\0\0\0\0002.0"/>
+  </magic>
+  <glob pattern="*.pni"/>
+  <glob pattern="*.PNI"/>
+</mime-type>
+
+<!-- Module princetonspe.c contains no magic. -->
+<!-- Module psia.c contains no magic. -->
+<!-- From module psppt.c -->
+<mime-type type="application/x-park-ps-ppt-spm">
+  <comment>Park Systems PS-PPT</comment>
+  <magic priority="75">
+    <match type="string" offset="0" value="PS-PPT/v1\n"/>
+  </magic>
+  <glob pattern="*.ps-ppt"/>
+  <glob pattern="*.PS-PPT"/>
+</mime-type>
+
+<!-- From module pt3file.c -->
+<mime-type type="application/x-symphotime-pt3">
+  <comment>SymPhoTime TTTR v2.0 data</comment>
+  <magic priority="90">
+    <match type="string" offset="0" value="PicoHarp 300"/>
+  </magic>
+</mime-type>
+
+<!-- Module quazarnpic.c contains no magic. -->
+<!-- From module quesant.c -->
+<mime-type type="application/x-quesant-afm">
+  <comment>Quesant AFM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="\x02\x00\x00\x00\x01\x00\x00\x00"/>
+  </magic>
+</mime-type>
+
+<!-- Module rawfile.c contains no magic. -->
+<!-- Module rawgraph.c contains no magic. -->
+<!-- From module renishaw.c -->
+<mime-type type="application/x-renishaw-spm">
+  <comment>Renishaw WiRE Data File</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="WDF1"/>
+  </magic>
+  <glob pattern="*.wdf"/>
+  <glob pattern="*.WDF"/>
+</mime-type>
+
+<!-- From module rhk-sm3.c -->
+<mime-type type="application/x-rhk-sm3-spm">
+  <comment>RHK SM3 SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="2" value="S\0T\0i\0M\0a\0g\0e\0 \0\060\0\060\0\064\0.\0"/>
+  </magic>
+  <glob pattern="*.sm3"/>
+  <glob pattern="*.SM3"/>
+</mime-type>
+
+<!-- From module rhk-sm4.c -->
+<mime-type type="application/x-rhk-sm4-spm">
+  <comment>RHK SM4 SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="2" value="S\0T\0i\0M\0a\0g\0e\0 \0\060\0\060\0\065\0.\0"/>
+  </magic>
+  <glob pattern="*.sm4"/>
+  <glob pattern="*.SM4"/>
+</mime-type>
+
+<!-- From module rhk-spm32.c -->
+<mime-type type="application/x-rhk-sm2-spm">
+  <comment>RHK SM2 SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="STiMage 3.1"/>
+  </magic>
+  <glob pattern="*.sm2"/>
+  <glob pattern="*.SM2"/>
+</mime-type>
+
+<!-- From module robotics.c -->
+<mime-type type="application/x-robotics-spm">
+  <comment>Automation and Robotics Dual Lens Mapper data</comment>
+  <magic priority="50">
+    <match type="string" offset="0" value="File version:"/>
+  </magic>
+  <glob pattern="*.mcr"/>
+  <glob pattern="*.MCR"/>
+  <glob pattern="*.mct"/>
+  <glob pattern="*.MCT"/>
+  <glob pattern="*.mce"/>
+  <glob pattern="*.MCE"/>
+</mime-type>
+
+<!-- From module s94file.c -->
+<mime-type type="application/x-s94-stm">
+  <comment>S94 STM data file</comment>
+  <glob pattern="*.s94"/>
+  <glob pattern="*.S94"/>
+</mime-type>
+
+<!-- From module sdfile.c -->
+<mime-type type="application/x-sdf-spm">
+  <comment>Surfstand SDF data</comment>
+  <glob pattern="*.sdf"/>
+  <glob pattern="*.SDF"/>
+</mime-type>
+
+<mime-type type="application/x-micromap-spm">
+  <comment>Micromap SDF data</comment>
+  <glob pattern="*.sdfa"/>
+  <glob pattern="*.SDFA"/>
+</mime-type>
+
+<!-- From module seiko.c -->
+<mime-type type="application/x-seiko-spm">
+  <comment>Seiko SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="SPIZ000AFM"/>
+    <match type="string" offset="0" value="SPIZ000DFM"/>
+    <match type="string" offset="0" value="SPIZ000STM"/>
+    <match type="string" offset="0" value="NPXZ000AFM"/>
+    <match type="string" offset="0" value="NPXZ000DFM"/>
+  </magic>
+  <glob pattern="*.xqb"/>
+  <glob pattern="*.XQB"/>
+  <glob pattern="*.xqd"/>
+  <glob pattern="*.XQD"/>
+  <glob pattern="*.xqt"/>
+  <glob pattern="*.XQT"/>
+  <glob pattern="*.xqp"/>
+  <glob pattern="*.XQP"/>
+  <glob pattern="*.xqj"/>
+  <glob pattern="*.XQJ"/>
+  <glob pattern="*.xqi"/>
+  <glob pattern="*.XQI"/>
+</mime-type>
+
+<!-- From module sensofar.c -->
+<mime-type type="application/x-sensofar-spm">
+  <comment>Sensofar PLu data</comment>
+  <glob pattern="*.plu"/>
+  <glob pattern="*.PLU"/>
+  <glob pattern="*.apx"/>
+  <glob pattern="*.APX"/>
+</mime-type>
+
+<!-- From module sensofarx.c -->
+<mime-type type="application/x-sensofarx-spm">
+  <comment>Sensofar PLUx data</comment>
+  <glob pattern="*.plux"/>
+  <glob pattern="*.PLUX"/>
+</mime-type>
+
+<!-- From module sensolytics.c -->
+<mime-type type="application/x-sensolytics-spm">
+  <comment>Sensolytics SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="# Sensolytics: 1.2\r"/>
+    <match type="string" offset="0" value="# Sensolytics: 1.2\n"/>
+  </magic>
+</mime-type>
+
+<!-- From module shimadzu.c -->
+<mime-type type="application/x-shimadzu-spm">
+  <comment>Shimadzu SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="Shimadzu SPM File Format"/>
+  </magic>
+</mime-type>
+
+<mime-type type="application/x-shimadzu-spm-asc">
+  <comment>Shimadzu SPM ASCII data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="ASCII:">
+      <match type="string" offset="8:9" value="Shimadzu SPM File Format"/>
+    </match>
+  </magic>
+</mime-type>
+
+<!-- From module sicmfile.c -->
+<mime-type type="application/x-sicm-spm">
+  <comment>IonScope SICM data</comment>
+  <magic priority="50">
+    <match type="string" offset="0" value="\x32\x00"/>
+  </magic>
+</mime-type>
+
+<!-- From module sis.c -->
+<mime-type type="application/x-sis-spm">
+  <comment>SIS SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="SIS&amp;STB  SIScan"/>
+  </magic>
+  <glob pattern="*.sis"/>
+  <glob pattern="*.SIS"/>
+</mime-type>
+
+<!-- From module spcfile.c -->
+<mime-type type="application/x-spc-spm">
+  <comment>Thermo Fisher SPC File</comment>
+  <magic>
+    <match type="string" offset="1" value="\x4B"/>
+  </magic>
+  <glob pattern="*.spc"/>
+  <glob pattern="*.SPC"/>
+</mime-type>
+
+<!-- From module spip-asc.c -->
+<mime-type type="application/x-spip-asc">
+  <comment>SPIP ASCII data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="# File Format = ASCII\r\n"/>
+  </magic>
+  <glob pattern="*.asc"/>
+  <glob pattern="*.ASC"/>
+</mime-type>
+
+<!-- From module spml.c -->
+<mime-type type="application/x-spml-spm">
+  <comment>SPML data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="&lt;?xml">
+      <match type="string" offset="20:60" value="&lt;SPML"/>
+    </match>
+  </magic>
+</mime-type>
+
+<!-- From module spmlab.c -->
+<mime-type type="application/x-spmlab-spm">
+  <comment>SPMLab SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="#R3"/>
+    <match type="string" offset="0" value="#R4"/>
+    <match type="string" offset="0" value="#R5"/>
+    <match type="string" offset="0" value="#R6"/>
+    <match type="string" offset="0" value="#R7"/>
+  </magic>
+  <glob pattern="*.zfp"/>
+  <glob pattern="*.zrp"/>
+  <glob pattern="*.zfr"/>
+  <glob pattern="*.zrr"/>
+  <glob pattern="*.ffp"/>
+  <glob pattern="*.frp"/>
+  <glob pattern="*.ffr"/>
+  <glob pattern="*.frr"/>
+  <glob pattern="*.lfp"/>
+  <glob pattern="*.lrp"/>
+  <glob pattern="*.lfr"/>
+  <glob pattern="*.lrr"/>
+  <glob pattern="*.sfp"/>
+  <glob pattern="*.srp"/>
+  <glob pattern="*.sfr"/>
+  <glob pattern="*.srr"/>
+  <glob pattern="*.1fp"/>
+  <glob pattern="*.1rp"/>
+  <glob pattern="*.1fr"/>
+  <glob pattern="*.1rr"/>
+  <glob pattern="*.2fp"/>
+  <glob pattern="*.2rp"/>
+  <glob pattern="*.2fr"/>
+  <glob pattern="*.2rr"/>
+  <glob pattern="*.ZFP"/>
+  <glob pattern="*.ZRP"/>
+  <glob pattern="*.ZFR"/>
+  <glob pattern="*.ZRR"/>
+  <glob pattern="*.FFP"/>
+  <glob pattern="*.FRP"/>
+  <glob pattern="*.FFR"/>
+  <glob pattern="*.FRR"/>
+  <glob pattern="*.LFP"/>
+  <glob pattern="*.LRP"/>
+  <glob pattern="*.LFR"/>
+  <glob pattern="*.LRR"/>
+  <glob pattern="*.SFP"/>
+  <glob pattern="*.SRP"/>
+  <glob pattern="*.SFR"/>
+  <glob pattern="*.SRR"/>
+  <glob pattern="*.1FP"/>
+  <glob pattern="*.1RP"/>
+  <glob pattern="*.1FR"/>
+  <glob pattern="*.1RR"/>
+  <glob pattern="*.2FP"/>
+  <glob pattern="*.2RP"/>
+  <glob pattern="*.2FR"/>
+  <glob pattern="*.2RR"/>
+</mime-type>
+
+<!-- From module spmlabf.c -->
+<mime-type type="application/x-spmlab-float-spm">
+  <comment>SPMLab floating-point SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="[Data Version]\r\nProgram=SPMLab"/>
+  </magic>
+  <glob pattern="*.flt"/>
+  <glob pattern="*.FLT"/>
+</mime-type>
+
+<!-- Module spmxfile.c contains no magic. -->
+<!-- From module stmprg.c -->
+<mime-type type="application/x-stmprg-spm">
+  <comment>Omicron STMPRG data parameters</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="MPAR"/>
+  </magic>
+</mime-type>
+
+<!-- From module stpfile.c -->
+<mime-type type="application/x-stp-spm">
+  <comment>Molecular Imaging STP SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="UK SOFT\r\n"/>
+  </magic>
+  <glob pattern="*.stp"/>
+  <glob pattern="*.STP"/>
+</mime-type>
+
+<!-- From module surffile.c -->
+<mime-type type="application/x-surf-spm">
+  <comment>Surf SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="DIGITAL SURF"/>
+  </magic>
+  <glob pattern="*.sur"/>
+  <glob pattern="*.SUR"/>
+</mime-type>
+
+<!-- From module tescan.c -->
+<mime-type type="application/x-tescan-sem-header">
+  <comment>Tescan SEM data header</comment>
+  <glob pattern="*-png.hdr"/>
+  <glob pattern="*-PNG.HDR"/>
+</mime-type>
+
+<!-- From module tiaser.c -->
+<mime-type type="application/x-tiaser-tem">
+  <comment>FEI TIA (Emispec) data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" word-size="2" value="\x49\x49\x01\x97"/>
+  </magic>
+  <glob pattern="*.ser"/>
+  <glob pattern="*.SER"/>
+</mime-type>
+
+<!-- Module ttffile.c contains no magic. -->
+<!-- From module unisoku.c -->
+<mime-type type="application/x-unisoku-spm">
+  <comment>Unisoku SPM data header</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value=":STM data\r\n"/>
+  </magic>
+  <glob pattern="*.hdr"/>
+  <glob pattern="*.HDR"/>
+</mime-type>
+
+<!-- From module win_stm.c -->
+<mime-type type="application/x-winstm-spm">
+  <comment>WinSTM data file</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="WinSTM"/>
+  </magic>
+</mime-type>
+
+<!-- From module wipfile.c -->
+<mime-type type="application/x-wipfile-spm">
+  <comment>WITec Project data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="WIT_PRCT"/>
+    <match type="string" offset="0" value="WIT_PR06"/>
+  </magic>
+  <glob pattern="*.wip"/>
+  <glob pattern="*.WIP"/>
+</mime-type>
+
+<!-- From module witec-asc.c -->
+<mime-type type="application/x-witec-ascii-export">
+  <comment>WITec ASCII data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="//Exported ASCII-File"/>
+  </magic>
+  <glob pattern="*.asc"/>
+  <glob pattern="*.ASC"/>
+</mime-type>
+
+<!-- From module witfile.c -->
+<mime-type type="application/x-witec-spm">
+  <comment>WITec SPM data</comment>
+  <glob pattern="*.wit"/>
+  <glob pattern="*.WIT"/>
+</mime-type>
+
+<!-- From module wrustfile.c -->
+<mime-type type="application/x-wrust-spm">
+  <comment>WRUST Department of Nanometrology AFM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="[Nazwa Systemu]"/>
+  </magic>
+</mime-type>
+
+<!-- From module wsffile.c -->
+<mime-type type="application/x-wsf-spm">
+  <comment>AFM Workshop SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0:160" value="\nPixels in X:">
+        <match type="string" offset="0:240" value="\nLines in Y:"/>
+    </match>
+  </magic>
+  <magic priority="80">
+    <match type="string" offset="0:160" value="\rPixels in X:">
+        <match type="string" offset="0:240" value="\rLines in Y:"/>
+    </match>
+  </magic>
+  <glob pattern="*.wsf"/>
+  <glob pattern="*.WSF"/>
+</mime-type>
+
+<!-- From module wsxmfile.c -->
+<mime-type type="application/x-wsxm-spm">
+  <comment>WSxM SPM data</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="WSxM file copyright ">
+      <match type="string" offset="22:60" value="SxM Image file"/>
+    </match>
+  </magic>
+  <glob pattern="*.tom"/>
+  <glob pattern="*.TOM"/>
+  <glob pattern="*.top"/>
+  <glob pattern="*.TOP"/>
+  <glob pattern="*.cur"/>
+  <glob pattern="*.CUR"/>
+</mime-type>
+
+<!-- Module xyzexport.c contains no magic. -->
+<!-- Module zeiss.c contains no magic. -->
+<!-- From module zeissczi.c -->
+<mime-type type="application/x-zeiss-czi-spm">
+  <comment>Carl Zeiss CZI images</comment>
+  <magic priority="80">
+    <match type="string" offset="0" value="ZISRAWFILE"/>
+  </magic>
+  <glob pattern="*.czi"/>
+  <glob pattern="*.CZI"/>
+</mime-type>
+
+<!-- From module zeisslsm.c -->
+<mime-type type="application/x-zeiss-lsm-spm">
+  <comment>Carl Zeiss CLSM images</comment>
+  <glob pattern="*.lsm"/>
+  <glob pattern="*.LSM"/>
+</mime-type>
+
+<!-- Module zemax.c contains no magic. -->
+<!-- Module hdrimage.cc contains no magic. -->
+</mime-info>

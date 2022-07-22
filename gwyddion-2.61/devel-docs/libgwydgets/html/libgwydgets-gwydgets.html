@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gwydgets: Gwyddion Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Widgets Library Reference Manual">
+<link rel="up" href="WidgetUtilities.html" title="Widget Utilities">
+<link rel="prev" href="WidgetUtilities.html" title="Widget Utilities">
+<link rel="next" href="libgwydgets-gwydgetenums.html" title="gwydgetenums">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwydgets-gwydgets.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="WidgetUtilities.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="WidgetUtilities.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwydgets-gwydgetenums.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwydgets-gwydgets"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwydgets-gwydgets.top_of_page"></a>gwydgets</span></h2>
+<p>gwydgets — Base functions</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwydgets-gwydgets.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwydgets-gwydgets.html#gwy-widgets-type-init" title="gwy_widgets_type_init ()">gwy_widgets_type_init</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwydgets-gwydgets.html#gwy-widgets-gl-init" title="gwy_widgets_gl_init ()">gwy_widgets_gl_init</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwydgets-gwydgets.html#GdkGLConfig" title="GdkGLConfig"><span class="returnvalue">GdkGLConfig</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwydgets-gwydgets.html#gwy-widgets-get-gl-config" title="gwy_widgets_get_gl_config ()">gwy_widgets_get_gl_config</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwydgets-gwydgets.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="libgwydgets-gwydgets.html#GdkGLConfig" title="GdkGLConfig">GdkGLConfig</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwydgets-gwydgets.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwydgets/gwydgets.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwydgets-gwydgets.description"></a><h2>Description</h2>
+<p>Gwyddion classes has to be initialized before they can be safely
+deserialized. The function <a href="../libgwyddion-gwyddion.html#gwy-type-init"><code class="function">gwy_type_init()</code></a> performs this initialization.</p>
+<p>Before 3D widgets (<a class="link" href="Gwy3DView.html" title="Gwy3DView"><span class="type">Gwy3DView</span></a>) can be used, OpenGL must be initialized with
+<a class="link" href="libgwydgets-gwydgets.html#gwy-widgets-gl-init" title="gwy_widgets_gl_init ()"><code class="function">gwy_widgets_gl_init()</code></a>.</p>
+</div>
+<div class="refsect1">
+<a name="libgwydgets-gwydgets.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-widgets-type-init"></a><h3>gwy_widgets_type_init ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_widgets_type_init (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Makes libgwydgets types safe for deserialization and performs other
+initialization.  You have to call this function before using widgets and
+objects from libgwydgets.</p>
+<p>Calls <a href="../libgwydraw-gwydraw.html#gwy-draw-type-init"><code class="function">gwy_draw_type_init()</code></a> first to make sure libgwydraw is initialized.</p>
+<p>It is safe to call this function more than once, subsequent calls are no-op.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-widgets-gl-init"></a><h3>gwy_widgets_gl_init ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_widgets_gl_init (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Configures an OpenGL-capable visual for 3D widgets.</p>
+<p>Use <a class="link" href="libgwydgets-gwydgets.html#gwy-widgets-get-gl-config" title="gwy_widgets_get_gl_config ()"><code class="function">gwy_widgets_get_gl_config()</code></a> to get the framebuffer configuration.</p>
+<p>This function must be called before OpenGL widgets can be used.</p>
+<div class="refsect3">
+<a name="gwy-widgets-gl-init.returns"></a><h4>Returns</h4>
+<p> <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if an appropriate visual was found.  If Gwyddion was compiled
+without OpenGL support, it always returns <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-widgets-get-gl-config"></a><h3>gwy_widgets_get_gl_config ()</h3>
+<pre class="programlisting"><a class="link" href="libgwydgets-gwydgets.html#GdkGLConfig" title="GdkGLConfig"><span class="returnvalue">GdkGLConfig</span></a> *
+gwy_widgets_get_gl_config (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Returns OpenGL framebuffer configuration for 3D widgets.</p>
+<p>Call <a class="link" href="libgwydgets-gwydgets.html#gwy-widgets-gl-init" title="gwy_widgets_gl_init ()"><code class="function">gwy_widgets_gl_init()</code></a> first.</p>
+<div class="refsect3">
+<a name="gwy-widgets-get-gl-config.returns"></a><h4>Returns</h4>
+<p> The OpenGL framebuffer configuration, <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if OpenGL
+initialization was not successfull.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgwydgets-gwydgets.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GdkGLConfig"></a><h3>GdkGLConfig</h3>
+<pre class="programlisting">typedef void GdkGLConfig;
+</pre>
+<p>Placeholder typedef.</p>
+<p>If Gwyddion is compiled with OpenGL (i.e., GtkGLExt) this is the real</p>
+<span class="type">GdkGLConfig</span>.  However, if Gwyddion is compiled without OpenGL
+<p>this type is typedefed as <span class="type">void</span>.</p>
+<p>Since one cannot actually use any of the Gwyddion OpenGL widgets if they
+are not enabled, this usually works well.  However, it can break in the
+unlikely case one compiles with wibgwydgets that have OpenGL disabled and
+at the same time he uses GtkGLExt directly.  In such case</p>
+<span class="type">GdkGLConfig</span> is defined twice.   The only known fix is not
+<p>to include <code class="filename">gwydgets.h</code> and GtkGLExt headers in the same
+source file.</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

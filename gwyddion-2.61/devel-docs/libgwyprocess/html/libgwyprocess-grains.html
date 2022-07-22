@@ -1,0 +1,2387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>grains: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="libgwyprocess-fractals.html" title="fractals">
+<link rel="next" href="GwyGrainValue.html" title="GwyGrainValue">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyprocess-grains.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyprocess-fractals.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyGrainValue.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyprocess-grains"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyprocess-grains.top_of_page"></a>grains</span></h2>
+<p>grains — Grain detection and processing</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyprocess-grains.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-mark-curvature" title="gwy_data_field_grains_mark_curvature ()">gwy_data_field_grains_mark_curvature</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-mark-watershed" title="gwy_data_field_grains_mark_watershed ()">gwy_data_field_grains_mark_watershed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-remove-grain" title="gwy_data_field_grains_remove_grain ()">gwy_data_field_grains_remove_grain</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-extract-grain" title="gwy_data_field_grains_extract_grain ()">gwy_data_field_grains_extract_grain</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-remove-by-number" title="gwy_data_field_grains_remove_by_number ()">gwy_data_field_grains_remove_by_number</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-remove-by-size" title="gwy_data_field_grains_remove_by_size ()">gwy_data_field_grains_remove_by_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-remove-by-height" title="gwy_data_field_grains_remove_by_height ()">gwy_data_field_grains_remove_by_height</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-remove-touching-border" title="gwy_data_field_grains_remove_touching_border ()">gwy_data_field_grains_remove_touching_border</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyprocess-gwyprocessenums.html#GwyComputationState"><span class="returnvalue">GwyComputationState</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-watershed-init" title="gwy_data_field_grains_watershed_init ()">gwy_data_field_grains_watershed_init</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-watershed-iteration" title="gwy_data_field_grains_watershed_iteration ()">gwy_data_field_grains_watershed_iteration</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-watershed-finalize" title="gwy_data_field_grains_watershed_finalize ()">gwy_data_field_grains_watershed_finalize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-mark-height" title="gwy_data_field_grains_mark_height ()">gwy_data_field_grains_mark_height</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-mark-slope" title="gwy_data_field_grains_mark_slope ()">gwy_data_field_grains_mark_slope</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-otsu-threshold" title="gwy_data_field_otsu_threshold ()">gwy_data_field_otsu_threshold</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-add" title="gwy_data_field_grains_add ()">gwy_data_field_grains_add</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-intersect" title="gwy_data_field_grains_intersect ()">gwy_data_field_grains_intersect</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-invert" title="gwy_data_field_grains_invert ()">gwy_data_field_grains_invert</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-autocrop" title="gwy_data_field_grains_autocrop ()">gwy_data_field_grains_autocrop</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()">gwy_data_field_number_grains</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains-periodic" title="gwy_data_field_number_grains_periodic ()">gwy_data_field_number_grains_periodic</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-get-grain-bounding-boxes" title="gwy_data_field_get_grain_bounding_boxes ()">gwy_data_field_get_grain_bounding_boxes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-get-grain-bounding-boxes-periodic" title="gwy_data_field_get_grain_bounding_boxes_periodic ()">gwy_data_field_get_grain_bounding_boxes_periodic</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-get-grain-sizes" title="gwy_data_field_get_grain_sizes ()">gwy_data_field_get_grain_sizes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-get-grain-inscribed-boxes" title="gwy_data_field_get_grain_inscribed_boxes ()">gwy_data_field_get_grain_inscribed_boxes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-find-boundaries" title="gwy_data_field_grains_find_boundaries ()">gwy_data_field_grains_find_boundaries</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="returnvalue">GwyDataLine</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-get-distribution" title="gwy_data_field_grains_get_distribution ()">gwy_data_field_grains_get_distribution</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-get-values" title="gwy_data_field_grains_get_values ()">gwy_data_field_grains_get_values</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> **
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-get-quantities" title="gwy_data_field_grains_get_quantities ()">gwy_data_field_grains_get_quantities</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-grain-quantity-needs-same-units" title="gwy_grain_quantity_needs_same_units ()">gwy_grain_quantity_needs_same_units</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-grain-quantity-get-units" title="gwy_grain_quantity_get_units ()">gwy_grain_quantity_get_units</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-area-grains-tgnd" title="gwy_data_field_area_grains_tgnd ()">gwy_data_field_area_grains_tgnd</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-area-grains-tgnd-range" title="gwy_data_field_area_grains_tgnd_range ()">gwy_data_field_area_grains_tgnd_range</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-splash-water" title="gwy_data_field_grains_splash_water ()">gwy_data_field_grains_splash_water</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grain-distance-transform" title="gwy_data_field_grain_distance_transform ()">gwy_data_field_grain_distance_transform</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grain-simple-dist-trans" title="gwy_data_field_grain_simple_dist_trans ()">gwy_data_field_grain_simple_dist_trans</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-shrink" title="gwy_data_field_grains_shrink ()">gwy_data_field_grains_shrink</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-grow" title="gwy_data_field_grains_grow ()">gwy_data_field_grains_grow</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-thin" title="gwy_data_field_grains_thin ()">gwy_data_field_grains_thin</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-fill-voids" title="gwy_data_field_fill_voids ()">gwy_data_field_fill_voids</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-waterpour" title="gwy_data_field_waterpour ()">gwy_data_field_waterpour</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-mark-extrema" title="gwy_data_field_mark_extrema ()">gwy_data_field_mark_extrema</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-grains.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-grains.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-grains.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-data-field-grains-mark-curvature"></a><h3>gwy_data_field_grains_mark_curvature ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_grains_mark_curvature (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                      <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *grain_field</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> threshval</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> below</code></em>);</pre>
+<p>Marks data that are above/below curvature threshold.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-mark-curvature.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>Data to be used for marking.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grain_field</p></td>
+<td class="parameter_description"><p>Data field to store the resulting mask to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>threshval</p></td>
+<td class="parameter_description"><p>Relative curvature threshold, in percents.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>below</p></td>
+<td class="parameter_description"><p>If <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, data below threshold are marked, otherwise data above threshold are marked.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-mark-watershed"></a><h3>gwy_data_field_grains_mark_watershed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_grains_mark_watershed (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                      <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *grain_field</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> locate_steps</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> locate_thresh</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> locate_dropsize</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> wshed_steps</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> wshed_dropsize</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> prefilter</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> below</code></em>);</pre>
+<p>Performs watershed algorithm.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-mark-watershed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>Data to be used for marking.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grain_field</p></td>
+<td class="parameter_description"><p>Result of marking (mask).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>locate_steps</p></td>
+<td class="parameter_description"><p>Locating algorithm steps.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>locate_thresh</p></td>
+<td class="parameter_description"><p>Locating algorithm threshold.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>locate_dropsize</p></td>
+<td class="parameter_description"><p>Locating drop size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>wshed_steps</p></td>
+<td class="parameter_description"><p>Watershed steps.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>wshed_dropsize</p></td>
+<td class="parameter_description"><p>Watershed drop size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prefilter</p></td>
+<td class="parameter_description"><p>Use prefiltering.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>below</p></td>
+<td class="parameter_description"><p>If <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, valleys are marked, otherwise mountains are marked.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-remove-grain"></a><h3>gwy_data_field_grains_remove_grain ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_data_field_grains_remove_grain (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *grain_field</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<p>Removes one grain at given position.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-remove-grain.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>grain_field</p></td>
+<td class="parameter_description"><p>Field of marked grains (mask).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Column inside a grain.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Row inside a grain.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-grains-remove-grain.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if a grain was actually removed, i.e. (<em class="parameter"><code>col</code></em>
+,<em class="parameter"><code>row</code></em>
+) was inside a grain.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-extract-grain"></a><h3>gwy_data_field_grains_extract_grain ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_data_field_grains_extract_grain (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *grain_field</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>);</pre>
+<p>Removes all grains except that one at given position.</p>
+<p>If there is no grain at (<em class="parameter"><code>col</code></em>
+, <em class="parameter"><code>row</code></em>
+), all grains are removed.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-extract-grain.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>grain_field</p></td>
+<td class="parameter_description"><p>Field of marked grains (mask).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Column inside a grain.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Row inside a grain.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-grains-extract-grain.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if a grain remained (i.e., (<em class="parameter"><code>col</code></em>
+,<em class="parameter"><code>row</code></em>
+) was inside a grain).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-remove-by-number"></a><h3>gwy_data_field_grains_remove_by_number ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_grains_remove_by_number
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *grain_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> number</code></em>);</pre>
+<p>Removes grain identified by <em class="parameter"><code>number</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-remove-by-number.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>grain_field</p></td>
+<td class="parameter_description"><p>Field of marked grains (mask).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>number</p></td>
+<td class="parameter_description"><p>Grain number was filled by <a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()"><code class="function">gwy_data_field_number_grains()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-35.html#api-index-2.35">2.35</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-remove-by-size"></a><h3>gwy_data_field_grains_remove_by_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_grains_remove_by_size (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *grain_field</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>);</pre>
+<p>Removes all grains below specified area.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-remove-by-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>grain_field</p></td>
+<td class="parameter_description"><p>Field of marked grains (mask).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Grain area threshold, in square pixels.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-remove-by-height"></a><h3>gwy_data_field_grains_remove_by_height ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_grains_remove_by_height
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *grain_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> threshval</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> below</code></em>);</pre>
+<p>Removes grains that are higher/lower than given threshold value.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-remove-by-height.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>Data to be used for marking</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grain_field</p></td>
+<td class="parameter_description"><p>Field of marked grains (mask)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>threshval</p></td>
+<td class="parameter_description"><p>Relative height threshold, in percents.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>below</p></td>
+<td class="parameter_description"><p>If <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, grains below threshold are removed, otherwise grains above threshold are removed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-remove-touching-border"></a><h3>gwy_data_field_grains_remove_touching_border ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_grains_remove_touching_border
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *grain_field</code></em>);</pre>
+<p>Removes all grains that touch field borders.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-remove-touching-border.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>grain_field</p></td>
+<td class="parameter_description"><p>Field of marked grains (mask).</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-30.html#api-index-2.30">2.30</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-watershed-init"></a><h3>gwy_data_field_grains_watershed_init ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyComputationState"><span class="returnvalue">GwyComputationState</span></a> *
+gwy_data_field_grains_watershed_init (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                      <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *grain_field</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> locate_steps</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> locate_thresh</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> locate_dropsize</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> wshed_steps</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> wshed_dropsize</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> prefilter</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> below</code></em>);</pre>
+<p>Initializes the watershed algorithm.</p>
+<p>This iterator reports its state as <a class="link" href="libgwyprocess-gwyprocessenums.html#GwyWatershedStateType" title="enum GwyWatershedStateType"><span class="type">GwyWatershedStateType</span></a>.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-watershed-init.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>Data to be used for marking.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grain_field</p></td>
+<td class="parameter_description"><p>Result of marking (mask).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>locate_steps</p></td>
+<td class="parameter_description"><p>Locating algorithm steps.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>locate_thresh</p></td>
+<td class="parameter_description"><p>Locating algorithm threshold.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>locate_dropsize</p></td>
+<td class="parameter_description"><p>Locating drop size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>wshed_steps</p></td>
+<td class="parameter_description"><p>Watershed steps.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>wshed_dropsize</p></td>
+<td class="parameter_description"><p>Watershed drop size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prefilter</p></td>
+<td class="parameter_description"><p>Use prefiltering.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>below</p></td>
+<td class="parameter_description"><p>If <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, valleys are marked, otherwise mountains are marked.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-grains-watershed-init.returns"></a><h4>Returns</h4>
+<p> A new watershed iterator.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-watershed-iteration"></a><h3>gwy_data_field_grains_watershed_iteration ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_grains_watershed_iteration
+                               (<em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyComputationState"><span class="type">GwyComputationState</span></a> *state</code></em>);</pre>
+<p>Performs one iteration of the watershed algorithm.</p>
+<p>Fields <em class="parameter"><code>state</code></em>
+ and progress <em class="parameter"><code>fraction</code></em>
+ of watershed state are updated
+(fraction is calculated for each phase individually).  Once <em class="parameter"><code>state</code></em>
+
+becomes <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-WATERSHED-STATE-FINISHED:CAPS"><code class="literal">GWY_WATERSHED_STATE_FINISHED</code></a>, the calculation is finised.</p>
+<p>A watershed iterator can be created with
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-watershed-init" title="gwy_data_field_grains_watershed_init ()"><code class="function">gwy_data_field_grains_watershed_init()</code></a>.  When iteration ends, either
+by finishing or being aborted, <a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-watershed-finalize" title="gwy_data_field_grains_watershed_finalize ()"><code class="function">gwy_data_field_grains_watershed_finalize()</code></a>
+must be called to release allocated resources.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-watershed-iteration.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>state</p></td>
+<td class="parameter_description"><p>Watershed iterator.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-watershed-finalize"></a><h3>gwy_data_field_grains_watershed_finalize ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_grains_watershed_finalize
+                               (<em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyComputationState"><span class="type">GwyComputationState</span></a> *state</code></em>);</pre>
+<p>Destroys a watershed iterator, freeing all resources.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-watershed-finalize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>state</p></td>
+<td class="parameter_description"><p>Watershed iterator.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-mark-height"></a><h3>gwy_data_field_grains_mark_height ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_grains_mark_height (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                   <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *grain_field</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> threshval</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> below</code></em>);</pre>
+<p>Marks data that are above/below height threshold.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-mark-height.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>Data to be used for marking.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grain_field</p></td>
+<td class="parameter_description"><p>Data field to store the resulting mask to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>threshval</p></td>
+<td class="parameter_description"><p>Relative height threshold, in percents.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>below</p></td>
+<td class="parameter_description"><p>If <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, data below threshold are marked, otherwise data above threshold are marked.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-mark-slope"></a><h3>gwy_data_field_grains_mark_slope ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_grains_mark_slope (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                  <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *grain_field</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> threshval</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> below</code></em>);</pre>
+<p>Marks data that are above/below slope threshold.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-mark-slope.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>Data to be used for marking.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grain_field</p></td>
+<td class="parameter_description"><p>Data field to store the resulting mask to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>threshval</p></td>
+<td class="parameter_description"><p>Relative slope threshold, in percents.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>below</p></td>
+<td class="parameter_description"><p>If <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, data below threshold are marked, otherwise data above threshold are marked.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-otsu-threshold"></a><h3>gwy_data_field_otsu_threshold ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_otsu_threshold (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>);</pre>
+<p>Finds Otsu's height threshold for a data field.</p>
+<p>The Otsu's threshold is optimal in the sense that it minimises the inter-class variances of two classes of pixels:
+above and below theshold.</p>
+<div class="refsect3">
+<a name="gwy-data-field-otsu-threshold.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-37.html#api-index-2.37">2.37</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-add"></a><h3>gwy_data_field_grains_add ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_grains_add (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *grain_field</code></em>,
+                           <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *add_field</code></em>);</pre>
+<p>Adds <em class="parameter"><code>add_field</code></em>
+ grains to <em class="parameter"><code>grain_field</code></em>
+.</p>
+<p>Note: This function is equivalent to</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">gwy_data_field_max_of_fields</span><span class="p">(</span><span class="n">grain_field</span><span class="p">,</span> <span class="n">grain_field</span><span class="p">,</span> <span class="n">add_field</span><span class="p">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-add.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>grain_field</p></td>
+<td class="parameter_description"><p>Field of marked grains (mask).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>add_field</p></td>
+<td class="parameter_description"><p>Field of marked grains (mask) to be added.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-intersect"></a><h3>gwy_data_field_grains_intersect ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_grains_intersect (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *grain_field</code></em>,
+                                 <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *intersect_field</code></em>);</pre>
+<p>Performs intersection betweet two grain fields, result is stored in <em class="parameter"><code>grain_field</code></em>
+.</p>
+<p>Note: This function is equivalent to</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">gwy_data_field_min_of_fields</span><span class="p">(</span><span class="n">grain_field</span><span class="p">,</span> <span class="n">grain_field</span><span class="p">,</span> <span class="n">intersect_field</span><span class="p">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-intersect.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>grain_field</p></td>
+<td class="parameter_description"><p>Field of marked grains (mask).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>intersect_field</p></td>
+<td class="parameter_description"><p>Field of marked grains (mask).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-invert"></a><h3>gwy_data_field_grains_invert ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_grains_invert (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *grain_field</code></em>);</pre>
+<p>Inverts a data field representing a mask.</p>
+<p>All non-positive values are transformed to 1.0.  All positive values are transformed to 0.0.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-invert.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>grain_field</p></td>
+<td class="parameter_description"><p>Data field (mask) of marked grains.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-43.html#api-index-2.43">2.43</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-autocrop"></a><h3>gwy_data_field_grains_autocrop ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_data_field_grains_autocrop (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> symmetrically</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *left</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *right</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *up</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *down</code></em>);</pre>
+<p>Removes empty border rows and columns from a data field representing a mask.</p>
+<p>If there are border rows and columns filled completely with non-positive values the size of the data field is
+reduced, removing these rows.  The parameter <em class="parameter"><code>symmetrically</code></em>
+ controls whether the size reduction is maximum possible
+or symmetrical.</p>
+<p>When there is no positive value in the field the field size is reduced to the smallest possible.  This means 1x1
+for <em class="parameter"><code>symmetrical</code></em>
+ being <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> and even original dimensions to 2 for <em class="parameter"><code>symmetrical</code></em>
+ being <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-autocrop.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mask_field</p></td>
+<td class="parameter_description"><p>Data field representing a mask.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>symmetrically</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to remove borders symmetrically, i.e the same number of pixels from left and right, and also
+top and bottom. <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to remove as many empty rows and columns as possible.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>left</p></td>
+<td class="parameter_description"><p>Location to store how many column were removed from the left, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>right</p></td>
+<td class="parameter_description"><p>Location to store how many column were removed from the right, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>up</p></td>
+<td class="parameter_description"><p>Location to store how many row were removed from the top, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>down</p></td>
+<td class="parameter_description"><p>Location to store how many row were removed from the bottom, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-grains-autocrop.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the field size was reduced at all.  Detailed information about the reduction can be obtained from
+<em class="parameter"><code>left</code></em>
+, <em class="parameter"><code>right</code></em>
+, <em class="parameter"><code>up</code></em>
+and <em class="parameter"><code>down</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-43.html#api-index-2.43">2.43</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-number-grains"></a><h3>gwy_data_field_number_grains ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_data_field_number_grains (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask_field</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *grains</code></em>);</pre>
+<p>Numbers grains in a mask data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-number-grains.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mask_field</p></td>
+<td class="parameter_description"><p>Data field containing positive values in grains, nonpositive in free space.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grains</p></td>
+<td class="parameter_description"><p>Zero-filled array of integers of equal size to <em class="parameter"><code>mask_field</code></em>
+to put grain numbers to.  Empty space will be
+left 0, pixels inside a grain will be set to grain number.  Grains are numbered sequentially 1, 2, 3, ...</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-number-grains.returns"></a><h4>Returns</h4>
+<p> The number of last grain (note they are numbered from 1).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-number-grains-periodic"></a><h3>gwy_data_field_number_grains_periodic ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_data_field_number_grains_periodic (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask_field</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *grains</code></em>);</pre>
+<p>Numbers grains in a periodic mask data field.</p>
+<p>This function differs from <a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()"><code class="function">gwy_data_field_number_grains()</code></a> by the assumption of periodicity, i.e. grains can touch
+across the opposite field edges.</p>
+<p>Note that some grain operations assume that grains are contiguous within the image and do not work with periodic
+grains.</p>
+<p>You can use <a class="link" href="libgwyprocess-grains.html#gwy-data-field-get-grain-sizes" title="gwy_data_field_get_grain_sizes ()"><code class="function">gwy_data_field_get_grain_sizes()</code></a> and there is <a class="link" href="libgwyprocess-grains.html#gwy-data-field-get-grain-bounding-boxes-periodic" title="gwy_data_field_get_grain_bounding_boxes_periodic ()"><code class="function">gwy_data_field_get_grain_bounding_boxes_periodic()</code></a> for
+bouding boxes of periodic grains.  As for grain quantities, simple quantities that do not depend on the shape
+(mean, median, etc.) are evaluated correctly even for periodic grains.  You cannot evaluate quantities depending on
+grain boundaries though.</p>
+<div class="refsect3">
+<a name="gwy-data-field-number-grains-periodic.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mask_field</p></td>
+<td class="parameter_description"><p>Data field containing positive values in grains, nonpositive in free space.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grains</p></td>
+<td class="parameter_description"><p>Zero-filled array of integers of equal size to <em class="parameter"><code>mask_field</code></em>
+to put grain numbers to.  Empty space will be
+left 0, pixels inside a grain will be set to grain number.  Grains are numbered sequentially 1, 2, 3, ...</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-number-grains-periodic.returns"></a><h4>Returns</h4>
+<p> The number of last grain (note they are numbered from 1).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-38.html#api-index-2.38">2.38</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-get-grain-bounding-boxes"></a><h3>gwy_data_field_get_grain_bounding_boxes ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a> *
+gwy_data_field_get_grain_bounding_boxes
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ngrains</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *grains</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *bboxes</code></em>);</pre>
+<p>Find bounding boxes of all grains.</p>
+<p>As usual the zeroth element of <em class="parameter"><code>bboxes</code></em>
+ does not correspond to any grain; grain numbers start from 1. The bounding
+boxes are stored as quadruples of indices: (column, row, width, height).</p>
+<div class="refsect3">
+<a name="gwy-data-field-get-grain-bounding-boxes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mask_field</p></td>
+<td class="parameter_description"><p>Data field containing positive values in grains, nonpositive in free space.  However its contents is
+ignored as all grain information is taken from <em class="parameter"><code>grains</code></em>
+(its dimensions determine the dimensions of
+<em class="parameter"><code>grains</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ngrains</p></td>
+<td class="parameter_description"><p>The number of grains as returned by <a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()"><code class="function">gwy_data_field_number_grains()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grains</p></td>
+<td class="parameter_description"><p>Grain numbers filled with <a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()"><code class="function">gwy_data_field_number_grains()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bboxes</p></td>
+<td class="parameter_description"><p>Array of size at least 4*(<em class="parameter"><code>ngrains</code></em>
++1) to fill with grain bounding boxes.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to allocate
+a new array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-get-grain-bounding-boxes.returns"></a><h4>Returns</h4>
+<p> Either <em class="parameter"><code>bboxes</code></em>
+(if it was not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>), or a newly allocated array of size 4(<em class="parameter"><code>ngrains</code></em>
++ 1).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-3.html#api-index-2.3">2.3</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-get-grain-bounding-boxes-periodic"></a><h3>gwy_data_field_get_grain_bounding_boxes_periodic ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a> *
+gwy_data_field_get_grain_bounding_boxes_periodic
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ngrains</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *grains</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *bboxes</code></em>);</pre>
+<p>Find bounding boxes of all grains.</p>
+<p>As usual zeroth element of <em class="parameter"><code>bboxes</code></em>
+ does not correspond to any grain; grain numbers start from 1. The bounding boxes
+are stored as quadruples of indices: (column, row, width, height).</p>
+<p>The row and column always lie inside the the image.  However, width and height may specify an area which sticks
+outside.  In this case periodicity needs to be taken into account.</p>
+<div class="refsect3">
+<a name="gwy-data-field-get-grain-bounding-boxes-periodic.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mask_field</p></td>
+<td class="parameter_description"><p>Data field containing positive values in grains, nonpositive in free space.  However its contents is
+ignored as all grain information is taken from <em class="parameter"><code>grains</code></em>
+(its dimensions determine the dimensions of
+<em class="parameter"><code>grains</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ngrains</p></td>
+<td class="parameter_description"><p>The number of grains as returned by <a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains-periodic" title="gwy_data_field_number_grains_periodic ()"><code class="function">gwy_data_field_number_grains_periodic()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grains</p></td>
+<td class="parameter_description"><p>Grain numbers filled with <a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains-periodic" title="gwy_data_field_number_grains_periodic ()"><code class="function">gwy_data_field_number_grains_periodic()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bboxes</p></td>
+<td class="parameter_description"><p>Array of size at least 4*(<em class="parameter"><code>ngrains</code></em>
++1) to fill with grain bounding boxes.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to allocate
+a new array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-get-grain-bounding-boxes-periodic.returns"></a><h4>Returns</h4>
+<p> Either <em class="parameter"><code>bboxes</code></em>
+(if it was not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>), or a newly allocated array of size 4(<em class="parameter"><code>ngrains</code></em>
++ 1).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-51.html#api-index-2.51">2.51</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-get-grain-sizes"></a><h3>gwy_data_field_get_grain_sizes ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a> *
+gwy_data_field_get_grain_sizes (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ngrains</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *grains</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *sizes</code></em>);</pre>
+<p>Find sizes of all grains in a mask data field.</p>
+<p>Size is the number of pixels in the grain.</p>
+<p>The zeroth element of <em class="parameter"><code>sizes</code></em>
+ is filled with the number of pixels not covered by the mask.</p>
+<div class="refsect3">
+<a name="gwy-data-field-get-grain-sizes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mask_field</p></td>
+<td class="parameter_description"><p>Data field containing positive values in grains, nonpositive in free space.  However its contents is
+ignored as all grain information is taken from <em class="parameter"><code>grains</code></em>
+(its dimensions determine the dimensions of
+<em class="parameter"><code>grains</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ngrains</p></td>
+<td class="parameter_description"><p>The number of grains as returned by <a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()"><code class="function">gwy_data_field_number_grains()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grains</p></td>
+<td class="parameter_description"><p>Grain numbers filled with <a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()"><code class="function">gwy_data_field_number_grains()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sizes</p></td>
+<td class="parameter_description"><p>Array of size at least <em class="parameter"><code>ngrains</code></em>
++1 to fill with grain sizes (as usual zero does not correspond to any grain,
+grains start from 1). It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to allocate a new array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-get-grain-sizes.returns"></a><h4>Returns</h4>
+<p> Either <em class="parameter"><code>sizes</code></em>
+(if it was not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>), or a newly allocated array of size <em class="parameter"><code>ngrains</code></em>
++1.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-get-grain-inscribed-boxes"></a><h3>gwy_data_field_get_grain_inscribed_boxes ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a> *
+gwy_data_field_get_grain_inscribed_boxes
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ngrains</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *grains</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *iboxes</code></em>);</pre>
+<p>Find maximum-area inscribed boxes of all grains.</p>
+<p>As usual zeroth element of <em class="parameter"><code>iboxes</code></em>
+ does not correspond to any grain; grain numbers start from 1. The bounding boxes
+are stored as quadruples of indices: (column, row, width, height).</p>
+<div class="refsect3">
+<a name="gwy-data-field-get-grain-inscribed-boxes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mask_field</p></td>
+<td class="parameter_description"><p>Data field containing positive values in grains, nonpositive in free space.  However its contents is
+ignored as all grain information is taken from <em class="parameter"><code>grains</code></em>
+(its dimensions determine the dimensions of
+<em class="parameter"><code>grains</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ngrains</p></td>
+<td class="parameter_description"><p>The number of grains as returned by <a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()"><code class="function">gwy_data_field_number_grains()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grains</p></td>
+<td class="parameter_description"><p>Grain numbers filled with <a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()"><code class="function">gwy_data_field_number_grains()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iboxes</p></td>
+<td class="parameter_description"><p>Array of size at least 4*(<em class="parameter"><code>ngrains</code></em>
++1) to fill with grain bounding boxes.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to allocate
+a new array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-get-grain-inscribed-boxes.returns"></a><h4>Returns</h4>
+<p> Either <em class="parameter"><code>iboxes</code></em>
+(if it was not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>), or a newly allocated array of size 4(<em class="parameter"><code>ngrains</code></em>
++ 1).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-53.html#api-index-2.53">2.53</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-find-boundaries"></a><h3>gwy_data_field_grains_find_boundaries ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a> *
+gwy_data_field_grains_find_boundaries (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                       <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *grains</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ngrains</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *bindex</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> from_border</code></em>);</pre>
+<p>Find boundary pixels of all grains in a data field.</p>
+<p>The returned array contains pixel indices of grain boundaries, concatenated all one after another.  The block for
+grain with number <em class="parameter"><code>i</code></em>
+ starts at position <em class="parameter"><code>bindex</code></em>
+[<em class="parameter"><code>i</code></em>
+] and ends one before position <em class="parameter"><code>bindex</code></em>
+[<em class="parameter"><code>i</code></em>
++1] where the next block
+starts.  The indices in each block are stored in ascending order.</p>
+<p>Boundary pixels are considered in the usual 4-connected metric.</p>
+<p>The boundary of the no-grain area is not computed. Therefore, the first two elements of <em class="parameter"><code>bindex</code></em>
+ will be always
+zeros.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-find-boundaries.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mask_field</p></td>
+<td class="parameter_description"><p>Data field containing positive values in grains, nonpositive in free space.  However its contents is
+ignored as all grain information is taken from <em class="parameter"><code>grains</code></em>
+(its dimensions determine the dimensions of
+<em class="parameter"><code>grains</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grains</p></td>
+<td class="parameter_description"><p>Grain numbers filled with <a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()"><code class="function">gwy_data_field_number_grains()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ngrains</p></td>
+<td class="parameter_description"><p>The number of grains as returned by <a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()"><code class="function">gwy_data_field_number_grains()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bindex</p></td>
+<td class="parameter_description"><p>Array of size at least <em class="parameter"><code>ngrains</code></em>
++2.  It will be filled block starts in the returned array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from_border</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to consider image edges to be grain boundaries.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-grains-find-boundaries.returns"></a><h4>Returns</h4>
+<p> A newly allocated array of size given by <em class="parameter"><code>bindex</code></em>
+[<em class="parameter"><code>ngrains</code></em>
++1].</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-61.html#api-index-2.61">2.61</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-get-distribution"></a><h3>gwy_data_field_grains_get_distribution ()</h3>
+<pre class="programlisting"><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="returnvalue">GwyDataLine</span></a> *
+gwy_data_field_grains_get_distribution
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *grain_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *distribution</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ngrains</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *grains</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyGrainQuantity" title="enum GwyGrainQuantity"><span class="type">GwyGrainQuantity</span></a> quantity</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nstats</code></em>);</pre>
+<p>Computes distribution of requested grain characteristics.</p>
+<p>Puts number of grains vs. grain value data into <em class="parameter"><code>distribution</code></em>
+, units, scales
+and offsets of <em class="parameter"><code>distribution</code></em>
+ are updated accordingly.</p>
+<p>Note the <em class="parameter"><code>i</code></em>
+-th bin is [<em class="parameter"><code>i</code></em>
+*<em class="parameter"><code>dx</code></em>
++<em class="parameter"><code>off</code></em>
+,(<em class="parameter"><code>i</code></em>
++1)*<em class="parameter"><code>dx</code></em>
++<em class="parameter"><code>off</code></em>
+] so the central value
+you probably want to use for plotting is (<em class="parameter"><code>i</code></em>
++0.5)*<em class="parameter"><code>dx</code></em>
++<em class="parameter"><code>off</code></em>
+ (where <em class="parameter"><code>dx</code></em>
+ is
+the <em class="parameter"><code>distribution</code></em>
+ data line pixel size, <em class="parameter"><code>off</code></em>
+ is its offset).</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-get-distribution.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>Data field used for marking.  For some quantities its values
+are not used, but units and physical dimensions are always
+taken from it.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grain_field</p></td>
+<td class="parameter_description"><p>Data field (mask) of marked grains.  Note if you pass
+non-<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> <em class="parameter"><code>grains</code></em>
+all grain information is taken from it and
+<em class="parameter"><code>grain_field</code></em>
+can be even <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> then.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>distribution</p></td>
+<td class="parameter_description"><p>Data line to store grain distribution to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grains</p></td>
+<td class="parameter_description"><p>Grain numbers filled with <a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()"><code class="function">gwy_data_field_number_grains()</code></a> if you
+have it, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (the function then finds grain numbers itself
+which is not efficient for repeated use on the same grain field).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ngrains</p></td>
+<td class="parameter_description"><p>The number of grains as returned by
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()"><code class="function">gwy_data_field_number_grains()</code></a>.  Ignored in <em class="parameter"><code>grains</code></em>
+is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>quantity</p></td>
+<td class="parameter_description"><p>The quantity to calculate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nstats</p></td>
+<td class="parameter_description"><p>The number of samples to take on the distribution function.  If
+nonpositive, a suitable resolution is determined automatically.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-grains-get-distribution.returns"></a><h4>Returns</h4>
+<p> A data line with the distribution: <em class="parameter"><code>distribution</code></em>
+itself if it was
+not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, otherwise a newly created <a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> caller must
+destroy.  If there are no grains, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is returned and
+<em class="parameter"><code>distribution</code></em>
+is not changed.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-get-values"></a><h3>gwy_data_field_grains_get_values ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_data_field_grains_get_values (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *values</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ngrains</code></em>,
+                                  <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *grains</code></em>,
+                                  <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyGrainQuantity" title="enum GwyGrainQuantity"><span class="type">GwyGrainQuantity</span></a> quantity</code></em>);</pre>
+<p>Calculates characteristics of grains.</p>
+<p>This is a bit low-level function, see also
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-get-distribution" title="gwy_data_field_grains_get_distribution ()"><code class="function">gwy_data_field_grains_get_distribution()</code></a>.</p>
+<p>The array <em class="parameter"><code>values</code></em>
+ will be filled with the requested grain value for each
+individual grain (0th item of <em class="parameter"><code>values</code></em>
+ which does not correspond to any grain
+will be overwritten with an arbitrary value and should be ignored).</p>
+<p>The grain numbers serve as indices in <em class="parameter"><code>values</code></em>
+.  Therefore as long as the
+same <em class="parameter"><code>grains</code></em>
+ is used, the same position in <em class="parameter"><code>values</code></em>
+ corresponds to the same
+particular grain.  This enables one for instance to calculate grain sizes
+and grain heights and then correlate them.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-get-values.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>Data field used for marking.  For some quantities its values
+are not used, but its dimensions determine the dimensions of
+<em class="parameter"><code>grains</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>values</p></td>
+<td class="parameter_description"><p>Array of size <em class="parameter"><code>ngrains</code></em>
++1 to put grain values to.  It can be
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to allocate and return a new array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grains</p></td>
+<td class="parameter_description"><p>Grain numbers filled with <a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()"><code class="function">gwy_data_field_number_grains()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ngrains</p></td>
+<td class="parameter_description"><p>The number of grains as returned by
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()"><code class="function">gwy_data_field_number_grains()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>quantity</p></td>
+<td class="parameter_description"><p>The quantity to calculate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-grains-get-values.returns"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>values</code></em>
+itself if it was not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, otherwise a newly allocated
+array that caller has to free.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-get-quantities"></a><h3>gwy_data_field_grains_get_quantities ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> **
+gwy_data_field_grains_get_quantities (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> **values</code></em>,
+                                      <em class="parameter"><code>const <a class="link" href="libgwyprocess-gwyprocessenums.html#GwyGrainQuantity" title="enum GwyGrainQuantity"><span class="type">GwyGrainQuantity</span></a> *quantities</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nquantities</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> ngrains</code></em>,
+                                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *grains</code></em>);</pre>
+<p>Calculates multiple characteristics of grains simultaneously.</p>
+<p>See <a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-get-values" title="gwy_data_field_grains_get_values ()"><code class="function">gwy_data_field_grains_get_values()</code></a> for some discussion.  This function
+is more efficient if several grain quantities need to be calculated since
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-get-values" title="gwy_data_field_grains_get_values ()"><code class="function">gwy_data_field_grains_get_values()</code></a> can do lot of repeated work in such case.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-get-quantities.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>Data field used for marking.  For some quantities its values
+are not used, but its dimensions determine the dimensions of
+<em class="parameter"><code>grains</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>values</p></td>
+<td class="parameter_description"><p>Array of <em class="parameter"><code>nquantities</code></em>
+pointers to blocks of length <em class="parameter"><code>ngrains</code></em>
++1 to
+put the calculated grain values to.  Each block corresponds to one
+requested quantity.  <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> can be passed to allocate and return a
+new array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>quantities</p></td>
+<td class="parameter_description"><p>Array of <em class="parameter"><code>nquantities</code></em>
+items that specify the requested
+<a class="link" href="libgwyprocess-gwyprocessenums.html#GwyGrainQuantity" title="enum GwyGrainQuantity"><span class="type">GwyGrainQuantity</span></a> to put to corresponding items in <em class="parameter"><code>values</code></em>
+.
+Quantities can repeat.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nquantities</p></td>
+<td class="parameter_description"><p>The number of requested different grain values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grains</p></td>
+<td class="parameter_description"><p>Grain numbers filled with <a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()"><code class="function">gwy_data_field_number_grains()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ngrains</p></td>
+<td class="parameter_description"><p>The number of grains as returned by
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()"><code class="function">gwy_data_field_number_grains()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-grains-get-quantities.returns"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>values</code></em>
+itself if it was not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, otherwise a newly allocated
+array that caller has to free with <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>, including the
+contained arrays.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-22.html#api-index-2.22">2.22</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-grain-quantity-needs-same-units"></a><h3>gwy_grain_quantity_needs_same_units ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_grain_quantity_needs_same_units (<em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyGrainQuantity" title="enum GwyGrainQuantity"><span class="type">GwyGrainQuantity</span></a> quantity</code></em>);</pre>
+<p>Tests whether a grain quantity is defined only when lateral and value
+units match.</p>
+<div class="refsect3">
+<a name="gwy-grain-quantity-needs-same-units.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>quantity</p></td>
+<td class="parameter_description"><p>A grain quantity.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-grain-quantity-needs-same-units.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>quantity</code></em>
+is meaningless when lateral and value units
+differ, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it is always defined.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-7.html#api-index-2.7">2.7</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-grain-quantity-get-units"></a><h3>gwy_grain_quantity_get_units ()</h3>
+<pre class="programlisting"><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_grain_quantity_get_units (<em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyGrainQuantity" title="enum GwyGrainQuantity"><span class="type">GwyGrainQuantity</span></a> quantity</code></em>,
+                              <em class="parameter"><code><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *siunitxy</code></em>,
+                              <em class="parameter"><code><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *siunitz</code></em>,
+                              <em class="parameter"><code><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *result</code></em>);</pre>
+<p>Calculates the units of a grain quantity.</p>
+<div class="refsect3">
+<a name="gwy-grain-quantity-get-units.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>quantity</p></td>
+<td class="parameter_description"><p>A grain quantity.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>siunitxy</p></td>
+<td class="parameter_description"><p>Lateral SI unit of data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>siunitz</p></td>
+<td class="parameter_description"><p>Value SI unit of data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>An SI unit to set to the units of <em class="parameter"><code>quantity</code></em>
+.
+It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, a new SI unit is created then and returned.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-grain-quantity-get-units.returns"></a><h4>Returns</h4>
+<p> When <em class="parameter"><code>result</code></em>
+is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, a newly creates SI unit that has to be
+dereferenced when no longer used later.  Otherwise <em class="parameter"><code>result</code></em>
+itself
+is simply returned, its reference count is NOT increased.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-7.html#api-index-2.7">2.7</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-grains-tgnd"></a><h3>gwy_data_field_area_grains_tgnd ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_grains_tgnd (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                 <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *target_line</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> below</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nstats</code></em>);</pre>
+<p>Calculates threshold grain number distribution.</p>
+<p>This function is a simple <a class="link" href="libgwyprocess-grains.html#gwy-data-field-area-grains-tgnd-range" title="gwy_data_field_area_grains_tgnd_range ()"><code class="function">gwy_data_field_area_grains_tgnd_range()</code></a> that calculates the distribution in the full
+range.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-grains-tgnd.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_line</p></td>
+<td class="parameter_description"><p>A data line to store the distribution to.  It will be resampled to the requested width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>below</p></td>
+<td class="parameter_description"><p>If <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, valleys are marked, otherwise mountains are marked.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nstats</p></td>
+<td class="parameter_description"><p>The number of samples to take on the distribution function.  If nonpositive, a suitable resolution is
+determined automatically.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-grains-tgnd-range"></a><h3>gwy_data_field_area_grains_tgnd_range ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_grains_tgnd_range (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                       <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *target_line</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> min</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> max</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> below</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nstats</code></em>);</pre>
+<p>Calculates threshold grain number distribution in given height range.</p>
+<p>This is the number of grains for each of <em class="parameter"><code>nstats</code></em>
+ equidistant height threshold levels.  For large <em class="parameter"><code>nstats</code></em>
+ this
+function is much faster than the equivalent number of <a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-mark-height" title="gwy_data_field_grains_mark_height ()"><code class="function">gwy_data_field_grains_mark_height()</code></a> calls.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-grains-tgnd-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_line</p></td>
+<td class="parameter_description"><p>A data line to store the distribution to.  It will be resampled to the requested width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>min</p></td>
+<td class="parameter_description"><p>Minimum threshold value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max</p></td>
+<td class="parameter_description"><p>Maximum threshold value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>below</p></td>
+<td class="parameter_description"><p>If <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, valleys are marked, otherwise mountains are marked.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nstats</p></td>
+<td class="parameter_description"><p>The number of samples to take on the distribution function.  If nonpositive, a suitable resolution is
+determined automatically.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-splash-water"></a><h3>gwy_data_field_grains_splash_water ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_grains_splash_water (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                    <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *minima</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> locate_steps</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> locate_dropsize</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grain-distance-transform"></a><h3>gwy_data_field_grain_distance_transform ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_grain_distance_transform
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>);</pre>
+<p>Performs Euclidean distance transform of a data field with grains.</p>
+<p>Each non-zero value will be replaced with Euclidean distance to the grain
+boundary, measured in pixels.</p>
+<p>See also <a class="link" href="libgwyprocess-grains.html#gwy-data-field-grain-simple-dist-trans" title="gwy_data_field_grain_simple_dist_trans ()"><code class="function">gwy_data_field_grain_simple_dist_trans()</code></a> for simple distance
+transforms such as city-block or chessboard.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grain-distance-transform.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field with zeroes in empty space and nonzeroes in
+grains.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-36.html#api-index-2.36">2.36</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grain-simple-dist-trans"></a><h3>gwy_data_field_grain_simple_dist_trans ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_grain_simple_dist_trans
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDistanceTransformType" title="enum GwyDistanceTransformType"><span class="type">GwyDistanceTransformType</span></a> dtype</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> from_border</code></em>);</pre>
+<p>Performs a distance transform of a data field with grains.</p>
+<p>Each non-zero value will be replaced with a distance to the grain boundary,
+measured in pixels.</p>
+<p>Note this function can calculate the true Euclidean distance transform
+only since 2.43.  Use <a class="link" href="libgwyprocess-grains.html#gwy-data-field-grain-distance-transform" title="gwy_data_field_grain_distance_transform ()"><code class="function">gwy_data_field_grain_distance_transform()</code></a> for the EDT
+if you need compatibility with older versions.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grain-simple-dist-trans.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field with zeroes in empty space and nonzeroes in
+grains.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dtype</p></td>
+<td class="parameter_description"><p>Type of simple distance to use.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from_border</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to consider image edges to be grain boundaries.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-41.html#api-index-2.41">2.41</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-shrink"></a><h3>gwy_data_field_grains_shrink ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_grains_shrink (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> amount</code></em>,
+                              <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDistanceTransformType" title="enum GwyDistanceTransformType"><span class="type">GwyDistanceTransformType</span></a> dtype</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> from_border</code></em>);</pre>
+<p>Erodes a data field containing mask by specified amount using a distance
+measure.</p>
+<p>Non-zero pixels in <em class="parameter"><code>data_field</code></em>
+ will be replaced with zeroes if they are not
+farther than <em class="parameter"><code>amount</code></em>
+ from the grain boundary as defined by <em class="parameter"><code>dtype</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-shrink.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field with zeroes in empty space and nonzeroes in
+grains.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>amount</p></td>
+<td class="parameter_description"><p>How much the grains should be reduced, in pixels.  It is inclusive,
+i.e. pixels that are <em class="parameter"><code>amount</code></em>
+far from the border will be removed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dtype</p></td>
+<td class="parameter_description"><p>Type of simple distance to use.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from_border</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to consider image edges to be grain boundaries.
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to reduce grains touching field boundaries only along
+the boundaries.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-43.html#api-index-2.43">2.43</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-grow"></a><h3>gwy_data_field_grains_grow ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_grains_grow (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> amount</code></em>,
+                            <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDistanceTransformType" title="enum GwyDistanceTransformType"><span class="type">GwyDistanceTransformType</span></a> dtype</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> prevent_merging</code></em>);</pre>
+<p>Dilates a data field containing mask by specified amount using a distance
+measure.</p>
+<p>Non-positive pixels in <em class="parameter"><code>data_field</code></em>
+ will be replaced with ones if they are
+not farther than <em class="parameter"><code>amount</code></em>
+ from the grain boundary as defined by <em class="parameter"><code>dtype</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-grow.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field with zeroes in empty space and nonzeroes in
+grains.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>amount</p></td>
+<td class="parameter_description"><p>How much the grains should be expanded, in pixels.  It is
+inclusive, i.e. exterior pixels that are <em class="parameter"><code>amount</code></em>
+far from the
+border will be filled.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dtype</p></td>
+<td class="parameter_description"><p>Type of simple distance to use.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prevent_merging</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to prevent grain merging, i.e. the growth stops
+where two grains would merge.  <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to simply expand the
+grains, without regard to grain connectivity.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-43.html#api-index-2.43">2.43</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-grains-thin"></a><h3>gwy_data_field_grains_thin ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_grains_thin (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>);</pre>
+<p>Performs thinning of a data field containing mask.</p>
+<p>The result of thinning is a ‘skeleton’ mask consisting of single-pixel thin
+lines.</p>
+<div class="refsect3">
+<a name="gwy-data-field-grains-thin.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field with zeroes in empty space and nonzeroes in
+grains.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-48.html#api-index-2.48">2.48</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-fill-voids"></a><h3>gwy_data_field_fill_voids ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_data_field_fill_voids (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> nonsimple</code></em>);</pre>
+<p>Fills voids in grains in a data field representing a mask.</p>
+<p>Voids in grains are zero pixels in <em class="parameter"><code>data_field</code></em>
+ from which no path exists through other zero pixels to the field
+boundary.  The paths are considered in 8-connectivity because grains themselves are considered in 4-connectivity.</p>
+<div class="refsect3">
+<a name="gwy-data-field-fill-voids.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field with zeroes in empty space and nonzeroes in grains.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nonsimple</p></td>
+<td class="parameter_description"><p>Pass <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to fill also voids that are not simple-connected (e.g. ring-like).  This can result in grain
+merging if a small grain is contained within a void.  Pass <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to fill only simple-connected grains.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-fill-voids.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if any voids were filled at all, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if no change was made.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-37.html#api-index-2.37">2.37</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-waterpour"></a><h3>gwy_data_field_waterpour ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_data_field_waterpour (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                          <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *result</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *grains</code></em>);</pre>
+<p>Performs the classical Vincent watershed segmentation of a data field.</p>
+<p>The segmentation always results in the entire field being masked with the
+exception of thin (8-connectivity) lines separating the segments (grains).</p>
+<p>Compared to <a class="link" href="libgwyprocess-grains.html#gwy-data-field-grains-mark-watershed" title="gwy_data_field_grains_mark_watershed ()"><code class="function">gwy_data_field_grains_mark_watershed()</code></a>, this algorithm is very
+fast.  However, when used alone, it typically results in a serious
+oversegmentation as each local minimum gives raise to a grain.  Furthermore,
+the full segmentation means that also pixels which would be considered
+outside any grain in the topographical sense will be assigned to some
+catchment basin.  Therefore, pre- or postprocessing is usually necessary,
+using the gradient image or a more sophisticated method.</p>
+<p>The function does not assign pixels with value <code class="literal">HUGE_VAL</code> or larger to any
+segment.  This can be used to pre-mark certain areas explicitly as
+boundaries.</p>
+<p>Since the algorithm numbers the grains as a side effect, you can pass a
+<em class="parameter"><code>grains</code></em>
+ array and get the grain numbers immediatelly, avoiding the
+relatively (although not drastically) expensive
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()"><code class="function">gwy_data_field_number_grains()</code></a> call.</p>
+<div class="refsect3">
+<a name="gwy-data-field-waterpour.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to segmentate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>Data field that will be filled with the resulting mask.  It will be
+resized to the dimensions of <em class="parameter"><code>data_field</code></em>
+and its properties set
+accordingly.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grains</p></td>
+<td class="parameter_description"><p>Optionally, an array with the same number of items as <em class="parameter"><code>data_field</code></em>
+.
+If non-<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, it will be filled with grain numbers in the same
+manner as <a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()"><code class="function">gwy_data_field_number_grains()</code></a>.  Pass <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to ignore.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-waterpour.returns"></a><h4>Returns</h4>
+<p> The number of segments (grains) in the result, excluding the
+separators, i.e. the same convention as in
+<a class="link" href="libgwyprocess-grains.html#gwy-data-field-number-grains" title="gwy_data_field_number_grains ()"><code class="function">gwy_data_field_number_grains()</code></a> is used.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-37.html#api-index-2.37">2.37</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-mark-extrema"></a><h3>gwy_data_field_mark_extrema ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_mark_extrema (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dfield</code></em>,
+                             <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *extrema</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> maxima</code></em>);</pre>
+<p>Marks local maxima or minima in a two-dimensional field.</p>
+<p>Local (or regional) maximum is a contiguous set of pixels that have the same
+value and this value is sharply greater than the value of any pixel touching
+the set.  A minimum is defined analogously.  A field filled with a single
+value is considered to have neither minimum nor maximum.</p>
+<div class="refsect3">
+<a name="gwy-data-field-mark-extrema.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dfield</p></td>
+<td class="parameter_description"><p>A two-dimensional data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>extrema</p></td>
+<td class="parameter_description"><p>Target field for the extrema mask.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>maxima</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to mark maxima, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to mark minima.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-37.html#api-index-2.37">2.37</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

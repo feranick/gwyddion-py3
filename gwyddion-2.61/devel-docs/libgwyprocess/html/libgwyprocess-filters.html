@@ -1,0 +1,3430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>filters: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="libgwyprocess-elliptic.html" title="elliptic">
+<link rel="next" href="libgwyprocess-fractals.html" title="fractals">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyprocess-filters.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyprocess-elliptic.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyprocess-fractals.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyprocess-filters"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyprocess-filters.top_of_page"></a>filters</span></h2>
+<p>filters — Convolution and other 2D data filters</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyprocess-filters.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-normalize" title="gwy_data_field_normalize ()">gwy_data_field_normalize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-renormalize" title="gwy_data_field_renormalize ()">gwy_data_field_renormalize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-renormalize" title="gwy_data_field_area_renormalize ()">gwy_data_field_area_renormalize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-threshold" title="gwy_data_field_threshold ()">gwy_data_field_threshold</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-threshold" title="gwy_data_field_area_threshold ()">gwy_data_field_area_threshold</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-clamp" title="gwy_data_field_clamp ()">gwy_data_field_clamp</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-clamp" title="gwy_data_field_area_clamp ()">gwy_data_field_area_clamp</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-gather" title="gwy_data_field_area_gather ()">gwy_data_field_area_gather</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-convolve" title="gwy_data_field_convolve ()">gwy_data_field_convolve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-convolve" title="gwy_data_field_area_convolve ()">gwy_data_field_area_convolve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-fft-convolve" title="gwy_data_field_fft_convolve ()">gwy_data_field_fft_convolve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-ext-convolve" title="gwy_data_field_area_ext_convolve ()">gwy_data_field_area_ext_convolve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-convolve-1d" title="gwy_data_field_convolve_1d ()">gwy_data_field_convolve_1d</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-convolve-1d" title="gwy_data_field_area_convolve_1d ()">gwy_data_field_area_convolve_1d</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-ext-row-convolve" title="gwy_data_field_area_ext_row_convolve ()">gwy_data_field_area_ext_row_convolve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-filter-median" title="gwy_data_field_filter_median ()">gwy_data_field_filter_median</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-median" title="gwy_data_field_area_filter_median ()">gwy_data_field_area_filter_median</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-filter-mean" title="gwy_data_field_filter_mean ()">gwy_data_field_filter_mean</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-mean" title="gwy_data_field_area_filter_mean ()">gwy_data_field_area_filter_mean</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-filter-conservative" title="gwy_data_field_filter_conservative ()">gwy_data_field_filter_conservative</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-conservative" title="gwy_data_field_area_filter_conservative ()">gwy_data_field_area_filter_conservative</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-filter-laplacian" title="gwy_data_field_filter_laplacian ()">gwy_data_field_filter_laplacian</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-laplacian" title="gwy_data_field_area_filter_laplacian ()">gwy_data_field_area_filter_laplacian</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-filter-laplacian-of-gaussians" title="gwy_data_field_filter_laplacian_of_gaussians ()">gwy_data_field_filter_laplacian_of_gaussians</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-laplacian-of-gaussians" title="gwy_data_field_area_filter_laplacian_of_gaussians ()">gwy_data_field_area_filter_laplacian_of_gaussians</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-filter-sobel" title="gwy_data_field_filter_sobel ()">gwy_data_field_filter_sobel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-sobel" title="gwy_data_field_area_filter_sobel ()">gwy_data_field_area_filter_sobel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-filter-sobel-total" title="gwy_data_field_filter_sobel_total ()">gwy_data_field_filter_sobel_total</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-filter-prewitt" title="gwy_data_field_filter_prewitt ()">gwy_data_field_filter_prewitt</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-prewitt" title="gwy_data_field_area_filter_prewitt ()">gwy_data_field_area_filter_prewitt</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-filter-prewitt-total" title="gwy_data_field_filter_prewitt_total ()">gwy_data_field_filter_prewitt_total</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-filter-slope" title="gwy_data_field_filter_slope ()">gwy_data_field_filter_slope</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-filter-gauss-step" title="gwy_data_field_filter_gauss_step ()">gwy_data_field_filter_gauss_step</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-filter-dechecker" title="gwy_data_field_filter_dechecker ()">gwy_data_field_filter_dechecker</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-dechecker" title="gwy_data_field_area_filter_dechecker ()">gwy_data_field_area_filter_dechecker</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-filter-gaussian" title="gwy_data_field_filter_gaussian ()">gwy_data_field_filter_gaussian</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-gaussian" title="gwy_data_field_area_filter_gaussian ()">gwy_data_field_area_filter_gaussian</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-row-gaussian" title="gwy_data_field_row_gaussian ()">gwy_data_field_row_gaussian</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-column-gaussian" title="gwy_data_field_column_gaussian ()">gwy_data_field_column_gaussian</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-filter-minimum" title="gwy_data_field_filter_minimum ()">gwy_data_field_filter_minimum</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-minimum" title="gwy_data_field_area_filter_minimum ()">gwy_data_field_area_filter_minimum</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-filter-maximum" title="gwy_data_field_filter_maximum ()">gwy_data_field_filter_maximum</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-maximum" title="gwy_data_field_area_filter_maximum ()">gwy_data_field_area_filter_maximum</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-min-max" title="gwy_data_field_area_filter_min_max ()">gwy_data_field_area_filter_min_max</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-disc-asf" title="gwy_data_field_area_filter_disc_asf ()">gwy_data_field_area_filter_disc_asf</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-kth-rank" title="gwy_data_field_area_filter_kth_rank ()">gwy_data_field_area_filter_kth_rank</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-trimmed-mean" title="gwy_data_field_area_filter_trimmed_mean ()">gwy_data_field_area_filter_trimmed_mean</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-filter-rms" title="gwy_data_field_filter_rms ()">gwy_data_field_filter_rms</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-rms" title="gwy_data_field_area_filter_rms ()">gwy_data_field_area_filter_rms</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-filter-kuwahara" title="gwy_data_field_filter_kuwahara ()">gwy_data_field_filter_kuwahara</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-kuwahara" title="gwy_data_field_area_filter_kuwahara ()">gwy_data_field_area_filter_kuwahara</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-filter-canny" title="gwy_data_field_filter_canny ()">gwy_data_field_filter_canny</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-shade" title="gwy_data_field_shade ()">gwy_data_field_shade</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-filter-harris" title="gwy_data_field_filter_harris ()">gwy_data_field_filter_harris</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-deconvolve-regularized" title="gwy_data_field_deconvolve_regularized ()">gwy_data_field_deconvolve_regularized</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-deconvolve-psf-leastsq" title="gwy_data_field_deconvolve_psf_leastsq ()">gwy_data_field_deconvolve_psf_leastsq</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-find-regularization-sigma-for-psf" title="gwy_data_field_find_regularization_sigma_for_psf ()">gwy_data_field_find_regularization_sigma_for_psf</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-find-regularization-sigma-leastsq" title="gwy_data_field_find_regularization_sigma_leastsq ()">gwy_data_field_find_regularization_sigma_leastsq</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-filters.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-filters.description"></a><h2>Description</h2>
+<p>Filters are point-wise operations, such as thresholding, or generally local operations producing a value based on
+the data in the vicinity of each point: gradients, step detectors and convolutions.  Some simple common point-wise
+operations, e.g. value inversion, are also found in base <a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> methods.</p>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-filters.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-data-field-normalize"></a><h3>gwy_data_field_normalize ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_normalize (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>);</pre>
+<p>Normalizes data in a data field to range 0.0 to 1.0.</p>
+<p>It is equivalent to gwy_data_field_renormalize(<em class="parameter"><code>data_field</code></em>
+, 1.0, 0.0);</p>
+<p>If <em class="parameter"><code>data_field</code></em>
+ is filled with only one value, it is changed to 0.0.</p>
+<div class="refsect3">
+<a name="gwy-data-field-normalize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-renormalize"></a><h3>gwy_data_field_renormalize ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_renormalize (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                            <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> range</code></em>,
+                            <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> offset</code></em>);</pre>
+<p>Transforms data in a data field with linear function to given range.</p>
+<p>When <em class="parameter"><code>range</code></em>
+ is positive, the new data range is (<em class="parameter"><code>offset</code></em>
+, <em class="parameter"><code>offset</code></em>
++<em class="parameter"><code>range</code></em>
+); when <em class="parameter"><code>range</code></em>
+ is negative, the new data
+range is (<em class="parameter"><code>offset</code></em>
+-<em class="parameter"><code>range</code></em>
+, <em class="parameter"><code>offset</code></em>
+). In neither case the data are flipped, negative range only means different
+selection of boundaries.</p>
+<p>When <em class="parameter"><code>range</code></em>
+ is zero, this method is equivalent to gwy_data_field_fill(<em class="parameter"><code>data_field</code></em>
+, <em class="parameter"><code>offset</code></em>
+).</p>
+<div class="refsect3">
+<a name="gwy-data-field-renormalize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>range</p></td>
+<td class="parameter_description"><p>New data interval size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offset</p></td>
+<td class="parameter_description"><p>New data interval offset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-renormalize"></a><h3>gwy_data_field_area_renormalize ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_renormalize (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                 <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                 <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                 <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                 <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                 <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> range</code></em>,
+                                 <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> offset</code></em>);</pre>
+<p>Transforms data in a part of a data field with linear function to given range.</p>
+<p>When <em class="parameter"><code>range</code></em>
+ is positive, the new data range is (<em class="parameter"><code>offset</code></em>
+, <em class="parameter"><code>offset</code></em>
++<em class="parameter"><code>range</code></em>
+); when <em class="parameter"><code>range</code></em>
+ is negative, the new data
+range is (<em class="parameter"><code>offset</code></em>
+-<em class="parameter"><code>range</code></em>
+, <em class="parameter"><code>offset</code></em>
+). In neither case the data are flipped, negative range only means different
+selection of boundaries.</p>
+<p>When <em class="parameter"><code>range</code></em>
+ is zero, this method is equivalent to gwy_data_field_fill(<em class="parameter"><code>data_field</code></em>
+, <em class="parameter"><code>offset</code></em>
+).</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-renormalize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>range</p></td>
+<td class="parameter_description"><p>New data interval size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offset</p></td>
+<td class="parameter_description"><p>New data interval offset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-threshold"></a><h3>gwy_data_field_threshold ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_data_field_threshold (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> threshval</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> bottom</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> top</code></em>);</pre>
+<p>Tresholds values of a data field.</p>
+<p>Values smaller than <em class="parameter"><code>threshold</code></em>
+ are set to value <em class="parameter"><code>bottom</code></em>
+, values higher than <em class="parameter"><code>threshold</code></em>
+ or equal to it are set to
+value <em class="parameter"><code>top</code></em>
+</p>
+<div class="refsect3">
+<a name="gwy-data-field-threshold.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>threshval</p></td>
+<td class="parameter_description"><p>Threshold value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bottom</p></td>
+<td class="parameter_description"><p>Lower replacement value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>top</p></td>
+<td class="parameter_description"><p>Upper replacement value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-threshold.returns"></a><h4>Returns</h4>
+<p> The total number of values above threshold.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-threshold"></a><h3>gwy_data_field_area_threshold ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_data_field_area_threshold (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> threshval</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> bottom</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> top</code></em>);</pre>
+<p>Tresholds values of a rectangular part of a data field.</p>
+<p>Values smaller than <em class="parameter"><code>threshold</code></em>
+ are set to value <em class="parameter"><code>bottom</code></em>
+, values higher than <em class="parameter"><code>threshold</code></em>
+ or equal to it are set to
+value <em class="parameter"><code>top</code></em>
+</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-threshold.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>threshval</p></td>
+<td class="parameter_description"><p>Threshold value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bottom</p></td>
+<td class="parameter_description"><p>Lower replacement value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>top</p></td>
+<td class="parameter_description"><p>Upper replacement value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-area-threshold.returns"></a><h4>Returns</h4>
+<p> The total number of values above threshold.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-clamp"></a><h3>gwy_data_field_clamp ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_data_field_clamp (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> bottom</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> top</code></em>);</pre>
+<p>Limits data field values to a range.</p>
+<div class="refsect3">
+<a name="gwy-data-field-clamp.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bottom</p></td>
+<td class="parameter_description"><p>Lower limit value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>top</p></td>
+<td class="parameter_description"><p>Upper limit value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-clamp.returns"></a><h4>Returns</h4>
+<p> The number of changed values, i.e., values that were outside [<em class="parameter"><code>bottom</code></em>
+, <em class="parameter"><code>top</code></em>
+].</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-clamp"></a><h3>gwy_data_field_area_clamp ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_data_field_area_clamp (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> bottom</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> top</code></em>);</pre>
+<p>Limits values in a rectangular part of a data field to a range.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-clamp.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bottom</p></td>
+<td class="parameter_description"><p>Lower limit value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>top</p></td>
+<td class="parameter_description"><p>Upper limit value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-area-clamp.returns"></a><h4>Returns</h4>
+<p> The number of changed values, i.e., values that were outside [<em class="parameter"><code>bottom</code></em>
+, <em class="parameter"><code>top</code></em>
+].</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-gather"></a><h3>gwy_data_field_area_gather ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_gather (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                            <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *result</code></em>,
+                            <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *buffer</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> hsize</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> vsize</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> average</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Sums or averages values in reactangular areas around each sample in a data field.</p>
+<p>When the gathered area extends out of calculation area, only samples from their intersection are taken into the
+local sum (or average).</p>
+<p>There are no restrictions on values of <em class="parameter"><code>hsize</code></em>
+ and <em class="parameter"><code>vsize</code></em>
+ with regard to <em class="parameter"><code>width</code></em>
+ and <em class="parameter"><code>height</code></em>
+, but they have to be
+positive.</p>
+<p>The result is calculated by the means of two-dimensional rolling sums. One one hand it means the calculation time
+depends linearly on (<em class="parameter"><code>width</code></em>
+ + <em class="parameter"><code>hsize</code></em>
+)*(<em class="parameter"><code>height</code></em>
+ + <em class="parameter"><code>vsize</code></em>
+) instead of <em class="parameter"><code>width</code></em>
+*<em class="parameter"><code>hsize</code></em>
+*<em class="parameter"><code>height</code></em>
+*<em class="parameter"><code>vsize</code></em>
+.  On the other
+hand it means absolute rounding errors of all output values are given by the largest input values, that is relative
+precision of results small in absolute value may be poor.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-gather.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>A data field to put the result to, it may be <em class="parameter"><code>data_field</code></em>
+itself.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>A data field to use as a scratch area, its size must be at least <em class="parameter"><code>width</code></em>
+*<em class="parameter"><code>height</code></em>
+.  May be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to allocate
+a private temporary buffer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>hsize</p></td>
+<td class="parameter_description"><p>Horizontal size of gathered area.  The area is centered around each sample if <em class="parameter"><code>hsize</code></em>
+is odd, it extends one
+pixel more to the right if <em class="parameter"><code>hsize</code></em>
+is even.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>vsize</p></td>
+<td class="parameter_description"><p>Vertical size of gathered area.  The area is centered around each sample if <em class="parameter"><code>vsize</code></em>
+is odd, it extends one
+pixel more down if <em class="parameter"><code>vsize</code></em>
+is even.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>average</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to divide resulting sums by the number of involved samples to get averages instead of sums.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-convolve"></a><h3>gwy_data_field_convolve ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_convolve (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                         <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *kernel_field</code></em>);</pre>
+<p>Convolves a data field with given kernel.</p>
+<p>Note that the convolution is done by summation and can be slow for large kernels.</p>
+<div class="refsect3">
+<a name="gwy-data-field-convolve.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to convolve.  It must be at least as large as 1/3 of <em class="parameter"><code>kernel_field</code></em>
+in each dimension.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>kernel_field</p></td>
+<td class="parameter_description"><p>Kenrel field to convolve <em class="parameter"><code>data_field</code></em>
+with.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-convolve"></a><h3>gwy_data_field_area_convolve ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_convolve (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                              <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *kernel_field</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Convolves a rectangular part of a data field with given kernel.</p>
+<p>Note that the convolution is done by summation and can be slow for large kernels.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-convolve.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to convolve.  It must be at least as large as 1/3 of <em class="parameter"><code>kernel_field</code></em>
+in each dimension.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>kernel_field</p></td>
+<td class="parameter_description"><p>Kenrel field to convolve <em class="parameter"><code>data_field</code></em>
+with.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-fft-convolve"></a><h3>gwy_data_field_fft_convolve ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_fft_convolve (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                             <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *kernel_field</code></em>);</pre>
+<p>Convolves a data field with given kernel of the same size using FFT.</p>
+<p>This is a simple FFT-based convolution done by multiplication in the frequency domain.</p>
+<p>This is a somewhat low-level function.  There is no padding or boundary treatment; images are considered periodic.
+The result is normalised as if the convolution was done by summation and the physical units of <em class="parameter"><code>data_field</code></em>
+ are
+unchanged.</p>
+<p>Also note that in order to obtain unshifted result, the kernel needs to be centered around the top left corner.
+You can use <a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-2dfft-dehumanize" title="gwy_data_field_2dfft_dehumanize ()"><code class="function">gwy_data_field_2dfft_dehumanize()</code></a> to transform a centered kernel.</p>
+<div class="refsect3">
+<a name="gwy-data-field-fft-convolve.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to convolve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>kernel_field</p></td>
+<td class="parameter_description"><p>Kenrel field to convolve <em class="parameter"><code>data_field</code></em>
+with.  It must have the same size as <em class="parameter"><code>data_field</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-54.html#api-index-2.54">2.54</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-ext-convolve"></a><h3>gwy_data_field_area_ext_convolve ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_ext_convolve (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *field</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> col</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> row</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> width</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> height</code></em>,
+                                  <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *target</code></em>,
+                                  <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *kernel</code></em>,
+                                  <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyExteriorType" title="enum GwyExteriorType"><span class="type">GwyExteriorType</span></a> exterior</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> fill_value</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> as_integral</code></em>);</pre>
+<p>Convolve a field with a two-dimensional kernel.</p>
+<p>Pixel dimensions of <em class="parameter"><code>target</code></em>
+ may match either <em class="parameter"><code>field</code></em>
+ or just the rectangular area.  In the former case the result is
+written in the same rectangular area; in the latter case the result fills the entire <em class="parameter"><code>target</code></em>
+.</p>
+<p>The convolution is performed with the kernel centred on the respective field pixels.  For directions in which the
+kernel has an odd size this holds precisely.  For an even-sized kernel this means the kernel centre is placed 0.5
+pixel left or up (towards lower indices) from the respective field pixel.</p>
+<p>See <a class="link" href="libgwyprocess-arithmetic.html#gwy-data-field-extend" title="gwy_data_field_extend ()"><code class="function">gwy_data_field_extend()</code></a> for what constitutes the exterior and how it is handled.</p>
+<p>If <em class="parameter"><code>as_integral</code></em>
+ is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> the function performs a simple discrete convolution sum and the value units of <em class="parameter"><code>target</code></em>
+
+are set to product of <em class="parameter"><code>field</code></em>
+ and <em class="parameter"><code>kernel</code></em>
+ units.</p>
+<p>If <em class="parameter"><code>as_integral</code></em>
+ is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> the function approximates a convolution integral. In this case <em class="parameter"><code>kernel</code></em>
+ should be a sampled
+continuous transfer function. The units of value <em class="parameter"><code>target</code></em>
+ are set to product of <em class="parameter"><code>field</code></em>
+ and <em class="parameter"><code>kernel</code></em>
+ value units and
+<em class="parameter"><code>field</code></em>
+ lateral units squared.  Furthermore, the discrete sum is multiplied by the pixel size (i.e. d<em class="parameter"><code>x</code></em>
+ d<em class="parameter"><code>y</code></em>
+ in the
+integral).</p>
+<p>In either case, the lateral units and pixel size of <em class="parameter"><code>kernel</code></em>
+ are assumed to be the same as for <em class="parameter"><code>field</code></em>
+ (albeit not
+checked), because the convolution does not make sense otherwise.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-ext-convolve.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>field</p></td>
+<td class="parameter_description"><p>A two-dimensional data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>A two-dimensional data field where the result will be placed. It may be <em class="parameter"><code>field</code></em>
+for an in-place
+modification.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>kernel</p></td>
+<td class="parameter_description"><p>Kernel to convolve <em class="parameter"><code>field</code></em>
+with.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>exterior</p></td>
+<td class="parameter_description"><p>Exterior pixels handling.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fill_value</p></td>
+<td class="parameter_description"><p>The value to use with <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-EXTERIOR-FIXED-VALUE:CAPS"><code class="literal">GWY_EXTERIOR_FIXED_VALUE</code></a> exterior.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>as_integral</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> for normalisation and units as a convolution integral, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> as a sum.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-convolve-1d"></a><h3>gwy_data_field_convolve_1d ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_convolve_1d (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                            <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *kernel_line</code></em>,
+                            <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyOrientation" title="enum GwyOrientation"><span class="type">GwyOrientation</span></a> orientation</code></em>);</pre>
+<p>Convolves a data field with given linear kernel.</p>
+<div class="refsect3">
+<a name="gwy-data-field-convolve-1d.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to convolve.  It must be at least as large as 1/3 of <em class="parameter"><code>kernel_field</code></em>
+in the corresponding
+dimension.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>kernel_line</p></td>
+<td class="parameter_description"><p>Kenrel line to convolve <em class="parameter"><code>data_field</code></em>
+with.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>orientation</p></td>
+<td class="parameter_description"><p>Filter orientation (see <a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-convolve-1d" title="gwy_data_field_area_convolve_1d ()"><code class="function">gwy_data_field_area_convolve_1d()</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-convolve-1d"></a><h3>gwy_data_field_area_convolve_1d ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_convolve_1d (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                 <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *kernel_line</code></em>,
+                                 <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyOrientation" title="enum GwyOrientation"><span class="type">GwyOrientation</span></a> orientation</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Convolves a rectangular part of a data field with given linear kernel.</p>
+<p>For large separable kernels it can be more efficient to use a sequence of horizontal and vertical convolutions
+instead one 2D convolution.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-convolve-1d.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to convolve.  It must be at least as large as 1/3 of <em class="parameter"><code>kernel_field</code></em>
+in the corresponding
+dimension.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>kernel_line</p></td>
+<td class="parameter_description"><p>Kernel line to convolve <em class="parameter"><code>data_field</code></em>
+with.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>orientation</p></td>
+<td class="parameter_description"><p>Filter orientation (<a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-ORIENTATION-HORIZONTAL:CAPS"><code class="literal">GWY_ORIENTATION_HORIZONTAL</code></a> for row-wise convolution, <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-ORIENTATION-VERTICAL:CAPS"><code class="literal">GWY_ORIENTATION_VERTICAL</code></a>
+for column-wise convolution).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-ext-row-convolve"></a><h3>gwy_data_field_area_ext_row_convolve ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_ext_row_convolve (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *field</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> col</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> row</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> width</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> height</code></em>,
+                                      <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *target</code></em>,
+                                      <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *kernel</code></em>,
+                                      <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyExteriorType" title="enum GwyExteriorType"><span class="type">GwyExteriorType</span></a> exterior</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> fill_value</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> as_integral</code></em>);</pre>
+<p>Convolve a field row-wise with a one-dimensional kernel.</p>
+<p>Pixel dimensions of <em class="parameter"><code>target</code></em>
+ may match either <em class="parameter"><code>field</code></em>
+ or just the rectangular area.  In the former case the result is
+written in the same rectangular area; in the latter case the result fills the entire <em class="parameter"><code>target</code></em>
+.</p>
+<p>The convolution is performed with the kernel centred on the respective field pixels.  For an odd-sized kernel this
+holds precisely.  For an even-sized kernel this means the kernel centre is placed 0.5 pixel to the left (towards
+lower column indices) from the respective field pixel.</p>
+<p>See <a class="link" href="libgwyprocess-arithmetic.html#gwy-data-field-extend" title="gwy_data_field_extend ()"><code class="function">gwy_data_field_extend()</code></a> for what constitutes the exterior and how it is handled.</p>
+<p>If <em class="parameter"><code>as_integral</code></em>
+ is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> the function performs a simple discrete convolution sum and the value units of <em class="parameter"><code>target</code></em>
+
+are set to product of <em class="parameter"><code>field</code></em>
+ and <em class="parameter"><code>kernel</code></em>
+ units.</p>
+<p>If <em class="parameter"><code>as_integral</code></em>
+ is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> the function approximates a convolution integral. In this case <em class="parameter"><code>kernel</code></em>
+ should be a sampled
+continuous transfer function. The units of value <em class="parameter"><code>target</code></em>
+ are set to product of <em class="parameter"><code>field</code></em>
+ and <em class="parameter"><code>kernel</code></em>
+ value units and
+<em class="parameter"><code>field</code></em>
+ lateral units.  Furthermore, the discrete sum is multiplied by the pixel size (i.e. d<em class="parameter"><code>x</code></em>
+ in the integral).</p>
+<p>In either case, the lateral units and pixel size of <em class="parameter"><code>kernel</code></em>
+ are assumed to be the same as for a <em class="parameter"><code>field</code></em>
+'s row
+(albeit not checked), because the convolution does not make sense otherwise.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-ext-row-convolve.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>field</p></td>
+<td class="parameter_description"><p>A two-dimensional data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>A two-dimensional data field where the result will be placed. It may be <em class="parameter"><code>field</code></em>
+for an in-place
+modification.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>kernel</p></td>
+<td class="parameter_description"><p>Kernel to convolve <em class="parameter"><code>field</code></em>
+with.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>exterior</p></td>
+<td class="parameter_description"><p>Exterior pixels handling.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fill_value</p></td>
+<td class="parameter_description"><p>The value to use with <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-EXTERIOR-FIXED-VALUE:CAPS"><code class="literal">GWY_EXTERIOR_FIXED_VALUE</code></a> exterior.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>as_integral</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> for normalisation and units as a convolution integral, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> as a sum.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-filter-median"></a><h3>gwy_data_field_filter_median ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_filter_median (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>);</pre>
+<p>Filters a data field with median filter.</p>
+<p>This method uses a simple square kernel.  Use the general function
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-kth-rank" title="gwy_data_field_area_filter_kth_rank ()"><code class="function">gwy_data_field_area_filter_kth_rank()</code></a> to perform filtering with different,
+for instance circular, kernel.</p>
+<div class="refsect3">
+<a name="gwy-data-field-filter-median.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Size of area to take median of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-filter-median"></a><h3>gwy_data_field_area_filter_median ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_filter_median (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Filters a rectangular part of a data field with median filter.</p>
+<p>This method uses a simple square kernel.  Use the general function
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-kth-rank" title="gwy_data_field_area_filter_kth_rank ()"><code class="function">gwy_data_field_area_filter_kth_rank()</code></a> to perform filtering with different,
+for instance circular, kernel.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-filter-median.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Size of area to take median of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-filter-mean"></a><h3>gwy_data_field_filter_mean ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_filter_mean (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>);</pre>
+<p>Filters a data field with mean filter of size <em class="parameter"><code>size</code></em>
+.</p>
+<p>This method is a simple <a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-gather" title="gwy_data_field_area_gather ()"><code class="function">gwy_data_field_area_gather()</code></a> wrapper, so the kernel is square.  Use convolution
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-ext-convolve" title="gwy_data_field_area_ext_convolve ()"><code class="function">gwy_data_field_area_ext_convolve()</code></a> to perform a mean filter with different, for instance circular, kernel.</p>
+<div class="refsect3">
+<a name="gwy-data-field-filter-mean.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Averaged area size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-filter-mean"></a><h3>gwy_data_field_area_filter_mean ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_filter_mean (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Filters a rectangular part of a data field with mean filter of size <em class="parameter"><code>size</code></em>
+.</p>
+<p>This method is a simple <a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-gather" title="gwy_data_field_area_gather ()"><code class="function">gwy_data_field_area_gather()</code></a> wrapper, so the kernel is square.  Use convolution
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-ext-convolve" title="gwy_data_field_area_ext_convolve ()"><code class="function">gwy_data_field_area_ext_convolve()</code></a> to perform a mean filter with different, for instance circular, kernel.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-filter-mean.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Averaged area size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-filter-conservative"></a><h3>gwy_data_field_filter_conservative ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_filter_conservative (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>);</pre>
+<p>Filters a data field with conservative denoise filter.</p>
+<div class="refsect3">
+<a name="gwy-data-field-filter-conservative.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Filtered area size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-filter-conservative"></a><h3>gwy_data_field_area_filter_conservative ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_filter_conservative
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Filters a rectangular part of a data field with conservative denoise filter.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-filter-conservative.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Filtered area size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-filter-laplacian"></a><h3>gwy_data_field_filter_laplacian ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_filter_laplacian (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>);</pre>
+<p>Filters a data field with Laplacian filter.</p>
+<div class="refsect3">
+<a name="gwy-data-field-filter-laplacian.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-filter-laplacian"></a><h3>gwy_data_field_area_filter_laplacian ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_filter_laplacian (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Filters a rectangular part of a data field with Laplacian filter.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-filter-laplacian.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-filter-laplacian-of-gaussians"></a><h3>gwy_data_field_filter_laplacian_of_gaussians ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_filter_laplacian_of_gaussians
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>);</pre>
+<p>Filters a data field with Laplacian of Gaussians filter.</p>
+<div class="refsect3">
+<a name="gwy-data-field-filter-laplacian-of-gaussians.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-filter-laplacian-of-gaussians"></a><h3>gwy_data_field_area_filter_laplacian_of_gaussians ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_filter_laplacian_of_gaussians
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Filters a rectangular part of a data field with Laplacian of Gaussians filter.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-filter-laplacian-of-gaussians.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-filter-sobel"></a><h3>gwy_data_field_filter_sobel ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_filter_sobel (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                             <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyOrientation" title="enum GwyOrientation"><span class="type">GwyOrientation</span></a> orientation</code></em>);</pre>
+<p>Filters a data field with a directional Sobel filter.</p>
+<div class="refsect3">
+<a name="gwy-data-field-filter-sobel.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>orientation</p></td>
+<td class="parameter_description"><p>Filter orientation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-filter-sobel"></a><h3>gwy_data_field_area_filter_sobel ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_filter_sobel (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                  <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyOrientation" title="enum GwyOrientation"><span class="type">GwyOrientation</span></a> orientation</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Filters a rectangular part of a data field with a directional Sobel filter.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-filter-sobel.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>orientation</p></td>
+<td class="parameter_description"><p>Filter orientation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-filter-sobel-total"></a><h3>gwy_data_field_filter_sobel_total ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_filter_sobel_total (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>);</pre>
+<p>Filters a data field with total Sobel filter.</p>
+<div class="refsect3">
+<a name="gwy-data-field-filter-sobel-total.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-31.html#api-index-2.31">2.31</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-filter-prewitt"></a><h3>gwy_data_field_filter_prewitt ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_filter_prewitt (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                               <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyOrientation" title="enum GwyOrientation"><span class="type">GwyOrientation</span></a> orientation</code></em>);</pre>
+<p>Filters a data field with Prewitt filter.</p>
+<div class="refsect3">
+<a name="gwy-data-field-filter-prewitt.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>orientation</p></td>
+<td class="parameter_description"><p>Filter orientation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-filter-prewitt"></a><h3>gwy_data_field_area_filter_prewitt ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_filter_prewitt (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                    <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyOrientation" title="enum GwyOrientation"><span class="type">GwyOrientation</span></a> orientation</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Filters a rectangular part of a data field with a directional Prewitt filter.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-filter-prewitt.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>orientation</p></td>
+<td class="parameter_description"><p>Filter orientation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-filter-prewitt-total"></a><h3>gwy_data_field_filter_prewitt_total ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_filter_prewitt_total (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>);</pre>
+<p>Filters a data field with total Prewitt filter.</p>
+<div class="refsect3">
+<a name="gwy-data-field-filter-prewitt-total.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-31.html#api-index-2.31">2.31</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-filter-slope"></a><h3>gwy_data_field_filter_slope ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_filter_slope (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                             <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *xder</code></em>,
+                             <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *yder</code></em>);</pre>
+<p>Calculates x and y derivaties for an entire field.</p>
+<p>The derivatives are calculated as the simple symmetrical differences (in physical units, not pixel-wise), except at
+the edges where the differences are one-sided.</p>
+<div class="refsect3">
+<a name="gwy-data-field-filter-slope.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xder</p></td>
+<td class="parameter_description"><p>Data field where the x-derivarive is to be stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if you are only interested in the y-derivarive.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yder</p></td>
+<td class="parameter_description"><p>Data field where the y-derivarive is to be stored, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if you are only interested in the x-derivarive.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-37.html#api-index-2.37">2.37</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-filter-gauss-step"></a><h3>gwy_data_field_filter_gauss_step ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_filter_gauss_step (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> sigma</code></em>);</pre>
+<p>Processes a data field with Gaussian step detection filter.</p>
+<p>The filter is a multi-directional combination of convolutions with Gaussian multiplied by a signed step function.</p>
+<p>The resulting values correspond roughly to the step height around the pixel.</p>
+<div class="refsect3">
+<a name="gwy-data-field-filter-gauss-step.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sigma</p></td>
+<td class="parameter_description"><p>Gaussian filter width (in pixels).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-54.html#api-index-2.54">2.54</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-filter-dechecker"></a><h3>gwy_data_field_filter_dechecker ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_filter_dechecker (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>);</pre>
+<p>Filters a data field with 5x5 checker pattern removal filter.</p>
+<div class="refsect3">
+<a name="gwy-data-field-filter-dechecker.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-1.html#api-index-2.1">2.1</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-filter-dechecker"></a><h3>gwy_data_field_area_filter_dechecker ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_filter_dechecker (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Filters a rectangular part of a data field with 5x5 checker pattern removal
+filter.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-filter-dechecker.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-1.html#api-index-2.1">2.1</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-filter-gaussian"></a><h3>gwy_data_field_filter_gaussian ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_filter_gaussian (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> sigma</code></em>);</pre>
+<p>Filters a data field with a Gaussian filter.</p>
+<div class="refsect3">
+<a name="gwy-data-field-filter-gaussian.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sigma</p></td>
+<td class="parameter_description"><p>The sigma parameter of the Gaussian.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-filter-gaussian"></a><h3>gwy_data_field_area_filter_gaussian ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_filter_gaussian (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> sigma</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Filters a rectangular part of a data field with a Gaussian filter.</p>
+<p>The Gausian is normalized, i.e. it is sum-preserving.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-filter-gaussian.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sigma</p></td>
+<td class="parameter_description"><p>The sigma parameter of the Gaussian.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-4.html#api-index-2.4">2.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-row-gaussian"></a><h3>gwy_data_field_row_gaussian ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_row_gaussian (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> sigma</code></em>);</pre>
+<p>Filters a data field with a Gaussian filter in horizontal direction.</p>
+<p>The Gausian is normalized, i.e. it is sum-preserving.</p>
+<div class="refsect3">
+<a name="gwy-data-field-row-gaussian.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sigma</p></td>
+<td class="parameter_description"><p>The sigma parameter of the Gaussian.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-54.html#api-index-2.54">2.54</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-column-gaussian"></a><h3>gwy_data_field_column_gaussian ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_column_gaussian (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> sigma</code></em>);</pre>
+<p>Filters a data field with a Gaussian filter in vertical direction.</p>
+<p>The Gausian is normalized, i.e. it is sum-preserving.</p>
+<div class="refsect3">
+<a name="gwy-data-field-column-gaussian.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sigma</p></td>
+<td class="parameter_description"><p>The sigma parameter of the Gaussian.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-54.html#api-index-2.54">2.54</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-filter-minimum"></a><h3>gwy_data_field_filter_minimum ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_filter_minimum (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>);</pre>
+<p>Filters a data field with minimum filter.</p>
+<p>This method uses a simple square kernel.  Use the general function
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-min-max" title="gwy_data_field_area_filter_min_max ()"><code class="function">gwy_data_field_area_filter_min_max()</code></a> to perform filtering with different,
+for instance circular, kernel.</p>
+<div class="refsect3">
+<a name="gwy-data-field-filter-minimum.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply minimum filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Neighbourhood size for minimum search.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-filter-minimum"></a><h3>gwy_data_field_area_filter_minimum ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_filter_minimum (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Filters a rectangular part of a data field with minimum filter.</p>
+<p>This operation is often called erosion filter.</p>
+<p>This method uses a simple square kernel.  Use the general function
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-min-max" title="gwy_data_field_area_filter_min_max ()"><code class="function">gwy_data_field_area_filter_min_max()</code></a> to perform filtering with different,
+for instance circular, kernel.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-filter-minimum.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply minimum filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Neighbourhood size for minimum search.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-filter-maximum"></a><h3>gwy_data_field_filter_maximum ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_filter_maximum (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>);</pre>
+<p>Filters a data field with maximum filter.</p>
+<p>This method uses a simple square kernel.  Use the general function
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-min-max" title="gwy_data_field_area_filter_min_max ()"><code class="function">gwy_data_field_area_filter_min_max()</code></a> to perform filtering with different,
+for instance circular, kernel.</p>
+<div class="refsect3">
+<a name="gwy-data-field-filter-maximum.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply maximum filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Neighbourhood size for maximum search.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-filter-maximum"></a><h3>gwy_data_field_area_filter_maximum ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_filter_maximum (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Filters a rectangular part of a data field with maximum filter.</p>
+<p>This operation is often called dilation filter.</p>
+<p>This method uses a simple square kernel.  Use the general function
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-min-max" title="gwy_data_field_area_filter_min_max ()"><code class="function">gwy_data_field_area_filter_min_max()</code></a> to perform filtering with different,
+for instance circular, kernel.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-filter-maximum.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply maximum filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Neighbourhood size for maximum search.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-filter-min-max"></a><h3>gwy_data_field_area_filter_min_max ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_filter_min_max (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                    <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *kernel</code></em>,
+                                    <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyMinMaxFilterType" title="enum GwyMinMaxFilterType"><span class="type">GwyMinMaxFilterType</span></a> filtertype</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Applies a morphological operation with a flat structuring element to a
+part of a data field.</p>
+<p>Morphological operations with flat structuring elements can be expressed
+using minimum (erosion) and maximum (dilation) filters that are the basic
+operations this function can perform.</p>
+<p>The kernel field is a mask that defines the shape of the flat structuring
+element.  It is reflected for all maximum operations (dilation).  For
+symmetrical kernels this does not matter.  You can use
+<a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-elliptic-area-fill" title="gwy_data_field_elliptic_area_fill ()"><code class="function">gwy_data_field_elliptic_area_fill()</code></a> to create a true circular (or
+elliptical) kernel.</p>
+<p>The kernel is implicitly centered, i.e. it will be applied symmetrically to
+avoid unexpected data movement.  Even-sized kernels (generally not
+recommended) will extend farther towards the top left image corner for
+minimum (erosion) and towards the bottom right corner for maximum (dilation)
+operations due to the reflection.  If you need off-center structuring
+elements you can add empty rows or columns to one side of the kernel to
+counteract the symmetrisation.</p>
+<p>The operation is linear-time in kernel size for any convex kernel.  Note
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-minimum" title="gwy_data_field_area_filter_minimum ()"><code class="function">gwy_data_field_area_filter_minimum()</code></a> and
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-filter-maximum" title="gwy_data_field_area_filter_maximum ()"><code class="function">gwy_data_field_area_filter_maximum()</code></a>, which are limited to square
+structuring elements, are much faster for large sizes of the squares.</p>
+<p>The exterior is always handled as <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-EXTERIOR-BORDER-EXTEND:CAPS"><code class="literal">GWY_EXTERIOR_BORDER_EXTEND</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-filter-min-max.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>kernel</p></td>
+<td class="parameter_description"><p>Data field defining the flat structuring element.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filtertype</p></td>
+<td class="parameter_description"><p>The type of filter to apply.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-43.html#api-index-2.43">2.43</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-filter-disc-asf"></a><h3>gwy_data_field_area_filter_disc_asf ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_filter_disc_asf (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> radius</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> closing</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Applies an alternating sequential morphological filter with a flat disc
+structuring element to a part of a data field.</p>
+<p>Alternating sequential filter is a filter consisting of repeated opening and
+closing (or closing and opening) with progressively larger structuring
+elements.  This function performs such filtering for sequence of structuring
+elements consisting of true Euclidean discs with increasing radii.  The
+largest disc in the sequence fits into a (2<em class="parameter"><code>size</code></em>
+ + 1) × (2<em class="parameter"><code>size</code></em>
+ + 1) square.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-filter-disc-asf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>radius</p></td>
+<td class="parameter_description"><p>Maximum radius of the circular structuring element, in pixels.
+For radius 0 and smaller the filter is no-op.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>closing</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> requests an opening-closing filter (i.e. ending with
+closing), <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> requests a closing-opening filter (i.e. ending
+with opening).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-43.html#api-index-2.43">2.43</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-filter-kth-rank"></a><h3>gwy_data_field_area_filter_kth_rank ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_data_field_area_filter_kth_rank (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                     <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *kernel</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> k</code></em>,
+                                     <em class="parameter"><code><a href="../libgwyddion-gwyutils.html#GwySetFractionFunc"><span class="type">GwySetFractionFunc</span></a> set_fraction</code></em>);</pre>
+<p>Applies a <em class="parameter"><code>k</code></em>
+-th rank filter to a part of a data field.</p>
+<p>Pass half the number of non-zero values in <em class="parameter"><code>kernel</code></em>
+ as <em class="parameter"><code>k</code></em>
+ for a median
+filter.</p>
+<p>The kernel field is a mask that defines the shape of the kernel.  You can
+use <a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-elliptic-area-fill" title="gwy_data_field_elliptic_area_fill ()"><code class="function">gwy_data_field_elliptic_area_fill()</code></a> to create a true circular (or
+elliptical) kernel.  The kernel must be non-empty.</p>
+<p>The kernel is implicitly centered, i.e. it will be applied symmetrically to
+avoid unexpected data movement.  Even-sized kernels (generally not
+recommended) will extend farther towards the top left image corner for
+minimum (erosion) and towards the bottom right corner for maximum (dilation)
+operations due to the reflection.  If you need off-center structuring
+elements you can add empty rows or columns to one side of the kernel to
+counteract the symmetrisation.</p>
+<p>The exterior is always handled as <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-EXTERIOR-BORDER-EXTEND:CAPS"><code class="literal">GWY_EXTERIOR_BORDER_EXTEND</code></a>.</p>
+<p>If the operation is aborted the contents of <em class="parameter"><code>data_field</code></em>
+ is untouched.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-filter-kth-rank.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>kernel</p></td>
+<td class="parameter_description"><p>Data field defining the kernel shape.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>k</p></td>
+<td class="parameter_description"><p>Rank of the value to store as the output (from lowest to highest).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set_fraction</p></td>
+<td class="parameter_description"><p>Function that sets fraction to output (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-area-filter-kth-rank.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the operation was not aborted via <em class="parameter"><code>set_fraction</code></em>
+returning <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>; <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it was aborted.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-51.html#api-index-2.51">2.51</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-filter-trimmed-mean"></a><h3>gwy_data_field_area_filter_trimmed_mean ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_data_field_area_filter_trimmed_mean
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *kernel</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nlowest</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nhighest</code></em>,
+                                <em class="parameter"><code><a href="../libgwyddion-gwyutils.html#GwySetFractionFunc"><span class="type">GwySetFractionFunc</span></a> set_fraction</code></em>);</pre>
+<p>Applies a trimmed mean filter to a part of a data field.</p>
+<p>At least one value must remain after the trimming, i.e. <em class="parameter"><code>nlowest</code></em>
+ + <em class="parameter"><code>nhighest</code></em>
+
+must be smaller than the number of non-zero values in <em class="parameter"><code>kernel</code></em>
+.  Usually one
+passes the same number as both <em class="parameter"><code>nlowest</code></em>
+ and <em class="parameter"><code>nhighest</code></em>
+, but it is not
+a requirement.</p>
+<p>The kernel field is a mask that defines the shape of the kernel.  You can
+use <a class="link" href="libgwyprocess-elliptic.html#gwy-data-field-elliptic-area-fill" title="gwy_data_field_elliptic_area_fill ()"><code class="function">gwy_data_field_elliptic_area_fill()</code></a> to create a true circular (or
+elliptical) kernel.  The kernel must be non-empty.</p>
+<p>The kernel is implicitly centered, i.e. it will be applied symmetrically to
+avoid unexpected data movement.  Even-sized kernels (generally not
+recommended) will extend farther towards the top left image corner for
+minimum (erosion) and towards the bottom right corner for maximum (dilation)
+operations due to the reflection.  If you need off-center structuring
+elements you can add empty rows or columns to one side of the kernel to
+counteract the symmetrisation.</p>
+<p>The exterior is always handled as <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-EXTERIOR-BORDER-EXTEND:CAPS"><code class="literal">GWY_EXTERIOR_BORDER_EXTEND</code></a>.</p>
+<p>If the operation is aborted the contents of <em class="parameter"><code>data_field</code></em>
+ is untouched.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-filter-trimmed-mean.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>kernel</p></td>
+<td class="parameter_description"><p>Data field defining the kernel shape.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nlowest</p></td>
+<td class="parameter_description"><p>The number of lowest values to discard.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nhighest</p></td>
+<td class="parameter_description"><p>The number of highest values to discard.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set_fraction</p></td>
+<td class="parameter_description"><p>Function that sets fraction to output (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-area-filter-trimmed-mean.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the operation was not aborted via <em class="parameter"><code>set_fraction</code></em>
+returning <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>; <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it was aborted.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-53.html#api-index-2.53">2.53</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-filter-rms"></a><h3>gwy_data_field_filter_rms ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_filter_rms (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>);</pre>
+<p>Filters a data field with RMS filter.</p>
+<div class="refsect3">
+<a name="gwy-data-field-filter-rms.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply RMS filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Area size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-filter-rms"></a><h3>gwy_data_field_area_filter_rms ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_filter_rms (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Filters a rectangular part of a data field with RMS filter of size <em class="parameter"><code>size</code></em>
+.</p>
+<p>RMS filter computes root mean square in given area.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-filter-rms.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply RMS filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Area size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-filter-kuwahara"></a><h3>gwy_data_field_filter_kuwahara ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_filter_kuwahara (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>);</pre>
+<p>Filters a data field with Kuwahara filter.</p>
+<div class="refsect3">
+<a name="gwy-data-field-filter-kuwahara.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply Kuwahara filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-area-filter-kuwahara"></a><h3>gwy_data_field_area_filter_kuwahara ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_area_filter_kuwahara (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> col</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> row</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<p>Filters a rectangular part of a data field with a Kuwahara (edge-preserving smoothing) filter.</p>
+<div class="refsect3">
+<a name="gwy-data-field-area-filter-kuwahara.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data filed to apply Kuwahara filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>col</p></td>
+<td class="parameter_description"><p>Upper-left column coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>row</p></td>
+<td class="parameter_description"><p>Upper-left row coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Area width (number of columns).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Area height (number of rows).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-filter-canny"></a><h3>gwy_data_field_filter_canny ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_filter_canny (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> threshold</code></em>);</pre>
+<p>Filters a rectangular part of a data field with canny edge detector filter.</p>
+<div class="refsect3">
+<a name="gwy-data-field-filter-canny.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to apply the filter to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>threshold</p></td>
+<td class="parameter_description"><p>Slope detection threshold (range 0..1).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-shade"></a><h3>gwy_data_field_shade ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_shade (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                      <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *target_field</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> theta</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> phi</code></em>);</pre>
+<p>Shades a data field.</p>
+<div class="refsect3">
+<a name="gwy-data-field-shade.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_field</p></td>
+<td class="parameter_description"><p>A data field to put the shade to.  It will be resized to
+match <em class="parameter"><code>data_field</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>theta</p></td>
+<td class="parameter_description"><p>Shading angle (in radians, from north pole).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>phi</p></td>
+<td class="parameter_description"><p>Shade orientation in xy plane (in radians, counterclockwise).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-filter-harris"></a><h3>gwy_data_field_filter_harris ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_filter_harris (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *x_gradient</code></em>,
+                              <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *y_gradient</code></em>,
+                              <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *result</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> neighbourhood</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> alpha</code></em>);</pre>
+<p>Applies Harris corner detection filter to a pair of gradient data fields.</p>
+<p>All passed data field must have the same size.</p>
+<div class="refsect3">
+<a name="gwy-data-field-filter-harris.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>x_gradient</p></td>
+<td class="parameter_description"><p>Data field with pre-calculated horizontal derivative.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y_gradient</p></td>
+<td class="parameter_description"><p>Data field with pre-calculated vertical derivative.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>Data field for the result.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>neighbourhood</p></td>
+<td class="parameter_description"><p>Neighbourhood size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>alpha</p></td>
+<td class="parameter_description"><p>Sensitivity paramter (the squared trace is multiplied by it).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-deconvolve-regularized"></a><h3>gwy_data_field_deconvolve_regularized ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_deconvolve_regularized (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dfield</code></em>,
+                                       <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *operand</code></em>,
+                                       <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *out</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> sigma</code></em>);</pre>
+<p>Performs deconvolution of a data field using a simple regularization.</p>
+<p>The operation can be used to deblur an image or conversely recover the point spread function from ideal response
+image.</p>
+<p>Convolving the result with the operand using <a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-ext-convolve" title="gwy_data_field_area_ext_convolve ()"><code class="function">gwy_data_field_area_ext_convolve()</code></a> with <em class="parameter"><code>as_integral</code></em>
+=<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> will
+recover (approximately) the image.  This means the deconvolution assumes continous convolution, not discrete sums.
+Note that for the latter case this means the point spread function will be centered in <em class="parameter"><code>out</code></em>
+.</p>
+<p>For recovery of transfer function, <em class="parameter"><code>dfield</code></em>
+ and <em class="parameter"><code>operand</code></em>
+ should be windowed beforehand if they are not periodic.</p>
+<div class="refsect3">
+<a name="gwy-data-field-deconvolve-regularized.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dfield</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operand</p></td>
+<td class="parameter_description"><p>One of the factors entering the convolution resulting in <em class="parameter"><code>dfield</code></em>
+. It must have the same dimensions as
+<em class="parameter"><code>dfield</code></em>
+and it is assumed it has also the same physical size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out</p></td>
+<td class="parameter_description"><p>Data field where to put the result into.  It will be resized to match <em class="parameter"><code>dfield</code></em>
+.  It can also be <em class="parameter"><code>dfield</code></em>
+itself.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sigma</p></td>
+<td class="parameter_description"><p>Regularization parameter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-51.html#api-index-2.51">2.51</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-deconvolve-psf-leastsq"></a><h3>gwy_data_field_deconvolve_psf_leastsq ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_deconvolve_psf_leastsq (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dfield</code></em>,
+                                       <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *operand</code></em>,
+                                       <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *out</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> sigma</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> border</code></em>);</pre>
+<p>Performs reconstruction of transfer function from convolved and ideal sharp images.</p>
+<p>The transfer function is reconstructed by solving the corresponding least squares problem.  This method is suitable
+when the dimensions of <em class="parameter"><code>out</code></em>
+ are much smaller than the images.</p>
+<p>Since the method accumulates errors close to edges, they can be removed within the procedure by reconstructing
+a slightly larger transfer function and then cutting the result.  The extension is given by <em class="parameter"><code>border</code></em>
+, typical
+suitable values are 2 or 3.</p>
+<p>Convolving the result with the operand using <a class="link" href="libgwyprocess-filters.html#gwy-data-field-area-ext-convolve" title="gwy_data_field_area_ext_convolve ()"><code class="function">gwy_data_field_area_ext_convolve()</code></a> with <em class="parameter"><code>as_integral</code></em>
+=<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> will
+recover (approximately) the image.  This means the deconvolution assumes continous convolution, not discrete sums.
+Note that for the latter case this means the point spread function will be centered in <em class="parameter"><code>out</code></em>
+.</p>
+<p>Fields <em class="parameter"><code>dfield</code></em>
+ and <em class="parameter"><code>operand</code></em>
+ should be windowed beforehand if they are not periodic.</p>
+<div class="refsect3">
+<a name="gwy-data-field-deconvolve-psf-leastsq.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dfield</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operand</p></td>
+<td class="parameter_description"><p>Ideal sharp measurement (before convolution). It must have the same dimensions as <em class="parameter"><code>dfield</code></em>
+and it is
+assumed it has also the same physical size.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out</p></td>
+<td class="parameter_description"><p>Output field for the transfer function.  Its dimensions are preserved and determine the transfer function
+support.  It must be smaller than half of <em class="parameter"><code>dfield</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sigma</p></td>
+<td class="parameter_description"><p>Regularization parameter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>border</p></td>
+<td class="parameter_description"><p>Number of pixel to extend and cut off the transfer function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-52.html#api-index-2.52">2.52</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-find-regularization-sigma-for-psf"></a><h3>gwy_data_field_find_regularization_sigma_for_psf ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_find_regularization_sigma_for_psf
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dfield</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *ideal</code></em>);</pre>
+<p>Finds regularization parameter for point spread function calculation using regularized deconvolution.</p>
+<p>The estimated value should be suitable for reconstruction of the point spread function using
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-deconvolve-regularized" title="gwy_data_field_deconvolve_regularized ()"><code class="function">gwy_data_field_deconvolve_regularized()</code></a>.  The estimate is only suitable for PSF, it does not work for image
+sharpening using a known PSF.</p>
+<div class="refsect3">
+<a name="gwy-data-field-find-regularization-sigma-for-psf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dfield</p></td>
+<td class="parameter_description"><p>A data field with convolved noisy data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ideal</p></td>
+<td class="parameter_description"><p>A data field with ideal sharp data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-find-regularization-sigma-for-psf.returns"></a><h4>Returns</h4>
+<p> Estimated regularization parameter.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-51.html#api-index-2.51">2.51</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-find-regularization-sigma-leastsq"></a><h3>gwy_data_field_find_regularization_sigma_leastsq ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_find_regularization_sigma_leastsq
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dfield</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *ideal</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> border</code></em>);</pre>
+<p>Finds regularization parameter for point spread function calculation using least squares method.</p>
+<p>The estimated value should be suitable for reconstruction of the point spread function using
+<a class="link" href="libgwyprocess-filters.html#gwy-data-field-deconvolve-psf-leastsq" title="gwy_data_field_deconvolve_psf_leastsq ()"><code class="function">gwy_data_field_deconvolve_psf_leastsq()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-data-field-find-regularization-sigma-leastsq.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dfield</p></td>
+<td class="parameter_description"><p>A data field with convolved noisy data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ideal</p></td>
+<td class="parameter_description"><p>A data field with ideal sharp data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Horizontal size of transfer function support.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Vertical size of transfer function support.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>border</p></td>
+<td class="parameter_description"><p>Number of pixel to extend and cut off the transfer function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-find-regularization-sigma-leastsq.returns"></a><h4>Returns</h4>
+<p> Estimated regularization parameter.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-52.html#api-index-2.52">2.52</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

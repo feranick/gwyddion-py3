@@ -1,0 +1,819 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyAdjustBar: Gwyddion Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Widgets Library Reference Manual">
+<link rel="up" href="GeneralWidgets.html" title="General Widgets">
+<link rel="prev" href="GeneralWidgets.html" title="General Widgets">
+<link rel="next" href="GwyColorButton.html" title="GwyColorButton">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyAdjustBar.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyAdjustBar.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GwyAdjustBar.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GwyAdjustBar.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GwyAdjustBar.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="GeneralWidgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GeneralWidgets.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyColorButton.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyAdjustBar"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyAdjustBar.top_of_page"></a>GwyAdjustBar</span></h2>
+<p>GwyAdjustBar — Compact adjustment visualisation and modification</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyAdjustBar.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyAdjustBar.html#gwy-adjust-bar-new" title="gwy_adjust_bar_new ()">gwy_adjust_bar_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyAdjustBar.html#gwy-adjust-bar-set-adjustment" title="gwy_adjust_bar_set_adjustment ()">gwy_adjust_bar_set_adjustment</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkAdjustment.html#GtkAdjustment-struct"><span class="returnvalue">GtkAdjustment</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyAdjustBar.html#gwy-adjust-bar-get-adjustment" title="gwy_adjust_bar_get_adjustment ()">gwy_adjust_bar_get_adjustment</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyAdjustBar.html#gwy-adjust-bar-set-snap-to-ticks" title="gwy_adjust_bar_set_snap_to_ticks ()">gwy_adjust_bar_set_snap_to_ticks</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyAdjustBar.html#gwy-adjust-bar-get-snap-to-ticks" title="gwy_adjust_bar_get_snap_to_ticks ()">gwy_adjust_bar_get_snap_to_ticks</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyAdjustBar.html#gwy-adjust-bar-set-mapping" title="gwy_adjust_bar_set_mapping ()">gwy_adjust_bar_set_mapping</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyAdjustBar.html#GwyScaleMappingType" title="enum GwyScaleMappingType"><span class="returnvalue">GwyScaleMappingType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyAdjustBar.html#gwy-adjust-bar-get-mapping" title="gwy_adjust_bar_get_mapping ()">gwy_adjust_bar_get_mapping</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyAdjustBar.html#gwy-adjust-bar-set-has-check-button" title="gwy_adjust_bar_set_has_check_button ()">gwy_adjust_bar_set_has_check_button</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyAdjustBar.html#gwy-adjust-bar-get-has-check-button" title="gwy_adjust_bar_get_has_check_button ()">gwy_adjust_bar_get_has_check_button</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyAdjustBar.html#gwy-adjust-bar-set-bar-sensitive" title="gwy_adjust_bar_set_bar_sensitive ()">gwy_adjust_bar_set_bar_sensitive</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyAdjustBar.html#gwy-adjust-bar-get-bar-sensitive" title="gwy_adjust_bar_get_bar_sensitive ()">gwy_adjust_bar_get_bar_sensitive</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyAdjustBar.html#gwy-adjust-bar-get-label" title="gwy_adjust_bar_get_label ()">gwy_adjust_bar_get_label</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyAdjustBar.html#gwy-adjust-bar-get-check-button" title="gwy_adjust_bar_get_check_button ()">gwy_adjust_bar_get_check_button</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyAdjustBar.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkAdjustment.html#GtkAdjustment-struct"><span class="type">GtkAdjustment</span></a> *</td>
+<td class="property_name"><a class="link" href="GwyAdjustBar.html#GwyAdjustBar--adjustment" title="The “adjustment” property">adjustment</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GwyAdjustBar.html#GwyAdjustBar--has-check-button" title="The “has-check-button” property">has-check-button</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="GwyAdjustBar.html#GwyScaleMappingType" title="enum GwyScaleMappingType"><span class="type">GwyScaleMappingType</span></a></td>
+<td class="property_name"><a class="link" href="GwyAdjustBar.html#GwyAdjustBar--mapping" title="The “mapping” property">mapping</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GwyAdjustBar.html#GwyAdjustBar--snap-to-ticks" title="The “snap-to-ticks” property">snap-to-ticks</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyAdjustBar.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyAdjustBar.html#GwyAdjustBar-change-value" title="The “change-value” signal">change-value</a></td>
+<td class="signal_flags"><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyAdjustBar.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GwyAdjustBar.html#GwyScaleMappingType" title="enum GwyScaleMappingType">GwyScaleMappingType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyAdjustBar.html#GwyAdjustBar-struct" title="struct GwyAdjustBar">GwyAdjustBar</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyAdjustBar.html#GwyAdjustBarClass" title="struct GwyAdjustBarClass">GwyAdjustBarClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyAdjustBar.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkObject.html#GtkObject-struct">GtkObject</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct">GtkWidget</a>
+                <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkContainer.html#GtkContainer-struct">GtkContainer</a>
+                    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkBin.html#GtkBin-struct">GtkBin</a>
+                        <span class="lineart">╰──</span> GwyAdjustBar
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyAdjustBar.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GwyAdjustBar implements
+ AtkImplementorIface and  <a href="/usr/share/gtk-doc/html/gtk3/GtkBuildable.html#GtkBuildable-struct">GtkBuildable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwyAdjustBar.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwydgets/gwydgets.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyAdjustBar.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyAdjustBar.html" title="GwyAdjustBar"><span class="type">GwyAdjustBar</span></a> is a compact widget for visualisation and modification of the
+value of an <a href="/usr/share/gtk-doc/html/gtk3/GtkAdjustment.html#GtkAdjustment-struct"><span class="type">GtkAdjustment</span></a>.  It can contains a label with an overlaid bar
+that can be clicked, dragged or modified by the scroll-wheel by the user.
+Since the widget does not take keyboard focus, it should be paired with a
+<a href="/usr/share/gtk-doc/html/gtk3/GtkSpinButton.html#GtkSpinButton-struct"><span class="type">GtkSpinButton</span></a>, sharing the same adjustment.  This spin button would also be
+the typical mnemonic widget for the adjustment bar.</p>
+<p><a class="link" href="GwyAdjustBar.html" title="GwyAdjustBar"><span class="type">GwyAdjustBar</span></a> supports several different types of mapping between screen
+positions and values of the underlying adjustment.  Nevertheless, the
+default mapping (signed square root, <a class="link" href="GwyAdjustBar.html#GWY-SCALE-MAPPING-SQRT:CAPS"><code class="literal">GWY_SCALE_MAPPING_SQRT</code></a>) should fit
+most situations.</p>
+</div>
+<div class="refsect1">
+<a name="GwyAdjustBar.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-adjust-bar-new"></a><h3>gwy_adjust_bar_new ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_adjust_bar_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkAdjustment.html#GtkAdjustment-struct"><span class="type">GtkAdjustment</span></a> *adjustment</code></em>,
+                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>);</pre>
+<p>Creates a new adjustment bar.</p>
+<p>The label text, if any, is set with mnemonic enabled.  However, you still
+need to assign it to a widget (presumably a <a href="/usr/share/gtk-doc/html/gtk3/GtkSpinButton.html#GtkSpinButton-struct"><span class="type">GtkSpinButton</span></a>) using
+<a href="/usr/share/gtk-doc/html/gtk3/GtkLabel.html#gtk-label-set-mnemonic-widget"><code class="function">gtk_label_set_mnemonic_widget()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-adjust-bar-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>adjustment</p></td>
+<td class="parameter_description"><p>The adjustment the adjust bar should use, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>Text of the adjustment bar label, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-adjust-bar-new.returns"></a><h4>Returns</h4>
+<p> A new adjustment bar.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-adjust-bar-set-adjustment"></a><h3>gwy_adjust_bar_set_adjustment ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_adjust_bar_set_adjustment (<em class="parameter"><code><a class="link" href="GwyAdjustBar.html" title="GwyAdjustBar"><span class="type">GwyAdjustBar</span></a> *adjbar</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkAdjustment.html#GtkAdjustment-struct"><span class="type">GtkAdjustment</span></a> *adjustment</code></em>);</pre>
+<p>Sets the adjustment that an adjustment bar visualises.</p>
+<div class="refsect3">
+<a name="gwy-adjust-bar-set-adjustment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>adjbar</p></td>
+<td class="parameter_description"><p>An adjustment bar.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>adjustment</p></td>
+<td class="parameter_description"><p>Adjustment to use for the value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-adjust-bar-get-adjustment"></a><h3>gwy_adjust_bar_get_adjustment ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkAdjustment.html#GtkAdjustment-struct"><span class="returnvalue">GtkAdjustment</span></a> *
+gwy_adjust_bar_get_adjustment (<em class="parameter"><code><a class="link" href="GwyAdjustBar.html" title="GwyAdjustBar"><span class="type">GwyAdjustBar</span></a> *adjbar</code></em>);</pre>
+<p>Obtains the adjustment that an adjustment bar visualises.</p>
+<div class="refsect3">
+<a name="gwy-adjust-bar-get-adjustment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>adjbar</p></td>
+<td class="parameter_description"><p>An adjustment bar.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-adjust-bar-get-adjustment.returns"></a><h4>Returns</h4>
+<p> The adjustment used by <em class="parameter"><code>adjbar</code></em>
+.  If no adjustment was set
+and the default one is used, function returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-adjust-bar-set-snap-to-ticks"></a><h3>gwy_adjust_bar_set_snap_to_ticks ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_adjust_bar_set_snap_to_ticks (<em class="parameter"><code><a class="link" href="GwyAdjustBar.html" title="GwyAdjustBar"><span class="type">GwyAdjustBar</span></a> *adjbar</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> setting</code></em>);</pre>
+<p>Sets the snapping behaviour of an adjustment bar.</p>
+<p>Note the ‘multiples of step size’ condition in fact applies to the
+difference from the minimum value.  The maximum adjustment value is always
+permissible, even if it does not satisfy this condition.  Values modified by
+the user (i.e.  emission of signal "change-value") are snapped, however,
+values set explicitly <a href="/usr/share/gtk-doc/html/gtk3/GtkAdjustment.html#gtk-adjustment-set-value"><code class="function">gtk_adjustment_set_value()</code></a> are kept intact.</p>
+<p>Setting this option to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> immediately causes an adjustment value change
+if it does not satisfy the condition.</p>
+<p>It is usually a poor idea to enable snapping for non-linear mappings.</p>
+<div class="refsect3">
+<a name="gwy-adjust-bar-set-snap-to-ticks.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>adjbar</p></td>
+<td class="parameter_description"><p>An adjustment bar.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>setting</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to restrict values to multiples of step size,
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to permit any values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-adjust-bar-get-snap-to-ticks"></a><h3>gwy_adjust_bar_get_snap_to_ticks ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_adjust_bar_get_snap_to_ticks (<em class="parameter"><code><a class="link" href="GwyAdjustBar.html" title="GwyAdjustBar"><span class="type">GwyAdjustBar</span></a> *adjbar</code></em>);</pre>
+<p>Sets the snapping behaviour of an adjustment bar.</p>
+<div class="refsect3">
+<a name="gwy-adjust-bar-get-snap-to-ticks.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>adjbar</p></td>
+<td class="parameter_description"><p>An adjustment bar.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-adjust-bar-get-snap-to-ticks.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if values are restricted to multiples of step size.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-adjust-bar-set-mapping"></a><h3>gwy_adjust_bar_set_mapping ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_adjust_bar_set_mapping (<em class="parameter"><code><a class="link" href="GwyAdjustBar.html" title="GwyAdjustBar"><span class="type">GwyAdjustBar</span></a> *adjbar</code></em>,
+                            <em class="parameter"><code><a class="link" href="GwyAdjustBar.html#GwyScaleMappingType" title="enum GwyScaleMappingType"><span class="type">GwyScaleMappingType</span></a> mapping</code></em>);</pre>
+<p>Sets the mapping function type for an adjustment bar.</p>
+<div class="refsect3">
+<a name="gwy-adjust-bar-set-mapping.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>adjbar</p></td>
+<td class="parameter_description"><p>An adjustment bar.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mapping</p></td>
+<td class="parameter_description"><p>Mapping function type between values and screen positions in the
+adjustment bar.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-adjust-bar-get-mapping"></a><h3>gwy_adjust_bar_get_mapping ()</h3>
+<pre class="programlisting"><a class="link" href="GwyAdjustBar.html#GwyScaleMappingType" title="enum GwyScaleMappingType"><span class="returnvalue">GwyScaleMappingType</span></a>
+gwy_adjust_bar_get_mapping (<em class="parameter"><code><a class="link" href="GwyAdjustBar.html" title="GwyAdjustBar"><span class="type">GwyAdjustBar</span></a> *adjbar</code></em>);</pre>
+<p>Gets the mapping function type of an adjustment bar.</p>
+<div class="refsect3">
+<a name="gwy-adjust-bar-get-mapping.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>adjbar</p></td>
+<td class="parameter_description"><p>An adjustment bar.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-adjust-bar-get-mapping.returns"></a><h4>Returns</h4>
+<p> The type of mapping function between values and screen positions.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-adjust-bar-set-has-check-button"></a><h3>gwy_adjust_bar_set_has_check_button ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_adjust_bar_set_has_check_button (<em class="parameter"><code><a class="link" href="GwyAdjustBar.html" title="GwyAdjustBar"><span class="type">GwyAdjustBar</span></a> *adjbar</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> setting</code></em>);</pre>
+<p>Sets whether an adjustment bar has a check button.</p>
+<div class="refsect3">
+<a name="gwy-adjust-bar-set-has-check-button.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>adjbar</p></td>
+<td class="parameter_description"><p>An adjustment bar.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>setting</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to enable a check button; <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to disable it.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-adjust-bar-get-has-check-button"></a><h3>gwy_adjust_bar_get_has_check_button ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_adjust_bar_get_has_check_button (<em class="parameter"><code><a class="link" href="GwyAdjustBar.html" title="GwyAdjustBar"><span class="type">GwyAdjustBar</span></a> *adjbar</code></em>);</pre>
+<p>Reports whether an adjustment bar has a check button.</p>
+<div class="refsect3">
+<a name="gwy-adjust-bar-get-has-check-button.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>adjbar</p></td>
+<td class="parameter_description"><p>An adjustment bar.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-adjust-bar-get-has-check-button.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the adjustment bar has a check button.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-adjust-bar-set-bar-sensitive"></a><h3>gwy_adjust_bar_set_bar_sensitive ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_adjust_bar_set_bar_sensitive (<em class="parameter"><code><a class="link" href="GwyAdjustBar.html" title="GwyAdjustBar"><span class="type">GwyAdjustBar</span></a> *adjbar</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> sensitive</code></em>);</pre>
+<p>Sets the sensitivity of an adjustment bar.</p>
+<p>The bar's sensitivity can be controlled separately.  This is useful when
+<em class="parameter"><code>adjbar</code></em>
+ has a check button because otherwise the bar is the entire widget
+and the function is not different from <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#gtk-widget-set-sensitive"><code class="function">gtk_widget_set_sensitive()</code></a>.
+However, if you want to enable and disable the adjustment bar via the check
+button, use this function instead of <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#gtk-widget-set-sensitive"><code class="function">gtk_widget_set_sensitive()</code></a> which would
+make insensitive also the check button.</p>
+<div class="refsect3">
+<a name="gwy-adjust-bar-set-bar-sensitive.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>adjbar</p></td>
+<td class="parameter_description"><p>An adjustment bar.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sensitive</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to make the widget's bar sensitive.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-adjust-bar-get-bar-sensitive"></a><h3>gwy_adjust_bar_get_bar_sensitive ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_adjust_bar_get_bar_sensitive (<em class="parameter"><code><a class="link" href="GwyAdjustBar.html" title="GwyAdjustBar"><span class="type">GwyAdjustBar</span></a> *adjbar</code></em>);</pre>
+<p>Reports whether an adjustment bar is sensitive.</p>
+<p>See <a class="link" href="GwyAdjustBar.html#gwy-adjust-bar-set-bar-sensitive" title="gwy_adjust_bar_set_bar_sensitive ()"><code class="function">gwy_adjust_bar_set_bar_sensitive()</code></a> for discussion.</p>
+<div class="refsect3">
+<a name="gwy-adjust-bar-get-bar-sensitive.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>adjbar</p></td>
+<td class="parameter_description"><p>An adjustment bar.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-adjust-bar-get-bar-sensitive.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the widget's bar is sensitive.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-adjust-bar-get-label"></a><h3>gwy_adjust_bar_get_label ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_adjust_bar_get_label (<em class="parameter"><code><a class="link" href="GwyAdjustBar.html" title="GwyAdjustBar"><span class="type">GwyAdjustBar</span></a> *adjbar</code></em>);</pre>
+<p>Gets the label widget inside an adjustment bar.</p>
+<p>Use <a href="/usr/share/gtk-doc/html/gtk3/GtkLabel.html#gtk-label-set-mnemonic-widget"><code class="function">gtk_label_set_mnemonic_widget()</code></a> to set the mnemonic widget for the label
+or change the label text.</p>
+<div class="refsect3">
+<a name="gwy-adjust-bar-get-label.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>adjbar</p></td>
+<td class="parameter_description"><p>An adjustment bar.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-adjust-bar-get-label.returns"></a><h4>Returns</h4>
+<p> The label widget.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-adjust-bar-get-check-button"></a><h3>gwy_adjust_bar_get_check_button ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_adjust_bar_get_check_button (<em class="parameter"><code><a class="link" href="GwyAdjustBar.html" title="GwyAdjustBar"><span class="type">GwyAdjustBar</span></a> *adjbar</code></em>);</pre>
+<p>Gets the check button of an adjustment bar.</p>
+<p>Connect to the "toggled" signal of the check button.  Modifying it is not
+recommended.</p>
+<div class="refsect3">
+<a name="gwy-adjust-bar-get-check-button.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>adjbar</p></td>
+<td class="parameter_description"><p>An adjustment bar.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-adjust-bar-get-check-button.returns"></a><h4>Returns</h4>
+<p> The check button widget, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there is none.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyAdjustBar.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyScaleMappingType"></a><h3>enum GwyScaleMappingType</h3>
+<p>Type of adjustment bar mapping functions.</p>
+<div class="refsect3">
+<a name="GwyScaleMappingType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-SCALE-MAPPING-LINEAR:CAPS"></a>GWY_SCALE_MAPPING_LINEAR</p></td>
+<td class="enum_member_description">
+<p>Linear mapping between values and screen
+positions.  This recommended for signed additive
+quantities of a limited range.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-SCALE-MAPPING-SQRT:CAPS"></a>GWY_SCALE_MAPPING_SQRT</p></td>
+<td class="enum_member_description">
+<p>Screen positions correspond to ‘signed square
+roots’ of the value.  This is the
+recommended general-purpose default mapping type as
+it works with both signed and usigned quantities
+and offers good sensitivity for both large and
+small values.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-SCALE-MAPPING-LOG:CAPS"></a>GWY_SCALE_MAPPING_LOG</p></td>
+<td class="enum_member_description">
+<p>Screen positions correspond to logarithms of values.
+The adjustment range must contain only positive
+values.  For quantities of extreme ranges this
+mapping may be preferred to <a class="link" href="GwyAdjustBar.html#GWY-SCALE-MAPPING-SQRT:CAPS"><code class="literal">GWY_SCALE_MAPPING_SQRT</code></a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyAdjustBar-struct"></a><h3>struct GwyAdjustBar</h3>
+<pre class="programlisting">struct GwyAdjustBar;</pre>
+<p>Adjustment bar widget visualising an adjustment.</p>
+<p>The <a class="link" href="GwyAdjustBar.html" title="GwyAdjustBar"><span class="type">GwyAdjustBar</span></a> struct contains private data only and should be accessed
+using the functions below.</p>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyAdjustBarClass"></a><h3>struct GwyAdjustBarClass</h3>
+<pre class="programlisting">struct GwyAdjustBarClass {
+};
+</pre>
+<p>Class of adjustment bars visualising adjustments.</p>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyAdjustBar.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GwyAdjustBar--adjustment"></a><h3>The <code class="literal">“adjustment”</code> property</h3>
+<pre class="programlisting">  “adjustment”               <a href="/usr/share/gtk-doc/html/gtk3/GtkAdjustment.html#GtkAdjustment-struct"><span class="type">GtkAdjustment</span></a> *</pre>
+<p>Adjustment representing the value.</p>
+<p>Owner: GwyAdjustBar</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyAdjustBar--has-check-button"></a><h3>The <code class="literal">“has-check-button”</code> property</h3>
+<pre class="programlisting">  “has-check-button”         <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the adjust bar has a check button.</p>
+<p>Owner: GwyAdjustBar</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyAdjustBar--mapping"></a><h3>The <code class="literal">“mapping”</code> property</h3>
+<pre class="programlisting">  “mapping”                  <a class="link" href="GwyAdjustBar.html#GwyScaleMappingType" title="enum GwyScaleMappingType"><span class="type">GwyScaleMappingType</span></a></pre>
+<p>Mapping function between values and screen positions.</p>
+<p>Owner: GwyAdjustBar</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GWY_SCALE_MAPPING_SQRT</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyAdjustBar--snap-to-ticks"></a><h3>The <code class="literal">“snap-to-ticks”</code> property</h3>
+<pre class="programlisting">  “snap-to-ticks”            <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether only values that are multiples of step size are allowed.</p>
+<p>Owner: GwyAdjustBar</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyAdjustBar.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GwyAdjustBar-change-value"></a><h3>The <code class="literal">“change-value”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyAdjustBar.html" title="GwyAdjustBar"><span class="type">GwyAdjustBar</span></a> *gwyadjustbar,
+               <span class="type">double</span>        arg1,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>The ::change-value signal is emitted when the user interactively
+changes the value.</p>
+<p>It is an action signal.</p>
+<div class="refsect3">
+<a name="GwyAdjustBar-change-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwyadjustbar</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyAdjustBar.html" title="GwyAdjustBar"><span class="type">GwyAdjustBar</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arg1</p></td>
+<td class="parameter_description"><p>New value for <em class="parameter"><code>gwyadjustbar</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

@@ -1,0 +1,550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>fractals: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="libgwyprocess-filters.html" title="filters">
+<link rel="next" href="libgwyprocess-grains.html" title="grains">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyprocess-fractals.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyprocess-filters.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyprocess-grains.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyprocess-fractals"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyprocess-fractals.top_of_page"></a>fractals</span></h2>
+<p>fractals — Fractal dimension calculation, fractal interpolation</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyprocess-fractals.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-fractals.html#gwy-data-field-fractal-partitioning" title="gwy_data_field_fractal_partitioning ()">gwy_data_field_fractal_partitioning</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-fractals.html#gwy-data-field-fractal-cubecounting" title="gwy_data_field_fractal_cubecounting ()">gwy_data_field_fractal_cubecounting</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-fractals.html#gwy-data-field-fractal-triangulation" title="gwy_data_field_fractal_triangulation ()">gwy_data_field_fractal_triangulation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-fractals.html#gwy-data-field-fractal-psdf" title="gwy_data_field_fractal_psdf ()">gwy_data_field_fractal_psdf</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-fractals.html#gwy-data-field-fractal-cubecounting-dim" title="gwy_data_field_fractal_cubecounting_dim ()">gwy_data_field_fractal_cubecounting_dim</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-fractals.html#gwy-data-field-fractal-triangulation-dim" title="gwy_data_field_fractal_triangulation_dim ()">gwy_data_field_fractal_triangulation_dim</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-fractals.html#gwy-data-field-fractal-partitioning-dim" title="gwy_data_field_fractal_partitioning_dim ()">gwy_data_field_fractal_partitioning_dim</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-fractals.html#gwy-data-field-fractal-psdf-dim" title="gwy_data_field_fractal_psdf_dim ()">gwy_data_field_fractal_psdf_dim</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-fractals.html#gwy-data-field-fractal-correction" title="gwy_data_field_fractal_correction ()">gwy_data_field_fractal_correction</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-fractals.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-fractals.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-fractals.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-data-field-fractal-partitioning"></a><h3>gwy_data_field_fractal_partitioning ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_fractal_partitioning (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                     <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *xresult</code></em>,
+                                     <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *yresult</code></em>,
+                                     <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interpolation</code></em>);</pre>
+<p>Computes data for log-log plot by partitioning.</p>
+<p>Data lines <em class="parameter"><code>xresult</code></em>
+ and <em class="parameter"><code>yresult</code></em>
+ will be resized to the output size and they will contain corresponding values at
+each position.</p>
+<div class="refsect3">
+<a name="gwy-data-field-fractal-partitioning.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xresult</p></td>
+<td class="parameter_description"><p>Data line to store x-values for log-log plot to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yresult</p></td>
+<td class="parameter_description"><p>Data line to store y-values for log-log plot to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>Interpolation type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-fractal-cubecounting"></a><h3>gwy_data_field_fractal_cubecounting ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_fractal_cubecounting (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                     <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *xresult</code></em>,
+                                     <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *yresult</code></em>,
+                                     <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interpolation</code></em>);</pre>
+<p>Computes data for log-log plot by cube counting.</p>
+<p>Data lines <em class="parameter"><code>xresult</code></em>
+ and <em class="parameter"><code>yresult</code></em>
+ will be resized to the output size and they will contain corresponding values at
+each position.</p>
+<div class="refsect3">
+<a name="gwy-data-field-fractal-cubecounting.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xresult</p></td>
+<td class="parameter_description"><p>Data line to store x-values for log-log plot to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yresult</p></td>
+<td class="parameter_description"><p>Data line to store y-values for log-log plot to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>Interpolation type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-fractal-triangulation"></a><h3>gwy_data_field_fractal_triangulation ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_fractal_triangulation (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                      <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *xresult</code></em>,
+                                      <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *yresult</code></em>,
+                                      <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interpolation</code></em>);</pre>
+<p>Computes data for log-log plot by triangulation.</p>
+<p>Data lines <em class="parameter"><code>xresult</code></em>
+ and <em class="parameter"><code>yresult</code></em>
+ will be resized to the output size and they will contain corresponding values at
+each position.</p>
+<div class="refsect3">
+<a name="gwy-data-field-fractal-triangulation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xresult</p></td>
+<td class="parameter_description"><p>Data line to store x-values for log-log plot to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yresult</p></td>
+<td class="parameter_description"><p>Data line to store y-values for log-log plot to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>Interpolation type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-fractal-psdf"></a><h3>gwy_data_field_fractal_psdf ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_fractal_psdf (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                             <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *xresult</code></em>,
+                             <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *yresult</code></em>,
+                             <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interpolation</code></em>);</pre>
+<p>Computes data for log-log plot by spectral density method.</p>
+<p>Data lines <em class="parameter"><code>xresult</code></em>
+ and <em class="parameter"><code>yresult</code></em>
+ will be resized to the output size and they will contain corresponding values at
+each position.</p>
+<div class="refsect3">
+<a name="gwy-data-field-fractal-psdf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xresult</p></td>
+<td class="parameter_description"><p>Data line to store x-values for log-log plot to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yresult</p></td>
+<td class="parameter_description"><p>Data line to store y-values for log-log plot to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>Interpolation type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-fractal-cubecounting-dim"></a><h3>gwy_data_field_fractal_cubecounting_dim ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_fractal_cubecounting_dim
+                               (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *xresult</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *yresult</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *a</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *b</code></em>);</pre>
+<p>Computes fractal dimension by cube counting method from log-log plot data.</p>
+<p>The <em class="parameter"><code>xresult</code></em>
+ and <em class="parameter"><code>yresult</code></em>
+ data lines are usually calculated by <a class="link" href="libgwyprocess-fractals.html#gwy-data-field-fractal-cubecounting" title="gwy_data_field_fractal_cubecounting ()"><code class="function">gwy_data_field_fractal_cubecounting()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-data-field-fractal-cubecounting-dim.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>xresult</p></td>
+<td class="parameter_description"><p>Log-log fractal data (x values).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yresult</p></td>
+<td class="parameter_description"><p>Log-log fractal data (y values).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>Location to store linear fit constant to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>Location to store linear fit slope to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-fractal-cubecounting-dim.returns"></a><h4>Returns</h4>
+<p> The fractal dimension.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-fractal-triangulation-dim"></a><h3>gwy_data_field_fractal_triangulation_dim ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_fractal_triangulation_dim
+                               (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *xresult</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *yresult</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *a</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *b</code></em>);</pre>
+<p>Computes fractal dimension by triangulation method from log-log plot data.</p>
+<p>The <em class="parameter"><code>xresult</code></em>
+ and <em class="parameter"><code>yresult</code></em>
+ data lines are usually calculated by <a class="link" href="libgwyprocess-fractals.html#gwy-data-field-fractal-triangulation" title="gwy_data_field_fractal_triangulation ()"><code class="function">gwy_data_field_fractal_triangulation()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-data-field-fractal-triangulation-dim.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>xresult</p></td>
+<td class="parameter_description"><p>Log-log fractal data (x values).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yresult</p></td>
+<td class="parameter_description"><p>Log-log fractal data (y values).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>Location to store linear fit constant to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>Location to store linear fit slope to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-fractal-triangulation-dim.returns"></a><h4>Returns</h4>
+<p> The fractal dimension.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-fractal-partitioning-dim"></a><h3>gwy_data_field_fractal_partitioning_dim ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_fractal_partitioning_dim
+                               (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *xresult</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *yresult</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *a</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *b</code></em>);</pre>
+<p>Computes fractal dimension by partitioning method from log-log plot data.</p>
+<p>The <em class="parameter"><code>xresult</code></em>
+ and <em class="parameter"><code>yresult</code></em>
+ data lines are usually calculated by <a class="link" href="libgwyprocess-fractals.html#gwy-data-field-fractal-partitioning" title="gwy_data_field_fractal_partitioning ()"><code class="function">gwy_data_field_fractal_partitioning()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-data-field-fractal-partitioning-dim.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>xresult</p></td>
+<td class="parameter_description"><p>Log-log fractal data (x values).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yresult</p></td>
+<td class="parameter_description"><p>Log-log fractal data (y values).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>Location to store linear fit constant to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>Location to store linear fit slope to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-fractal-partitioning-dim.returns"></a><h4>Returns</h4>
+<p> The fractal dimension.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-fractal-psdf-dim"></a><h3>gwy_data_field_fractal_psdf_dim ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_data_field_fractal_psdf_dim (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *xresult</code></em>,
+                                 <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *yresult</code></em>,
+                                 <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *a</code></em>,
+                                 <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *b</code></em>);</pre>
+<p>Computes fractal dimension by spectral density function method from log-log plot data.</p>
+<p>The <em class="parameter"><code>xresult</code></em>
+ and <em class="parameter"><code>yresult</code></em>
+ data lines are usually calculated by <a class="link" href="libgwyprocess-fractals.html#gwy-data-field-fractal-psdf" title="gwy_data_field_fractal_psdf ()"><code class="function">gwy_data_field_fractal_psdf()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-data-field-fractal-psdf-dim.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>xresult</p></td>
+<td class="parameter_description"><p>Log-log fractal data (x values).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yresult</p></td>
+<td class="parameter_description"><p>Log-log fractal data (y values).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>Location to store linear fit constant to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>Location to store linear fit slope to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-fractal-psdf-dim.returns"></a><h4>Returns</h4>
+<p> The fractal dimension.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-fractal-correction"></a><h3>gwy_data_field_fractal_correction ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_fractal_correction (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                   <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask_field</code></em>,
+                                   <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interpolation</code></em>);</pre>
+<p>Replaces data under mask with interpolated values using fractal interpolation.</p>
+<div class="refsect3">
+<a name="gwy-data-field-fractal-correction.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask_field</p></td>
+<td class="parameter_description"><p>Mask of places to be corrected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>Interpolation type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>simpleFFT: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="libgwyprocess-linestats.html" title="linestats">
+<link rel="next" href="libgwyprocess-GwyPeaks.html" title="GwyPeaks">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyprocess-simpleFFT.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyprocess-linestats.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyprocess-GwyPeaks.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyprocess-simpleFFT"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyprocess-simpleFFT.top_of_page"></a>simpleFFT</span></h2>
+<p>simpleFFT — Simple FFT algorithm</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyprocess-simpleFFT.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-simpleFFT.html#gwy-fft-simple" title="gwy_fft_simple ()">gwy_fft_simple</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-simpleFFT.html#gwy-fft-window" title="gwy_fft_window ()">gwy_fft_window</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-simpleFFT.html#gwy-fft-window-data-field" title="gwy_fft_window_data_field ()">gwy_fft_window_data_field</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-simpleFFT.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-simpleFFT.description"></a><h2>Description</h2>
+<p>The simple one-dimensional FFT algorithm <a class="link" href="libgwyprocess-simpleFFT.html#gwy-fft-simple" title="gwy_fft_simple ()"><code class="function">gwy_fft_simple()</code></a> used to be employed as a fallback by other functions when
+a better implementation (FFTW3) was not available.  Since version 2.49 it just calls the corresponding FFTW
+routine.</p>
+<p>Generally, you should either use high-level Gwyddion functions such as <a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-2dfft-raw" title="gwy_data_field_2dfft_raw ()"><code class="function">gwy_data_field_2dfft_raw()</code></a> or, if they are
+insufficient, FFTW routines directly.</p>
+<p>Up to version 2.7 simpleFFT required certain tranform sizes, mostly powers of 2.  Since 2.8 it can handle arbitrary
+tranform sizes, although sizes with large prime factors can be quite slow (still O(n*log(n)) though).</p>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-simpleFFT.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-fft-simple"></a><h3>gwy_fft_simple ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_fft_simple (<em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyTransformDirection" title="enum GwyTransformDirection"><span class="type">GwyTransformDirection</span></a> dir</code></em>,
+                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> istride</code></em>,
+                <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *in_re</code></em>,
+                <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *in_im</code></em>,
+                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ostride</code></em>,
+                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *out_re</code></em>,
+                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *out_im</code></em>);</pre>
+<p>Performs a DFT algorithm.</p>
+<p>This is a low-level function that used to be employed by other FFT functions when no better backend was available.
+Since version 2.49 it just calls the corresponding FFTW routine.</p>
+<p>Strides are distances between samples in input and output arrays.  Use 1 for normal `dense' arrays.  To use
+<a class="link" href="libgwyprocess-simpleFFT.html#gwy-fft-simple" title="gwy_fft_simple ()"><code class="function">gwy_fft_simple()</code></a> with interleaved arrays, that is with alternating real and imaginary data, call it with
+<em class="parameter"><code>istride</code></em>
+=2, <em class="parameter"><code>in_re</code></em>
+=<em class="parameter"><code>complex_array</code></em>
+, <em class="parameter"><code>in_im</code></em>
+=<em class="parameter"><code>complex_array</code></em>
++1 (and similarly for output arrays).</p>
+<p>The output is symmetrically normalized by square root of <em class="parameter"><code>n</code></em>
+ for both transform directions.  By performing forward
+and then backward transform, you will obtain the original array (up to rounding errors).</p>
+<div class="refsect3">
+<a name="gwy-fft-simple.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dir</p></td>
+<td class="parameter_description"><p>Transformation direction.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of data points. Note only certain transform sizes are implemented.  If <a class="link" href="libgwyprocess-simpleFFT.html#gwy-fft-simple" title="gwy_fft_simple ()"><code class="function">gwy_fft_simple()</code></a> is the current
+FFT backend, then <a class="link" href="libgwyprocess-inttrans.html#gwy-fft-find-nice-size" title="gwy_fft_find_nice_size ()"><code class="function">gwy_fft_find_nice_size()</code></a> can provide accepted transform sizes. If <a class="link" href="libgwyprocess-simpleFFT.html#gwy-fft-simple" title="gwy_fft_simple ()"><code class="function">gwy_fft_simple()</code></a> is not the
+current FFT backend, you should not use it.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>istride</p></td>
+<td class="parameter_description"><p>Input data stride.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>in_re</p></td>
+<td class="parameter_description"><p>Real part of input data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>in_im</p></td>
+<td class="parameter_description"><p>Imaginary part of input data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ostride</p></td>
+<td class="parameter_description"><p>Output data stride.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out_re</p></td>
+<td class="parameter_description"><p>Real part of output data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>out_im</p></td>
+<td class="parameter_description"><p>Imaginary part of output data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-fft-window"></a><h3>gwy_fft_window ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_fft_window (<em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *data</code></em>,
+                <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyWindowingType" title="enum GwyWindowingType"><span class="type">GwyWindowingType</span></a> windowing</code></em>);</pre>
+<p>Multiplies data by given window.</p>
+<div class="refsect3">
+<a name="gwy-fft-window.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of data values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Data values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>windowing</p></td>
+<td class="parameter_description"><p>Method used for windowing.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-fft-window-data-field"></a><h3>gwy_fft_window_data_field ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_fft_window_data_field (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dfield</code></em>,
+                           <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyOrientation" title="enum GwyOrientation"><span class="type">GwyOrientation</span></a> orientation</code></em>,
+                           <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyWindowingType" title="enum GwyWindowingType"><span class="type">GwyWindowingType</span></a> windowing</code></em>);</pre>
+<p>Performs windowing of a data field in given direction.</p>
+<div class="refsect3">
+<a name="gwy-fft-window-data-field.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dfield</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>orientation</p></td>
+<td class="parameter_description"><p>Windowing orientation (the same as corresponding FFT orientation).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>windowing</p></td>
+<td class="parameter_description"><p>The windowing type to use.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-simpleFFT.see-also"></a><h2>See Also</h2>
+<a class="link" href="libgwyprocess-inttrans.html" title="inttrans">inttrans</a> -- high-level integral transform functions
+
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

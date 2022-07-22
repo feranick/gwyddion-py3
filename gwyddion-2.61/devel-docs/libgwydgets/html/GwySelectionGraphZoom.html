@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwySelectionGraphZoom: Gwyddion Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Widgets Library Reference Manual">
+<link rel="up" href="GraphWidgets.html" title="Graphs">
+<link rel="prev" href="GwySelectionGraphPoint.html" title="GwySelectionGraphPoint">
+<link rel="next" href="Widgets3D.html" title="3D Widgets">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwySelectionGraphZoom.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwySelectionGraphZoom.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GwySelectionGraphZoom.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="GraphWidgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GwySelectionGraphPoint.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="Widgets3D.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwySelectionGraphZoom"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwySelectionGraphZoom.top_of_page"></a>GwySelectionGraphZoom</span></h2>
+<p>GwySelectionGraphZoom — Graph zoom selection</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwySelectionGraphZoom.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="function_type">
+<a href="../GwySelection.html#GwySelection-struct"><span class="returnvalue">GwySelection</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySelectionGraphZoom.html#gwy-selection-graph-zoom-new" title="gwy_selection_graph_zoom_new ()">gwy_selection_graph_zoom_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphZoom.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwySelectionGraphZoom.html#GwySelectionGraphZoom-struct" title="struct GwySelectionGraphZoom">GwySelectionGraphZoom</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwySelectionGraphZoom.html#GwySelectionGraphZoomClass" title="struct GwySelectionGraphZoomClass">GwySelectionGraphZoomClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphZoom.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="../GwySelection.html#GwySelection-struct">GwySelection</a>
+        <span class="lineart">╰──</span> GwySelectionGraphZoom
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphZoom.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GwySelectionGraphZoom implements
+ <a href="../GwySerializable.html#GwySerializable-struct">GwySerializable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphZoom.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwydgets/gwydgets.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphZoom.description"></a><h2>Description</h2>
+<p><a class="link" href="GwySelectionGraphZoom.html" title="GwySelectionGraphZoom"><span class="type">GwySelectionGraphZoom</span></a> is used to represent zoom graph selections.
+Selection data consists of coordinate quadruples (x0, y0, x1, y1).</p>
+<p>This selection type is completely identical to <a class="link" href="GwySelectionGraphArea.html" title="GwySelectionGraphArea"><span class="type">GwySelectionGraphArea</span></a> and
+should probably not exist as a separate class.</p>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphZoom.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-selection-graph-zoom-new"></a><h3>gwy_selection_graph_zoom_new ()</h3>
+<pre class="programlisting"><a href="../GwySelection.html#GwySelection-struct"><span class="returnvalue">GwySelection</span></a> *
+gwy_selection_graph_zoom_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new zoom-wise graph selection.</p>
+<div class="refsect3">
+<a name="gwy-selection-graph-zoom-new.returns"></a><h4>Returns</h4>
+<p> A new selection object.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-1.html#api-index-2.1">2.1</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphZoom.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwySelectionGraphZoom-struct"></a><h3>struct GwySelectionGraphZoom</h3>
+<pre class="programlisting">struct GwySelectionGraphZoom;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwySelectionGraphZoomClass"></a><h3>struct GwySelectionGraphZoomClass</h3>
+<pre class="programlisting">struct GwySelectionGraphZoomClass {
+    GwySelectionClass parent_class;
+};
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

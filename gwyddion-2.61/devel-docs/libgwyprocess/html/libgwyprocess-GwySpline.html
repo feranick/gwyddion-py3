@@ -1,0 +1,721 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwySpline: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="GwyShapeFitPreset.html" title="GwyShapeFitPreset">
+<link rel="next" href="libgwyprocess-stats.html" title="stats">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyprocess-GwySpline.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="GwyShapeFitPreset.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyprocess-stats.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyprocess-GwySpline"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyprocess-GwySpline.top_of_page"></a>GwySpline</span></h2>
+<p>GwySpline — Sampling curves in plane</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyprocess-GwySpline.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyprocess-GwySpline.html#GwySpline" title="GwySpline"><span class="returnvalue">GwySpline</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-new" title="gwy_spline_new ()">gwy_spline_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-free" title="gwy_spline_free ()">gwy_spline_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyprocess-GwySpline.html#GwySpline" title="GwySpline"><span class="returnvalue">GwySpline</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-copy" title="gwy_spline_copy ()">gwy_spline_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyprocess-GwySpline.html#GwySpline" title="GwySpline"><span class="returnvalue">GwySpline</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-new-from-points" title="gwy_spline_new_from_points ()">gwy_spline_new_from_points</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-get-npoints" title="gwy_spline_get_npoints ()">gwy_spline_get_npoints</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="../libgwyddion-Math.html#GwyXY"><span class="returnvalue">GwyXY</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-get-points" title="gwy_spline_get_points ()">gwy_spline_get_points</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="../libgwyddion-Math.html#GwyXY"><span class="returnvalue">GwyXY</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-get-tangents" title="gwy_spline_get_tangents ()">gwy_spline_get_tangents</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-get-slackness" title="gwy_spline_get_slackness ()">gwy_spline_get_slackness</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-get-closed" title="gwy_spline_get_closed ()">gwy_spline_get_closed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-set-points" title="gwy_spline_set_points ()">gwy_spline_set_points</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-set-slackness" title="gwy_spline_set_slackness ()">gwy_spline_set_slackness</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-set-closed" title="gwy_spline_set_closed ()">gwy_spline_set_closed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-length" title="gwy_spline_length ()">gwy_spline_length</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="../libgwyddion-Math.html#GwyXY"><span class="returnvalue">GwyXY</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-sample-naturally" title="gwy_spline_sample_naturally ()">gwy_spline_sample_naturally</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-sample-uniformly" title="gwy_spline_sample_uniformly ()">gwy_spline_sample_uniformly</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-GwySpline.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libgwyprocess-GwySpline.html#GwySpline" title="GwySpline">GwySpline</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-GwySpline.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-GwySpline.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-GwySpline.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-spline-new"></a><h3>gwy_spline_new ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyprocess-GwySpline.html#GwySpline" title="GwySpline"><span class="returnvalue">GwySpline</span></a> *
+gwy_spline_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new empty spline curve.</p>
+<p>You need to set the curve points using <a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-set-points" title="gwy_spline_set_points ()"><code class="function">gwy_spline_set_points()</code></a> before any
+sampling along the curve.  Alternatively, use <a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-new-from-points" title="gwy_spline_new_from_points ()"><code class="function">gwy_spline_new_from_points()</code></a>
+to construct the spline already with some points.</p>
+<div class="refsect3">
+<a name="gwy-spline-new.returns"></a><h4>Returns</h4>
+<p> A newly created spline curve.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-spline-free"></a><h3>gwy_spline_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_spline_free (<em class="parameter"><code><a class="link" href="libgwyprocess-GwySpline.html#GwySpline" title="GwySpline"><span class="type">GwySpline</span></a> *spline</code></em>);</pre>
+<p>Frees a spline curve and all associated resources.</p>
+<div class="refsect3">
+<a name="gwy-spline-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>spline</p></td>
+<td class="parameter_description"><p>A spline curve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-spline-copy"></a><h3>gwy_spline_copy ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyprocess-GwySpline.html#GwySpline" title="GwySpline"><span class="returnvalue">GwySpline</span></a> *
+gwy_spline_copy (<em class="parameter"><code><a class="link" href="libgwyprocess-GwySpline.html#GwySpline" title="GwySpline"><span class="type">GwySpline</span></a> *spline</code></em>);</pre>
+<p>Creates a copy of a spline curve.</p>
+<div class="refsect3">
+<a name="gwy-spline-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>spline</p></td>
+<td class="parameter_description"><p>A spline curve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-spline-copy.returns"></a><h4>Returns</h4>
+<p> A newly created spline curve.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-spline-new-from-points"></a><h3>gwy_spline_new_from_points ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyprocess-GwySpline.html#GwySpline" title="GwySpline"><span class="returnvalue">GwySpline</span></a> *
+gwy_spline_new_from_points (<em class="parameter"><code>const <a href="../libgwyddion-Math.html#GwyXY"><span class="type">GwyXY</span></a> *xy</code></em>,
+                            <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>);</pre>
+<p>Creates a new spline curve passing through given points.</p>
+<p>See <a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-set-points" title="gwy_spline_set_points ()"><code class="function">gwy_spline_set_points()</code></a> for discussion.</p>
+<div class="refsect3">
+<a name="gwy-spline-new-from-points.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>xy</p></td>
+<td class="parameter_description"><p>Array of points in plane the curve will pass through.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of points in <em class="parameter"><code>xy</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-spline-new-from-points.returns"></a><h4>Returns</h4>
+<p> A newly created spline curve.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-spline-get-npoints"></a><h3>gwy_spline_get_npoints ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gwy_spline_get_npoints (<em class="parameter"><code><a class="link" href="libgwyprocess-GwySpline.html#GwySpline" title="GwySpline"><span class="type">GwySpline</span></a> *spline</code></em>);</pre>
+<p>Gets the number of points of a spline curve.</p>
+<div class="refsect3">
+<a name="gwy-spline-get-npoints.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>spline</p></td>
+<td class="parameter_description"><p>A spline curve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-spline-get-npoints.returns"></a><h4>Returns</h4>
+<p> The number of XY points defining the curve.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-spline-get-points"></a><h3>gwy_spline_get_points ()</h3>
+<pre class="programlisting">const <a href="../libgwyddion-Math.html#GwyXY"><span class="returnvalue">GwyXY</span></a> *
+gwy_spline_get_points (<em class="parameter"><code><a class="link" href="libgwyprocess-GwySpline.html#GwySpline" title="GwySpline"><span class="type">GwySpline</span></a> *spline</code></em>);</pre>
+<p>Gets the coordinates of spline curve points.</p>
+<p>If the spline is empty (there are no points) the function returns <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-spline-get-points.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>spline</p></td>
+<td class="parameter_description"><p>A spline curve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-spline-get-points.returns"></a><h4>Returns</h4>
+<p> Coordinates of the XY points defining the curve.  The returned
+array is owned by <em class="parameter"><code>spline</code></em>
+, must not be modified and is only
+guaranteed to exist so long as the spline is not modified nor
+destroyed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-spline-get-tangents"></a><h3>gwy_spline_get_tangents ()</h3>
+<pre class="programlisting">const <a href="../libgwyddion-Math.html#GwyXY"><span class="returnvalue">GwyXY</span></a> *
+gwy_spline_get_tangents (<em class="parameter"><code><a class="link" href="libgwyprocess-GwySpline.html#GwySpline" title="GwySpline"><span class="type">GwySpline</span></a> *spline</code></em>);</pre>
+<p>Gets tangents to the curve in its defining points.</p>
+<p>See <a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-sample-uniformly" title="gwy_spline_sample_uniformly ()"><code class="function">gwy_spline_sample_uniformly()</code></a> for discussion.</p>
+<p>If the spline is empty (there are no points) the function returns <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-spline-get-tangents.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>spline</p></td>
+<td class="parameter_description"><p>A spline curve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-spline-get-tangents.returns"></a><h4>Returns</h4>
+<p> Tangents to the spline in the XY points defining the curve.  The
+returned array is owned by <em class="parameter"><code>spline</code></em>
+, must not be modified and is
+only guaranteed to exist so long as the spline is not modified nor
+destroyed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-spline-get-slackness"></a><h3>gwy_spline_get_slackness ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_spline_get_slackness (<em class="parameter"><code><a class="link" href="libgwyprocess-GwySpline.html#GwySpline" title="GwySpline"><span class="type">GwySpline</span></a> *spline</code></em>);</pre>
+<p>Gets the slackness parameter of a spline curve.</p>
+<p>See <a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-set-slackness" title="gwy_spline_set_slackness ()"><code class="function">gwy_spline_set_slackness()</code></a> for discussion.</p>
+<div class="refsect3">
+<a name="gwy-spline-get-slackness.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>spline</p></td>
+<td class="parameter_description"><p>A spline curve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-spline-get-slackness.returns"></a><h4>Returns</h4>
+<p> The slackness parameter value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-spline-get-closed"></a><h3>gwy_spline_get_closed ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_spline_get_closed (<em class="parameter"><code><a class="link" href="libgwyprocess-GwySpline.html#GwySpline" title="GwySpline"><span class="type">GwySpline</span></a> *spline</code></em>);</pre>
+<p>Reports whether a spline curve is closed or not.</p>
+<p>See <a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-set-closed" title="gwy_spline_set_closed ()"><code class="function">gwy_spline_set_closed()</code></a> for discussion.</p>
+<div class="refsect3">
+<a name="gwy-spline-get-closed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>spline</p></td>
+<td class="parameter_description"><p>A spline curve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-spline-get-closed.returns"></a><h4>Returns</h4>
+<p> <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>spline</code></em>
+is closed, <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it is open-ended.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-spline-set-points"></a><h3>gwy_spline_set_points ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_spline_set_points (<em class="parameter"><code><a class="link" href="libgwyprocess-GwySpline.html#GwySpline" title="GwySpline"><span class="type">GwySpline</span></a> *spline</code></em>,
+                       <em class="parameter"><code>const <a href="../libgwyddion-Math.html#GwyXY"><span class="type">GwyXY</span></a> *xy</code></em>,
+                       <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>);</pre>
+<p>Sets the coordinates of XY points a spline curve should pass through.</p>
+<p>It is possible to pass <em class="parameter"><code>n</code></em>
+=0 to make the spline empty (<em class="parameter"><code>xy</code></em>
+ can be <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> then)
+but such spline may not be sampled using <a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-sample-uniformly" title="gwy_spline_sample_uniformly ()"><code class="function">gwy_spline_sample_uniformly()</code></a>.</p>
+<p>The coordinates should be device-scaled, i.e. they should data field rows
+and columns, or screen or image pixels.  Generally, the unit length should
+be about the smallest distinguishable distance.</p>
+<p>This is important namely for <a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-sample-naturally" title="gwy_spline_sample_naturally ()"><code class="function">gwy_spline_sample_naturally()</code></a> that stops
+refining the curve when the details become too tiny, even though there may
+be sharp changes of direction.  It is also important if the physical X and Y
+scales differ.</p>
+<p>Using unscaled physical coordinates may produce odd results.</p>
+<div class="refsect3">
+<a name="gwy-spline-set-points.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>spline</p></td>
+<td class="parameter_description"><p>A spline curve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xy</p></td>
+<td class="parameter_description"><p>Array of points in plane the curve will pass through.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Number of points in <em class="parameter"><code>xy</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-spline-set-slackness"></a><h3>gwy_spline_set_slackness ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_spline_set_slackness (<em class="parameter"><code><a class="link" href="libgwyprocess-GwySpline.html#GwySpline" title="GwySpline"><span class="type">GwySpline</span></a> *spline</code></em>,
+                          <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> slackness</code></em>);</pre>
+<p>Sets the slackness parameter of a spline curve.</p>
+<p>The slackness parameter determines how taut or slack the curve is.</p>
+<p>The curve always passes through the given XY points.  For zero slackness
+the curve is maximally taut, i.e. the shortest possible passing
+through the points.  Such curve is formed by straight segments.  For
+slackness of 1 the curve is a ‘free’ spline.  Values smaller than 1 mean
+tensile stress while values larger than 1 compressive stres.  The default
+value is 1/sqrt(2).</p>
+<div class="refsect3">
+<a name="gwy-spline-set-slackness.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>spline</p></td>
+<td class="parameter_description"><p>A spline curve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>slackness</p></td>
+<td class="parameter_description"><p>New slackness parameter value from the range [0, <a href="/usr/share/gtk-doc/html/glib/glib-Numerical-Definitions.html#G-SQRT2:CAPS"><code class="literal">G_SQRT2</code></a>].</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-spline-set-closed"></a><h3>gwy_spline_set_closed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_spline_set_closed (<em class="parameter"><code><a class="link" href="libgwyprocess-GwySpline.html#GwySpline" title="GwySpline"><span class="type">GwySpline</span></a> *spline</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> closed</code></em>);</pre>
+<p>Sets whether a spline curve is closed or open.</p>
+<p>In closed curve the last point is connected smoothly with the first point,
+forming a cycle.  Note you should not repeat the point in the <em class="parameter"><code>xy</code></em>
+ array.
+When a closed curve is sampled, the sampling starts from the first point
+and continues beyond the last point until it gets close to the first point
+again.</p>
+<p>An open curve begins with the first point and ends with the last point.  It
+has zero curvature at these two points.</p>
+<div class="refsect3">
+<a name="gwy-spline-set-closed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>spline</p></td>
+<td class="parameter_description"><p>A spline curve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>closed</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to make <em class="parameter"><code>spline</code></em>
+closed, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to make it open-ended.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-spline-length"></a><h3>gwy_spline_length ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_spline_length (<em class="parameter"><code><a class="link" href="libgwyprocess-GwySpline.html#GwySpline" title="GwySpline"><span class="type">GwySpline</span></a> *spline</code></em>);</pre>
+<p>Calculates the length of a spline curve.</p>
+<p>This is useful when you want to sample the curve with a specific step
+(at least approximately).</p>
+<p>Note <a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-sample-uniformly" title="gwy_spline_sample_uniformly ()"><code class="function">gwy_spline_sample_uniformly()</code></a> also returns the length.</p>
+<div class="refsect3">
+<a name="gwy-spline-length.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>spline</p></td>
+<td class="parameter_description"><p>A spline curve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-spline-length.returns"></a><h4>Returns</h4>
+<p> The curve length.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-spline-sample-naturally"></a><h3>gwy_spline_sample_naturally ()</h3>
+<pre class="programlisting">const <a href="../libgwyddion-Math.html#GwyXY"><span class="returnvalue">GwyXY</span></a> *
+gwy_spline_sample_naturally (<em class="parameter"><code><a class="link" href="libgwyprocess-GwySpline.html#GwySpline" title="GwySpline"><span class="type">GwySpline</span></a> *spline</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *n</code></em>);</pre>
+<p>Samples efficiently a spline curve.</p>
+<p>This function calculates coordinates of points that lie on the spline curve
+and are sufficient for a good approximation by straight lines. This is
+particularly useful for drawing the curve.</p>
+<p>See <a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-sample-uniformly" title="gwy_spline_sample_uniformly ()"><code class="function">gwy_spline_sample_uniformly()</code></a> for some discussion of closed versus open
+curves and corner case handling.</p>
+<div class="refsect3">
+<a name="gwy-spline-sample-naturally.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>spline</p></td>
+<td class="parameter_description"><p>A spline curve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Location where to store the number of returned points.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-spline-sample-naturally.returns"></a><h4>Returns</h4>
+<p> Coordinates of the XY points defining the sampled curve.  The
+returned array is owned by <em class="parameter"><code>spline</code></em>
+, must not be modified and is
+only guaranteed to exist so long as the spline is not modified nor
+destroyed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-spline-sample-uniformly"></a><h3>gwy_spline_sample_uniformly ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_spline_sample_uniformly (<em class="parameter"><code><a class="link" href="libgwyprocess-GwySpline.html#GwySpline" title="GwySpline"><span class="type">GwySpline</span></a> *spline</code></em>,
+                             <em class="parameter"><code><a href="../libgwyddion-Math.html#GwyXY"><span class="type">GwyXY</span></a> *xy</code></em>,
+                             <em class="parameter"><code><a href="../libgwyddion-Math.html#GwyXY"><span class="type">GwyXY</span></a> *t</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>);</pre>
+<p>Samples uniformly a spline curve.</p>
+<p>This function calculates coordinates of points that lie on the spline curve
+and are equidistant along it.  For open curves the first sampled point
+coincides with the first given XY point and, similar, the last with the last.
+For closed curves the first point again coincides with the first given XY
+point but the last lies one sampling distance before the curve gets back
+again to the first point.</p>
+<p>If you want to specify the sampling step instead of the number of samples
+use <a class="link" href="libgwyprocess-GwySpline.html#gwy-spline-length" title="gwy_spline_length ()"><code class="function">gwy_spline_length()</code></a> first to obtain the curve length and calculate <em class="parameter"><code>n</code></em>
+
+accordingly.</p>
+<p>A single-point curve always consists of a single point.  Hence all samples
+lie in this point.  A two-point curve is always formed by straight segments,
+in the case of a closed curve one going forward and the other back.  A
+meaningful sampling requires <em class="parameter"><code>n</code></em>
+ at least 2, nevertheless, the function
+permits also <em class="parameter"><code>n</code></em>
+ of one or zero.</p>
+<p>The tangents vectors stored in <em class="parameter"><code>t</code></em>
+ are normalised and oriented from the
+beginning of the curve towards the end.  If two or more consecutive given XY
+points coincide or the curve has only a single point the vectors may be
+(0,0).</p>
+<div class="refsect3">
+<a name="gwy-spline-sample-uniformly.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>spline</p></td>
+<td class="parameter_description"><p>A spline curve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xy</p></td>
+<td class="parameter_description"><p>Array where the sampled point coordinates should be stored in.
+May be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if you are only interested in the tangents.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>t</p></td>
+<td class="parameter_description"><p>Array where tangent vectors at the <em class="parameter"><code>xy</code></em>
+coordinates should be stored in.
+May be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if you are only interested in the coordinates.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>The number of samples to take.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-spline-sample-uniformly.returns"></a><h4>Returns</h4>
+<p> The curve length.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-GwySpline.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwySpline"></a><h3>GwySpline</h3>
+<pre class="programlisting">typedef struct _GwySpline GwySpline;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

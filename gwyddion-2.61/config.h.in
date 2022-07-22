@@ -1,0 +1,232 @@
+/* config.h.in.  Generated from configure.ac by autoheader.  */
+
+/* Define to 1 if translation of program messages to the user's native
+   language is requested. */
+#undef ENABLE_NLS
+
+/* Gettext package name */
+#undef GETTEXT_PACKAGE
+
+/* Define if we have the BZIP2 library. */
+#undef HAVE_BZIP2
+
+/* Define if we have the cfitsio package. */
+#undef HAVE_CFITSIO
+
+/* Define to 1 if you have the MacOS X function CFLocaleCopyCurrent in the
+   CoreFoundation framework. */
+#undef HAVE_CFLOCALECOPYCURRENT
+
+/* Define to 1 if you have the MacOS X function CFPreferencesCopyAppValue in
+   the CoreFoundation framework. */
+#undef HAVE_CFPREFERENCESCOPYAPPVALUE
+
+/* Define if the GNU dcgettext() function is already present or preinstalled.
+   */
+#undef HAVE_DCGETTEXT
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#undef HAVE_DLFCN_H
+
+/* Define to 1 if you have the `erf' function. */
+#undef HAVE_ERF
+
+/* Define to 1 if you have the `erfc' function. */
+#undef HAVE_ERFC
+
+/* Define to 1 if you have the `exp2' function. */
+#undef HAVE_EXP2
+
+/* Define if we have the OpenEXR 2.x+ package. */
+#undef HAVE_EXR
+
+/* Define if we have FFTW3 with OpenMP support. */
+#undef HAVE_FFTW_WITH_OPENMP
+
+/* Define if the GNU gettext() function is already present or preinstalled. */
+#undef HAVE_GETTEXT
+
+/* Define to 1 if you have the <GL/glext.h> header file. */
+#undef HAVE_GL_GLEXT_H
+
+/* Define if we have the GtkGLExt package. */
+#undef HAVE_GTKGLEXT
+
+/* Define if we have the GtkSourceView package. */
+#undef HAVE_GTKSOURCEVIEW
+
+/* Define if we have the gtk-mac-integration library. */
+#undef HAVE_GTK_MAC_INTEGRATION
+
+/* Defined if you have HDF5 support */
+#undef HAVE_HDF5
+
+/* Define if you have the iconv() function. */
+#undef HAVE_ICONV
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* Define to 1 if you have the `j0' function. */
+#undef HAVE_J0
+
+/* Define to 1 if you have the `j1' function. */
+#undef HAVE_J1
+
+/* Define if we have the jansson package. */
+#undef HAVE_JANSSON
+
+/* Define to 1 if you have the `lgamma' function. */
+#undef HAVE_LGAMMA
+
+/* Define if we have the libzip package. */
+#undef HAVE_LIBZIP
+
+/* Define to 1 if you have the `log2' function. */
+#undef HAVE_LOG2
+
+/* Define if we have working memmem() */
+#undef HAVE_MEMMEM
+
+/* Define to 1 if you have the <memory.h> header file. */
+#undef HAVE_MEMORY_H
+
+/* Define to 1 if you have the `memrchr' function. */
+#undef HAVE_MEMRCHR
+
+/* Define if we have the minizip 1.x package. */
+#undef HAVE_MINIZIP1
+
+/* Define if we have the minizip 2.x (or newer) package. */
+#undef HAVE_MINIZIP2
+
+/* Define to 1 if you have the <minizip/mz.h> header file. */
+#undef HAVE_MINIZIP_MZ_H
+
+/* Define to 1 if you have the <mz.h> header file. */
+#undef HAVE_MZ_H
+
+/* Define if we have the libpng package. */
+#undef HAVE_PNG
+
+/* Define to 1 if you have the `sincos' function. */
+#undef HAVE_SINCOS
+
+/* Define to 1 if you have the <stdbool.h> header file. */
+#undef HAVE_STDBOOL_H
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the `tgamma' function. */
+#undef HAVE_TGAMMA
+
+/* Define if we have the unique package. */
+#undef HAVE_UNIQUE
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* Define if we have the libwebp package. */
+#undef HAVE_WEBP
+
+/* Define if we have the libxml2 package. */
+#undef HAVE_XML2
+
+/* Define to 1 if you have the `y0' function. */
+#undef HAVE_Y0
+
+/* Define to 1 if you have the `y1' function. */
+#undef HAVE_Y1
+
+/* Define if we have the ZLIB library. */
+#undef HAVE_ZLIB
+
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
+#undef LT_OBJDIR
+
+/* Name of package */
+#undef PACKAGE
+
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to package home page, as a string. */
+#undef PACKAGE_URL
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* Define to the remote control backend. */
+#undef REMOTE_BACKEND
+
+/* The size of `pid_t', as computed by sizeof. */
+#undef SIZEOF_PID_T
+
+/* The size of `void*', as computed by sizeof. */
+#undef SIZEOF_VOIDP
+
+/* Define to 1 if you have the ANSI C header files. */
+#undef STDC_HEADERS
+
+/* Enable extensions on AIX 3, Interix.  */
+#ifndef _ALL_SOURCE
+# undef _ALL_SOURCE
+#endif
+/* Enable GNU extensions on systems that have them.  */
+#ifndef _GNU_SOURCE
+# undef _GNU_SOURCE
+#endif
+/* Enable threading extensions on Solaris.  */
+#ifndef _POSIX_PTHREAD_SEMANTICS
+# undef _POSIX_PTHREAD_SEMANTICS
+#endif
+/* Enable extensions on HP NonStop.  */
+#ifndef _TANDEM_SOURCE
+# undef _TANDEM_SOURCE
+#endif
+/* Enable general extensions on Solaris.  */
+#ifndef __EXTENSIONS__
+# undef __EXTENSIONS__
+#endif
+
+
+/* Version number of package */
+#undef VERSION
+
+/* Define to 1 if the X Window System is missing or not being used. */
+#undef X_DISPLAY_MISSING
+
+/* Define to 1 if on MINIX. */
+#undef _MINIX
+
+/* Define to 2 if the system does not provide POSIX.1 features except with
+   this defined. */
+#undef _POSIX_1_SOURCE
+
+/* Define to 1 if you need to in order for `stat' and other things to work. */
+#undef _POSIX_SOURCE

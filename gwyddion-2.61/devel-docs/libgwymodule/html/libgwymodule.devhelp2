@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="Gwyddion Module Library Reference Manual" link="index.html" author="" name="libgwymodule" version="2" language="c" online="http://gwyddion.net/documentation/libgwymodule/index.php">
+  <chapters>
+    <sub name="Gwyddion Module Library" link="ModuleLibrary.html">
+      <sub name="gwymoduleenums" link="libgwymodule-gwymoduleenums.html"/>
+      <sub name="gwymoduleloader" link="libgwymodule-gwymoduleloader.html"/>
+      <sub name="gwymodule-file" link="libgwymodule-gwymodule-file.html"/>
+      <sub name="gwymodule-process" link="libgwymodule-gwymodule-process.html"/>
+      <sub name="gwymodule-tool" link="libgwymodule-gwymodule-tool.html"/>
+      <sub name="gwymodule-graph" link="libgwymodule-gwymodule-graph.html"/>
+      <sub name="gwymodule-layer" link="libgwymodule-gwymodule-layer.html"/>
+      <sub name="gwymodule-volume" link="libgwymodule-gwymodule-volume.html"/>
+      <sub name="gwymodule-xyz" link="libgwymodule-gwymodule-xyz.html"/>
+      <sub name="gwymodulebrowser" link="libgwymodule-gwymodulebrowser.html"/>
+    </sub>
+    <sub name="Gwyddion Module Tutorial" link="ModuleTutorial.html">
+      <sub name="Gwyddion Module Overview" link="gwymodule-tutorial-overview.html"/>
+      <sub name="Minimal Module" link="gwymodule-tutorial-minimal.html"/>
+      <sub name="Beyond the Minimal Module" link="gwymodule-tutorial-beyond.html"/>
+      <sub name="Data Processing Modules" link="gwymodule-tutorial-process.html"/>
+      <sub name="File Modules" link="gwymodule-tutorial-file.html"/>
+      <sub name="Graph Modules" link="gwymodule-tutorial-graph.html"/>
+      <sub name="Tool Modules" link="gwymodule-tutorial-tool.html"/>
+      <sub name="Layer Modules" link="gwymodule-tutorial-layer.html"/>
+      <sub name="Gwyddion Module Installation" link="gwymodule-tutorial-install.html"/>
+    </sub>
+    <sub name="Plug-in Proxy Reference" link="PluginProxyReference.html">
+      <sub name="Plug-in Proxy Overview" link="plugin-proxy-overview.html"/>
+      <sub name="Data Process Plug-ins" link="plugin-proxy-process.html"/>
+      <sub name="File Type Plug-ins" link="plugin-proxy-file.html"/>
+      <sub name="Dump Format" link="plugin-proxy-dump.html"/>
+      <sub name="RGI Registration Method" link="plugin-proxy-rgi.html"/>
+    </sub>
+    <sub name="Index of all symbols" link="api-index-all.html"/>
+    <sub name="Index of deprecated symbols" link="api-index-deprec.html"/>
+    <sub name="Index of new symbols in 2.1" link="api-index-2-1.html"/>
+    <sub name="Index of new symbols in 2.18" link="api-index-2-18.html"/>
+    <sub name="Index of new symbols in 2.25" link="api-index-2-25.html"/>
+    <sub name="Index of new symbols in 2.32" link="api-index-2-32.html"/>
+    <sub name="Index of new symbols in 2.36" link="api-index-2-36.html"/>
+    <sub name="Index of new symbols in 2.38" link="api-index-2-38.html"/>
+    <sub name="Index of new symbols in 2.45" link="api-index-2-45.html"/>
+    <sub name="Index of new symbols in 2.48" link="api-index-2-48.html"/>
+    <sub name="Index of new symbols in 2.49" link="api-index-2-49.html"/>
+    <sub name="Index of new symbols in 2.60" link="api-index-2-60.html"/>
+  </chapters>
+  <functions>
+    <keyword type="enum" name="enum GwyFileOperationType" link="libgwymodule-gwymoduleenums.html#GwyFileOperationType"/>
+    <keyword type="enum" name="enum GwyToolSwitchEvent" link="libgwymodule-gwymoduleenums.html#GwyToolSwitchEvent" deprecated=""/>
+    <keyword type="enum" name="enum GwyRunType" link="libgwymodule-gwymoduleenums.html#GwyRunType"/>
+    <keyword type="macro" name="GWY_MODULE_QUERY()" link="libgwymodule-gwymoduleloader.html#GWY-MODULE-QUERY:CAPS"/>
+    <keyword type="macro" name="GWY_MODULE_QUERY2()" link="libgwymodule-gwymoduleloader.html#GWY-MODULE-QUERY2:CAPS" since="2.49"/>
+    <keyword type="function" name="GwyModuleRegisterFunc ()" link="libgwymodule-gwymoduleloader.html#GwyModuleRegisterFunc"/>
+    <keyword type="function" name="GwyModuleQueryFunc ()" link="libgwymodule-gwymoduleloader.html#GwyModuleQueryFunc"/>
+    <keyword type="function" name="GwyModuleBundleRegisterFunc ()" link="libgwymodule-gwymoduleloader.html#GwyModuleBundleRegisterFunc" since="2.49"/>
+    <keyword type="function" name="gwy_module_error_quark ()" link="libgwymodule-gwymoduleloader.html#gwy-module-error-quark"/>
+    <keyword type="function" name="gwy_module_register_modules ()" link="libgwymodule-gwymoduleloader.html#gwy-module-register-modules"/>
+    <keyword type="function" name="gwy_module_lookup ()" link="libgwymodule-gwymoduleloader.html#gwy-module-lookup"/>
+    <keyword type="function" name="gwy_module_get_filename ()" link="libgwymodule-gwymoduleloader.html#gwy-module-get-filename"/>
+    <keyword type="function" name="gwy_module_get_functions ()" link="libgwymodule-gwymoduleloader.html#gwy-module-get-functions"/>
+    <keyword type="function" name="gwy_module_foreach ()" link="libgwymodule-gwymoduleloader.html#gwy-module-foreach"/>
+    <keyword type="function" name="gwy_module_failure_foreach ()" link="libgwymodule-gwymoduleloader.html#gwy-module-failure-foreach" since="2.49"/>
+    <keyword type="function" name="gwy_module_register_module ()" link="libgwymodule-gwymoduleloader.html#gwy-module-register-module"/>
+    <keyword type="function" name="gwy_module_disable_registration ()" link="libgwymodule-gwymoduleloader.html#gwy-module-disable-registration" since="2.48"/>
+    <keyword type="function" name="gwy_module_enable_registration ()" link="libgwymodule-gwymoduleloader.html#gwy-module-enable-registration" since="2.48"/>
+    <keyword type="function" name="gwy_module_is_enabled ()" link="libgwymodule-gwymoduleloader.html#gwy-module-is-enabled" since="2.48"/>
+    <keyword type="macro" name="GWY_MODULE_ABI_VERSION" link="libgwymodule-gwymoduleloader.html#GWY-MODULE-ABI-VERSION:CAPS"/>
+    <keyword type="macro" name="GWY_MODULE_BUNDLE_FLAG" link="libgwymodule-gwymoduleloader.html#GWY-MODULE-BUNDLE-FLAG:CAPS" since="2.49"/>
+    <keyword type="macro" name="GWY_MODULE_ERROR" link="libgwymodule-gwymoduleloader.html#GWY-MODULE-ERROR:CAPS"/>
+    <keyword type="enum" name="enum GwyModuleError" link="libgwymodule-gwymoduleloader.html#GwyModuleError"/>
+    <keyword type="struct" name="struct GwyModuleRecord" link="libgwymodule-gwymoduleloader.html#GwyModuleRecord" since="2.49"/>
+    <keyword type="struct" name="struct GwyModuleInfo" link="libgwymodule-gwymoduleloader.html#GwyModuleInfo"/>
+    <keyword type="struct" name="GwyModuleFailureInfo" link="libgwymodule-gwymoduleloader.html#GwyModuleFailureInfo" since="2.49"/>
+    <keyword type="function" name="GwyFileDetectFunc ()" link="libgwymodule-gwymodule-file.html#GwyFileDetectFunc"/>
+    <keyword type="function" name="GwyFileLoadFunc ()" link="libgwymodule-gwymodule-file.html#GwyFileLoadFunc"/>
+    <keyword type="function" name="GwyFileSaveFunc ()" link="libgwymodule-gwymodule-file.html#GwyFileSaveFunc"/>
+    <keyword type="function" name="gwy_file_func_register ()" link="libgwymodule-gwymodule-file.html#gwy-file-func-register"/>
+    <keyword type="function" name="gwy_file_func_run_detect ()" link="libgwymodule-gwymodule-file.html#gwy-file-func-run-detect"/>
+    <keyword type="function" name="gwy_file_func_run_load ()" link="libgwymodule-gwymodule-file.html#gwy-file-func-run-load"/>
+    <keyword type="function" name="gwy_file_func_run_save ()" link="libgwymodule-gwymodule-file.html#gwy-file-func-run-save"/>
+    <keyword type="function" name="gwy_file_func_run_export ()" link="libgwymodule-gwymodule-file.html#gwy-file-func-run-export"/>
+    <keyword type="function" name="gwy_file_func_exists ()" link="libgwymodule-gwymodule-file.html#gwy-file-func-exists"/>
+    <keyword type="function" name="gwy_file_func_get_operations ()" link="libgwymodule-gwymodule-file.html#gwy-file-func-get-operations"/>
+    <keyword type="function" name="gwy_file_func_get_description ()" link="libgwymodule-gwymodule-file.html#gwy-file-func-get-description"/>
+    <keyword type="function" name="gwy_file_func_foreach ()" link="libgwymodule-gwymodule-file.html#gwy-file-func-foreach"/>
+    <keyword type="function" name="gwy_file_func_current ()" link="libgwymodule-gwymodule-file.html#gwy-file-func-current" since="2.38"/>
+    <keyword type="function" name="gwy_file_detect ()" link="libgwymodule-gwymodule-file.html#gwy-file-detect"/>
+    <keyword type="function" name="gwy_file_detect_with_score ()" link="libgwymodule-gwymodule-file.html#gwy-file-detect-with-score" since="2.1"/>
+    <keyword type="function" name="gwy_file_load ()" link="libgwymodule-gwymodule-file.html#gwy-file-load"/>
+    <keyword type="function" name="gwy_file_load_with_func ()" link="libgwymodule-gwymodule-file.html#gwy-file-load-with-func" since="2.25"/>
+    <keyword type="function" name="gwy_file_save ()" link="libgwymodule-gwymodule-file.html#gwy-file-save"/>
+    <keyword type="function" name="gwy_file_save_with_func ()" link="libgwymodule-gwymodule-file.html#gwy-file-save-with-func" since="2.25"/>
+    <keyword type="function" name="gwy_file_func_get_is_detectable ()" link="libgwymodule-gwymodule-file.html#gwy-file-func-get-is-detectable" since="2.18"/>
+    <keyword type="function" name="gwy_file_func_set_is_detectable ()" link="libgwymodule-gwymodule-file.html#gwy-file-func-set-is-detectable" since="2.18"/>
+    <keyword type="function" name="gwy_file_get_data_info ()" link="libgwymodule-gwymodule-file.html#gwy-file-get-data-info"/>
+    <keyword type="function" name="gwy_file_get_filename_sys ()" link="libgwymodule-gwymodule-file.html#gwy-file-get-filename-sys" since="2.36"/>
+    <keyword type="function" name="gwy_module_file_error_quark ()" link="libgwymodule-gwymodule-file.html#gwy-module-file-error-quark"/>
+    <keyword type="macro" name="GWY_FILE_DETECT_BUFFER_SIZE" link="libgwymodule-gwymodule-file.html#GWY-FILE-DETECT-BUFFER-SIZE:CAPS"/>
+    <keyword type="macro" name="GWY_MODULE_FILE_ERROR" link="libgwymodule-gwymodule-file.html#GWY-MODULE-FILE-ERROR:CAPS"/>
+    <keyword type="enum" name="enum GwyModuleFileError" link="libgwymodule-gwymodule-file.html#GwyModuleFileError"/>
+    <keyword type="struct" name="GwyFileDetectInfo" link="libgwymodule-gwymodule-file.html#GwyFileDetectInfo"/>
+    <keyword type="function" name="GwyProcessFunc ()" link="libgwymodule-gwymodule-process.html#GwyProcessFunc"/>
+    <keyword type="function" name="gwy_process_func_register ()" link="libgwymodule-gwymodule-process.html#gwy-process-func-register"/>
+    <keyword type="function" name="gwy_process_func_run ()" link="libgwymodule-gwymodule-process.html#gwy-process-func-run"/>
+    <keyword type="function" name="gwy_process_func_exists ()" link="libgwymodule-gwymodule-process.html#gwy-process-func-exists"/>
+    <keyword type="function" name="gwy_process_func_get_run_types ()" link="libgwymodule-gwymodule-process.html#gwy-process-func-get-run-types"/>
+    <keyword type="function" name="gwy_process_func_get_menu_path ()" link="libgwymodule-gwymodule-process.html#gwy-process-func-get-menu-path"/>
+    <keyword type="function" name="gwy_process_func_get_stock_id ()" link="libgwymodule-gwymodule-process.html#gwy-process-func-get-stock-id"/>
+    <keyword type="function" name="gwy_process_func_get_tooltip ()" link="libgwymodule-gwymodule-process.html#gwy-process-func-get-tooltip"/>
+    <keyword type="function" name="gwy_process_func_get_sensitivity_mask ()" link="libgwymodule-gwymodule-process.html#gwy-process-func-get-sensitivity-mask"/>
+    <keyword type="function" name="gwy_process_func_foreach ()" link="libgwymodule-gwymodule-process.html#gwy-process-func-foreach"/>
+    <keyword type="function" name="gwy_process_func_current ()" link="libgwymodule-gwymodule-process.html#gwy-process-func-current" since="2.38"/>
+    <keyword type="function" name="gwy_tool_func_register ()" link="libgwymodule-gwymodule-tool.html#gwy-tool-func-register"/>
+    <keyword type="function" name="gwy_tool_func_foreach ()" link="libgwymodule-gwymodule-tool.html#gwy-tool-func-foreach"/>
+    <keyword type="function" name="GwyGraphFunc ()" link="libgwymodule-gwymodule-graph.html#GwyGraphFunc"/>
+    <keyword type="function" name="gwy_graph_func_register ()" link="libgwymodule-gwymodule-graph.html#gwy-graph-func-register"/>
+    <keyword type="function" name="gwy_graph_func_run ()" link="libgwymodule-gwymodule-graph.html#gwy-graph-func-run"/>
+    <keyword type="function" name="gwy_graph_func_exists ()" link="libgwymodule-gwymodule-graph.html#gwy-graph-func-exists"/>
+    <keyword type="function" name="gwy_graph_func_get_menu_path ()" link="libgwymodule-gwymodule-graph.html#gwy-graph-func-get-menu-path"/>
+    <keyword type="function" name="gwy_graph_func_get_stock_id ()" link="libgwymodule-gwymodule-graph.html#gwy-graph-func-get-stock-id"/>
+    <keyword type="function" name="gwy_graph_func_get_tooltip ()" link="libgwymodule-gwymodule-graph.html#gwy-graph-func-get-tooltip"/>
+    <keyword type="function" name="gwy_graph_func_get_sensitivity_mask ()" link="libgwymodule-gwymodule-graph.html#gwy-graph-func-get-sensitivity-mask"/>
+    <keyword type="function" name="gwy_graph_func_foreach ()" link="libgwymodule-gwymodule-graph.html#gwy-graph-func-foreach"/>
+    <keyword type="function" name="gwy_graph_func_current ()" link="libgwymodule-gwymodule-graph.html#gwy-graph-func-current" since="2.38"/>
+    <keyword type="function" name="gwy_layer_func_register ()" link="libgwymodule-gwymodule-layer.html#gwy-layer-func-register"/>
+    <keyword type="function" name="gwy_layer_func_foreach ()" link="libgwymodule-gwymodule-layer.html#gwy-layer-func-foreach"/>
+    <keyword type="function" name="GwyVolumeFunc ()" link="libgwymodule-gwymodule-volume.html#GwyVolumeFunc" since="2.32"/>
+    <keyword type="function" name="gwy_volume_func_register ()" link="libgwymodule-gwymodule-volume.html#gwy-volume-func-register" since="2.32"/>
+    <keyword type="function" name="gwy_volume_func_run ()" link="libgwymodule-gwymodule-volume.html#gwy-volume-func-run" since="2.32"/>
+    <keyword type="function" name="gwy_volume_func_exists ()" link="libgwymodule-gwymodule-volume.html#gwy-volume-func-exists" since="2.32"/>
+    <keyword type="function" name="gwy_volume_func_get_run_types ()" link="libgwymodule-gwymodule-volume.html#gwy-volume-func-get-run-types" since="2.32"/>
+    <keyword type="function" name="gwy_volume_func_get_menu_path ()" link="libgwymodule-gwymodule-volume.html#gwy-volume-func-get-menu-path" since="2.32"/>
+    <keyword type="function" name="gwy_volume_func_get_stock_id ()" link="libgwymodule-gwymodule-volume.html#gwy-volume-func-get-stock-id" since="2.32"/>
+    <keyword type="function" name="gwy_volume_func_get_tooltip ()" link="libgwymodule-gwymodule-volume.html#gwy-volume-func-get-tooltip" since="2.32"/>
+    <keyword type="function" name="gwy_volume_func_get_sensitivity_mask ()" link="libgwymodule-gwymodule-volume.html#gwy-volume-func-get-sensitivity-mask" since="2.32"/>
+    <keyword type="function" name="gwy_volume_func_foreach ()" link="libgwymodule-gwymodule-volume.html#gwy-volume-func-foreach" since="2.32"/>
+    <keyword type="function" name="gwy_volume_func_current ()" link="libgwymodule-gwymodule-volume.html#gwy-volume-func-current" since="2.38"/>
+    <keyword type="function" name="GwyXYZFunc ()" link="libgwymodule-gwymodule-xyz.html#GwyXYZFunc" since="2.45"/>
+    <keyword type="function" name="gwy_xyz_func_register ()" link="libgwymodule-gwymodule-xyz.html#gwy-xyz-func-register" since="2.45"/>
+    <keyword type="function" name="gwy_xyz_func_run ()" link="libgwymodule-gwymodule-xyz.html#gwy-xyz-func-run" since="2.45"/>
+    <keyword type="function" name="gwy_xyz_func_exists ()" link="libgwymodule-gwymodule-xyz.html#gwy-xyz-func-exists" since="2.45"/>
+    <keyword type="function" name="gwy_xyz_func_get_run_types ()" link="libgwymodule-gwymodule-xyz.html#gwy-xyz-func-get-run-types" since="2.45"/>
+    <keyword type="function" name="gwy_xyz_func_get_menu_path ()" link="libgwymodule-gwymodule-xyz.html#gwy-xyz-func-get-menu-path" since="2.45"/>
+    <keyword type="function" name="gwy_xyz_func_get_stock_id ()" link="libgwymodule-gwymodule-xyz.html#gwy-xyz-func-get-stock-id" since="2.45"/>
+    <keyword type="function" name="gwy_xyz_func_get_tooltip ()" link="libgwymodule-gwymodule-xyz.html#gwy-xyz-func-get-tooltip" since="2.45"/>
+    <keyword type="function" name="gwy_xyz_func_get_sensitivity_mask ()" link="libgwymodule-gwymodule-xyz.html#gwy-xyz-func-get-sensitivity-mask" since="2.45"/>
+    <keyword type="function" name="gwy_xyz_func_foreach ()" link="libgwymodule-gwymodule-xyz.html#gwy-xyz-func-foreach" since="2.45"/>
+    <keyword type="function" name="gwy_xyz_func_current ()" link="libgwymodule-gwymodule-xyz.html#gwy-xyz-func-current" since="2.38"/>
+    <keyword type="function" name="gwy_module_browser ()" link="libgwymodule-gwymodulebrowser.html#gwy-module-browser"/>
+    <keyword type="constant" name="GWY_FILE_OPERATION_DETECT" link="libgwymodule-gwymoduleenums.html#GWY-FILE-OPERATION-DETECT:CAPS"/>
+    <keyword type="constant" name="GWY_FILE_OPERATION_LOAD" link="libgwymodule-gwymoduleenums.html#GWY-FILE-OPERATION-LOAD:CAPS"/>
+    <keyword type="constant" name="GWY_FILE_OPERATION_SAVE" link="libgwymodule-gwymoduleenums.html#GWY-FILE-OPERATION-SAVE:CAPS"/>
+    <keyword type="constant" name="GWY_FILE_OPERATION_EXPORT" link="libgwymodule-gwymoduleenums.html#GWY-FILE-OPERATION-EXPORT:CAPS"/>
+    <keyword type="constant" name="GWY_FILE_OPERATION_MASK" link="libgwymodule-gwymoduleenums.html#GWY-FILE-OPERATION-MASK:CAPS"/>
+    <keyword type="constant" name="GWY_TOOL_SWITCH_WINDOW" link="libgwymodule-gwymoduleenums.html#GWY-TOOL-SWITCH-WINDOW:CAPS"/>
+    <keyword type="constant" name="GWY_TOOL_SWITCH_TOOL" link="libgwymodule-gwymoduleenums.html#GWY-TOOL-SWITCH-TOOL:CAPS"/>
+    <keyword type="constant" name="GWY_RUN_NONE" link="libgwymodule-gwymoduleenums.html#GWY-RUN-NONE:CAPS"/>
+    <keyword type="constant" name="GWY_RUN_NONINTERACTIVE" link="libgwymodule-gwymoduleenums.html#GWY-RUN-NONINTERACTIVE:CAPS"/>
+    <keyword type="constant" name="GWY_RUN_INTERACTIVE" link="libgwymodule-gwymoduleenums.html#GWY-RUN-INTERACTIVE:CAPS"/>
+    <keyword type="constant" name="GWY_RUN_IMMEDIATE" link="libgwymodule-gwymoduleenums.html#GWY-RUN-IMMEDIATE:CAPS"/>
+    <keyword type="constant" name="GWY_RUN_MASK" link="libgwymodule-gwymoduleenums.html#GWY-RUN-MASK:CAPS"/>
+    <keyword type="constant" name="GWY_MODULE_ERROR_NAME" link="libgwymodule-gwymoduleloader.html#GWY-MODULE-ERROR-NAME:CAPS"/>
+    <keyword type="constant" name="GWY_MODULE_ERROR_DUPLICATE" link="libgwymodule-gwymoduleloader.html#GWY-MODULE-ERROR-DUPLICATE:CAPS"/>
+    <keyword type="constant" name="GWY_MODULE_ERROR_OPEN" link="libgwymodule-gwymoduleloader.html#GWY-MODULE-ERROR-OPEN:CAPS"/>
+    <keyword type="constant" name="GWY_MODULE_ERROR_QUERY" link="libgwymodule-gwymoduleloader.html#GWY-MODULE-ERROR-QUERY:CAPS"/>
+    <keyword type="constant" name="GWY_MODULE_ERROR_ABI" link="libgwymodule-gwymoduleloader.html#GWY-MODULE-ERROR-ABI:CAPS"/>
+    <keyword type="constant" name="GWY_MODULE_ERROR_INFO" link="libgwymodule-gwymoduleloader.html#GWY-MODULE-ERROR-INFO:CAPS"/>
+    <keyword type="constant" name="GWY_MODULE_ERROR_REGISTER" link="libgwymodule-gwymoduleloader.html#GWY-MODULE-ERROR-REGISTER:CAPS"/>
+    <keyword type="constant" name="GWY_MODULE_ERROR_NESTING" link="libgwymodule-gwymoduleloader.html#GWY-MODULE-ERROR-NESTING:CAPS"/>
+    <keyword type="constant" name="GWY_MODULE_FILE_ERROR_CANCELED" link="libgwymodule-gwymodule-file.html#GWY-MODULE-FILE-ERROR-CANCELED:CAPS"/>
+    <keyword type="constant" name="GWY_MODULE_FILE_ERROR_CANCELLED" link="libgwymodule-gwymodule-file.html#GWY-MODULE-FILE-ERROR-CANCELLED:CAPS"/>
+    <keyword type="constant" name="GWY_MODULE_FILE_ERROR_UNIMPLEMENTED" link="libgwymodule-gwymodule-file.html#GWY-MODULE-FILE-ERROR-UNIMPLEMENTED:CAPS"/>
+    <keyword type="constant" name="GWY_MODULE_FILE_ERROR_IO" link="libgwymodule-gwymodule-file.html#GWY-MODULE-FILE-ERROR-IO:CAPS"/>
+    <keyword type="constant" name="GWY_MODULE_FILE_ERROR_DATA" link="libgwymodule-gwymodule-file.html#GWY-MODULE-FILE-ERROR-DATA:CAPS"/>
+    <keyword type="constant" name="GWY_MODULE_FILE_ERROR_INTERACTIVE" link="libgwymodule-gwymodule-file.html#GWY-MODULE-FILE-ERROR-INTERACTIVE:CAPS"/>
+    <keyword type="constant" name="GWY_MODULE_FILE_ERROR_SPECIFIC" link="libgwymodule-gwymodule-file.html#GWY-MODULE-FILE-ERROR-SPECIFIC:CAPS"/>
+    <keyword type="member" name="GwyModuleRecord.query" link="libgwymodule-gwymoduleloader.html#GwyModuleRecord.query"/>
+    <keyword type="member" name="GwyModuleRecord.name" link="libgwymodule-gwymoduleloader.html#GwyModuleRecord.name"/>
+    <keyword type="member" name="GwyModuleInfo.abi-version" link="libgwymodule-gwymoduleloader.html#GwyModuleInfo.abi-version"/>
+    <keyword type="member" name="GwyModuleInfo.register-func" link="libgwymodule-gwymoduleloader.html#GwyModuleInfo.register-func"/>
+    <keyword type="member" name="GwyModuleInfo.blurb" link="libgwymodule-gwymoduleloader.html#GwyModuleInfo.blurb"/>
+    <keyword type="member" name="GwyModuleInfo.author" link="libgwymodule-gwymoduleloader.html#GwyModuleInfo.author"/>
+    <keyword type="member" name="GwyModuleInfo.version" link="libgwymodule-gwymoduleloader.html#GwyModuleInfo.version"/>
+    <keyword type="member" name="GwyModuleInfo.copyright" link="libgwymodule-gwymoduleloader.html#GwyModuleInfo.copyright"/>
+    <keyword type="member" name="GwyModuleInfo.date" link="libgwymodule-gwymoduleloader.html#GwyModuleInfo.date"/>
+    <keyword type="member" name="GwyModuleFailureInfo.filename" link="libgwymodule-gwymoduleloader.html#GwyModuleFailureInfo.filename"/>
+    <keyword type="member" name="GwyModuleFailureInfo.modname" link="libgwymodule-gwymoduleloader.html#GwyModuleFailureInfo.modname"/>
+    <keyword type="member" name="GwyModuleFailureInfo.err-message" link="libgwymodule-gwymoduleloader.html#GwyModuleFailureInfo.err-message"/>
+    <keyword type="member" name="GwyModuleFailureInfo.err-domain" link="libgwymodule-gwymoduleloader.html#GwyModuleFailureInfo.err-domain"/>
+    <keyword type="member" name="GwyModuleFailureInfo.err-code" link="libgwymodule-gwymoduleloader.html#GwyModuleFailureInfo.err-code"/>
+    <keyword type="member" name="GwyFileDetectInfo.name" link="libgwymodule-gwymodule-file.html#GwyFileDetectInfo.name"/>
+    <keyword type="member" name="GwyFileDetectInfo.name-lowercase" link="libgwymodule-gwymodule-file.html#GwyFileDetectInfo.name-lowercase"/>
+    <keyword type="member" name="GwyFileDetectInfo.file-size" link="libgwymodule-gwymodule-file.html#GwyFileDetectInfo.file-size"/>
+    <keyword type="member" name="GwyFileDetectInfo.buffer-len" link="libgwymodule-gwymodule-file.html#GwyFileDetectInfo.buffer-len"/>
+    <keyword type="member" name="GwyFileDetectInfo.head" link="libgwymodule-gwymodule-file.html#GwyFileDetectInfo.head"/>
+    <keyword type="member" name="GwyFileDetectInfo.tail" link="libgwymodule-gwymodule-file.html#GwyFileDetectInfo.tail"/>
+  </functions>
+</book>

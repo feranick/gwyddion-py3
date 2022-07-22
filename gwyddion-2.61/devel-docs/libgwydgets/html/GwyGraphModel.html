@@ -1,0 +1,1689 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyGraphModel: Gwyddion Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Widgets Library Reference Manual">
+<link rel="up" href="GraphWidgets.html" title="Graphs">
+<link rel="prev" href="GwyGraphWindow.html" title="GwyGraphWindow">
+<link rel="next" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyGraphModel.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyGraphModel.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GwyGraphModel.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GwyGraphModel.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GwyGraphModel.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="GraphWidgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GwyGraphWindow.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyGraphCurveModel.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyGraphModel"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyGraphModel.top_of_page"></a>GwyGraphModel</span></h2>
+<p>GwyGraphModel — Representation of a graph</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyGraphModel.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-duplicate" title="gwy_graph_model_duplicate()">gwy_graph_model_duplicate</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="returnvalue">GwyGraphModel</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-new" title="gwy_graph_model_new ()">gwy_graph_model_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="returnvalue">GwyGraphModel</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-new-alike" title="gwy_graph_model_new_alike ()">gwy_graph_model_new_alike</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-get-n-curves" title="gwy_graph_model_get_n_curves ()">gwy_graph_model_get_n_curves</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-add-curve" title="gwy_graph_model_add_curve ()">gwy_graph_model_add_curve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-remove-curve-by-description" title="gwy_graph_model_remove_curve_by_description ()">gwy_graph_model_remove_curve_by_description</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-remove-curve" title="gwy_graph_model_remove_curve ()">gwy_graph_model_remove_curve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="returnvalue">GwyGraphCurveModel</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-get-curve-by-description" title="gwy_graph_model_get_curve_by_description ()">gwy_graph_model_get_curve_by_description</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="returnvalue">GwyGraphCurveModel</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-get-curve" title="gwy_graph_model_get_curve ()">gwy_graph_model_get_curve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-get-curve-index" title="gwy_graph_model_get_curve_index ()">gwy_graph_model_get_curve_index</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-replace-curve" title="gwy_graph_model_replace_curve ()">gwy_graph_model_replace_curve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-remove-all-curves" title="gwy_graph_model_remove_all_curves ()">gwy_graph_model_remove_all_curves</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-append-curves" title="gwy_graph_model_append_curves ()">gwy_graph_model_append_curves</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-set-units-from-data-line" title="gwy_graph_model_set_units_from_data_line ()">gwy_graph_model_set_units_from_data_line</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-set-units-from-data-field" title="gwy_graph_model_set_units_from_data_field ()">gwy_graph_model_set_units_from_data_field</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-units-are-compatible" title="gwy_graph_model_units_are_compatible ()">gwy_graph_model_units_are_compatible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-x-data-can-be-logarithmed" title="gwy_graph_model_x_data_can_be_logarithmed ()">gwy_graph_model_x_data_can_be_logarithmed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-y-data-can-be-logarithmed" title="gwy_graph_model_y_data_can_be_logarithmed ()">gwy_graph_model_y_data_can_be_logarithmed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-set-axis-label" title="gwy_graph_model_set_axis_label ()">gwy_graph_model_set_axis_label</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-get-axis-label" title="gwy_graph_model_get_axis_label ()">gwy_graph_model_get_axis_label</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-get-x-range" title="gwy_graph_model_get_x_range ()">gwy_graph_model_get_x_range</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-get-y-range" title="gwy_graph_model_get_y_range ()">gwy_graph_model_get_y_range</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-get-ranges" title="gwy_graph_model_get_ranges ()">gwy_graph_model_get_ranges</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Strings.html#GString"><span class="returnvalue">GString</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraphModel.html#gwy-graph-model-export-ascii" title="gwy_graph_model_export_ascii ()">gwy_graph_model_export_ascii</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyGraphModel.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--axis-label-bottom" title="The “axis-label-bottom” property">axis-label-bottom</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--axis-label-left" title="The “axis-label-left” property">axis-label-left</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--axis-label-right" title="The “axis-label-right” property">axis-label-right</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--axis-label-top" title="The “axis-label-top” property">axis-label-top</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="libgwydgets-gwydgetenums.html#GwyGraphGridType" title="enum GwyGraphGridType"><span class="type">GwyGraphGridType</span></a></td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--grid-type" title="The “grid-type” property">grid-type</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">int</span></td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--label-frame-thickness" title="The “label-frame-thickness” property">label-frame-thickness</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--label-has-frame" title="The “label-has-frame” property">label-has-frame</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="libgwydgets-gwydgetenums.html#GwyGraphLabelPosition" title="enum GwyGraphLabelPosition"><span class="type">GwyGraphLabelPosition</span></a></td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--label-position" title="The “label-position” property">label-position</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">double</span></td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--label-relative-x" title="The “label-relative-x” property">label-relative-x</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">double</span></td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--label-relative-y" title="The “label-relative-y” property">label-relative-y</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--label-reverse" title="The “label-reverse” property">label-reverse</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--label-visible" title="The “label-visible” property">label-visible</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--n-curves" title="The “n-curves” property">n-curves</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *</td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--si-unit-x" title="The “si-unit-x” property">si-unit-x</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *</td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--si-unit-y" title="The “si-unit-y” property">si-unit-y</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--title" title="The “title” property">title</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--x-logarithmic" title="The “x-logarithmic” property">x-logarithmic</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">double</span></td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--x-max" title="The “x-max” property">x-max</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--x-max-set" title="The “x-max-set” property">x-max-set</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">double</span></td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--x-min" title="The “x-min” property">x-min</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--x-min-set" title="The “x-min-set” property">x-min-set</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--y-logarithmic" title="The “y-logarithmic” property">y-logarithmic</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">double</span></td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--y-max" title="The “y-max” property">y-max</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--y-max-set" title="The “y-max-set” property">y-max-set</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">double</span></td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--y-min" title="The “y-min” property">y-min</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel--y-min-set" title="The “y-min-set” property">y-min-set</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyGraphModel.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel-curve-data-changed" title="The “curve-data-changed” signal">curve-data-changed</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel-curve-notify" title="The “curve-notify” signal">curve-notify</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyGraphModel.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyGraphModel.html#GwyGraphModel-struct" title="struct GwyGraphModel">GwyGraphModel</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyGraphModel.html#GwyGraphModelClass" title="struct GwyGraphModelClass">GwyGraphModelClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyGraphModel.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> GwyGraphModel
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyGraphModel.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GwyGraphModel implements
+ <a href="../GwySerializable.html#GwySerializable-struct">GwySerializable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwyGraphModel.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwydgets/gwydgets.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyGraphModel.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> represents information about a graph necessary to fully
+reconstruct it.</p>
+</div>
+<div class="refsect1">
+<a name="GwyGraphModel.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-graph-model-duplicate"></a><h3>gwy_graph_model_duplicate()</h3>
+<pre class="programlisting">#define             gwy_graph_model_duplicate(gmodel)</pre>
+<p>Convenience macro doing <a href="../GwySerializable.html#gwy-serializable-duplicate"><code class="function">gwy_serializable_duplicate()</code></a> with all the necessary
+typecasting.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-duplicate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>A graph model to duplicate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-new"></a><h3>gwy_graph_model_new ()</h3>
+<pre class="programlisting"><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="returnvalue">GwyGraphModel</span></a> *
+gwy_graph_model_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new graph model.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-new.returns"></a><h4>Returns</h4>
+<p> New graph model as a <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-new-alike"></a><h3>gwy_graph_model_new_alike ()</h3>
+<pre class="programlisting"><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="returnvalue">GwyGraphModel</span></a> *
+gwy_graph_model_new_alike (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gmodel</code></em>);</pre>
+<p>Creates new graph model object that has the same settings as <em class="parameter"><code>gmodel</code></em>
+.</p>
+<p>This includes axis/label visibility, actual plotting range, etc.
+Curves are not duplicated or referenced.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-new-alike.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-model-new-alike.returns"></a><h4>Returns</h4>
+<p> New graph model.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-get-n-curves"></a><h3>gwy_graph_model_get_n_curves ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_graph_model_get_n_curves (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gmodel</code></em>);</pre>
+<p>Reports the number of curves in a graph model.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-get-n-curves.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-model-get-n-curves.returns"></a><h4>Returns</h4>
+<p> Number of curves in graph model.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-add-curve"></a><h3>gwy_graph_model_add_curve ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_graph_model_add_curve (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gmodel</code></em>,
+                           <em class="parameter"><code><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="type">GwyGraphCurveModel</span></a> *curve</code></em>);</pre>
+<p>Adds a new curve to a graph model.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-add-curve.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>curve</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="type">GwyGraphCurveModel</span></a> representing the curve to add.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-model-add-curve.returns"></a><h4>Returns</h4>
+<p> The index of the added curve in <em class="parameter"><code>gmodel</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-remove-curve-by-description"></a><h3>gwy_graph_model_remove_curve_by_description ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_graph_model_remove_curve_by_description
+                               (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gmodel</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *description</code></em>);</pre>
+<p>Removes all the curves having same description string as <em class="parameter"><code>description</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-remove-curve-by-description.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>description</p></td>
+<td class="parameter_description"><p>Curve description (label).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-model-remove-curve-by-description.returns"></a><h4>Returns</h4>
+<p> The number of removed curves.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-remove-curve"></a><h3>gwy_graph_model_remove_curve ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_model_remove_curve (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gmodel</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> cindex</code></em>);</pre>
+<p>Removes the curve having given index.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-remove-curve.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cindex</p></td>
+<td class="parameter_description"><p>Curve index in graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-get-curve-by-description"></a><h3>gwy_graph_model_get_curve_by_description ()</h3>
+<pre class="programlisting"><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="returnvalue">GwyGraphCurveModel</span></a> *
+gwy_graph_model_get_curve_by_description
+                               (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gmodel</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *description</code></em>);</pre>
+<p>Finds a graph curve model in a graph model by its description.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-get-curve-by-description.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>description</p></td>
+<td class="parameter_description"><p>Curve description (label).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-model-get-curve-by-description.returns"></a><h4>Returns</h4>
+<p> The first curve that has description (label) given by <em class="parameter"><code>description</code></em>
+(no reference is added).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-get-curve"></a><h3>gwy_graph_model_get_curve ()</h3>
+<pre class="programlisting"><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="returnvalue">GwyGraphCurveModel</span></a> *
+gwy_graph_model_get_curve (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gmodel</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> cindex</code></em>);</pre>
+<p>Gets a graph curve model in a graph model by its index.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-get-curve.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cindex</p></td>
+<td class="parameter_description"><p>Curve index in graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-model-get-curve.returns"></a><h4>Returns</h4>
+<p> The curve with index <em class="parameter"><code>cindex</code></em>
+(no reference is added).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-get-curve-index"></a><h3>gwy_graph_model_get_curve_index ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_graph_model_get_curve_index (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gmodel</code></em>,
+                                 <em class="parameter"><code><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="type">GwyGraphCurveModel</span></a> *curve</code></em>);</pre>
+<p>Finds the index of a graph model curve.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-get-curve-index.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>curve</p></td>
+<td class="parameter_description"><p>A curve model present in <em class="parameter"><code>gmodel</code></em>
+to find.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-model-get-curve-index.returns"></a><h4>Returns</h4>
+<p> The index of <em class="parameter"><code>curve</code></em>
+in <em class="parameter"><code>gmodel</code></em>
+, -1 if it is not present there.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-replace-curve"></a><h3>gwy_graph_model_replace_curve ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_model_replace_curve (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gmodel</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> cindex</code></em>,
+                               <em class="parameter"><code><a class="link" href="GwyGraphCurveModel.html" title="GwyGraphCurveModel"><span class="type">GwyGraphCurveModel</span></a> *curve</code></em>);</pre>
+<p>Replaces a curve in a graph model.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-replace-curve.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cindex</p></td>
+<td class="parameter_description"><p>Curve index in graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>curve</p></td>
+<td class="parameter_description"><p>A curve model to put into <em class="parameter"><code>gmodel</code></em>
+at position <em class="parameter"><code>cindex</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-51.html#api-index-2.51">2.51</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-remove-all-curves"></a><h3>gwy_graph_model_remove_all_curves ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_model_remove_all_curves (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gmodel</code></em>);</pre>
+<p>Removes all the curves from graph model</p>
+<div class="refsect3">
+<a name="gwy-graph-model-remove-all-curves.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-append-curves"></a><h3>gwy_graph_model_append_curves ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_model_append_curves (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gmodel</code></em>,
+                               <em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *source</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> colorstep</code></em>);</pre>
+<p>Appends all curves from another graph model to a graph model.</p>
+<p>The colors of the curves can be updated, presumably to continue a preset
+color sequence.  This is controlled by argument <em class="parameter"><code>colorstep</code></em>
+.  When <em class="parameter"><code>colorstep</code></em>
+
+is zero no curve color modification is done.  When it is positive, a block
+of curves of size <em class="parameter"><code>colorstep</code></em>
+ is always given the same color, the first color
+being the first preset color corresponding to the number of curves already
+in <em class="parameter"><code>gmodel</code></em>
+.  So pass <em class="parameter"><code>colorstep</code></em>
+=1 for individual curves, <em class="parameter"><code>colorstep</code></em>
+=2 for
+couples of curves (e.g. data and fit) that should have the same color, etc.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-append-curves.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>Graph model containing the curves to append.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>colorstep</p></td>
+<td class="parameter_description"><p>Block size for curve color updating.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-41.html#api-index-2.41">2.41</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-set-units-from-data-line"></a><h3>gwy_graph_model_set_units_from_data_line ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_model_set_units_from_data_line
+                               (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gmodel</code></em>,
+                                <em class="parameter"><code><a href="../GwyDataLine.html#GwyDataLine-struct"><span class="type">GwyDataLine</span></a> *data_line</code></em>);</pre>
+<p>Sets x and y graph model units to match a data line.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-set-units-from-data-line.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line to take units from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-set-units-from-data-field"></a><h3>gwy_graph_model_set_units_from_data_field ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_model_set_units_from_data_field
+                               (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gmodel</code></em>,
+                                <em class="parameter"><code><a href="../GwyDataField.html#GwyDataField-struct"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> power_xy_in_x</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> power_z_in_x</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> power_xy_in_y</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> power_z_in_y</code></em>);</pre>
+<p>Sets x and y graph model units to units derived from a data field.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-set-units-from-data-field.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>power_xy_in_x</p></td>
+<td class="parameter_description"><p>Power of field's lateral units to appear in graph's abscissa
+units.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>power_z_in_x</p></td>
+<td class="parameter_description"><p>Power of field's value units to appear in graph's abscissa
+units.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>power_xy_in_y</p></td>
+<td class="parameter_description"><p>Power of field's lateral units to appear in graph's ordinate
+units.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>power_z_in_y</p></td>
+<td class="parameter_description"><p>Power of field's value units to appear in graph's ordinate
+units.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-51.html#api-index-2.51">2.51</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-units-are-compatible"></a><h3>gwy_graph_model_units_are_compatible ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_graph_model_units_are_compatible (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gmodel</code></em>,
+                                      <em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *othergmodel</code></em>);</pre>
+<p>Checks if the units of two graph models are compatible.</p>
+<p>This function is useful namely as a pre-check for moving curves between
+graphs.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-units-are-compatible.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>othergmodel</p></td>
+<td class="parameter_description"><p>Another graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-model-units-are-compatible.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the abscissa and ordinate units of the two graphs are
+compatible.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-41.html#api-index-2.41">2.41</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-x-data-can-be-logarithmed"></a><h3>gwy_graph_model_x_data_can_be_logarithmed ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_graph_model_x_data_can_be_logarithmed
+                               (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *model</code></em>);</pre>
+<p>Checks whehter x axis can be lograrithmed.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-x-data-can-be-logarithmed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>model</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-model-x-data-can-be-logarithmed.returns"></a><h4>Returns</h4>
+<p> TRUE if all x-values are greater than zero (thus logarithmic
+display of x-data is feasible).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-y-data-can-be-logarithmed"></a><h3>gwy_graph_model_y_data_can_be_logarithmed ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_graph_model_y_data_can_be_logarithmed
+                               (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *model</code></em>);</pre>
+<p>Checks whehter y axis can be lograrithmed.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-y-data-can-be-logarithmed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>model</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-model-y-data-can-be-logarithmed.returns"></a><h4>Returns</h4>
+<p> TRUE if all y-values are greater than zero (thus logarithmic
+display of y-data is feasible).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-set-axis-label"></a><h3>gwy_graph_model_set_axis_label ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_model_set_axis_label (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *model</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/gtk3-Standard-Enumerations.html#GtkPositionType"><span class="type">GtkPositionType</span></a> pos</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>);</pre>
+<p>Sets one axis label of a graph model.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-set-axis-label.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>model</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pos</p></td>
+<td class="parameter_description"><p>Axis position.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>The new label.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-get-axis-label"></a><h3>gwy_graph_model_get_axis_label ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_graph_model_get_axis_label (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *model</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/gtk3-Standard-Enumerations.html#GtkPositionType"><span class="type">GtkPositionType</span></a> pos</code></em>);</pre>
+<p>Gets the label of a one graph model axis.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-get-axis-label.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>model</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pos</p></td>
+<td class="parameter_description"><p>Axis position.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-model-get-axis-label.returns"></a><h4>Returns</h4>
+<p> The label as a string owned by the model.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-get-x-range"></a><h3>gwy_graph_model_get_x_range ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_graph_model_get_x_range (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gmodel</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *x_min</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *x_max</code></em>);</pre>
+<p>Gets the abscissa range of a graph.</p>
+<p>Explicitly set minimum and maximum range properties take precedence over
+values calculated from curve abscissa ranges.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-get-x-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x_min</p></td>
+<td class="parameter_description"><p>Location to store the minimum abscissa value, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x_max</p></td>
+<td class="parameter_description"><p>Location to store the maximum abscissa value, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-model-get-x-range.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the requested values were filled, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> is there are no
+data points and the ranges are not explicitly set.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-get-y-range"></a><h3>gwy_graph_model_get_y_range ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_graph_model_get_y_range (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gmodel</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *y_min</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *y_max</code></em>);</pre>
+<p>Gets the ordinate range of a graph.</p>
+<p>Explicitly set minimum and maximum range properties take precedence over
+values calculated from curve ordinate ranges.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-get-y-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y_min</p></td>
+<td class="parameter_description"><p>Location to store the minimum ordinate value, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y_max</p></td>
+<td class="parameter_description"><p>Location to store the maximum ordinate value, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-model-get-y-range.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the requested values were filled, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> is there are no
+data points and the ranges are not explicitly set.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-get-ranges"></a><h3>gwy_graph_model_get_ranges ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_graph_model_get_ranges (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gmodel</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> x_logscale</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> y_logscale</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *x_min</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *x_max</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *y_min</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *y_max</code></em>);</pre>
+<p>Gets the log-scale suitable range minima of a graph curve.</p>
+<p>See <a class="link" href="GwyGraphCurveModel.html#gwy-graph-curve-model-get-ranges" title="gwy_graph_curve_model_get_ranges ()"><code class="function">gwy_graph_curve_model_get_ranges()</code></a> for discussion.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-get-ranges.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x_logscale</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if logarithmical scale is intended for the abscissa.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y_logscale</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if logarithmical scale is intended for the ordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x_min</p></td>
+<td class="parameter_description"><p>Location to store the minimum abscissa value, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x_max</p></td>
+<td class="parameter_description"><p>Location to store the maximum abscissa value, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y_min</p></td>
+<td class="parameter_description"><p>Location to store the minimum ordinate value, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y_max</p></td>
+<td class="parameter_description"><p>Location to store the maximum ordinate value, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-model-get-ranges.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if all requested output arguments were filled with the
+ranges.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-model-export-ascii"></a><h3>gwy_graph_model_export_ascii ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Strings.html#GString"><span class="returnvalue">GString</span></a> *
+gwy_graph_model_export_ascii (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *model</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> export_units</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> export_labels</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> export_metadata</code></em>,
+                              <em class="parameter"><code><a class="link" href="libgwydgets-gwydgetenums.html#GwyGraphModelExportStyle" title="enum GwyGraphModelExportStyle"><span class="type">GwyGraphModelExportStyle</span></a> export_style</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Strings.html#GString"><span class="type">GString</span></a> *string</code></em>);</pre>
+<p>Exports a graph model data to a string.</p>
+<p>The export format is specified by parameter <em class="parameter"><code>export_style</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-graph-model-export-ascii.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>model</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>export_units</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to export units in the column header.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>export_labels</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to export labels in the column header.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>export_metadata</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to export all graph metadata within file header.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>export_style</p></td>
+<td class="parameter_description"><p>File format subtype to export to (e. g. plain, csv, gnuplot,
+etc.).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>A string to append the text dump to, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to allocate a new
+string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-model-export-ascii.returns"></a><h4>Returns</h4>
+<p> Either <em class="parameter"><code>string</code></em>
+itself if it was not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, or a newly allocated
+<a href="/usr/share/gtk-doc/html/glib/glib-Strings.html#GString"><span class="type">GString</span></a>.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyGraphModel.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyGraphModel-struct"></a><h3>struct GwyGraphModel</h3>
+<pre class="programlisting">struct GwyGraphModel;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModelClass"></a><h3>struct GwyGraphModelClass</h3>
+<pre class="programlisting">struct GwyGraphModelClass {
+    GObjectClass parent_class;
+
+    void (*curve_data_changed)(GwyGraphModel *model,
+                               gint i);
+    void (*curve_notify)(GwyGraphModel *model,
+                         gint i,
+                         GParamSpec *pspec);
+
+    void (*reserved1)(void);
+    void (*reserved2)(void);
+    void (*reserved3)(void);
+    void (*reserved4)(void);
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyGraphModel.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GwyGraphModel--axis-label-bottom"></a><h3>The <code class="literal">“axis-label-bottom”</code> property</h3>
+<pre class="programlisting">  “axis-label-bottom”        <span class="type">char</span> *</pre>
+<p>The label of the bottom axis.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: "x"</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--axis-label-left"></a><h3>The <code class="literal">“axis-label-left”</code> property</h3>
+<pre class="programlisting">  “axis-label-left”          <span class="type">char</span> *</pre>
+<p>The label of the left axis.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: "y"</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--axis-label-right"></a><h3>The <code class="literal">“axis-label-right”</code> property</h3>
+<pre class="programlisting">  “axis-label-right”         <span class="type">char</span> *</pre>
+<p>The label of the right axis.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--axis-label-top"></a><h3>The <code class="literal">“axis-label-top”</code> property</h3>
+<pre class="programlisting">  “axis-label-top”           <span class="type">char</span> *</pre>
+<p>The label of the top axis.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--grid-type"></a><h3>The <code class="literal">“grid-type”</code> property</h3>
+<pre class="programlisting">  “grid-type”                <a class="link" href="libgwydgets-gwydgetenums.html#GwyGraphGridType" title="enum GwyGraphGridType"><span class="type">GwyGraphGridType</span></a></pre>
+<p>Type of grid drawn on main graph area.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GWY_GRAPH_GRID_AUTO</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--label-frame-thickness"></a><h3>The <code class="literal">“label-frame-thickness”</code> property</h3>
+<pre class="programlisting">  “label-frame-thickness”    <span class="type">int</span></pre>
+<p>Thickness of key label frame.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,16]</p>
+<p>Default value: 1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--label-has-frame"></a><h3>The <code class="literal">“label-has-frame”</code> property</h3>
+<pre class="programlisting">  “label-has-frame”          <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>TRUE if key label has frame.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--label-position"></a><h3>The <code class="literal">“label-position”</code> property</h3>
+<pre class="programlisting">  “label-position”           <a class="link" href="libgwydgets-gwydgetenums.html#GwyGraphLabelPosition" title="enum GwyGraphLabelPosition"><span class="type">GwyGraphLabelPosition</span></a></pre>
+<p>Position type of key label.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GWY_GRAPH_LABEL_NORTHEAST</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--label-relative-x"></a><h3>The <code class="literal">“label-relative-x”</code> property</h3>
+<pre class="programlisting">  “label-relative-x”         <span class="type">double</span></pre>
+<p>Relative screen X-coordinate of label inside the area.</p>
+<p>This value has any effect only if the label position is
+<a class="link" href="libgwydgets-gwydgetenums.html#GWY-GRAPH-LABEL-USER:CAPS"><code class="literal">GWY_GRAPH_LABEL_USER</code></a>.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,1]</p>
+<p>Default value: 1</p>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--label-relative-y"></a><h3>The <code class="literal">“label-relative-y”</code> property</h3>
+<pre class="programlisting">  “label-relative-y”         <span class="type">double</span></pre>
+<p>Relative screen Y-coordinate of label inside the area.</p>
+<p>This value has any effect only if the label position is
+<a class="link" href="libgwydgets-gwydgetenums.html#GWY-GRAPH-LABEL-USER:CAPS"><code class="literal">GWY_GRAPH_LABEL_USER</code></a>.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,1]</p>
+<p>Default value: 0</p>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--label-reverse"></a><h3>The <code class="literal">“label-reverse”</code> property</h3>
+<pre class="programlisting">  “label-reverse”            <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>TRUE if text and curve sample is switched in key.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--label-visible"></a><h3>The <code class="literal">“label-visible”</code> property</h3>
+<pre class="programlisting">  “label-visible”            <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>TRUE if key label is visible.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--n-curves"></a><h3>The <code class="literal">“n-curves”</code> property</h3>
+<pre class="programlisting">  “n-curves”                 <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>The number of curves in graph model.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--si-unit-x"></a><h3>The <code class="literal">“si-unit-x”</code> property</h3>
+<pre class="programlisting">  “si-unit-x”                <a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *</pre>
+<p>Unit of x axis.  Units are always passed by value, the unit object has a different identity than the object owned by the graph model.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--si-unit-y"></a><h3>The <code class="literal">“si-unit-y”</code> property</h3>
+<pre class="programlisting">  “si-unit-y”                <a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *</pre>
+<p>Unit of y axis.  Units are always passed by value, the unit object has a different identity than the object owned by the graph model.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--title"></a><h3>The <code class="literal">“title”</code> property</h3>
+<pre class="programlisting">  “title”                    <span class="type">char</span> *</pre>
+<p>The graph title.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: "New graph"</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--x-logarithmic"></a><h3>The <code class="literal">“x-logarithmic”</code> property</h3>
+<pre class="programlisting">  “x-logarithmic”            <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>TRUE if x coordinate is logarithimic.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--x-max"></a><h3>The <code class="literal">“x-max”</code> property</h3>
+<pre class="programlisting">  “x-max”                    <span class="type">double</span></pre>
+<p>Requested maximum x value.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--x-max-set"></a><h3>The <code class="literal">“x-max-set”</code> property</h3>
+<pre class="programlisting">  “x-max-set”                <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether x-max is set.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--x-min"></a><h3>The <code class="literal">“x-min”</code> property</h3>
+<pre class="programlisting">  “x-min”                    <span class="type">double</span></pre>
+<p>Requested minimum x value.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--x-min-set"></a><h3>The <code class="literal">“x-min-set”</code> property</h3>
+<pre class="programlisting">  “x-min-set”                <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether x-min is set.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--y-logarithmic"></a><h3>The <code class="literal">“y-logarithmic”</code> property</h3>
+<pre class="programlisting">  “y-logarithmic”            <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>TRUE if y coordinate is logarithimic.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--y-max"></a><h3>The <code class="literal">“y-max”</code> property</h3>
+<pre class="programlisting">  “y-max”                    <span class="type">double</span></pre>
+<p>Requested maximum y value.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--y-max-set"></a><h3>The <code class="literal">“y-max-set”</code> property</h3>
+<pre class="programlisting">  “y-max-set”                <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether y-max is set.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--y-min"></a><h3>The <code class="literal">“y-min”</code> property</h3>
+<pre class="programlisting">  “y-min”                    <span class="type">double</span></pre>
+<p>Requested minimum y value.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel--y-min-set"></a><h3>The <code class="literal">“y-min-set”</code> property</h3>
+<pre class="programlisting">  “y-min-set”                <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether y-min is set.</p>
+<p>Owner: GwyGraphModel</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyGraphModel.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GwyGraphModel-curve-data-changed"></a><h3>The <code class="literal">“curve-data-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gwygraphmodel,
+               <span class="type">int</span>            arg1,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       user_data)</pre>
+<p>The ::curve-data-changed signal is emitted whenever any of the curves
+in a graph model emits <a class="link" href="GwyGraphCurveModel.html#GwyGraphCurveModel-data-changed" title="The “data-changed” signal"><span class="type">“data-changed”</span></a>.</p>
+<div class="refsect3">
+<a name="GwyGraphModel-curve-data-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwygraphmodel</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arg1</p></td>
+<td class="parameter_description"><p>The index of the changed curve in the model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphModel-curve-notify"></a><h3>The <code class="literal">“curve-notify”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gwygraphmodel,
+               <span class="type">int</span>            arg1,
+               <a href="/usr/share/gtk-doc/html/gobject/gobject-GParamSpec.html#GParamSpec"><span class="type">GParamSpec</span></a>    *arg2,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       user_data)</pre>
+<p>The ::curve-data-changed signal is emitted whenever any of the curves
+in a graph model emits <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-notify"><span class="type">“notify”</span></a>.</p>
+<div class="refsect3">
+<a name="GwyGraphModel-curve-notify.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwygraphmodel</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arg1</p></td>
+<td class="parameter_description"><p>The index of the changed curve in the model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arg2</p></td>
+<td class="parameter_description"><p>The <a href="/usr/share/gtk-doc/html/gobject/gobject-GParamSpec.html#GParamSpec"><span class="type">GParamSpec</span></a> of the property that has changed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

@@ -1,0 +1,509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyRuler: Gwyddion Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Widgets Library Reference Manual">
+<link rel="up" href="GeneralWidgets.html" title="General Widgets">
+<link rel="prev" href="GwyCurve.html" title="GwyCurve">
+<link rel="next" href="GwyHRuler.html" title="GwyHRuler">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyRuler.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyRuler.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GwyRuler.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GwyRuler.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="GeneralWidgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GwyCurve.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyHRuler.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyRuler"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyRuler.top_of_page"></a>GwyRuler</span></h2>
+<p>GwyRuler — Base class for GwyHRuler and GwyVRuler</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyRuler.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyRuler.html#gwy-ruler-set-range" title="gwy_ruler_set_range ()">gwy_ruler_set_range</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyRuler.html#gwy-ruler-draw-pos" title="gwy_ruler_draw_pos ()">gwy_ruler_draw_pos</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyRuler.html#gwy-ruler-get-range" title="gwy_ruler_get_range ()">gwy_ruler_get_range</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyRuler.html#gwy-ruler-set-si-unit" title="gwy_ruler_set_si_unit ()">gwy_ruler_set_si_unit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyRuler.html#gwy-ruler-get-si-unit" title="gwy_ruler_get_si_unit ()">gwy_ruler_get_si_unit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwydgets-gwydgetenums.html#GwyUnitsPlacement" title="enum GwyUnitsPlacement"><span class="returnvalue">GwyUnitsPlacement</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyRuler.html#gwy-ruler-get-units-placement" title="gwy_ruler_get_units_placement ()">gwy_ruler_get_units_placement</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyRuler.html#gwy-ruler-set-units-placement" title="gwy_ruler_set_units_placement ()">gwy_ruler_set_units_placement</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyRuler.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><span class="type">double</span></td>
+<td class="property_name"><a class="link" href="GwyRuler.html#GwyRuler--lower" title="The “lower” property">lower</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">double</span></td>
+<td class="property_name"><a class="link" href="GwyRuler.html#GwyRuler--max-size" title="The “max-size” property">max-size</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">double</span></td>
+<td class="property_name"><a class="link" href="GwyRuler.html#GwyRuler--position" title="The “position” property">position</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="libgwydgets-gwydgetenums.html#GwyUnitsPlacement" title="enum GwyUnitsPlacement"><span class="type">GwyUnitsPlacement</span></a></td>
+<td class="property_name"><a class="link" href="GwyRuler.html#GwyRuler--units-placement" title="The “units-placement” property">units-placement</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">double</span></td>
+<td class="property_name"><a class="link" href="GwyRuler.html#GwyRuler--upper" title="The “upper” property">upper</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyRuler.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyRuler.html#GwyRuler-struct" title="struct GwyRuler">GwyRuler</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyRuler.html#GwyRulerClass" title="struct GwyRulerClass">GwyRulerClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyRuler.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkObject.html#GtkObject-struct">GtkObject</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct">GtkWidget</a>
+                <span class="lineart">╰──</span> GwyRuler
+                    <span class="lineart">├──</span> <a class="link" href="GwyHRuler.html" title="GwyHRuler">GwyHRuler</a>
+                    <span class="lineart">╰──</span> <a class="link" href="GwyVRuler.html" title="GwyVRuler">GwyVRuler</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyRuler.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GwyRuler implements
+ AtkImplementorIface and  <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkBuildable.html#GtkBuildable-struct">GtkBuildable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwyRuler.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwydgets/gwydgets.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyRuler.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyRuler.html" title="GwyRuler"><span class="type">GwyRuler</span></a> is a ruler similar to <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkRuler.html#GtkRuler-struct"><span class="type">GtkRuler</span></a>, but it is more suited for a
+scientific application.  It is scale-independent and thus has no arbitrary
+limits on the ranges or interpretation of displayed values.  It can display
+units on the ruler (this can be controlled with
+<a class="link" href="GwyRuler.html#gwy-ruler-set-units-placement" title="gwy_ruler_set_units_placement ()"><code class="function">gwy_ruler_set_units_placement()</code></a>) and cooperates with <a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> (see
+<a class="link" href="GwyRuler.html#gwy-ruler-set-si-unit" title="gwy_ruler_set_si_unit ()"><code class="function">gwy_ruler_set_si_unit()</code></a>).  It also better follows Gtk+ theme than <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkRuler.html#GtkRuler-struct"><span class="type">GtkRuler</span></a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwyRuler.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-ruler-set-range"></a><h3>gwy_ruler_set_range ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_ruler_set_range (<em class="parameter"><code><a class="link" href="GwyRuler.html" title="GwyRuler"><span class="type">GwyRuler</span></a> *ruler</code></em>,
+                     <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> lower</code></em>,
+                     <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> upper</code></em>,
+                     <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> position</code></em>,
+                     <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> max_size</code></em>);</pre>
+<p>Sets range and current value of a ruler.</p>
+<div class="refsect3">
+<a name="gwy-ruler-set-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ruler</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GwyRuler.html" title="GwyRuler"><span class="type">GwyRuler</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>lower</p></td>
+<td class="parameter_description"><p>Lower limit of the ruler.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>upper</p></td>
+<td class="parameter_description"><p>Upper limit of the ruler.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>position</p></td>
+<td class="parameter_description"><p>Current position of the mark on the ruler.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_size</p></td>
+<td class="parameter_description"><p>Maximum value used for calculating size of text labels.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-ruler-draw-pos"></a><h3>gwy_ruler_draw_pos ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_ruler_draw_pos (<em class="parameter"><code><a class="link" href="GwyRuler.html" title="GwyRuler"><span class="type">GwyRuler</span></a> *ruler</code></em>);</pre>
+<p>Draws a position marker.</p>
+<p>This method is intended primarily for subclass implementation.</p>
+<div class="refsect3">
+<a name="gwy-ruler-draw-pos.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>ruler</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GwyRuler.html" title="GwyRuler"><span class="type">GwyRuler</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-ruler-get-range"></a><h3>gwy_ruler_get_range ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_ruler_get_range (<em class="parameter"><code><a class="link" href="GwyRuler.html" title="GwyRuler"><span class="type">GwyRuler</span></a> *ruler</code></em>,
+                     <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *lower</code></em>,
+                     <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *upper</code></em>,
+                     <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *position</code></em>,
+                     <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *max_size</code></em>);</pre>
+<p>Retrieves values indicating the range and current position of a <a class="link" href="GwyRuler.html" title="GwyRuler"><span class="type">GwyRuler</span></a>.
+See <a class="link" href="GwyRuler.html#gwy-ruler-set-range" title="gwy_ruler_set_range ()"><code class="function">gwy_ruler_set_range()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-ruler-get-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ruler</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GwyRuler.html" title="GwyRuler"><span class="type">GwyRuler</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>lower</p></td>
+<td class="parameter_description"><p>Location to store lower limit of the ruler, or <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>upper</p></td>
+<td class="parameter_description"><p>Location to store upper limit of the ruler, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>position</p></td>
+<td class="parameter_description"><p>Location to store the current position of the mark on the ruler,
+or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_size</p></td>
+<td class="parameter_description"><p>Location to store the maximum size of the ruler used when
+calculating the space to leave for the text, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-ruler-set-si-unit"></a><h3>gwy_ruler_set_si_unit ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_ruler_set_si_unit (<em class="parameter"><code><a class="link" href="GwyRuler.html" title="GwyRuler"><span class="type">GwyRuler</span></a> *ruler</code></em>,
+                       <em class="parameter"><code><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *units</code></em>);</pre>
+<p>Sets the base units a ruler displays.</p>
+<p>Setting units to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> effectively disables them.</p>
+<div class="refsect3">
+<a name="gwy-ruler-set-si-unit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ruler</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GwyRuler.html" title="GwyRuler"><span class="type">GwyRuler</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>units</p></td>
+<td class="parameter_description"><p>The base units this ruler should display.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-ruler-get-si-unit"></a><h3>gwy_ruler_get_si_unit ()</h3>
+<pre class="programlisting"><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_ruler_get_si_unit (<em class="parameter"><code><a class="link" href="GwyRuler.html" title="GwyRuler"><span class="type">GwyRuler</span></a> *ruler</code></em>);</pre>
+<p>Returns the base units a ruler uses.</p>
+<div class="refsect3">
+<a name="gwy-ruler-get-si-unit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>ruler</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GwyRuler.html" title="GwyRuler"><span class="type">GwyRuler</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-ruler-get-si-unit.returns"></a><h4>Returns</h4>
+<p> The units the rules uses.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-ruler-get-units-placement"></a><h3>gwy_ruler_get_units_placement ()</h3>
+<pre class="programlisting"><a class="link" href="libgwydgets-gwydgetenums.html#GwyUnitsPlacement" title="enum GwyUnitsPlacement"><span class="returnvalue">GwyUnitsPlacement</span></a>
+gwy_ruler_get_units_placement (<em class="parameter"><code><a class="link" href="GwyRuler.html" title="GwyRuler"><span class="type">GwyRuler</span></a> *ruler</code></em>);</pre>
+<p>Gets current units placement of ruler <em class="parameter"><code>ruler</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-ruler-get-units-placement.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>ruler</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GwyRuler.html" title="GwyRuler"><span class="type">GwyRuler</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-ruler-get-units-placement.returns"></a><h4>Returns</h4>
+<p> The units placement.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-ruler-set-units-placement"></a><h3>gwy_ruler_set_units_placement ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_ruler_set_units_placement (<em class="parameter"><code><a class="link" href="GwyRuler.html" title="GwyRuler"><span class="type">GwyRuler</span></a> *ruler</code></em>,
+                               <em class="parameter"><code><a class="link" href="libgwydgets-gwydgetenums.html#GwyUnitsPlacement" title="enum GwyUnitsPlacement"><span class="type">GwyUnitsPlacement</span></a> placement</code></em>);</pre>
+<p>Sets whether and where units should be placed on the ruler.</p>
+<div class="refsect3">
+<a name="gwy-ruler-set-units-placement.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ruler</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GwyRuler.html" title="GwyRuler"><span class="type">GwyRuler</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>placement</p></td>
+<td class="parameter_description"><p>Units placement specification.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyRuler.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyRuler-struct"></a><h3>struct GwyRuler</h3>
+<pre class="programlisting">struct GwyRuler;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyRulerClass"></a><h3>struct GwyRulerClass</h3>
+<pre class="programlisting">struct GwyRulerClass {
+    GtkWidgetClass parent_class;
+
+    /* Virtual methods */
+    void (*prepare_sizes) (GwyRuler *ruler);
+    void (*draw_frame) (GwyRuler *ruler);
+    void (*draw_layout) (GwyRuler *ruler,
+                         gint hpos,
+                         gint vpos);
+    void (*draw_tick) (GwyRuler *ruler,
+                       gint pos,
+                       gint length);
+    void (*draw_pos)   (GwyRuler *ruler);
+
+    void (*reserved1)(void);
+    void (*reserved2)(void);
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyRuler.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GwyRuler--lower"></a><h3>The <code class="literal">“lower”</code> property</h3>
+<pre class="programlisting">  “lower”                    <span class="type">double</span></pre>
+<p>Lower limit of ruler.</p>
+<p>Owner: GwyRuler</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyRuler--max-size"></a><h3>The <code class="literal">“max-size”</code> property</h3>
+<pre class="programlisting">  “max-size”                 <span class="type">double</span></pre>
+<p>Maximum size of the ruler.</p>
+<p>Owner: GwyRuler</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyRuler--position"></a><h3>The <code class="literal">“position”</code> property</h3>
+<pre class="programlisting">  “position”                 <span class="type">double</span></pre>
+<p>Position of mark on the ruler.</p>
+<p>Owner: GwyRuler</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyRuler--units-placement"></a><h3>The <code class="literal">“units-placement”</code> property</h3>
+<pre class="programlisting">  “units-placement”          <a class="link" href="libgwydgets-gwydgetenums.html#GwyUnitsPlacement" title="enum GwyUnitsPlacement"><span class="type">GwyUnitsPlacement</span></a></pre>
+<p>The placement of units on the ruler, if any.</p>
+<p>Owner: GwyRuler</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GWY_UNITS_PLACEMENT_NONE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyRuler--upper"></a><h3>The <code class="literal">“upper”</code> property</h3>
+<pre class="programlisting">  “upper”                    <span class="type">double</span></pre>
+<p>Upper limit of ruler.</p>
+<p>Owner: GwyRuler</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 0</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

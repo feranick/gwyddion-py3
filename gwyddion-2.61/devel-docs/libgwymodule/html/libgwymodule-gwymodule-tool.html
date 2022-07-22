@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gwymodule-tool: Gwyddion Module Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Module Library Reference Manual">
+<link rel="up" href="ModuleLibrary.html" title="Gwyddion Module Library">
+<link rel="prev" href="libgwymodule-gwymodule-process.html" title="gwymodule-process">
+<link rel="next" href="libgwymodule-gwymodule-graph.html" title="gwymodule-graph">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwymodule-gwymodule-tool.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ModuleLibrary.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgwymodule-gwymodule-process.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwymodule-gwymodule-graph.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwymodule-gwymodule-tool"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwymodule-gwymodule-tool.top_of_page"></a>gwymodule-tool</span></h2>
+<p>gwymodule-tool — Interactive tool modules</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwymodule-gwymodule-tool.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-tool.html#gwy-tool-func-register" title="gwy_tool_func_register ()">gwy_tool_func_register</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymodule-tool.html#gwy-tool-func-foreach" title="gwy_tool_func_foreach ()">gwy_tool_func_foreach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwymodule-gwymodule-tool.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwymodule/gwymodule.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwymodule-gwymodule-tool.description"></a><h2>Description</h2>
+<p>Tool modules implement interactive tools that work directly on data
+windows.</p>
+</div>
+<div class="refsect1">
+<a name="libgwymodule-gwymodule-tool.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-tool-func-register"></a><h3>gwy_tool_func_register ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_tool_func_register (<em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>);</pre>
+<p>Registeres a tool function (tool type).</p>
+<div class="refsect3">
+<a name="gwy-tool-func-register.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>Layer type in GObject type system.  That is the return value of
+<code class="function">gwy_tool_foo_get_type()</code>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-tool-func-register.returns"></a><h4>Returns</h4>
+<p> Normally <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>; <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> on failure.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tool-func-foreach"></a><h3>gwy_tool_func_foreach ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_tool_func_foreach (<em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Doubly-Linked-Lists.html#GFunc"><span class="type">GFunc</span></a> function</code></em>,
+                       <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Calls a function for each tool function.</p>
+<div class="refsect3">
+<a name="gwy-tool-func-foreach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>function</p></td>
+<td class="parameter_description"><p>Function to run for each tool function.  It will get function
+name (constant string owned by module system) as its first
+argument, <em class="parameter"><code>user_data</code></em>
+as the second argument.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>Data to pass to <em class="parameter"><code>function</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

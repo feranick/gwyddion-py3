@@ -1,0 +1,915 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyVectorLayer: Gwyddion Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Widgets Library Reference Manual">
+<link rel="up" href="DataWindowWidgets.html" title="Data Windows and Views">
+<link rel="prev" href="GwyPixmapLayer.html" title="GwyPixmapLayer">
+<link rel="next" href="GwyLayerBasic.html" title="GwyLayerBasic">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyVectorLayer.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyVectorLayer.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GwyVectorLayer.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GwyVectorLayer.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="DataWindowWidgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GwyPixmapLayer.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyLayerBasic.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyVectorLayer"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyVectorLayer.top_of_page"></a>GwyVectorLayer</span></h2>
+<p>GwyVectorLayer — Base class for GwyDataView vector (interactive) layers</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyVectorLayer.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyVectorLayer.html#gwy-vector-layer-class-get-selection-type" title="gwy_vector_layer_class_get_selection_type ()">gwy_vector_layer_class_get_selection_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyVectorLayer.html#gwy-vector-layer-get-selection-type" title="gwy_vector_layer_get_selection_type()">gwy_vector_layer_get_selection_type</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyVectorLayer.html#gwy-vector-layer-set-selection-key" title="gwy_vector_layer_set_selection_key ()">gwy_vector_layer_set_selection_key</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyVectorLayer.html#gwy-vector-layer-get-selection-key" title="gwy_vector_layer_get_selection_key ()">gwy_vector_layer_get_selection_key</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwySelection.html#GwySelection-struct"><span class="returnvalue">GwySelection</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyVectorLayer.html#gwy-vector-layer-ensure-selection" title="gwy_vector_layer_ensure_selection ()">gwy_vector_layer_ensure_selection</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyVectorLayer.html#gwy-vector-layer-get-focus" title="gwy_vector_layer_get_focus ()">gwy_vector_layer_get_focus</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyVectorLayer.html#gwy-vector-layer-set-focus" title="gwy_vector_layer_set_focus ()">gwy_vector_layer_set_focus</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyVectorLayer.html#gwy-vector-layer-get-editable" title="gwy_vector_layer_get_editable ()">gwy_vector_layer_get_editable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyVectorLayer.html#gwy-vector-layer-set-editable" title="gwy_vector_layer_set_editable ()">gwy_vector_layer_set_editable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyVectorLayer.html#gwy-vector-layer-draw" title="gwy_vector_layer_draw ()">gwy_vector_layer_draw</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyVectorLayer.html#gwy-vector-layer-button-press" title="gwy_vector_layer_button_press ()">gwy_vector_layer_button_press</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyVectorLayer.html#gwy-vector-layer-button-release" title="gwy_vector_layer_button_release ()">gwy_vector_layer_button_release</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyVectorLayer.html#gwy-vector-layer-motion-notify" title="gwy_vector_layer_motion_notify ()">gwy_vector_layer_motion_notify</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyVectorLayer.html#gwy-vector-layer-key-press" title="gwy_vector_layer_key_press ()">gwy_vector_layer_key_press</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyVectorLayer.html#gwy-vector-layer-key-release" title="gwy_vector_layer_key_release ()">gwy_vector_layer_key_release</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyVectorLayer.html#gwy-vector-layer-object-chosen" title="gwy_vector_layer_object_chosen ()">gwy_vector_layer_object_chosen</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyVectorLayer.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GwyVectorLayer.html#GwyVectorLayer--editable" title="The “editable” property">editable</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">int</span></td>
+<td class="property_name"><a class="link" href="GwyVectorLayer.html#GwyVectorLayer--focus" title="The “focus” property">focus</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="GwyVectorLayer.html#GwyVectorLayer--selection-key" title="The “selection-key” property">selection-key</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyVectorLayer.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyVectorLayer.html#GwyVectorLayer-object-chosen" title="The “object-chosen” signal">object-chosen</a></td>
+<td class="signal_flags"><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyVectorLayer.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyVectorLayer.html#GwyVectorLayer-struct" title="struct GwyVectorLayer">GwyVectorLayer</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyVectorLayer.html#GwyVectorLayerClass" title="struct GwyVectorLayerClass">GwyVectorLayerClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyVectorLayer.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkObject.html#GtkObject-struct">GtkObject</a>
+            <span class="lineart">╰──</span> <a class="link" href="GwyDataViewLayer.html" title="GwyDataViewLayer">GwyDataViewLayer</a>
+                <span class="lineart">╰──</span> GwyVectorLayer
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyVectorLayer.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwydgets/gwydgets.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyVectorLayer.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="type">GwyVectorLayer</span></a> is a base class for <a class="link" href="GwyDataViewLayer.html" title="GwyDataViewLayer"><span class="type">GwyDataViewLayer</span></a>s displaying
+selections and handling user input.  It is a <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> component and it
+is not normally usable outside of it.</p>
+<p>The layer takes the selection to display from its parent <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a>'s
+container. The key under which the selection is found is set with
+<a class="link" href="GwyVectorLayer.html#gwy-vector-layer-set-selection-key" title="gwy_vector_layer_set_selection_key ()"><code class="function">gwy_vector_layer_set_selection_key()</code></a>.  The selection either can be put
+there beforehand (the corresponding selection type can be obtained with
+<a class="link" href="GwyVectorLayer.html#gwy-vector-layer-class-get-selection-type" title="gwy_vector_layer_class_get_selection_type ()"><code class="function">gwy_vector_layer_class_get_selection_type()</code></a>) or
+<a class="link" href="GwyVectorLayer.html#gwy-vector-layer-ensure-selection" title="gwy_vector_layer_ensure_selection ()"><code class="function">gwy_vector_layer_ensure_selection()</code></a> can be used to create it if it doesn't
+exist.</p>
+<p><a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="type">GwyVectorLayer</span></a> provides two independent means to restrict user interaction
+with displayed selection: editability and focus.  When a layer is set
+noneditable (see <a class="link" href="GwyVectorLayer.html#gwy-vector-layer-set-editable" title="gwy_vector_layer_set_editable ()"><code class="function">gwy_vector_layer_set_editable()</code></a>), the user cannot modify
+displayed objects, however "object-chosen" is emitted normally.  Focus
+(see <a class="link" href="GwyVectorLayer.html#gwy-vector-layer-set-focus" title="gwy_vector_layer_set_focus ()"><code class="function">gwy_vector_layer_set_focus()</code></a>) on the other hand limits all possible
+interactions to a single selection object.  It is possible although not
+very useful to combine both restrictions.</p>
+<p>The other methods are rarely useful outside <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> and/or layer
+implementation.</p>
+</div>
+<div class="refsect1">
+<a name="GwyVectorLayer.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-vector-layer-class-get-selection-type"></a><h3>gwy_vector_layer_class_get_selection_type ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>
+gwy_vector_layer_class_get_selection_type
+                               (<em class="parameter"><code><a class="link" href="GwyVectorLayer.html#GwyVectorLayerClass" title="struct GwyVectorLayerClass"><span class="type">GwyVectorLayerClass</span></a> *klass</code></em>);</pre>
+<p>Returns the selection type of a vector layer class.</p>
+<p>Note this is a class method, to get the type from an instance one can use
+<a class="link" href="GwyVectorLayer.html#gwy-vector-layer-get-selection-type" title="gwy_vector_layer_get_selection_type()"><code class="function">gwy_vector_layer_get_selection_type()</code></a>.  To get the type from layer's
+<a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> one has to use <a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#g-type-class-peek"><code class="function">g_type_class_peek()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-vector-layer-class-get-selection-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>klass</p></td>
+<td class="parameter_description"><p>A vector layer class.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-vector-layer-class-get-selection-type.returns"></a><h4>Returns</h4>
+<p> The type of selection used by layers of class <em class="parameter"><code>klass</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-vector-layer-get-selection-type"></a><h3>gwy_vector_layer_get_selection_type()</h3>
+<pre class="programlisting">#define             gwy_vector_layer_get_selection_type(layer)</pre>
+<p>Gets the selection type of a vector layer.</p>
+<p>This is a convenience wrapper around
+<a class="link" href="GwyVectorLayer.html#gwy-vector-layer-class-get-selection-type" title="gwy_vector_layer_class_get_selection_type ()"><code class="function">gwy_vector_layer_class_get_selection_type()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-vector-layer-get-selection-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer</p></td>
+<td class="parameter_description"><p>A vector layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-vector-layer-set-selection-key"></a><h3>gwy_vector_layer_set_selection_key ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_vector_layer_set_selection_key (<em class="parameter"><code><a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="type">GwyVectorLayer</span></a> *layer</code></em>,
+                                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *key</code></em>);</pre>
+<p>Sets the selection object to use by a vector layer.</p>
+<div class="refsect3">
+<a name="gwy-vector-layer-set-selection-key.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer</p></td>
+<td class="parameter_description"><p>A vector layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>Container string key identifying the selection object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-vector-layer-get-selection-key"></a><h3>gwy_vector_layer_get_selection_key ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_vector_layer_get_selection_key (<em class="parameter"><code><a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="type">GwyVectorLayer</span></a> *layer</code></em>);</pre>
+<p>Gets the key identifying selection this vector layer displays.</p>
+<div class="refsect3">
+<a name="gwy-vector-layer-get-selection-key.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer</p></td>
+<td class="parameter_description"><p>A vector layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-vector-layer-get-selection-key.returns"></a><h4>Returns</h4>
+<p> The string key, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if it isn't set.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-vector-layer-ensure-selection"></a><h3>gwy_vector_layer_ensure_selection ()</h3>
+<pre class="programlisting"><a href="../GwySelection.html#GwySelection-struct"><span class="returnvalue">GwySelection</span></a> *
+gwy_vector_layer_ensure_selection (<em class="parameter"><code><a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="type">GwyVectorLayer</span></a> *layer</code></em>);</pre>
+<p>Ensures a vector layer's selection exist in data container.</p>
+<p>This method can be called only when layer is plugged into a data view and it
+has a selection key set.  If the data container contains a selection under
+the specified key the selection is returned.  If there is none,
+a selection of appropriate type is created and put to the container first.</p>
+<p>Provided the above conditions are met this method is suitable for just
+obtaining the selection object a vector layer uses too.</p>
+<div class="refsect3">
+<a name="gwy-vector-layer-ensure-selection.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer</p></td>
+<td class="parameter_description"><p>A vector layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-vector-layer-ensure-selection.returns"></a><h4>Returns</h4>
+<p>  The layer's selection (no reference is added).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-vector-layer-get-focus"></a><h3>gwy_vector_layer_get_focus ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_vector_layer_get_focus (<em class="parameter"><code><a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="type">GwyVectorLayer</span></a> *layer</code></em>);</pre>
+<p>Gets focused object index.</p>
+<div class="refsect3">
+<a name="gwy-vector-layer-get-focus.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer</p></td>
+<td class="parameter_description"><p>A vector data view layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-vector-layer-get-focus.returns"></a><h4>Returns</h4>
+<p> Focued object index, or -1 if no object is focused.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-vector-layer-set-focus"></a><h3>gwy_vector_layer_set_focus ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_vector_layer_set_focus (<em class="parameter"><code><a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="type">GwyVectorLayer</span></a> *layer</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> focus</code></em>);</pre>
+<p>Focues on one selection object.</p>
+<p>When a selection object is focused, it becomes the only one user can
+interact with.  More precisely, "object-chosen" signal is emitted only
+for this object, and if the layer is editable only this object can be
+modified by the user.</p>
+<div class="refsect3">
+<a name="gwy-vector-layer-set-focus.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer</p></td>
+<td class="parameter_description"><p>A vector data view layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>focus</p></td>
+<td class="parameter_description"><p>Index of object to focus on, use -1 to unfocus (allow interaction
+with any object).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-vector-layer-set-focus.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the object was focused, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> on failure.  Failure can
+be caused by user currently moving another object, wrong object
+index, or the feature being unimplemented in <em class="parameter"><code>layer</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-vector-layer-get-editable"></a><h3>gwy_vector_layer_get_editable ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_vector_layer_get_editable (<em class="parameter"><code><a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="type">GwyVectorLayer</span></a> *layer</code></em>);</pre>
+<p>Gets editability of a vector layer.</p>
+<div class="refsect3">
+<a name="gwy-vector-layer-get-editable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>layer</p></td>
+<td class="parameter_description"><p>A vector data view layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-vector-layer-get-editable.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if layer is edtiable, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it is not editable.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-vector-layer-set-editable"></a><h3>gwy_vector_layer_set_editable ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_vector_layer_set_editable (<em class="parameter"><code><a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="type">GwyVectorLayer</span></a> *layer</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> editable</code></em>);</pre>
+<p>Sets a vector layer editability.</p>
+<p>It is an error to attempt to set a layer non-editabile while it is being
+edited.</p>
+<p>When a layer is set noneditable, the user cannot change the selection.
+However, "object-chosen" signal is still emitted.</p>
+<div class="refsect3">
+<a name="gwy-vector-layer-set-editable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer</p></td>
+<td class="parameter_description"><p>A vector data view layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>editable</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to set layer editable, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to set it noneditable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-vector-layer-draw"></a><h3>gwy_vector_layer_draw ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_vector_layer_draw (<em class="parameter"><code><a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="type">GwyVectorLayer</span></a> *layer</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gdk2/gdk2-Drawing-Primitives.html#GdkDrawable-struct"><span class="type">GdkDrawable</span></a> *drawable</code></em>,
+                       <em class="parameter"><code><a href="../libgwydraw-gwydrawenums.html#GwyRenderingTarget"><span class="type">GwyRenderingTarget</span></a> target</code></em>);</pre>
+<p>Draws <em class="parameter"><code>layer</code></em>
+ on given drawable (which should be a <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> window).</p>
+<div class="refsect3">
+<a name="gwy-vector-layer-draw.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer</p></td>
+<td class="parameter_description"><p>A vector data view layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>drawable</p></td>
+<td class="parameter_description"><p>A drawable to draw on.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>Rendering target.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-vector-layer-button-press"></a><h3>gwy_vector_layer_button_press ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_vector_layer_button_press (<em class="parameter"><code><a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="type">GwyVectorLayer</span></a> *layer</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gdk3/gdk3-Event-Structures.html#GdkEventButton"><span class="type">GdkEventButton</span></a> *event</code></em>);</pre>
+<p>Sends a mouse button press event to a layer.</p>
+<p>This method primarily exists for <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> to forward events to
+layers.  You should rarely need it.</p>
+<div class="refsect3">
+<a name="gwy-vector-layer-button-press.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer</p></td>
+<td class="parameter_description"><p>A vector data view layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>event</p></td>
+<td class="parameter_description"><p>A Gdk mouse button event.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-vector-layer-button-press.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the event was handled.  In practice, it returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-vector-layer-button-release"></a><h3>gwy_vector_layer_button_release ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_vector_layer_button_release (<em class="parameter"><code><a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="type">GwyVectorLayer</span></a> *layer</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gdk3/gdk3-Event-Structures.html#GdkEventButton"><span class="type">GdkEventButton</span></a> *event</code></em>);</pre>
+<p>Sends a mouse button release event to a layer.</p>
+<p>This method primarily exists for <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> to forward events to
+layers.  You should rarely need it.</p>
+<div class="refsect3">
+<a name="gwy-vector-layer-button-release.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer</p></td>
+<td class="parameter_description"><p>A vector data view layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>event</p></td>
+<td class="parameter_description"><p>A Gdk mouse button event.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-vector-layer-button-release.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the event was handled.  In practice, it returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-vector-layer-motion-notify"></a><h3>gwy_vector_layer_motion_notify ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_vector_layer_motion_notify (<em class="parameter"><code><a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="type">GwyVectorLayer</span></a> *layer</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gdk3/gdk3-Event-Structures.html#GdkEventMotion"><span class="type">GdkEventMotion</span></a> *event</code></em>);</pre>
+<p>Sends a mouse pointer motion notification event to a layer.</p>
+<p>This method primarily exists for <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> to forward events to
+layers.  You should rarely need it.</p>
+<div class="refsect3">
+<a name="gwy-vector-layer-motion-notify.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer</p></td>
+<td class="parameter_description"><p>A vector data view layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>event</p></td>
+<td class="parameter_description"><p>A Gdk mouse pointer motion notification event.  It can be a hint.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-vector-layer-motion-notify.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the event was handled.  In practice, it returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-vector-layer-key-press"></a><h3>gwy_vector_layer_key_press ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_vector_layer_key_press (<em class="parameter"><code><a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="type">GwyVectorLayer</span></a> *layer</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gdk3/gdk3-Event-Structures.html#GdkEventKey"><span class="type">GdkEventKey</span></a> *event</code></em>);</pre>
+<p>Sends a key press event to a layer.</p>
+<p>This method primarily exists for <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> to forward events to
+layers.  You should rarely need it.</p>
+<div class="refsect3">
+<a name="gwy-vector-layer-key-press.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer</p></td>
+<td class="parameter_description"><p>A vector data view layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>event</p></td>
+<td class="parameter_description"><p>A Gdk key event.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-vector-layer-key-press.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the event was handled.  In practice, it returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-vector-layer-key-release"></a><h3>gwy_vector_layer_key_release ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_vector_layer_key_release (<em class="parameter"><code><a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="type">GwyVectorLayer</span></a> *layer</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gdk3/gdk3-Event-Structures.html#GdkEventKey"><span class="type">GdkEventKey</span></a> *event</code></em>);</pre>
+<p>Sends a key release event to a layer.</p>
+<p>This method primarily exists for <a class="link" href="GwyDataView.html" title="GwyDataView"><span class="type">GwyDataView</span></a> to forward events to
+layers.  You should rarely need it.</p>
+<div class="refsect3">
+<a name="gwy-vector-layer-key-release.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer</p></td>
+<td class="parameter_description"><p>A vector data view layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>event</p></td>
+<td class="parameter_description"><p>A Gdk key event.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-vector-layer-key-release.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the event was handled.  In practice, it returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-vector-layer-object-chosen"></a><h3>gwy_vector_layer_object_chosen ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_vector_layer_object_chosen (<em class="parameter"><code><a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="type">GwyVectorLayer</span></a> *layer</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Emits "object-chosen" signal on a vector layer.</p>
+<p>This function is primarily intended for layer implementations.</p>
+<div class="refsect3">
+<a name="gwy-vector-layer-object-chosen.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>layer</p></td>
+<td class="parameter_description"><p>A vector data view layer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Index of the chosen object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyVectorLayer.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyVectorLayer-struct"></a><h3>struct GwyVectorLayer</h3>
+<pre class="programlisting">struct GwyVectorLayer;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyVectorLayerClass"></a><h3>struct GwyVectorLayerClass</h3>
+<pre class="programlisting">struct GwyVectorLayerClass {
+    GwyDataViewLayerClass parent_class;
+
+    GType selection_type;
+
+    /* Signals */
+    gboolean (*object_chosen)(GwyVectorLayer *layer,
+                              gint id);
+
+    /* Virtual table */
+    void (*draw)(GwyVectorLayer *layer,
+                 GdkDrawable *drawable,
+                 GwyRenderingTarget target);
+    gboolean (*button_press)(GwyVectorLayer *layer,
+                             GdkEventButton *event);
+    gboolean (*button_release)(GwyVectorLayer *layer,
+                               GdkEventButton *event);
+    gboolean (*motion_notify)(GwyVectorLayer *layer,
+                              GdkEventMotion *event);
+    gboolean (*key_press)(GwyVectorLayer *layer,
+                          GdkEventKey *event);
+    gboolean (*key_release)(GwyVectorLayer *layer,
+                            GdkEventKey *event);
+    gboolean (*set_focus)(GwyVectorLayer *layer,
+                          gint object);
+
+    void (*reserved1)(void);
+    void (*reserved2)(void);
+    void (*reserved3)(void);
+    void (*reserved4)(void);
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyVectorLayer.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GwyVectorLayer--editable"></a><h3>The <code class="literal">“editable”</code> property</h3>
+<pre class="programlisting">  “editable”                 <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether selection objects are editable.</p>
+<p>Owner: GwyVectorLayer</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyVectorLayer--focus"></a><h3>The <code class="literal">“focus”</code> property</h3>
+<pre class="programlisting">  “focus”                    <span class="type">int</span></pre>
+<p>The id of focused object, or -1 if all objects are active.</p>
+<p>Owner: GwyVectorLayer</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= -1</p>
+<p>Default value: -1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyVectorLayer--selection-key"></a><h3>The <code class="literal">“selection-key”</code> property</h3>
+<pre class="programlisting">  “selection-key”            <span class="type">char</span> *</pre>
+<p>The key identifying selection object in data container.</p>
+<p>Owner: GwyVectorLayer</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyVectorLayer.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GwyVectorLayer-object-chosen"></a><h3>The <code class="literal">“object-chosen”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="type">GwyVectorLayer</span></a> *gwyvectorlayer,
+               <span class="type">int</span>             arg1,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>        user_data)</pre>
+<p>The ::object-chosen signal is emitted when user starts interacting
+with a selection object, even before modifying it.  It is emitted
+even if the layer is not editable, but it is not emitted when focus
+is set and the user attempts to choose a different object.</p>
+<div class="refsect3">
+<a name="GwyVectorLayer-object-chosen.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwyvectorlayer</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyVectorLayer.html" title="GwyVectorLayer"><span class="type">GwyVectorLayer</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arg1</p></td>
+<td class="parameter_description"><p>The number (index) of the chosen selection object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyVectorLayer.see-also"></a><h2>See Also</h2>
+<a class="link" href="standard-vector-layers.html" title="Standard Vector Layers">Standard vector
+layers</a>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwySelectionGraphPoint: Gwyddion Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Widgets Library Reference Manual">
+<link rel="up" href="GraphWidgets.html" title="Graphs">
+<link rel="prev" href="GwySelectionGraphLine.html" title="GwySelectionGraphLine">
+<link rel="next" href="GwySelectionGraphZoom.html" title="GwySelectionGraphZoom">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwySelectionGraphPoint.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwySelectionGraphPoint.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GwySelectionGraphPoint.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="GraphWidgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GwySelectionGraphLine.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwySelectionGraphZoom.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwySelectionGraphPoint"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwySelectionGraphPoint.top_of_page"></a>GwySelectionGraphPoint</span></h2>
+<p>GwySelectionGraphPoint — Point-wise graph selection</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwySelectionGraphPoint.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="function_type">
+<a href="../GwySelection.html#GwySelection-struct"><span class="returnvalue">GwySelection</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySelectionGraphPoint.html#gwy-selection-graph-point-new" title="gwy_selection_graph_point_new ()">gwy_selection_graph_point_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphPoint.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwySelectionGraphPoint.html#GwySelectionGraphPoint-struct" title="struct GwySelectionGraphPoint">GwySelectionGraphPoint</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwySelectionGraphPoint.html#GwySelectionGraphPointClass" title="struct GwySelectionGraphPointClass">GwySelectionGraphPointClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphPoint.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="../GwySelection.html#GwySelection-struct">GwySelection</a>
+        <span class="lineart">╰──</span> GwySelectionGraphPoint
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphPoint.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GwySelectionGraphPoint implements
+ <a href="../GwySerializable.html#GwySerializable-struct">GwySerializable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphPoint.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwydgets/gwydgets.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphPoint.description"></a><h2>Description</h2>
+<p><a class="link" href="GwySelectionGraphPoint.html" title="GwySelectionGraphPoint"><span class="type">GwySelectionGraphPoint</span></a> is used to represent point-wise graph selections.
+Selection data consists of coordinate pairs (x, y).</p>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphPoint.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-selection-graph-point-new"></a><h3>gwy_selection_graph_point_new ()</h3>
+<pre class="programlisting"><a href="../GwySelection.html#GwySelection-struct"><span class="returnvalue">GwySelection</span></a> *
+gwy_selection_graph_point_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new point-wise graph selection.</p>
+<div class="refsect3">
+<a name="gwy-selection-graph-point-new.returns"></a><h4>Returns</h4>
+<p> A new selection object.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-1.html#api-index-2.1">2.1</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphPoint.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwySelectionGraphPoint-struct"></a><h3>struct GwySelectionGraphPoint</h3>
+<pre class="programlisting">struct GwySelectionGraphPoint;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwySelectionGraphPointClass"></a><h3>struct GwySelectionGraphPointClass</h3>
+<pre class="programlisting">struct GwySelectionGraphPointClass {
+    GwySelectionClass parent_class;
+};
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

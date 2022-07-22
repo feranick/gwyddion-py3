@@ -1,0 +1,774 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>log: Gwyddion Application Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="prev" href="libgwyapp-help.html" title="help">
+<link rel="next" href="libgwyapp-logging.html" title="logging">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyapp-log.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyapp-help.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyapp-logging.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyapp-log"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyapp-log.top_of_page"></a>log</span></h2>
+<p>log — Logging data processing operations</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyapp-log.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-log.html#gwy-app-channel-log-add" title="gwy_app_channel_log_add ()">gwy_app_channel_log_add</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-log.html#gwy-app-volume-log-add" title="gwy_app_volume_log_add ()">gwy_app_volume_log_add</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-log.html#gwy-app-xyz-log-add" title="gwy_app_xyz_log_add ()">gwy_app_xyz_log_add</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-log.html#gwy-app-curve-map-log-add" title="gwy_app_curve_map_log_add ()">gwy_app_curve_map_log_add</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-log.html#gwy-app-channel-log-add-proc" title="gwy_app_channel_log_add_proc ()">gwy_app_channel_log_add_proc</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-log.html#gwy-app-volume-log-add-volume" title="gwy_app_volume_log_add_volume ()">gwy_app_volume_log_add_volume</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-log.html#gwy-app-xyz-log-add-xyz" title="gwy_app_xyz_log_add_xyz ()">gwy_app_xyz_log_add_xyz</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-log.html#gwy-app-curve-map-log-add-curve-map" title="gwy_app_curve_map_log_add_curve_map ()">gwy_app_curve_map_log_add_curve_map</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-log.html#gwy-app-log-browser-for-channel" title="gwy_app_log_browser_for_channel ()">gwy_app_log_browser_for_channel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-log.html#gwy-app-log-browser-for-volume" title="gwy_app_log_browser_for_volume ()">gwy_app_log_browser_for_volume</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-log.html#gwy-app-log-browser-for-xyz" title="gwy_app_log_browser_for_xyz ()">gwy_app_log_browser_for_xyz</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-log.html#gwy-app-log-browser-for-curve-map" title="gwy_app_log_browser_for_curve_map ()">gwy_app_log_browser_for_curve_map</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-log.html#gwy-log-get-enabled" title="gwy_log_get_enabled ()">gwy_log_get_enabled</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-log.html#gwy-log-set-enabled" title="gwy_log_set_enabled ()">gwy_log_set_enabled</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-log.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;app/gwyapp.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-log.description"></a><h2>Description</h2>
+<p>The data processing operation log is a linear sequence of operations applied to a image, volume, XYZ or curve map
+data.  The log is informative and not meant to capture all information necessary to reply the operations, even
+though it can be sufficient for this purpose in simple cases.</p>
+<p>The log is a linear sequence.  This is only an approximation of the actual flow of information in the data
+processing, which corresponds to an acyclic directed graph (not necessarily connected as data, masks and
+presentations can have distinct sources).  The following rules thus apply to make it meaningful and useful.</p>
+<p>Each logging function takes two data identifiers: source and target. The source corresponds to the operation input,
+the target corresponds to the data whose log is being updated.  The target may have already a log only if it is the
+same as the source (which corresponds to simple data modification such as levelling or grain marking).  In all
+other cases the target must not have a log yet – they represent the creation of new data either from scratch or
+based on existing data (in the latter case the log of the existing data is replicated to the new one).</p>
+<p>Complex multi-data operations are approximated by one of the simple operations.  For instance, data arithmetic can
+be treated as the construction of a new channel from scratch as it is unclear which input data the output channel
+is actually based on, if any at all.  Modifications that use data from other channels, such as masking using
+another data or tip convolution, should be represented as simple modifications of the primary channel.</p>
+<p>Logging functions such as <a class="link" href="libgwyapp-log.html#gwy-app-channel-log-add" title="gwy_app_channel_log_add ()"><code class="function">gwy_app_channel_log_add()</code></a> take settings values corresponding to the function name and
+store them in the log entry. If the settings are stored under a different name, use the "settings-name" logging
+option to set the correct name.</p>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-log.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-app-channel-log-add"></a><h3>gwy_app_channel_log_add ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_channel_log_add (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                         <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> previd</code></em>,
+                         <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> newid</code></em>,
+                         <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *function</code></em>,
+                         <em class="parameter"><code>...</code></em>);</pre>
+<p>Adds an entry to the log of data processing operations for a channel.</p>
+<p>See the introduction for a description of valid <em class="parameter"><code>previd</code></em>
+ and <em class="parameter"><code>newid</code></em>
+.</p>
+<p>It is possible to pass <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> as <em class="parameter"><code>function</code></em>
+.  In this case the log is just copied from source to target without
+adding any entries.  This can be useful to prevent duplicate log entries in modules that modify a data field and
+then can also create secondary outputs.  Note you still need to pass a second <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> argument as the option
+terminator.</p>
+<div class="refsect3">
+<a name="gwy-app-channel-log-add.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>previd</p></td>
+<td class="parameter_description"><p>Identifier of the previous (source) data channel in the container.
+Pass -1 for a no-source (or unclear source) operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>newid</p></td>
+<td class="parameter_description"><p>Identifier of the new (target) data channel in the container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>function</p></td>
+<td class="parameter_description"><p>Quailified name of the function applied as shown by the module browser.  For instance
+"proc::facet-level" or "tool::GwyToolCrop".</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Logging options as a <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated list of pairs name, value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-35.html#api-index-2.35">2.35</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-volume-log-add"></a><h3>gwy_app_volume_log_add ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_volume_log_add (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                        <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> previd</code></em>,
+                        <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> newid</code></em>,
+                        <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *function</code></em>,
+                        <em class="parameter"><code>...</code></em>);</pre>
+<p>Adds an entry to the log of data processing operations for volume data.</p>
+<p>See the introduction for a description of valid <em class="parameter"><code>previd</code></em>
+ and <em class="parameter"><code>newid</code></em>
+.</p>
+<p>It is possible to pass <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> as <em class="parameter"><code>function</code></em>
+.  In this case the log is just copied from source to target without
+adding any entries.  This can be useful to prevent duplicate log entries in modules that modify a data field and
+then can also create secondary outputs.  Note you still need to pass a second <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> argument as the option
+terminator.</p>
+<div class="refsect3">
+<a name="gwy-app-volume-log-add.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>previd</p></td>
+<td class="parameter_description"><p>Identifier of the previous (source) volume data in the container.
+Pass -1 for a no-source (or unclear source) operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>newid</p></td>
+<td class="parameter_description"><p>Identifier of the new (target) volume data in the container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>function</p></td>
+<td class="parameter_description"><p>Quailified name of the function applied as shown by the module browser.  For instance
+"volume::volume_invert".</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Logging options as a <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated list of pairs name, value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-35.html#api-index-2.35">2.35</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-xyz-log-add"></a><h3>gwy_app_xyz_log_add ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_xyz_log_add (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> previd</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> newid</code></em>,
+                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *function</code></em>,
+                     <em class="parameter"><code>...</code></em>);</pre>
+<p>Adds an entry to the log of data processing operations for XYZ data.</p>
+<p>See the introduction for a description of valid <em class="parameter"><code>previd</code></em>
+ and <em class="parameter"><code>newid</code></em>
+.</p>
+<p>It is possible to pass <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> as <em class="parameter"><code>function</code></em>
+.  In this case the log is just copied from source to target without
+adding any entries.  This can be useful to prevent duplicate log entries in modules that modify a data field and
+then can also create secondary outputs.  Note you still need to pass a second <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> argument as the option
+terminator.</p>
+<div class="refsect3">
+<a name="gwy-app-xyz-log-add.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>previd</p></td>
+<td class="parameter_description"><p>Identifier of the previous (source) XYZ data in the container.
+Pass -1 for a no-source (or unclear source) operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>newid</p></td>
+<td class="parameter_description"><p>Identifier of the new (target) XYZ data in the container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>function</p></td>
+<td class="parameter_description"><p>Quailified name of the function applied as shown by the module browser.  For instance "xyz::xyz_invert".</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Logging options as a <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated list of pairs name, value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-curve-map-log-add"></a><h3>gwy_app_curve_map_log_add ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_curve_map_log_add (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> previd</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> newid</code></em>,
+                           <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *function</code></em>,
+                           <em class="parameter"><code>...</code></em>);</pre>
+<p>Adds an entry to the log of data processing operations for <a href="../GwyLawn.html#GwyLawn-struct"><span class="type">GwyLawn</span></a> curve map.</p>
+<p>See the introduction for a description of valid <em class="parameter"><code>previd</code></em>
+ and <em class="parameter"><code>newid</code></em>
+.</p>
+<p>It is possible to pass <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> as <em class="parameter"><code>function</code></em>
+.  In this case the log is just copied from source to target without
+adding any entries.  This can be useful to prevent duplicate log entries in modules that modify a data field and
+then can also create secondary outputs.  Note you still need to pass a second <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> argument as the option
+terminator.</p>
+<div class="refsect3">
+<a name="gwy-app-curve-map-log-add.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>previd</p></td>
+<td class="parameter_description"><p>Identifier of the previous (source) <a href="../GwyLawn.html#GwyLawn-struct"><span class="type">GwyLawn</span></a> curve map in the container.
+Pass -1 for a no-source (or unclear source) operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>newid</p></td>
+<td class="parameter_description"><p>Identifier of the new (target) <a href="../GwyLawn.html#GwyLawn-struct"><span class="type">GwyLawn</span></a> curve map in the container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>function</p></td>
+<td class="parameter_description"><p>Quailified name of the function applied as shown by the module browser.  For instance "cmap::cmap_crop".</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Logging options as a <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated list of pairs name, value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-channel-log-add-proc"></a><h3>gwy_app_channel_log_add_proc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_channel_log_add_proc (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> previd</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> newid</code></em>);</pre>
+<p>Adds an entry to the log of the current data processing operations for a channel.</p>
+<p>This simplified variant of <a class="link" href="libgwyapp-log.html#gwy-app-channel-log-add" title="gwy_app_channel_log_add ()"><code class="function">gwy_app_channel_log_add()</code></a> takes the currently running data processing function name and
+constructs the qualified function name from that.</p>
+<div class="refsect3">
+<a name="gwy-app-channel-log-add-proc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>previd</p></td>
+<td class="parameter_description"><p>Identifier of the previous (source) data channel in the container.
+Pass -1 for a no-source (or unclear source) operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>newid</p></td>
+<td class="parameter_description"><p>Identifier of the new (target) data channel in the container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-38.html#api-index-2.38">2.38</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-volume-log-add-volume"></a><h3>gwy_app_volume_log_add_volume ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_volume_log_add_volume (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> previd</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> newid</code></em>);</pre>
+<p>Adds an entry to the log of the current volume data processing operations for volume data.</p>
+<p>This simplified variant of <a class="link" href="libgwyapp-log.html#gwy-app-volume-log-add" title="gwy_app_volume_log_add ()"><code class="function">gwy_app_volume_log_add()</code></a> takes the currently running function volume data processing
+name and constructs the qualified function name from that.</p>
+<div class="refsect3">
+<a name="gwy-app-volume-log-add-volume.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>previd</p></td>
+<td class="parameter_description"><p>Identifier of the previous (source) volume data in the container.
+Pass -1 for a no-source (or unclear source) operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>newid</p></td>
+<td class="parameter_description"><p>Identifier of the new (target) volume data in the container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-38.html#api-index-2.38">2.38</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-xyz-log-add-xyz"></a><h3>gwy_app_xyz_log_add_xyz ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_xyz_log_add_xyz (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> previd</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> newid</code></em>);</pre>
+<p>Adds an entry to the log of the current XYZ data processing operations for XYZ data.</p>
+<p>This simplified variant of <a class="link" href="libgwyapp-log.html#gwy-app-xyz-log-add" title="gwy_app_xyz_log_add ()"><code class="function">gwy_app_xyz_log_add()</code></a> takes the currently running function XYZ data processing name and
+constructs the qualified function name from that.</p>
+<div class="refsect3">
+<a name="gwy-app-xyz-log-add-xyz.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>previd</p></td>
+<td class="parameter_description"><p>Identifier of the previous (source) XYZ data in the container.
+Pass -1 for a no-source (or unclear source) operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>newid</p></td>
+<td class="parameter_description"><p>Identifier of the new (target) XYZ data in the container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-curve-map-log-add-curve-map"></a><h3>gwy_app_curve_map_log_add_curve_map ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_curve_map_log_add_curve_map (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> previd</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> newid</code></em>);</pre>
+<p>Adds an entry to the log of the current <a href="../GwyLawn.html#GwyLawn-struct"><span class="type">GwyLawn</span></a> curve map processing operations for <a href="../GwyLawn.html#GwyLawn-struct"><span class="type">GwyLawn</span></a> curve map.</p>
+<p>This simplified variant of <a class="link" href="libgwyapp-log.html#gwy-app-curve-map-log-add" title="gwy_app_curve_map_log_add ()"><code class="function">gwy_app_curve_map_log_add()</code></a> takes the currently running function <a href="../GwyLawn.html#GwyLawn-struct"><span class="type">GwyLawn</span></a> curve map
+processing name and constructs the qualified function name from that.</p>
+<div class="refsect3">
+<a name="gwy-app-curve-map-log-add-curve-map.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>previd</p></td>
+<td class="parameter_description"><p>Identifier of the previous (source) <a href="../GwyLawn.html#GwyLawn-struct"><span class="type">GwyLawn</span></a> curve map in the container.
+Pass -1 for a no-source (or unclear source) operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>newid</p></td>
+<td class="parameter_description"><p>Identifier of the new (target) <a href="../GwyLawn.html#GwyLawn-struct"><span class="type">GwyLawn</span></a> curve map in the container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-log-browser-for-channel"></a><h3>gwy_app_log_browser_for_channel ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_app_log_browser_for_channel (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Shows a simple log browser for a channel.</p>
+<p>If the log browser is already shown for this channel it is just raised and given focus.  Otherwise, a new window is
+created.</p>
+<div class="refsect3">
+<a name="gwy-app-log-browser-for-channel.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Id of a channel in <em class="parameter"><code>data</code></em>
+to show log for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-log-browser-for-channel.returns"></a><h4>Returns</h4>
+<p> The log browser (owned by the library).  Usually, you can ignore the return value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-35.html#api-index-2.35">2.35</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-log-browser-for-volume"></a><h3>gwy_app_log_browser_for_volume ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_app_log_browser_for_volume (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Shows a simple log browser for volume data.</p>
+<p>If the log browser is already shown for this volume data it is just raised and given focus.  Otherwise, a new
+window is created.</p>
+<div class="refsect3">
+<a name="gwy-app-log-browser-for-volume.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Id of volume data in <em class="parameter"><code>data</code></em>
+to show log for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-log-browser-for-volume.returns"></a><h4>Returns</h4>
+<p> The log browser (owned by the library).  Usually, you can ignore the return value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-35.html#api-index-2.35">2.35</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-log-browser-for-xyz"></a><h3>gwy_app_log_browser_for_xyz ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_app_log_browser_for_xyz (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Shows a simple log browser for XYZ data.</p>
+<p>If the log browser is already shown for this XYZ data it is just raised and given focus.  Otherwise, a new window
+is created.</p>
+<div class="refsect3">
+<a name="gwy-app-log-browser-for-xyz.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Id of XYZ data in <em class="parameter"><code>data</code></em>
+to show log for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-log-browser-for-xyz.returns"></a><h4>Returns</h4>
+<p> The log browser (owned by the library).  Usually, you can ignore the return value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-log-browser-for-curve-map"></a><h3>gwy_app_log_browser_for_curve_map ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_app_log_browser_for_curve_map (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Shows a simple log browser for <a href="../GwyLawn.html#GwyLawn-struct"><span class="type">GwyLawn</span></a> curve map.</p>
+<p>If the log browser is already shown for this <a href="../GwyLawn.html#GwyLawn-struct"><span class="type">GwyLawn</span></a> curve map it is just raised and given focus.  Otherwise,
+a new window is created.</p>
+<div class="refsect3">
+<a name="gwy-app-log-browser-for-curve-map.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Id of <a href="../GwyLawn.html#GwyLawn-struct"><span class="type">GwyLawn</span></a> curve map in <em class="parameter"><code>data</code></em>
+to show log for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-log-browser-for-curve-map.returns"></a><h4>Returns</h4>
+<p> The log browser (owned by the library).  Usually, you can ignore the return value.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-log-get-enabled"></a><h3>gwy_log_get_enabled ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_log_get_enabled (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Reports whether logging of data processing operations is globally enabled.</p>
+<div class="refsect3">
+<a name="gwy-log-get-enabled.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if logging is enabled, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it is disabled.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-35.html#api-index-2.35">2.35</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-log-set-enabled"></a><h3>gwy_log_set_enabled ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_log_set_enabled (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> setting</code></em>);</pre>
+<p>Globally enables or disables logging of data processing operations.</p>
+<p>By default, logging is enabled.  Non-GUI applications that run module functions may wish to disable it.  Of course,
+the log will presist only if the data container is saved into a GWY file.</p>
+<p>If logging is disabled logging functions such as <a class="link" href="libgwyapp-log.html#gwy-app-channel-log-add" title="gwy_app_channel_log_add ()"><code class="function">gwy_app_channel_log_add()</code></a> become no-op.  It is possible to run the
+log viewer with <a class="link" href="libgwyapp-log.html#gwy-app-log-browser-for-channel" title="gwy_app_log_browser_for_channel ()"><code class="function">gwy_app_log_browser_for_channel()</code></a> to see log entries created when logging was enabled.</p>
+<div class="refsect3">
+<a name="gwy-log-set-enabled.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>setting</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to enable logging, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to disable it.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-35.html#api-index-2.35">2.35</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

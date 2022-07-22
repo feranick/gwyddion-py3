@@ -1,0 +1,1313 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="Gwyddion Data Processing Library Reference Manual" link="index.html" author="" name="libgwyprocess" version="2" language="c" online="http://gwyddion.net/documentation/libgwyprocess/index.php">
+  <chapters>
+    <sub name="GwyDataLine" link="GwyDataLine.html"/>
+    <sub name="GwyDataField" link="GwyDataField.html"/>
+    <sub name="GwySpectra" link="GwySpectra.html"/>
+    <sub name="GwyBrick" link="GwyBrick.html"/>
+    <sub name="GwySurface" link="GwySurface.html"/>
+    <sub name="GwyLawn" link="GwyLawn.html"/>
+    <sub name="GwyCalibration" link="GwyCalibration.html"/>
+    <sub name="GwyCalData" link="GwyCalData.html"/>
+    <sub name="arithmetic" link="libgwyprocess-arithmetic.html"/>
+    <sub name="cdline" link="GwyCDLine.html"/>
+    <sub name="correct" link="libgwyprocess-correct.html"/>
+    <sub name="correlation" link="libgwyprocess-correlation.html"/>
+    <sub name="cwt" link="libgwyprocess-cwt.html"/>
+    <sub name="dwt" link="libgwyprocess-dwt.html"/>
+    <sub name="elliptic" link="libgwyprocess-elliptic.html"/>
+    <sub name="filters" link="libgwyprocess-filters.html"/>
+    <sub name="fractals" link="libgwyprocess-fractals.html"/>
+    <sub name="grains" link="libgwyprocess-grains.html"/>
+    <sub name="GwyGrainValue" link="GwyGrainValue.html"/>
+    <sub name="hough" link="libgwyprocess-hough.html"/>
+    <sub name="inttrans" link="libgwyprocess-inttrans.html"/>
+    <sub name="interpolation" link="libgwyprocess-interpolation.html"/>
+    <sub name="level" link="libgwyprocess-level.html"/>
+    <sub name="linestats" link="libgwyprocess-linestats.html"/>
+    <sub name="simpleFFT" link="libgwyprocess-simpleFFT.html"/>
+    <sub name="GwyPeaks" link="libgwyprocess-GwyPeaks.html"/>
+    <sub name="GwyShapeFitPreset" link="GwyShapeFitPreset.html"/>
+    <sub name="GwySpline" link="libgwyprocess-GwySpline.html"/>
+    <sub name="stats" link="libgwyprocess-stats.html"/>
+    <sub name="stats uncertainty" link="libgwyprocess-stats-uncertainty.html"/>
+    <sub name="tip" link="libgwyprocess-tip.html"/>
+    <sub name="MFM" link="libgwyprocess-MFM.html"/>
+    <sub name="synth" link="libgwyprocess-synth.html"/>
+    <sub name="triangulation" link="GwyTriangulation.html"/>
+    <sub name="gwyprocess" link="libgwyprocess-gwyprocess.html"/>
+    <sub name="gwyprocessenums" link="libgwyprocess-gwyprocessenums.html"/>
+    <sub name="Index of all symbols" link="api-index-all.html"/>
+    <sub name="Index of deprecated symbols" link="api-index-deprec.html"/>
+    <sub name="Index of new symbols in 2.1" link="api-index-2-1.html"/>
+    <sub name="Index of new symbols in 2.2" link="api-index-2-2.html"/>
+    <sub name="Index of new symbols in 2.3" link="api-index-2-3.html"/>
+    <sub name="Index of new symbols in 2.4" link="api-index-2-4.html"/>
+    <sub name="Index of new symbols in 2.5" link="api-index-2-5.html"/>
+    <sub name="Index of new symbols in 2.7" link="api-index-2-7.html"/>
+    <sub name="Index of new symbols in 2.8" link="api-index-2-8.html"/>
+    <sub name="Index of new symbols in 2.11" link="api-index-2-11.html"/>
+    <sub name="Index of new symbols in 2.12" link="api-index-2-12.html"/>
+    <sub name="Index of new symbols in 2.18" link="api-index-2-18.html"/>
+    <sub name="Index of new symbols in 2.22" link="api-index-2-22.html"/>
+    <sub name="Index of new symbols in 2.23" link="api-index-2-23.html"/>
+    <sub name="Index of new symbols in 2.26" link="api-index-2-26.html"/>
+    <sub name="Index of new symbols in 2.29" link="api-index-2-29.html"/>
+    <sub name="Index of new symbols in 2.30" link="api-index-2-30.html"/>
+    <sub name="Index of new symbols in 2.31" link="api-index-2-31.html"/>
+    <sub name="Index of new symbols in 2.32" link="api-index-2-32.html"/>
+    <sub name="Index of new symbols in 2.34" link="api-index-2-34.html"/>
+    <sub name="Index of new symbols in 2.35" link="api-index-2-35.html"/>
+    <sub name="Index of new symbols in 2.36" link="api-index-2-36.html"/>
+    <sub name="Index of new symbols in 2.37" link="api-index-2-37.html"/>
+    <sub name="Index of new symbols in 2.38" link="api-index-2-38.html"/>
+    <sub name="Index of new symbols in 2.40" link="api-index-2-40.html"/>
+    <sub name="Index of new symbols in 2.41" link="api-index-2-41.html"/>
+    <sub name="Index of new symbols in 2.42" link="api-index-2-42.html"/>
+    <sub name="Index of new symbols in 2.43" link="api-index-2-43.html"/>
+    <sub name="Index of new symbols in 2.44" link="api-index-2-44.html"/>
+    <sub name="Index of new symbols in 2.45" link="api-index-2-45.html"/>
+    <sub name="Index of new symbols in 2.46" link="api-index-2-46.html"/>
+    <sub name="Index of new symbols in 2.47" link="api-index-2-47.html"/>
+    <sub name="Index of new symbols in 2.48" link="api-index-2-48.html"/>
+    <sub name="Index of new symbols in 2.49" link="api-index-2-49.html"/>
+    <sub name="Index of new symbols in 2.50" link="api-index-2-50.html"/>
+    <sub name="Index of new symbols in 2.51" link="api-index-2-51.html"/>
+    <sub name="Index of new symbols in 2.52" link="api-index-2-52.html"/>
+    <sub name="Index of new symbols in 2.53" link="api-index-2-53.html"/>
+    <sub name="Index of new symbols in 2.54" link="api-index-2-54.html"/>
+    <sub name="Index of new symbols in 2.55" link="api-index-2-55.html"/>
+    <sub name="Index of new symbols in 2.56" link="api-index-2-56.html"/>
+    <sub name="Index of new symbols in 2.58" link="api-index-2-58.html"/>
+    <sub name="Index of new symbols in 2.59" link="api-index-2-59.html"/>
+    <sub name="Index of new symbols in 2.60" link="api-index-2-60.html"/>
+    <sub name="Index of new symbols in 2.61" link="api-index-2-61.html"/>
+  </chapters>
+  <functions>
+    <keyword type="macro" name="gwy_data_line_duplicate()" link="GwyDataLine.html#gwy-data-line-duplicate"/>
+    <keyword type="macro" name="gwy_data_line_assign()" link="GwyDataLine.html#gwy-data-line-assign" since="2.52"/>
+    <keyword type="function" name="gwy_data_line_new ()" link="GwyDataLine.html#gwy-data-line-new"/>
+    <keyword type="function" name="gwy_data_line_new_alike ()" link="GwyDataLine.html#gwy-data-line-new-alike"/>
+    <keyword type="function" name="gwy_data_line_data_changed ()" link="GwyDataLine.html#gwy-data-line-data-changed"/>
+    <keyword type="function" name="gwy_data_line_new_resampled ()" link="GwyDataLine.html#gwy-data-line-new-resampled" since="2.1"/>
+    <keyword type="function" name="gwy_data_line_resample ()" link="GwyDataLine.html#gwy-data-line-resample"/>
+    <keyword type="function" name="gwy_data_line_resize ()" link="GwyDataLine.html#gwy-data-line-resize"/>
+    <keyword type="function" name="gwy_data_line_part_extract ()" link="GwyDataLine.html#gwy-data-line-part-extract"/>
+    <keyword type="function" name="gwy_data_line_copy ()" link="GwyDataLine.html#gwy-data-line-copy"/>
+    <keyword type="function" name="gwy_data_line_get_data ()" link="GwyDataLine.html#gwy-data-line-get-data"/>
+    <keyword type="function" name="gwy_data_line_get_data_const ()" link="GwyDataLine.html#gwy-data-line-get-data-const"/>
+    <keyword type="function" name="gwy_data_line_get_res ()" link="GwyDataLine.html#gwy-data-line-get-res"/>
+    <keyword type="function" name="gwy_data_line_get_real ()" link="GwyDataLine.html#gwy-data-line-get-real"/>
+    <keyword type="function" name="gwy_data_line_set_real ()" link="GwyDataLine.html#gwy-data-line-set-real"/>
+    <keyword type="function" name="gwy_data_line_get_offset ()" link="GwyDataLine.html#gwy-data-line-get-offset"/>
+    <keyword type="function" name="gwy_data_line_set_offset ()" link="GwyDataLine.html#gwy-data-line-set-offset"/>
+    <keyword type="function" name="gwy_data_line_get_dx ()" link="GwyDataLine.html#gwy-data-line-get-dx" since="2.52"/>
+    <keyword type="function" name="gwy_data_line_get_si_unit_x ()" link="GwyDataLine.html#gwy-data-line-get-si-unit-x"/>
+    <keyword type="function" name="gwy_data_line_get_si_unit_y ()" link="GwyDataLine.html#gwy-data-line-get-si-unit-y"/>
+    <keyword type="function" name="gwy_data_line_set_si_unit_x ()" link="GwyDataLine.html#gwy-data-line-set-si-unit-x"/>
+    <keyword type="function" name="gwy_data_line_set_si_unit_y ()" link="GwyDataLine.html#gwy-data-line-set-si-unit-y"/>
+    <keyword type="function" name="gwy_data_line_get_value_format_x ()" link="GwyDataLine.html#gwy-data-line-get-value-format-x"/>
+    <keyword type="function" name="gwy_data_line_get_value_format_y ()" link="GwyDataLine.html#gwy-data-line-get-value-format-y"/>
+    <keyword type="function" name="gwy_data_line_copy_units ()" link="GwyDataLine.html#gwy-data-line-copy-units" since="2.49"/>
+    <keyword type="function" name="gwy_data_line_itor ()" link="GwyDataLine.html#gwy-data-line-itor"/>
+    <keyword type="function" name="gwy_data_line_rtoi ()" link="GwyDataLine.html#gwy-data-line-rtoi"/>
+    <keyword type="function" name="gwy_data_line_get_val ()" link="GwyDataLine.html#gwy-data-line-get-val"/>
+    <keyword type="function" name="gwy_data_line_set_val ()" link="GwyDataLine.html#gwy-data-line-set-val"/>
+    <keyword type="function" name="gwy_data_line_get_dval ()" link="GwyDataLine.html#gwy-data-line-get-dval"/>
+    <keyword type="function" name="gwy_data_line_get_dval_real ()" link="GwyDataLine.html#gwy-data-line-get-dval-real"/>
+    <keyword type="function" name="gwy_data_line_invert ()" link="GwyDataLine.html#gwy-data-line-invert"/>
+    <keyword type="function" name="gwy_data_line_clear ()" link="GwyDataLine.html#gwy-data-line-clear"/>
+    <keyword type="function" name="gwy_data_line_fill ()" link="GwyDataLine.html#gwy-data-line-fill"/>
+    <keyword type="function" name="gwy_data_line_multiply ()" link="GwyDataLine.html#gwy-data-line-multiply"/>
+    <keyword type="function" name="gwy_data_line_add ()" link="GwyDataLine.html#gwy-data-line-add"/>
+    <keyword type="function" name="gwy_data_line_part_clear ()" link="GwyDataLine.html#gwy-data-line-part-clear"/>
+    <keyword type="function" name="gwy_data_line_part_fill ()" link="GwyDataLine.html#gwy-data-line-part-fill"/>
+    <keyword type="function" name="gwy_data_line_part_multiply ()" link="GwyDataLine.html#gwy-data-line-part-multiply"/>
+    <keyword type="function" name="gwy_data_line_part_add ()" link="GwyDataLine.html#gwy-data-line-part-add"/>
+    <keyword type="function" name="gwy_data_line_sum_lines ()" link="GwyDataLine.html#gwy-data-line-sum-lines" since="2.56"/>
+    <keyword type="function" name="gwy_data_line_subtract_lines ()" link="GwyDataLine.html#gwy-data-line-subtract-lines" since="2.56"/>
+    <keyword type="function" name="gwy_data_line_multiply_lines ()" link="GwyDataLine.html#gwy-data-line-multiply-lines" since="2.56"/>
+    <keyword type="function" name="gwy_data_line_linear_combination ()" link="GwyDataLine.html#gwy-data-line-linear-combination" since="2.61"/>
+    <keyword type="function" name="gwy_data_line_threshold ()" link="GwyDataLine.html#gwy-data-line-threshold"/>
+    <keyword type="function" name="gwy_data_line_part_threshold ()" link="GwyDataLine.html#gwy-data-line-part-threshold"/>
+    <keyword type="function" name="gwy_data_line_get_line_coeffs ()" link="GwyDataLine.html#gwy-data-line-get-line-coeffs"/>
+    <keyword type="function" name="gwy_data_line_line_level ()" link="GwyDataLine.html#gwy-data-line-line-level"/>
+    <keyword type="function" name="gwy_data_line_rotate ()" link="GwyDataLine.html#gwy-data-line-rotate" since="2.7"/>
+    <keyword type="function" name="gwy_data_line_line_rotate ()" link="GwyDataLine.html#gwy-data-line-line-rotate" deprecated=""/>
+    <keyword type="function" name="gwy_data_line_get_der ()" link="GwyDataLine.html#gwy-data-line-get-der"/>
+    <keyword type="function" name="gwy_data_line_part_fit_polynom ()" link="GwyDataLine.html#gwy-data-line-part-fit-polynom"/>
+    <keyword type="function" name="gwy_data_line_fit_polynom ()" link="GwyDataLine.html#gwy-data-line-fit-polynom"/>
+    <keyword type="function" name="gwy_data_line_part_subtract_polynom ()" link="GwyDataLine.html#gwy-data-line-part-subtract-polynom"/>
+    <keyword type="function" name="gwy_data_line_subtract_polynom ()" link="GwyDataLine.html#gwy-data-line-subtract-polynom"/>
+    <keyword type="function" name="gwy_data_line_cumulate ()" link="GwyDataLine.html#gwy-data-line-cumulate"/>
+    <keyword type="function" name="gwy_data_line_sqrt ()" link="GwyDataLine.html#gwy-data-line-sqrt"/>
+    <keyword type="struct" name="struct GwyDataLine" link="GwyDataLine.html#GwyDataLine-struct"/>
+    <keyword type="struct" name="struct GwyDataLineClass" link="GwyDataLine.html#GwyDataLineClass"/>
+    <keyword type="signal" name="The “data-changed” signal" link="GwyDataLine.html#GwyDataLine-data-changed"/>
+    <keyword type="function" name="gwy_data_field_invalidate ()" link="GwyDataField.html#gwy-data-field-invalidate"/>
+    <keyword type="macro" name="gwy_data_field_duplicate()" link="GwyDataField.html#gwy-data-field-duplicate"/>
+    <keyword type="macro" name="gwy_data_field_assign()" link="GwyDataField.html#gwy-data-field-assign" since="2.52"/>
+    <keyword type="function" name="gwy_data_field_new ()" link="GwyDataField.html#gwy-data-field-new"/>
+    <keyword type="function" name="gwy_data_field_new_alike ()" link="GwyDataField.html#gwy-data-field-new-alike"/>
+    <keyword type="function" name="gwy_data_field_data_changed ()" link="GwyDataField.html#gwy-data-field-data-changed"/>
+    <keyword type="function" name="gwy_data_field_new_resampled ()" link="GwyDataField.html#gwy-data-field-new-resampled"/>
+    <keyword type="function" name="gwy_data_field_resample ()" link="GwyDataField.html#gwy-data-field-resample"/>
+    <keyword type="function" name="gwy_data_field_bin ()" link="GwyDataField.html#gwy-data-field-bin" since="2.55"/>
+    <keyword type="function" name="gwy_data_field_new_binned ()" link="GwyDataField.html#gwy-data-field-new-binned" since="2.50"/>
+    <keyword type="function" name="gwy_data_field_resize ()" link="GwyDataField.html#gwy-data-field-resize"/>
+    <keyword type="function" name="gwy_data_field_area_extract ()" link="GwyDataField.html#gwy-data-field-area-extract"/>
+    <keyword type="function" name="gwy_data_field_copy ()" link="GwyDataField.html#gwy-data-field-copy"/>
+    <keyword type="function" name="gwy_data_field_area_copy ()" link="GwyDataField.html#gwy-data-field-area-copy"/>
+    <keyword type="function" name="gwy_data_field_get_data ()" link="GwyDataField.html#gwy-data-field-get-data"/>
+    <keyword type="function" name="gwy_data_field_get_data_const ()" link="GwyDataField.html#gwy-data-field-get-data-const"/>
+    <keyword type="function" name="gwy_data_field_get_xres ()" link="GwyDataField.html#gwy-data-field-get-xres"/>
+    <keyword type="function" name="gwy_data_field_get_yres ()" link="GwyDataField.html#gwy-data-field-get-yres"/>
+    <keyword type="function" name="gwy_data_field_get_xreal ()" link="GwyDataField.html#gwy-data-field-get-xreal"/>
+    <keyword type="function" name="gwy_data_field_get_yreal ()" link="GwyDataField.html#gwy-data-field-get-yreal"/>
+    <keyword type="function" name="gwy_data_field_set_xreal ()" link="GwyDataField.html#gwy-data-field-set-xreal"/>
+    <keyword type="function" name="gwy_data_field_set_yreal ()" link="GwyDataField.html#gwy-data-field-set-yreal"/>
+    <keyword type="function" name="gwy_data_field_get_dx ()" link="GwyDataField.html#gwy-data-field-get-dx" since="2.52"/>
+    <keyword type="function" name="gwy_data_field_get_dy ()" link="GwyDataField.html#gwy-data-field-get-dy" since="2.52"/>
+    <keyword type="function" name="gwy_data_field_get_xoffset ()" link="GwyDataField.html#gwy-data-field-get-xoffset"/>
+    <keyword type="function" name="gwy_data_field_get_yoffset ()" link="GwyDataField.html#gwy-data-field-get-yoffset"/>
+    <keyword type="function" name="gwy_data_field_set_xoffset ()" link="GwyDataField.html#gwy-data-field-set-xoffset"/>
+    <keyword type="function" name="gwy_data_field_set_yoffset ()" link="GwyDataField.html#gwy-data-field-set-yoffset"/>
+    <keyword type="function" name="gwy_data_field_get_si_unit_xy ()" link="GwyDataField.html#gwy-data-field-get-si-unit-xy"/>
+    <keyword type="function" name="gwy_data_field_get_si_unit_z ()" link="GwyDataField.html#gwy-data-field-get-si-unit-z"/>
+    <keyword type="function" name="gwy_data_field_set_si_unit_xy ()" link="GwyDataField.html#gwy-data-field-set-si-unit-xy"/>
+    <keyword type="function" name="gwy_data_field_set_si_unit_z ()" link="GwyDataField.html#gwy-data-field-set-si-unit-z"/>
+    <keyword type="function" name="gwy_data_field_get_value_format_xy ()" link="GwyDataField.html#gwy-data-field-get-value-format-xy"/>
+    <keyword type="function" name="gwy_data_field_get_value_format_z ()" link="GwyDataField.html#gwy-data-field-get-value-format-z"/>
+    <keyword type="function" name="gwy_data_field_copy_units ()" link="GwyDataField.html#gwy-data-field-copy-units" since="2.49"/>
+    <keyword type="function" name="gwy_data_field_copy_units_to_data_line ()" link="GwyDataField.html#gwy-data-field-copy-units-to-data-line"/>
+    <keyword type="function" name="gwy_data_line_copy_units_to_data_field ()" link="GwyDataField.html#gwy-data-line-copy-units-to-data-field"/>
+    <keyword type="function" name="gwy_data_field_itor ()" link="GwyDataField.html#gwy-data-field-itor"/>
+    <keyword type="function" name="gwy_data_field_jtor ()" link="GwyDataField.html#gwy-data-field-jtor"/>
+    <keyword type="function" name="gwy_data_field_rtoi ()" link="GwyDataField.html#gwy-data-field-rtoi"/>
+    <keyword type="function" name="gwy_data_field_rtoj ()" link="GwyDataField.html#gwy-data-field-rtoj"/>
+    <keyword type="function" name="gwy_data_field_get_val ()" link="GwyDataField.html#gwy-data-field-get-val"/>
+    <keyword type="function" name="gwy_data_field_set_val ()" link="GwyDataField.html#gwy-data-field-set-val"/>
+    <keyword type="function" name="gwy_data_field_get_dval ()" link="GwyDataField.html#gwy-data-field-get-dval"/>
+    <keyword type="function" name="gwy_data_field_get_dval_real ()" link="GwyDataField.html#gwy-data-field-get-dval-real"/>
+    <keyword type="function" name="gwy_data_field_rotate ()" link="GwyDataField.html#gwy-data-field-rotate"/>
+    <keyword type="function" name="gwy_data_field_new_rotated ()" link="GwyDataField.html#gwy-data-field-new-rotated" since="2.46"/>
+    <keyword type="function" name="gwy_data_field_new_rotated_90 ()" link="GwyDataField.html#gwy-data-field-new-rotated-90" since="2.46"/>
+    <keyword type="function" name="gwy_data_field_invert ()" link="GwyDataField.html#gwy-data-field-invert"/>
+    <keyword type="function" name="gwy_data_field_flip_xy ()" link="GwyDataField.html#gwy-data-field-flip-xy" since="2.49"/>
+    <keyword type="function" name="gwy_data_field_area_flip_xy ()" link="GwyDataField.html#gwy-data-field-area-flip-xy" since="2.49"/>
+    <keyword type="function" name="gwy_data_field_fill ()" link="GwyDataField.html#gwy-data-field-fill"/>
+    <keyword type="function" name="gwy_data_field_clear ()" link="GwyDataField.html#gwy-data-field-clear"/>
+    <keyword type="function" name="gwy_data_field_multiply ()" link="GwyDataField.html#gwy-data-field-multiply"/>
+    <keyword type="function" name="gwy_data_field_add ()" link="GwyDataField.html#gwy-data-field-add"/>
+    <keyword type="function" name="gwy_data_field_abs ()" link="GwyDataField.html#gwy-data-field-abs" since="2.52"/>
+    <keyword type="function" name="gwy_data_field_area_fill ()" link="GwyDataField.html#gwy-data-field-area-fill"/>
+    <keyword type="function" name="gwy_data_field_area_fill_mask ()" link="GwyDataField.html#gwy-data-field-area-fill-mask" since="2.44"/>
+    <keyword type="function" name="gwy_data_field_area_clear ()" link="GwyDataField.html#gwy-data-field-area-clear"/>
+    <keyword type="function" name="gwy_data_field_area_multiply ()" link="GwyDataField.html#gwy-data-field-area-multiply"/>
+    <keyword type="function" name="gwy_data_field_area_add ()" link="GwyDataField.html#gwy-data-field-area-add"/>
+    <keyword type="function" name="gwy_data_field_area_abs ()" link="GwyDataField.html#gwy-data-field-area-abs" since="2.52"/>
+    <keyword type="function" name="gwy_data_field_get_profile ()" link="GwyDataField.html#gwy-data-field-get-profile"/>
+    <keyword type="function" name="gwy_data_field_get_profile_mask ()" link="GwyDataField.html#gwy-data-field-get-profile-mask" since="2.49"/>
+    <keyword type="function" name="gwy_data_field_get_row ()" link="GwyDataField.html#gwy-data-field-get-row"/>
+    <keyword type="function" name="gwy_data_field_get_column ()" link="GwyDataField.html#gwy-data-field-get-column"/>
+    <keyword type="function" name="gwy_data_field_set_row ()" link="GwyDataField.html#gwy-data-field-set-row"/>
+    <keyword type="function" name="gwy_data_field_set_column ()" link="GwyDataField.html#gwy-data-field-set-column"/>
+    <keyword type="function" name="gwy_data_field_get_row_part ()" link="GwyDataField.html#gwy-data-field-get-row-part"/>
+    <keyword type="function" name="gwy_data_field_get_column_part ()" link="GwyDataField.html#gwy-data-field-get-column-part"/>
+    <keyword type="function" name="gwy_data_field_set_row_part ()" link="GwyDataField.html#gwy-data-field-set-row-part"/>
+    <keyword type="function" name="gwy_data_field_set_column_part ()" link="GwyDataField.html#gwy-data-field-set-column-part"/>
+    <keyword type="function" name="gwy_data_field_get_xder ()" link="GwyDataField.html#gwy-data-field-get-xder"/>
+    <keyword type="function" name="gwy_data_field_get_yder ()" link="GwyDataField.html#gwy-data-field-get-yder"/>
+    <keyword type="function" name="gwy_data_field_get_angder ()" link="GwyDataField.html#gwy-data-field-get-angder"/>
+    <keyword type="function" name="gwy_data_field_average_xyz ()" link="GwyDataField.html#gwy-data-field-average-xyz" since="2.44"/>
+    <keyword type="macro" name="gwy_data_field_get_xmeasure" link="GwyDataField.html#gwy-data-field-get-xmeasure"/>
+    <keyword type="macro" name="gwy_data_field_get_ymeasure" link="GwyDataField.html#gwy-data-field-get-ymeasure"/>
+    <keyword type="struct" name="struct GwyDataField" link="GwyDataField.html#GwyDataField-struct"/>
+    <keyword type="struct" name="struct GwyDataFieldClass" link="GwyDataField.html#GwyDataFieldClass"/>
+    <keyword type="signal" name="The “data-changed” signal" link="GwyDataField.html#GwyDataField-data-changed"/>
+    <keyword type="macro" name="gwy_spectra_duplicate()" link="GwySpectra.html#gwy-spectra-duplicate" since="2.7"/>
+    <keyword type="function" name="gwy_spectra_new ()" link="GwySpectra.html#gwy-spectra-new" since="2.7"/>
+    <keyword type="function" name="gwy_spectra_new_alike ()" link="GwySpectra.html#gwy-spectra-new-alike" since="2.7"/>
+    <keyword type="function" name="gwy_spectra_data_changed ()" link="GwySpectra.html#gwy-spectra-data-changed" since="2.7"/>
+    <keyword type="function" name="gwy_spectra_get_si_unit_xy ()" link="GwySpectra.html#gwy-spectra-get-si-unit-xy" since="2.7"/>
+    <keyword type="function" name="gwy_spectra_set_si_unit_xy ()" link="GwySpectra.html#gwy-spectra-set-si-unit-xy" since="2.7"/>
+    <keyword type="function" name="gwy_spectra_itoxy ()" link="GwySpectra.html#gwy-spectra-itoxy" since="2.7"/>
+    <keyword type="function" name="gwy_spectra_xytoi ()" link="GwySpectra.html#gwy-spectra-xytoi" since="2.7"/>
+    <keyword type="function" name="gwy_spectra_setpos ()" link="GwySpectra.html#gwy-spectra-setpos" since="2.7"/>
+    <keyword type="function" name="gwy_spectra_get_n_spectra ()" link="GwySpectra.html#gwy-spectra-get-n-spectra" since="2.7"/>
+    <keyword type="function" name="gwy_spectra_get_spectrum ()" link="GwySpectra.html#gwy-spectra-get-spectrum" since="2.7"/>
+    <keyword type="function" name="gwy_spectra_set_spectrum ()" link="GwySpectra.html#gwy-spectra-set-spectrum" since="2.7"/>
+    <keyword type="function" name="gwy_spectra_set_spectrum_selected ()" link="GwySpectra.html#gwy-spectra-set-spectrum-selected" since="2.7"/>
+    <keyword type="function" name="gwy_spectra_get_spectrum_selected ()" link="GwySpectra.html#gwy-spectra-get-spectrum-selected" since="2.7"/>
+    <keyword type="function" name="gwy_spectra_find_nearest ()" link="GwySpectra.html#gwy-spectra-find-nearest" since="2.7"/>
+    <keyword type="function" name="gwy_spectra_add_spectrum ()" link="GwySpectra.html#gwy-spectra-add-spectrum" since="2.7"/>
+    <keyword type="function" name="gwy_spectra_remove_spectrum ()" link="GwySpectra.html#gwy-spectra-remove-spectrum" since="2.7"/>
+    <keyword type="function" name="gwy_spectra_get_title ()" link="GwySpectra.html#gwy-spectra-get-title" since="2.7"/>
+    <keyword type="function" name="gwy_spectra_set_title ()" link="GwySpectra.html#gwy-spectra-set-title" since="2.7"/>
+    <keyword type="function" name="gwy_spectra_get_spectrum_x_label ()" link="GwySpectra.html#gwy-spectra-get-spectrum-x-label" since="2.40"/>
+    <keyword type="function" name="gwy_spectra_set_spectrum_x_label ()" link="GwySpectra.html#gwy-spectra-set-spectrum-x-label" since="2.40"/>
+    <keyword type="function" name="gwy_spectra_get_spectrum_y_label ()" link="GwySpectra.html#gwy-spectra-get-spectrum-y-label" since="2.40"/>
+    <keyword type="function" name="gwy_spectra_set_spectrum_y_label ()" link="GwySpectra.html#gwy-spectra-set-spectrum-y-label" since="2.40"/>
+    <keyword type="function" name="gwy_spectra_clear ()" link="GwySpectra.html#gwy-spectra-clear" since="2.7"/>
+    <keyword type="struct" name="struct GwySpectra" link="GwySpectra.html#GwySpectra-struct"/>
+    <keyword type="struct" name="struct GwySpectraClass" link="GwySpectra.html#GwySpectraClass"/>
+    <keyword type="property" name="The “spectrum-x-label” property" link="GwySpectra.html#GwySpectra--spectrum-x-label"/>
+    <keyword type="property" name="The “spectrum-y-label” property" link="GwySpectra.html#GwySpectra--spectrum-y-label"/>
+    <keyword type="property" name="The “title” property" link="GwySpectra.html#GwySpectra--title"/>
+    <keyword type="signal" name="The “data-changed” signal" link="GwySpectra.html#GwySpectra-data-changed"/>
+    <keyword type="macro" name="gwy_brick_duplicate()" link="GwyBrick.html#gwy-brick-duplicate" since="2.31"/>
+    <keyword type="macro" name="gwy_brick_assign()" link="GwyBrick.html#gwy-brick-assign" since="2.52"/>
+    <keyword type="function" name="gwy_brick_new ()" link="GwyBrick.html#gwy-brick-new" since="2.31"/>
+    <keyword type="function" name="gwy_brick_new_alike ()" link="GwyBrick.html#gwy-brick-new-alike" since="2.31"/>
+    <keyword type="function" name="gwy_brick_new_part ()" link="GwyBrick.html#gwy-brick-new-part" since="2.32"/>
+    <keyword type="function" name="gwy_brick_data_changed ()" link="GwyBrick.html#gwy-brick-data-changed" since="2.31"/>
+    <keyword type="function" name="gwy_brick_copy ()" link="GwyBrick.html#gwy-brick-copy"/>
+    <keyword type="function" name="gwy_brick_resample ()" link="GwyBrick.html#gwy-brick-resample" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_xres ()" link="GwyBrick.html#gwy-brick-get-xres" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_yres ()" link="GwyBrick.html#gwy-brick-get-yres" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_zres ()" link="GwyBrick.html#gwy-brick-get-zres" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_xreal ()" link="GwyBrick.html#gwy-brick-get-xreal" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_yreal ()" link="GwyBrick.html#gwy-brick-get-yreal" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_zreal ()" link="GwyBrick.html#gwy-brick-get-zreal" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_xoffset ()" link="GwyBrick.html#gwy-brick-get-xoffset" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_yoffset ()" link="GwyBrick.html#gwy-brick-get-yoffset" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_zoffset ()" link="GwyBrick.html#gwy-brick-get-zoffset" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_data_const ()" link="GwyBrick.html#gwy-brick-get-data-const" since="2.31"/>
+    <keyword type="function" name="gwy_brick_set_xreal ()" link="GwyBrick.html#gwy-brick-set-xreal" since="2.31"/>
+    <keyword type="function" name="gwy_brick_set_yreal ()" link="GwyBrick.html#gwy-brick-set-yreal" since="2.31"/>
+    <keyword type="function" name="gwy_brick_set_zreal ()" link="GwyBrick.html#gwy-brick-set-zreal" since="2.31"/>
+    <keyword type="function" name="gwy_brick_set_xoffset ()" link="GwyBrick.html#gwy-brick-set-xoffset" since="2.31"/>
+    <keyword type="function" name="gwy_brick_set_yoffset ()" link="GwyBrick.html#gwy-brick-set-yoffset" since="2.31"/>
+    <keyword type="function" name="gwy_brick_set_zoffset ()" link="GwyBrick.html#gwy-brick-set-zoffset" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_dx ()" link="GwyBrick.html#gwy-brick-get-dx" since="2.52"/>
+    <keyword type="function" name="gwy_brick_get_dy ()" link="GwyBrick.html#gwy-brick-get-dy" since="2.52"/>
+    <keyword type="function" name="gwy_brick_get_dz ()" link="GwyBrick.html#gwy-brick-get-dz" since="2.52"/>
+    <keyword type="function" name="gwy_brick_get_si_unit_x ()" link="GwyBrick.html#gwy-brick-get-si-unit-x" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_si_unit_y ()" link="GwyBrick.html#gwy-brick-get-si-unit-y" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_si_unit_z ()" link="GwyBrick.html#gwy-brick-get-si-unit-z" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_si_unit_w ()" link="GwyBrick.html#gwy-brick-get-si-unit-w" since="2.31"/>
+    <keyword type="function" name="gwy_brick_set_si_unit_x ()" link="GwyBrick.html#gwy-brick-set-si-unit-x" since="2.31"/>
+    <keyword type="function" name="gwy_brick_set_si_unit_y ()" link="GwyBrick.html#gwy-brick-set-si-unit-y" since="2.31"/>
+    <keyword type="function" name="gwy_brick_set_si_unit_z ()" link="GwyBrick.html#gwy-brick-set-si-unit-z" since="2.31"/>
+    <keyword type="function" name="gwy_brick_set_si_unit_w ()" link="GwyBrick.html#gwy-brick-set-si-unit-w" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_min ()" link="GwyBrick.html#gwy-brick-get-min" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_max ()" link="GwyBrick.html#gwy-brick-get-max" since="2.31"/>
+    <keyword type="function" name="gwy_brick_copy_units ()" link="GwyBrick.html#gwy-brick-copy-units" since="2.49"/>
+    <keyword type="function" name="gwy_brick_get_value_format_x ()" link="GwyBrick.html#gwy-brick-get-value-format-x" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_value_format_y ()" link="GwyBrick.html#gwy-brick-get-value-format-y" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_value_format_z ()" link="GwyBrick.html#gwy-brick-get-value-format-z" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_value_format_w ()" link="GwyBrick.html#gwy-brick-get-value-format-w" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_data ()" link="GwyBrick.html#gwy-brick-get-data" since="2.31"/>
+    <keyword type="function" name="gwy_brick_itor ()" link="GwyBrick.html#gwy-brick-itor" since="2.31"/>
+    <keyword type="function" name="gwy_brick_rtoi ()" link="GwyBrick.html#gwy-brick-rtoi" since="2.31"/>
+    <keyword type="function" name="gwy_brick_jtor ()" link="GwyBrick.html#gwy-brick-jtor" since="2.31"/>
+    <keyword type="function" name="gwy_brick_rtoj ()" link="GwyBrick.html#gwy-brick-rtoj" since="2.31"/>
+    <keyword type="function" name="gwy_brick_ktor ()" link="GwyBrick.html#gwy-brick-ktor" since="2.31"/>
+    <keyword type="function" name="gwy_brick_rtok ()" link="GwyBrick.html#gwy-brick-rtok" since="2.31"/>
+    <keyword type="function" name="gwy_brick_ktor_cal ()" link="GwyBrick.html#gwy-brick-ktor-cal" since="2.42"/>
+    <keyword type="function" name="gwy_brick_rtok_cal ()" link="GwyBrick.html#gwy-brick-rtok-cal" since="2.42"/>
+    <keyword type="function" name="gwy_brick_get_val ()" link="GwyBrick.html#gwy-brick-get-val" since="2.31"/>
+    <keyword type="function" name="gwy_brick_set_val ()" link="GwyBrick.html#gwy-brick-set-val" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_val_real ()" link="GwyBrick.html#gwy-brick-get-val-real" since="2.31"/>
+    <keyword type="function" name="gwy_brick_set_val_real ()" link="GwyBrick.html#gwy-brick-set-val-real" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_dval ()" link="GwyBrick.html#gwy-brick-get-dval" since="2.31"/>
+    <keyword type="function" name="gwy_brick_get_dval_real ()" link="GwyBrick.html#gwy-brick-get-dval-real" since="2.31"/>
+    <keyword type="function" name="gwy_brick_clear ()" link="GwyBrick.html#gwy-brick-clear" since="2.31"/>
+    <keyword type="function" name="gwy_brick_fill ()" link="GwyBrick.html#gwy-brick-fill" since="2.31"/>
+    <keyword type="function" name="gwy_brick_multiply ()" link="GwyBrick.html#gwy-brick-multiply" since="2.31"/>
+    <keyword type="function" name="gwy_brick_add ()" link="GwyBrick.html#gwy-brick-add" since="2.31"/>
+    <keyword type="function" name="gwy_brick_extract_plane ()" link="GwyBrick.html#gwy-brick-extract-plane" since="2.31"/>
+    <keyword type="function" name="gwy_brick_extract_xy_plane ()" link="GwyBrick.html#gwy-brick-extract-xy-plane" since="2.52"/>
+    <keyword type="function" name="gwy_brick_sum_plane ()" link="GwyBrick.html#gwy-brick-sum-plane" since="2.31"/>
+    <keyword type="function" name="gwy_brick_sum_xy_plane ()" link="GwyBrick.html#gwy-brick-sum-xy-plane" since="2.52"/>
+    <keyword type="function" name="gwy_brick_min_plane ()" link="GwyBrick.html#gwy-brick-min-plane" since="2.32"/>
+    <keyword type="function" name="gwy_brick_min_xy_plane ()" link="GwyBrick.html#gwy-brick-min-xy-plane" since="2.52"/>
+    <keyword type="function" name="gwy_brick_max_plane ()" link="GwyBrick.html#gwy-brick-max-plane" since="2.32"/>
+    <keyword type="function" name="gwy_brick_max_xy_plane ()" link="GwyBrick.html#gwy-brick-max-xy-plane" since="2.52"/>
+    <keyword type="function" name="gwy_brick_minpos_plane ()" link="GwyBrick.html#gwy-brick-minpos-plane" since="2.32"/>
+    <keyword type="function" name="gwy_brick_minpos_xy_plane ()" link="GwyBrick.html#gwy-brick-minpos-xy-plane" since="2.52"/>
+    <keyword type="function" name="gwy_brick_maxpos_plane ()" link="GwyBrick.html#gwy-brick-maxpos-plane" since="2.32"/>
+    <keyword type="function" name="gwy_brick_maxpos_xy_plane ()" link="GwyBrick.html#gwy-brick-maxpos-xy-plane" since="2.52"/>
+    <keyword type="function" name="gwy_brick_mean_plane ()" link="GwyBrick.html#gwy-brick-mean-plane" since="2.32"/>
+    <keyword type="function" name="gwy_brick_mean_xy_plane ()" link="GwyBrick.html#gwy-brick-mean-xy-plane" since="2.52"/>
+    <keyword type="function" name="gwy_brick_rms_plane ()" link="GwyBrick.html#gwy-brick-rms-plane" since="2.32"/>
+    <keyword type="function" name="gwy_brick_rms_xy_plane ()" link="GwyBrick.html#gwy-brick-rms-xy-plane" since="2.52"/>
+    <keyword type="function" name="gwy_brick_extract_line ()" link="GwyBrick.html#gwy-brick-extract-line" since="2.31"/>
+    <keyword type="function" name="gwy_brick_extract_z_line ()" link="GwyBrick.html#gwy-brick-extract-z-line" since="2.52"/>
+    <keyword type="function" name="gwy_brick_get_zcalibration ()" link="GwyBrick.html#gwy-brick-get-zcalibration" since="2.32"/>
+    <keyword type="function" name="gwy_brick_set_zcalibration ()" link="GwyBrick.html#gwy-brick-set-zcalibration" since="2.32"/>
+    <keyword type="function" name="gwy_brick_copy_zcalibration ()" link="GwyBrick.html#gwy-brick-copy-zcalibration" since="2.52"/>
+    <keyword type="function" name="gwy_brick_transpose ()" link="GwyBrick.html#gwy-brick-transpose" since="2.51"/>
+    <keyword type="function" name="gwy_brick_invert ()" link="GwyBrick.html#gwy-brick-invert" since="2.59"/>
+    <keyword type="function" name="gwy_brick_set_plane ()" link="GwyBrick.html#gwy-brick-set-plane" since="2.51"/>
+    <keyword type="function" name="gwy_brick_set_xy_plane ()" link="GwyBrick.html#gwy-brick-set-xy-plane" since="2.52"/>
+    <keyword type="function" name="gwy_brick_add_to_xy_planes ()" link="GwyBrick.html#gwy-brick-add-to-xy-planes" since="2.55"/>
+    <keyword type="function" name="gwy_brick_add_to_z_lines ()" link="GwyBrick.html#gwy-brick-add-to-z-lines" since="2.55"/>
+    <keyword type="struct" name="GwyBrickPart" link="GwyBrick.html#GwyBrickPart"/>
+    <keyword type="struct" name="struct GwyBrick" link="GwyBrick.html#GwyBrick-struct"/>
+    <keyword type="struct" name="struct GwyBrickClass" link="GwyBrick.html#GwyBrickClass"/>
+    <keyword type="signal" name="The “data-changed” signal" link="GwyBrick.html#GwyBrick-data-changed"/>
+    <keyword type="macro" name="gwy_surface_duplicate()" link="GwySurface.html#gwy-surface-duplicate" since="2.45"/>
+    <keyword type="macro" name="gwy_surface_assign()" link="GwySurface.html#gwy-surface-assign" since="2.52"/>
+    <keyword type="macro" name="gwy_surface_clone()" link="GwySurface.html#gwy-surface-clone" deprecated="" since="2.45"/>
+    <keyword type="function" name="gwy_surface_new ()" link="GwySurface.html#gwy-surface-new" since="2.45"/>
+    <keyword type="function" name="gwy_surface_new_sized ()" link="GwySurface.html#gwy-surface-new-sized" since="2.45"/>
+    <keyword type="function" name="gwy_surface_new_from_data ()" link="GwySurface.html#gwy-surface-new-from-data" since="2.45"/>
+    <keyword type="function" name="gwy_surface_new_alike ()" link="GwySurface.html#gwy-surface-new-alike" since="2.45"/>
+    <keyword type="function" name="gwy_surface_new_part ()" link="GwySurface.html#gwy-surface-new-part" since="2.45"/>
+    <keyword type="function" name="gwy_surface_get_data ()" link="GwySurface.html#gwy-surface-get-data" since="2.45"/>
+    <keyword type="function" name="gwy_surface_get_data_const ()" link="GwySurface.html#gwy-surface-get-data-const" since="2.45"/>
+    <keyword type="function" name="gwy_surface_get_npoints ()" link="GwySurface.html#gwy-surface-get-npoints" since="2.45"/>
+    <keyword type="function" name="gwy_surface_data_changed ()" link="GwySurface.html#gwy-surface-data-changed" since="2.45"/>
+    <keyword type="function" name="gwy_surface_copy ()" link="GwySurface.html#gwy-surface-copy" since="2.45"/>
+    <keyword type="function" name="gwy_surface_invalidate ()" link="GwySurface.html#gwy-surface-invalidate" since="2.45"/>
+    <keyword type="function" name="gwy_surface_set_from_data_field ()" link="GwySurface.html#gwy-surface-set-from-data-field" since="2.45"/>
+    <keyword type="function" name="gwy_surface_set_from_data_field_mask ()" link="GwySurface.html#gwy-surface-set-from-data-field-mask" since="2.46"/>
+    <keyword type="function" name="gwy_surface_get_si_unit_xy ()" link="GwySurface.html#gwy-surface-get-si-unit-xy" since="2.45"/>
+    <keyword type="function" name="gwy_surface_get_si_unit_z ()" link="GwySurface.html#gwy-surface-get-si-unit-z" since="2.45"/>
+    <keyword type="function" name="gwy_surface_set_si_unit_xy ()" link="GwySurface.html#gwy-surface-set-si-unit-xy" since="2.45"/>
+    <keyword type="function" name="gwy_surface_set_si_unit_z ()" link="GwySurface.html#gwy-surface-set-si-unit-z" since="2.45"/>
+    <keyword type="function" name="gwy_surface_get_value_format_xy ()" link="GwySurface.html#gwy-surface-get-value-format-xy" since="2.45"/>
+    <keyword type="function" name="gwy_surface_get_value_format_z ()" link="GwySurface.html#gwy-surface-get-value-format-z" since="2.45"/>
+    <keyword type="function" name="gwy_surface_copy_units ()" link="GwySurface.html#gwy-surface-copy-units" since="2.49"/>
+    <keyword type="function" name="gwy_data_field_copy_units_to_surface ()" link="GwySurface.html#gwy-data-field-copy-units-to-surface" since="2.46"/>
+    <keyword type="function" name="gwy_surface_copy_units_to_data_field ()" link="GwySurface.html#gwy-surface-copy-units-to-data-field" since="2.46"/>
+    <keyword type="function" name="gwy_surface_get ()" link="GwySurface.html#gwy-surface-get" since="2.45"/>
+    <keyword type="function" name="gwy_surface_set ()" link="GwySurface.html#gwy-surface-set" since="2.45"/>
+    <keyword type="function" name="gwy_surface_get_xrange ()" link="GwySurface.html#gwy-surface-get-xrange" since="2.45"/>
+    <keyword type="function" name="gwy_surface_get_yrange ()" link="GwySurface.html#gwy-surface-get-yrange" since="2.45"/>
+    <keyword type="function" name="gwy_surface_get_min_max ()" link="GwySurface.html#gwy-surface-get-min-max" since="2.45"/>
+    <keyword type="function" name="gwy_surface_get_data_full ()" link="GwySurface.html#gwy-surface-get-data-full" since="2.45"/>
+    <keyword type="function" name="gwy_surface_set_data_full ()" link="GwySurface.html#gwy-surface-set-data-full" since="2.45"/>
+    <keyword type="function" name="gwy_surface_xy_is_compatible ()" link="GwySurface.html#gwy-surface-xy-is-compatible" since="2.45"/>
+    <keyword type="function" name="gwy_surface_reduce_points ()" link="GwySurface.html#gwy-surface-reduce-points" since="2.48"/>
+    <keyword type="function" name="gwy_surface_resize ()" link="GwySurface.html#gwy-surface-resize" since="2.61"/>
+    <keyword type="struct" name="struct GwySurface" link="GwySurface.html#GwySurface-struct"/>
+    <keyword type="struct" name="struct GwySurfaceClass" link="GwySurface.html#GwySurfaceClass" since="2.45"/>
+    <keyword type="signal" name="The “data-changed” signal" link="GwySurface.html#GwySurface-data-changed"/>
+    <keyword type="function" name="GwyCurveReduceFunction ()" link="GwyLawn.html#GwyCurveReduceFunction"/>
+    <keyword type="macro" name="gwy_lawn_duplicate()" link="GwyLawn.html#gwy-lawn-duplicate" since="2.60"/>
+    <keyword type="macro" name="gwy_lawn_assign()" link="GwyLawn.html#gwy-lawn-assign" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_new ()" link="GwyLawn.html#gwy-lawn-new" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_new_alike ()" link="GwyLawn.html#gwy-lawn-new-alike" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_new_part ()" link="GwyLawn.html#gwy-lawn-new-part" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_data_changed ()" link="GwyLawn.html#gwy-lawn-data-changed" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_copy ()" link="GwyLawn.html#gwy-lawn-copy"/>
+    <keyword type="function" name="gwy_lawn_get_xres ()" link="GwyLawn.html#gwy-lawn-get-xres" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_get_yres ()" link="GwyLawn.html#gwy-lawn-get-yres" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_get_xreal ()" link="GwyLawn.html#gwy-lawn-get-xreal" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_get_yreal ()" link="GwyLawn.html#gwy-lawn-get-yreal" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_get_xoffset ()" link="GwyLawn.html#gwy-lawn-get-xoffset" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_get_yoffset ()" link="GwyLawn.html#gwy-lawn-get-yoffset" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_get_n_curves ()" link="GwyLawn.html#gwy-lawn-get-n-curves" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_set_xreal ()" link="GwyLawn.html#gwy-lawn-set-xreal" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_set_yreal ()" link="GwyLawn.html#gwy-lawn-set-yreal" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_set_xoffset ()" link="GwyLawn.html#gwy-lawn-set-xoffset" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_set_yoffset ()" link="GwyLawn.html#gwy-lawn-set-yoffset" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_get_dx ()" link="GwyLawn.html#gwy-lawn-get-dx" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_get_dy ()" link="GwyLawn.html#gwy-lawn-get-dy" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_get_si_unit_xy ()" link="GwyLawn.html#gwy-lawn-get-si-unit-xy" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_get_si_unit_curve ()" link="GwyLawn.html#gwy-lawn-get-si-unit-curve" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_set_si_unit_xy ()" link="GwyLawn.html#gwy-lawn-set-si-unit-xy" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_set_si_unit_curve ()" link="GwyLawn.html#gwy-lawn-set-si-unit-curve" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_copy_units ()" link="GwyLawn.html#gwy-lawn-copy-units" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_set_curve_label ()" link="GwyLawn.html#gwy-lawn-set-curve-label" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_get_curve_label ()" link="GwyLawn.html#gwy-lawn-get-curve-label" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_get_value_format_xy ()" link="GwyLawn.html#gwy-lawn-get-value-format-xy" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_get_value_format_curve ()" link="GwyLawn.html#gwy-lawn-get-value-format-curve"/>
+    <keyword type="function" name="gwy_lawn_get_curve_length ()" link="GwyLawn.html#gwy-lawn-get-curve-length" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_get_curve_data ()" link="GwyLawn.html#gwy-lawn-get-curve-data" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_get_curve_data_const ()" link="GwyLawn.html#gwy-lawn-get-curve-data-const" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_set_curve_data ()" link="GwyLawn.html#gwy-lawn-set-curve-data" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_get_curves_data_const ()" link="GwyLawn.html#gwy-lawn-get-curves-data-const" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_set_curves ()" link="GwyLawn.html#gwy-lawn-set-curves" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_get_n_segments ()" link="GwyLawn.html#gwy-lawn-get-n-segments" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_get_segments ()" link="GwyLawn.html#gwy-lawn-get-segments" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_set_segments ()" link="GwyLawn.html#gwy-lawn-set-segments" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_get_segment_label ()" link="GwyLawn.html#gwy-lawn-get-segment-label" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_set_segment_label ()" link="GwyLawn.html#gwy-lawn-set-segment-label" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_curve_set_segments ()" link="GwyLawn.html#gwy-lawn-curve-set-segments" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_clear ()" link="GwyLawn.html#gwy-lawn-clear" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_area_reduce_to_plane ()" link="GwyLawn.html#gwy-lawn-area-reduce-to-plane" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_reduce_to_plane ()" link="GwyLawn.html#gwy-lawn-reduce-to-plane" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_new_rotated_90 ()" link="GwyLawn.html#gwy-lawn-new-rotated-90" since="2.60"/>
+    <keyword type="function" name="gwy_lawn_invert ()" link="GwyLawn.html#gwy-lawn-invert" since="2.60"/>
+    <keyword type="struct" name="struct GwyLawn" link="GwyLawn.html#GwyLawn-struct"/>
+    <keyword type="struct" name="struct GwyLawnClass" link="GwyLawn.html#GwyLawnClass"/>
+    <keyword type="signal" name="The “data-changed” signal" link="GwyLawn.html#GwyLawn-data-changed"/>
+    <keyword type="function" name="gwy_calibration_new ()" link="GwyCalibration.html#gwy-calibration-new" since="2.23"/>
+    <keyword type="function" name="gwy_calibration_get_filename ()" link="GwyCalibration.html#gwy-calibration-get-filename" since="2.23"/>
+    <keyword type="function" name="gwy_calibration_get_ndata ()" link="GwyCalibration.html#gwy-calibration-get-ndata" since="2.23"/>
+    <keyword type="function" name="gwy_calibrations ()" link="GwyCalibration.html#gwy-calibrations" since="2.23"/>
+    <keyword type="function" name="gwy_calibrations_get_calibration ()" link="GwyCalibration.html#gwy-calibrations-get-calibration" since="2.23"/>
+    <keyword type="function" name="gwy_calibration_get_data ()" link="GwyCalibration.html#gwy-calibration-get-data" since="2.23"/>
+    <keyword type="struct" name="struct GwyCalibration" link="GwyCalibration.html#GwyCalibration-struct"/>
+    <keyword type="struct" name="struct GwyCalibrationClass" link="GwyCalibration.html#GwyCalibrationClass"/>
+    <keyword type="macro" name="gwy_caldata_duplicate()" link="GwyCalData.html#gwy-caldata-duplicate"/>
+    <keyword type="function" name="gwy_caldata_new ()" link="GwyCalData.html#gwy-caldata-new"/>
+    <keyword type="function" name="gwy_caldata_resize ()" link="GwyCalData.html#gwy-caldata-resize"/>
+    <keyword type="function" name="gwy_caldata_append ()" link="GwyCalData.html#gwy-caldata-append" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_get_ndata ()" link="GwyCalData.html#gwy-caldata-get-ndata" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_get_x ()" link="GwyCalData.html#gwy-caldata-get-x" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_get_y ()" link="GwyCalData.html#gwy-caldata-get-y" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_get_z ()" link="GwyCalData.html#gwy-caldata-get-z" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_get_xerr ()" link="GwyCalData.html#gwy-caldata-get-xerr" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_get_yerr ()" link="GwyCalData.html#gwy-caldata-get-yerr" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_get_zerr ()" link="GwyCalData.html#gwy-caldata-get-zerr" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_get_xunc ()" link="GwyCalData.html#gwy-caldata-get-xunc" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_get_yunc ()" link="GwyCalData.html#gwy-caldata-get-yunc" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_get_zunc ()" link="GwyCalData.html#gwy-caldata-get-zunc" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_get_range ()" link="GwyCalData.html#gwy-caldata-get-range" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_set_range ()" link="GwyCalData.html#gwy-caldata-set-range" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_get_si_unit_x ()" link="GwyCalData.html#gwy-caldata-get-si-unit-x" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_get_si_unit_y ()" link="GwyCalData.html#gwy-caldata-get-si-unit-y" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_get_si_unit_z ()" link="GwyCalData.html#gwy-caldata-get-si-unit-z" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_set_si_unit_x ()" link="GwyCalData.html#gwy-caldata-set-si-unit-x" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_set_si_unit_y ()" link="GwyCalData.html#gwy-caldata-set-si-unit-y" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_set_si_unit_z ()" link="GwyCalData.html#gwy-caldata-set-si-unit-z" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_setup_interpolation ()" link="GwyCalData.html#gwy-caldata-setup-interpolation" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_interpolate ()" link="GwyCalData.html#gwy-caldata-interpolate" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_save_data ()" link="GwyCalData.html#gwy-caldata-save-data" since="2.23"/>
+    <keyword type="function" name="gwy_caldata_inside ()" link="GwyCalData.html#gwy-caldata-inside" since="2.23"/>
+    <keyword type="struct" name="GwyCurveCalibrationData" link="GwyCalData.html#GwyCurveCalibrationData"/>
+    <keyword type="struct" name="GwyCalData" link="GwyCalData.html#GwyCalData-struct"/>
+    <keyword type="struct" name="GwyCalDataClass" link="GwyCalData.html#GwyCalDataClass"/>
+    <keyword type="function" name="gwy_data_field_sum_fields ()" link="libgwyprocess-arithmetic.html#gwy-data-field-sum-fields"/>
+    <keyword type="function" name="gwy_data_field_subtract_fields ()" link="libgwyprocess-arithmetic.html#gwy-data-field-subtract-fields"/>
+    <keyword type="function" name="gwy_data_field_divide_fields ()" link="libgwyprocess-arithmetic.html#gwy-data-field-divide-fields"/>
+    <keyword type="function" name="gwy_data_field_multiply_fields ()" link="libgwyprocess-arithmetic.html#gwy-data-field-multiply-fields"/>
+    <keyword type="function" name="gwy_data_field_min_of_fields ()" link="libgwyprocess-arithmetic.html#gwy-data-field-min-of-fields"/>
+    <keyword type="function" name="gwy_data_field_max_of_fields ()" link="libgwyprocess-arithmetic.html#gwy-data-field-max-of-fields"/>
+    <keyword type="function" name="gwy_data_field_hypot_of_fields ()" link="libgwyprocess-arithmetic.html#gwy-data-field-hypot-of-fields" since="2.31"/>
+    <keyword type="function" name="gwy_data_field_linear_combination ()" link="libgwyprocess-arithmetic.html#gwy-data-field-linear-combination" since="2.59"/>
+    <keyword type="function" name="gwy_data_field_check_compatibility ()" link="libgwyprocess-arithmetic.html#gwy-data-field-check-compatibility"/>
+    <keyword type="function" name="gwy_data_line_check_compatibility ()" link="libgwyprocess-arithmetic.html#gwy-data-line-check-compatibility"/>
+    <keyword type="function" name="gwy_brick_check_compatibility ()" link="libgwyprocess-arithmetic.html#gwy-brick-check-compatibility" since="2.51"/>
+    <keyword type="function" name="gwy_lawn_check_compatibility ()" link="libgwyprocess-arithmetic.html#gwy-lawn-check-compatibility" since="2.60"/>
+    <keyword type="function" name="gwy_data_field_check_compatibility_with_brick_xy ()" link="libgwyprocess-arithmetic.html#gwy-data-field-check-compatibility-with-brick-xy" since="2.51"/>
+    <keyword type="function" name="gwy_data_line_check_compatibility_with_brick_z ()" link="libgwyprocess-arithmetic.html#gwy-data-line-check-compatibility-with-brick-z" since="2.51"/>
+    <keyword type="function" name="gwy_data_field_check_compatibility_with_lawn ()" link="libgwyprocess-arithmetic.html#gwy-data-field-check-compatibility-with-lawn"/>
+    <keyword type="function" name="gwy_data_field_extend ()" link="libgwyprocess-arithmetic.html#gwy-data-field-extend" since="2.36"/>
+    <keyword type="function" name="gwy_cdlines ()" link="GwyCDLine.html#gwy-cdlines"/>
+    <keyword type="function" name="gwy_cdline_get_name ()" link="GwyCDLine.html#gwy-cdline-get-name"/>
+    <keyword type="function" name="gwy_cdline_get_definition ()" link="GwyCDLine.html#gwy-cdline-get-definition"/>
+    <keyword type="function" name="gwy_cdline_get_param_name ()" link="GwyCDLine.html#gwy-cdline-get-param-name"/>
+    <keyword type="function" name="gwy_cdline_get_param_default ()" link="GwyCDLine.html#gwy-cdline-get-param-default" deprecated=""/>
+    <keyword type="function" name="gwy_cdline_get_param_units ()" link="GwyCDLine.html#gwy-cdline-get-param-units" since="2.5"/>
+    <keyword type="function" name="gwy_cdline_get_nparams ()" link="GwyCDLine.html#gwy-cdline-get-nparams"/>
+    <keyword type="function" name="gwy_cdline_fit ()" link="GwyCDLine.html#gwy-cdline-fit"/>
+    <keyword type="function" name="gwy_cdline_fit_with_caldata ()" link="GwyCDLine.html#gwy-cdline-fit-with-caldata"/>
+    <keyword type="function" name="gwy_cdline_get_value ()" link="GwyCDLine.html#gwy-cdline-get-value"/>
+    <keyword type="struct" name="GwyCDLineBuiltin" link="GwyCDLine.html#GwyCDLineBuiltin"/>
+    <keyword type="struct" name="struct GwyCDLine" link="GwyCDLine.html#GwyCDLine-struct"/>
+    <keyword type="struct" name="struct GwyCDLineClass" link="GwyCDLine.html#GwyCDLineClass"/>
+    <keyword type="function" name="GwyCoordTransform2DFunc ()" link="libgwyprocess-correct.html#GwyCoordTransform2DFunc" since="2.5"/>
+    <keyword type="function" name="gwy_data_field_laplace_solve ()" link="libgwyprocess-correct.html#gwy-data-field-laplace-solve" since="2.47"/>
+    <keyword type="function" name="gwy_data_field_correct_laplace_iteration ()" link="libgwyprocess-correct.html#gwy-data-field-correct-laplace-iteration"/>
+    <keyword type="function" name="gwy_data_field_correct_average ()" link="libgwyprocess-correct.html#gwy-data-field-correct-average"/>
+    <keyword type="function" name="gwy_data_field_correct_average_unmasked ()" link="libgwyprocess-correct.html#gwy-data-field-correct-average-unmasked" since="2.44"/>
+    <keyword type="function" name="gwy_data_field_mask_outliers ()" link="libgwyprocess-correct.html#gwy-data-field-mask-outliers"/>
+    <keyword type="function" name="gwy_data_field_mask_outliers2 ()" link="libgwyprocess-correct.html#gwy-data-field-mask-outliers2" since="2.26"/>
+    <keyword type="function" name="gwy_data_field_distort ()" link="libgwyprocess-correct.html#gwy-data-field-distort" since="2.5"/>
+    <keyword type="function" name="gwy_data_field_sample_distorted ()" link="libgwyprocess-correct.html#gwy-data-field-sample-distorted" since="2.45"/>
+    <keyword type="function" name="gwy_data_field_affine ()" link="libgwyprocess-correct.html#gwy-data-field-affine" since="2.34"/>
+    <keyword type="function" name="gwy_data_field_affine_prepare ()" link="libgwyprocess-correct.html#gwy-data-field-affine-prepare" since="2.49"/>
+    <keyword type="function" name="gwy_data_field_measure_lattice_acf ()" link="libgwyprocess-correct.html#gwy-data-field-measure-lattice-acf" since="2.49"/>
+    <keyword type="function" name="gwy_data_field_measure_lattice_psdf ()" link="libgwyprocess-correct.html#gwy-data-field-measure-lattice-psdf" since="2.49"/>
+    <keyword type="function" name="gwy_data_line_correct_laplace ()" link="libgwyprocess-correct.html#gwy-data-line-correct-laplace" since="2.45"/>
+    <keyword type="function" name="gwy_data_field_mark_scars ()" link="libgwyprocess-correct.html#gwy-data-field-mark-scars" since="2.46"/>
+    <keyword type="function" name="gwy_data_field_subtract_row_shifts ()" link="libgwyprocess-correct.html#gwy-data-field-subtract-row-shifts" since="2.52"/>
+    <keyword type="function" name="gwy_data_field_find_row_shifts_trimmed_mean ()" link="libgwyprocess-correct.html#gwy-data-field-find-row-shifts-trimmed-mean" since="2.52"/>
+    <keyword type="function" name="gwy_data_field_find_row_shifts_trimmed_diff ()" link="libgwyprocess-correct.html#gwy-data-field-find-row-shifts-trimmed-diff" since="2.52"/>
+    <keyword type="function" name="gwy_data_field_unrotate_find_corrections ()" link="libgwyprocess-correct.html#gwy-data-field-unrotate-find-corrections"/>
+    <keyword type="function" name="gwy_data_field_get_correlation_score ()" link="libgwyprocess-correlation.html#gwy-data-field-get-correlation-score"/>
+    <keyword type="function" name="gwy_data_field_get_weighted_correlation_score ()" link="libgwyprocess-correlation.html#gwy-data-field-get-weighted-correlation-score"/>
+    <keyword type="function" name="gwy_data_field_crosscorrelate ()" link="libgwyprocess-correlation.html#gwy-data-field-crosscorrelate"/>
+    <keyword type="function" name="gwy_data_field_crosscorrelate_init ()" link="libgwyprocess-correlation.html#gwy-data-field-crosscorrelate-init"/>
+    <keyword type="function" name="gwy_data_field_crosscorrelate_set_weights ()" link="libgwyprocess-correlation.html#gwy-data-field-crosscorrelate-set-weights"/>
+    <keyword type="function" name="gwy_data_field_crosscorrelate_iteration ()" link="libgwyprocess-correlation.html#gwy-data-field-crosscorrelate-iteration"/>
+    <keyword type="function" name="gwy_data_field_crosscorrelate_finalize ()" link="libgwyprocess-correlation.html#gwy-data-field-crosscorrelate-finalize"/>
+    <keyword type="function" name="gwy_data_field_correlate ()" link="libgwyprocess-correlation.html#gwy-data-field-correlate"/>
+    <keyword type="function" name="gwy_data_field_correlate_init ()" link="libgwyprocess-correlation.html#gwy-data-field-correlate-init"/>
+    <keyword type="function" name="gwy_data_field_correlate_iteration ()" link="libgwyprocess-correlation.html#gwy-data-field-correlate-iteration"/>
+    <keyword type="function" name="gwy_data_field_correlate_finalize ()" link="libgwyprocess-correlation.html#gwy-data-field-correlate-finalize"/>
+    <keyword type="function" name="gwy_data_field_correlation_search ()" link="libgwyprocess-correlation.html#gwy-data-field-correlation-search" since="2.50"/>
+    <keyword type="function" name="gwy_cwt_wfunc_2d ()" link="libgwyprocess-cwt.html#gwy-cwt-wfunc-2d"/>
+    <keyword type="function" name="gwy_dwt_set_coefficients ()" link="libgwyprocess-dwt.html#gwy-dwt-set-coefficients"/>
+    <keyword type="function" name="gwy_data_line_dwt ()" link="libgwyprocess-dwt.html#gwy-data-line-dwt"/>
+    <keyword type="function" name="gwy_data_field_xdwt ()" link="libgwyprocess-dwt.html#gwy-data-field-xdwt"/>
+    <keyword type="function" name="gwy_data_field_ydwt ()" link="libgwyprocess-dwt.html#gwy-data-field-ydwt"/>
+    <keyword type="function" name="gwy_data_field_dwt ()" link="libgwyprocess-dwt.html#gwy-data-field-dwt"/>
+    <keyword type="function" name="gwy_data_field_dwt_mark_anisotropy ()" link="libgwyprocess-dwt.html#gwy-data-field-dwt-mark-anisotropy"/>
+    <keyword type="function" name="gwy_data_field_elliptic_area_fill ()" link="libgwyprocess-elliptic.html#gwy-data-field-elliptic-area-fill"/>
+    <keyword type="function" name="gwy_data_field_elliptic_area_extract ()" link="libgwyprocess-elliptic.html#gwy-data-field-elliptic-area-extract"/>
+    <keyword type="function" name="gwy_data_field_elliptic_area_unextract ()" link="libgwyprocess-elliptic.html#gwy-data-field-elliptic-area-unextract"/>
+    <keyword type="function" name="gwy_data_field_get_elliptic_area_size ()" link="libgwyprocess-elliptic.html#gwy-data-field-get-elliptic-area-size"/>
+    <keyword type="function" name="gwy_data_field_get_elliptic_intersection ()" link="libgwyprocess-elliptic.html#gwy-data-field-get-elliptic-intersection" since="2.59"/>
+    <keyword type="function" name="gwy_data_field_circular_area_fill ()" link="libgwyprocess-elliptic.html#gwy-data-field-circular-area-fill"/>
+    <keyword type="function" name="gwy_data_field_circular_area_extract ()" link="libgwyprocess-elliptic.html#gwy-data-field-circular-area-extract"/>
+    <keyword type="function" name="gwy_data_field_circular_area_extract_with_pos ()" link="libgwyprocess-elliptic.html#gwy-data-field-circular-area-extract-with-pos" since="2.2"/>
+    <keyword type="function" name="gwy_data_field_circular_area_unextract ()" link="libgwyprocess-elliptic.html#gwy-data-field-circular-area-unextract"/>
+    <keyword type="function" name="gwy_data_field_get_circular_area_size ()" link="libgwyprocess-elliptic.html#gwy-data-field-get-circular-area-size"/>
+    <keyword type="function" name="gwy_data_field_local_maximum ()" link="libgwyprocess-elliptic.html#gwy-data-field-local-maximum" since="2.49"/>
+    <keyword type="function" name="gwy_data_field_normalize ()" link="libgwyprocess-filters.html#gwy-data-field-normalize"/>
+    <keyword type="function" name="gwy_data_field_renormalize ()" link="libgwyprocess-filters.html#gwy-data-field-renormalize"/>
+    <keyword type="function" name="gwy_data_field_area_renormalize ()" link="libgwyprocess-filters.html#gwy-data-field-area-renormalize" since="2.45"/>
+    <keyword type="function" name="gwy_data_field_threshold ()" link="libgwyprocess-filters.html#gwy-data-field-threshold"/>
+    <keyword type="function" name="gwy_data_field_area_threshold ()" link="libgwyprocess-filters.html#gwy-data-field-area-threshold"/>
+    <keyword type="function" name="gwy_data_field_clamp ()" link="libgwyprocess-filters.html#gwy-data-field-clamp"/>
+    <keyword type="function" name="gwy_data_field_area_clamp ()" link="libgwyprocess-filters.html#gwy-data-field-area-clamp"/>
+    <keyword type="function" name="gwy_data_field_area_gather ()" link="libgwyprocess-filters.html#gwy-data-field-area-gather"/>
+    <keyword type="function" name="gwy_data_field_convolve ()" link="libgwyprocess-filters.html#gwy-data-field-convolve"/>
+    <keyword type="function" name="gwy_data_field_area_convolve ()" link="libgwyprocess-filters.html#gwy-data-field-area-convolve"/>
+    <keyword type="function" name="gwy_data_field_fft_convolve ()" link="libgwyprocess-filters.html#gwy-data-field-fft-convolve" since="2.54"/>
+    <keyword type="function" name="gwy_data_field_area_ext_convolve ()" link="libgwyprocess-filters.html#gwy-data-field-area-ext-convolve" since="2.49"/>
+    <keyword type="function" name="gwy_data_field_convolve_1d ()" link="libgwyprocess-filters.html#gwy-data-field-convolve-1d" since="2.4"/>
+    <keyword type="function" name="gwy_data_field_area_convolve_1d ()" link="libgwyprocess-filters.html#gwy-data-field-area-convolve-1d" since="2.4"/>
+    <keyword type="function" name="gwy_data_field_area_ext_row_convolve ()" link="libgwyprocess-filters.html#gwy-data-field-area-ext-row-convolve" since="2.49"/>
+    <keyword type="function" name="gwy_data_field_filter_median ()" link="libgwyprocess-filters.html#gwy-data-field-filter-median"/>
+    <keyword type="function" name="gwy_data_field_area_filter_median ()" link="libgwyprocess-filters.html#gwy-data-field-area-filter-median"/>
+    <keyword type="function" name="gwy_data_field_filter_mean ()" link="libgwyprocess-filters.html#gwy-data-field-filter-mean"/>
+    <keyword type="function" name="gwy_data_field_area_filter_mean ()" link="libgwyprocess-filters.html#gwy-data-field-area-filter-mean"/>
+    <keyword type="function" name="gwy_data_field_filter_conservative ()" link="libgwyprocess-filters.html#gwy-data-field-filter-conservative"/>
+    <keyword type="function" name="gwy_data_field_area_filter_conservative ()" link="libgwyprocess-filters.html#gwy-data-field-area-filter-conservative"/>
+    <keyword type="function" name="gwy_data_field_filter_laplacian ()" link="libgwyprocess-filters.html#gwy-data-field-filter-laplacian"/>
+    <keyword type="function" name="gwy_data_field_area_filter_laplacian ()" link="libgwyprocess-filters.html#gwy-data-field-area-filter-laplacian"/>
+    <keyword type="function" name="gwy_data_field_filter_laplacian_of_gaussians ()" link="libgwyprocess-filters.html#gwy-data-field-filter-laplacian-of-gaussians" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_area_filter_laplacian_of_gaussians ()" link="libgwyprocess-filters.html#gwy-data-field-area-filter-laplacian-of-gaussians" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_filter_sobel ()" link="libgwyprocess-filters.html#gwy-data-field-filter-sobel"/>
+    <keyword type="function" name="gwy_data_field_area_filter_sobel ()" link="libgwyprocess-filters.html#gwy-data-field-area-filter-sobel"/>
+    <keyword type="function" name="gwy_data_field_filter_sobel_total ()" link="libgwyprocess-filters.html#gwy-data-field-filter-sobel-total" since="2.31"/>
+    <keyword type="function" name="gwy_data_field_filter_prewitt ()" link="libgwyprocess-filters.html#gwy-data-field-filter-prewitt"/>
+    <keyword type="function" name="gwy_data_field_area_filter_prewitt ()" link="libgwyprocess-filters.html#gwy-data-field-area-filter-prewitt"/>
+    <keyword type="function" name="gwy_data_field_filter_prewitt_total ()" link="libgwyprocess-filters.html#gwy-data-field-filter-prewitt-total" since="2.31"/>
+    <keyword type="function" name="gwy_data_field_filter_slope ()" link="libgwyprocess-filters.html#gwy-data-field-filter-slope" since="2.37"/>
+    <keyword type="function" name="gwy_data_field_filter_gauss_step ()" link="libgwyprocess-filters.html#gwy-data-field-filter-gauss-step" since="2.54"/>
+    <keyword type="function" name="gwy_data_field_filter_dechecker ()" link="libgwyprocess-filters.html#gwy-data-field-filter-dechecker" since="2.1"/>
+    <keyword type="function" name="gwy_data_field_area_filter_dechecker ()" link="libgwyprocess-filters.html#gwy-data-field-area-filter-dechecker" since="2.1"/>
+    <keyword type="function" name="gwy_data_field_filter_gaussian ()" link="libgwyprocess-filters.html#gwy-data-field-filter-gaussian" since="2.4"/>
+    <keyword type="function" name="gwy_data_field_area_filter_gaussian ()" link="libgwyprocess-filters.html#gwy-data-field-area-filter-gaussian" since="2.4"/>
+    <keyword type="function" name="gwy_data_field_row_gaussian ()" link="libgwyprocess-filters.html#gwy-data-field-row-gaussian" since="2.54"/>
+    <keyword type="function" name="gwy_data_field_column_gaussian ()" link="libgwyprocess-filters.html#gwy-data-field-column-gaussian" since="2.54"/>
+    <keyword type="function" name="gwy_data_field_filter_minimum ()" link="libgwyprocess-filters.html#gwy-data-field-filter-minimum"/>
+    <keyword type="function" name="gwy_data_field_area_filter_minimum ()" link="libgwyprocess-filters.html#gwy-data-field-area-filter-minimum"/>
+    <keyword type="function" name="gwy_data_field_filter_maximum ()" link="libgwyprocess-filters.html#gwy-data-field-filter-maximum"/>
+    <keyword type="function" name="gwy_data_field_area_filter_maximum ()" link="libgwyprocess-filters.html#gwy-data-field-area-filter-maximum"/>
+    <keyword type="function" name="gwy_data_field_area_filter_min_max ()" link="libgwyprocess-filters.html#gwy-data-field-area-filter-min-max" since="2.43"/>
+    <keyword type="function" name="gwy_data_field_area_filter_disc_asf ()" link="libgwyprocess-filters.html#gwy-data-field-area-filter-disc-asf" since="2.43"/>
+    <keyword type="function" name="gwy_data_field_area_filter_kth_rank ()" link="libgwyprocess-filters.html#gwy-data-field-area-filter-kth-rank" since="2.51"/>
+    <keyword type="function" name="gwy_data_field_area_filter_trimmed_mean ()" link="libgwyprocess-filters.html#gwy-data-field-area-filter-trimmed-mean" since="2.53"/>
+    <keyword type="function" name="gwy_data_field_filter_rms ()" link="libgwyprocess-filters.html#gwy-data-field-filter-rms"/>
+    <keyword type="function" name="gwy_data_field_area_filter_rms ()" link="libgwyprocess-filters.html#gwy-data-field-area-filter-rms"/>
+    <keyword type="function" name="gwy_data_field_filter_kuwahara ()" link="libgwyprocess-filters.html#gwy-data-field-filter-kuwahara"/>
+    <keyword type="function" name="gwy_data_field_area_filter_kuwahara ()" link="libgwyprocess-filters.html#gwy-data-field-area-filter-kuwahara"/>
+    <keyword type="function" name="gwy_data_field_filter_canny ()" link="libgwyprocess-filters.html#gwy-data-field-filter-canny"/>
+    <keyword type="function" name="gwy_data_field_shade ()" link="libgwyprocess-filters.html#gwy-data-field-shade"/>
+    <keyword type="function" name="gwy_data_field_filter_harris ()" link="libgwyprocess-filters.html#gwy-data-field-filter-harris"/>
+    <keyword type="function" name="gwy_data_field_deconvolve_regularized ()" link="libgwyprocess-filters.html#gwy-data-field-deconvolve-regularized" since="2.51"/>
+    <keyword type="function" name="gwy_data_field_deconvolve_psf_leastsq ()" link="libgwyprocess-filters.html#gwy-data-field-deconvolve-psf-leastsq" since="2.52"/>
+    <keyword type="function" name="gwy_data_field_find_regularization_sigma_for_psf ()" link="libgwyprocess-filters.html#gwy-data-field-find-regularization-sigma-for-psf" since="2.51"/>
+    <keyword type="function" name="gwy_data_field_find_regularization_sigma_leastsq ()" link="libgwyprocess-filters.html#gwy-data-field-find-regularization-sigma-leastsq" since="2.52"/>
+    <keyword type="function" name="gwy_data_field_fractal_partitioning ()" link="libgwyprocess-fractals.html#gwy-data-field-fractal-partitioning"/>
+    <keyword type="function" name="gwy_data_field_fractal_cubecounting ()" link="libgwyprocess-fractals.html#gwy-data-field-fractal-cubecounting"/>
+    <keyword type="function" name="gwy_data_field_fractal_triangulation ()" link="libgwyprocess-fractals.html#gwy-data-field-fractal-triangulation"/>
+    <keyword type="function" name="gwy_data_field_fractal_psdf ()" link="libgwyprocess-fractals.html#gwy-data-field-fractal-psdf"/>
+    <keyword type="function" name="gwy_data_field_fractal_cubecounting_dim ()" link="libgwyprocess-fractals.html#gwy-data-field-fractal-cubecounting-dim"/>
+    <keyword type="function" name="gwy_data_field_fractal_triangulation_dim ()" link="libgwyprocess-fractals.html#gwy-data-field-fractal-triangulation-dim"/>
+    <keyword type="function" name="gwy_data_field_fractal_partitioning_dim ()" link="libgwyprocess-fractals.html#gwy-data-field-fractal-partitioning-dim"/>
+    <keyword type="function" name="gwy_data_field_fractal_psdf_dim ()" link="libgwyprocess-fractals.html#gwy-data-field-fractal-psdf-dim"/>
+    <keyword type="function" name="gwy_data_field_fractal_correction ()" link="libgwyprocess-fractals.html#gwy-data-field-fractal-correction"/>
+    <keyword type="function" name="gwy_data_field_grains_mark_curvature ()" link="libgwyprocess-grains.html#gwy-data-field-grains-mark-curvature"/>
+    <keyword type="function" name="gwy_data_field_grains_mark_watershed ()" link="libgwyprocess-grains.html#gwy-data-field-grains-mark-watershed"/>
+    <keyword type="function" name="gwy_data_field_grains_remove_grain ()" link="libgwyprocess-grains.html#gwy-data-field-grains-remove-grain"/>
+    <keyword type="function" name="gwy_data_field_grains_extract_grain ()" link="libgwyprocess-grains.html#gwy-data-field-grains-extract-grain"/>
+    <keyword type="function" name="gwy_data_field_grains_remove_by_number ()" link="libgwyprocess-grains.html#gwy-data-field-grains-remove-by-number" since="2.35"/>
+    <keyword type="function" name="gwy_data_field_grains_remove_by_size ()" link="libgwyprocess-grains.html#gwy-data-field-grains-remove-by-size"/>
+    <keyword type="function" name="gwy_data_field_grains_remove_by_height ()" link="libgwyprocess-grains.html#gwy-data-field-grains-remove-by-height"/>
+    <keyword type="function" name="gwy_data_field_grains_remove_touching_border ()" link="libgwyprocess-grains.html#gwy-data-field-grains-remove-touching-border" since="2.30"/>
+    <keyword type="function" name="gwy_data_field_grains_watershed_init ()" link="libgwyprocess-grains.html#gwy-data-field-grains-watershed-init"/>
+    <keyword type="function" name="gwy_data_field_grains_watershed_iteration ()" link="libgwyprocess-grains.html#gwy-data-field-grains-watershed-iteration"/>
+    <keyword type="function" name="gwy_data_field_grains_watershed_finalize ()" link="libgwyprocess-grains.html#gwy-data-field-grains-watershed-finalize"/>
+    <keyword type="function" name="gwy_data_field_grains_mark_height ()" link="libgwyprocess-grains.html#gwy-data-field-grains-mark-height"/>
+    <keyword type="function" name="gwy_data_field_grains_mark_slope ()" link="libgwyprocess-grains.html#gwy-data-field-grains-mark-slope"/>
+    <keyword type="function" name="gwy_data_field_otsu_threshold ()" link="libgwyprocess-grains.html#gwy-data-field-otsu-threshold" since="2.37"/>
+    <keyword type="function" name="gwy_data_field_grains_add ()" link="libgwyprocess-grains.html#gwy-data-field-grains-add"/>
+    <keyword type="function" name="gwy_data_field_grains_intersect ()" link="libgwyprocess-grains.html#gwy-data-field-grains-intersect"/>
+    <keyword type="function" name="gwy_data_field_grains_invert ()" link="libgwyprocess-grains.html#gwy-data-field-grains-invert" since="2.43"/>
+    <keyword type="function" name="gwy_data_field_grains_autocrop ()" link="libgwyprocess-grains.html#gwy-data-field-grains-autocrop" since="2.43"/>
+    <keyword type="function" name="gwy_data_field_number_grains ()" link="libgwyprocess-grains.html#gwy-data-field-number-grains"/>
+    <keyword type="function" name="gwy_data_field_number_grains_periodic ()" link="libgwyprocess-grains.html#gwy-data-field-number-grains-periodic" since="2.38"/>
+    <keyword type="function" name="gwy_data_field_get_grain_bounding_boxes ()" link="libgwyprocess-grains.html#gwy-data-field-get-grain-bounding-boxes" since="2.3"/>
+    <keyword type="function" name="gwy_data_field_get_grain_bounding_boxes_periodic ()" link="libgwyprocess-grains.html#gwy-data-field-get-grain-bounding-boxes-periodic" since="2.51"/>
+    <keyword type="function" name="gwy_data_field_get_grain_sizes ()" link="libgwyprocess-grains.html#gwy-data-field-get-grain-sizes" since="2.47"/>
+    <keyword type="function" name="gwy_data_field_get_grain_inscribed_boxes ()" link="libgwyprocess-grains.html#gwy-data-field-get-grain-inscribed-boxes" since="2.53"/>
+    <keyword type="function" name="gwy_data_field_grains_find_boundaries ()" link="libgwyprocess-grains.html#gwy-data-field-grains-find-boundaries" since="2.61"/>
+    <keyword type="function" name="gwy_data_field_grains_get_distribution ()" link="libgwyprocess-grains.html#gwy-data-field-grains-get-distribution"/>
+    <keyword type="function" name="gwy_data_field_grains_get_values ()" link="libgwyprocess-grains.html#gwy-data-field-grains-get-values"/>
+    <keyword type="function" name="gwy_data_field_grains_get_quantities ()" link="libgwyprocess-grains.html#gwy-data-field-grains-get-quantities" since="2.22"/>
+    <keyword type="function" name="gwy_grain_quantity_needs_same_units ()" link="libgwyprocess-grains.html#gwy-grain-quantity-needs-same-units" since="2.7"/>
+    <keyword type="function" name="gwy_grain_quantity_get_units ()" link="libgwyprocess-grains.html#gwy-grain-quantity-get-units" since="2.7"/>
+    <keyword type="function" name="gwy_data_field_area_grains_tgnd ()" link="libgwyprocess-grains.html#gwy-data-field-area-grains-tgnd"/>
+    <keyword type="function" name="gwy_data_field_area_grains_tgnd_range ()" link="libgwyprocess-grains.html#gwy-data-field-area-grains-tgnd-range"/>
+    <keyword type="function" name="gwy_data_field_grains_splash_water ()" link="libgwyprocess-grains.html#gwy-data-field-grains-splash-water"/>
+    <keyword type="function" name="gwy_data_field_grain_distance_transform ()" link="libgwyprocess-grains.html#gwy-data-field-grain-distance-transform" since="2.36"/>
+    <keyword type="function" name="gwy_data_field_grain_simple_dist_trans ()" link="libgwyprocess-grains.html#gwy-data-field-grain-simple-dist-trans" since="2.41"/>
+    <keyword type="function" name="gwy_data_field_grains_shrink ()" link="libgwyprocess-grains.html#gwy-data-field-grains-shrink" since="2.43"/>
+    <keyword type="function" name="gwy_data_field_grains_grow ()" link="libgwyprocess-grains.html#gwy-data-field-grains-grow" since="2.43"/>
+    <keyword type="function" name="gwy_data_field_grains_thin ()" link="libgwyprocess-grains.html#gwy-data-field-grains-thin" since="2.48"/>
+    <keyword type="function" name="gwy_data_field_fill_voids ()" link="libgwyprocess-grains.html#gwy-data-field-fill-voids" since="2.37"/>
+    <keyword type="function" name="gwy_data_field_waterpour ()" link="libgwyprocess-grains.html#gwy-data-field-waterpour" since="2.37"/>
+    <keyword type="function" name="gwy_data_field_mark_extrema ()" link="libgwyprocess-grains.html#gwy-data-field-mark-extrema" since="2.37"/>
+    <keyword type="function" name="gwy_grain_value_get_group ()" link="GwyGrainValue.html#gwy-grain-value-get-group" since="2.8"/>
+    <keyword type="function" name="gwy_grain_value_get_symbol ()" link="GwyGrainValue.html#gwy-grain-value-get-symbol" since="2.8"/>
+    <keyword type="function" name="gwy_grain_value_set_symbol ()" link="GwyGrainValue.html#gwy-grain-value-set-symbol" since="2.8"/>
+    <keyword type="function" name="gwy_grain_value_get_symbol_markup ()" link="GwyGrainValue.html#gwy-grain-value-get-symbol-markup" since="2.8"/>
+    <keyword type="function" name="gwy_grain_value_set_symbol_markup ()" link="GwyGrainValue.html#gwy-grain-value-set-symbol-markup" since="2.8"/>
+    <keyword type="function" name="gwy_grain_value_get_power_xy ()" link="GwyGrainValue.html#gwy-grain-value-get-power-xy" since="2.8"/>
+    <keyword type="function" name="gwy_grain_value_set_power_xy ()" link="GwyGrainValue.html#gwy-grain-value-set-power-xy" since="2.8"/>
+    <keyword type="function" name="gwy_grain_value_get_power_z ()" link="GwyGrainValue.html#gwy-grain-value-get-power-z" since="2.8"/>
+    <keyword type="function" name="gwy_grain_value_set_power_z ()" link="GwyGrainValue.html#gwy-grain-value-set-power-z" since="2.8"/>
+    <keyword type="function" name="gwy_grain_value_get_flags ()" link="GwyGrainValue.html#gwy-grain-value-get-flags" since="2.8"/>
+    <keyword type="function" name="gwy_grain_value_set_flags ()" link="GwyGrainValue.html#gwy-grain-value-set-flags" since="2.8"/>
+    <keyword type="function" name="gwy_grain_value_get_quantity ()" link="GwyGrainValue.html#gwy-grain-value-get-quantity" since="2.8"/>
+    <keyword type="function" name="gwy_grain_value_get_expression ()" link="GwyGrainValue.html#gwy-grain-value-get-expression" since="2.8"/>
+    <keyword type="function" name="gwy_grain_value_set_expression ()" link="GwyGrainValue.html#gwy-grain-value-set-expression" since="2.8"/>
+    <keyword type="function" name="gwy_grain_value_group_name ()" link="GwyGrainValue.html#gwy-grain-value-group-name" since="2.8"/>
+    <keyword type="function" name="gwy_grain_values ()" link="GwyGrainValue.html#gwy-grain-values" since="2.8"/>
+    <keyword type="function" name="gwy_grain_values_get_grain_value ()" link="GwyGrainValue.html#gwy-grain-values-get-grain-value" since="2.8"/>
+    <keyword type="function" name="gwy_grain_values_get_grain_value_by_symbol ()" link="GwyGrainValue.html#gwy-grain-values-get-grain-value-by-symbol" since="2.37"/>
+    <keyword type="function" name="gwy_grain_values_get_builtin_grain_value ()" link="GwyGrainValue.html#gwy-grain-values-get-builtin-grain-value" since="2.8"/>
+    <keyword type="function" name="gwy_grain_values_calculate ()" link="GwyGrainValue.html#gwy-grain-values-calculate" since="2.8"/>
+    <keyword type="enum" name="enum GwyGrainValueGroup" link="GwyGrainValue.html#GwyGrainValueGroup"/>
+    <keyword type="enum" name="enum GwyGrainValueFlags" link="GwyGrainValue.html#GwyGrainValueFlags" since="2.8"/>
+    <keyword type="struct" name="GwyGrainValueData" link="GwyGrainValue.html#GwyGrainValueData"/>
+    <keyword type="struct" name="struct GwyGrainValue" link="GwyGrainValue.html#GwyGrainValue-struct"/>
+    <keyword type="struct" name="struct GwyGrainValueClass" link="GwyGrainValue.html#GwyGrainValueClass"/>
+    <keyword type="function" name="gwy_data_field_hough_line ()" link="libgwyprocess-hough.html#gwy-data-field-hough-line"/>
+    <keyword type="function" name="gwy_data_field_hough_circle ()" link="libgwyprocess-hough.html#gwy-data-field-hough-circle"/>
+    <keyword type="function" name="gwy_data_field_hough_line_strenghten ()" link="libgwyprocess-hough.html#gwy-data-field-hough-line-strenghten"/>
+    <keyword type="function" name="gwy_data_field_hough_circle_strenghten ()" link="libgwyprocess-hough.html#gwy-data-field-hough-circle-strenghten"/>
+    <keyword type="function" name="gwy_data_field_get_local_maxima_list ()" link="libgwyprocess-hough.html#gwy-data-field-get-local-maxima-list"/>
+    <keyword type="function" name="gwy_data_field_get_local_minima_list ()" link="libgwyprocess-hough.html#gwy-data-field-get-local-minima-list" since="2.59"/>
+    <keyword type="function" name="gwy_data_field_hough_polar_line_to_datafield ()" link="libgwyprocess-hough.html#gwy-data-field-hough-polar-line-to-datafield"/>
+    <keyword type="function" name="gwy_data_field_hough_datafield_line_to_polar ()" link="libgwyprocess-hough.html#gwy-data-field-hough-datafield-line-to-polar"/>
+    <keyword type="function" name="gwy_fft_find_nice_size ()" link="libgwyprocess-inttrans.html#gwy-fft-find-nice-size"/>
+    <keyword type="function" name="gwy_data_line_fft ()" link="libgwyprocess-inttrans.html#gwy-data-line-fft"/>
+    <keyword type="function" name="gwy_data_line_part_fft ()" link="libgwyprocess-inttrans.html#gwy-data-line-part-fft"/>
+    <keyword type="function" name="gwy_data_line_fft_raw ()" link="libgwyprocess-inttrans.html#gwy-data-line-fft-raw" since="2.1"/>
+    <keyword type="function" name="gwy_data_line_zoom_fft ()" link="libgwyprocess-inttrans.html#gwy-data-line-zoom-fft" since="2.61"/>
+    <keyword type="function" name="gwy_data_field_1dfft ()" link="libgwyprocess-inttrans.html#gwy-data-field-1dfft"/>
+    <keyword type="function" name="gwy_data_field_area_1dfft ()" link="libgwyprocess-inttrans.html#gwy-data-field-area-1dfft"/>
+    <keyword type="function" name="gwy_data_field_1dfft_raw ()" link="libgwyprocess-inttrans.html#gwy-data-field-1dfft-raw" since="2.1"/>
+    <keyword type="function" name="gwy_data_field_2dfft ()" link="libgwyprocess-inttrans.html#gwy-data-field-2dfft"/>
+    <keyword type="function" name="gwy_data_field_area_2dfft ()" link="libgwyprocess-inttrans.html#gwy-data-field-area-2dfft"/>
+    <keyword type="function" name="gwy_data_field_2dfft_raw ()" link="libgwyprocess-inttrans.html#gwy-data-field-2dfft-raw" since="2.1"/>
+    <keyword type="function" name="gwy_data_field_2dfft_humanize ()" link="libgwyprocess-inttrans.html#gwy-data-field-2dfft-humanize"/>
+    <keyword type="function" name="gwy_data_field_2dfft_dehumanize ()" link="libgwyprocess-inttrans.html#gwy-data-field-2dfft-dehumanize" since="2.8"/>
+    <keyword type="function" name="gwy_data_field_fft_postprocess ()" link="libgwyprocess-inttrans.html#gwy-data-field-fft-postprocess" since="2.38"/>
+    <keyword type="function" name="gwy_data_field_fft_filter_1d ()" link="libgwyprocess-inttrans.html#gwy-data-field-fft-filter-1d"/>
+    <keyword type="function" name="gwy_data_field_cwt ()" link="libgwyprocess-inttrans.html#gwy-data-field-cwt"/>
+    <keyword type="function" name="gwy_interpolation_get_dval ()" link="libgwyprocess-interpolation.html#gwy-interpolation-get-dval"/>
+    <keyword type="function" name="gwy_interpolation_get_dval_of_equidists ()" link="libgwyprocess-interpolation.html#gwy-interpolation-get-dval-of-equidists"/>
+    <keyword type="function" name="gwy_interpolation_interpolate_1d ()" link="libgwyprocess-interpolation.html#gwy-interpolation-interpolate-1d" since="2.2"/>
+    <keyword type="function" name="gwy_interpolation_interpolate_2d ()" link="libgwyprocess-interpolation.html#gwy-interpolation-interpolate-2d" since="2.2"/>
+    <keyword type="function" name="gwy_interpolation_has_interpolating_basis ()" link="libgwyprocess-interpolation.html#gwy-interpolation-has-interpolating-basis" since="2.2"/>
+    <keyword type="function" name="gwy_interpolation_get_support_size ()" link="libgwyprocess-interpolation.html#gwy-interpolation-get-support-size" since="2.2"/>
+    <keyword type="function" name="gwy_interpolation_resolve_coeffs_1d ()" link="libgwyprocess-interpolation.html#gwy-interpolation-resolve-coeffs-1d" since="2.2"/>
+    <keyword type="function" name="gwy_interpolation_resolve_coeffs_2d ()" link="libgwyprocess-interpolation.html#gwy-interpolation-resolve-coeffs-2d" since="2.2"/>
+    <keyword type="function" name="gwy_interpolation_resample_block_1d ()" link="libgwyprocess-interpolation.html#gwy-interpolation-resample-block-1d" since="2.2"/>
+    <keyword type="function" name="gwy_interpolation_resample_block_2d ()" link="libgwyprocess-interpolation.html#gwy-interpolation-resample-block-2d" since="2.2"/>
+    <keyword type="function" name="gwy_interpolation_shift_block_1d ()" link="libgwyprocess-interpolation.html#gwy-interpolation-shift-block-1d" since="2.2"/>
+    <keyword type="function" name="gwy_data_field_area_fit_plane ()" link="libgwyprocess-level.html#gwy-data-field-area-fit-plane"/>
+    <keyword type="function" name="gwy_data_field_area_fit_plane_mask ()" link="libgwyprocess-level.html#gwy-data-field-area-fit-plane-mask" since="2.56"/>
+    <keyword type="function" name="gwy_data_field_fit_plane ()" link="libgwyprocess-level.html#gwy-data-field-fit-plane"/>
+    <keyword type="function" name="gwy_data_field_fit_facet_plane ()" link="libgwyprocess-level.html#gwy-data-field-fit-facet-plane" since="2.37"/>
+    <keyword type="function" name="gwy_data_field_plane_level ()" link="libgwyprocess-level.html#gwy-data-field-plane-level"/>
+    <keyword type="function" name="gwy_data_field_plane_rotate ()" link="libgwyprocess-level.html#gwy-data-field-plane-rotate"/>
+    <keyword type="function" name="gwy_data_field_fit_lines ()" link="libgwyprocess-level.html#gwy-data-field-fit-lines"/>
+    <keyword type="function" name="gwy_data_field_fit_polynom ()" link="libgwyprocess-level.html#gwy-data-field-fit-polynom"/>
+    <keyword type="function" name="gwy_data_field_area_fit_polynom ()" link="libgwyprocess-level.html#gwy-data-field-area-fit-polynom"/>
+    <keyword type="function" name="gwy_data_field_subtract_polynom ()" link="libgwyprocess-level.html#gwy-data-field-subtract-polynom"/>
+    <keyword type="function" name="gwy_data_field_area_subtract_polynom ()" link="libgwyprocess-level.html#gwy-data-field-area-subtract-polynom"/>
+    <keyword type="function" name="gwy_data_field_fit_legendre ()" link="libgwyprocess-level.html#gwy-data-field-fit-legendre"/>
+    <keyword type="function" name="gwy_data_field_area_fit_legendre ()" link="libgwyprocess-level.html#gwy-data-field-area-fit-legendre"/>
+    <keyword type="function" name="gwy_data_field_subtract_legendre ()" link="libgwyprocess-level.html#gwy-data-field-subtract-legendre"/>
+    <keyword type="function" name="gwy_data_field_area_subtract_legendre ()" link="libgwyprocess-level.html#gwy-data-field-area-subtract-legendre"/>
+    <keyword type="function" name="gwy_data_field_fit_poly_max ()" link="libgwyprocess-level.html#gwy-data-field-fit-poly-max"/>
+    <keyword type="function" name="gwy_data_field_area_fit_poly_max ()" link="libgwyprocess-level.html#gwy-data-field-area-fit-poly-max"/>
+    <keyword type="function" name="gwy_data_field_subtract_poly_max ()" link="libgwyprocess-level.html#gwy-data-field-subtract-poly-max"/>
+    <keyword type="function" name="gwy_data_field_area_subtract_poly_max ()" link="libgwyprocess-level.html#gwy-data-field-area-subtract-poly-max"/>
+    <keyword type="function" name="gwy_data_field_fit_poly ()" link="libgwyprocess-level.html#gwy-data-field-fit-poly" since="2.11"/>
+    <keyword type="function" name="gwy_data_field_area_fit_poly ()" link="libgwyprocess-level.html#gwy-data-field-area-fit-poly" since="2.11"/>
+    <keyword type="function" name="gwy_data_field_subtract_poly ()" link="libgwyprocess-level.html#gwy-data-field-subtract-poly" since="2.11"/>
+    <keyword type="function" name="gwy_data_field_area_subtract_poly ()" link="libgwyprocess-level.html#gwy-data-field-area-subtract-poly" since="2.11"/>
+    <keyword type="function" name="gwy_data_field_area_fit_local_planes ()" link="libgwyprocess-level.html#gwy-data-field-area-fit-local-planes"/>
+    <keyword type="function" name="gwy_data_field_area_local_plane_quantity ()" link="libgwyprocess-level.html#gwy-data-field-area-local-plane-quantity"/>
+    <keyword type="function" name="gwy_data_field_fit_local_planes ()" link="libgwyprocess-level.html#gwy-data-field-fit-local-planes"/>
+    <keyword type="function" name="gwy_data_field_local_plane_quantity ()" link="libgwyprocess-level.html#gwy-data-field-local-plane-quantity"/>
+    <keyword type="function" name="gwy_data_line_get_max ()" link="libgwyprocess-linestats.html#gwy-data-line-get-max"/>
+    <keyword type="function" name="gwy_data_line_get_min ()" link="libgwyprocess-linestats.html#gwy-data-line-get-min"/>
+    <keyword type="function" name="gwy_data_line_get_min_max ()" link="libgwyprocess-linestats.html#gwy-data-line-get-min-max"/>
+    <keyword type="function" name="gwy_data_line_min_pos_i ()" link="libgwyprocess-linestats.html#gwy-data-line-min-pos-i"/>
+    <keyword type="function" name="gwy_data_line_max_pos_i ()" link="libgwyprocess-linestats.html#gwy-data-line-max-pos-i"/>
+    <keyword type="function" name="gwy_data_line_min_pos_r ()" link="libgwyprocess-linestats.html#gwy-data-line-min-pos-r"/>
+    <keyword type="function" name="gwy_data_line_max_pos_r ()" link="libgwyprocess-linestats.html#gwy-data-line-max-pos-r"/>
+    <keyword type="function" name="gwy_data_line_get_avg ()" link="libgwyprocess-linestats.html#gwy-data-line-get-avg"/>
+    <keyword type="function" name="gwy_data_line_get_rms ()" link="libgwyprocess-linestats.html#gwy-data-line-get-rms"/>
+    <keyword type="function" name="gwy_data_line_get_tan_beta0 ()" link="libgwyprocess-linestats.html#gwy-data-line-get-tan-beta0" since="2.2"/>
+    <keyword type="function" name="gwy_data_line_get_variation ()" link="libgwyprocess-linestats.html#gwy-data-line-get-variation" since="2.42"/>
+    <keyword type="function" name="gwy_data_line_get_sum ()" link="libgwyprocess-linestats.html#gwy-data-line-get-sum"/>
+    <keyword type="function" name="gwy_data_line_get_ra ()" link="libgwyprocess-linestats.html#gwy-data-line-get-ra" since="2.42"/>
+    <keyword type="function" name="gwy_data_line_get_skew ()" link="libgwyprocess-linestats.html#gwy-data-line-get-skew" since="2.42"/>
+    <keyword type="function" name="gwy_data_line_get_kurtosis ()" link="libgwyprocess-linestats.html#gwy-data-line-get-kurtosis" since="2.42"/>
+    <keyword type="function" name="gwy_data_line_part_get_max ()" link="libgwyprocess-linestats.html#gwy-data-line-part-get-max"/>
+    <keyword type="function" name="gwy_data_line_part_get_min ()" link="libgwyprocess-linestats.html#gwy-data-line-part-get-min"/>
+    <keyword type="function" name="gwy_data_line_part_get_min_max ()" link="libgwyprocess-linestats.html#gwy-data-line-part-get-min-max"/>
+    <keyword type="function" name="gwy_data_line_part_get_avg ()" link="libgwyprocess-linestats.html#gwy-data-line-part-get-avg"/>
+    <keyword type="function" name="gwy_data_line_part_get_rms ()" link="libgwyprocess-linestats.html#gwy-data-line-part-get-rms"/>
+    <keyword type="function" name="gwy_data_line_part_get_tan_beta0 ()" link="libgwyprocess-linestats.html#gwy-data-line-part-get-tan-beta0" since="2.2"/>
+    <keyword type="function" name="gwy_data_line_part_get_variation ()" link="libgwyprocess-linestats.html#gwy-data-line-part-get-variation" since="2.42"/>
+    <keyword type="function" name="gwy_data_line_part_get_sum ()" link="libgwyprocess-linestats.html#gwy-data-line-part-get-sum"/>
+    <keyword type="function" name="gwy_data_line_part_get_ra ()" link="libgwyprocess-linestats.html#gwy-data-line-part-get-ra"/>
+    <keyword type="function" name="gwy_data_line_part_get_skew ()" link="libgwyprocess-linestats.html#gwy-data-line-part-get-skew"/>
+    <keyword type="function" name="gwy_data_line_part_get_kurtosis ()" link="libgwyprocess-linestats.html#gwy-data-line-part-get-kurtosis"/>
+    <keyword type="function" name="gwy_data_line_get_modus ()" link="libgwyprocess-linestats.html#gwy-data-line-get-modus"/>
+    <keyword type="function" name="gwy_data_line_part_get_modus ()" link="libgwyprocess-linestats.html#gwy-data-line-part-get-modus"/>
+    <keyword type="function" name="gwy_data_line_get_median ()" link="libgwyprocess-linestats.html#gwy-data-line-get-median" since="2.1"/>
+    <keyword type="function" name="gwy_data_line_part_get_median ()" link="libgwyprocess-linestats.html#gwy-data-line-part-get-median" since="2.1"/>
+    <keyword type="function" name="gwy_data_line_get_length ()" link="libgwyprocess-linestats.html#gwy-data-line-get-length"/>
+    <keyword type="function" name="gwy_data_line_get_xpm ()" link="libgwyprocess-linestats.html#gwy-data-line-get-xpm" since="2.42"/>
+    <keyword type="function" name="gwy_data_line_get_xvm ()" link="libgwyprocess-linestats.html#gwy-data-line-get-xvm" since="2.42"/>
+    <keyword type="function" name="gwy_data_line_get_xtm ()" link="libgwyprocess-linestats.html#gwy-data-line-get-xtm" since="2.42"/>
+    <keyword type="function" name="gwy_data_line_get_kth_peaks ()" link="libgwyprocess-linestats.html#gwy-data-line-get-kth-peaks" since="2.50"/>
+    <keyword type="function" name="gwy_data_line_count_peaks ()" link="libgwyprocess-linestats.html#gwy-data-line-count-peaks" since="2.50"/>
+    <keyword type="function" name="gwy_data_line_distribution ()" link="libgwyprocess-linestats.html#gwy-data-line-distribution" since="2.8"/>
+    <keyword type="function" name="gwy_data_line_dh ()" link="libgwyprocess-linestats.html#gwy-data-line-dh"/>
+    <keyword type="function" name="gwy_data_line_cdh ()" link="libgwyprocess-linestats.html#gwy-data-line-cdh"/>
+    <keyword type="function" name="gwy_data_line_da ()" link="libgwyprocess-linestats.html#gwy-data-line-da"/>
+    <keyword type="function" name="gwy_data_line_cda ()" link="libgwyprocess-linestats.html#gwy-data-line-cda"/>
+    <keyword type="function" name="gwy_data_line_acf ()" link="libgwyprocess-linestats.html#gwy-data-line-acf"/>
+    <keyword type="function" name="gwy_data_line_hhcf ()" link="libgwyprocess-linestats.html#gwy-data-line-hhcf"/>
+    <keyword type="function" name="gwy_data_line_psdf ()" link="libgwyprocess-linestats.html#gwy-data-line-psdf"/>
+    <keyword type="function" name="gwy_fft_simple ()" link="libgwyprocess-simpleFFT.html#gwy-fft-simple"/>
+    <keyword type="function" name="gwy_fft_window ()" link="libgwyprocess-simpleFFT.html#gwy-fft-window"/>
+    <keyword type="function" name="gwy_fft_window_data_field ()" link="libgwyprocess-simpleFFT.html#gwy-fft-window-data-field"/>
+    <keyword type="function" name="gwy_peaks_new ()" link="libgwyprocess-GwyPeaks.html#gwy-peaks-new" since="2.46"/>
+    <keyword type="function" name="gwy_peaks_copy ()" link="libgwyprocess-GwyPeaks.html#gwy-peaks-copy" since="2.47"/>
+    <keyword type="function" name="gwy_peaks_free ()" link="libgwyprocess-GwyPeaks.html#gwy-peaks-free" since="2.46"/>
+    <keyword type="function" name="gwy_peaks_set_background ()" link="libgwyprocess-GwyPeaks.html#gwy-peaks-set-background" since="2.46"/>
+    <keyword type="function" name="gwy_peaks_set_order ()" link="libgwyprocess-GwyPeaks.html#gwy-peaks-set-order" since="2.46"/>
+    <keyword type="function" name="gwy_peaks_analyze ()" link="libgwyprocess-GwyPeaks.html#gwy-peaks-analyze" since="2.46"/>
+    <keyword type="function" name="gwy_peaks_analyze_xy ()" link="libgwyprocess-GwyPeaks.html#gwy-peaks-analyze-xy" since="2.46"/>
+    <keyword type="function" name="gwy_peaks_analyze_dataline ()" link="libgwyprocess-GwyPeaks.html#gwy-peaks-analyze-dataline" since="2.46"/>
+    <keyword type="function" name="gwy_peaks_n_peaks ()" link="libgwyprocess-GwyPeaks.html#gwy-peaks-n-peaks" since="2.46"/>
+    <keyword type="function" name="gwy_peaks_get_quantity ()" link="libgwyprocess-GwyPeaks.html#gwy-peaks-get-quantity" since="2.46"/>
+    <keyword type="enum" name="enum GwyPeakBackgroundType" link="libgwyprocess-GwyPeaks.html#GwyPeakBackgroundType" since="2.46"/>
+    <keyword type="enum" name="enum GwyPeakOrderType" link="libgwyprocess-GwyPeaks.html#GwyPeakOrderType" since="2.46"/>
+    <keyword type="enum" name="enum GwyPeakQuantity" link="libgwyprocess-GwyPeaks.html#GwyPeakQuantity" since="2.46"/>
+    <keyword type="struct" name="GwyPeaks" link="libgwyprocess-GwyPeaks.html#GwyPeaks" since="2.46"/>
+    <keyword type="function" name="gwy_shape_fit_preset_needs_same_units ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-needs-same-units" since="2.47"/>
+    <keyword type="function" name="gwy_shape_fit_preset_get_nparams ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-nparams" since="2.47"/>
+    <keyword type="function" name="gwy_shape_fit_preset_get_param_name ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-param-name" since="2.47"/>
+    <keyword type="function" name="gwy_shape_fit_preset_get_param_description ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-param-description" since="2.61"/>
+    <keyword type="function" name="gwy_shape_fit_preset_get_param_flags ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-param-flags" since="2.47"/>
+    <keyword type="function" name="gwy_shape_fit_preset_get_param_units ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-param-units" since="2.47"/>
+    <keyword type="function" name="gwy_shape_fit_preset_get_param_power_xy ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-param-power-xy" since="2.50"/>
+    <keyword type="function" name="gwy_shape_fit_preset_get_param_power_z ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-param-power-z" since="2.50"/>
+    <keyword type="function" name="gwy_shape_fit_preset_get_nsecondary ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-nsecondary" since="2.47"/>
+    <keyword type="function" name="gwy_shape_fit_preset_get_secondary_name ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-secondary-name" since="2.47"/>
+    <keyword type="function" name="gwy_shape_fit_preset_get_secondary_description ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-secondary-description" since="2.61"/>
+    <keyword type="function" name="gwy_shape_fit_preset_get_secondary_flags ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-secondary-flags" since="2.47"/>
+    <keyword type="function" name="gwy_shape_fit_preset_get_secondary_value ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-secondary-value" since="2.47"/>
+    <keyword type="function" name="gwy_shape_fit_preset_get_secondary_error ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-secondary-error" since="2.47"/>
+    <keyword type="function" name="gwy_shape_fit_preset_get_secondary_units ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-secondary-units" since="2.47"/>
+    <keyword type="function" name="gwy_shape_fit_preset_get_secondary_power_xy ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-secondary-power-xy" since="2.50"/>
+    <keyword type="function" name="gwy_shape_fit_preset_get_secondary_power_z ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-secondary-power-z" since="2.50"/>
+    <keyword type="function" name="gwy_shape_fit_preset_setup ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-setup" since="2.47"/>
+    <keyword type="function" name="gwy_shape_fit_preset_guess ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-guess" since="2.47"/>
+    <keyword type="function" name="gwy_shape_fit_preset_get_value ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-get-value" since="2.47"/>
+    <keyword type="function" name="gwy_shape_fit_preset_calculate_z ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-calculate-z" since="2.47"/>
+    <keyword type="function" name="gwy_shape_fit_preset_calculate_xyz ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-calculate-xyz" since="2.47"/>
+    <keyword type="function" name="gwy_shape_fit_preset_create_fitter ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-create-fitter" since="2.47"/>
+    <keyword type="function" name="gwy_shape_fit_preset_fit ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-fit" since="2.47"/>
+    <keyword type="function" name="gwy_shape_fit_preset_quick_fit ()" link="GwyShapeFitPreset.html#gwy-shape-fit-preset-quick-fit" since="2.48"/>
+    <keyword type="function" name="gwy_shape_fit_presets ()" link="GwyShapeFitPreset.html#gwy-shape-fit-presets" since="2.47"/>
+    <keyword type="struct" name="struct GwyShapeFitPreset" link="GwyShapeFitPreset.html#GwyShapeFitPreset-struct"/>
+    <keyword type="struct" name="struct GwyShapeFitPresetClass" link="GwyShapeFitPreset.html#GwyShapeFitPresetClass"/>
+    <keyword type="function" name="gwy_spline_new ()" link="libgwyprocess-GwySpline.html#gwy-spline-new" since="2.45"/>
+    <keyword type="function" name="gwy_spline_free ()" link="libgwyprocess-GwySpline.html#gwy-spline-free" since="2.45"/>
+    <keyword type="function" name="gwy_spline_copy ()" link="libgwyprocess-GwySpline.html#gwy-spline-copy" since="2.49"/>
+    <keyword type="function" name="gwy_spline_new_from_points ()" link="libgwyprocess-GwySpline.html#gwy-spline-new-from-points" since="2.45"/>
+    <keyword type="function" name="gwy_spline_get_npoints ()" link="libgwyprocess-GwySpline.html#gwy-spline-get-npoints" since="2.45"/>
+    <keyword type="function" name="gwy_spline_get_points ()" link="libgwyprocess-GwySpline.html#gwy-spline-get-points" since="2.45"/>
+    <keyword type="function" name="gwy_spline_get_tangents ()" link="libgwyprocess-GwySpline.html#gwy-spline-get-tangents" since="2.45"/>
+    <keyword type="function" name="gwy_spline_get_slackness ()" link="libgwyprocess-GwySpline.html#gwy-spline-get-slackness" since="2.45"/>
+    <keyword type="function" name="gwy_spline_get_closed ()" link="libgwyprocess-GwySpline.html#gwy-spline-get-closed" since="2.45"/>
+    <keyword type="function" name="gwy_spline_set_points ()" link="libgwyprocess-GwySpline.html#gwy-spline-set-points" since="2.45"/>
+    <keyword type="function" name="gwy_spline_set_slackness ()" link="libgwyprocess-GwySpline.html#gwy-spline-set-slackness" since="2.45"/>
+    <keyword type="function" name="gwy_spline_set_closed ()" link="libgwyprocess-GwySpline.html#gwy-spline-set-closed" since="2.45"/>
+    <keyword type="function" name="gwy_spline_length ()" link="libgwyprocess-GwySpline.html#gwy-spline-length" since="2.45"/>
+    <keyword type="function" name="gwy_spline_sample_naturally ()" link="libgwyprocess-GwySpline.html#gwy-spline-sample-naturally" since="2.45"/>
+    <keyword type="function" name="gwy_spline_sample_uniformly ()" link="libgwyprocess-GwySpline.html#gwy-spline-sample-uniformly" since="2.45"/>
+    <keyword type="struct" name="GwySpline" link="libgwyprocess-GwySpline.html#GwySpline"/>
+    <keyword type="function" name="gwy_data_field_get_max ()" link="libgwyprocess-stats.html#gwy-data-field-get-max"/>
+    <keyword type="function" name="gwy_data_field_get_min ()" link="libgwyprocess-stats.html#gwy-data-field-get-min"/>
+    <keyword type="function" name="gwy_data_field_get_min_max ()" link="libgwyprocess-stats.html#gwy-data-field-get-min-max"/>
+    <keyword type="function" name="gwy_data_field_get_avg ()" link="libgwyprocess-stats.html#gwy-data-field-get-avg"/>
+    <keyword type="function" name="gwy_data_field_get_rms ()" link="libgwyprocess-stats.html#gwy-data-field-get-rms"/>
+    <keyword type="function" name="gwy_data_field_get_mean_square ()" link="libgwyprocess-stats.html#gwy-data-field-get-mean-square" since="2.52"/>
+    <keyword type="function" name="gwy_data_field_get_sum ()" link="libgwyprocess-stats.html#gwy-data-field-get-sum"/>
+    <keyword type="function" name="gwy_data_field_get_median ()" link="libgwyprocess-stats.html#gwy-data-field-get-median"/>
+    <keyword type="function" name="gwy_data_field_get_surface_area ()" link="libgwyprocess-stats.html#gwy-data-field-get-surface-area"/>
+    <keyword type="function" name="gwy_data_field_get_surface_slope ()" link="libgwyprocess-stats.html#gwy-data-field-get-surface-slope" since="2.58"/>
+    <keyword type="function" name="gwy_data_field_get_variation ()" link="libgwyprocess-stats.html#gwy-data-field-get-variation" since="2.38"/>
+    <keyword type="function" name="gwy_data_field_get_entropy ()" link="libgwyprocess-stats.html#gwy-data-field-get-entropy" since="2.42"/>
+    <keyword type="function" name="gwy_data_field_get_entropy_2d ()" link="libgwyprocess-stats.html#gwy-data-field-get-entropy-2d" since="2.44"/>
+    <keyword type="function" name="gwy_data_field_area_get_max ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-max"/>
+    <keyword type="function" name="gwy_data_field_area_get_min ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-min"/>
+    <keyword type="function" name="gwy_data_field_area_get_min_max ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-min-max" deprecated=""/>
+    <keyword type="function" name="gwy_data_field_area_get_min_max_mask ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-min-max-mask" since="2.18"/>
+    <keyword type="function" name="gwy_data_field_area_get_avg ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-avg" deprecated=""/>
+    <keyword type="function" name="gwy_data_field_area_get_avg_mask ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-avg-mask" since="2.18"/>
+    <keyword type="function" name="gwy_data_field_area_get_rms ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-rms" deprecated=""/>
+    <keyword type="function" name="gwy_data_field_area_get_rms_mask ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-rms-mask" since="2.18"/>
+    <keyword type="function" name="gwy_data_field_area_get_grainwise_rms ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-grainwise-rms" since="2.29"/>
+    <keyword type="function" name="gwy_data_field_area_get_sum ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-sum" deprecated=""/>
+    <keyword type="function" name="gwy_data_field_area_get_sum_mask ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-sum-mask" since="2.18"/>
+    <keyword type="function" name="gwy_data_field_area_get_median ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-median" deprecated=""/>
+    <keyword type="function" name="gwy_data_field_area_get_median_mask ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-median-mask" since="2.18"/>
+    <keyword type="function" name="gwy_data_field_area_get_surface_area ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-surface-area" deprecated=""/>
+    <keyword type="function" name="gwy_data_field_area_get_surface_area_mask ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-surface-area-mask" since="2.18"/>
+    <keyword type="function" name="gwy_data_field_area_get_surface_slope_mask ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-surface-slope-mask" since="2.58"/>
+    <keyword type="function" name="gwy_data_field_area_get_mean_square ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-mean-square" since="2.52"/>
+    <keyword type="function" name="gwy_data_field_area_get_entropy_at_scales ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-entropy-at-scales" since="2.44"/>
+    <keyword type="function" name="gwy_data_field_get_entropy_2d_at_scales ()" link="libgwyprocess-stats.html#gwy-data-field-get-entropy-2d-at-scales" since="2.44"/>
+    <keyword type="function" name="gwy_data_field_area_get_variation ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-variation" since="2.38"/>
+    <keyword type="function" name="gwy_data_field_area_get_entropy ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-entropy" since="2.42"/>
+    <keyword type="function" name="gwy_data_field_area_get_volume ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-volume" since="2.3"/>
+    <keyword type="function" name="gwy_data_field_get_autorange ()" link="libgwyprocess-stats.html#gwy-data-field-get-autorange"/>
+    <keyword type="function" name="gwy_data_field_area_get_autorange ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-autorange" since="2.54"/>
+    <keyword type="function" name="gwy_data_field_get_stats ()" link="libgwyprocess-stats.html#gwy-data-field-get-stats"/>
+    <keyword type="function" name="gwy_data_field_area_get_stats ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-stats" deprecated=""/>
+    <keyword type="function" name="gwy_data_field_area_get_stats_mask ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-stats-mask" since="2.18"/>
+    <keyword type="function" name="gwy_data_field_area_count_in_range ()" link="libgwyprocess-stats.html#gwy-data-field-area-count-in-range"/>
+    <keyword type="function" name="gwy_data_field_area_dh ()" link="libgwyprocess-stats.html#gwy-data-field-area-dh"/>
+    <keyword type="function" name="gwy_data_field_dh ()" link="libgwyprocess-stats.html#gwy-data-field-dh"/>
+    <keyword type="function" name="gwy_data_field_area_cdh ()" link="libgwyprocess-stats.html#gwy-data-field-area-cdh"/>
+    <keyword type="function" name="gwy_data_field_cdh ()" link="libgwyprocess-stats.html#gwy-data-field-cdh"/>
+    <keyword type="function" name="gwy_data_field_area_da ()" link="libgwyprocess-stats.html#gwy-data-field-area-da"/>
+    <keyword type="function" name="gwy_data_field_area_da_mask ()" link="libgwyprocess-stats.html#gwy-data-field-area-da-mask" since="2.49"/>
+    <keyword type="function" name="gwy_data_field_da ()" link="libgwyprocess-stats.html#gwy-data-field-da"/>
+    <keyword type="function" name="gwy_data_field_area_cda ()" link="libgwyprocess-stats.html#gwy-data-field-area-cda"/>
+    <keyword type="function" name="gwy_data_field_area_cda_mask ()" link="libgwyprocess-stats.html#gwy-data-field-area-cda-mask" since="2.49"/>
+    <keyword type="function" name="gwy_data_field_cda ()" link="libgwyprocess-stats.html#gwy-data-field-cda"/>
+    <keyword type="function" name="gwy_data_field_area_acf ()" link="libgwyprocess-stats.html#gwy-data-field-area-acf"/>
+    <keyword type="function" name="gwy_data_field_acf ()" link="libgwyprocess-stats.html#gwy-data-field-acf"/>
+    <keyword type="function" name="gwy_data_field_area_row_acf ()" link="libgwyprocess-stats.html#gwy-data-field-area-row-acf"/>
+    <keyword type="function" name="gwy_data_field_area_hhcf ()" link="libgwyprocess-stats.html#gwy-data-field-area-hhcf"/>
+    <keyword type="function" name="gwy_data_field_hhcf ()" link="libgwyprocess-stats.html#gwy-data-field-hhcf"/>
+    <keyword type="function" name="gwy_data_field_area_row_hhcf ()" link="libgwyprocess-stats.html#gwy-data-field-area-row-hhcf"/>
+    <keyword type="function" name="gwy_data_field_area_psdf ()" link="libgwyprocess-stats.html#gwy-data-field-area-psdf"/>
+    <keyword type="function" name="gwy_data_field_psdf ()" link="libgwyprocess-stats.html#gwy-data-field-psdf"/>
+    <keyword type="function" name="gwy_data_field_area_row_psdf ()" link="libgwyprocess-stats.html#gwy-data-field-area-row-psdf"/>
+    <keyword type="function" name="gwy_data_field_area_rpsdf ()" link="libgwyprocess-stats.html#gwy-data-field-area-rpsdf" since="2.7"/>
+    <keyword type="function" name="gwy_data_field_rpsdf ()" link="libgwyprocess-stats.html#gwy-data-field-rpsdf" since="2.7"/>
+    <keyword type="function" name="gwy_data_field_area_row_asg ()" link="libgwyprocess-stats.html#gwy-data-field-area-row-asg"/>
+    <keyword type="function" name="gwy_data_field_area_2dacf ()" link="libgwyprocess-stats.html#gwy-data-field-area-2dacf" since="2.7"/>
+    <keyword type="function" name="gwy_data_field_area_2dacf_mask ()" link="libgwyprocess-stats.html#gwy-data-field-area-2dacf-mask" since="2.50"/>
+    <keyword type="function" name="gwy_data_field_2dacf ()" link="libgwyprocess-stats.html#gwy-data-field-2dacf" since="2.7"/>
+    <keyword type="function" name="gwy_data_field_area_2dpsdf_mask ()" link="libgwyprocess-stats.html#gwy-data-field-area-2dpsdf-mask" since="2.51"/>
+    <keyword type="function" name="gwy_data_field_2dpsdf ()" link="libgwyprocess-stats.html#gwy-data-field-2dpsdf" since="2.51"/>
+    <keyword type="function" name="gwy_data_field_area_racf ()" link="libgwyprocess-stats.html#gwy-data-field-area-racf" since="2.22"/>
+    <keyword type="function" name="gwy_data_field_racf ()" link="libgwyprocess-stats.html#gwy-data-field-racf" since="2.22"/>
+    <keyword type="function" name="gwy_data_field_area_minkowski_volume ()" link="libgwyprocess-stats.html#gwy-data-field-area-minkowski-volume"/>
+    <keyword type="function" name="gwy_data_field_minkowski_volume ()" link="libgwyprocess-stats.html#gwy-data-field-minkowski-volume"/>
+    <keyword type="function" name="gwy_data_field_area_minkowski_boundary ()" link="libgwyprocess-stats.html#gwy-data-field-area-minkowski-boundary"/>
+    <keyword type="function" name="gwy_data_field_minkowski_boundary ()" link="libgwyprocess-stats.html#gwy-data-field-minkowski-boundary"/>
+    <keyword type="function" name="gwy_data_field_area_minkowski_euler ()" link="libgwyprocess-stats.html#gwy-data-field-area-minkowski-euler"/>
+    <keyword type="function" name="gwy_data_field_minkowski_euler ()" link="libgwyprocess-stats.html#gwy-data-field-minkowski-euler"/>
+    <keyword type="function" name="gwy_data_field_area_get_dispersion ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-dispersion" since="2.52"/>
+    <keyword type="function" name="gwy_data_field_get_dispersion ()" link="libgwyprocess-stats.html#gwy-data-field-get-dispersion" since="2.52"/>
+    <keyword type="function" name="gwy_data_field_slope_distribution ()" link="libgwyprocess-stats.html#gwy-data-field-slope-distribution"/>
+    <keyword type="function" name="gwy_data_field_get_normal_coeffs ()" link="libgwyprocess-stats.html#gwy-data-field-get-normal-coeffs"/>
+    <keyword type="function" name="gwy_data_field_area_get_normal_coeffs ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-normal-coeffs"/>
+    <keyword type="function" name="gwy_data_field_area_get_inclination ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-inclination"/>
+    <keyword type="function" name="gwy_data_field_get_inclination ()" link="libgwyprocess-stats.html#gwy-data-field-get-inclination"/>
+    <keyword type="function" name="gwy_data_field_area_get_line_stats ()" link="libgwyprocess-stats.html#gwy-data-field-area-get-line-stats" since="2.2"/>
+    <keyword type="function" name="gwy_data_field_get_line_stats_mask ()" link="libgwyprocess-stats.html#gwy-data-field-get-line-stats-mask" since="2.46"/>
+    <keyword type="function" name="gwy_data_field_get_line_stats ()" link="libgwyprocess-stats.html#gwy-data-field-get-line-stats" since="2.2"/>
+    <keyword type="function" name="gwy_data_field_count_maxima ()" link="libgwyprocess-stats.html#gwy-data-field-count-maxima" since="2.38"/>
+    <keyword type="function" name="gwy_data_field_count_minima ()" link="libgwyprocess-stats.html#gwy-data-field-count-minima" since="2.38"/>
+    <keyword type="function" name="gwy_data_field_psdf_to_angular_spectrum ()" link="libgwyprocess-stats.html#gwy-data-field-psdf-to-angular-spectrum" since="2.56"/>
+    <keyword type="function" name="gwy_data_field_angular_average ()" link="libgwyprocess-stats.html#gwy-data-field-angular-average" since="2.42"/>
+    <keyword type="function" name="gwy_data_field_get_max_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-max-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_area_get_max_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-max-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_get_min_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-min-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_area_get_min_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-min-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_get_min_max_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-min-max-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_area_get_min_max_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-min-max-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_area_get_min_max_uncertainty_mask ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-min-max-uncertainty-mask" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_get_avg_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-avg-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_area_get_avg_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-avg-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_area_get_avg_uncertainty_mask ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-avg-uncertainty-mask" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_get_rms_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-rms-uncertainty"/>
+    <keyword type="function" name="gwy_data_field_area_get_rms_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-rms-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_area_get_rms_uncertainty_mask ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-rms-uncertainty-mask" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_get_stats_uncertainties ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-stats-uncertainties" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_area_get_stats_uncertainties ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-stats-uncertainties" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_area_get_stats_uncertainties_mask ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-stats-uncertainties-mask" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_area_acf_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-acf-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_acf_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-acf-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_area_hhcf_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-hhcf-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_hhcf_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-hhcf-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_get_surface_area_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-surface-area-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_area_get_surface_area_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-surface-area-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_area_get_surface_area_mask_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-surface-area-mask-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_area_get_median_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-median-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_area_get_median_uncertainty_mask ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-median-uncertainty-mask" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_get_median_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-median-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_area_dh_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-dh-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_dh_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-dh-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_area_get_normal_coeffs_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-normal-coeffs-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_get_normal_coeffs_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-normal-coeffs-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_area_get_inclination_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-inclination-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_get_inclination_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-inclination-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_area_get_projected_area_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-get-projected-area-uncertainty"/>
+    <keyword type="function" name="gwy_data_field_area_cdh_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-area-cdh-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_cdh_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-cdh-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_field_get_xder_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-xder-uncertainty"/>
+    <keyword type="function" name="gwy_data_field_get_yder_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-field-get-yder-uncertainty"/>
+    <keyword type="function" name="gwy_data_line_acf_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-line-acf-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_line_cumulate_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-line-cumulate-uncertainty" since="2.23"/>
+    <keyword type="function" name="gwy_data_line_hhcf_uncertainty ()" link="libgwyprocess-stats-uncertainty.html#gwy-data-line-hhcf-uncertainty" since="2.23"/>
+    <keyword type="function" name="GwyTipModelFunc ()" link="libgwyprocess-tip.html#GwyTipModelFunc" deprecated=""/>
+    <keyword type="function" name="GwyTipGuessFunc ()" link="libgwyprocess-tip.html#GwyTipGuessFunc" deprecated=""/>
+    <keyword type="function" name="gwy_tip_model_get_npresets ()" link="libgwyprocess-tip.html#gwy-tip-model-get-npresets"/>
+    <keyword type="function" name="gwy_tip_model_get_preset ()" link="libgwyprocess-tip.html#gwy-tip-model-get-preset"/>
+    <keyword type="function" name="gwy_tip_model_get_preset_by_name ()" link="libgwyprocess-tip.html#gwy-tip-model-get-preset-by-name"/>
+    <keyword type="function" name="gwy_tip_model_get_preset_id ()" link="libgwyprocess-tip.html#gwy-tip-model-get-preset-id"/>
+    <keyword type="function" name="gwy_tip_model_get_preset_tip_name ()" link="libgwyprocess-tip.html#gwy-tip-model-get-preset-tip-name"/>
+    <keyword type="function" name="gwy_tip_model_get_preset_group_name ()" link="libgwyprocess-tip.html#gwy-tip-model-get-preset-group-name"/>
+    <keyword type="function" name="gwy_tip_model_get_preset_nparams ()" link="libgwyprocess-tip.html#gwy-tip-model-get-preset-nparams"/>
+    <keyword type="function" name="gwy_tip_model_get_preset_params ()" link="libgwyprocess-tip.html#gwy-tip-model-get-preset-params" since="2.47"/>
+    <keyword type="function" name="gwy_tip_model_preset_create ()" link="libgwyprocess-tip.html#gwy-tip-model-preset-create" since="2.47"/>
+    <keyword type="function" name="gwy_tip_model_preset_create_for_zrange ()" link="libgwyprocess-tip.html#gwy-tip-model-preset-create-for-zrange" since="2.47"/>
+    <keyword type="function" name="gwy_tip_dilation ()" link="libgwyprocess-tip.html#gwy-tip-dilation"/>
+    <keyword type="function" name="gwy_tip_erosion ()" link="libgwyprocess-tip.html#gwy-tip-erosion"/>
+    <keyword type="function" name="gwy_tip_cmap ()" link="libgwyprocess-tip.html#gwy-tip-cmap"/>
+    <keyword type="function" name="gwy_tip_estimate_partial ()" link="libgwyprocess-tip.html#gwy-tip-estimate-partial"/>
+    <keyword type="function" name="gwy_tip_estimate_full ()" link="libgwyprocess-tip.html#gwy-tip-estimate-full"/>
+    <keyword type="struct" name="struct GwyTipModelPreset" link="libgwyprocess-tip.html#GwyTipModelPreset-struct"/>
+    <keyword type="function" name="gwy_data_field_mfm_perpendicular_stray_field ()" link="libgwyprocess-MFM.html#gwy-data-field-mfm-perpendicular-stray-field" since="2.51"/>
+    <keyword type="function" name="gwy_data_field_mfm_perpendicular_stray_field_angle_correction ()" link="libgwyprocess-MFM.html#gwy-data-field-mfm-perpendicular-stray-field-angle-correction" since="2.54"/>
+    <keyword type="function" name="gwy_data_field_mfm_perpendicular_medium_force ()" link="libgwyprocess-MFM.html#gwy-data-field-mfm-perpendicular-medium-force" since="2.51"/>
+    <keyword type="function" name="gwy_data_field_mfm_shift_z ()" link="libgwyprocess-MFM.html#gwy-data-field-mfm-shift-z" since="2.51"/>
+    <keyword type="function" name="gwy_data_field_mfm_find_shift_z ()" link="libgwyprocess-MFM.html#gwy-data-field-mfm-find-shift-z" since="2.51"/>
+    <keyword type="function" name="gwy_data_field_mfm_parallel_medium ()" link="libgwyprocess-MFM.html#gwy-data-field-mfm-parallel-medium" since="2.51"/>
+    <keyword type="function" name="gwy_data_field_mfm_current_line ()" link="libgwyprocess-MFM.html#gwy-data-field-mfm-current-line" since="2.51"/>
+    <keyword type="enum" name="enum GwyMFMProbeType" link="libgwyprocess-MFM.html#GwyMFMProbeType" since="2.51"/>
+    <keyword type="enum" name="enum GwyMFMComponentType" link="libgwyprocess-MFM.html#GwyMFMComponentType" since="2.51"/>
+    <keyword type="enum" name="enum GwyMFMGradientType" link="libgwyprocess-MFM.html#GwyMFMGradientType"/>
+    <keyword type="function" name="gwy_data_field_synth_gaussian_displacement ()" link="libgwyprocess-synth.html#gwy-data-field-synth-gaussian-displacement" since="2.59"/>
+    <keyword type="function" name="gwy_triangulation_new ()" link="GwyTriangulation.html#gwy-triangulation-new" since="2.18"/>
+    <keyword type="function" name="gwy_triangulation_triangulate ()" link="GwyTriangulation.html#gwy-triangulation-triangulate" since="2.18"/>
+    <keyword type="function" name="gwy_triangulation_triangulate_iterative ()" link="GwyTriangulation.html#gwy-triangulation-triangulate-iterative" since="2.44"/>
+    <keyword type="function" name="gwy_triangulation_interpolate ()" link="GwyTriangulation.html#gwy-triangulation-interpolate" since="2.18"/>
+    <keyword type="function" name="gwy_triangulation_data_free ()" link="GwyTriangulation.html#gwy-triangulation-data-free" since="2.18"/>
+    <keyword type="function" name="gwy_triangulation_delaunay ()" link="GwyTriangulation.html#gwy-triangulation-delaunay" since="2.18"/>
+    <keyword type="function" name="gwy_triangulation_boundary ()" link="GwyTriangulation.html#gwy-triangulation-boundary" since="2.18"/>
+    <keyword type="function" name="gwy_triangulation_voronoi ()" link="GwyTriangulation.html#gwy-triangulation-voronoi" since="2.18"/>
+    <keyword type="macro" name="GWY_TRIANGULATION_NONE" link="GwyTriangulation.html#GWY-TRIANGULATION-NONE:CAPS" since="2.18"/>
+    <keyword type="typedef" name="GwyTriangulationPointXY" link="GwyTriangulation.html#GwyTriangulationPointXY"/>
+    <keyword type="typedef" name="GwyTriangulationPointXYZ" link="GwyTriangulation.html#GwyTriangulationPointXYZ" since="2.18"/>
+    <keyword type="struct" name="GwyTriangulationData" link="GwyTriangulation.html#GwyTriangulationData" since="2.18"/>
+    <keyword type="struct" name="struct GwyTriangulation" link="GwyTriangulation.html#GwyTriangulation-struct"/>
+    <keyword type="struct" name="struct GwyTriangulationClass" link="GwyTriangulation.html#GwyTriangulationClass"/>
+    <keyword type="function" name="gwy_process_type_init ()" link="libgwyprocess-gwyprocess.html#gwy-process-type-init"/>
+    <keyword type="function" name="gwy_merge_type_get_enum ()" link="libgwyprocess-gwyprocessenums.html#gwy-merge-type-get-enum"/>
+    <keyword type="function" name="gwy_masking_type_get_enum ()" link="libgwyprocess-gwyprocessenums.html#gwy-masking-type-get-enum" since="2.18"/>
+    <keyword type="function" name="gwy_plane_symmetry_get_enum ()" link="libgwyprocess-gwyprocessenums.html#gwy-plane-symmetry-get-enum"/>
+    <keyword type="function" name="gwy_2d_cwt_wavelet_type_get_enum ()" link="libgwyprocess-gwyprocessenums.html#gwy-2d-cwt-wavelet-type-get-enum"/>
+    <keyword type="function" name="gwy_orientation_get_enum ()" link="libgwyprocess-gwyprocessenums.html#gwy-orientation-get-enum"/>
+    <keyword type="function" name="gwy_dwt_type_get_enum ()" link="libgwyprocess-gwyprocessenums.html#gwy-dwt-type-get-enum"/>
+    <keyword type="function" name="gwy_dwt_denoise_type_get_enum ()" link="libgwyprocess-gwyprocessenums.html#gwy-dwt-denoise-type-get-enum"/>
+    <keyword type="function" name="gwy_interpolation_type_get_enum ()" link="libgwyprocess-gwyprocessenums.html#gwy-interpolation-type-get-enum"/>
+    <keyword type="function" name="gwy_windowing_type_get_enum ()" link="libgwyprocess-gwyprocessenums.html#gwy-windowing-type-get-enum"/>
+    <keyword type="function" name="gwy_correlation_type_get_enum ()" link="libgwyprocess-gwyprocessenums.html#gwy-correlation-type-get-enum"/>
+    <keyword type="function" name="gwy_distance_transform_type_get_enum ()" link="libgwyprocess-gwyprocessenums.html#gwy-distance-transform-type-get-enum" since="2.43"/>
+    <keyword type="function" name="gwy_computation_state_get_state ()" link="libgwyprocess-gwyprocessenums.html#gwy-computation-state-get-state" since="2.49"/>
+    <keyword type="function" name="gwy_computation_state_get_fraction ()" link="libgwyprocess-gwyprocessenums.html#gwy-computation-state-get-fraction" since="2.49"/>
+    <keyword type="enum" name="enum GwyMergeType" link="libgwyprocess-gwyprocessenums.html#GwyMergeType"/>
+    <keyword type="enum" name="enum GwyMaskingType" link="libgwyprocess-gwyprocessenums.html#GwyMaskingType" since="2.12"/>
+    <keyword type="enum" name="enum GwyWatershedStateType" link="libgwyprocess-gwyprocessenums.html#GwyWatershedStateType"/>
+    <keyword type="enum" name="enum GwyPlaneSymmetry" link="libgwyprocess-gwyprocessenums.html#GwyPlaneSymmetry"/>
+    <keyword type="enum" name="enum Gwy2DCWTWaveletType" link="libgwyprocess-gwyprocessenums.html#Gwy2DCWTWaveletType"/>
+    <keyword type="enum" name="enum GwyOrientation" link="libgwyprocess-gwyprocessenums.html#GwyOrientation"/>
+    <keyword type="enum" name="enum GwyTransformDirection" link="libgwyprocess-gwyprocessenums.html#GwyTransformDirection"/>
+    <keyword type="enum" name="enum GwyDataFieldCached" link="libgwyprocess-gwyprocessenums.html#GwyDataFieldCached"/>
+    <keyword type="enum" name="enum GwyComputationStateType" link="libgwyprocess-gwyprocessenums.html#GwyComputationStateType"/>
+    <keyword type="enum" name="enum GwyDWTType" link="libgwyprocess-gwyprocessenums.html#GwyDWTType"/>
+    <keyword type="enum" name="enum GwyDWTDenoiseType" link="libgwyprocess-gwyprocessenums.html#GwyDWTDenoiseType"/>
+    <keyword type="enum" name="enum GwyInterpolationType" link="libgwyprocess-gwyprocessenums.html#GwyInterpolationType"/>
+    <keyword type="enum" name="enum GwyPlaneFitQuantity" link="libgwyprocess-gwyprocessenums.html#GwyPlaneFitQuantity"/>
+    <keyword type="enum" name="enum GwyWindowingType" link="libgwyprocess-gwyprocessenums.html#GwyWindowingType"/>
+    <keyword type="enum" name="enum GwyTipType" link="libgwyprocess-gwyprocessenums.html#GwyTipType"/>
+    <keyword type="enum" name="enum GwyTipParamType" link="libgwyprocess-gwyprocessenums.html#GwyTipParamType" since="2.47"/>
+    <keyword type="enum" name="enum GwyCorrelationType" link="libgwyprocess-gwyprocessenums.html#GwyCorrelationType"/>
+    <keyword type="enum" name="enum GwyCorrSearchType" link="libgwyprocess-gwyprocessenums.html#GwyCorrSearchType" since="2.50"/>
+    <keyword type="enum" name="enum GwyGrainQuantity" link="libgwyprocess-gwyprocessenums.html#GwyGrainQuantity"/>
+    <keyword type="enum" name="enum GwyDataCompatibilityFlags" link="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags"/>
+    <keyword type="enum" name="enum GwyLineStatQuantity" link="libgwyprocess-gwyprocessenums.html#GwyLineStatQuantity" since="2.2"/>
+    <keyword type="enum" name="enum GwyExteriorType" link="libgwyprocess-gwyprocessenums.html#GwyExteriorType" since="2.2"/>
+    <keyword type="enum" name="enum GwyDistanceTransformType" link="libgwyprocess-gwyprocessenums.html#GwyDistanceTransformType" since="2.41"/>
+    <keyword type="enum" name="enum GwyMinMaxFilterType" link="libgwyprocess-gwyprocessenums.html#GwyMinMaxFilterType" since="2.43"/>
+    <keyword type="enum" name="enum GwyRotateResizeType" link="libgwyprocess-gwyprocessenums.html#GwyRotateResizeType" since="2.46"/>
+    <keyword type="enum" name="enum GwyAffineScalingType" link="libgwyprocess-gwyprocessenums.html#GwyAffineScalingType" since="2.49"/>
+    <keyword type="enum" name="enum GwyBrickTransposeType" link="libgwyprocess-gwyprocessenums.html#GwyBrickTransposeType" since="2.51"/>
+    <keyword type="struct" name="GwyComputationState" link="libgwyprocess-gwyprocessenums.html#GwyComputationState-struct"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_GROUP_ID" link="GwyGrainValue.html#GWY-GRAIN-VALUE-GROUP-ID:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_GROUP_POSITION" link="GwyGrainValue.html#GWY-GRAIN-VALUE-GROUP-POSITION:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_GROUP_VALUE" link="GwyGrainValue.html#GWY-GRAIN-VALUE-GROUP-VALUE:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_GROUP_AREA" link="GwyGrainValue.html#GWY-GRAIN-VALUE-GROUP-AREA:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_GROUP_VOLUME" link="GwyGrainValue.html#GWY-GRAIN-VALUE-GROUP-VOLUME:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_GROUP_BOUNDARY" link="GwyGrainValue.html#GWY-GRAIN-VALUE-GROUP-BOUNDARY:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_GROUP_SLOPE" link="GwyGrainValue.html#GWY-GRAIN-VALUE-GROUP-SLOPE:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_GROUP_CURVATURE" link="GwyGrainValue.html#GWY-GRAIN-VALUE-GROUP-CURVATURE:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_GROUP_MOMENT" link="GwyGrainValue.html#GWY-GRAIN-VALUE-GROUP-MOMENT:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_GROUP_USER" link="GwyGrainValue.html#GWY-GRAIN-VALUE-GROUP-USER:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_SAME_UNITS" link="GwyGrainValue.html#GWY-GRAIN-VALUE-SAME-UNITS:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_IS_ANGLE" link="GwyGrainValue.html#GWY-GRAIN-VALUE-IS-ANGLE:CAPS"/>
+    <keyword type="constant" name="GWY_PEAK_BACKGROUND_ZERO" link="libgwyprocess-GwyPeaks.html#GWY-PEAK-BACKGROUND-ZERO:CAPS"/>
+    <keyword type="constant" name="GWY_PEAK_BACKGROUND_MMSTEP" link="libgwyprocess-GwyPeaks.html#GWY-PEAK-BACKGROUND-MMSTEP:CAPS"/>
+    <keyword type="constant" name="GWY_PEAK_ORDER_ABSCISSA" link="libgwyprocess-GwyPeaks.html#GWY-PEAK-ORDER-ABSCISSA:CAPS"/>
+    <keyword type="constant" name="GWY_PEAK_ORDER_PROMINENCE" link="libgwyprocess-GwyPeaks.html#GWY-PEAK-ORDER-PROMINENCE:CAPS"/>
+    <keyword type="constant" name="GWY_PEAK_PROMINENCE" link="libgwyprocess-GwyPeaks.html#GWY-PEAK-PROMINENCE:CAPS"/>
+    <keyword type="constant" name="GWY_PEAK_ABSCISSA" link="libgwyprocess-GwyPeaks.html#GWY-PEAK-ABSCISSA:CAPS"/>
+    <keyword type="constant" name="GWY_PEAK_HEIGHT" link="libgwyprocess-GwyPeaks.html#GWY-PEAK-HEIGHT:CAPS"/>
+    <keyword type="constant" name="GWY_PEAK_AREA" link="libgwyprocess-GwyPeaks.html#GWY-PEAK-AREA:CAPS"/>
+    <keyword type="constant" name="GWY_PEAK_WIDTH" link="libgwyprocess-GwyPeaks.html#GWY-PEAK-WIDTH:CAPS"/>
+    <keyword type="constant" name="GWY_MFM_PROBE_CHARGE" link="libgwyprocess-MFM.html#GWY-MFM-PROBE-CHARGE:CAPS"/>
+    <keyword type="constant" name="GWY_MFM_PROBE_BAR" link="libgwyprocess-MFM.html#GWY-MFM-PROBE-BAR:CAPS"/>
+    <keyword type="constant" name="GWY_MFM_COMPONENT_HX" link="libgwyprocess-MFM.html#GWY-MFM-COMPONENT-HX:CAPS"/>
+    <keyword type="constant" name="GWY_MFM_COMPONENT_HY" link="libgwyprocess-MFM.html#GWY-MFM-COMPONENT-HY:CAPS"/>
+    <keyword type="constant" name="GWY_MFM_COMPONENT_HZ" link="libgwyprocess-MFM.html#GWY-MFM-COMPONENT-HZ:CAPS"/>
+    <keyword type="constant" name="GWY_MFM_COMPONENT_DHZ_DZ" link="libgwyprocess-MFM.html#GWY-MFM-COMPONENT-DHZ-DZ:CAPS"/>
+    <keyword type="constant" name="GWY_MFM_COMPONENT_D2HZ_DZ2" link="libgwyprocess-MFM.html#GWY-MFM-COMPONENT-D2HZ-DZ2:CAPS"/>
+    <keyword type="constant" name="GWY_MFM_GRADIENT_FORCE" link="libgwyprocess-MFM.html#GWY-MFM-GRADIENT-FORCE:CAPS"/>
+    <keyword type="constant" name="GWY_MFM_GRADIENT_MFM" link="libgwyprocess-MFM.html#GWY-MFM-GRADIENT-MFM:CAPS"/>
+    <keyword type="constant" name="GWY_MFM_GRADIENT_MFM_AREA" link="libgwyprocess-MFM.html#GWY-MFM-GRADIENT-MFM-AREA:CAPS"/>
+    <keyword type="constant" name="GWY_MERGE_UNION" link="libgwyprocess-gwyprocessenums.html#GWY-MERGE-UNION:CAPS"/>
+    <keyword type="constant" name="GWY_MERGE_INTERSECTION" link="libgwyprocess-gwyprocessenums.html#GWY-MERGE-INTERSECTION:CAPS"/>
+    <keyword type="constant" name="GWY_MASK_EXCLUDE" link="libgwyprocess-gwyprocessenums.html#GWY-MASK-EXCLUDE:CAPS"/>
+    <keyword type="constant" name="GWY_MASK_INCLUDE" link="libgwyprocess-gwyprocessenums.html#GWY-MASK-INCLUDE:CAPS"/>
+    <keyword type="constant" name="GWY_MASK_IGNORE" link="libgwyprocess-gwyprocessenums.html#GWY-MASK-IGNORE:CAPS"/>
+    <keyword type="constant" name="GWY_WATERSHED_STATE_INIT" link="libgwyprocess-gwyprocessenums.html#GWY-WATERSHED-STATE-INIT:CAPS"/>
+    <keyword type="constant" name="GWY_WATERSHED_STATE_LOCATE" link="libgwyprocess-gwyprocessenums.html#GWY-WATERSHED-STATE-LOCATE:CAPS"/>
+    <keyword type="constant" name="GWY_WATERSHED_STATE_MIN" link="libgwyprocess-gwyprocessenums.html#GWY-WATERSHED-STATE-MIN:CAPS"/>
+    <keyword type="constant" name="GWY_WATERSHED_STATE_WATERSHED" link="libgwyprocess-gwyprocessenums.html#GWY-WATERSHED-STATE-WATERSHED:CAPS"/>
+    <keyword type="constant" name="GWY_WATERSHED_STATE_MARK" link="libgwyprocess-gwyprocessenums.html#GWY-WATERSHED-STATE-MARK:CAPS"/>
+    <keyword type="constant" name="GWY_WATERSHED_STATE_FINISHED" link="libgwyprocess-gwyprocessenums.html#GWY-WATERSHED-STATE-FINISHED:CAPS"/>
+    <keyword type="constant" name="GWY_SYMMETRY_AUTO" link="libgwyprocess-gwyprocessenums.html#GWY-SYMMETRY-AUTO:CAPS"/>
+    <keyword type="constant" name="GWY_SYMMETRY_PARALLEL" link="libgwyprocess-gwyprocessenums.html#GWY-SYMMETRY-PARALLEL:CAPS"/>
+    <keyword type="constant" name="GWY_SYMMETRY_TRIANGULAR" link="libgwyprocess-gwyprocessenums.html#GWY-SYMMETRY-TRIANGULAR:CAPS"/>
+    <keyword type="constant" name="GWY_SYMMETRY_SQUARE" link="libgwyprocess-gwyprocessenums.html#GWY-SYMMETRY-SQUARE:CAPS"/>
+    <keyword type="constant" name="GWY_SYMMETRY_RHOMBIC" link="libgwyprocess-gwyprocessenums.html#GWY-SYMMETRY-RHOMBIC:CAPS"/>
+    <keyword type="constant" name="GWY_SYMMETRY_HEXAGONAL" link="libgwyprocess-gwyprocessenums.html#GWY-SYMMETRY-HEXAGONAL:CAPS"/>
+    <keyword type="constant" name="GWY_SYMMETRY_LAST" link="libgwyprocess-gwyprocessenums.html#GWY-SYMMETRY-LAST:CAPS"/>
+    <keyword type="constant" name="GWY_2DCWT_GAUSS" link="libgwyprocess-gwyprocessenums.html#GWY-2DCWT-GAUSS:CAPS"/>
+    <keyword type="constant" name="GWY_2DCWT_HAT" link="libgwyprocess-gwyprocessenums.html#GWY-2DCWT-HAT:CAPS"/>
+    <keyword type="constant" name="GWY_ORIENTATION_HORIZONTAL" link="libgwyprocess-gwyprocessenums.html#GWY-ORIENTATION-HORIZONTAL:CAPS"/>
+    <keyword type="constant" name="GWY_ORIENTATION_VERTICAL" link="libgwyprocess-gwyprocessenums.html#GWY-ORIENTATION-VERTICAL:CAPS"/>
+    <keyword type="constant" name="GWY_TRANSFORM_DIRECTION_BACKWARD" link="libgwyprocess-gwyprocessenums.html#GWY-TRANSFORM-DIRECTION-BACKWARD:CAPS"/>
+    <keyword type="constant" name="GWY_TRANSFORM_DIRECTION_FORWARD" link="libgwyprocess-gwyprocessenums.html#GWY-TRANSFORM-DIRECTION-FORWARD:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_FIELD_CACHE_MIN" link="libgwyprocess-gwyprocessenums.html#GWY-DATA-FIELD-CACHE-MIN:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_FIELD_CACHE_MAX" link="libgwyprocess-gwyprocessenums.html#GWY-DATA-FIELD-CACHE-MAX:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_FIELD_CACHE_SUM" link="libgwyprocess-gwyprocessenums.html#GWY-DATA-FIELD-CACHE-SUM:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_FIELD_CACHE_RMS" link="libgwyprocess-gwyprocessenums.html#GWY-DATA-FIELD-CACHE-RMS:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_FIELD_CACHE_MED" link="libgwyprocess-gwyprocessenums.html#GWY-DATA-FIELD-CACHE-MED:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_FIELD_CACHE_ARF" link="libgwyprocess-gwyprocessenums.html#GWY-DATA-FIELD-CACHE-ARF:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_FIELD_CACHE_ART" link="libgwyprocess-gwyprocessenums.html#GWY-DATA-FIELD-CACHE-ART:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_FIELD_CACHE_ARE" link="libgwyprocess-gwyprocessenums.html#GWY-DATA-FIELD-CACHE-ARE:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_FIELD_CACHE_VAR" link="libgwyprocess-gwyprocessenums.html#GWY-DATA-FIELD-CACHE-VAR:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_FIELD_CACHE_ENT" link="libgwyprocess-gwyprocessenums.html#GWY-DATA-FIELD-CACHE-ENT:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_FIELD_CACHE_MSQ" link="libgwyprocess-gwyprocessenums.html#GWY-DATA-FIELD-CACHE-MSQ:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_FIELD_CACHE_SIZE" link="libgwyprocess-gwyprocessenums.html#GWY-DATA-FIELD-CACHE-SIZE:CAPS"/>
+    <keyword type="constant" name="GWY_COMPUTATION_STATE_INIT" link="libgwyprocess-gwyprocessenums.html#GWY-COMPUTATION-STATE-INIT:CAPS"/>
+    <keyword type="constant" name="GWY_COMPUTATION_STATE_ITERATE" link="libgwyprocess-gwyprocessenums.html#GWY-COMPUTATION-STATE-ITERATE:CAPS"/>
+    <keyword type="constant" name="GWY_COMPUTATION_STATE_FINISHED" link="libgwyprocess-gwyprocessenums.html#GWY-COMPUTATION-STATE-FINISHED:CAPS"/>
+    <keyword type="constant" name="GWY_DWT_HAAR" link="libgwyprocess-gwyprocessenums.html#GWY-DWT-HAAR:CAPS"/>
+    <keyword type="constant" name="GWY_DWT_DAUB4" link="libgwyprocess-gwyprocessenums.html#GWY-DWT-DAUB4:CAPS"/>
+    <keyword type="constant" name="GWY_DWT_DAUB6" link="libgwyprocess-gwyprocessenums.html#GWY-DWT-DAUB6:CAPS"/>
+    <keyword type="constant" name="GWY_DWT_DAUB8" link="libgwyprocess-gwyprocessenums.html#GWY-DWT-DAUB8:CAPS"/>
+    <keyword type="constant" name="GWY_DWT_DAUB12" link="libgwyprocess-gwyprocessenums.html#GWY-DWT-DAUB12:CAPS"/>
+    <keyword type="constant" name="GWY_DWT_DAUB20" link="libgwyprocess-gwyprocessenums.html#GWY-DWT-DAUB20:CAPS"/>
+    <keyword type="constant" name="GWY_DWT_DENOISE_UNIVERSAL" link="libgwyprocess-gwyprocessenums.html#GWY-DWT-DENOISE-UNIVERSAL:CAPS"/>
+    <keyword type="constant" name="GWY_DWT_DENOISE_SCALE_ADAPTIVE" link="libgwyprocess-gwyprocessenums.html#GWY-DWT-DENOISE-SCALE-ADAPTIVE:CAPS"/>
+    <keyword type="constant" name="GWY_DWT_DENOISE_SPACE_ADAPTIVE" link="libgwyprocess-gwyprocessenums.html#GWY-DWT-DENOISE-SPACE-ADAPTIVE:CAPS"/>
+    <keyword type="constant" name="GWY_INTERPOLATION_NONE" link="libgwyprocess-gwyprocessenums.html#GWY-INTERPOLATION-NONE:CAPS"/>
+    <keyword type="constant" name="GWY_INTERPOLATION_ROUND" link="libgwyprocess-gwyprocessenums.html#GWY-INTERPOLATION-ROUND:CAPS"/>
+    <keyword type="constant" name="GWY_INTERPOLATION_LINEAR" link="libgwyprocess-gwyprocessenums.html#GWY-INTERPOLATION-LINEAR:CAPS"/>
+    <keyword type="constant" name="GWY_INTERPOLATION_BILINEAR" link="libgwyprocess-gwyprocessenums.html#GWY-INTERPOLATION-BILINEAR:CAPS"/>
+    <keyword type="constant" name="GWY_INTERPOLATION_KEY" link="libgwyprocess-gwyprocessenums.html#GWY-INTERPOLATION-KEY:CAPS"/>
+    <keyword type="constant" name="GWY_INTERPOLATION_BSPLINE" link="libgwyprocess-gwyprocessenums.html#GWY-INTERPOLATION-BSPLINE:CAPS"/>
+    <keyword type="constant" name="GWY_INTERPOLATION_OMOMS" link="libgwyprocess-gwyprocessenums.html#GWY-INTERPOLATION-OMOMS:CAPS"/>
+    <keyword type="constant" name="GWY_INTERPOLATION_NNA" link="libgwyprocess-gwyprocessenums.html#GWY-INTERPOLATION-NNA:CAPS"/>
+    <keyword type="constant" name="GWY_INTERPOLATION_SCHAUM" link="libgwyprocess-gwyprocessenums.html#GWY-INTERPOLATION-SCHAUM:CAPS"/>
+    <keyword type="constant" name="GWY_PLANE_FIT_A" link="libgwyprocess-gwyprocessenums.html#GWY-PLANE-FIT-A:CAPS"/>
+    <keyword type="constant" name="GWY_PLANE_FIT_BX" link="libgwyprocess-gwyprocessenums.html#GWY-PLANE-FIT-BX:CAPS"/>
+    <keyword type="constant" name="GWY_PLANE_FIT_BY" link="libgwyprocess-gwyprocessenums.html#GWY-PLANE-FIT-BY:CAPS"/>
+    <keyword type="constant" name="GWY_PLANE_FIT_ANGLE" link="libgwyprocess-gwyprocessenums.html#GWY-PLANE-FIT-ANGLE:CAPS"/>
+    <keyword type="constant" name="GWY_PLANE_FIT_SLOPE" link="libgwyprocess-gwyprocessenums.html#GWY-PLANE-FIT-SLOPE:CAPS"/>
+    <keyword type="constant" name="GWY_PLANE_FIT_S0" link="libgwyprocess-gwyprocessenums.html#GWY-PLANE-FIT-S0:CAPS"/>
+    <keyword type="constant" name="GWY_PLANE_FIT_S0_REDUCED" link="libgwyprocess-gwyprocessenums.html#GWY-PLANE-FIT-S0-REDUCED:CAPS"/>
+    <keyword type="constant" name="GWY_WINDOWING_NONE" link="libgwyprocess-gwyprocessenums.html#GWY-WINDOWING-NONE:CAPS"/>
+    <keyword type="constant" name="GWY_WINDOWING_HANN" link="libgwyprocess-gwyprocessenums.html#GWY-WINDOWING-HANN:CAPS"/>
+    <keyword type="constant" name="GWY_WINDOWING_HAMMING" link="libgwyprocess-gwyprocessenums.html#GWY-WINDOWING-HAMMING:CAPS"/>
+    <keyword type="constant" name="GWY_WINDOWING_BLACKMANN" link="libgwyprocess-gwyprocessenums.html#GWY-WINDOWING-BLACKMANN:CAPS"/>
+    <keyword type="constant" name="GWY_WINDOWING_LANCZOS" link="libgwyprocess-gwyprocessenums.html#GWY-WINDOWING-LANCZOS:CAPS"/>
+    <keyword type="constant" name="GWY_WINDOWING_WELCH" link="libgwyprocess-gwyprocessenums.html#GWY-WINDOWING-WELCH:CAPS"/>
+    <keyword type="constant" name="GWY_WINDOWING_RECT" link="libgwyprocess-gwyprocessenums.html#GWY-WINDOWING-RECT:CAPS"/>
+    <keyword type="constant" name="GWY_WINDOWING_NUTTALL" link="libgwyprocess-gwyprocessenums.html#GWY-WINDOWING-NUTTALL:CAPS"/>
+    <keyword type="constant" name="GWY_WINDOWING_FLAT_TOP" link="libgwyprocess-gwyprocessenums.html#GWY-WINDOWING-FLAT-TOP:CAPS"/>
+    <keyword type="constant" name="GWY_WINDOWING_KAISER25" link="libgwyprocess-gwyprocessenums.html#GWY-WINDOWING-KAISER25:CAPS"/>
+    <keyword type="constant" name="GWY_TIP_PYRAMID" link="libgwyprocess-gwyprocessenums.html#GWY-TIP-PYRAMID:CAPS"/>
+    <keyword type="constant" name="GWY_TIP_PYRAMIDE" link="libgwyprocess-gwyprocessenums.html#GWY-TIP-PYRAMIDE:CAPS"/>
+    <keyword type="constant" name="GWY_TIP_CONTACT" link="libgwyprocess-gwyprocessenums.html#GWY-TIP-CONTACT:CAPS"/>
+    <keyword type="constant" name="GWY_TIP_NONCONTACT" link="libgwyprocess-gwyprocessenums.html#GWY-TIP-NONCONTACT:CAPS"/>
+    <keyword type="constant" name="GWY_TIP_DELTA" link="libgwyprocess-gwyprocessenums.html#GWY-TIP-DELTA:CAPS"/>
+    <keyword type="constant" name="GWY_TIP_PARABOLA" link="libgwyprocess-gwyprocessenums.html#GWY-TIP-PARABOLA:CAPS"/>
+    <keyword type="constant" name="GWY_TIP_CONE" link="libgwyprocess-gwyprocessenums.html#GWY-TIP-CONE:CAPS"/>
+    <keyword type="constant" name="GWY_TIP_ELLPARABOLA" link="libgwyprocess-gwyprocessenums.html#GWY-TIP-ELLPARABOLA:CAPS"/>
+    <keyword type="constant" name="GWY_TIP_BALL_ON_STICK" link="libgwyprocess-gwyprocessenums.html#GWY-TIP-BALL-ON-STICK:CAPS"/>
+    <keyword type="constant" name="GWY_TIP_PARAM_HEIGHT" link="libgwyprocess-gwyprocessenums.html#GWY-TIP-PARAM-HEIGHT:CAPS"/>
+    <keyword type="constant" name="GWY_TIP_PARAM_RADIUS" link="libgwyprocess-gwyprocessenums.html#GWY-TIP-PARAM-RADIUS:CAPS"/>
+    <keyword type="constant" name="GWY_TIP_PARAM_ROTATION" link="libgwyprocess-gwyprocessenums.html#GWY-TIP-PARAM-ROTATION:CAPS"/>
+    <keyword type="constant" name="GWY_TIP_PARAM_NSIDES" link="libgwyprocess-gwyprocessenums.html#GWY-TIP-PARAM-NSIDES:CAPS"/>
+    <keyword type="constant" name="GWY_TIP_PARAM_SLOPE" link="libgwyprocess-gwyprocessenums.html#GWY-TIP-PARAM-SLOPE:CAPS"/>
+    <keyword type="constant" name="GWY_TIP_PARAM_ANISOTROPY" link="libgwyprocess-gwyprocessenums.html#GWY-TIP-PARAM-ANISOTROPY:CAPS"/>
+    <keyword type="constant" name="GWY_CORRELATION_NORMAL" link="libgwyprocess-gwyprocessenums.html#GWY-CORRELATION-NORMAL:CAPS"/>
+    <keyword type="constant" name="GWY_CORRELATION_FFT" link="libgwyprocess-gwyprocessenums.html#GWY-CORRELATION-FFT:CAPS"/>
+    <keyword type="constant" name="GWY_CORRELATION_POC" link="libgwyprocess-gwyprocessenums.html#GWY-CORRELATION-POC:CAPS"/>
+    <keyword type="constant" name="GWY_CORR_SEARCH_COVARIANCE_RAW" link="libgwyprocess-gwyprocessenums.html#GWY-CORR-SEARCH-COVARIANCE-RAW:CAPS"/>
+    <keyword type="constant" name="GWY_CORR_SEARCH_COVARIANCE" link="libgwyprocess-gwyprocessenums.html#GWY-CORR-SEARCH-COVARIANCE:CAPS"/>
+    <keyword type="constant" name="GWY_CORR_SEARCH_COVARIANCE_SCORE" link="libgwyprocess-gwyprocessenums.html#GWY-CORR-SEARCH-COVARIANCE-SCORE:CAPS"/>
+    <keyword type="constant" name="GWY_CORR_SEARCH_HEIGHT_DIFF_RAW" link="libgwyprocess-gwyprocessenums.html#GWY-CORR-SEARCH-HEIGHT-DIFF-RAW:CAPS"/>
+    <keyword type="constant" name="GWY_CORR_SEARCH_HEIGHT_DIFF" link="libgwyprocess-gwyprocessenums.html#GWY-CORR-SEARCH-HEIGHT-DIFF:CAPS"/>
+    <keyword type="constant" name="GWY_CORR_SEARCH_HEIGHT_DIFF_SCORE" link="libgwyprocess-gwyprocessenums.html#GWY-CORR-SEARCH-HEIGHT-DIFF-SCORE:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_PROJECTED_AREA" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-PROJECTED-AREA:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_EQUIV_SQUARE_SIDE" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-EQUIV-SQUARE-SIDE:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_EQUIV_DISC_RADIUS" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-EQUIV-DISC-RADIUS:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_SURFACE_AREA" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-SURFACE-AREA:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_MAXIMUM" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-MAXIMUM:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_MINIMUM" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-MINIMUM:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_MEAN" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-MEAN:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_MEDIAN" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-MEDIAN:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_PIXEL_AREA" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-PIXEL-AREA:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_HALF_HEIGHT_AREA" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-HALF-HEIGHT-AREA:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_FLAT_BOUNDARY_LENGTH" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-FLAT-BOUNDARY-LENGTH:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_RMS" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-RMS:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_MINIMUM_BOUND_SIZE" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-MINIMUM-BOUND-SIZE:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_MINIMUM_BOUND_ANGLE" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-MINIMUM-BOUND-ANGLE:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_MAXIMUM_BOUND_SIZE" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-MAXIMUM-BOUND-SIZE:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_MAXIMUM_BOUND_ANGLE" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-MAXIMUM-BOUND-ANGLE:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_CENTER_X" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-CENTER-X:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_CENTER_Y" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-CENTER-Y:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_VOLUME_0" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-VOLUME-0:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_VOLUME_MIN" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-VOLUME-MIN:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_VOLUME_LAPLACE" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-VOLUME-LAPLACE:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_SLOPE_THETA" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-SLOPE-THETA:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_SLOPE_PHI" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-SLOPE-PHI:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_BOUNDARY_MAXIMUM" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-BOUNDARY-MAXIMUM:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_BOUNDARY_MINIMUM" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-BOUNDARY-MINIMUM:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_CURVATURE_CENTER_X" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-CURVATURE-CENTER-X:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_CURVATURE_CENTER_Y" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-CURVATURE-CENTER-Y:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_CURVATURE_CENTER_Z" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-CURVATURE-CENTER-Z:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_CURVATURE1" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-CURVATURE1:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_CURVATURE2" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-CURVATURE2:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_CURVATURE_ANGLE1" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-CURVATURE-ANGLE1:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_CURVATURE_ANGLE2" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-CURVATURE-ANGLE2:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_INSCRIBED_DISC_R" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-INSCRIBED-DISC-R:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_INSCRIBED_DISC_X" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-INSCRIBED-DISC-X:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_INSCRIBED_DISC_Y" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-INSCRIBED-DISC-Y:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_CONVEX_HULL_AREA" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-CONVEX-HULL-AREA:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_CIRCUMCIRCLE_R" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-CIRCUMCIRCLE-R:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_CIRCUMCIRCLE_X" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-CIRCUMCIRCLE-X:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_CIRCUMCIRCLE_Y" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-CIRCUMCIRCLE-Y:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_MEAN_RADIUS" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-MEAN-RADIUS:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_EQUIV_ELLIPSE_MAJOR" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-EQUIV-ELLIPSE-MAJOR:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_EQUIV_ELLIPSE_MINOR" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-EQUIV-ELLIPSE-MINOR:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_EQUIV_ELLIPSE_ANGLE" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-EQUIV-ELLIPSE-ANGLE:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_MINIMUM_MARTIN_DIAMETER" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-MINIMUM-MARTIN-DIAMETER:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_MINIMUM_MARTIN_ANGLE" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-MINIMUM-MARTIN-ANGLE:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_MAXIMUM_MARTIN_DIAMETER" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-MAXIMUM-MARTIN-DIAMETER:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_MAXIMUM_MARTIN_ANGLE" link="libgwyprocess-gwyprocessenums.html#GWY-GRAIN-VALUE-MAXIMUM-MARTIN-ANGLE:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_COMPATIBILITY_RES" link="libgwyprocess-gwyprocessenums.html#GWY-DATA-COMPATIBILITY-RES:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_COMPATIBILITY_REAL" link="libgwyprocess-gwyprocessenums.html#GWY-DATA-COMPATIBILITY-REAL:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_COMPATIBILITY_MEASURE" link="libgwyprocess-gwyprocessenums.html#GWY-DATA-COMPATIBILITY-MEASURE:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_COMPATIBILITY_LATERAL" link="libgwyprocess-gwyprocessenums.html#GWY-DATA-COMPATIBILITY-LATERAL:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_COMPATIBILITY_VALUE" link="libgwyprocess-gwyprocessenums.html#GWY-DATA-COMPATIBILITY-VALUE:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_COMPATIBILITY_AXISCAL" link="libgwyprocess-gwyprocessenums.html#GWY-DATA-COMPATIBILITY-AXISCAL:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_COMPATIBILITY_NCURVES" link="libgwyprocess-gwyprocessenums.html#GWY-DATA-COMPATIBILITY-NCURVES:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_COMPATIBILITY_CURVELEN" link="libgwyprocess-gwyprocessenums.html#GWY-DATA-COMPATIBILITY-CURVELEN:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_COMPATIBILITY_ALL" link="libgwyprocess-gwyprocessenums.html#GWY-DATA-COMPATIBILITY-ALL:CAPS"/>
+    <keyword type="constant" name="GWY_LINE_STAT_MEAN" link="libgwyprocess-gwyprocessenums.html#GWY-LINE-STAT-MEAN:CAPS"/>
+    <keyword type="constant" name="GWY_LINE_STAT_MEDIAN" link="libgwyprocess-gwyprocessenums.html#GWY-LINE-STAT-MEDIAN:CAPS"/>
+    <keyword type="constant" name="GWY_LINE_STAT_MINIMUM" link="libgwyprocess-gwyprocessenums.html#GWY-LINE-STAT-MINIMUM:CAPS"/>
+    <keyword type="constant" name="GWY_LINE_STAT_MAXIMUM" link="libgwyprocess-gwyprocessenums.html#GWY-LINE-STAT-MAXIMUM:CAPS"/>
+    <keyword type="constant" name="GWY_LINE_STAT_RMS" link="libgwyprocess-gwyprocessenums.html#GWY-LINE-STAT-RMS:CAPS"/>
+    <keyword type="constant" name="GWY_LINE_STAT_LENGTH" link="libgwyprocess-gwyprocessenums.html#GWY-LINE-STAT-LENGTH:CAPS"/>
+    <keyword type="constant" name="GWY_LINE_STAT_SLOPE" link="libgwyprocess-gwyprocessenums.html#GWY-LINE-STAT-SLOPE:CAPS"/>
+    <keyword type="constant" name="GWY_LINE_STAT_TAN_BETA0" link="libgwyprocess-gwyprocessenums.html#GWY-LINE-STAT-TAN-BETA0:CAPS"/>
+    <keyword type="constant" name="GWY_LINE_STAT_RA" link="libgwyprocess-gwyprocessenums.html#GWY-LINE-STAT-RA:CAPS"/>
+    <keyword type="constant" name="GWY_LINE_STAT_RZ" link="libgwyprocess-gwyprocessenums.html#GWY-LINE-STAT-RZ:CAPS"/>
+    <keyword type="constant" name="GWY_LINE_STAT_RT" link="libgwyprocess-gwyprocessenums.html#GWY-LINE-STAT-RT:CAPS"/>
+    <keyword type="constant" name="GWY_LINE_STAT_SKEW" link="libgwyprocess-gwyprocessenums.html#GWY-LINE-STAT-SKEW:CAPS"/>
+    <keyword type="constant" name="GWY_LINE_STAT_KURTOSIS" link="libgwyprocess-gwyprocessenums.html#GWY-LINE-STAT-KURTOSIS:CAPS"/>
+    <keyword type="constant" name="GWY_LINE_STAT_RANGE" link="libgwyprocess-gwyprocessenums.html#GWY-LINE-STAT-RANGE:CAPS"/>
+    <keyword type="constant" name="GWY_LINE_STAT_VARIATION" link="libgwyprocess-gwyprocessenums.html#GWY-LINE-STAT-VARIATION:CAPS"/>
+    <keyword type="constant" name="GWY_LINE_STAT_MINPOS" link="libgwyprocess-gwyprocessenums.html#GWY-LINE-STAT-MINPOS:CAPS"/>
+    <keyword type="constant" name="GWY_LINE_STAT_MAXPOS" link="libgwyprocess-gwyprocessenums.html#GWY-LINE-STAT-MAXPOS:CAPS"/>
+    <keyword type="constant" name="GWY_EXTERIOR_UNDEFINED" link="libgwyprocess-gwyprocessenums.html#GWY-EXTERIOR-UNDEFINED:CAPS"/>
+    <keyword type="constant" name="GWY_EXTERIOR_BORDER_EXTEND" link="libgwyprocess-gwyprocessenums.html#GWY-EXTERIOR-BORDER-EXTEND:CAPS"/>
+    <keyword type="constant" name="GWY_EXTERIOR_MIRROR_EXTEND" link="libgwyprocess-gwyprocessenums.html#GWY-EXTERIOR-MIRROR-EXTEND:CAPS"/>
+    <keyword type="constant" name="GWY_EXTERIOR_PERIODIC" link="libgwyprocess-gwyprocessenums.html#GWY-EXTERIOR-PERIODIC:CAPS"/>
+    <keyword type="constant" name="GWY_EXTERIOR_FIXED_VALUE" link="libgwyprocess-gwyprocessenums.html#GWY-EXTERIOR-FIXED-VALUE:CAPS"/>
+    <keyword type="constant" name="GWY_EXTERIOR_LAPLACE" link="libgwyprocess-gwyprocessenums.html#GWY-EXTERIOR-LAPLACE:CAPS"/>
+    <keyword type="constant" name="GWY_DISTANCE_TRANSFORM_CITYBLOCK" link="libgwyprocess-gwyprocessenums.html#GWY-DISTANCE-TRANSFORM-CITYBLOCK:CAPS"/>
+    <keyword type="constant" name="GWY_DISTANCE_TRANSFORM_CONN4" link="libgwyprocess-gwyprocessenums.html#GWY-DISTANCE-TRANSFORM-CONN4:CAPS"/>
+    <keyword type="constant" name="GWY_DISTANCE_TRANSFORM_CHESS" link="libgwyprocess-gwyprocessenums.html#GWY-DISTANCE-TRANSFORM-CHESS:CAPS"/>
+    <keyword type="constant" name="GWY_DISTANCE_TRANSFORM_CONN8" link="libgwyprocess-gwyprocessenums.html#GWY-DISTANCE-TRANSFORM-CONN8:CAPS"/>
+    <keyword type="constant" name="GWY_DISTANCE_TRANSFORM_OCTAGONAL48" link="libgwyprocess-gwyprocessenums.html#GWY-DISTANCE-TRANSFORM-OCTAGONAL48:CAPS"/>
+    <keyword type="constant" name="GWY_DISTANCE_TRANSFORM_OCTAGONAL84" link="libgwyprocess-gwyprocessenums.html#GWY-DISTANCE-TRANSFORM-OCTAGONAL84:CAPS"/>
+    <keyword type="constant" name="GWY_DISTANCE_TRANSFORM_OCTAGONAL" link="libgwyprocess-gwyprocessenums.html#GWY-DISTANCE-TRANSFORM-OCTAGONAL:CAPS"/>
+    <keyword type="constant" name="GWY_DISTANCE_TRANSFORM_EUCLIDEAN" link="libgwyprocess-gwyprocessenums.html#GWY-DISTANCE-TRANSFORM-EUCLIDEAN:CAPS"/>
+    <keyword type="constant" name="GWY_MIN_MAX_FILTER_MINIMUM" link="libgwyprocess-gwyprocessenums.html#GWY-MIN-MAX-FILTER-MINIMUM:CAPS"/>
+    <keyword type="constant" name="GWY_MIN_MAX_FILTER_EROSION" link="libgwyprocess-gwyprocessenums.html#GWY-MIN-MAX-FILTER-EROSION:CAPS"/>
+    <keyword type="constant" name="GWY_MIN_MAX_FILTER_MAXIMUM" link="libgwyprocess-gwyprocessenums.html#GWY-MIN-MAX-FILTER-MAXIMUM:CAPS"/>
+    <keyword type="constant" name="GWY_MIN_MAX_FILTER_DILATION" link="libgwyprocess-gwyprocessenums.html#GWY-MIN-MAX-FILTER-DILATION:CAPS"/>
+    <keyword type="constant" name="GWY_MIN_MAX_FILTER_OPENING" link="libgwyprocess-gwyprocessenums.html#GWY-MIN-MAX-FILTER-OPENING:CAPS"/>
+    <keyword type="constant" name="GWY_MIN_MAX_FILTER_CLOSING" link="libgwyprocess-gwyprocessenums.html#GWY-MIN-MAX-FILTER-CLOSING:CAPS"/>
+    <keyword type="constant" name="GWY_MIN_MAX_FILTER_RANGE" link="libgwyprocess-gwyprocessenums.html#GWY-MIN-MAX-FILTER-RANGE:CAPS"/>
+    <keyword type="constant" name="GWY_MIN_MAX_FILTER_NORMALIZATION" link="libgwyprocess-gwyprocessenums.html#GWY-MIN-MAX-FILTER-NORMALIZATION:CAPS"/>
+    <keyword type="constant" name="GWY_ROTATE_RESIZE_SAME_SIZE" link="libgwyprocess-gwyprocessenums.html#GWY-ROTATE-RESIZE-SAME-SIZE:CAPS"/>
+    <keyword type="constant" name="GWY_ROTATE_RESIZE_EXPAND" link="libgwyprocess-gwyprocessenums.html#GWY-ROTATE-RESIZE-EXPAND:CAPS"/>
+    <keyword type="constant" name="GWY_ROTATE_RESIZE_CUT" link="libgwyprocess-gwyprocessenums.html#GWY-ROTATE-RESIZE-CUT:CAPS"/>
+    <keyword type="constant" name="GWY_AFFINE_SCALING_AS_GIVEN" link="libgwyprocess-gwyprocessenums.html#GWY-AFFINE-SCALING-AS-GIVEN:CAPS"/>
+    <keyword type="constant" name="GWY_AFFINE_SCALING_PRESERVE_AREA" link="libgwyprocess-gwyprocessenums.html#GWY-AFFINE-SCALING-PRESERVE-AREA:CAPS"/>
+    <keyword type="constant" name="GWY_AFFINE_SCALING_PRESERVE_X" link="libgwyprocess-gwyprocessenums.html#GWY-AFFINE-SCALING-PRESERVE-X:CAPS"/>
+    <keyword type="constant" name="GWY_BRICK_TRANSPOSE_XYZ" link="libgwyprocess-gwyprocessenums.html#GWY-BRICK-TRANSPOSE-XYZ:CAPS"/>
+    <keyword type="constant" name="GWY_BRICK_TRANSPOSE_XZY" link="libgwyprocess-gwyprocessenums.html#GWY-BRICK-TRANSPOSE-XZY:CAPS"/>
+    <keyword type="constant" name="GWY_BRICK_TRANSPOSE_YXZ" link="libgwyprocess-gwyprocessenums.html#GWY-BRICK-TRANSPOSE-YXZ:CAPS"/>
+    <keyword type="constant" name="GWY_BRICK_TRANSPOSE_YZX" link="libgwyprocess-gwyprocessenums.html#GWY-BRICK-TRANSPOSE-YZX:CAPS"/>
+    <keyword type="constant" name="GWY_BRICK_TRANSPOSE_ZXY" link="libgwyprocess-gwyprocessenums.html#GWY-BRICK-TRANSPOSE-ZXY:CAPS"/>
+    <keyword type="constant" name="GWY_BRICK_TRANSPOSE_ZYX" link="libgwyprocess-gwyprocessenums.html#GWY-BRICK-TRANSPOSE-ZYX:CAPS"/>
+    <keyword type="member" name="GwySurface-struct.n" link="GwySurface.html#GwySurface-struct.n"/>
+    <keyword type="member" name="GwySurface-struct.data" link="GwySurface.html#GwySurface-struct.data"/>
+    <keyword type="member" name="GwyTriangulationData.npoints" link="GwyTriangulation.html#GwyTriangulationData.npoints"/>
+    <keyword type="member" name="GwyTriangulationData.size" link="GwyTriangulation.html#GwyTriangulationData.size"/>
+    <keyword type="member" name="GwyTriangulationData.index" link="GwyTriangulation.html#GwyTriangulationData.index"/>
+    <keyword type="member" name="GwyTriangulationData.neighbours" link="GwyTriangulation.html#GwyTriangulationData.neighbours"/>
+    <keyword type="member" name="GwyComputationState-struct.state" link="libgwyprocess-gwyprocessenums.html#GwyComputationState-struct.state"/>
+    <keyword type="member" name="GwyComputationState-struct.fraction" link="libgwyprocess-gwyprocessenums.html#GwyComputationState-struct.fraction"/>
+  </functions>
+</book>

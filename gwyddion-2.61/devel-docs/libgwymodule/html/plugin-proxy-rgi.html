@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>RGI Registration Method: Gwyddion Module Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Module Library Reference Manual">
+<link rel="up" href="PluginProxyReference.html" title="Plug-in Proxy Reference">
+<link rel="prev" href="plugin-proxy-dump.html" title="Dump Format">
+<link rel="next" href="api-index-all.html" title="Index of all symbols">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="PluginProxyReference.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="plugin-proxy-dump.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="api-index-all.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="plugin-proxy-rgi"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle">RGI Registration Method</span></h2>
+<p>RGI Registration Method — 
+      Alternate plug-in registration method using RGI files
+    </p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="id-1.4.6.3"></a><h2>Overview</h2>
+<p>
+      The original and standard plug-in registration procedure consists of
+      querying (i.e., running) each plug-in by plug-in proxy on <span class="application">Gwyddion</span>
+      start-up.  The queried plug-in prints its registration information
+      to standard output and plug-in proxy captures and parses it.
+    </p>
+<p>
+      The standard method has two problems:
+      </p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
+          On some systems (particularly various MS Windows versions) there
+          are troubles with capturing standard otuput of some programs
+          (particularly those compiled by Pascal/Delphi compilers).
+          It is not clear, why it doesn't work, but it simply doesn't
+          (any insight would be highly appreciated).
+        </li>
+<li class="listitem">
+          It is slow, namely on systems with expensive process creation,
+          like MS Windows.
+        </li>
+</ul></div>
+<p>
+    </p>
+<p>
+      Thus an alternate plug-in registration method was implemented, using
+      RGI (ReGistration Information) files.
+    </p>
+</div>
+<div class="refsect1">
+<a name="id-1.4.6.4"></a><h2>RGI registration</h2>
+<p>
+      When plug-in proxy finds an executable plug-in, let's call it
+      <code class="filename">foo.exe</code>, before trying to run it it looks for
+      following files (in this order):
+      </p>
+<table border="0" summary="Simple list" class="simplelist">
+<tr><td><code class="filename">foo.exe.rgi</code></td></tr>
+<tr><td><code class="filename">foo.exe.RGI</code></td></tr>
+<tr><td><code class="filename">foo.rgi</code></td></tr>
+<tr><td><code class="filename">foo.RGI</code></td></tr>
+</table>
+<p>
+      If the plug-in filename has no extension, only the first two are
+      tried.  If it has more extensions, only the last one is replaced.
+    </p>
+<p>
+      The first file found (if any) is used instead of the standard output
+      of <code class="filename">foo.exe</code>, i.e., as its registration data.
+      If none of them is present, the registration continues as usual by
+      running <code class="filename">foo.exe</code> with a <code class="option">register</code>
+      argument.
+    </p>
+<p>
+      After a successfull registration, there's no difference in actual
+      execution of plug-ins registered by running them or using a RGI file.
+    </p>
+<p>
+      The easiest way to create a RGI file for an existing plug in
+      is to make it dump the registration information to a file:
+      </p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">foo</span><span class="p">.</span><span class="n">exe</span> <span class="k">register</span> <span class="o">&gt;</span><span class="n">foo</span><span class="p">.</span><span class="n">exe</span><span class="p">.</span><span class="n">rgi</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+    </p>
+</div>
+<div class="refsect1">
+<a name="id-1.4.6.5"></a><h2>Problems</h2>
+<p>
+      The main problem is that the contents of a RGI file must be kept up to
+      date with corresponding plug-in, if its specification changes.
+    </p>
+<p>
+      The RGI method also allows to register a plug-in that is not possible to
+      actually execute on a given system, and thus confusing the user.
+      For example, it's possible to register a Python plug-in where
+      Python interpeter is not available, or executables for a different
+      operating system.
+    </p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

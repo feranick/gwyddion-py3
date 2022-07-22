@@ -1,0 +1,2092 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyParamDef: Gwyddion Application Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="prev" href="libgwyapp-logging.html" title="logging">
+<link rel="next" href="GwyParams.html" title="GwyParams">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyParamDef.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyParamDef.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyapp-logging.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyParams.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyParamDef"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyParamDef.top_of_page"></a>GwyParamDef</span></h2>
+<p>GwyParamDef — Module parameter definitions</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyParamDef.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="GwyParamDef.html#GwyRectifyStringFunc" title="GwyRectifyStringFunc ()">*GwyRectifyStringFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="returnvalue">GwyParamDef</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-new" title="gwy_param_def_new ()">gwy_param_def_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-set-function-name" title="gwy_param_def_set_function_name ()">gwy_param_def_set_function_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-get-function-name" title="gwy_param_def_get_function_name ()">gwy_param_def_get_function_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-gwyenum" title="gwy_param_def_add_gwyenum ()">gwy_param_def_add_gwyenum</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-gwyflags" title="gwy_param_def_add_gwyflags ()">gwy_param_def_add_gwyflags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-enum" title="gwy_param_def_add_enum ()">gwy_param_def_add_enum</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-int" title="gwy_param_def_add_int ()">gwy_param_def_add_int</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-graph-curve" title="gwy_param_def_add_graph_curve ()">gwy_param_def_add_graph_curve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-lawn-curve" title="gwy_param_def_add_lawn_curve ()">gwy_param_def_add_lawn_curve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-lawn-segment" title="gwy_param_def_add_lawn_segment ()">gwy_param_def_add_lawn_segment</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-active-page" title="gwy_param_def_add_active_page ()">gwy_param_def_add_active_page</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-boolean" title="gwy_param_def_add_boolean ()">gwy_param_def_add_boolean</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-instant-updates" title="gwy_param_def_add_instant_updates ()">gwy_param_def_add_instant_updates</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-randomize" title="gwy_param_def_add_randomize ()">gwy_param_def_add_randomize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-double" title="gwy_param_def_add_double ()">gwy_param_def_add_double</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-angle" title="gwy_param_def_add_angle ()">gwy_param_def_add_angle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-percentage" title="gwy_param_def_add_percentage ()">gwy_param_def_add_percentage</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-mask-color" title="gwy_param_def_add_mask_color ()">gwy_param_def_add_mask_color</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-target-graph" title="gwy_param_def_add_target_graph ()">gwy_param_def_add_target_graph</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-graph-id" title="gwy_param_def_add_graph_id ()">gwy_param_def_add_graph_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-image-id" title="gwy_param_def_add_image_id ()">gwy_param_def_add_image_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-volume-id" title="gwy_param_def_add_volume_id ()">gwy_param_def_add_volume_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-xyz-id" title="gwy_param_def_add_xyz_id ()">gwy_param_def_add_xyz_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-curve-map-id" title="gwy_param_def_add_curve_map_id ()">gwy_param_def_add_curve_map_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-report-type" title="gwy_param_def_add_report_type ()">gwy_param_def_add_report_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-seed" title="gwy_param_def_add_seed ()">gwy_param_def_add_seed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-string" title="gwy_param_def_add_string ()">gwy_param_def_add_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-unit" title="gwy_param_def_add_unit ()">gwy_param_def_add_unit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-resource" title="gwy_param_def_add_resource ()">gwy_param_def_add_resource</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-grain-groups" title="gwy_param_def_add_grain_groups ()">gwy_param_def_add_grain_groups</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyParamDef.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GwyParamDef.html#GwyParamStringFlags" title="enum GwyParamStringFlags">GwyParamStringFlags</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyParamDef.html#GwyParamDef-struct" title="struct GwyParamDef">GwyParamDef</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyParamDef.html#GwyParamDefClass" title="struct GwyParamDefClass">GwyParamDefClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyParamDef.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> GwyParamDef
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyParamDef.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;app/gwyapp.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyParamDef.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> represents a set of module parameter definitions.  Once constructed, it is an immutable object which
+modules generally keep around (as a static variable) and use it to fetch parameters from settings as <a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a>.</p>
+<p>Parameters are idenfitied by integers which must be unique within one set of definitions.  The integers are not
+public interface.  They only exist within the module and can change between module versions.  In fact, you can
+assign them run-time (and differently each time Gwyddion is run) if you need.  However, the usual way to define the
+parameters is using an enum:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="k">enum</span> <span class="p">{</span>
+    <span class="n">PARAM_DEGREE</span><span class="p">,</span>
+    <span class="n">PARAM_MASKING</span><span class="p">,</span>
+    <span class="n">PARAM_UPDATE</span><span class="p">,</span>
+<span class="p">};</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+and the module then refers to the parameters using the enum values.  The corresponding parameter definition code
+could be as follows.  Notice specialised parameter types exists for some common settings, such as instant updates:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="k">static</span> <span class="n">GwyParamDef</span><span class="o">*</span>
+<span class="n">define_module_params</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">static</span> <span class="n">GwyParamDef</span> <span class="o">*</span><span class="n">paramdef</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">paramdef</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">paramdef</span><span class="p">;</span>
+
+    <span class="n">paramdef</span> <span class="o">=</span> <span class="n">gwy_param_def_new</span><span class="p">();</span>
+    <span class="n">gwy_param_def_set_function_name</span><span class="p">(</span><span class="n">paramdef</span><span class="p">,</span> <span class="n">gwy_process_func_current</span><span class="p">());</span>
+    <span class="n">gwy_param_def_add_int</span><span class="p">(</span><span class="n">paramdef</span><span class="p">,</span> <span class="n">PARAM_DEGREE</span><span class="p">,</span> <span class="s">&quot;degree&quot;</span><span class="p">,</span> <span class="n">_</span><span class="p">(</span><span class="s">&quot;_Degree&quot;</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+    <span class="n">gwy_param_def_add_gwyenum</span><span class="p">(</span><span class="n">paramdef</span><span class="p">,</span> <span class="n">PARAM_MASKING</span><span class="p">,</span> <span class="s">&quot;masking&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="n">GWY_TYPE_MASKING_TYPE</span><span class="p">,</span> <span class="n">GWY_MASK_IGNORE</span><span class="p">);</span>
+    <span class="n">gwy_param_def_add_instant_updates</span><span class="p">(</span><span class="n">paramdef</span><span class="p">,</span> <span class="n">PARAM_UPDATE</span><span class="p">,</span> <span class="s">&quot;update&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="n">FALSE</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">paramdef</span><span class="p">;</span>
+<span class="p">}</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+Functions such as <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Threads.html#g-once"><code class="function">g_once()</code></a> and <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Threads.html#g-once-init-enter"><code class="function">g_once_init_enter()</code></a> can also be used to ensure a single initialisation, although it
+is probably overkill here.</p>
+<p>In all the parameter definition constructors strings <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ are not copied.  They must exist for the
+entire lifetime of the <em class="parameter"><code>pardef</code></em>
+ objects.  Usually they are static strings.  In uncommon scenarios the caller must
+ensure their existence.  Alternatively, <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Quarks.html#g-intern-string"><code class="function">g_intern_string()</code></a> can be used to make semantically static versions of the
+strings.</p>
+</div>
+<div class="refsect1">
+<a name="GwyParamDef.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GwyRectifyStringFunc"></a><h3>GwyRectifyStringFunc ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+<span class="c_punctuation">(</span>*GwyRectifyStringFunc<span class="c_punctuation">)</span> (<em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *s</code></em>);</pre>
+<p>Type of function returning a valid string, given possibly invalid input.</p>
+<p>Either the input and output can be <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (if the string definition allows it).</p>
+<div class="refsect3">
+<a name="GwyRectifyStringFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>s</p></td>
+<td class="parameter_description"><p>Input string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="GwyRectifyStringFunc.returns"></a><h4>Returns</h4>
+<p> Newly allocated string, presumably corrected.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-new"></a><h3>gwy_param_def_new ()</h3>
+<pre class="programlisting"><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="returnvalue">GwyParamDef</span></a> *
+gwy_param_def_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new empty set of parameter definitions.</p>
+<p>Definitions can be added only during construction, i.e. until the first time it is used to create <a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a>.  Then
+the definition set must be considered immutable.</p>
+<div class="refsect3">
+<a name="gwy-param-def-new.returns"></a><h4>Returns</h4>
+<p> A newly create paramete definition set.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-set-function-name"></a><h3>gwy_param_def_set_function_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_set_function_name (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                                 <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Sets the settings function name of a set of parameter definitions.</p>
+<p>Usually the function name should be given simply as <a href="../libgwymodule-gwymodule-process.html#gwy-process-func-current"><code class="function">gwy_process_func_current()</code></a> (or analogous functions for other
+module types).  The exception is functions with settings keys different from module function name.  If the name is
+unset then <a class="link" href="GwyParams.html" title="GwyParams"><span class="type">GwyParams</span></a> settings functions like <a class="link" href="GwyParams.html#gwy-params-new-from-settings" title="gwy_params_new_from_settings ()"><code class="function">gwy_params_new_from_settings()</code></a> cannot be used.</p>
+<p>The function name can be set freely even after construction.  This allows having just a single set of parameter
+definitions for multiple related module functions which all have the same parameters.</p>
+<div class="refsect3">
+<a name="gwy-param-def-set-function-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Settings function name, or <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-get-function-name"></a><h3>gwy_param_def_get_function_name ()</h3>
+<pre class="programlisting">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_param_def_get_function_name (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>);</pre>
+<p>Gets the settings function name of a set of parameter definitions.</p>
+<div class="refsect3">
+<a name="gwy-param-def-get-function-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-param-def-get-function-name.returns"></a><h4>Returns</h4>
+<p> The functions name (possibly <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-gwyenum"></a><h3>gwy_param_def_add_gwyenum ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_gwyenum (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                           <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                           <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                           <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>,
+                           <em class="parameter"><code>const <a href="../GwyEnum.html#GwyEnum-struct"><span class="type">GwyEnum</span></a> *values</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nvalues</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> default_value</code></em>);</pre>
+<p>Defines a new parameter with enumerated values defined by a <a href="../GwyEnum.html#GwyEnum-struct"><span class="type">GwyEnum</span></a>.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-gwyenum.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for the list header label in GUI.  May be also <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for no label.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>values</p></td>
+<td class="parameter_description"><p>An array of corresponding string-integer pairs.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nvalues</p></td>
+<td class="parameter_description"><p>The number of <em class="parameter"><code>nvalues</code></em>
+items.  It is possible to pass -1 to count the values automatically if the array
+is terminated by <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_value</p></td>
+<td class="parameter_description"><p>Default value of the parameter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-gwyflags"></a><h3>gwy_param_def_add_gwyflags ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_gwyflags (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>,
+                            <em class="parameter"><code>const <a href="../GwyEnum.html#GwyEnum-struct"><span class="type">GwyEnum</span></a> *values</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nvalues</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> default_value</code></em>);</pre>
+<p>Defines a new parameter with bit flag values defined by a <a href="../GwyEnum.html#GwyEnum-struct"><span class="type">GwyEnum</span></a>.</p>
+<p>The values in <em class="parameter"><code>values</code></em>
+ must represent a set of flags, i.e. numbers with exactly one 1-bit in binary.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-gwyflags.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for the list header label in GUI.  May be also <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for no label.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>values</p></td>
+<td class="parameter_description"><p>An array of corresponding string-integer pairs.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nvalues</p></td>
+<td class="parameter_description"><p>The number of <em class="parameter"><code>nvalues</code></em>
+items.  It is possible to pass -1 to count the values automatically if the array
+is terminated by <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_value</p></td>
+<td class="parameter_description"><p>Default value of the parameter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-enum"></a><h3>gwy_param_def_add_enum ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_enum (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> enum_gtype</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> default_value</code></em>);</pre>
+<p>Defines a new parameter with enumerated values from a standard Gwyddion enum.</p>
+<p>Supported enums include <a href="../libgwyprocess-gwyprocessenums.html#GwyMaskingType"><span class="type">GwyMaskingType</span></a>, <a href="../libgwyprocess-gwyprocessenums.html#GwyInterpolationType"><span class="type">GwyInterpolationType</span></a>, <a href="../libgwyprocess-gwyprocessenums.html#GwyOrientation"><span class="type">GwyOrientation</span></a>, <a href="../libgwyprocess-gwyprocessenums.html#GwyMergeType"><span class="type">GwyMergeType</span></a>,
+<a href="../libgwyprocess-gwyprocessenums.html#GwyDistanceTransformType"><span class="type">GwyDistanceTransformType</span></a>, <a href="../libgwyprocess-gwyprocessenums.html#GwyWindowingType"><span class="type">GwyWindowingType</span></a>.  They have standard labels allowing to pass <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> as <em class="parameter"><code>desc</code></em>
+.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-enum.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.  May be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for the default label.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>enum_gtype</p></td>
+<td class="parameter_description"><p>Type of the enum, for instance <code class="literal">GWY_TYPE_MASKING_TYPE</code>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_value</p></td>
+<td class="parameter_description"><p>Default value of the parameter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-int"></a><h3>gwy_param_def_add_int ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_int (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                       <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                       <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> minimum</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> maximum</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> default_value</code></em>);</pre>
+<p>Defines a new parameter with integer values.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-int.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>minimum</p></td>
+<td class="parameter_description"><p>Minimum allowed value (inclusive).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>maximum</p></td>
+<td class="parameter_description"><p>Maximum allowed value (inclusive).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_value</p></td>
+<td class="parameter_description"><p>Default value of the parameter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-graph-curve"></a><h3>gwy_param_def_add_graph_curve ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_graph_curve (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>);</pre>
+<p>Defines a new parameter with values that are graph curve numbers.</p>
+<p>Curve numbers can be any non-negative integers.  The upper bound is determined by <a class="link" href="GwyParamTable.html" title="GwyParamTable"><span class="type">GwyParamTable</span></a> once the GUI for
+choosing a curve from specific graph model is set up.  Value -1 is also allowed for empty graph models with no
+curves, but this should not normally occur.</p>
+<p>Curve parameters are stored in settings as curve labels, even though they are treated integers otherwise.  This
+helps selecting a curve with the same function/interpretation the next time the module is invoked – or the first
+curve if there is none such.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-graph-curve.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.  It may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for the default label.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-lawn-curve"></a><h3>gwy_param_def_add_lawn_curve ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_lawn_curve (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>);</pre>
+<p>Defines a new parameter with values that are lawn curve numbers.</p>
+<p>Curve numbers can be any non-negative integers.  The upper bound is determined by <a class="link" href="GwyParamTable.html" title="GwyParamTable"><span class="type">GwyParamTable</span></a> once the GUI for
+choosing a curve from specific lawn is set up.</p>
+<p>Curve parameters are stored in settings as curve labels, even though they are treated integers otherwise.  This
+helps selecting a curve with the same function/interpretation the next time the module is invoked – or the first
+curve if there is none such.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-lawn-curve.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.  It may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for the default label.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-lawn-segment"></a><h3>gwy_param_def_add_lawn_segment ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_lawn_segment (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>);</pre>
+<p>Defines a new parameter with values that are lawn segment numbers.</p>
+<p>Segment numbers can be any non-negative integers.  The upper bound is determined by <a class="link" href="GwyParamTable.html" title="GwyParamTable"><span class="type">GwyParamTable</span></a> once the GUI for
+choosing a segment from specific lawn is set up.  Value -1 is also allowed for empty lawns with no segments.</p>
+<p>Segment parameters are stored in settings as segment labels, even though they are treated integers otherwise.  This
+helps selecting a segment with the same function/interpretation the next time the module is invoked – or the first
+segment if there is none such.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-lawn-segment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.  It may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for the default label.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-active-page"></a><h3>gwy_param_def_add_active_page ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_active_page (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>);</pre>
+<p>Defines a new parameter with integer values representing module dialog active page.</p>
+<p>The active page parameter can be connected to a <a href="/usr/share/gtk-doc/html/gtk3/GtkNotebook.html#GtkNotebook-struct"><span class="type">GtkNotebook</span></a> using the utility function
+<a class="link" href="libgwyapp-module-utils.html#gwy-param-active-page-link-to-notebook" title="gwy_param_active_page_link_to_notebook ()"><code class="function">gwy_param_active_page_link_to_notebook()</code></a>.  This is also the only function that should be used with such parameter.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-active-page.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not stored in settings, but then the active page parameter
+would have no reason to exist.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description, usually <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-boolean"></a><h3>gwy_param_def_add_boolean ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_boolean (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                           <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                           <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> default_value</code></em>);</pre>
+<p>Defines a new parameter with boolean values.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-boolean.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_value</p></td>
+<td class="parameter_description"><p>Default value of the parameter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-instant-updates"></a><h3>gwy_param_def_add_instant_updates ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_instant_updates (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                                   <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                   <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> default_value</code></em>);</pre>
+<p>Defines a new boolean parameter representing the instant updates option.</p>
+<p>Compared to a plain boolean, a parameter defined using this function has a predefined label and is recognised by
+<a class="link" href="GwyDialog.html" title="GwyDialog"><span class="type">GwyDialog</span></a>.  Therefore, it is not necessary to call <a class="link" href="GwyDialog.html#gwy-dialog-set-instant-updates-param" title="gwy_dialog_set_instant_updates_param ()"><code class="function">gwy_dialog_set_instant_updates_param()</code></a>.  If your module GUI
+needs non-standard update settings then define the parameters manually.</p>
+<p>Furthermore, it is normally not necessary (in fact, counterproductive) to call <a class="link" href="GwyDialog.html#gwy-dialog-invalidate" title="gwy_dialog_invalidate ()"><code class="function">gwy_dialog_invalidate()</code></a> when the
+instant updates parameter changes.  Recalculation is only necessary when instant updates were just switched on
+and the current preview is no longer valid.  <a class="link" href="GwyDialog.html" title="GwyDialog"><span class="type">GwyDialog</span></a> handles this case automatically.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-instant-updates.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.  Usually <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for the default label.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_value</p></td>
+<td class="parameter_description"><p>Default value of the parameter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-randomize"></a><h3>gwy_param_def_add_randomize ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_randomize (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> seed_id</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> default_value</code></em>);</pre>
+<p>Defines a new boolean parameter representing the randomize option for a random seed.</p>
+<p>See <a class="link" href="GwyParamDef.html#gwy-param-def-add-seed" title="gwy_param_def_add_seed ()"><code class="function">gwy_param_def_add_seed()</code></a> for random seed parameters.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-randomize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>seed_id</p></td>
+<td class="parameter_description"><p>Identifier of the corresponding random seed parameter.  It must already be defined.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.  Usually <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for the default label.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_value</p></td>
+<td class="parameter_description"><p>Default value of the parameter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-double"></a><h3>gwy_param_def_add_double ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_double (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> minimum</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> maximum</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> default_value</code></em>);</pre>
+<p>Defines a new parameter with floating point values.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-double.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>minimum</p></td>
+<td class="parameter_description"><p>Minimum allowed value (inclusive).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>maximum</p></td>
+<td class="parameter_description"><p>Maximum allowed value (inclusive).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_value</p></td>
+<td class="parameter_description"><p>Default value of the parameter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-angle"></a><h3>gwy_param_def_add_angle ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_angle (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> positive</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> folding</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> default_value</code></em>);</pre>
+<p>Defines a new parameter with floating point values representing angles.</p>
+<p>Percentages do not have to be defined using this function.  You can also set up the conversion factor and unit
+string directly using <a class="link" href="GwyParamTable.html#gwy-param-table-slider-set-factor" title="gwy_param_table_slider_set_factor ()"><code class="function">gwy_param_table_slider_set_factor()</code></a> and <a class="link" href="GwyParamTable.html#gwy-param-table-set-unitstr" title="gwy_param_table_set_unitstr ()"><code class="function">gwy_param_table_set_unitstr()</code></a> when constructing the
+parameter table (this happens automatically for percentage parameters).  This function may be somewhat more
+convenient and it also ensures correct folding when loading angle from settings.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-angle.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>positive</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> for positive angles, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> for angles symmetrical around zero.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>folding</p></td>
+<td class="parameter_description"><p>Fraction of the range [0,2π] which should be the range.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_value</p></td>
+<td class="parameter_description"><p>Default value of the parameter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-percentage"></a><h3>gwy_param_def_add_percentage ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_percentage (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> default_value</code></em>);</pre>
+<p>Defines a new parameter with floating point values representing fraction of some base value.</p>
+<p>The value range is [0,1], but it is displayed in percents in the GUI.</p>
+<p>Percentages do not have to be defined using this function.  You can also set up the conversion factor and unit
+string directly using <a class="link" href="GwyParamTable.html#gwy-param-table-slider-set-factor" title="gwy_param_table_slider_set_factor ()"><code class="function">gwy_param_table_slider_set_factor()</code></a> and <a class="link" href="GwyParamTable.html#gwy-param-table-set-unitstr" title="gwy_param_table_set_unitstr ()"><code class="function">gwy_param_table_set_unitstr()</code></a> when constructing the
+parameter table (this happens automatically for percentage parameters).  This function may be somewhat more
+convenient.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-percentage.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_value</p></td>
+<td class="parameter_description"><p>Default value of the parameter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-mask-color"></a><h3>gwy_param_def_add_mask_color ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_mask_color (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>);</pre>
+<p>Defines a new mask colour parameter.</p>
+<p>This is usually a parameter not stored in settings, but handled specially by taking the mask colour from the image
+and then setting mask colours on the output.  The default value is the default mask colour.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-mask-color.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  Usually it is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> because the colour is taken from data, not settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.  Usually <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for the default label.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-target-graph"></a><h3>gwy_param_def_add_target_graph ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_target_graph (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>);</pre>
+<p>Defines a new parameter with values that are graph ids.</p>
+<p>Data identifier parameters are not stored permanently in settings.  However, they are remembered until Gwyddion
+exits.  Hence <em class="parameter"><code>name</code></em>
+ does not actually refer to settings, but it should still uniquely identify the parameter as in
+settings.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<p>See <a class="link" href="GwyParamDef.html#gwy-param-def-add-target-graph" title="gwy_param_def_add_target_graph ()"><code class="function">gwy_param_def_add_target_graph()</code></a> for a generic graph parameter.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-target-graph.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.  May be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for the default label.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-graph-id"></a><h3>gwy_param_def_add_graph_id ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_graph_id (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>);</pre>
+<p>Defines a new parameter with values that are graph ids.</p>
+<p>Data identifier parameters are not stored permanently in settings.  However, they are remembered until Gwyddion
+exits.  Hence <em class="parameter"><code>name</code></em>
+ does not actually refer to settings, but it should still uniquely identify the parameter as in
+settings.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<p>See <a class="link" href="GwyParamDef.html#gwy-param-def-add-target-graph" title="gwy_param_def_add_target_graph ()"><code class="function">gwy_param_def_add_target_graph()</code></a> for a specialised parameter for target graphs.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-graph-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-image-id"></a><h3>gwy_param_def_add_image_id ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_image_id (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>);</pre>
+<p>Defines a new parameter with values that are image ids.</p>
+<p>Data identifier parameters are not stored permanently in settings.  However, they are remembered until Gwyddion
+exits.  Hence <em class="parameter"><code>name</code></em>
+ does not actually refer to settings, but it should still uniquely identify the parameter as in
+settings.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-image-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-volume-id"></a><h3>gwy_param_def_add_volume_id ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_volume_id (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>);</pre>
+<p>Defines a new parameter with values that are volume data ids.</p>
+<p>Data identifier parameters are not stored permanently in settings.  However, they are remembered until Gwyddion
+exits.  Hence <em class="parameter"><code>name</code></em>
+ does not actually refer to settings, but it should still uniquely identify the parameter as in
+settings.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-volume-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-xyz-id"></a><h3>gwy_param_def_add_xyz_id ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_xyz_id (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>);</pre>
+<p>Defines a new parameter with values that are xyz data ids.</p>
+<p>Data identifier parameters are not stored permanently in settings.  However, they are remembered until Gwyddion
+exits.  Hence <em class="parameter"><code>name</code></em>
+ does not actually refer to settings, but it should still uniquely identify the parameter as in
+settings.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-xyz-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-curve-map-id"></a><h3>gwy_param_def_add_curve_map_id ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_curve_map_id (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>);</pre>
+<p>Defines a new parameter with values that are curve map data ids.</p>
+<p>Data identifier parameters are not stored permanently in settings.  However, they are remembered until Gwyddion
+exits.  Hence <em class="parameter"><code>name</code></em>
+ does not actually refer to settings, but it should still uniquely identify the parameter as in
+settings.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-curve-map-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-report-type"></a><h3>gwy_param_def_add_report_type ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_report_type (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>,
+                               <em class="parameter"><code><a class="link" href="GwyResultsExport.html#GwyResultsExportStyle" title="enum GwyResultsExportStyle"><span class="type">GwyResultsExportStyle</span></a> style</code></em>,
+                               <em class="parameter"><code><a href="../GwyResults.html#GwyResultsReportType"><span class="type">GwyResultsReportType</span></a> default_value</code></em>);</pre>
+<p>Defines a new parameter with values that are report types.</p>
+<p>Report type values are neither pure enumerated values nor flags; they are combinations of both.  See
+<a class="link" href="GwyResultsExport.html" title="GwyResultsExport"><span class="type">GwyResultsExport</span></a> for discussion.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-report-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.  The label, if not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, will be used for the
+save dialogue as the export controls carry no label.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>Report style, defining allowed report types.  See <a class="link" href="GwyResultsExport.html#gwy-results-export-set-style" title="gwy_results_export_set_style ()"><code class="function">gwy_results_export_set_style()</code></a> for description.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_value</p></td>
+<td class="parameter_description"><p>Default value of the parameter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-seed"></a><h3>gwy_param_def_add_seed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_seed (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>);</pre>
+<p>Defines a new parameter with values that are random seeds.</p>
+<p>Random seeds are integers from the range [1,2³¹-1] which can take random values. They are usually accompanied by
+a boolean parameter controlling whether the value is random or fixed (taken from settings), added afterwards using
+<a class="link" href="GwyParamDef.html#gwy-param-def-add-randomize" title="gwy_param_def_add_randomize ()"><code class="function">gwy_param_def_add_randomize()</code></a>.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-seed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.  Normally pass <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for the default label.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-string"></a><h3>gwy_param_def_add_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_string (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>,
+                          <em class="parameter"><code><a class="link" href="GwyParamDef.html#GwyParamStringFlags" title="enum GwyParamStringFlags"><span class="type">GwyParamStringFlags</span></a> flags</code></em>,
+                          <em class="parameter"><code><a class="link" href="GwyParamDef.html#GwyRectifyStringFunc" title="GwyRectifyStringFunc ()"><span class="type">GwyRectifyStringFunc</span></a> rectify</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *default_value</code></em>);</pre>
+<p>Defines a new parameter with values that are strings.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>Simple treatment of special values.  If any are given they are enforced, i.e. they apply both before and
+after <em class="parameter"><code>rectify</code></em>
+in the case both are given.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rectify</p></td>
+<td class="parameter_description"><p>Function which takes a string which may or may not be valid parameter value and returns a valid one.
+Pass <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if anything goes (or validation is handled otherwise).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_value</p></td>
+<td class="parameter_description"><p>Default value of the parameter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-unit"></a><h3>gwy_param_def_add_unit ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_unit (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *default_value</code></em>);</pre>
+<p>Defines a new parameter with values that are strings representing units.</p>
+<p>Units parameters are not enforced to parse to meaningful units.  However, they are conceptually different from
+arbitrary strings and have several special unit-oriented functions.</p>
+<p>Units behave as strings with the <a class="link" href="GwyParamDef.html#GWY-PARAM-STRING-EMPTY-IS-NULL:CAPS"><code class="literal">GWY_PARAM_STRING_EMPTY_IS_NULL</code></a> flag.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-unit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_value</p></td>
+<td class="parameter_description"><p>Default value of the parameter.  <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is allowed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-resource"></a><h3>gwy_param_def_add_resource ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_resource (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>,
+                            <em class="parameter"><code><a href="../GwyInventory.html#GwyInventory-struct"><span class="type">GwyInventory</span></a> *inventory</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *default_value</code></em>);</pre>
+<p>Defines a new parameter with values that are string resource names.</p>
+<p>Use <a class="link" href="GwyParams.html#gwy-params-get-string" title="gwy_params_get_string ()"><code class="function">gwy_params_get_string()</code></a> to get the string name and <a class="link" href="GwyParams.html#gwy-params-get-resource" title="gwy_params_get_resource ()"><code class="function">gwy_params_get_resource()</code></a> to get the corresponding resource
+object.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-resource.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which will be used for a label in GUI.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>inventory</p></td>
+<td class="parameter_description"><p>Inventory holding the resources to choose from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_value</p></td>
+<td class="parameter_description"><p>Default value of the parameter (resource name).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-param-def-add-grain-groups"></a><h3>gwy_param_def_add_grain_groups ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_param_def_add_grain_groups (<em class="parameter"><code><a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> *pardef</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *desc</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> default_value</code></em>);</pre>
+<p>Defines a new flag parameter with values that are bits corresponding to grain value groups.</p>
+<p>Such parameter is usually used to represent the set of expanded grain value groups in a tree view.</p>
+<p>See the introduction for <em class="parameter"><code>name</code></em>
+ and <em class="parameter"><code>desc</code></em>
+ lifetime rules.</p>
+<div class="refsect3">
+<a name="gwy-param-def-add-grain-groups.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pardef</p></td>
+<td class="parameter_description"><p>A set of parameter definitions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Parameter identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Parameter name for settings.  It can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for derived parameters not stored in settings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desc</p></td>
+<td class="parameter_description"><p>Parameter description which could be used for a label in GUI, but usually <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_value</p></td>
+<td class="parameter_description"><p>Default value of the parameter (bits corresponding to grain value groups).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-61.html#api-index-2.61">2.61</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyParamDef.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyParamStringFlags"></a><h3>enum GwyParamStringFlags</h3>
+<p>Flags that can be used when defining a string parameter.</p>
+<div class="refsect3">
+<a name="GwyParamStringFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-PARAM-STRING-EMPTY-IS-NULL:CAPS"></a>GWY_PARAM_STRING_EMPTY_IS_NULL</p></td>
+<td class="enum_member_description">
+<p>Fold empty string to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-PARAM-STRING-NULL-IS-EMPTY:CAPS"></a>GWY_PARAM_STRING_NULL_IS_EMPTY</p></td>
+<td class="enum_member_description">
+<p>Ensure strings are non-empty by replacing <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> with an empty string.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-PARAM-STRING-DO-NOT-STRIP:CAPS"></a>GWY_PARAM_STRING_DO_NOT_STRIP</p></td>
+<td class="enum_member_description">
+<p>Preserve whitespace at the beginning and end of the string.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyParamDef-struct"></a><h3>struct GwyParamDef</h3>
+<pre class="programlisting">struct GwyParamDef;</pre>
+<p>Object representing a set of parameter definitions.</p>
+<p>The <a class="link" href="GwyParamDef.html" title="GwyParamDef"><span class="type">GwyParamDef</span></a> struct contains no public fields.</p>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyParamDefClass"></a><h3>struct GwyParamDefClass</h3>
+<pre class="programlisting">struct GwyParamDefClass {
+    GObjectClass g_object_class;
+};
+</pre>
+<p>Class of parameter definition sets.</p>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

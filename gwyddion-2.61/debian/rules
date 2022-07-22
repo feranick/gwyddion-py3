@@ -1,0 +1,42 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS=hardening=+bindnow
+
+DEB_CONFIGURE_EXTRA_FLAGS := --libexecdir=\$${libdir} --disable-pygwy
+
+include /usr/share/dpkg/default.mk
+
+%:
+	dh $@
+
+override_dh_clean:
+	dh_clean
+	rm -rf data/gwyddion.desktop
+	cp -a debian/upstream/$(DEB_SOURCE)-$(DEB_VERSION_UPSTREAM).tar.xz.sig ../$(DEB_SOURCE)_$(DEB_VERSION_UPSTREAM).orig.tar.xz.asc
+
+override_dh_auto_configure:
+	dh_auto_configure -- $(DEB_CONFIGURE_EXTRA_FLAGS)
+
+override_dh_install:
+	dh_install
+	find debian -name "*.la" -o -name "*.pyc" -o -name "*.pyo" | xargs -r rm -f
+	if [ -d debian/libgwyddion20-dev/usr/lib/*/$(DEB_SOURCE)/include/ ] ; then \
+	    mv debian/libgwyddion20-dev/usr/lib/*/$(DEB_SOURCE)/include/* debian/libgwyddion20-dev/usr/include/$(DEB_SOURCE) ; \
+	fi
+	rm -rf debian/libgwyddion20-dev/usr/lib/*/$(DEB_SOURCE)
+	for pl in `grep -Rl '#![[:space:]]*/usr/bin/env[[:space:]]\+perl' debian/*/usr/*` ; do \
+	    sed -i '1s?^#![[:space:]]*/usr/bin/env[[:space:]]\+perl?#!/usr/bin/perl?' $${pl} ; \
+	done
+# Delete extra license file.
+	$(RM) debian/gwyddion/usr/share/doc/gwyddion/plugins/LICENSE
+
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS
+
+# Don't compress plugin examples installed in /usr/share/doc.
+override_dh_compress:
+	dh_compress -X.c -X.cc -X.pas
+
+# Is this really needed?  If yes use override_dh_shlibdeps
+#DEB_DH_MAKESHLIBS_ARGS_gwyddion := -n -Xgwyddion
+#DEB_DH_MAKESHLIBS_ARGS_libgwyddion2-0 := -V'libgwyddion2-0 (>= ${version})'

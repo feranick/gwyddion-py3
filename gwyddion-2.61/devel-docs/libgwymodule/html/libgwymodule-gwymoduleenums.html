@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gwymoduleenums: Gwyddion Module Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Module Library Reference Manual">
+<link rel="up" href="ModuleLibrary.html" title="Gwyddion Module Library">
+<link rel="prev" href="ModuleLibrary.html" title="Gwyddion Module Library">
+<link rel="next" href="libgwymodule-gwymoduleloader.html" title="gwymoduleloader">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwymodule-gwymoduleenums.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ModuleLibrary.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ModuleLibrary.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwymodule-gwymoduleloader.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwymodule-gwymoduleenums"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwymodule-gwymoduleenums.top_of_page"></a>gwymoduleenums</span></h2>
+<p>gwymoduleenums — Common enumerations</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwymodule-gwymoduleenums.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgwymodule-gwymoduleenums.html#GwyFileOperationType" title="enum GwyFileOperationType">GwyFileOperationType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgwymodule-gwymoduleenums.html#GwyToolSwitchEvent" title="enum GwyToolSwitchEvent">GwyToolSwitchEvent</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgwymodule-gwymoduleenums.html#GwyRunType" title="enum GwyRunType">GwyRunType</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwymodule-gwymoduleenums.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwymodule/gwymodule.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwymodule-gwymoduleenums.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgwymodule-gwymoduleenums.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="libgwymodule-gwymoduleenums.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyFileOperationType"></a><h3>enum GwyFileOperationType</h3>
+<p>File type function file operations (capabilities).</p>
+<p>The difference between save and export is that save is supposed to create
+a file containing fairly complete representation of the container, while
+export is the possibility to write some information to given file type.
+Generally only native file format module implements
+<a class="link" href="libgwymodule-gwymoduleenums.html#GWY-FILE-OPERATION-SAVE:CAPS"><code class="literal">GWY_FILE_OPERATION_SAVE</code></a>, all others implement <a class="link" href="libgwymodule-gwymoduleenums.html#GWY-FILE-OPERATION-EXPORT:CAPS"><code class="literal">GWY_FILE_OPERATION_EXPORT</code></a>.</p>
+<div class="refsect3">
+<a name="GwyFileOperationType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-FILE-OPERATION-DETECT:CAPS"></a>GWY_FILE_OPERATION_DETECT</p></td>
+<td class="enum_member_description">
+<p>Posibility to detect files are of this file type,</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-FILE-OPERATION-LOAD:CAPS"></a>GWY_FILE_OPERATION_LOAD</p></td>
+<td class="enum_member_description">
+<p>Posibility to load files of this type.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-FILE-OPERATION-SAVE:CAPS"></a>GWY_FILE_OPERATION_SAVE</p></td>
+<td class="enum_member_description">
+<p>Posibility to save files of this type.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-FILE-OPERATION-EXPORT:CAPS"></a>GWY_FILE_OPERATION_EXPORT</p></td>
+<td class="enum_member_description">
+<p>Posibility to export files of this type.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-FILE-OPERATION-MASK:CAPS"></a>GWY_FILE_OPERATION_MASK</p></td>
+<td class="enum_member_description">
+<p>The mask for all the flags.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyToolSwitchEvent"></a><h3>enum GwyToolSwitchEvent</h3>
+<div class="warning"><p><code class="literal">GwyToolSwitchEvent</code> is deprecated and should not be used in newly-written code.</p></div>
+<div class="refsect3">
+<a name="GwyToolSwitchEvent.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-TOOL-SWITCH-WINDOW:CAPS"></a>GWY_TOOL_SWITCH_WINDOW</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-TOOL-SWITCH-TOOL:CAPS"></a>GWY_TOOL_SWITCH_TOOL</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyRunType"></a><h3>enum GwyRunType</h3>
+<p>Module function run-modes.</p>
+<p>Note <em class="parameter"><code>GWY_RUN_NONINTERACTIVE</code></em>
+ is only possible for file functions, processing functions do not have a truly
+non-interactive interface yet and therefore they should not claim they support it.  The closest match for process
+functions is <em class="parameter"><code>GWY_RUN_IMMEDIATE</code></em>
+.</p>
+<div class="refsect3">
+<a name="GwyRunType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-RUN-NONE:CAPS"></a>GWY_RUN_NONE</p></td>
+<td class="enum_member_description">
+<p>None.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-RUN-NONINTERACTIVE:CAPS"></a>GWY_RUN_NONINTERACTIVE</p></td>
+<td class="enum_member_description">
+<p>The function is run non-interactively, it must not present any GUI and touch application
+state.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-RUN-INTERACTIVE:CAPS"></a>GWY_RUN_INTERACTIVE</p></td>
+<td class="enum_member_description">
+<p>The function presents a modal user interfaces where parameters can be adjusted, it returns
+after finishing all operations.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-RUN-IMMEDIATE:CAPS"></a>GWY_RUN_IMMEDIATE</p></td>
+<td class="enum_member_description">
+<p>Function is run immediately and uses parameter values stored in the settings to reproduce
+previous run. It can however present GUI error messages or display progress, create new
+windows, etc.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-RUN-MASK:CAPS"></a>GWY_RUN_MASK</p></td>
+<td class="enum_member_description">
+<p>The mask for all the run modes.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

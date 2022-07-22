@@ -1,0 +1,1768 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyNLFitter: Gwyddion Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="prev" href="libgwyddion-Math-Fallback.html" title="Math Fallback">
+<link rel="next" href="GwyNLFitPreset.html" title="GwyNLFitPreset">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyddion-GwyNLFitter.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyddion-Math-Fallback.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyNLFitPreset.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyddion-GwyNLFitter"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyddion-GwyNLFitter.top_of_page"></a>GwyNLFitter</span></h2>
+<p>GwyNLFitter — Marquardt-Levenberg nonlinear least square fitter</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyddion-GwyNLFitter.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitFunc" title="GwyNLFitFunc ()">*GwyNLFitFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitDerFunc" title="GwyNLFitDerFunc ()">*GwyNLFitDerFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitIdxFunc" title="GwyNLFitIdxFunc ()">*GwyNLFitIdxFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitIdxDiffFunc" title="GwyNLFitIdxDiffFunc ()">*GwyNLFitIdxDiffFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="returnvalue">GwyNLFitter</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-new" title="gwy_math_nlfit_new ()">gwy_math_nlfit_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="returnvalue">GwyNLFitter</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-new-idx" title="gwy_math_nlfit_new_idx ()">gwy_math_nlfit_new_idx</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-free" title="gwy_math_nlfit_free ()">gwy_math_nlfit_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="returnvalue">GwyNLFitter</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-copy" title="gwy_math_nlfit_copy ()">gwy_math_nlfit_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-fit" title="gwy_math_nlfit_fit ()">gwy_math_nlfit_fit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-fit-full" title="gwy_math_nlfit_fit_full ()">gwy_math_nlfit_fit_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-fit-idx" title="gwy_math_nlfit_fit_idx ()">gwy_math_nlfit_fit_idx</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-fit-idx-full" title="gwy_math_nlfit_fit_idx_full ()">gwy_math_nlfit_fit_idx_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-max-iterations" title="gwy_math_nlfit_get_max_iterations ()">gwy_math_nlfit_get_max_iterations</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-set-max-iterations" title="gwy_math_nlfit_set_max_iterations ()">gwy_math_nlfit_set_max_iterations</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-approx-geometric" title="gwy_math_nlfit_get_approx_geometric ()">gwy_math_nlfit_get_approx_geometric</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-set-approx-geometric" title="gwy_math_nlfit_set_approx_geometric ()">gwy_math_nlfit_set_approx_geometric</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-succeeded" title="gwy_math_nlfit_succeeded ()">gwy_math_nlfit_succeeded</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-dispersion" title="gwy_math_nlfit_get_dispersion ()">gwy_math_nlfit_get_dispersion</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-correlations" title="gwy_math_nlfit_get_correlations ()">gwy_math_nlfit_get_correlations</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-eval" title="gwy_math_nlfit_get_eval ()">gwy_math_nlfit_get_eval</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-covar" title="gwy_math_nlfit_get_covar ()">gwy_math_nlfit_get_covar</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-nparam" title="gwy_math_nlfit_get_nparam ()">gwy_math_nlfit_get_nparam</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-sigma" title="gwy_math_nlfit_get_sigma ()">gwy_math_nlfit_get_sigma</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-set-callbacks" title="gwy_math_nlfit_set_callbacks ()">gwy_math_nlfit_set_callbacks</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-diff" title="gwy_math_nlfit_diff ()">gwy_math_nlfit_diff</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-derive" title="gwy_math_nlfit_derive ()">gwy_math_nlfit_derive</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-diff-idx" title="gwy_math_nlfit_diff_idx ()">gwy_math_nlfit_diff_idx</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-map-free-params" title="gwy_math_nlfit_map_free_params ()">gwy_math_nlfit_map_free_params</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-GwyNLFitter.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter">GwyNLFitter</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-GwyNLFitter.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwyddion/gwyddion.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-GwyNLFitter.description"></a><h2>Description</h2>
+<p>A new Marquardt-Levenberg nonlinear least square fitter can be created with
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-new" title="gwy_math_nlfit_new ()"><code class="function">gwy_math_nlfit_new()</code></a>, specifying the function to fit (as <a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitFunc" title="GwyNLFitFunc ()"><span class="type">GwyNLFitFunc</span></a>) and
+its derivative (as <a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitDerFunc" title="GwyNLFitDerFunc ()"><span class="type">GwyNLFitDerFunc</span></a>). For functions for whose analytic
+derivative is not available or very impractical, <a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-derive" title="gwy_math_nlfit_derive ()"><code class="function">gwy_math_nlfit_derive()</code></a>
+(computing the derivative numerically) can be used instead.</p>
+<p>A fitter can be then repeatedly used on different data either in
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-fit" title="gwy_math_nlfit_fit ()"><code class="function">gwy_math_nlfit_fit()</code></a>, or <a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-fit-full" title="gwy_math_nlfit_fit_full ()"><code class="function">gwy_math_nlfit_fit_full()</code></a> when there are some
+fixed or linked parameters.  Arbitrary additional (non-fitting) parameters
+can be passed to the fited function in <em class="parameter"><code>user_data</code></em>
+.</p>
+<p>After a successfull fit additional fit information can be obtained with
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-dispersion" title="gwy_math_nlfit_get_dispersion ()"><code class="function">gwy_math_nlfit_get_dispersion()</code></a>, <a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-correlations" title="gwy_math_nlfit_get_correlations ()"><code class="function">gwy_math_nlfit_get_correlations()</code></a>,
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-sigma" title="gwy_math_nlfit_get_sigma ()"><code class="function">gwy_math_nlfit_get_sigma()</code></a>. Note these functions may be used only after a
+successfull fit. When a fitter is no longer needed, it should be freed with
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-free" title="gwy_math_nlfit_free ()"><code class="function">gwy_math_nlfit_free()</code></a>.</p>
+<p>Several common functions are also available as fitting presets that can be
+fitted with <a class="link" href="GwyNLFitPreset.html#gwy-nlfit-preset-fit" title="gwy_nlfit_preset_fit ()"><code class="function">gwy_nlfit_preset_fit()</code></a>.  See <a class="link" href="GwyNLFitPreset.html" title="GwyNLFitPreset"><span class="type">GwyNLFitPreset</span></a> for details.</p>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-GwyNLFitter.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GwyNLFitFunc"></a><h3>GwyNLFitFunc ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+<span class="c_punctuation">(</span>*GwyNLFitFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x</code></em>,
+                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nparam</code></em>,
+                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *param</code></em>,
+                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *success</code></em>);</pre>
+<p>Fitting function type for real-valued independent variables.</p>
+<div class="refsect3">
+<a name="GwyNLFitFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>The value to compute the function at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nparam</p></td>
+<td class="parameter_description"><p>The number of parameters (size of <em class="parameter"><code>param</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>param</p></td>
+<td class="parameter_description"><p>Parameters.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data as passed to <a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-fit" title="gwy_math_nlfit_fit ()"><code class="function">gwy_math_nlfit_fit()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>success</p></td>
+<td class="parameter_description"><p>Set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if succeeds, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> on failure.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="GwyNLFitFunc.returns"></a><h4>Returns</h4>
+<p> The function value at <em class="parameter"><code>x</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyNLFitDerFunc"></a><h3>GwyNLFitDerFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GwyNLFitDerFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nparam</code></em>,
+                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *param</code></em>,
+                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *fixed_param</code></em>,
+                    <em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitFunc" title="GwyNLFitFunc ()"><span class="type">GwyNLFitFunc</span></a> func</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *der</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *success</code></em>);</pre>
+<p>Fitting function partial derivative type for real-valued independent
+variables.</p>
+<div class="refsect3">
+<a name="GwyNLFitDerFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>x-data as passed to <a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-fit" title="gwy_math_nlfit_fit ()"><code class="function">gwy_math_nlfit_fit()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nparam</p></td>
+<td class="parameter_description"><p>The number of parameters (size of <em class="parameter"><code>param</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>param</p></td>
+<td class="parameter_description"><p>Parameters.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fixed_param</p></td>
+<td class="parameter_description"><p>Which parameters should be treated as fixed (corresponding
+entries are set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>func</p></td>
+<td class="parameter_description"><p>The fitted function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data as passed to <a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-fit" title="gwy_math_nlfit_fit ()"><code class="function">gwy_math_nlfit_fit()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>der</p></td>
+<td class="parameter_description"><p>Array where the <em class="parameter"><code>nparam</code></em>
+partial derivatives by each parameter are
+to be stored.  Derivatives by fixed parameters are ignored so the
+function may set corresponding elements or not, whichever is more
+convenient.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>success</p></td>
+<td class="parameter_description"><p>Set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if succeeds, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> on failure.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyNLFitIdxFunc"></a><h3>GwyNLFitIdxFunc ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+<span class="c_punctuation">(</span>*GwyNLFitIdxFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> i</code></em>,
+                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *param</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *success</code></em>);</pre>
+<p>Fitting function type for opaque indexed data.</p>
+<p>Note that unlike <a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitFunc" title="GwyNLFitFunc ()"><span class="type">GwyNLFitFunc</span></a> which returns just the function value this
+function must return the <span class="emphasis"><em>difference</em></span> between the
+function value and fitted data value (that is function minus data point).
+When opaque data are fitted the fitter does not know what the data values
+are.</p>
+<p>The function must take care of weighting.  The difference should be
+multiplied by the inverse of the (unsquared) estimated error of the
+<em class="parameter"><code>i</code></em>
+-th data point.  Not multiplying by anything correspond to using the
+default unit weights.</p>
+<div class="refsect3">
+<a name="GwyNLFitIdxFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Data index from the set {0, 1, 2, ..., ndata-1}.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>param</p></td>
+<td class="parameter_description"><p>Parameters.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data as passed to <a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-fit" title="gwy_math_nlfit_fit ()"><code class="function">gwy_math_nlfit_fit()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>success</p></td>
+<td class="parameter_description"><p>Set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if succeeds, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> on failure.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="GwyNLFitIdxFunc.returns"></a><h4>Returns</h4>
+<p> Difference between the function value and data in the <em class="parameter"><code>i</code></em>
+-th data
+point.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-46.html#api-index-2.46">2.46</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyNLFitIdxDiffFunc"></a><h3>GwyNLFitIdxDiffFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GwyNLFitIdxDiffFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> i</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *param</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *fixed_param</code></em>,
+                        <em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitIdxFunc" title="GwyNLFitIdxFunc ()"><span class="type">GwyNLFitIdxFunc</span></a> func</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *der</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *success</code></em>);</pre>
+<p>Fitting function partial derivatives type for opaque indexed data.</p>
+<p>The function must take care of weighting.  The derivatives should be
+multiplied by the inverse of the (unsquared) estimated error of the
+<em class="parameter"><code>i</code></em>
+-th data point.  Not multiplying by anything correspond to using the
+default unit weights.</p>
+<div class="refsect3">
+<a name="GwyNLFitIdxDiffFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Data index from the set {0, 1, 2, ..., ndata-1}.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>param</p></td>
+<td class="parameter_description"><p>Parameters.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fixed_param</p></td>
+<td class="parameter_description"><p>Which parameters should be treated as fixed (corresponding
+entries are set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>).  It may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is no parameters
+are fixed.  The function must set derivatives by fixed
+parameters to zero.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>func</p></td>
+<td class="parameter_description"><p>The fitted function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data as passed to <a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-fit" title="gwy_math_nlfit_fit ()"><code class="function">gwy_math_nlfit_fit()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>der</p></td>
+<td class="parameter_description"><p>Array where the <em class="parameter"><code>nparam</code></em>
+partial derivatives by each parameter are
+to be stored.  Derivatives by fixed parameters are ignored so the
+function may set corresponding elements or not, whichever is more
+convenient.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>success</p></td>
+<td class="parameter_description"><p>Set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if succeeds, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> on failure.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-46.html#api-index-2.46">2.46</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-new"></a><h3>gwy_math_nlfit_new ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="returnvalue">GwyNLFitter</span></a> *
+gwy_math_nlfit_new (<em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitFunc" title="GwyNLFitFunc ()"><span class="type">GwyNLFitFunc</span></a> func</code></em>,
+                    <em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitDerFunc" title="GwyNLFitDerFunc ()"><span class="type">GwyNLFitDerFunc</span></a> diff</code></em>);</pre>
+<p>Creates a new Marquardt-Levenberg nonlinear fitter for function with
+a real-valued independent variable.</p>
+<p>See <a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-new-idx" title="gwy_math_nlfit_new_idx ()"><code class="function">gwy_math_nlfit_new_idx()</code></a> for more complex scenarios.</p>
+<p>You can use <a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-diff" title="gwy_math_nlfit_diff ()"><code class="function">gwy_math_nlfit_diff()</code></a> computing the derivative numerically,
+when you do not know the derivatives explicitely.  Since 2.46 passing <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+as <em class="parameter"><code>diff</code></em>
+ has the same effect, i.e. the fitter will automatically use
+numerical differentiation.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>func</p></td>
+<td class="parameter_description"><p>The fitted function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>diff</p></td>
+<td class="parameter_description"><p>The derivative of fitted function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-nlfit-new.returns"></a><h4>Returns</h4>
+<p> The newly created fitter.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-new-idx"></a><h3>gwy_math_nlfit_new_idx ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="returnvalue">GwyNLFitter</span></a> *
+gwy_math_nlfit_new_idx (<em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitIdxFunc" title="GwyNLFitIdxFunc ()"><span class="type">GwyNLFitIdxFunc</span></a> func</code></em>,
+                        <em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitIdxDiffFunc" title="GwyNLFitIdxDiffFunc ()"><span class="type">GwyNLFitIdxDiffFunc</span></a> diff</code></em>);</pre>
+<p>Creates a new Marquardt-Levenberg nonlinear fitter for opaque indexed data.</p>
+<p>As only the data index is passed to the functions, using this interface
+permits fitting more complex functions.  The abscissa can be arbitrary,
+for instance a vector, as it is not seen by the fitter.  Similarly,
+vector-valued functions can be emulated by mapping tuples of indices to the
+vector components.</p>
+<p>You can pass <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> as <em class="parameter"><code>diff</code></em>
+ to use automatically numerical differentiation
+when you do not know the derivatives explicitely.  Note that this means you
+cannot use weighting.  If you want weighting you need to pass your own
+<em class="parameter"><code>diff</code></em>
+ function that performs the weighting (it can utilise the
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-diff-idx" title="gwy_math_nlfit_diff_idx ()"><code class="function">gwy_math_nlfit_diff_idx()</code></a> helper).</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-new-idx.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>func</p></td>
+<td class="parameter_description"><p>The fitted function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>diff</p></td>
+<td class="parameter_description"><p>The derivative of fitted function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-nlfit-new-idx.returns"></a><h4>Returns</h4>
+<p> The newly created fitter.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-46.html#api-index-2.46">2.46</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-free"></a><h3>gwy_math_nlfit_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_math_nlfit_free (<em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a> *nlfit</code></em>);</pre>
+<p>Completely frees a Marquardt-Levenberg nonlinear fitter.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>nlfit</p></td>
+<td class="parameter_description"><p>A Marquardt-Levenberg nonlinear fitter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-copy"></a><h3>gwy_math_nlfit_copy ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="returnvalue">GwyNLFitter</span></a> *
+gwy_math_nlfit_copy (<em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a> *nlfit</code></em>);</pre>
+<p>Creates a copy of a nonlinear least squares fitter.</p>
+<p>This function is mostly usefil for language bindings.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>nlfit</p></td>
+<td class="parameter_description"><p>A Marquardt-Levenberg nonlinear fitter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-nlfit-copy.returns"></a><h4>Returns</h4>
+<p> The newly created fitter.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-fit"></a><h3>gwy_math_nlfit_fit ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_math_nlfit_fit (<em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a> *nlfit</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ndata</code></em>,
+                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *x</code></em>,
+                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *y</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nparam</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *param</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Performs a nonlinear fit of simple function on data.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-fit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>nlfit</p></td>
+<td class="parameter_description"><p>A Marquardt-Levenberg nonlinear fitter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ndata</p></td>
+<td class="parameter_description"><p>The number of data points in <em class="parameter"><code>x</code></em>
+, <em class="parameter"><code>y</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Array of independent variable values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Array of dependent variable values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nparam</p></td>
+<td class="parameter_description"><p>The nuber of parameters.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>param</p></td>
+<td class="parameter_description"><p>Array of parameters (of size <em class="parameter"><code>nparam</code></em>
+).  Note the parameters must
+be initialized to reasonably near values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>Pointer that will be passed to the function and derivative
+as <em class="parameter"><code>user_data</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-nlfit-fit.returns"></a><h4>Returns</h4>
+<p> The final residual sum, a negative number in the case of failure.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-fit-full"></a><h3>gwy_math_nlfit_fit_full ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_math_nlfit_fit_full (<em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a> *nlfit</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ndata</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *x</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *y</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *weight</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nparam</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *param</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *fixed_param</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *link_map</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Performs a nonlinear fit of simple function on data, allowing some fixed
+parameters.</p>
+<p>Initial values of linked (dependent) parameters are overwritten by master
+values, their <em class="parameter"><code>fixed_param</code></em>
+ property is ignored and master's property
+controls whether all are fixed or all variable.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-fit-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>nlfit</p></td>
+<td class="parameter_description"><p>A Marquardt-Levenberg nonlinear fitter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ndata</p></td>
+<td class="parameter_description"><p>The number of data points in <em class="parameter"><code>x</code></em>
+, <em class="parameter"><code>y</code></em>
+, <em class="parameter"><code>weight</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Array of independent variable values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Array of dependent variable values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>weight</p></td>
+<td class="parameter_description"><p>Array of weights associated to each data point (usually equal to
+inverse squares errors).  Can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, unit weight is then used
+for all data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nparam</p></td>
+<td class="parameter_description"><p>The nuber of parameters.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>param</p></td>
+<td class="parameter_description"><p>Array of parameters (of size <em class="parameter"><code>nparam</code></em>
+).  Note the parameters must
+be initialized to reasonably near values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fixed_param</p></td>
+<td class="parameter_description"><p>Which parameters should be treated as fixed (set corresponding
+element to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> for them).  May be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if all parameters
+are variable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>link_map</p></td>
+<td class="parameter_description"><p>Map of linked parameters.  One of linked parameters is master,
+Values in this array are indices of corresponding master
+parameter for each parameter (for independent parameters set
+<em class="parameter"><code>link_map</code></em>
+[i] == i).   May be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if all parameter are
+independent.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>Pointer that will be passed to the function and derivative</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-nlfit-fit-full.returns"></a><h4>Returns</h4>
+<p> The final residual sum, a negative number in the case of failure.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-fit-idx"></a><h3>gwy_math_nlfit_fit_idx ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_math_nlfit_fit_idx (<em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a> *nlfit</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> ndata</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nparam</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *param</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Performs a nonlinear fit of function on opaque indexed data.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-fit-idx.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>nlfit</p></td>
+<td class="parameter_description"><p>A Marquardt-Levenberg nonlinear fitter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ndata</p></td>
+<td class="parameter_description"><p>The number of data points in <em class="parameter"><code>x</code></em>
+, <em class="parameter"><code>y</code></em>
+, <em class="parameter"><code>weight</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nparam</p></td>
+<td class="parameter_description"><p>The nuber of parameters.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>param</p></td>
+<td class="parameter_description"><p>Array of parameters (of size <em class="parameter"><code>nparam</code></em>
+).  Note the parameters must
+be initialized to reasonably near values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>Pointer that will be passed to the function and derivative</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-nlfit-fit-idx.returns"></a><h4>Returns</h4>
+<p> The final residual sum, a negative number in the case of failure.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-46.html#api-index-2.46">2.46</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-fit-idx-full"></a><h3>gwy_math_nlfit_fit_idx_full ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_math_nlfit_fit_idx_full (<em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a> *nlfit</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> ndata</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nparam</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *param</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *fixed_param</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *link_map</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Performs a nonlinear fit of function on opaque indexed data, allowing some
+fixed parameters.</p>
+<p>Initial values of linked (dependent) parameters are overwritten by master
+values, their <em class="parameter"><code>fixed_param</code></em>
+ property is ignored and master's property
+controls whether all are fixed or all variable.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-fit-idx-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>nlfit</p></td>
+<td class="parameter_description"><p>A Marquardt-Levenberg nonlinear fitter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ndata</p></td>
+<td class="parameter_description"><p>The number of data points in <em class="parameter"><code>x</code></em>
+, <em class="parameter"><code>y</code></em>
+, <em class="parameter"><code>weight</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nparam</p></td>
+<td class="parameter_description"><p>The nuber of parameters.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>param</p></td>
+<td class="parameter_description"><p>Array of parameters (of size <em class="parameter"><code>nparam</code></em>
+).  Note the parameters must
+be initialized to reasonably near values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fixed_param</p></td>
+<td class="parameter_description"><p>Which parameters should be treated as fixed (set corresponding
+element to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> for them).  May be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if all parameters
+are variable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>link_map</p></td>
+<td class="parameter_description"><p>Map of linked parameters.  One of linked parameters is master,
+Values in this array are indices of corresponding master
+parameter for each parameter (for independent parameters set
+<em class="parameter"><code>link_map</code></em>
+[i] == i).   May be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if all parameter are
+independent.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>Pointer that will be passed to the function and derivative</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-nlfit-fit-idx-full.returns"></a><h4>Returns</h4>
+<p> The final residual sum, a negative number in the case of failure.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-46.html#api-index-2.46">2.46</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-get-max-iterations"></a><h3>gwy_math_nlfit_get_max_iterations ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_math_nlfit_get_max_iterations (<em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a> *nlfit</code></em>);</pre>
+<p>Returns the maximum number of iterations of nonlinear fitter <em class="parameter"><code>nlfit</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-get-max-iterations.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>nlfit</p></td>
+<td class="parameter_description"><p>A Marquardt-Levenberg nonlinear fitter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-nlfit-get-max-iterations.returns"></a><h4>Returns</h4>
+<p> The maximum number of iterations.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-set-max-iterations"></a><h3>gwy_math_nlfit_set_max_iterations ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_math_nlfit_set_max_iterations (<em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a> *nlfit</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> maxiter</code></em>);</pre>
+<p>Sets the maximum number of iterations for nonlinear fitter <em class="parameter"><code>nlfit</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-set-max-iterations.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>nlfit</p></td>
+<td class="parameter_description"><p>A Marquardt-Levenberg nonlinear fitter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>maxiter</p></td>
+<td class="parameter_description"><p>The maximum number of iterations.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-get-approx-geometric"></a><h3>gwy_math_nlfit_get_approx_geometric ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_math_nlfit_get_approx_geometric (<em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a> *nlfit</code></em>);</pre>
+<p>Reports if a non-linear fitter performs approximately orthogonal fitting.</p>
+<p>This function does not do anything useful.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-get-approx-geometric.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>nlfit</p></td>
+<td class="parameter_description"><p>A Marquardt-Levenberg nonlinear fitter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-nlfit-get-approx-geometric.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the fitting is approximately orthogonal; <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> for
+ordinary least squares.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-set-approx-geometric"></a><h3>gwy_math_nlfit_set_approx_geometric ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_math_nlfit_set_approx_geometric (<em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a> *nlfit</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> setting</code></em>);</pre>
+<p>Sets a non-linear fitter to perform ordinary or approximately orthogonal
+fitting.</p>
+<p>This function does not do anything useful.  Since 2.56 it is no-op.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-set-approx-geometric.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>nlfit</p></td>
+<td class="parameter_description"><p>A Marquardt-Levenberg nonlinear fitter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>setting</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to approximately orthogonal (geometrical) fitting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-succeeded"></a><h3>gwy_math_nlfit_succeeded ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_math_nlfit_succeeded (<em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a> *nlfit</code></em>);</pre>
+<p>Obtains the status of the last fitting.</p>
+<p>Fitting failure can be (and usually should be) also determined by checking
+for negative return value of <a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-fit" title="gwy_math_nlfit_fit ()"><code class="function">gwy_math_nlfit_fit()</code></a> or
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-fit-full" title="gwy_math_nlfit_fit_full ()"><code class="function">gwy_math_nlfit_fit_full()</code></a>.  This function allows to test it later.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-succeeded.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>nlfit</p></td>
+<td class="parameter_description"><p>A Marquardt-Levenberg nonlinear fitter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-nlfit-succeeded.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the last fitting suceeded, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it failed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-7.html#api-index-2.7">2.7</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-get-dispersion"></a><h3>gwy_math_nlfit_get_dispersion ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_math_nlfit_get_dispersion (<em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a> *nlfit</code></em>);</pre>
+<p>Returns the residual sum divided by the number of degrees of freedom.</p>
+<p>This function can be used only after a successful fit.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-get-dispersion.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>nlfit</p></td>
+<td class="parameter_description"><p>A Marquardt-Levenberg nonlinear fitter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-nlfit-get-dispersion.returns"></a><h4>Returns</h4>
+<p> The dispersion.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-get-correlations"></a><h3>gwy_math_nlfit_get_correlations ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_math_nlfit_get_correlations (<em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a> *nlfit</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> par1</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> par2</code></em>);</pre>
+<p>Returns the correlation coefficient between <em class="parameter"><code>par1</code></em>
+-th and <em class="parameter"><code>par2</code></em>
+-th parameter.</p>
+<p>This function can be used only after a successful fit.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-get-correlations.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>nlfit</p></td>
+<td class="parameter_description"><p>A Marquardt-Levenberg nonlinear fitter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>par1</p></td>
+<td class="parameter_description"><p>First parameter index.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>par2</p></td>
+<td class="parameter_description"><p>Second parameter index.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-nlfit-get-correlations.returns"></a><h4>Returns</h4>
+<p> The correlation coefficient.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-get-eval"></a><h3>gwy_math_nlfit_get_eval ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_math_nlfit_get_eval (<em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a> *nlfit</code></em>);</pre>
+<p>Gets the state of a nonlinear fitter.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-get-eval.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>nlfit</p></td>
+<td class="parameter_description"><p>A Marquardt-Levenberg nonlinear fitter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-nlfit-get-eval.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the last fit succeeded, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it failed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-get-covar"></a><h3>gwy_math_nlfit_get_covar ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_math_nlfit_get_covar (<em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a> *nlfit</code></em>);</pre>
+<p>Gets the covariance matrix of a nonlinear fitter.</p>
+<p>The returned matrix may be only used between fits.  Any fitting can free and
+reallocate it.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-get-covar.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>nlfit</p></td>
+<td class="parameter_description"><p>A Marquardt-Levenberg nonlinear fitter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-nlfit-get-covar.returns"></a><h4>Returns</h4>
+<p> The covariance matrix, as lower triangular matrix, owned by the
+fitter.  The return value will be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the last fit did not
+succeed.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-get-nparam"></a><h3>gwy_math_nlfit_get_nparam ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_math_nlfit_get_nparam (<em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a> *nlfit</code></em>);</pre>
+<p>Gets the number of parameters of a nonlinear fitter.</p>
+<p>The number of parameters determines the size of covariance matrix obtained
+by <a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-covar" title="gwy_math_nlfit_get_covar ()"><code class="function">gwy_math_nlfit_get_covar()</code></a> and valid arguments for
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-correlations" title="gwy_math_nlfit_get_correlations ()"><code class="function">gwy_math_nlfit_get_correlations()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-get-nparam.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>nlfit</p></td>
+<td class="parameter_description"><p>A Marquardt-Levenberg nonlinear fitter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-nlfit-get-nparam.returns"></a><h4>Returns</h4>
+<p> The number of parameters for the last fit.  If the last fit was not
+successful zero is returned.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-get-sigma"></a><h3>gwy_math_nlfit_get_sigma ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_math_nlfit_get_sigma (<em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a> *nlfit</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> par</code></em>);</pre>
+<p>Returns the standard deviation of parameter number <em class="parameter"><code>par</code></em>
+.</p>
+<p>This function makes sense only after a successful fit and for a free
+parameter.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-get-sigma.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>nlfit</p></td>
+<td class="parameter_description"><p>A Marquardt-Levenberg nonlinear fitter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>par</p></td>
+<td class="parameter_description"><p>Parameter index.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-nlfit-get-sigma.returns"></a><h4>Returns</h4>
+<p> The SD of <em class="parameter"><code>par</code></em>
+-th parameter.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-set-callbacks"></a><h3>gwy_math_nlfit_set_callbacks ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_math_nlfit_set_callbacks (<em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitter" title="struct GwyNLFitter"><span class="type">GwyNLFitter</span></a> *nlfit</code></em>,
+                              <em class="parameter"><code><a class="link" href="libgwyddion-gwyutils.html#GwySetFractionFunc" title="GwySetFractionFunc ()"><span class="type">GwySetFractionFunc</span></a> set_fraction</code></em>,
+                              <em class="parameter"><code><a class="link" href="libgwyddion-gwyutils.html#GwySetMessageFunc" title="GwySetMessageFunc ()"><span class="type">GwySetMessageFunc</span></a> set_message</code></em>);</pre>
+<p>Sets callbacks reporting a non-linear least squares fitter progress.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-set-callbacks.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>nlfit</p></td>
+<td class="parameter_description"><p>A Marquardt-Levenberg nonlinear fitter.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set_fraction</p></td>
+<td class="parameter_description"><p>Function that sets fraction to output (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set_message</p></td>
+<td class="parameter_description"><p>Function that sets message to output (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-46.html#api-index-2.46">2.46</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-diff"></a><h3>gwy_math_nlfit_diff ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_math_nlfit_diff (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nparam</code></em>,
+                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *param</code></em>,
+                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *fixed_param</code></em>,
+                     <em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitFunc" title="GwyNLFitFunc ()"><span class="type">GwyNLFitFunc</span></a> func</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *der</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *success</code></em>);</pre>
+<p>Numerically computes the partial derivatives of a function.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-diff.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>The value to compute the derivative at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nparam</p></td>
+<td class="parameter_description"><p>The nuber of parameters.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>param</p></td>
+<td class="parameter_description"><p>Array of parameters (of size <em class="parameter"><code>nparam</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fixed_param</p></td>
+<td class="parameter_description"><p>Which parameters should be treated as fixed (corresponding
+entries are set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>func</p></td>
+<td class="parameter_description"><p>The fitted function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data to be passed to <em class="parameter"><code>func</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>der</p></td>
+<td class="parameter_description"><p>Array where the put the result to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>success</p></td>
+<td class="parameter_description"><p>Set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if succeeds, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> on failure.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-46.html#api-index-2.46">2.46</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-derive"></a><h3>gwy_math_nlfit_derive ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_math_nlfit_derive (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nparam</code></em>,
+                       <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *param</code></em>,
+                       <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *fixed_param</code></em>,
+                       <em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitFunc" title="GwyNLFitFunc ()"><span class="type">GwyNLFitFunc</span></a> func</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *der</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *success</code></em>);</pre>
+<p>Numerically computes the partial derivatives of a function.</p>
+<p>This is a legacy name for function <a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-diff" title="gwy_math_nlfit_diff ()"><code class="function">gwy_math_nlfit_diff()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-derive.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>The value to compute the derivative at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nparam</p></td>
+<td class="parameter_description"><p>The nuber of parameters.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>param</p></td>
+<td class="parameter_description"><p>Array of parameters (of size <em class="parameter"><code>nparam</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fixed_param</p></td>
+<td class="parameter_description"><p>Which parameters should be treated as fixed (corresponding
+entries are set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>func</p></td>
+<td class="parameter_description"><p>The fitted function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data to be passed to <em class="parameter"><code>func</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>der</p></td>
+<td class="parameter_description"><p>Array where the put the result to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>success</p></td>
+<td class="parameter_description"><p>Set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if succeeds, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> on failure.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-diff-idx"></a><h3>gwy_math_nlfit_diff_idx ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_math_nlfit_diff_idx (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> i</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nparam</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *param</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *fixed_param</code></em>,
+                         <em class="parameter"><code><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitIdxFunc" title="GwyNLFitIdxFunc ()"><span class="type">GwyNLFitIdxFunc</span></a> func</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *der</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *success</code></em>);</pre>
+<p>Numerically computes the partial derivatives of an opaque function.</p>
+<p>This function cannot be passed as derivative calculation function to
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-new-idx" title="gwy_math_nlfit_new_idx ()"><code class="function">gwy_math_nlfit_new_idx()</code></a> because it is not of the <a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitIdxDiffFunc" title="GwyNLFitIdxDiffFunc ()"><span class="type">GwyNLFitIdxDiffFunc</span></a>.
+Just pass <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to <a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-new-idx" title="gwy_math_nlfit_new_idx ()"><code class="function">gwy_math_nlfit_new_idx()</code></a> if you want automatic
+numerical derivatives.</p>
+<p>You can employ this function in your own <a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitIdxDiffFunc" title="GwyNLFitIdxDiffFunc ()"><span class="type">GwyNLFitIdxDiffFunc</span></a> function
+if you need to modify the derivatives somehow, for instance to apply
+weighting.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-diff-idx.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>i</p></td>
+<td class="parameter_description"><p>Data index from the set {0, 1, 2, ..., ndata-1}.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nparam</p></td>
+<td class="parameter_description"><p>The nuber of parameters.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>param</p></td>
+<td class="parameter_description"><p>Array of parameters (of size <em class="parameter"><code>nparam</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fixed_param</p></td>
+<td class="parameter_description"><p>Which parameters should be treated as fixed (corresponding
+entries are set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>func</p></td>
+<td class="parameter_description"><p>The fitted function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data to be passed to <em class="parameter"><code>func</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>der</p></td>
+<td class="parameter_description"><p>Array where the put the result to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>success</p></td>
+<td class="parameter_description"><p>Set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if succeeds, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> on failure.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-46.html#api-index-2.46">2.46</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-math-nlfit-map-free-params"></a><h3>gwy_math_nlfit_map_free_params ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_math_nlfit_map_free_params (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *fixed_param</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *id_map</code></em>);</pre>
+<p>Creates a map from free parameter ids to all-parameter ids.</p>
+<p>This is a helper function for reduction of full parameter vectors and
+covariance matrices to only free parameters.</p>
+<p>The array <em class="parameter"><code>id_map</code></em>
+ must at least as many elements as there are free
+parameters.  However, it is usually better to just pass an array of size <em class="parameter"><code>n</code></em>
+
+because the number of free parameters is what this function calculates.</p>
+<div class="refsect3">
+<a name="gwy-math-nlfit-map-free-params.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>fixed_param</p></td>
+<td class="parameter_description"><p>Which parameters are fixed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n</p></td>
+<td class="parameter_description"><p>Length of <em class="parameter"><code>fixed_param</code></em>
+array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id_map</p></td>
+<td class="parameter_description"><p>Parameter id map to fill.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-math-nlfit-map-free-params.returns"></a><h4>Returns</h4>
+<p> The number of free parameters.  This is the number of ids filled
+in <em class="parameter"><code>id_map</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-GwyNLFitter.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyNLFitter"></a><h3>struct GwyNLFitter</h3>
+<pre class="programlisting">struct GwyNLFitter {
+    GwyNLFitFunc fmarq;  /* fitting function */
+    GwyNLFitDerFunc dmarq;  /* fitting function derivations */
+    gint maxiter;  /* max number of iterations */
+    gboolean eval;  /* success? */
+    gdouble *covar; /* covariance matrix  */
+    gdouble dispersion; /* dispersion */
+    gdouble mfi;    /* fitting parameters --
+                       fi, decrease, increase of lambda, minimum lambda */
+    gdouble mdec;
+    gdouble minc;
+    gdouble mtol;
+};
+</pre>
+<p>Non-linear least-squares fitter.</p>
+<p>The fields should be considered private.</p>
+<p>Use <a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-eval" title="gwy_math_nlfit_get_eval ()"><code class="function">gwy_math_nlfit_get_eval()</code></a>, <a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-covar" title="gwy_math_nlfit_get_covar ()"><code class="function">gwy_math_nlfit_get_covar()</code></a> and
+<a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-get-dispersion" title="gwy_math_nlfit_get_dispersion ()"><code class="function">gwy_math_nlfit_get_dispersion()</code></a> and <a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-succeeded" title="gwy_math_nlfit_succeeded ()"><code class="function">gwy_math_nlfit_succeeded()</code></a> to examine
+the fitter state.</p>
+<p>Use <a class="link" href="libgwyddion-GwyNLFitter.html#gwy-math-nlfit-set-max-iterations" title="gwy_math_nlfit_set_max_iterations ()"><code class="function">gwy_math_nlfit_set_max_iterations()</code></a> to set the maximum iteration.</p>
+<p>In rare occasions you might want modify <em class="parameter"><code>mdec</code></em>
+ or <em class="parameter"><code>minc</code></em>
+. The rest is better
+left untouched.</p>
+<div class="refsect3">
+<a name="GwyNLFitter.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitFunc" title="GwyNLFitFunc ()"><span class="type">GwyNLFitFunc</span></a> <em class="structfield"><code><a name="GwyNLFitter.fmarq"></a>fmarq</code></em>;</p></td>
+<td class="struct_member_description"><p>Evaluates the fitted function.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="libgwyddion-GwyNLFitter.html#GwyNLFitDerFunc" title="GwyNLFitDerFunc ()"><span class="type">GwyNLFitDerFunc</span></a> <em class="structfield"><code><a name="GwyNLFitter.dmarq"></a>dmarq</code></em>;</p></td>
+<td class="struct_member_description"><p>Evaluates derivatives of the fitted function.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GwyNLFitter.maxiter"></a>maxiter</code></em>;</p></td>
+<td class="struct_member_description"><p>Maximum number of iteration.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> <em class="structfield"><code><a name="GwyNLFitter.eval"></a>eval</code></em>;</p></td>
+<td class="struct_member_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if last evaluation succeeded.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *<em class="structfield"><code><a name="GwyNLFitter.covar"></a>covar</code></em>;</p></td>
+<td class="struct_member_description"><p>Covariance matrix (set upon successful fit).</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GwyNLFitter.dispersion"></a>dispersion</code></em>;</p></td>
+<td class="struct_member_description"><p>Mean residual sum of squares per point, set to -1 on failure.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GwyNLFitter.mfi"></a>mfi</code></em>;</p></td>
+<td class="struct_member_description"><p>Lambda parameter is multiplied by it.  Probably keep at 1.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GwyNLFitter.mdec"></a>mdec</code></em>;</p></td>
+<td class="struct_member_description"><p>Decrease of lambda parameter after an unsuccessful step.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GwyNLFitter.minc"></a>minc</code></em>;</p></td>
+<td class="struct_member_description"><p>Increase of lambda parameter after a successful step.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GwyNLFitter.mtol"></a>mtol</code></em>;</p></td>
+<td class="struct_member_description"><p>If lambda parameter becomes zero it is set to this value.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-GwyNLFitter.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="GwyNLFitPreset.html" title="GwyNLFitPreset"><span class="type">GwyNLFitPreset</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

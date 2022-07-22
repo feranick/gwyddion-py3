@@ -1,0 +1,864 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>arithmetic: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="GwyCalData.html" title="GwyCalData">
+<link rel="next" href="GwyCDLine.html" title="cdline">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyprocess-arithmetic.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="GwyCalData.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyCDLine.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyprocess-arithmetic"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyprocess-arithmetic.top_of_page"></a>arithmetic</span></h2>
+<p>arithmetic — Arithmetic opetations on data fields</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyprocess-arithmetic.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-arithmetic.html#gwy-data-field-sum-fields" title="gwy_data_field_sum_fields ()">gwy_data_field_sum_fields</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-arithmetic.html#gwy-data-field-subtract-fields" title="gwy_data_field_subtract_fields ()">gwy_data_field_subtract_fields</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-arithmetic.html#gwy-data-field-divide-fields" title="gwy_data_field_divide_fields ()">gwy_data_field_divide_fields</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-arithmetic.html#gwy-data-field-multiply-fields" title="gwy_data_field_multiply_fields ()">gwy_data_field_multiply_fields</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-arithmetic.html#gwy-data-field-min-of-fields" title="gwy_data_field_min_of_fields ()">gwy_data_field_min_of_fields</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-arithmetic.html#gwy-data-field-max-of-fields" title="gwy_data_field_max_of_fields ()">gwy_data_field_max_of_fields</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-arithmetic.html#gwy-data-field-hypot-of-fields" title="gwy_data_field_hypot_of_fields ()">gwy_data_field_hypot_of_fields</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-arithmetic.html#gwy-data-field-linear-combination" title="gwy_data_field_linear_combination ()">gwy_data_field_linear_combination</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags" title="enum GwyDataCompatibilityFlags"><span class="returnvalue">GwyDataCompatibilityFlags</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-arithmetic.html#gwy-data-field-check-compatibility" title="gwy_data_field_check_compatibility ()">gwy_data_field_check_compatibility</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags" title="enum GwyDataCompatibilityFlags"><span class="returnvalue">GwyDataCompatibilityFlags</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-arithmetic.html#gwy-data-line-check-compatibility" title="gwy_data_line_check_compatibility ()">gwy_data_line_check_compatibility</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags" title="enum GwyDataCompatibilityFlags"><span class="returnvalue">GwyDataCompatibilityFlags</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-arithmetic.html#gwy-brick-check-compatibility" title="gwy_brick_check_compatibility ()">gwy_brick_check_compatibility</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags" title="enum GwyDataCompatibilityFlags"><span class="returnvalue">GwyDataCompatibilityFlags</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-arithmetic.html#gwy-lawn-check-compatibility" title="gwy_lawn_check_compatibility ()">gwy_lawn_check_compatibility</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags" title="enum GwyDataCompatibilityFlags"><span class="returnvalue">GwyDataCompatibilityFlags</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-arithmetic.html#gwy-data-field-check-compatibility-with-brick-xy" title="gwy_data_field_check_compatibility_with_brick_xy ()">gwy_data_field_check_compatibility_with_brick_xy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags" title="enum GwyDataCompatibilityFlags"><span class="returnvalue">GwyDataCompatibilityFlags</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-arithmetic.html#gwy-data-line-check-compatibility-with-brick-z" title="gwy_data_line_check_compatibility_with_brick_z ()">gwy_data_line_check_compatibility_with_brick_z</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags" title="enum GwyDataCompatibilityFlags"><span class="returnvalue">GwyDataCompatibilityFlags</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-arithmetic.html#gwy-data-field-check-compatibility-with-lawn" title="gwy_data_field_check_compatibility_with_lawn ()">gwy_data_field_check_compatibility_with_lawn</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyDataField.html" title="GwyDataField"><span class="returnvalue">GwyDataField</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-arithmetic.html#gwy-data-field-extend" title="gwy_data_field_extend ()">gwy_data_field_extend</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-arithmetic.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-arithmetic.description"></a><h2>Description</h2>
+<p>Data arithmetic functions perform simple operations combining several data fields.  Their sizes have to be
+size-compatible, i.e. gwy_data_field_check_compatibility(operand1, operand2, GWY_DATA_COMPATIBILITY_RES) must pass
+and the same must hold for the data field to store the result to.</p>
+<p>Functions <a class="link" href="libgwyprocess-arithmetic.html#gwy-data-field-check-compatibility" title="gwy_data_field_check_compatibility ()"><code class="function">gwy_data_field_check_compatibility()</code></a>, <a class="link" href="libgwyprocess-arithmetic.html#gwy-data-line-check-compatibility" title="gwy_data_line_check_compatibility ()"><code class="function">gwy_data_line_check_compatibility()</code></a> and
+<a class="link" href="libgwyprocess-arithmetic.html#gwy-brick-check-compatibility" title="gwy_brick_check_compatibility ()"><code class="function">gwy_brick_check_compatibility()</code></a> simplify testing compatibility of data fields, lines and bricks, respectively.</p>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-arithmetic.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-data-field-sum-fields"></a><h3>gwy_data_field_sum_fields ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_sum_fields (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *result</code></em>,
+                           <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *operand1</code></em>,
+                           <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *operand2</code></em>);</pre>
+<p>Sums two data fields.</p>
+<div class="refsect3">
+<a name="gwy-data-field-sum-fields.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>A data field to put the result to.  May be one of <em class="parameter"><code>operand1</code></em>
+, <em class="parameter"><code>operand2</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operand1</p></td>
+<td class="parameter_description"><p>First data field operand.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operand2</p></td>
+<td class="parameter_description"><p>Second data field operand.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-subtract-fields"></a><h3>gwy_data_field_subtract_fields ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_subtract_fields (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *result</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *operand1</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *operand2</code></em>);</pre>
+<p>Subtracts one data field from another.</p>
+<div class="refsect3">
+<a name="gwy-data-field-subtract-fields.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>A data field to put the result to.  May be one of <em class="parameter"><code>operand1</code></em>
+, <em class="parameter"><code>operand2</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operand1</p></td>
+<td class="parameter_description"><p>First data field operand.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operand2</p></td>
+<td class="parameter_description"><p>Second data field operand.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-divide-fields"></a><h3>gwy_data_field_divide_fields ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_divide_fields (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *result</code></em>,
+                              <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *operand1</code></em>,
+                              <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *operand2</code></em>);</pre>
+<p>Divides one data field with another.</p>
+<div class="refsect3">
+<a name="gwy-data-field-divide-fields.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>A data field to put the result to.  May be one of <em class="parameter"><code>operand1</code></em>
+, <em class="parameter"><code>operand2</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operand1</p></td>
+<td class="parameter_description"><p>First data field operand.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operand2</p></td>
+<td class="parameter_description"><p>Second data field operand.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-multiply-fields"></a><h3>gwy_data_field_multiply_fields ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_multiply_fields (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *result</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *operand1</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *operand2</code></em>);</pre>
+<p>Multiplies two data fields.</p>
+<div class="refsect3">
+<a name="gwy-data-field-multiply-fields.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>A data field to put the result to.  May be one of <em class="parameter"><code>operand1</code></em>
+, <em class="parameter"><code>operand2</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operand1</p></td>
+<td class="parameter_description"><p>First data field operand.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operand2</p></td>
+<td class="parameter_description"><p>Second data field operand.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-min-of-fields"></a><h3>gwy_data_field_min_of_fields ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_min_of_fields (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *result</code></em>,
+                              <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *operand1</code></em>,
+                              <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *operand2</code></em>);</pre>
+<p>Finds point-wise maxima of two data fields.</p>
+<div class="refsect3">
+<a name="gwy-data-field-min-of-fields.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>A data field to put the result to.  May be one of <em class="parameter"><code>operand1</code></em>
+, <em class="parameter"><code>operand2</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operand1</p></td>
+<td class="parameter_description"><p>First data field operand.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operand2</p></td>
+<td class="parameter_description"><p>Second data field operand.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-max-of-fields"></a><h3>gwy_data_field_max_of_fields ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_max_of_fields (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *result</code></em>,
+                              <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *operand1</code></em>,
+                              <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *operand2</code></em>);</pre>
+<p>Finds point-wise minima of two data fields.</p>
+<div class="refsect3">
+<a name="gwy-data-field-max-of-fields.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>A data field to put the result to.  May be one of <em class="parameter"><code>operand1</code></em>
+, <em class="parameter"><code>operand2</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operand1</p></td>
+<td class="parameter_description"><p>First data field operand.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operand2</p></td>
+<td class="parameter_description"><p>Second data field operand.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-hypot-of-fields"></a><h3>gwy_data_field_hypot_of_fields ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_hypot_of_fields (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *result</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *operand1</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *operand2</code></em>);</pre>
+<p>Finds point-wise hypotenuse of two data fields.</p>
+<div class="refsect3">
+<a name="gwy-data-field-hypot-of-fields.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>A data field to put the result to.  May be one of <em class="parameter"><code>operand1</code></em>
+, <em class="parameter"><code>operand2</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operand1</p></td>
+<td class="parameter_description"><p>First data field operand.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operand2</p></td>
+<td class="parameter_description"><p>Second data field operand.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-31.html#api-index-2.31">2.31</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-linear-combination"></a><h3>gwy_data_field_linear_combination ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_linear_combination (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *result</code></em>,
+                                   <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> coeff1</code></em>,
+                                   <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *operand1</code></em>,
+                                   <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> coeff2</code></em>,
+                                   <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *operand2</code></em>,
+                                   <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> constant</code></em>);</pre>
+<p>Computes point-wise general linear combination of two data fields.</p>
+<div class="refsect3">
+<a name="gwy-data-field-linear-combination.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>A data field to put the result to.  May be one of <em class="parameter"><code>operand1</code></em>
+, <em class="parameter"><code>operand2</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>constant</p></td>
+<td class="parameter_description"><p>Constant term to add to the result.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operand1</p></td>
+<td class="parameter_description"><p>First data field operand.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeff1</p></td>
+<td class="parameter_description"><p>Factor to multiply the first operand with.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operand2</p></td>
+<td class="parameter_description"><p>Second data field operand.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coeff2</p></td>
+<td class="parameter_description"><p>Factor to multiply the second operand with.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-59.html#api-index-2.59">2.59</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-check-compatibility"></a><h3>gwy_data_field_check_compatibility ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags" title="enum GwyDataCompatibilityFlags"><span class="returnvalue">GwyDataCompatibilityFlags</span></a>
+gwy_data_field_check_compatibility (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field1</code></em>,
+                                    <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field2</code></em>,
+                                    <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags" title="enum GwyDataCompatibilityFlags"><span class="type">GwyDataCompatibilityFlags</span></a> check</code></em>);</pre>
+<p>Checks whether two data fields are compatible.</p>
+<div class="refsect3">
+<a name="gwy-data-field-check-compatibility.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field1</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data_field2</p></td>
+<td class="parameter_description"><p>Another data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>check</p></td>
+<td class="parameter_description"><p>The compatibility tests to perform.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-check-compatibility.returns"></a><h4>Returns</h4>
+<p> Zero if all tested properties are compatible.  Flags corresponding to failed tests if data fields are not
+compatible.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-check-compatibility"></a><h3>gwy_data_line_check_compatibility ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags" title="enum GwyDataCompatibilityFlags"><span class="returnvalue">GwyDataCompatibilityFlags</span></a>
+gwy_data_line_check_compatibility (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line1</code></em>,
+                                   <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line2</code></em>,
+                                   <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags" title="enum GwyDataCompatibilityFlags"><span class="type">GwyDataCompatibilityFlags</span></a> check</code></em>);</pre>
+<p>Checks whether two data lines are compatible.</p>
+<div class="refsect3">
+<a name="gwy-data-line-check-compatibility.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line1</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data_line2</p></td>
+<td class="parameter_description"><p>Another data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>check</p></td>
+<td class="parameter_description"><p>The compatibility tests to perform.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-check-compatibility.returns"></a><h4>Returns</h4>
+<p> Zero if all tested properties are compatible.  Flags corresponding to failed tests if data lines are not
+compatible.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-brick-check-compatibility"></a><h3>gwy_brick_check_compatibility ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags" title="enum GwyDataCompatibilityFlags"><span class="returnvalue">GwyDataCompatibilityFlags</span></a>
+gwy_brick_check_compatibility (<em class="parameter"><code><a class="link" href="GwyBrick.html" title="GwyBrick"><span class="type">GwyBrick</span></a> *brick1</code></em>,
+                               <em class="parameter"><code><a class="link" href="GwyBrick.html" title="GwyBrick"><span class="type">GwyBrick</span></a> *brick2</code></em>,
+                               <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags" title="enum GwyDataCompatibilityFlags"><span class="type">GwyDataCompatibilityFlags</span></a> check</code></em>);</pre>
+<p>Checks whether two data bricks are compatible.</p>
+<p>Real dimensions are checked without regard to calibration.  Calibrations are considered compatible if either both
+exist and are identical or none exists.</p>
+<div class="refsect3">
+<a name="gwy-brick-check-compatibility.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>brick1</p></td>
+<td class="parameter_description"><p>A data brick.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>brick2</p></td>
+<td class="parameter_description"><p>Another data brick.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>check</p></td>
+<td class="parameter_description"><p>The compatibility tests to perform.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-brick-check-compatibility.returns"></a><h4>Returns</h4>
+<p> Zero if all tested properties are compatible.  Flags corresponding to failed tests if bricks are not
+compatible.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-51.html#api-index-2.51">2.51</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-lawn-check-compatibility"></a><h3>gwy_lawn_check_compatibility ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags" title="enum GwyDataCompatibilityFlags"><span class="returnvalue">GwyDataCompatibilityFlags</span></a>
+gwy_lawn_check_compatibility (<em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn1</code></em>,
+                              <em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn2</code></em>,
+                              <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags" title="enum GwyDataCompatibilityFlags"><span class="type">GwyDataCompatibilityFlags</span></a> check</code></em>);</pre>
+<p>Checks whether two data lawns are compatible.</p>
+<p>Dimensions are checked only in the plane.  To check if the curve lengths match, use the
+<a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-DATA-COMPATIBILITY-CURVELEN:CAPS"><code class="literal">GWY_DATA_COMPATIBILITY_CURVELEN</code></a> flag.  Use <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-DATA-COMPATIBILITY-NCURVES:CAPS"><code class="literal">GWY_DATA_COMPATIBILITY_NCURVES</code></a> to check if the two lawns have the
+same number of curves.</p>
+<div class="refsect3">
+<a name="gwy-lawn-check-compatibility.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lawn1</p></td>
+<td class="parameter_description"><p>A data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>lawn2</p></td>
+<td class="parameter_description"><p>Another data lawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>check</p></td>
+<td class="parameter_description"><p>The compatibility tests to perform.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-lawn-check-compatibility.returns"></a><h4>Returns</h4>
+<p> Zero if all tested properties are compatible.  Flags corresponding to failed tests if lawns are not
+compatible.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-check-compatibility-with-brick-xy"></a><h3>gwy_data_field_check_compatibility_with_brick_xy ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags" title="enum GwyDataCompatibilityFlags"><span class="returnvalue">GwyDataCompatibilityFlags</span></a>
+gwy_data_field_check_compatibility_with_brick_xy
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyBrick.html" title="GwyBrick"><span class="type">GwyBrick</span></a> *brick</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags" title="enum GwyDataCompatibilityFlags"><span class="type">GwyDataCompatibilityFlags</span></a> check</code></em>);</pre>
+<p>Checks whether a data field is compatible with brick XY-planes.</p>
+<div class="refsect3">
+<a name="gwy-data-field-check-compatibility-with-brick-xy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A two-dimensional data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>brick</p></td>
+<td class="parameter_description"><p>A three-dimensional data brick.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>check</p></td>
+<td class="parameter_description"><p>The compatibility tests to perform.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-check-compatibility-with-brick-xy.returns"></a><h4>Returns</h4>
+<p> Zero if all tested properties are compatible.  Flags corresponding to failed tests if the data objects are
+not compatible.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-51.html#api-index-2.51">2.51</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-check-compatibility-with-brick-z"></a><h3>gwy_data_line_check_compatibility_with_brick_z ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags" title="enum GwyDataCompatibilityFlags"><span class="returnvalue">GwyDataCompatibilityFlags</span></a>
+gwy_data_line_check_compatibility_with_brick_z
+                               (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyBrick.html" title="GwyBrick"><span class="type">GwyBrick</span></a> *brick</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags" title="enum GwyDataCompatibilityFlags"><span class="type">GwyDataCompatibilityFlags</span></a> check</code></em>);</pre>
+<p>Checks whether a data line is compatible with brick Z-profiles.</p>
+<p>If <em class="parameter"><code>check</code></em>
+ includes <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-DATA-COMPATIBILITY-REAL:CAPS"><code class="literal">GWY_DATA_COMPATIBILITY_REAL</code></a> or <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-DATA-COMPATIBILITY-LATERAL:CAPS"><code class="literal">GWY_DATA_COMPATIBILITY_LATERAL</code></a> but not
+<a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-DATA-COMPATIBILITY-AXISCAL:CAPS"><code class="literal">GWY_DATA_COMPATIBILITY_AXISCAL</code></a>, <em class="parameter"><code>data_line</code></em>
+ is simply compared to <em class="parameter"><code>brick</code></em>
+ in the Z direction.</p>
+<p>If you include <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-DATA-COMPATIBILITY-AXISCAL:CAPS"><code class="literal">GWY_DATA_COMPATIBILITY_AXISCAL</code></a> and <em class="parameter"><code>brick</code></em>
+ has a Z-calibration data line, then the value range and
+units of this data line are compared to <em class="parameter"><code>data_line</code></em>
+.  This may not be very useful.</p>
+<div class="refsect3">
+<a name="gwy-data-line-check-compatibility-with-brick-z.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A one-dimensional data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>brick</p></td>
+<td class="parameter_description"><p>A three-dimensional data brick.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>check</p></td>
+<td class="parameter_description"><p>The compatibility tests to perform.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-check-compatibility-with-brick-z.returns"></a><h4>Returns</h4>
+<p> Zero if all tested properties are compatible.  Flags corresponding to failed tests if the data objects are
+not compatible.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-51.html#api-index-2.51">2.51</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-check-compatibility-with-lawn"></a><h3>gwy_data_field_check_compatibility_with_lawn ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags" title="enum GwyDataCompatibilityFlags"><span class="returnvalue">GwyDataCompatibilityFlags</span></a>
+gwy_data_field_check_compatibility_with_lawn
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyLawn.html" title="GwyLawn"><span class="type">GwyLawn</span></a> *lawn</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyDataCompatibilityFlags" title="enum GwyDataCompatibilityFlags"><span class="type">GwyDataCompatibilityFlags</span></a> check</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-extend"></a><h3>gwy_data_field_extend ()</h3>
+<pre class="programlisting"><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="returnvalue">GwyDataField</span></a> *
+gwy_data_field_extend (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                       <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> left</code></em>,
+                       <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> right</code></em>,
+                       <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> up</code></em>,
+                       <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> down</code></em>,
+                       <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyExteriorType" title="enum GwyExteriorType"><span class="type">GwyExteriorType</span></a> exterior</code></em>,
+                       <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> fill_value</code></em>,
+                       <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> keep_offsets</code></em>);</pre>
+<p>Creates a new data field by extending another data field using the specified method of exterior handling.</p>
+<div class="refsect3">
+<a name="gwy-data-field-extend.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A two-dimensional data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>left</p></td>
+<td class="parameter_description"><p>Number of pixels to extend to the left (towards lower column indices).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>right</p></td>
+<td class="parameter_description"><p>Number of pixels to extend to the right (towards higher column indices).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>up</p></td>
+<td class="parameter_description"><p>Number of pixels to extend up (towards lower row indices).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>down</p></td>
+<td class="parameter_description"><p>Number of pixels to extend down (towards higher row indices).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>exterior</p></td>
+<td class="parameter_description"><p>Exterior pixels handling.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fill_value</p></td>
+<td class="parameter_description"><p>The value to use with <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-EXTERIOR-FIXED-VALUE:CAPS"><code class="literal">GWY_EXTERIOR_FIXED_VALUE</code></a> exterior.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>keep_offsets</p></td>
+<td class="parameter_description"><p><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to set the X and Y offsets of the new field using <em class="parameter"><code>field</code></em>
+offsets.  <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to set offsets of
+the new field to zeroes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-extend.returns"></a><h4>Returns</h4>
+<p> A newly created data field.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-36.html#api-index-2.36">2.36</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

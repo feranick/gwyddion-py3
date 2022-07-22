@@ -1,0 +1,460 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>wait: Gwyddion Application Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="prev" href="libgwyapp-Validate.html" title="Validate">
+<link rel="next" href="api-index-all.html" title="Index of all symbols">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyapp-wait.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyapp-Validate.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="api-index-all.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyapp-wait"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyapp-wait.top_of_page"></a>wait</span></h2>
+<p>wait — Informing the world we are busy</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyapp-wait.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-wait.html#gwy-app-wait-start" title="gwy_app_wait_start ()">gwy_app_wait_start</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-wait.html#gwy-app-wait-finish" title="gwy_app_wait_finish ()">gwy_app_wait_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-wait.html#gwy-app-wait-set-fraction" title="gwy_app_wait_set_fraction ()">gwy_app_wait_set_fraction</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-wait.html#gwy-app-wait-set-message" title="gwy_app_wait_set_message ()">gwy_app_wait_set_message</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-wait.html#gwy-app-wait-set-message-prefix" title="gwy_app_wait_set_message_prefix ()">gwy_app_wait_set_message_prefix</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-wait.html#gwy-app-wait-cursor-start" title="gwy_app_wait_cursor_start ()">gwy_app_wait_cursor_start</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-wait.html#gwy-app-wait-cursor-finish" title="gwy_app_wait_cursor_finish ()">gwy_app_wait_cursor_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-wait.html#gwy-app-wait-get-enabled" title="gwy_app_wait_get_enabled ()">gwy_app_wait_get_enabled</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-wait.html#gwy-app-wait-set-enabled" title="gwy_app_wait_set_enabled ()">gwy_app_wait_set_enabled</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-wait.html#gwy-app-wait-was-canceled" title="gwy_app_wait_was_canceled ()">gwy_app_wait_was_canceled</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyapp-wait.html#gwy-app-wait-set-preview-widget" title="gwy_app_wait_set_preview_widget ()">gwy_app_wait_set_preview_widget</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-wait.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;app/gwyapp.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-wait.description"></a><h2>Description</h2>
+<p>The waiting functions implement a simple single-thread approach to performing a long computation while keeping the
+GUI responsive.</p>
+<p>The typical basic usage is as follows:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">gboolean</span> <span class="n">cancelled</span> <span class="o">=</span> <span class="n">FALSE</span><span class="p">;</span>
+
+<span class="n">gwy_app_wait_start</span><span class="p">(</span><span class="n">window</span><span class="p">,</span> <span class="n">_</span><span class="p">(</span><span class="s">&quot;Evaluating...&quot;</span><span class="p">));</span>
+<span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n_iters</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">do_one_calculation_iteration</span><span class="p">();</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">gwy_app_wait_set_fraction</span><span class="p">((</span><span class="n">i</span> <span class="o">+</span> <span class="mf">1.0</span><span class="p">)</span><span class="o">/</span><span class="n">n_iters</span><span class="p">))</span> <span class="p">{</span>
+        <span class="n">cancelled</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">gwy_app_wait_finish</span><span class="p">();</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">cancelled</span><span class="p">)</span>
+    <span class="n">handle_cancelled_computation</span><span class="p">();</span>
+<span class="k">else</span>
+    <span class="nf">do_something_with_result</span><span class="p">();</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+</div>
+<div class="refsect1">
+<a name="libgwyapp-wait.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-app-wait-start"></a><h3>gwy_app_wait_start ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_wait_start (<em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWindow.html#GtkWindow-struct"><span class="type">GtkWindow</span></a> *window</code></em>,
+                    <em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *message</code></em>);</pre>
+<p>Starts waiting for a window <em class="parameter"><code>window</code></em>
+, creating a dialog with a progress bar.</p>
+<p>Waiting is global, there can be only one at a time.</p>
+<p>Do not forget to call <a class="link" href="libgwyapp-wait.html#gwy-app-wait-finish" title="gwy_app_wait_finish ()"><code class="function">gwy_app_wait_finish()</code></a> when the computation is finished (or cancelled).  You should also call
+<a class="link" href="libgwyapp-wait.html#gwy-app-wait-set-fraction" title="gwy_app_wait_set_fraction ()"><code class="function">gwy_app_wait_set_fraction()</code></a> or <a class="link" href="libgwyapp-wait.html#gwy-app-wait-set-message" title="gwy_app_wait_set_message ()"><code class="function">gwy_app_wait_set_message()</code></a> regularly to leave the GUI responsive.</p>
+<div class="refsect3">
+<a name="gwy-app-wait-start.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>A window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>message</p></td>
+<td class="parameter_description"><p>A message to show in the wait dialog.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-wait-finish"></a><h3>gwy_app_wait_finish ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_wait_finish (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Finishes waiting, closing the dialog.</p>
+<p>No function like <a class="link" href="libgwyapp-wait.html#gwy-app-wait-set-message" title="gwy_app_wait_set_message ()"><code class="function">gwy_app_wait_set_message()</code></a> should be call after that.</p>
+<p>This function must be called even if user cancelled the operation.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-wait-set-fraction"></a><h3>gwy_app_wait_set_fraction ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_app_wait_set_fraction (<em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> fraction</code></em>);</pre>
+<p>Sets the amount of progress the progress bar on the dialog displays.</p>
+<p>This function may let the Gtk+ main loop to run.  It used to let the main loop to run always.  Since version 2.46
+it performs automated rate-limiting and only does so if sufficient time has passed since the last main loop
+invocation.  Therefore, you can call it 10000 times per second without fearing that the program will spend all time
+updating the GUI and no time in the calculation.</p>
+<p>It must not be called again once the operation is cancelled, i.e. after any of the progress reporting functions
+return <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-app-wait-set-fraction.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>fraction</p></td>
+<td class="parameter_description"><p>The progress of the operation, as a number from 0 to 1.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-wait-set-fraction.returns"></a><h4>Returns</h4>
+<p> <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the operation can continue, <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if user cancelled it meanwhile.  You must always check the
+return value and cancel the operation if it is <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-wait-set-message"></a><h3>gwy_app_wait_set_message ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_app_wait_set_message (<em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *message</code></em>);</pre>
+<p>Sets the message shown on the progress dialog.</p>
+<p>See also <a class="link" href="libgwyapp-wait.html#gwy-app-wait-set-message-prefix" title="gwy_app_wait_set_message_prefix ()"><code class="function">gwy_app_wait_set_message_prefix()</code></a> which makes this function more usable directly as a callback.</p>
+<p>This function lets the Gtk+ main loop to run.</p>
+<p>It must not be called again once the operation is cancelled, i.e. after any of the progress reporting functions
+return <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-app-wait-set-message.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>message</p></td>
+<td class="parameter_description"><p>A mesage to show in the progress dialog.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-wait-set-message.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the operation can continue, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if user cancelled it meanwhile.  You must always check the
+return value and cancel the operation if it is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-wait-set-message-prefix"></a><h3>gwy_app_wait_set_message_prefix ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_app_wait_set_message_prefix (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *prefix</code></em>);</pre>
+<p>Sets prefix for the messages shown in the progress dialog.</p>
+<p>The prefix will take effect in the next <a class="link" href="libgwyapp-wait.html#gwy-app-wait-set-message" title="gwy_app_wait_set_message ()"><code class="function">gwy_app_wait_set_message()</code></a> call.</p>
+<p>This function lets the Gtk+ main loop to run.</p>
+<p>It must not be called again once the operation is cancelled, i.e. after any of the progress reporting functions
+return <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-app-wait-set-message-prefix.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>prefix</p></td>
+<td class="parameter_description"><p>The prefix for new messages.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-wait-set-message-prefix.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the operation can continue, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if user cancelled it meanwhile.  You must always check the
+return value and cancel the operation if it is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-wait-cursor-start"></a><h3>gwy_app_wait_cursor_start ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_wait_cursor_start (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkWindow.html#GtkWindow-struct"><span class="type">GtkWindow</span></a> *window</code></em>);</pre>
+<p>Changes the cursor for a window to indicate work.</p>
+<p>This function lets the Gtk+ main loop to run.</p>
+<div class="refsect3">
+<a name="gwy-app-wait-cursor-start.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>A window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-3.html#api-index-2.3">2.3</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-wait-cursor-finish"></a><h3>gwy_app_wait_cursor_finish ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_wait_cursor_finish (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkWindow.html#GtkWindow-struct"><span class="type">GtkWindow</span></a> *window</code></em>);</pre>
+<p>Resets the cursor for a window.</p>
+<p>This function lets the Gtk+ main loop to run.</p>
+<p>If the window cursor was non-default before <a class="link" href="libgwyapp-wait.html#gwy-app-wait-cursor-start" title="gwy_app_wait_cursor_start ()"><code class="function">gwy_app_wait_cursor_start()</code></a>, it is not restored and has to be set
+manually.  This limitation is due to the nonexistence of a method to obtain the current cursor.</p>
+<div class="refsect3">
+<a name="gwy-app-wait-cursor-finish.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>A window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-3.html#api-index-2.3">2.3</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-wait-get-enabled"></a><h3>gwy_app_wait_get_enabled ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_app_wait_get_enabled (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Reports whether progress reporting is globally enabled.</p>
+<div class="refsect3">
+<a name="gwy-app-wait-get-enabled.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if progress reporting is enabled, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it is disabled.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-48.html#api-index-2.48">2.48</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-wait-set-enabled"></a><h3>gwy_app_wait_set_enabled ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_wait_set_enabled (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> setting</code></em>);</pre>
+<p>Globally enables or disables progress reporting.</p>
+<p>This function may not be used when a waiting dialog is currently being shown.</p>
+<p>By default, progress reporting is enabled.  Non-GUI applications that run module functions may wish to disable it
+to avoid GTK+ calls or just showing the progress dialogs.</p>
+<p>If progress reporting is disabled then functions such as <a class="link" href="libgwyapp-wait.html#gwy-app-wait-set-message" title="gwy_app_wait_set_message ()"><code class="function">gwy_app_wait_set_message()</code></a> and <a class="link" href="libgwyapp-wait.html#gwy-app-wait-set-fraction" title="gwy_app_wait_set_fraction ()"><code class="function">gwy_app_wait_set_fraction()</code></a>
+become no-op and always return <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> as nothing can be cancelled by the user.  Functions
+<a class="link" href="libgwyapp-wait.html#gwy-app-wait-cursor-start" title="gwy_app_wait_cursor_start ()"><code class="function">gwy_app_wait_cursor_start()</code></a> and <a class="link" href="libgwyapp-wait.html#gwy-app-wait-cursor-finish" title="gwy_app_wait_cursor_finish ()"><code class="function">gwy_app_wait_cursor_finish()</code></a> still work but may be called with <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> arguments.</p>
+<div class="refsect3">
+<a name="gwy-app-wait-set-enabled.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>setting</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to enable progress reporting, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to disable it.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-48.html#api-index-2.48">2.48</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-wait-was-canceled"></a><h3>gwy_app_wait_was_canceled ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_app_wait_was_canceled (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Checks if a progress dialog was cancelled.</p>
+<p>Calling this function is only meaningful between <a class="link" href="libgwyapp-wait.html#gwy-app-wait-start" title="gwy_app_wait_start ()"><code class="function">gwy_app_wait_start()</code></a> and <a class="link" href="libgwyapp-wait.html#gwy-app-wait-finish" title="gwy_app_wait_finish ()"><code class="function">gwy_app_wait_finish()</code></a>.  It returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>
+if the computation was cancelled by the user.  This may be occasionaly useful in complex multi-level calculations.
+Usually, the return values of <a class="link" href="libgwyapp-wait.html#gwy-app-wait-set-fraction" title="gwy_app_wait_set_fraction ()"><code class="function">gwy_app_wait_set_fraction()</code></a> and <a class="link" href="libgwyapp-wait.html#gwy-app-wait-set-message" title="gwy_app_wait_set_message ()"><code class="function">gwy_app_wait_set_message()</code></a> are sufficient.</p>
+<div class="refsect3">
+<a name="gwy-app-wait-was-canceled.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the currently running calculation was cancelled.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-wait-set-preview-widget"></a><h3>gwy_app_wait_set_preview_widget ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_wait_set_preview_widget (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a> *widget</code></em>);</pre>
+<p>Sets the preview widget of a wait dialogue.</p>
+<p>This function needs to be used before <a class="link" href="libgwyapp-wait.html#gwy-app-wait-start" title="gwy_app_wait_start ()"><code class="function">gwy_app_wait_start()</code></a> to have any effect.</p>
+<div class="refsect3">
+<a name="gwy-app-wait-set-preview-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>widget</p></td>
+<td class="parameter_description"><p>Preview widget, usually something like <a href="../GwyDataView.html#GwyDataView-struct"><span class="type">GwyDataView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-54.html#api-index-2.54">2.54</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

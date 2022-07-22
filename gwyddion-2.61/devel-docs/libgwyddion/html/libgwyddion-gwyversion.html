@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gwyversion: Gwyddion Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="prev" href="libgwyddion-gwyutils.html" title="gwyutils">
+<link rel="next" href="GwyEnum.html" title="GwyEnum">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyddion-gwyversion.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyddion-gwyutils.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyEnum.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyddion-gwyversion"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyddion-gwyversion.top_of_page"></a>gwyversion</span></h2>
+<p>gwyversion — Version information</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyddion-gwyversion.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-gwyversion.html#gwy-version-major" title="gwy_version_major ()">gwy_version_major</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-gwyversion.html#gwy-version-minor" title="gwy_version_minor ()">gwy_version_minor</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyddion-gwyversion.html#gwy-version-string" title="gwy_version_string ()">gwy_version_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-gwyversion.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgwyddion-gwyversion.html#GWY-VERSION-MAJOR:CAPS" title="GWY_VERSION_MAJOR">GWY_VERSION_MAJOR</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgwyddion-gwyversion.html#GWY-VERSION-MINOR:CAPS" title="GWY_VERSION_MINOR">GWY_VERSION_MINOR</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgwyddion-gwyversion.html#GWY-VERSION-STRING:CAPS" title="GWY_VERSION_STRING">GWY_VERSION_STRING</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-gwyversion.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwyddion/gwyddion.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-gwyversion.description"></a><h2>Description</h2>
+<p>Macros like <a class="link" href="libgwyddion-gwyversion.html#GWY-VERSION-MAJOR:CAPS" title="GWY_VERSION_MAJOR"><code class="literal">GWY_VERSION_MAJOR</code></a> can be used for compile-time version checks,
+that is they tell what version a module or app is being compiled or was
+compiled with.</p>
+<p>On the other hand functions like <a class="link" href="libgwyddion-gwyversion.html#gwy-version-major" title="gwy_version_major ()"><code class="function">gwy_version_major()</code></a> can be used to run-time
+version checks and they tell what version a module or app was linked or
+is running with.</p>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-gwyversion.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-version-major"></a><h3>gwy_version_major ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_version_major (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Gets the major version of Gwyddion.</p>
+<p>If the version is 1.99.7.20060604, this function returns 1.</p>
+<div class="refsect3">
+<a name="gwy-version-major.returns"></a><h4>Returns</h4>
+<p> The major version.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-version-minor"></a><h3>gwy_version_minor ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_version_minor (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Gets the minor version of Gwyddion.</p>
+<p>If the version is 1.99.7.20060604, this function returns 99.</p>
+<div class="refsect3">
+<a name="gwy-version-minor.returns"></a><h4>Returns</h4>
+<p> The minor version.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-version-string"></a><h3>gwy_version_string ()</h3>
+<pre class="programlisting">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_version_string (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Gets the full Gwyddion version as a string.</p>
+<p>If the version is 1.99.7.20060604, this function returns
+<code class="literal">"1.99.7.20060604"</code>.</p>
+<p>This is the only method to get finer version information than major.minor.
+However, only development versions use finer versioning than major.minor
+therefore a module or app requiring such information is probably broken
+anyway.  A meaningful use is to advertise the version of Gwyddion your app
+runs with.</p>
+<div class="refsect3">
+<a name="gwy-version-string.returns"></a><h4>Returns</h4>
+<p> The full version as a constant string.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-gwyversion.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GWY-VERSION-MAJOR:CAPS"></a><h3>GWY_VERSION_MAJOR</h3>
+<pre class="programlisting">#define GWY_VERSION_MAJOR 2
+</pre>
+<p>Expands to the major version of Gwyddion as a number.</p>
+<p>If the version is 1.99.7.20060604, this macro is defined as 1.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GWY-VERSION-MINOR:CAPS"></a><h3>GWY_VERSION_MINOR</h3>
+<pre class="programlisting">#define GWY_VERSION_MINOR 61
+</pre>
+<p>Expands to the minor version of Gwyddion as a number.</p>
+<p>If the version is 1.99.7.20060604, this macro is defined as 99.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GWY-VERSION-STRING:CAPS"></a><h3>GWY_VERSION_STRING</h3>
+<pre class="programlisting">#define GWY_VERSION_STRING "2.61"
+</pre>
+<p>Expands to the full Gwyddion version as a string.</p>
+<p>If the version is 1.99.7.20060604, this macro is defined as
+<code class="literal">"1.99.7.20060604"</code>.</p>
+<p>See <a class="link" href="libgwyddion-gwyversion.html#gwy-version-string" title="gwy_version_string ()"><code class="function">gwy_version_string()</code></a> for caveats.</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

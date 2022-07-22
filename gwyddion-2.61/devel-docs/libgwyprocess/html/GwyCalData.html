@@ -1,0 +1,1192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyCalData: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="GwyCalibration.html" title="GwyCalibration">
+<link rel="next" href="libgwyprocess-arithmetic.html" title="arithmetic">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyCalData.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyCalData.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GwyCalData.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="GwyCalibration.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyprocess-arithmetic.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyCalData"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyCalData.top_of_page"></a>GwyCalData</span></h2>
+<p>GwyCalData — General calibration data</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyCalData.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-duplicate" title="gwy_caldata_duplicate()">gwy_caldata_duplicate</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyCalData.html" title="GwyCalData"><span class="returnvalue">GwyCalData</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-new" title="gwy_caldata_new ()">gwy_caldata_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-resize" title="gwy_caldata_resize ()">gwy_caldata_resize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-append" title="gwy_caldata_append ()">gwy_caldata_append</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-get-ndata" title="gwy_caldata_get_ndata ()">gwy_caldata_get_ndata</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-get-x" title="gwy_caldata_get_x ()">gwy_caldata_get_x</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-get-y" title="gwy_caldata_get_y ()">gwy_caldata_get_y</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-get-z" title="gwy_caldata_get_z ()">gwy_caldata_get_z</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-get-xerr" title="gwy_caldata_get_xerr ()">gwy_caldata_get_xerr</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-get-yerr" title="gwy_caldata_get_yerr ()">gwy_caldata_get_yerr</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-get-zerr" title="gwy_caldata_get_zerr ()">gwy_caldata_get_zerr</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-get-xunc" title="gwy_caldata_get_xunc ()">gwy_caldata_get_xunc</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-get-yunc" title="gwy_caldata_get_yunc ()">gwy_caldata_get_yunc</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-get-zunc" title="gwy_caldata_get_zunc ()">gwy_caldata_get_zunc</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-get-range" title="gwy_caldata_get_range ()">gwy_caldata_get_range</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-set-range" title="gwy_caldata_set_range ()">gwy_caldata_set_range</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-get-si-unit-x" title="gwy_caldata_get_si_unit_x ()">gwy_caldata_get_si_unit_x</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-get-si-unit-y" title="gwy_caldata_get_si_unit_y ()">gwy_caldata_get_si_unit_y</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-get-si-unit-z" title="gwy_caldata_get_si_unit_z ()">gwy_caldata_get_si_unit_z</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-set-si-unit-x" title="gwy_caldata_set_si_unit_x ()">gwy_caldata_set_si_unit_x</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-set-si-unit-y" title="gwy_caldata_set_si_unit_y ()">gwy_caldata_set_si_unit_y</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-set-si-unit-z" title="gwy_caldata_set_si_unit_z ()">gwy_caldata_set_si_unit_z</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-setup-interpolation" title="gwy_caldata_setup_interpolation ()">gwy_caldata_setup_interpolation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-interpolate" title="gwy_caldata_interpolate ()">gwy_caldata_interpolate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-save-data" title="gwy_caldata_save_data ()">gwy_caldata_save_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyCalData.html#gwy-caldata-inside" title="gwy_caldata_inside ()">gwy_caldata_inside</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyCalData.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GwyCalData.html#GwyCurveCalibrationData" title="GwyCurveCalibrationData">GwyCurveCalibrationData</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GwyCalData.html#GwyCalData-struct" title="GwyCalData">GwyCalData</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GwyCalData.html#GwyCalDataClass" title="GwyCalDataClass">GwyCalDataClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyCalData.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> GwyCalData
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyCalData.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GwyCalData implements
+ <a href="../GwySerializable.html#GwySerializable-struct">GwySerializable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwyCalData.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyCalData.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> is an object representing general calibration data of a SPM
+system.  Any point in the volume that can be reached by SPM scanner can be
+characterized by two vectors: error and uncertainty. Errors can be used for
+further data correction, uncertainties for propagation and determination of
+final uncertainty of results of direct measurements or statistical
+functions. Using different strategies a different number of these local
+calibration data can be obtained, starting from single uncertainty applied
+for whole system up to complex determination of local  SPM errors and
+uncertainties.</p>
+</div>
+<div class="refsect1">
+<a name="GwyCalData.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-caldata-duplicate"></a><h3>gwy_caldata_duplicate()</h3>
+<pre class="programlisting">#define             gwy_caldata_duplicate(caldata)</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-new"></a><h3>gwy_caldata_new ()</h3>
+<pre class="programlisting"><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="returnvalue">GwyCalData</span></a> *
+gwy_caldata_new (<em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ndata</code></em>);</pre>
+<p>Creates new calibration data.</p>
+<div class="refsect3">
+<a name="gwy-caldata-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>ndata</p></td>
+<td class="parameter_description"><p>Number of calibration data</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-caldata-new.returns"></a><h4>Returns</h4>
+<p> A newly created calibration data.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-resize"></a><h3>gwy_caldata_resize ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_caldata_resize (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>,
+                    <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ndata</code></em>);</pre>
+<p>Sets number of calibration data entries, resizing arrays for holding them.</p>
+<p>Preserves actual values up to new calibration data size.</p>
+<div class="refsect3">
+<a name="gwy-caldata-resize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ndata</p></td>
+<td class="parameter_description"><p>New number of data points</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-append"></a><h3>gwy_caldata_append ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_caldata_append (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>,
+                    <em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *sec</code></em>);</pre>
+<p>Appends calibration data entries, resizing arrays for holding them.</p>
+<div class="refsect3">
+<a name="gwy-caldata-append.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sec</p></td>
+<td class="parameter_description"><p>Calibration data to be appended</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-get-ndata"></a><h3>gwy_caldata_get_ndata ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_caldata_get_ndata (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>);</pre>
+<p>Gets the number of calibration data entries.</p>
+<div class="refsect3">
+<a name="gwy-caldata-get-ndata.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-caldata-get-ndata.returns"></a><h4>Returns</h4>
+<p> Number of calibration data entries.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-get-x"></a><h3>gwy_caldata_get_x ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_caldata_get_x (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>);</pre>
+<p>Gets the Y data for calibration data.</p>
+<div class="refsect3">
+<a name="gwy-caldata-get-x.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-caldata-get-x.returns"></a><h4>Returns</h4>
+<p> x array pointer for given calibration data.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-get-y"></a><h3>gwy_caldata_get_y ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_caldata_get_y (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>);</pre>
+<p>Gets the Y data for calibration data.</p>
+<div class="refsect3">
+<a name="gwy-caldata-get-y.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-caldata-get-y.returns"></a><h4>Returns</h4>
+<p> y array pointer for given calibration data.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-get-z"></a><h3>gwy_caldata_get_z ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_caldata_get_z (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>);</pre>
+<p>Gets the Z data for calibration data.</p>
+<div class="refsect3">
+<a name="gwy-caldata-get-z.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-caldata-get-z.returns"></a><h4>Returns</h4>
+<p> z array pointer for given calibration data.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-get-xerr"></a><h3>gwy_caldata_get_xerr ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_caldata_get_xerr (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>);</pre>
+<p>Gets the X error data for calibration data.</p>
+<div class="refsect3">
+<a name="gwy-caldata-get-xerr.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-caldata-get-xerr.returns"></a><h4>Returns</h4>
+<p> x error array pointer for given calibration data.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-get-yerr"></a><h3>gwy_caldata_get_yerr ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_caldata_get_yerr (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>);</pre>
+<p>Gets the Y error data for calibration data.</p>
+<div class="refsect3">
+<a name="gwy-caldata-get-yerr.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-caldata-get-yerr.returns"></a><h4>Returns</h4>
+<p> y error array pointer for given calibration data.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-get-zerr"></a><h3>gwy_caldata_get_zerr ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_caldata_get_zerr (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>);</pre>
+<p>Gets the Z error data for calibration data.</p>
+<div class="refsect3">
+<a name="gwy-caldata-get-zerr.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-caldata-get-zerr.returns"></a><h4>Returns</h4>
+<p> z error array pointer for given calibration data.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-get-xunc"></a><h3>gwy_caldata_get_xunc ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_caldata_get_xunc (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>);</pre>
+<p>Gets the X uncertainty data for calibration data.</p>
+<div class="refsect3">
+<a name="gwy-caldata-get-xunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-caldata-get-xunc.returns"></a><h4>Returns</h4>
+<p> x uncertainty array pointer for given calibration data.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-get-yunc"></a><h3>gwy_caldata_get_yunc ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_caldata_get_yunc (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>);</pre>
+<p>Gets the Y uncertainty data for calibration data.</p>
+<div class="refsect3">
+<a name="gwy-caldata-get-yunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-caldata-get-yunc.returns"></a><h4>Returns</h4>
+<p> y uncertainty array pointer for given calibration data.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-get-zunc"></a><h3>gwy_caldata_get_zunc ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a> *
+gwy_caldata_get_zunc (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>);</pre>
+<p>Gets the Z uncertainty data for calibration data.</p>
+<div class="refsect3">
+<a name="gwy-caldata-get-zunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-caldata-get-zunc.returns"></a><h4>Returns</h4>
+<p> z uncertainty array pointer for given calibration data.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-get-range"></a><h3>gwy_caldata_get_range ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_caldata_get_range (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *xfrom</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *xto</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *yfrom</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *yto</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *zfrom</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *zto</code></em>);</pre>
+<p>Obtains boundaries of calibration data validity.</p>
+<div class="refsect3">
+<a name="gwy-caldata-get-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xfrom</p></td>
+<td class="parameter_description"><p>x minimum</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xto</p></td>
+<td class="parameter_description"><p>x maximum</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yfrom</p></td>
+<td class="parameter_description"><p>y minimum</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yto</p></td>
+<td class="parameter_description"><p>y maximum</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>zfrom</p></td>
+<td class="parameter_description"><p>z minimum</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>zto</p></td>
+<td class="parameter_description"><p>z maximum</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-set-range"></a><h3>gwy_caldata_set_range ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_caldata_set_range (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> xfrom</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> xto</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> yfrom</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> yto</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> zfrom</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> zto</code></em>);</pre>
+<p>Sets boundaries of calibration data validity.</p>
+<div class="refsect3">
+<a name="gwy-caldata-set-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xfrom</p></td>
+<td class="parameter_description"><p>x minimum</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xto</p></td>
+<td class="parameter_description"><p>x maximum</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yfrom</p></td>
+<td class="parameter_description"><p>y minimum</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yto</p></td>
+<td class="parameter_description"><p>y maximum</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>zfrom</p></td>
+<td class="parameter_description"><p>z minimum</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>zto</p></td>
+<td class="parameter_description"><p>z maximum</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-get-si-unit-x"></a><h3>gwy_caldata_get_si_unit_x ()</h3>
+<pre class="programlisting"><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_caldata_get_si_unit_x (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>);</pre>
+<p>Returns lateral SI unit of calibration data.</p>
+<div class="refsect3">
+<a name="gwy-caldata-get-si-unit-x.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-caldata-get-si-unit-x.returns"></a><h4>Returns</h4>
+<p> SI unit corresponding to the lateral (X) dimension of the calibration data
+Its reference count is not incremented.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-get-si-unit-y"></a><h3>gwy_caldata_get_si_unit_y ()</h3>
+<pre class="programlisting"><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_caldata_get_si_unit_y (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>);</pre>
+<p>Returns lateral SI unit of calibration data</p>
+<div class="refsect3">
+<a name="gwy-caldata-get-si-unit-y.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-caldata-get-si-unit-y.returns"></a><h4>Returns</h4>
+<p> SI unit corresponding to the lateral (Y) dimension of the
+calibration data.  Its reference count is not incremented.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-get-si-unit-z"></a><h3>gwy_caldata_get_si_unit_z ()</h3>
+<pre class="programlisting"><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_caldata_get_si_unit_z (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>);</pre>
+<p>Returns value SI unit of calibration data</p>
+<div class="refsect3">
+<a name="gwy-caldata-get-si-unit-z.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-caldata-get-si-unit-z.returns"></a><h4>Returns</h4>
+<p> SI unit corresponding to the "height" (Z) dimension of calibration
+data.  Its reference count is not incremented.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-set-si-unit-x"></a><h3>gwy_caldata_set_si_unit_x ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_caldata_set_si_unit_x (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>,
+                           <em class="parameter"><code><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *si_unit</code></em>);</pre>
+<p>Sets the SI unit corresponding to the lateral (X) dimension of
+calibration data.</p>
+<p>It does not assume a reference on <em class="parameter"><code>si_unit</code></em>
+, instead it adds its own
+reference.</p>
+<div class="refsect3">
+<a name="gwy-caldata-set-si-unit-x.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>si_unit</p></td>
+<td class="parameter_description"><p>SI unit to be set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-set-si-unit-y"></a><h3>gwy_caldata_set_si_unit_y ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_caldata_set_si_unit_y (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>,
+                           <em class="parameter"><code><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *si_unit</code></em>);</pre>
+<p>Sets the SI unit corresponding to the lateral (Y) dimension of
+calibration data.</p>
+<p>It does not assume a reference on <em class="parameter"><code>si_unit</code></em>
+, instead it adds its own
+reference.</p>
+<div class="refsect3">
+<a name="gwy-caldata-set-si-unit-y.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>si_unit</p></td>
+<td class="parameter_description"><p>SI unit to be set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-set-si-unit-z"></a><h3>gwy_caldata_set_si_unit_z ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_caldata_set_si_unit_z (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>,
+                           <em class="parameter"><code><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *si_unit</code></em>);</pre>
+<p>Sets the SI unit corresponding to the "height" (Z) dimension of
+calibration data.</p>
+<p>It does not assume a reference on <em class="parameter"><code>si_unit</code></em>
+, instead it adds its own
+reference.</p>
+<div class="refsect3">
+<a name="gwy-caldata-set-si-unit-z.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>si_unit</p></td>
+<td class="parameter_description"><p>SI unit to be set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-setup-interpolation"></a><h3>gwy_caldata_setup_interpolation ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_caldata_setup_interpolation (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>);</pre>
+<p>Prepares data for interpolating the calibration data (building Delaunay
+triangulation, etc.).</p>
+<div class="refsect3">
+<a name="gwy-caldata-setup-interpolation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-interpolate"></a><h3>gwy_caldata_interpolate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_caldata_interpolate (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> y</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> z</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *xerr</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *yerr</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *zerr</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *xunc</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *yunc</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *zunc</code></em>);</pre>
+<p>Determines (interpolates) caldata parameters for given position.</p>
+<div class="refsect3">
+<a name="gwy-caldata-interpolate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>x coordinate of requested position</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>y coordinate of requested position</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>z</p></td>
+<td class="parameter_description"><p>z coordinate of requested position</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xerr</p></td>
+<td class="parameter_description"><p>x error at given position</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yerr</p></td>
+<td class="parameter_description"><p>y error at given position</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>zerr</p></td>
+<td class="parameter_description"><p>z error at given position</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xunc</p></td>
+<td class="parameter_description"><p>x uncertainty at given position</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yunc</p></td>
+<td class="parameter_description"><p>y uncertainty at given position</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>zunc</p></td>
+<td class="parameter_description"><p>z uncertainty at given position</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-save-data"></a><h3>gwy_caldata_save_data ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_caldata_save_data (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>);</pre>
+<p>Saves calibration data to Gwyddion's caldata resource directory.</p>
+<div class="refsect3">
+<a name="gwy-caldata-save-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>Name of file to save the data to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-caldata-inside"></a><h3>gwy_caldata_inside ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_caldata_inside (<em class="parameter"><code><a class="link" href="GwyCalData.html" title="GwyCalData"><span class="type">GwyCalData</span></a> *caldata</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> y</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> z</code></em>);</pre>
+<p>Tests whether a point is inside calibration data range.</p>
+<div class="refsect3">
+<a name="gwy-caldata-inside.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>caldata</p></td>
+<td class="parameter_description"><p>Calibration data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>x position</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>y position</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>z</p></td>
+<td class="parameter_description"><p>z position</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-caldata-inside.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if xyz position is inside calibration data range.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-23.html#api-index-2.23">2.23</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyCalData.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyCurveCalibrationData"></a><h3>GwyCurveCalibrationData</h3>
+<pre class="programlisting">typedef struct {
+    gdouble *xerr;
+    gdouble *yerr;
+    gdouble *zerr;
+    gdouble *xunc;
+    gdouble *yunc;
+    gdouble *zunc;
+    gint n;
+} GwyCurveCalibrationData;
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyCalData-struct"></a><h3>GwyCalData</h3>
+<pre class="programlisting">typedef struct _GwyCalData GwyCalData;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyCalDataClass"></a><h3>GwyCalDataClass</h3>
+<pre class="programlisting">typedef struct _GwyCalDataClass GwyCalDataClass;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

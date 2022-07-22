@@ -1,0 +1,610 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyTool: Gwyddion Application Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="prev" href="GwyDialog.html" title="GwyDialog">
+<link rel="next" href="GwyPlainTool.html" title="GwyPlainTool">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyTool.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyTool.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="GwyDialog.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyPlainTool.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyTool"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyTool.top_of_page"></a>GwyTool</span></h2>
+<p>GwyTool — Base class for tools</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyTool.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyTool.html#gwy-tool-add-hide-button" title="gwy_tool_add_hide_button ()">gwy_tool_add_hide_button</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyTool.html#gwy-tool-show" title="gwy_tool_show ()">gwy_tool_show</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyTool.html#gwy-tool-hide" title="gwy_tool_hide ()">gwy_tool_hide</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyTool.html#gwy-tool-is-visible" title="gwy_tool_is_visible ()">gwy_tool_is_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyTool.html#gwy-tool-data-switched" title="gwy_tool_data_switched ()">gwy_tool_data_switched</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyTool.html#gwy-tool-spectra-switched" title="gwy_tool_spectra_switched ()">gwy_tool_spectra_switched</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyTool.html#gwy-tool-restore-screen-position" title="gwy_tool_restore_screen_position ()">gwy_tool_restore_screen_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyTool.html#gwy-tool-class-get-title" title="gwy_tool_class_get_title ()">gwy_tool_class_get_title</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyTool.html#gwy-tool-class-get-stock-id" title="gwy_tool_class_get_stock_id ()">gwy_tool_class_get_stock_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyTool.html#gwy-tool-class-get-tooltip" title="gwy_tool_class_get_tooltip ()">gwy_tool_class_get_tooltip</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyTool.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GwyTool.html#GwyToolResponseType" title="enum GwyToolResponseType">GwyToolResponseType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyTool.html#GwyTool-struct" title="struct GwyTool">GwyTool</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyTool.html#GwyToolClass" title="struct GwyToolClass">GwyToolClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyTool.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> GwyTool
+        <span class="lineart">╰──</span> <a class="link" href="GwyPlainTool.html" title="GwyPlainTool">GwyPlainTool</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyTool.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;app/gwyapp.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyTool.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="GwyTool.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-tool-add-hide-button"></a><h3>gwy_tool_add_hide_button ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_tool_add_hide_button (<em class="parameter"><code><a class="link" href="GwyTool.html" title="GwyTool"><span class="type">GwyTool</span></a> *tool</code></em>,
+                          <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> set_default</code></em>);</pre>
+<p>Adds a Hide button to a tool dialog.</p>
+<p>All tools should have a Hide button added by this method.  The reason why
+it is not added automatically is because the usual placement of the Hide
+button is next to the execution button (Apply), which is not present
+for informational-only tools.  In that case Hide should become the default
+dialog button.</p>
+<div class="refsect3">
+<a name="gwy-tool-add-hide-button.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tool</p></td>
+<td class="parameter_description"><p>A tool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set_default</p></td>
+<td class="parameter_description"><p>Whether hide should become the default tool dialog response.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tool-show"></a><h3>gwy_tool_show ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_tool_show (<em class="parameter"><code><a class="link" href="GwyTool.html" title="GwyTool"><span class="type">GwyTool</span></a> *tool</code></em>);</pre>
+<p>Shows a tool's dialog.</p>
+<div class="refsect3">
+<a name="gwy-tool-show.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tool</p></td>
+<td class="parameter_description"><p>A tool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tool-hide"></a><h3>gwy_tool_hide ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_tool_hide (<em class="parameter"><code><a class="link" href="GwyTool.html" title="GwyTool"><span class="type">GwyTool</span></a> *tool</code></em>);</pre>
+<p>Hides a tool's dialog.</p>
+<div class="refsect3">
+<a name="gwy-tool-hide.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tool</p></td>
+<td class="parameter_description"><p>A tool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tool-is-visible"></a><h3>gwy_tool_is_visible ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_tool_is_visible (<em class="parameter"><code><a class="link" href="GwyTool.html" title="GwyTool"><span class="type">GwyTool</span></a> *tool</code></em>);</pre>
+<p>Checks whether a tool dialog is visible.</p>
+<div class="refsect3">
+<a name="gwy-tool-is-visible.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tool</p></td>
+<td class="parameter_description"><p>A tool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-tool-is-visible.returns"></a><h4>Returns</h4>
+<p> <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if tool dialog is visible, <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it is hidden.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tool-data-switched"></a><h3>gwy_tool_data_switched ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_tool_data_switched (<em class="parameter"><code><a class="link" href="GwyTool.html" title="GwyTool"><span class="type">GwyTool</span></a> *tool</code></em>,
+                        <em class="parameter"><code><a href="../GwyDataView.html#GwyDataView-struct"><span class="type">GwyDataView</span></a> *data_view</code></em>);</pre>
+<p>Instructs a tool to switch to another data view.</p>
+<p>This involves set up of the top layer of <em class="parameter"><code>data_view</code></em>
+ and/or its selection
+to the mode appropriate for <em class="parameter"><code>tool</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-tool-data-switched.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tool</p></td>
+<td class="parameter_description"><p>A tool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data_view</p></td>
+<td class="parameter_description"><p>A data view.  It can be <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, too.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tool-spectra-switched"></a><h3>gwy_tool_spectra_switched ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_tool_spectra_switched (<em class="parameter"><code><a class="link" href="GwyTool.html" title="GwyTool"><span class="type">GwyTool</span></a> *tool</code></em>,
+                           <em class="parameter"><code><a href="../GwySpectra.html#GwySpectra-struct"><span class="type">GwySpectra</span></a> *spectra</code></em>);</pre>
+<p>Instructs a tool to switch to another spectra object.</p>
+<p>Bad things may happen when the spectra does not belong to the same container
+as the currently active channel.</p>
+<div class="refsect3">
+<a name="gwy-tool-spectra-switched.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tool</p></td>
+<td class="parameter_description"><p>A tool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>spectra</p></td>
+<td class="parameter_description"><p>A spectra object.  It can be <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, too.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-7.html#api-index-2.7">2.7</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tool-restore-screen-position"></a><h3>gwy_tool_restore_screen_position ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_tool_restore_screen_position (<em class="parameter"><code><a class="link" href="GwyTool.html" title="GwyTool"><span class="type">GwyTool</span></a> *tool</code></em>);</pre>
+<p>Restores tool's dialog screen and position.</p>
+<p>This function must be called when the tool dialog is not mapped yet.
+The position is remembered within a session (not in the settings) for each
+tool class.  In Gwyddion, the program, at most one instance of each tool
+exists so there is no abiguity which dialog position should be saved and
+restored.</p>
+<div class="refsect3">
+<a name="gwy-tool-restore-screen-position.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tool</p></td>
+<td class="parameter_description"><p>A tool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-33.html#api-index-2.33">2.33</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tool-class-get-title"></a><h3>gwy_tool_class_get_title ()</h3>
+<pre class="programlisting">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_tool_class_get_title (<em class="parameter"><code><a class="link" href="GwyTool.html#GwyToolClass" title="struct GwyToolClass"><span class="type">GwyToolClass</span></a> *klass</code></em>);</pre>
+<p>Gets the title of a tool class (this is a class method).</p>
+<p>The title is normally used as a tool dialog title.</p>
+<div class="refsect3">
+<a name="gwy-tool-class-get-title.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>klass</p></td>
+<td class="parameter_description"><p>A tool class.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-tool-class-get-title.returns"></a><h4>Returns</h4>
+<p> The title as a string owned by the tool class, untranslated.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tool-class-get-stock-id"></a><h3>gwy_tool_class_get_stock_id ()</h3>
+<pre class="programlisting">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_tool_class_get_stock_id (<em class="parameter"><code><a class="link" href="GwyTool.html#GwyToolClass" title="struct GwyToolClass"><span class="type">GwyToolClass</span></a> *klass</code></em>);</pre>
+<p>Gets the icon stock id of a tool class (this is a class method).</p>
+<div class="refsect3">
+<a name="gwy-tool-class-get-stock-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>klass</p></td>
+<td class="parameter_description"><p>A tool class.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-tool-class-get-stock-id.returns"></a><h4>Returns</h4>
+<p> The stock id as a string owned by the tool class.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-tool-class-get-tooltip"></a><h3>gwy_tool_class_get_tooltip ()</h3>
+<pre class="programlisting">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_tool_class_get_tooltip (<em class="parameter"><code><a class="link" href="GwyTool.html#GwyToolClass" title="struct GwyToolClass"><span class="type">GwyToolClass</span></a> *klass</code></em>);</pre>
+<p>Gets the title of a tool class (this is a class method).</p>
+<div class="refsect3">
+<a name="gwy-tool-class-get-tooltip.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>klass</p></td>
+<td class="parameter_description"><p>A tool class.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-tool-class-get-tooltip.returns"></a><h4>Returns</h4>
+<p> The tooltip as a string owned by the tool class, untranslated.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyTool.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyToolResponseType"></a><h3>enum GwyToolResponseType</h3>
+<p>Common tool dialog responses.</p>
+<p>They do not have any special meaning for <a class="link" href="GwyTool.html" title="GwyTool"><span class="type">GwyTool</span></a> (yet?), nonetheless you
+are encouraged to use them for consistency.</p>
+<div class="refsect3">
+<a name="GwyToolResponseType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-TOOL-RESPONSE-CLEAR:CAPS"></a>GWY_TOOL_RESPONSE_CLEAR</p></td>
+<td class="enum_member_description">
+<p>Clear selection response.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-TOOL-RESPONSE-UPDATE:CAPS"></a>GWY_TOOL_RESPONSE_UPDATE</p></td>
+<td class="enum_member_description">
+<p>Update calculated values (if not instant)
+response.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyTool-struct"></a><h3>struct GwyTool</h3>
+<pre class="programlisting">struct GwyTool;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyToolClass"></a><h3>struct GwyToolClass</h3>
+<pre class="programlisting">struct GwyToolClass {
+    GObjectClass parent_class;
+
+    const gchar *stock_id;
+    const gchar *tooltip;
+    const gchar *title;
+    const gchar *prefix;
+
+    gint default_width;
+    gint default_height;
+
+    void (*show)(GwyTool *tool);
+    void (*hide)(GwyTool *tool);
+    void (*data_switched)(GwyTool *tool,
+                          GwyDataView *data_view);
+    void (*response)(GwyTool *tool,
+                     gint response_id);
+
+    void (*spectra_switched)(GwyTool *tool,
+                             GwySpectra *spectra);
+    void (*reserved2)(void);
+    void (*reserved3)(void);
+    void *priv;
+};
+</pre>
+<p>Tool class.</p>
+<p>The fields <em class="parameter"><code>default_width</code></em>
+ and <em class="parameter"><code>default_height</code></em>
+ should be set only if a tool
+dialog requires a different initial size from it would request (due to
+shrinkable widgets).  Since <a class="link" href="GwyTool.html" title="GwyTool"><span class="type">GwyTool</span></a> keeps dialog sizes stored in settings
+and restores them automatically, these values essentially apply only to the
+first use of a tool.</p>
+<div class="refsect3">
+<a name="GwyToolClass.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="GwyToolClass.stock-id"></a>stock_id</code></em>;</p></td>
+<td class="struct_member_description"><p>Tool icon stock id.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="GwyToolClass.tooltip"></a>tooltip</code></em>;</p></td>
+<td class="struct_member_description"><p>Tooltip.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="GwyToolClass.title"></a>title</code></em>;</p></td>
+<td class="struct_member_description"><p>Tool dialog title.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="GwyToolClass.prefix"></a>prefix</code></em>;</p></td>
+<td class="struct_member_description"><p>Prefix in settings to store automatically remembered tool state
+under, should be of the form <code class="literal">"/module/mytool"</code>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GwyToolClass.default-width"></a>default_width</code></em>;</p></td>
+<td class="struct_member_description"><p>Default initial window width, normally unset.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GwyToolClass.default-height"></a>default_height</code></em>;</p></td>
+<td class="struct_member_description"><p>Default initial window height, normally unset.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwyToolClass.show"></a>show</code></em> ()</p></td>
+<td class="struct_member_description"><p>Tool show virtual method.  Most tools do not need to override it,
+unless they wish to handle lazy updates themselves.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwyToolClass.hide"></a>hide</code></em> ()</p></td>
+<td class="struct_member_description"><p>Tool hide virtual method.  Most tools do not need to override it.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwyToolClass.data-switched"></a>data_switched</code></em> ()</p></td>
+<td class="struct_member_description"><p>Data switched virtual method.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwyToolClass.response"></a>response</code></em> ()</p></td>
+<td class="struct_member_description"><p>Dialog response virtual method.  Hiding an closing is normally
+handled in the base class, particular tools can handle only
+responses from their specific buttons.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwyToolClass.spectra-switched"></a>spectra_switched</code></em> ()</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwyToolClass.reserved2"></a>reserved2</code></em> ()</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwyToolClass.reserved3"></a>reserved3</code></em> ()</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">void</span> *<em class="structfield"><code><a name="GwyToolClass.priv"></a>priv</code></em>;</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

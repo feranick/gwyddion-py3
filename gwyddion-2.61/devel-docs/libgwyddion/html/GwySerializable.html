@@ -1,0 +1,1328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwySerializable: Gwyddion Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="prev" href="libgwyddion-gwyddionenums.html" title="gwyddionenums">
+<link rel="next" href="GwyContainer.html" title="GwyContainer">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwySerializable.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwySerializable.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_prerequisites">  <span class="dim">|</span> 
+                  <a href="#GwySerializable.prerequisites" class="shortcut">Prerequisites</a></span><span id="nav_implementations">  <span class="dim">|</span> 
+                  <a href="#GwySerializable.implementations" class="shortcut">Known Implementations</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyddion-gwyddionenums.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyContainer.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwySerializable"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwySerializable.top_of_page"></a>GwySerializable</span></h2>
+<p>GwySerializable — Abstract interface for serializable objects</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwySerializable.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Byte-Arrays.html#GByteArray"><span class="returnvalue">GByteArray</span></a> *
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="GwySerializable.html#GwySerializeFunc" title="GwySerializeFunc ()">*GwySerializeFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="returnvalue">GObject</span></a> *
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="GwySerializable.html#GwyDeserializeFunc" title="GwyDeserializeFunc ()">*GwyDeserializeFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Byte-Arrays.html#GByteArray"><span class="returnvalue">GByteArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySerializable.html#gwy-serializable-serialize" title="gwy_serializable_serialize ()">gwy_serializable_serialize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="returnvalue">GObject</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySerializable.html#gwy-serializable-deserialize" title="gwy_serializable_deserialize ()">gwy_serializable_deserialize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="returnvalue">GObject</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySerializable.html#gwy-serializable-duplicate" title="gwy_serializable_duplicate ()">gwy_serializable_duplicate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySerializable.html#gwy-serializable-clone" title="gwy_serializable_clone ()">gwy_serializable_clone</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwySerializable.html#gwy-serializable-clone-with-type" title="gwy_serializable_clone_with_type ()">gwy_serializable_clone_with_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwySerializable.html#gwy-serializable-get-size" title="gwy_serializable_get_size ()">gwy_serializable_get_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwySerializable.html#gwy-serialize-get-struct-size" title="gwy_serialize_get_struct_size ()">gwy_serialize_get_struct_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwySerializable.html#gwy-serialize-get-items-size" title="gwy_serialize_get_items_size ()">gwy_serialize_get_items_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Byte-Arrays.html#GByteArray"><span class="returnvalue">GByteArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySerializable.html#gwy-serialize-pack-object-struct" title="gwy_serialize_pack_object_struct ()">gwy_serialize_pack_object_struct</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwySerializable.html#gwy-serialize-unpack-object-struct" title="gwy_serialize_unpack_object_struct ()">gwy_serialize_unpack_object_struct</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwySerializable.html#gwy-serialize-check-string" title="gwy_serialize_check_string ()">gwy_serialize_check_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Byte-Arrays.html#GByteArray"><span class="returnvalue">GByteArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySerializable.html#gwy-serialize-object-items" title="gwy_serialize_object_items ()">gwy_serialize_object_items</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwySerializable.html#GwySerializeItem" title="GwySerializeItem"><span class="returnvalue">GwySerializeItem</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySerializable.html#gwy-deserialize-object-hash" title="gwy_deserialize_object_hash ()">gwy_deserialize_object_hash</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="GwySerializable.html#GWY-SERIALIZABLE-GET-IFACE:CAPS" title="GWY_SERIALIZABLE_GET_IFACE()">GWY_SERIALIZABLE_GET_IFACE</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwySerializable.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GwySerializable.html#GwySerializeSpec" title="GwySerializeSpec">GwySerializeSpec</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GwySerializable.html#GwySerializeValue" title="GwySerializeValue">GwySerializeValue</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GwySerializable.html#GwySerializeItem" title="GwySerializeItem">GwySerializeItem</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GwySerializable.html#GwySerializable-struct" title="GwySerializable">GwySerializable</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwySerializable.html#GwySerializableIface" title="struct GwySerializableIface">GwySerializableIface</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwySerializable.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/GTypeModule.html">GInterface</a>
+    <span class="lineart">╰──</span> GwySerializable
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwySerializable.prerequisites"></a><h2>Prerequisites</h2>
+<p>
+GwySerializable requires
+ <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwySerializable.implementations"></a><h2>Known Implementations</h2>
+<p>
+GwySerializable is implemented by
+ <a class="link" href="GwyContainer.html" title="GwyContainer">GwyContainer</a>,  <a class="link" href="GwySIUnit.html" title="GwySIUnit">GwySIUnit</a> and  <a class="link" href="GwyStringList.html" title="GwyStringList">GwyStringList</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwySerializable.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwyddion/gwyddion.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwySerializable.description"></a><h2>Description</h2>
+<p>GwySerializable is an abstract interface for data-like object that can be
+serialized and deserialized.  You can serialize any object implementing this
+interface with <a class="link" href="GwySerializable.html#gwy-serializable-serialize" title="gwy_serializable_serialize ()"><code class="function">gwy_serializable_serialize()</code></a> and the restore (deserialize) it
+with <a class="link" href="GwySerializable.html#gwy-serializable-deserialize" title="gwy_serializable_deserialize ()"><code class="function">gwy_serializable_deserialize()</code></a>. It is also posible it duplicate any
+such object with <a class="link" href="GwySerializable.html#gwy-serializable-duplicate" title="gwy_serializable_duplicate ()"><code class="function">gwy_serializable_duplicate()</code></a> and transform one object to
+copy of another with <a class="link" href="GwySerializable.html#gwy-serializable-clone" title="gwy_serializable_clone ()"><code class="function">gwy_serializable_clone()</code></a>.</p>
+<p>Note all <a class="link" href="GwySerializable.html" title="GwySerializable"><span class="type">GwySerializable</span></a> methods work with object `value', whatever it means
+for a particular type.  Beside that, objects also have their identity which
+is unique and can't be subject of cloning.  It consists of properties like
+memory address or references held by object users.  Two important properties
+related to identity (and thus NOT retained) are: signals connected to
+a particular object and user data set with <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#g-object-set-data"><code class="function">g_object_set_data()</code></a> or
+<a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#g-object-set-qdata"><code class="function">g_object_set_qdata()</code></a>.</p>
+<p>You can implement serialization and deserialization in your classes with
+<a class="link" href="GwySerializable.html#gwy-serialize-pack-object-struct" title="gwy_serialize_pack_object_struct ()"><code class="function">gwy_serialize_pack_object_struct()</code></a> and <a class="link" href="GwySerializable.html#gwy-serialize-unpack-object-struct" title="gwy_serialize_unpack_object_struct ()"><code class="function">gwy_serialize_unpack_object_struct()</code></a>
+or with <a class="link" href="GwySerializable.html#gwy-serialize-object-items" title="gwy_serialize_object_items ()"><code class="function">gwy_serialize_object_items()</code></a> and <a class="link" href="GwySerializable.html#gwy-deserialize-object-hash" title="gwy_deserialize_object_hash ()"><code class="function">gwy_deserialize_object_hash()</code></a>.
+The former two are useful for struct-like objects (most objects are of this
+kind), the latter two for hash-like objects, i.e., objects that can contain
+components of arbitrary name and type.  Serialized size calculations can be
+in most cases performed by <a class="link" href="GwySerializable.html#gwy-serialize-get-struct-size" title="gwy_serialize_get_struct_size ()"><code class="function">gwy_serialize_get_struct_size()</code></a> and
+<a class="link" href="GwySerializable.html#gwy-serialize-get-items-size" title="gwy_serialize_get_items_size ()"><code class="function">gwy_serialize_get_items_size()</code></a> helper functions.</p>
+</div>
+<div class="refsect1">
+<a name="GwySerializable.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GwySerializeFunc"></a><h3>GwySerializeFunc ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GByteArray"><span class="returnvalue">GByteArray</span></a> *
+<span class="c_punctuation">(</span>*GwySerializeFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *serializable</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GByteArray"><span class="type">GByteArray</span></a> *buffer</code></em>);</pre>
+<p>The type of serialization method, see <a class="link" href="GwySerializable.html#gwy-serializable-serialize" title="gwy_serializable_serialize ()"><code class="function">gwy_serializable_serialize()</code></a> for
+description.</p>
+<div class="refsect3">
+<a name="GwySerializeFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>serializable</p></td>
+<td class="parameter_description"><p>An object to serialize.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>A buffer to append the representation to, may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> indicating
+a new one should be allocated.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="GwySerializeFunc.returns"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>buffer</code></em>
+with serialized object appended.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyDeserializeFunc"></a><h3>GwyDeserializeFunc ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="returnvalue">GObject</span></a> *
+<span class="c_punctuation">(</span>*GwyDeserializeFunc<span class="c_punctuation">)</span> (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *buffer</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> size</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *position</code></em>);</pre>
+<p>The type of deserialization method, see <a class="link" href="GwySerializable.html#gwy-serializable-deserialize" title="gwy_serializable_deserialize ()"><code class="function">gwy_serializable_deserialize()</code></a> for
+description.</p>
+<div class="refsect3">
+<a name="GwyDeserializeFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>A buffer containing a serialized object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>The size of <em class="parameter"><code>buffer</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>position</p></td>
+<td class="parameter_description"><p>The current position in <em class="parameter"><code>buffer</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="GwyDeserializeFunc.returns"></a><h4>Returns</h4>
+<p> A newly created (restored) object.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-serializable-serialize"></a><h3>gwy_serializable_serialize ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GByteArray"><span class="returnvalue">GByteArray</span></a> *
+gwy_serializable_serialize (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *serializable</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GByteArray"><span class="type">GByteArray</span></a> *buffer</code></em>);</pre>
+<p>Serializes an object to byte buffer.</p>
+<p>This is a high-level method.  Do not use it for implementation of child
+object serialization (should you ever need to do it manually), it would
+lead to repeated required buffer size calculations.</p>
+<div class="refsect3">
+<a name="gwy-serializable-serialize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>serializable</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> that implements <a class="link" href="GwySerializable.html" title="GwySerializable"><span class="type">GwySerializable</span></a> interface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>A buffer to which the serialized object should be appended,
+or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to allocate and return a new <a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GByteArray"><span class="type">GByteArray</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-serializable-serialize.returns"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>buffer</code></em>
+or a newly allocated <a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GByteArray"><span class="type">GByteArray</span></a> with serialized
+object appended.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-serializable-deserialize"></a><h3>gwy_serializable_deserialize ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="returnvalue">GObject</span></a> *
+gwy_serializable_deserialize (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *buffer</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> size</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *position</code></em>);</pre>
+<p>Restores a serialized object from byte buffer.</p>
+<p>The newly created object has reference count according to its nature, thus
+a <a href="/usr/share/gtk-doc/html/gtk2/GtkObject.html#GtkObject-struct"><span class="type">GtkObject</span></a> will have a floating reference, a <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> will have a
+refcount of 1, etc.</p>
+<div class="refsect3">
+<a name="gwy-serializable-deserialize.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>A block of memory of size <em class="parameter"><code>size</code></em>
+contaning object representation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>The size of <em class="parameter"><code>buffer</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>position</p></td>
+<td class="parameter_description"><p>The position of the object in <em class="parameter"><code>buffer</code></em>
+, it's updated to
+point after it.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-serializable-deserialize.returns"></a><h4>Returns</h4>
+<p> A newly created object.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-serializable-duplicate"></a><h3>gwy_serializable_duplicate ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="returnvalue">GObject</span></a> *
+gwy_serializable_duplicate (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *object</code></em>);</pre>
+<p>Creates a copy of an object.</p>
+<p>If the object doesn't support duplication natively, it's brute-force
+serialized and then deserialized, this may be quite inefficient,
+namely for large objects.</p>
+<p>You can duplicate a <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, too, but you are discouraged from doing it.</p>
+<div class="refsect3">
+<a name="gwy-serializable-duplicate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>object</p></td>
+<td class="parameter_description"><p>An object implementing <a class="link" href="GwySerializable.html" title="GwySerializable"><span class="type">GwySerializable</span></a> interface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-serializable-duplicate.returns"></a><h4>Returns</h4>
+<p> The newly created object copy.  However if the object is a
+singleton, <em class="parameter"><code>object</code></em>
+itself (with incremented reference count)
+can be returned, too.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-serializable-clone"></a><h3>gwy_serializable_clone ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_serializable_clone (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *source</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *copy</code></em>);</pre>
+<p>Makes an object identical to another object of the same type.</p>
+<p>More precisely, <em class="parameter"><code>source</code></em>
+ may be subclass of <em class="parameter"><code>copy</code></em>
+ (the extra information
+is lost then).</p>
+<div class="refsect3">
+<a name="gwy-serializable-clone.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>An object implementing <a class="link" href="GwySerializable.html" title="GwySerializable"><span class="type">GwySerializable</span></a> interface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>copy</p></td>
+<td class="parameter_description"><p>An object of the same type as <em class="parameter"><code>source</code></em>
+to modify after it.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-serializable-clone-with-type"></a><h3>gwy_serializable_clone_with_type ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_serializable_clone_with_type (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *source</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *copy</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>);</pre>
+<p>Makes an object identical to another object of the same type, with explicit
+type checking.</p>
+<p>This function is the same as <a class="link" href="GwySerializable.html#gwy-serializable-clone" title="gwy_serializable_clone ()"><code class="function">gwy_serializable_clone()</code></a>, except it asserts
+the object type, which must be <em class="parameter"><code>type</code></em>
+.</p>
+<p>Since 2.52</p>
+<div class="refsect3">
+<a name="gwy-serializable-clone-with-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>An object implementing <a class="link" href="GwySerializable.html" title="GwySerializable"><span class="type">GwySerializable</span></a> interface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>copy</p></td>
+<td class="parameter_description"><p>An object of the same type as <em class="parameter"><code>source</code></em>
+to modify after it.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>The type the objects are asserted to be.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-serializable-get-size"></a><h3>gwy_serializable_get_size ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+gwy_serializable_get_size (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *serializable</code></em>);</pre>
+<p>Calculates the expected size of serialized object.</p>
+<div class="refsect3">
+<a name="gwy-serializable-get-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>serializable</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> that implements <a class="link" href="GwySerializable.html" title="GwySerializable"><span class="type">GwySerializable</span></a> interface.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-serializable-get-size.returns"></a><h4>Returns</h4>
+<p> The expected size of serialized <em class="parameter"><code>serializable</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-serialize-get-struct-size"></a><h3>gwy_serialize_get_struct_size ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+gwy_serialize_get_struct_size (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *object_name</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> nspec</code></em>,
+                               <em class="parameter"><code>const <a class="link" href="GwySerializable.html#GwySerializeSpec" title="GwySerializeSpec"><span class="type">GwySerializeSpec</span></a> *spec</code></em>);</pre>
+<p>Calculates serialized object size for struct-like objects.</p>
+<p>The component specification is the same as in
+<a class="link" href="GwySerializable.html#gwy-serialize-pack-object-struct" title="gwy_serialize_pack_object_struct ()"><code class="function">gwy_serialize_pack_object_struct()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-serialize-get-struct-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>object_name</p></td>
+<td class="parameter_description"><p>The type name of the object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nspec</p></td>
+<td class="parameter_description"><p>The number of items in <em class="parameter"><code>spec</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>spec</p></td>
+<td class="parameter_description"><p>The components to serialize.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-serialize-get-struct-size.returns"></a><h4>Returns</h4>
+<p> Serialized object size, it included space for object name and size.
+The value is exact unless some components are objects that do not
+return exact size estimate themselves.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-serialize-get-items-size"></a><h3>gwy_serialize_get_items_size ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+gwy_serialize_get_items_size (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *object_name</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> nitems</code></em>,
+                              <em class="parameter"><code>const <a class="link" href="GwySerializable.html#GwySerializeItem" title="GwySerializeItem"><span class="type">GwySerializeItem</span></a> *items</code></em>);</pre>
+<p>Calculates serialized object size for hash-like objects.</p>
+<p>The component specification is the same as in
+<a class="link" href="GwySerializable.html#gwy-serialize-object-items" title="gwy_serialize_object_items ()"><code class="function">gwy_serialize_object_items()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-serialize-get-items-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>object_name</p></td>
+<td class="parameter_description"><p>The type name of the object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nitems</p></td>
+<td class="parameter_description"><p>The number of <em class="parameter"><code>items</code></em>
+items.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>items</p></td>
+<td class="parameter_description"><p>The components to serialize.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-serialize-get-items-size.returns"></a><h4>Returns</h4>
+<p> Serialized object size, it included space for object name and size.
+The value is exact unless some components are objects that do not
+return exact size estimate themselves.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-serialize-pack-object-struct"></a><h3>gwy_serialize_pack_object_struct ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GByteArray"><span class="returnvalue">GByteArray</span></a> *
+gwy_serialize_pack_object_struct (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GByteArray"><span class="type">GByteArray</span></a> *buffer</code></em>,
+                                  <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *object_name</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> nspec</code></em>,
+                                  <em class="parameter"><code>const <a class="link" href="GwySerializable.html#GwySerializeSpec" title="GwySerializeSpec"><span class="type">GwySerializeSpec</span></a> *spec</code></em>);</pre>
+<p>Appends serialization of object with <a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#g-type-name"><code class="function">g_type_name()</code></a> <em class="parameter"><code>object_name</code></em>
+ and
+components described by <em class="parameter"><code>spec</code></em>
+ to <em class="parameter"><code>buffer</code></em>
+ in gwy-file format.</p>
+<p>Here's how a serialization method of a simple object whose state is
+described by a single real number foo could look (without error checking):</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="k">static</span> <span class="n">guchar</span><span class="o">*</span>
+<span class="n">my_object_serialize</span><span class="p">(</span><span class="n">GObject</span> <span class="o">*</span><span class="n">obj</span><span class="p">,</span>
+                    <span class="n">guchar</span> <span class="o">*</span><span class="n">buffer</span><span class="p">,</span>
+                    <span class="n">gsize</span> <span class="o">*</span><span class="n">size</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">MyObject</span> <span class="o">*</span><span class="n">my_object</span> <span class="o">=</span> <span class="n">MY_OBJECT</span><span class="p">(</span><span class="n">obj</span><span class="p">);</span>
+    <span class="n">GwySerializeSpec</span> <span class="n">spec</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="p">{</span> <span class="sc">&#39;d&#39;</span><span class="p">,</span> <span class="s">&quot;foo&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">my_object</span><span class="o">-&gt;</span><span class="n">foo</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="p">},</span>
+    <span class="p">};</span>
+
+    <span class="k">return</span> <span class="nf">gwy_serialize_pack_object_struct</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span>
+                                            <span class="s">&quot;MyObject&quot;</span><span class="p">,</span>
+                                            <span class="n">G_N_ELEMENTS</span><span class="p">(</span><span class="n">spec</span><span class="p">),</span> <span class="n">spec</span><span class="p">);</span>
+<span class="p">}</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="refsect3">
+<a name="gwy-serialize-pack-object-struct.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>A buffer to which the serialized components should be appended.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>object_name</p></td>
+<td class="parameter_description"><p>The type name of the object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nspec</p></td>
+<td class="parameter_description"><p>The number of items in <em class="parameter"><code>spec</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>spec</p></td>
+<td class="parameter_description"><p>The components to serialize.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-serialize-pack-object-struct.returns"></a><h4>Returns</h4>
+<p> The buffer with serialization of <em class="parameter"><code>spec</code></em>
+components appended.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-serialize-unpack-object-struct"></a><h3>gwy_serialize_unpack_object_struct ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_serialize_unpack_object_struct (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *buffer</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> size</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *position</code></em>,
+                                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *object_name</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> nspec</code></em>,
+                                    <em class="parameter"><code><a class="link" href="GwySerializable.html#GwySerializeSpec" title="GwySerializeSpec"><span class="type">GwySerializeSpec</span></a> *spec</code></em>);</pre>
+<p>Deserializes an object with named components packed into gwy-file format by
+<a class="link" href="GwySerializable.html#gwy-serialize-pack-object-struct" title="gwy_serialize_pack_object_struct ()"><code class="function">gwy_serialize_pack_object_struct()</code></a>.</p>
+<p>Extra components are ignored (but cause a warning), components of different
+type than expected cause failure, missing components are not detected.</p>
+<p>It is safe to pass pointers to existing non-atomic objects (strings, arrays,
+objects) in <em class="parameter"><code>spec</code></em>
+ values, they will be dereferenced and freed as necessary
+when an unpacked value is about to replace them.
+For the same reason it is an error to pass pointers to unintialized memory
+there, always initialize non-atomic <em class="parameter"><code>spec</code></em>
+ values to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> pointers, at
+least.</p>
+<p>Caller is responsible for use/clean-up of these values if deserialization
+succeeds or not.</p>
+<p>Here's how a deserialization method of a simple object whose state is
+described by a single real number <em class="parameter"><code>foo</code></em>
+ could look (without error checking):</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="k">static</span> <span class="n">GObject</span><span class="o">*</span>
+<span class="n">my_object_deserialize</span><span class="p">(</span><span class="k">const</span> <span class="n">guchar</span> <span class="o">*</span><span class="n">buffer</span><span class="p">,</span>
+                      <span class="n">gsize</span> <span class="n">size</span><span class="p">,</span>
+                      <span class="n">gsize</span> <span class="o">*</span><span class="n">position</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">double</span> <span class="n">foo</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">;</span>
+    <span class="n">GwySerializeSpec</span> <span class="n">spec</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="p">{</span> <span class="sc">&#39;d&#39;</span><span class="p">,</span> <span class="s">&quot;foo&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">foo</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="p">},</span>
+    <span class="p">};</span>
+    <span class="n">MyObject</span> <span class="o">*</span><span class="n">my_object</span><span class="p">;</span>
+
+    <span class="n">gwy_serialize_unpack_object_struct</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">position</span><span class="p">,</span>
+                                       <span class="s">&quot;MyObject&quot;</span><span class="p">,</span>
+                                       <span class="n">G_N_ELEMENTS</span><span class="p">(</span><span class="n">spec</span><span class="p">),</span> <span class="n">spec</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nf">my_object_new</span><span class="p">(</span><span class="n">foo</span><span class="p">);</span>
+<span class="p">}</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="refsect3">
+<a name="gwy-serialize-unpack-object-struct.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>A memory location containing a serialized object at position
+<em class="parameter"><code>position</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>Current size of <em class="parameter"><code>buffer</code></em>
+, new size is returned here.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>position</p></td>
+<td class="parameter_description"><p>The position of the object in <em class="parameter"><code>buffer</code></em>
+, it's updated to point
+after it.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>object_name</p></td>
+<td class="parameter_description"><p>The type name of the object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nspec</p></td>
+<td class="parameter_description"><p>The number of items in <em class="parameter"><code>spec</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>spec</p></td>
+<td class="parameter_description"><p>The components to deserialize.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-serialize-unpack-object-struct.returns"></a><h4>Returns</h4>
+<p> Whether the unpacking succeeded
+(see description body for definition of success and failure).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-serialize-check-string"></a><h3>gwy_serialize_check_string ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+gwy_serialize_check_string (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *buffer</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> size</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> position</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *compare_to</code></em>);</pre>
+<p>Check whether <em class="parameter"><code>size</code></em>
+ bytes of memory in <em class="parameter"><code>buffer</code></em>
+ can be interpreted as a
+NUL-terminated string, and eventually whether it's equal to <em class="parameter"><code>compare_to</code></em>
+.</p>
+<p>When <em class="parameter"><code>compare_to</code></em>
+ is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, the comparsion is not performed.</p>
+<div class="refsect3">
+<a name="gwy-serialize-check-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>A memory location containing a NUL-terminated string at position
+<em class="parameter"><code>position</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>The size of <em class="parameter"><code>buffer</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>position</p></td>
+<td class="parameter_description"><p>The position of the string in <em class="parameter"><code>buffer</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>compare_to</p></td>
+<td class="parameter_description"><p>String to compare <em class="parameter"><code>buffer</code></em>
+to, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-serialize-check-string.returns"></a><h4>Returns</h4>
+<p> The length of the NUL-terminated string including the NUL
+character; zero otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-serialize-object-items"></a><h3>gwy_serialize_object_items ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GByteArray"><span class="returnvalue">GByteArray</span></a> *
+gwy_serialize_object_items (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GByteArray"><span class="type">GByteArray</span></a> *buffer</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *object_name</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> nitems</code></em>,
+                            <em class="parameter"><code>const <a class="link" href="GwySerializable.html#GwySerializeItem" title="GwySerializeItem"><span class="type">GwySerializeItem</span></a> *items</code></em>);</pre>
+<p>Serializes an object to buffer in gwy-file format.</p>
+<p>More precisely, it appends serialization of object with <a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#g-type-name"><code class="function">g_type_name()</code></a>
+<em class="parameter"><code>object_name</code></em>
+ with components described by <em class="parameter"><code>items</code></em>
+ to <em class="parameter"><code>buffer</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-serialize-object-items.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>A buffer to which the serialized components should be appended,
+or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>object_name</p></td>
+<td class="parameter_description"><p>The type of the object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nitems</p></td>
+<td class="parameter_description"><p>The number of <em class="parameter"><code>items</code></em>
+items.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>items</p></td>
+<td class="parameter_description"><p>The components to serialize.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-serialize-object-items.returns"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>buffer</code></em>
+or a newly allocated <a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GByteArray"><span class="type">GByteArray</span></a> with serialization of
+<em class="parameter"><code>items</code></em>
+components appended.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-deserialize-object-hash"></a><h3>gwy_deserialize_object_hash ()</h3>
+<pre class="programlisting"><a class="link" href="GwySerializable.html#GwySerializeItem" title="GwySerializeItem"><span class="returnvalue">GwySerializeItem</span></a> *
+gwy_deserialize_object_hash (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *buffer</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> size</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *position</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *object_name</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *nitems</code></em>);</pre>
+<p>Deserializes an object with arbitrary components from gwy-file format.</p>
+<p>This function works like <a class="link" href="GwySerializable.html#gwy-serialize-unpack-object-struct" title="gwy_serialize_unpack_object_struct ()"><code class="function">gwy_serialize_unpack_object_struct()</code></a>, except that
+it does not use any a priori knowledge of what the object contains.  So
+instead of filling values in supplied <a class="link" href="GwySerializable.html#GwySerializeSpec" title="GwySerializeSpec"><span class="type">GwySerializeSpec</span></a>'s, it constructs
+<a class="link" href="GwySerializable.html#GwySerializeItem" title="GwySerializeItem"><span class="type">GwySerializeItem</span></a>'s completely from what is found in <em class="parameter"><code>buffer</code></em>
+.  It does
+considerably less sanity checks and even allows several components of the
+same name.</p>
+<div class="refsect3">
+<a name="gwy-deserialize-object-hash.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>A block of memory of size <em class="parameter"><code>size</code></em>
+contaning object representation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>The size of <em class="parameter"><code>buffer</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>position</p></td>
+<td class="parameter_description"><p>Current position in buffer, will be updated to point after
+object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>object_name</p></td>
+<td class="parameter_description"><p>The type name of the object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nitems</p></td>
+<td class="parameter_description"><p>Where the number of deserialized components should be stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-deserialize-object-hash.returns"></a><h4>Returns</h4>
+<p> A newly allocated array of deserialized components.  Note the
+<em class="parameter"><code>name</code></em>
+fields of <a class="link" href="GwySerializable.html#GwySerializeSpec" title="GwySerializeSpec"><span class="type">GwySerializeSpec</span></a>'s point to <em class="parameter"><code>buffer</code></em>
+and thus are
+valid only as long as <em class="parameter"><code>buffer</code></em>
+is; any arrays or strings are newly
+allocated and must be reused or freed by caller.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GWY-SERIALIZABLE-GET-IFACE:CAPS"></a><h3>GWY_SERIALIZABLE_GET_IFACE()</h3>
+<pre class="programlisting">#define GWY_SERIALIZABLE_GET_IFACE(obj) (G_TYPE_INSTANCE_GET_INTERFACE((obj), GWY_TYPE_SERIALIZABLE, GwySerializableIface))
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwySerializable.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwySerializeSpec"></a><h3>GwySerializeSpec</h3>
+<pre class="programlisting">typedef struct {
+    guchar ctype;
+    const guchar *name;
+    gpointer value;
+    guint32 *array_size;
+} GwySerializeSpec;
+</pre>
+<p>A structure containing information for one object/struct component
+serialization or deserialization.</p>
+<p>This component information is used in <a class="link" href="GwySerializable.html#gwy-serialize-pack-object-struct" title="gwy_serialize_pack_object_struct ()"><code class="function">gwy_serialize_pack_object_struct()</code></a>
+and <a class="link" href="GwySerializable.html#gwy-serialize-unpack-object-struct" title="gwy_serialize_unpack_object_struct ()"><code class="function">gwy_serialize_unpack_object_struct()</code></a> suitable for (de)serialization
+of struct-like objects.</p>
+<p>Following atomic component types (<em class="parameter"><code>ctype</code></em>
+'s) exist:
+<code class="literal">'b'</code> for a boolean,
+<code class="literal">'c'</code> for a character,
+<code class="literal">'i'</code> for a 32bit integer,
+<code class="literal">'q'</code> for a 64bit integer,
+<code class="literal">'d'</code> for a gdouble,
+<code class="literal">'s'</code> for a NUL-terminated string,
+<code class="literal">'o'</code> for a serializable object.</p>
+<p>And array component types:
+<code class="literal">'C'</code> for a character array,
+<code class="literal">'I'</code> for a 32bit integer array,
+<code class="literal">'Q'</code> for a 64bit integer array,
+<code class="literal">'D'</code> for a gdouble array,
+<code class="literal">'S'</code> for an array of NUL-terminated strings,
+<code class="literal">'O'</code> for an array of objects.</p>
+<div class="refsect3">
+<a name="GwySerializeSpec.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> <em class="structfield"><code><a name="GwySerializeSpec.ctype"></a>ctype</code></em>;</p></td>
+<td class="struct_member_description"><p>Component type, see description body for possible values.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *<em class="structfield"><code><a name="GwySerializeSpec.name"></a>name</code></em>;</p></td>
+<td class="struct_member_description"><p>Component name as a NUL-terminated string.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> <em class="structfield"><code><a name="GwySerializeSpec.value"></a>value</code></em>;</p></td>
+<td class="struct_member_description"><p>Pointer to component (always add one level of indirection; for
+an object, a <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a>** pointer should be stored).  If it is
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, the component is ignored.  For serialization it means it
+is not serialized, for deserialization it means its existence
+is acknowledged (no unknown component warning) but it's skipped
+instead of unpacking.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *<em class="structfield"><code><a name="GwySerializeSpec.array-size"></a>array_size</code></em>;</p></td>
+<td class="struct_member_description"><p>Pointer to array size if component is an array, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+otherwise.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwySerializeValue"></a><h3>GwySerializeValue</h3>
+<p>Helper serialization type that can hold any atomic value or pointer to
+non-atomic value.</p>
+<div class="refsect3">
+<a name="GwySerializeValue.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="union_members_name">
+<col class="union_members_description">
+<col width="200px" class="union_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="union_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> <em class="structfield"><code><a name="GwySerializeValue.v-boolean"></a>v_boolean</code></em>;</p></td>
+<td class="union_member_description"><p>Boolean.</p></td>
+<td class="union_member_annotations"> </td>
+</tr>
+<tr>
+<td class="union_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> <em class="structfield"><code><a name="GwySerializeValue.v-char"></a>v_char</code></em>;</p></td>
+<td class="union_member_description"><p>Character.</p></td>
+<td class="union_member_annotations"> </td>
+</tr>
+<tr>
+<td class="union_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> <em class="structfield"><code><a name="GwySerializeValue.v-int32"></a>v_int32</code></em>;</p></td>
+<td class="union_member_description"><p>32bit integer.</p></td>
+<td class="union_member_annotations"> </td>
+</tr>
+<tr>
+<td class="union_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> <em class="structfield"><code><a name="GwySerializeValue.v-int64"></a>v_int64</code></em>;</p></td>
+<td class="union_member_description"><p>64bit integer.</p></td>
+<td class="union_member_annotations"> </td>
+</tr>
+<tr>
+<td class="union_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GwySerializeValue.v-double"></a>v_double</code></em>;</p></td>
+<td class="union_member_description"><p>Double-precision float.</p></td>
+<td class="union_member_annotations"> </td>
+</tr>
+<tr>
+<td class="union_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *<em class="structfield"><code><a name="GwySerializeValue.v-string"></a>v_string</code></em>;</p></td>
+<td class="union_member_description"><p>NUL-terminated string.</p></td>
+<td class="union_member_annotations"> </td>
+</tr>
+<tr>
+<td class="union_member_name"><p><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *<em class="structfield"><code><a name="GwySerializeValue.v-object"></a>v_object</code></em>;</p></td>
+<td class="union_member_description"><p>Object (serializable).</p></td>
+<td class="union_member_annotations"> </td>
+</tr>
+<tr>
+<td class="union_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *<em class="structfield"><code><a name="GwySerializeValue.v-boolean-array"></a>v_boolean_array</code></em>;</p></td>
+<td class="union_member_description"><p>Array of booleans.  Not to be used.</p></td>
+<td class="union_member_annotations"> </td>
+</tr>
+<tr>
+<td class="union_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *<em class="structfield"><code><a name="GwySerializeValue.v-char-array"></a>v_char_array</code></em>;</p></td>
+<td class="union_member_description"><p>Array of characters.</p></td>
+<td class="union_member_annotations"> </td>
+</tr>
+<tr>
+<td class="union_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *<em class="structfield"><code><a name="GwySerializeValue.v-int32-array"></a>v_int32_array</code></em>;</p></td>
+<td class="union_member_description"><p>Array of 32bit integers.</p></td>
+<td class="union_member_annotations"> </td>
+</tr>
+<tr>
+<td class="union_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> *<em class="structfield"><code><a name="GwySerializeValue.v-int64-array"></a>v_int64_array</code></em>;</p></td>
+<td class="union_member_description"><p>Array of 64bit integers.</p></td>
+<td class="union_member_annotations"> </td>
+</tr>
+<tr>
+<td class="union_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *<em class="structfield"><code><a name="GwySerializeValue.v-double-array"></a>v_double_array</code></em>;</p></td>
+<td class="union_member_description"><p>Array of double-precision floats.</p></td>
+<td class="union_member_annotations"> </td>
+</tr>
+<tr>
+<td class="union_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> **<em class="structfield"><code><a name="GwySerializeValue.v-string-array"></a>v_string_array</code></em>;</p></td>
+<td class="union_member_description"><p>Array of NUL-terminated strings.</p></td>
+<td class="union_member_annotations"> </td>
+</tr>
+<tr>
+<td class="union_member_name"><p><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> **<em class="structfield"><code><a name="GwySerializeValue.v-object-array"></a>v_object_array</code></em>;</p></td>
+<td class="union_member_description"><p>Array of objects (serializable).</p></td>
+<td class="union_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwySerializeItem"></a><h3>GwySerializeItem</h3>
+<pre class="programlisting">typedef struct {
+    guchar ctype;
+    const guchar *name;
+    GwySerializeValue value;
+    guint32 array_size;
+} GwySerializeItem;
+</pre>
+<p>A structure containing information for one object/struct component
+serialization or deserialization.</p>
+<p>This component information is used in <a class="link" href="GwySerializable.html#gwy-serialize-object-items" title="gwy_serialize_object_items ()"><code class="function">gwy_serialize_object_items()</code></a> and
+<a class="link" href="GwySerializable.html#gwy-deserialize-object-hash" title="gwy_deserialize_object_hash ()"><code class="function">gwy_deserialize_object_hash()</code></a> suitable for (de)serialization of hash-like
+objects.</p>
+<div class="refsect3">
+<a name="GwySerializeItem.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> <em class="structfield"><code><a name="GwySerializeItem.ctype"></a>ctype</code></em>;</p></td>
+<td class="struct_member_description"><p>Component type, see <a class="link" href="GwySerializable.html#GwySerializeSpec" title="GwySerializeSpec"><span class="type">GwySerializeSpec</span></a> for details.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *<em class="structfield"><code><a name="GwySerializeItem.name"></a>name</code></em>;</p></td>
+<td class="struct_member_description"><p>Component name as a NUL-terminated string.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="GwySerializable.html#GwySerializeValue" title="GwySerializeValue"><span class="type">GwySerializeValue</span></a> <em class="structfield"><code><a name="GwySerializeItem.value"></a>value</code></em>;</p></td>
+<td class="struct_member_description"><p>Component value.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> <em class="structfield"><code><a name="GwySerializeItem.array-size"></a>array_size</code></em>;</p></td>
+<td class="struct_member_description"><p>Array size if component is an array, unused otherwise.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwySerializable-struct"></a><h3>GwySerializable</h3>
+<pre class="programlisting">typedef struct _GwySerializable GwySerializable;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwySerializableIface"></a><h3>struct GwySerializableIface</h3>
+<pre class="programlisting">struct GwySerializableIface {
+    GwySerializeFunc serialize;
+    GwyDeserializeFunc deserialize;
+    void (*clone)(GObject *source, GObject *copy);
+    GObject* (*duplicate)(GObject *object);
+    gsize (*get_size)(GObject *object);
+};
+</pre>
+<p>The methods a serializable objects has to implement.</p>
+<div class="refsect3">
+<a name="GwySerializableIface.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="GwySerializable.html#GwySerializeFunc" title="GwySerializeFunc ()"><span class="type">GwySerializeFunc</span></a> <em class="structfield"><code><a name="GwySerializableIface.serialize"></a>serialize</code></em>;</p></td>
+<td class="struct_member_description"><p>Serialization method (obligatory), see <a class="link" href="GwySerializable.html#GwySerializeFunc" title="GwySerializeFunc ()"><span class="type">GwySerializeFunc</span></a> for
+description.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="GwySerializable.html#GwyDeserializeFunc" title="GwyDeserializeFunc ()"><span class="type">GwyDeserializeFunc</span></a> <em class="structfield"><code><a name="GwySerializableIface.deserialize"></a>deserialize</code></em>;</p></td>
+<td class="struct_member_description"><p>Restore method (obligatory), see <a class="link" href="GwySerializable.html#GwyDeserializeFunc" title="GwyDeserializeFunc ()"><span class="type">GwyDeserializeFunc</span></a> for
+description.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwySerializableIface.clone"></a>clone</code></em> ()</p></td>
+<td class="struct_member_description"><p>Clone method (obligatory).  Copies complete object `value' to an
+existing object of the same type.  This method is called from
+copy's class if source and copy classes differ.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwySerializableIface.duplicate"></a>duplicate</code></em> ()</p></td>
+<td class="struct_member_description"><p>Duplication method (optional).  Creates a duplicate of an
+object.  When it is absent, duplication is performed by
+a rather inefficient serialize-and-deserialize fallback.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwySerializableIface.get-size"></a>get_size</code></em> ()</p></td>
+<td class="struct_member_description"><p>Serialized size calculation method (optional).
+Calculates expected serialized object size (including object
+name and size header).
+Its purpose is to avoid frequent memory reallocations during
+serialization of large objects.
+The returned value may be inexact, a reasonable upper bound is
+sufficient.  When it is absent, serialization is less efficient.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

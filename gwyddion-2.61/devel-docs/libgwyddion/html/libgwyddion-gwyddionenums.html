@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gwyddionenums: Gwyddion Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="prev" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="next" href="GwySerializable.html" title="GwySerializable">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyddion-gwyddionenums.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="index.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwySerializable.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyddion-gwyddionenums"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyddion-gwyddionenums.top_of_page"></a>gwyddionenums</span></h2>
+<p>gwyddionenums — Common libgwyddion enumerations</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyddion-gwyddionenums.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgwyddion-gwyddionenums.html#GwySIUnitFormatStyle" title="enum GwySIUnitFormatStyle">GwySIUnitFormatStyle</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgwyddion-gwyddionenums.html#GwyNLFitParamFlags" title="enum GwyNLFitParamFlags">GwyNLFitParamFlags</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgwyddion-gwyddionenums.html#GwyPercentileInterpolationType" title="enum GwyPercentileInterpolationType">GwyPercentileInterpolationType</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-gwyddionenums.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwyddion/gwyddion.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-gwyddionenums.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-gwyddionenums.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="libgwyddion-gwyddionenums.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwySIUnitFormatStyle"></a><h3>enum GwySIUnitFormatStyle</h3>
+<p>Physical quantity formatting style.</p>
+<p>The VF-variants differ from tne non-VF ones by a multiplication sign at the start of units (where appropriate).</p>
+<div class="refsect3">
+<a name="GwySIUnitFormatStyle.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-SI-UNIT-FORMAT-NONE:CAPS"></a>GWY_SI_UNIT_FORMAT_NONE</p></td>
+<td class="enum_member_description">
+<p>No units.  This value is unused by <a class="link" href="GwySIUnit.html" title="GwySIUnit"><span class="type">GwySIUnit</span></a> itself and must not be requested as
+a format style.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-SI-UNIT-FORMAT-PLAIN:CAPS"></a>GWY_SI_UNIT_FORMAT_PLAIN</p></td>
+<td class="enum_member_description">
+<p>Plain style, as one would use on a text terminal.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-SI-UNIT-FORMAT-MARKUP:CAPS"></a>GWY_SI_UNIT_FORMAT_MARKUP</p></td>
+<td class="enum_member_description">
+<p>Pango markup, for units usable standalone.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-SI-UNIT-FORMAT-VFMARKUP:CAPS"></a>GWY_SI_UNIT_FORMAT_VFMARKUP</p></td>
+<td class="enum_member_description">
+<p>Pango markup, for units directly after value.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-SI-UNIT-FORMAT-TEX:CAPS"></a>GWY_SI_UNIT_FORMAT_TEX</p></td>
+<td class="enum_member_description">
+<p>Representation that can be typeset by TeX, for units usable standalone.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-SI-UNIT-FORMAT-VFTEX:CAPS"></a>GWY_SI_UNIT_FORMAT_VFTEX</p></td>
+<td class="enum_member_description">
+<p>Representation that can be typeset by TeX, for units directly after value.  (Since 2.50)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-SI-UNIT-FORMAT-UNICODE:CAPS"></a>GWY_SI_UNIT_FORMAT_UNICODE</p></td>
+<td class="enum_member_description">
+<p>Representation in which exponents are rendered as Unicode characters, for units usable
+standalone.  (Since 2.50)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-SI-UNIT-FORMAT-VFUNICODE:CAPS"></a>GWY_SI_UNIT_FORMAT_VFUNICODE</p></td>
+<td class="enum_member_description">
+<p>Representation in which exponents are rendered as Unicode characters, for units
+directly after value.  (Since 2.50)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyNLFitParamFlags"></a><h3>enum GwyNLFitParamFlags</h3>
+<p>Type of fitting parameter properties.</p>
+<div class="refsect3">
+<a name="GwyNLFitParamFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-NLFIT-PARAM-ANGLE:CAPS"></a>GWY_NLFIT_PARAM_ANGLE</p></td>
+<td class="enum_member_description">
+<p>Parameter is an angle.  It is defined in radians and
+unitless but you may wish to convert it from/to
+degrees in the user interface.  It is consdered
+periodic and always reduced to the range [0, 2π).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-NLFIT-PARAM-ABSVAL:CAPS"></a>GWY_NLFIT_PARAM_ABSVAL</p></td>
+<td class="enum_member_description">
+<p>Parameter is a width or distance that is by
+definition positive.  Only its absolute value
+matters and it is always made non-negative.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyPercentileInterpolationType"></a><h3>enum GwyPercentileInterpolationType</h3>
+<p>Type of interpolation for percentile calculation.</p>
+<p>The interpolations are used when the percentile does not correspond exactly to a rank.</p>
+<div class="refsect3">
+<a name="GwyPercentileInterpolationType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-PERCENTILE-INTERPOLATION-LINEAR:CAPS"></a>GWY_PERCENTILE_INTERPOLATION_LINEAR</p></td>
+<td class="enum_member_description">
+<p>Linear interpolation of the two nearest values.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-PERCENTILE-INTERPOLATION-LOWER:CAPS"></a>GWY_PERCENTILE_INTERPOLATION_LOWER</p></td>
+<td class="enum_member_description">
+<p>Round the rank down to an integer.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-PERCENTILE-INTERPOLATION-HIGHER:CAPS"></a>GWY_PERCENTILE_INTERPOLATION_HIGHER</p></td>
+<td class="enum_member_description">
+<p>Round the rank up to an integer.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-PERCENTILE-INTERPOLATION-NEAREST:CAPS"></a>GWY_PERCENTILE_INTERPOLATION_NEAREST</p></td>
+<td class="enum_member_description">
+<p>Round the rank to nearest integer.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-PERCENTILE-INTERPOLATION-MIDPOINT:CAPS"></a>GWY_PERCENTILE_INTERPOLATION_MIDPOINT</p></td>
+<td class="enum_member_description">
+<p>Average of the two nearest values.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-50.html#api-index-2.50">2.50</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

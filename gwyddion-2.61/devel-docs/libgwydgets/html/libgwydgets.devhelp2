@@ -1,0 +1,1149 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="Gwyddion Widgets Library Reference Manual" link="index.html" author="" name="libgwydgets" version="2" language="c" online="http://gwyddion.net/documentation/libgwydgets/index.php">
+  <chapters>
+    <sub name="Data Windows and Views" link="DataWindowWidgets.html">
+      <sub name="GwyDataWindow" link="GwyDataWindow.html"/>
+      <sub name="GwyDataView" link="GwyDataView.html"/>
+      <sub name="GwyDataViewLayer" link="GwyDataViewLayer.html"/>
+      <sub name="GwyPixmapLayer" link="GwyPixmapLayer.html"/>
+      <sub name="GwyVectorLayer" link="GwyVectorLayer.html"/>
+      <sub name="GwyLayerBasic" link="GwyLayerBasic.html"/>
+      <sub name="GwyLayerMask" link="GwyLayerMask.html"/>
+      <sub name="GwyColorAxis" link="GwyColorAxis.html"/>
+      <sub name="Standard Vector Layers" link="standard-vector-layers.html"/>
+    </sub>
+    <sub name="Graphs" link="GraphWidgets.html">
+      <sub name="GwyGraph" link="GwyGraph.html"/>
+      <sub name="GwyGraphWindow" link="GwyGraphWindow.html"/>
+      <sub name="GwyGraphModel" link="GwyGraphModel.html"/>
+      <sub name="GwyGraphCurveModel" link="GwyGraphCurveModel.html"/>
+      <sub name="GwyGraphArea" link="GwyGraphArea.html"/>
+      <sub name="GwyAxis" link="GwyAxis.html"/>
+      <sub name="GwyGraphBasics" link="libgwydgets-GwyGraphBasics.html"/>
+      <sub name="GwyGraphLabel" link="GwyGraphLabel.html"/>
+      <sub name="GwyGraphData" link="GwyGraphData.html"/>
+      <sub name="GwyGraphCurves" link="GwyGraphCurves.html"/>
+      <sub name="GwyGraphCorner" link="GwyGraphCorner.html"/>
+      <sub name="GwySelectionGraph1DArea" link="GwySelectionGraph1DArea.html"/>
+      <sub name="GwySelectionGraphArea" link="GwySelectionGraphArea.html"/>
+      <sub name="GwySelectionGraphLine" link="GwySelectionGraphLine.html"/>
+      <sub name="GwySelectionGraphPoint" link="GwySelectionGraphPoint.html"/>
+      <sub name="GwySelectionGraphZoom" link="GwySelectionGraphZoom.html"/>
+    </sub>
+    <sub name="3D Widgets" link="Widgets3D.html">
+      <sub name="Gwy3DView" link="Gwy3DView.html"/>
+      <sub name="Gwy3DWindow" link="Gwy3DWindow.html"/>
+      <sub name="Gwy3DSetup" link="Gwy3DSetup.html"/>
+      <sub name="Gwy3DLabel" link="Gwy3DLabel.html"/>
+    </sub>
+    <sub name="General Widgets" link="GeneralWidgets.html">
+      <sub name="GwyAdjustBar" link="GwyAdjustBar.html"/>
+      <sub name="GwyColorButton" link="GwyColorButton.html"/>
+      <sub name="GwyCurve" link="GwyCurve.html"/>
+      <sub name="GwyRuler" link="GwyRuler.html"/>
+      <sub name="GwyHRuler" link="GwyHRuler.html"/>
+      <sub name="GwyVRuler" link="GwyVRuler.html"/>
+      <sub name="GwyMarkerBox" link="GwyMarkerBox.html"/>
+      <sub name="GwyHMarkerBox" link="GwyHMarkerBox.html"/>
+      <sub name="GwySciText" link="GwySciText.html"/>
+      <sub name="GwyStatusbar" link="GwyStatusbar.html"/>
+      <sub name="GwyShader" link="GwyShader.html"/>
+      <sub name="GwyInventoryStore" link="GwyInventoryStore.html"/>
+      <sub name="GwyNullStore" link="GwyNullStore.html"/>
+    </sub>
+    <sub name="Widget Utilities" link="WidgetUtilities.html">
+      <sub name="gwydgets" link="libgwydgets-gwydgets.html"/>
+      <sub name="gwydgetenums" link="libgwydgets-gwydgetenums.html"/>
+      <sub name="gwydgetutils" link="libgwydgets-gwydgetutils.html"/>
+      <sub name="gwystock" link="libgwydgets-gwystock.html"/>
+      <sub name="gwyoptionmenus" link="libgwydgets-gwyoptionmenus.html"/>
+      <sub name="gwygrainvaluemenu" link="libgwydgets-gwygrainvaluemenu.html"/>
+      <sub name="gwycombobox" link="libgwydgets-gwycombobox.html"/>
+      <sub name="gwyradiobuttons" link="libgwydgets-gwyradiobuttons.html"/>
+      <sub name="gwycheckboxes" link="libgwydgets-gwycheckboxes.html"/>
+      <sub name="GwySensitivityGroup" link="GwySensitivityGroup.html"/>
+    </sub>
+    <sub name="Index of all symbols" link="api-index-all.html"/>
+    <sub name="Index of deprecated symbols" link="api-index-deprec.html"/>
+    <sub name="Index of new symbols in 2.1" link="api-index-2-1.html"/>
+    <sub name="Index of new symbols in 2.3" link="api-index-2-3.html"/>
+    <sub name="Index of new symbols in 2.5" link="api-index-2-5.html"/>
+    <sub name="Index of new symbols in 2.7" link="api-index-2-7.html"/>
+    <sub name="Index of new symbols in 2.8" link="api-index-2-8.html"/>
+    <sub name="Index of new symbols in 2.11" link="api-index-2-11.html"/>
+    <sub name="Index of new symbols in 2.14" link="api-index-2-14.html"/>
+    <sub name="Index of new symbols in 2.16" link="api-index-2-16.html"/>
+    <sub name="Index of new symbols in 2.22" link="api-index-2-22.html"/>
+    <sub name="Index of new symbols in 2.23" link="api-index-2-23.html"/>
+    <sub name="Index of new symbols in 2.26" link="api-index-2-26.html"/>
+    <sub name="Index of new symbols in 2.29" link="api-index-2-29.html"/>
+    <sub name="Index of new symbols in 2.34" link="api-index-2-34.html"/>
+    <sub name="Index of new symbols in 2.37" link="api-index-2-37.html"/>
+    <sub name="Index of new symbols in 2.38" link="api-index-2-38.html"/>
+    <sub name="Index of new symbols in 2.39" link="api-index-2-39.html"/>
+    <sub name="Index of new symbols in 2.41" link="api-index-2-41.html"/>
+    <sub name="Index of new symbols in 2.42" link="api-index-2-42.html"/>
+    <sub name="Index of new symbols in 2.43" link="api-index-2-43.html"/>
+    <sub name="Index of new symbols in 2.45" link="api-index-2-45.html"/>
+    <sub name="Index of new symbols in 2.46" link="api-index-2-46.html"/>
+    <sub name="Index of new symbols in 2.48" link="api-index-2-48.html"/>
+    <sub name="Index of new symbols in 2.49" link="api-index-2-49.html"/>
+    <sub name="Index of new symbols in 2.50" link="api-index-2-50.html"/>
+    <sub name="Index of new symbols in 2.51" link="api-index-2-51.html"/>
+    <sub name="Index of new symbols in 2.52" link="api-index-2-52.html"/>
+    <sub name="Index of new symbols in 2.53" link="api-index-2-53.html"/>
+    <sub name="Index of new symbols in 2.54" link="api-index-2-54.html"/>
+    <sub name="Index of new symbols in 2.56" link="api-index-2-56.html"/>
+    <sub name="Index of new symbols in 2.57" link="api-index-2-57.html"/>
+    <sub name="Index of new symbols in 2.59" link="api-index-2-59.html"/>
+    <sub name="Index of new symbols in 2.60" link="api-index-2-60.html"/>
+    <sub name="Index of new symbols in 2.61" link="api-index-2-61.html"/>
+  </chapters>
+  <functions>
+    <keyword type="function" name="gwy_data_window_new ()" link="GwyDataWindow.html#gwy-data-window-new"/>
+    <keyword type="function" name="gwy_data_window_get_data_view ()" link="GwyDataWindow.html#gwy-data-window-get-data-view"/>
+    <keyword type="function" name="gwy_data_window_get_color_axis ()" link="GwyDataWindow.html#gwy-data-window-get-color-axis"/>
+    <keyword type="function" name="gwy_data_window_get_data ()" link="GwyDataWindow.html#gwy-data-window-get-data"/>
+    <keyword type="function" name="gwy_data_window_set_zoom ()" link="GwyDataWindow.html#gwy-data-window-set-zoom"/>
+    <keyword type="function" name="gwy_data_window_fit_to_screen ()" link="GwyDataWindow.html#gwy-data-window-fit-to-screen" since="2.56"/>
+    <keyword type="function" name="gwy_data_window_get_data_name ()" link="GwyDataWindow.html#gwy-data-window-get-data-name"/>
+    <keyword type="function" name="gwy_data_window_set_data_name ()" link="GwyDataWindow.html#gwy-data-window-set-data-name"/>
+    <keyword type="function" name="gwy_data_window_get_ul_corner_widget ()" link="GwyDataWindow.html#gwy-data-window-get-ul-corner-widget"/>
+    <keyword type="function" name="gwy_data_window_set_ul_corner_widget ()" link="GwyDataWindow.html#gwy-data-window-set-ul-corner-widget"/>
+    <keyword type="function" name="gwy_data_window_class_set_tooltips ()" link="GwyDataWindow.html#gwy-data-window-class-set-tooltips" deprecated=""/>
+    <keyword type="function" name="gwy_data_window_class_get_tooltips ()" link="GwyDataWindow.html#gwy-data-window-class-get-tooltips" deprecated=""/>
+    <keyword type="struct" name="struct GwyDataWindow" link="GwyDataWindow.html#GwyDataWindow-struct"/>
+    <keyword type="struct" name="struct GwyDataWindowClass" link="GwyDataWindow.html#GwyDataWindowClass"/>
+    <keyword type="property" name="The “color-axis” property" link="GwyDataWindow.html#GwyDataWindow--color-axis"/>
+    <keyword type="property" name="The “data-name” property" link="GwyDataWindow.html#GwyDataWindow--data-name"/>
+    <keyword type="property" name="The “data-view” property" link="GwyDataWindow.html#GwyDataWindow--data-view"/>
+    <keyword type="property" name="The “ul-corner” property" link="GwyDataWindow.html#GwyDataWindow--ul-corner"/>
+    <keyword type="function" name="gwy_data_view_new ()" link="GwyDataView.html#gwy-data-view-new"/>
+    <keyword type="function" name="gwy_data_view_get_base_layer ()" link="GwyDataView.html#gwy-data-view-get-base-layer"/>
+    <keyword type="function" name="gwy_data_view_set_base_layer ()" link="GwyDataView.html#gwy-data-view-set-base-layer"/>
+    <keyword type="function" name="gwy_data_view_get_alpha_layer ()" link="GwyDataView.html#gwy-data-view-get-alpha-layer"/>
+    <keyword type="function" name="gwy_data_view_set_alpha_layer ()" link="GwyDataView.html#gwy-data-view-set-alpha-layer"/>
+    <keyword type="function" name="gwy_data_view_get_top_layer ()" link="GwyDataView.html#gwy-data-view-get-top-layer"/>
+    <keyword type="function" name="gwy_data_view_set_top_layer ()" link="GwyDataView.html#gwy-data-view-set-top-layer"/>
+    <keyword type="function" name="gwy_data_view_get_data_prefix ()" link="GwyDataView.html#gwy-data-view-get-data-prefix"/>
+    <keyword type="function" name="gwy_data_view_set_data_prefix ()" link="GwyDataView.html#gwy-data-view-set-data-prefix"/>
+    <keyword type="function" name="gwy_data_view_get_hexcess ()" link="GwyDataView.html#gwy-data-view-get-hexcess"/>
+    <keyword type="function" name="gwy_data_view_get_vexcess ()" link="GwyDataView.html#gwy-data-view-get-vexcess"/>
+    <keyword type="function" name="gwy_data_view_set_zoom ()" link="GwyDataView.html#gwy-data-view-set-zoom"/>
+    <keyword type="function" name="gwy_data_view_get_zoom ()" link="GwyDataView.html#gwy-data-view-get-zoom"/>
+    <keyword type="function" name="gwy_data_view_get_real_zoom ()" link="GwyDataView.html#gwy-data-view-get-real-zoom"/>
+    <keyword type="function" name="gwy_data_view_get_data ()" link="GwyDataView.html#gwy-data-view-get-data"/>
+    <keyword type="function" name="gwy_data_view_coords_xy_clamp ()" link="GwyDataView.html#gwy-data-view-coords-xy-clamp"/>
+    <keyword type="function" name="gwy_data_view_coords_xy_cut_line ()" link="GwyDataView.html#gwy-data-view-coords-xy-cut-line" since="2.11"/>
+    <keyword type="function" name="gwy_data_view_coords_xy_to_real ()" link="GwyDataView.html#gwy-data-view-coords-xy-to-real"/>
+    <keyword type="function" name="gwy_data_view_coords_real_to_xy ()" link="GwyDataView.html#gwy-data-view-coords-real-to-xy"/>
+    <keyword type="function" name="gwy_data_view_coords_real_to_xy_float ()" link="GwyDataView.html#gwy-data-view-coords-real-to-xy-float" since="2.45"/>
+    <keyword type="function" name="gwy_data_view_get_xmeasure ()" link="GwyDataView.html#gwy-data-view-get-xmeasure"/>
+    <keyword type="function" name="gwy_data_view_get_ymeasure ()" link="GwyDataView.html#gwy-data-view-get-ymeasure"/>
+    <keyword type="function" name="gwy_data_view_get_pixel_data_sizes ()" link="GwyDataView.html#gwy-data-view-get-pixel-data-sizes"/>
+    <keyword type="function" name="gwy_data_view_get_real_data_sizes ()" link="GwyDataView.html#gwy-data-view-get-real-data-sizes"/>
+    <keyword type="function" name="gwy_data_view_get_real_data_offsets ()" link="GwyDataView.html#gwy-data-view-get-real-data-offsets" since="2.16"/>
+    <keyword type="function" name="gwy_data_view_get_metric ()" link="GwyDataView.html#gwy-data-view-get-metric"/>
+    <keyword type="function" name="gwy_data_view_get_pixbuf ()" link="GwyDataView.html#gwy-data-view-get-pixbuf"/>
+    <keyword type="function" name="gwy_data_view_export_pixbuf ()" link="GwyDataView.html#gwy-data-view-export-pixbuf"/>
+    <keyword type="struct" name="struct GwyDataView" link="GwyDataView.html#GwyDataView-struct"/>
+    <keyword type="struct" name="struct GwyDataViewClass" link="GwyDataView.html#GwyDataViewClass"/>
+    <keyword type="property" name="The “data-prefix” property" link="GwyDataView.html#GwyDataView--data-prefix"/>
+    <keyword type="property" name="The “zoom” property" link="GwyDataView.html#GwyDataView--zoom"/>
+    <keyword type="signal" name="The “layer-plugged” signal" link="GwyDataView.html#GwyDataView-layer-plugged"/>
+    <keyword type="signal" name="The “layer-unplugged” signal" link="GwyDataView.html#GwyDataView-layer-unplugged"/>
+    <keyword type="signal" name="The “redrawn” signal" link="GwyDataView.html#GwyDataView-redrawn"/>
+    <keyword type="signal" name="The “resized” signal" link="GwyDataView.html#GwyDataView-resized"/>
+    <keyword type="function" name="gwy_data_view_layer_plugged ()" link="GwyDataViewLayer.html#gwy-data-view-layer-plugged"/>
+    <keyword type="function" name="gwy_data_view_layer_unplugged ()" link="GwyDataViewLayer.html#gwy-data-view-layer-unplugged"/>
+    <keyword type="function" name="gwy_data_view_layer_updated ()" link="GwyDataViewLayer.html#gwy-data-view-layer-updated"/>
+    <keyword type="function" name="gwy_data_view_layer_realize ()" link="GwyDataViewLayer.html#gwy-data-view-layer-realize"/>
+    <keyword type="function" name="gwy_data_view_layer_unrealize ()" link="GwyDataViewLayer.html#gwy-data-view-layer-unrealize"/>
+    <keyword type="struct" name="struct GwyDataViewLayer" link="GwyDataViewLayer.html#GwyDataViewLayer-struct"/>
+    <keyword type="struct" name="struct GwyDataViewLayerClass" link="GwyDataViewLayer.html#GwyDataViewLayerClass"/>
+    <keyword type="signal" name="The “plugged” signal" link="GwyDataViewLayer.html#GwyDataViewLayer-plugged"/>
+    <keyword type="signal" name="The “unplugged” signal" link="GwyDataViewLayer.html#GwyDataViewLayer-unplugged"/>
+    <keyword type="signal" name="The “updated” signal" link="GwyDataViewLayer.html#GwyDataViewLayer-updated"/>
+    <keyword type="function" name="gwy_pixmap_layer_wants_repaint ()" link="GwyPixmapLayer.html#gwy-pixmap-layer-wants-repaint"/>
+    <keyword type="function" name="gwy_pixmap_layer_paint ()" link="GwyPixmapLayer.html#gwy-pixmap-layer-paint"/>
+    <keyword type="function" name="gwy_pixmap_layer_set_data_key ()" link="GwyPixmapLayer.html#gwy-pixmap-layer-set-data-key"/>
+    <keyword type="function" name="gwy_pixmap_layer_get_data_key ()" link="GwyPixmapLayer.html#gwy-pixmap-layer-get-data-key"/>
+    <keyword type="function" name="gwy_pixmap_layer_make_pixbuf ()" link="GwyPixmapLayer.html#gwy-pixmap-layer-make-pixbuf"/>
+    <keyword type="struct" name="struct GwyPixmapLayer" link="GwyPixmapLayer.html#GwyPixmapLayer-struct"/>
+    <keyword type="struct" name="struct GwyPixmapLayerClass" link="GwyPixmapLayer.html#GwyPixmapLayerClass"/>
+    <keyword type="property" name="The “data-key” property" link="GwyPixmapLayer.html#GwyPixmapLayer--data-key"/>
+    <keyword type="function" name="gwy_vector_layer_class_get_selection_type ()" link="GwyVectorLayer.html#gwy-vector-layer-class-get-selection-type"/>
+    <keyword type="macro" name="gwy_vector_layer_get_selection_type()" link="GwyVectorLayer.html#gwy-vector-layer-get-selection-type"/>
+    <keyword type="function" name="gwy_vector_layer_set_selection_key ()" link="GwyVectorLayer.html#gwy-vector-layer-set-selection-key"/>
+    <keyword type="function" name="gwy_vector_layer_get_selection_key ()" link="GwyVectorLayer.html#gwy-vector-layer-get-selection-key"/>
+    <keyword type="function" name="gwy_vector_layer_ensure_selection ()" link="GwyVectorLayer.html#gwy-vector-layer-ensure-selection"/>
+    <keyword type="function" name="gwy_vector_layer_get_focus ()" link="GwyVectorLayer.html#gwy-vector-layer-get-focus"/>
+    <keyword type="function" name="gwy_vector_layer_set_focus ()" link="GwyVectorLayer.html#gwy-vector-layer-set-focus"/>
+    <keyword type="function" name="gwy_vector_layer_get_editable ()" link="GwyVectorLayer.html#gwy-vector-layer-get-editable"/>
+    <keyword type="function" name="gwy_vector_layer_set_editable ()" link="GwyVectorLayer.html#gwy-vector-layer-set-editable"/>
+    <keyword type="function" name="gwy_vector_layer_draw ()" link="GwyVectorLayer.html#gwy-vector-layer-draw"/>
+    <keyword type="function" name="gwy_vector_layer_button_press ()" link="GwyVectorLayer.html#gwy-vector-layer-button-press"/>
+    <keyword type="function" name="gwy_vector_layer_button_release ()" link="GwyVectorLayer.html#gwy-vector-layer-button-release"/>
+    <keyword type="function" name="gwy_vector_layer_motion_notify ()" link="GwyVectorLayer.html#gwy-vector-layer-motion-notify"/>
+    <keyword type="function" name="gwy_vector_layer_key_press ()" link="GwyVectorLayer.html#gwy-vector-layer-key-press"/>
+    <keyword type="function" name="gwy_vector_layer_key_release ()" link="GwyVectorLayer.html#gwy-vector-layer-key-release"/>
+    <keyword type="function" name="gwy_vector_layer_object_chosen ()" link="GwyVectorLayer.html#gwy-vector-layer-object-chosen"/>
+    <keyword type="struct" name="struct GwyVectorLayer" link="GwyVectorLayer.html#GwyVectorLayer-struct"/>
+    <keyword type="struct" name="struct GwyVectorLayerClass" link="GwyVectorLayer.html#GwyVectorLayerClass"/>
+    <keyword type="property" name="The “editable” property" link="GwyVectorLayer.html#GwyVectorLayer--editable"/>
+    <keyword type="property" name="The “focus” property" link="GwyVectorLayer.html#GwyVectorLayer--focus"/>
+    <keyword type="property" name="The “selection-key” property" link="GwyVectorLayer.html#GwyVectorLayer--selection-key"/>
+    <keyword type="signal" name="The “object-chosen” signal" link="GwyVectorLayer.html#GwyVectorLayer-object-chosen"/>
+    <keyword type="function" name="gwy_layer_basic_new ()" link="GwyLayerBasic.html#gwy-layer-basic-new"/>
+    <keyword type="function" name="gwy_layer_basic_get_range ()" link="GwyLayerBasic.html#gwy-layer-basic-get-range"/>
+    <keyword type="function" name="gwy_layer_basic_get_range_type ()" link="GwyLayerBasic.html#gwy-layer-basic-get-range-type" since="2.7"/>
+    <keyword type="function" name="gwy_layer_basic_set_gradient_key ()" link="GwyLayerBasic.html#gwy-layer-basic-set-gradient-key"/>
+    <keyword type="function" name="gwy_layer_basic_get_gradient_key ()" link="GwyLayerBasic.html#gwy-layer-basic-get-gradient-key"/>
+    <keyword type="function" name="gwy_layer_basic_set_presentation_key ()" link="GwyLayerBasic.html#gwy-layer-basic-set-presentation-key"/>
+    <keyword type="function" name="gwy_layer_basic_get_presentation_key ()" link="GwyLayerBasic.html#gwy-layer-basic-get-presentation-key"/>
+    <keyword type="function" name="gwy_layer_basic_get_has_presentation ()" link="GwyLayerBasic.html#gwy-layer-basic-get-has-presentation"/>
+    <keyword type="function" name="gwy_layer_basic_set_min_max_key ()" link="GwyLayerBasic.html#gwy-layer-basic-set-min-max-key"/>
+    <keyword type="function" name="gwy_layer_basic_get_min_max_key ()" link="GwyLayerBasic.html#gwy-layer-basic-get-min-max-key"/>
+    <keyword type="function" name="gwy_layer_basic_set_range_type_key ()" link="GwyLayerBasic.html#gwy-layer-basic-set-range-type-key"/>
+    <keyword type="function" name="gwy_layer_basic_get_range_type_key ()" link="GwyLayerBasic.html#gwy-layer-basic-get-range-type-key"/>
+    <keyword type="struct" name="struct GwyLayerBasic" link="GwyLayerBasic.html#GwyLayerBasic-struct"/>
+    <keyword type="struct" name="struct GwyLayerBasicClass" link="GwyLayerBasic.html#GwyLayerBasicClass"/>
+    <keyword type="property" name="The “default-range-type” property" link="GwyLayerBasic.html#GwyLayerBasic--default-range-type"/>
+    <keyword type="property" name="The “gradient-key” property" link="GwyLayerBasic.html#GwyLayerBasic--gradient-key"/>
+    <keyword type="property" name="The “min-max-key” property" link="GwyLayerBasic.html#GwyLayerBasic--min-max-key"/>
+    <keyword type="property" name="The “presentation-key” property" link="GwyLayerBasic.html#GwyLayerBasic--presentation-key"/>
+    <keyword type="property" name="The “range-type-key” property" link="GwyLayerBasic.html#GwyLayerBasic--range-type-key"/>
+    <keyword type="signal" name="The “presentation-switched” signal" link="GwyLayerBasic.html#GwyLayerBasic-presentation-switched"/>
+    <keyword type="function" name="gwy_layer_mask_new ()" link="GwyLayerMask.html#gwy-layer-mask-new"/>
+    <keyword type="function" name="gwy_layer_mask_set_color_key ()" link="GwyLayerMask.html#gwy-layer-mask-set-color-key"/>
+    <keyword type="function" name="gwy_layer_mask_get_color_key ()" link="GwyLayerMask.html#gwy-layer-mask-get-color-key"/>
+    <keyword type="function" name="gwy_layer_mask_get_color ()" link="GwyLayerMask.html#gwy-layer-mask-get-color"/>
+    <keyword type="struct" name="struct GwyLayerMask" link="GwyLayerMask.html#GwyLayerMask-struct"/>
+    <keyword type="struct" name="struct GwyLayerMaskClass" link="GwyLayerMask.html#GwyLayerMaskClass"/>
+    <keyword type="property" name="The “color-key” property" link="GwyLayerMask.html#GwyLayerMask--color-key"/>
+    <keyword type="function" name="GwyColorAxisMapFunc ()" link="GwyColorAxis.html#GwyColorAxisMapFunc" since="2.39"/>
+    <keyword type="function" name="gwy_color_axis_new ()" link="GwyColorAxis.html#gwy-color-axis-new"/>
+    <keyword type="function" name="gwy_color_axis_new_with_range ()" link="GwyColorAxis.html#gwy-color-axis-new-with-range"/>
+    <keyword type="function" name="gwy_color_axis_get_range ()" link="GwyColorAxis.html#gwy-color-axis-get-range"/>
+    <keyword type="function" name="gwy_color_axis_set_range ()" link="GwyColorAxis.html#gwy-color-axis-set-range"/>
+    <keyword type="function" name="gwy_color_axis_get_si_unit ()" link="GwyColorAxis.html#gwy-color-axis-get-si-unit"/>
+    <keyword type="function" name="gwy_color_axis_set_si_unit ()" link="GwyColorAxis.html#gwy-color-axis-set-si-unit"/>
+    <keyword type="function" name="gwy_color_axis_set_gradient ()" link="GwyColorAxis.html#gwy-color-axis-set-gradient"/>
+    <keyword type="function" name="gwy_color_axis_get_gradient ()" link="GwyColorAxis.html#gwy-color-axis-get-gradient"/>
+    <keyword type="function" name="gwy_color_axis_get_ticks_style ()" link="GwyColorAxis.html#gwy-color-axis-get-ticks-style"/>
+    <keyword type="function" name="gwy_color_axis_set_ticks_style ()" link="GwyColorAxis.html#gwy-color-axis-set-ticks-style"/>
+    <keyword type="function" name="gwy_color_axis_get_labels_visible ()" link="GwyColorAxis.html#gwy-color-axis-get-labels-visible"/>
+    <keyword type="function" name="gwy_color_axis_set_labels_visible ()" link="GwyColorAxis.html#gwy-color-axis-set-labels-visible"/>
+    <keyword type="function" name="gwy_color_axis_set_tick_map_func ()" link="GwyColorAxis.html#gwy-color-axis-set-tick-map-func" since="2.39"/>
+    <keyword type="struct" name="struct GwyColorAxis" link="GwyColorAxis.html#GwyColorAxis-struct"/>
+    <keyword type="struct" name="struct GwyColorAxisClass" link="GwyColorAxis.html#GwyColorAxisClass"/>
+    <keyword type="property" name="The “gradient” property" link="GwyColorAxis.html#GwyColorAxis--gradient"/>
+    <keyword type="property" name="The “labels-visible” property" link="GwyColorAxis.html#GwyColorAxis--labels-visible"/>
+    <keyword type="property" name="The “orientation” property" link="GwyColorAxis.html#GwyColorAxis--orientation"/>
+    <keyword type="property" name="The “si-unit” property" link="GwyColorAxis.html#GwyColorAxis--si-unit"/>
+    <keyword type="property" name="The “ticks-style” property" link="GwyColorAxis.html#GwyColorAxis--ticks-style"/>
+    <keyword type="function" name="gwy_graph_new ()" link="GwyGraph.html#gwy-graph-new"/>
+    <keyword type="function" name="gwy_graph_get_axis ()" link="GwyGraph.html#gwy-graph-get-axis"/>
+    <keyword type="function" name="gwy_graph_set_axis_visible ()" link="GwyGraph.html#gwy-graph-set-axis-visible"/>
+    <keyword type="function" name="gwy_graph_get_area ()" link="GwyGraph.html#gwy-graph-get-area"/>
+    <keyword type="function" name="gwy_graph_set_model ()" link="GwyGraph.html#gwy-graph-set-model"/>
+    <keyword type="function" name="gwy_graph_get_model ()" link="GwyGraph.html#gwy-graph-get-model"/>
+    <keyword type="function" name="gwy_graph_set_status ()" link="GwyGraph.html#gwy-graph-set-status"/>
+    <keyword type="function" name="gwy_graph_get_status ()" link="GwyGraph.html#gwy-graph-get-status"/>
+    <keyword type="function" name="gwy_graph_enable_user_input ()" link="GwyGraph.html#gwy-graph-enable-user-input"/>
+    <keyword type="function" name="gwy_graph_export_pixmap ()" link="GwyGraph.html#gwy-graph-export-pixmap"/>
+    <keyword type="function" name="gwy_graph_export_postscript ()" link="GwyGraph.html#gwy-graph-export-postscript"/>
+    <keyword type="struct" name="struct GwyGraph" link="GwyGraph.html#GwyGraph-struct"/>
+    <keyword type="struct" name="struct GwyGraphClass" link="GwyGraph.html#GwyGraphClass"/>
+    <keyword type="property" name="The “model” property" link="GwyGraph.html#GwyGraph--model"/>
+    <keyword type="function" name="gwy_graph_window_new ()" link="GwyGraphWindow.html#gwy-graph-window-new"/>
+    <keyword type="function" name="gwy_graph_window_get_graph ()" link="GwyGraphWindow.html#gwy-graph-window-get-graph"/>
+    <keyword type="function" name="gwy_graph_window_get_graph_data ()" link="GwyGraphWindow.html#gwy-graph-window-get-graph-data" since="2.5"/>
+    <keyword type="function" name="gwy_graph_window_get_graph_curves ()" link="GwyGraphWindow.html#gwy-graph-window-get-graph-curves" since="2.5"/>
+    <keyword type="function" name="gwy_graph_window_class_set_tooltips ()" link="GwyGraphWindow.html#gwy-graph-window-class-set-tooltips" deprecated=""/>
+    <keyword type="function" name="gwy_graph_window_class_get_tooltips ()" link="GwyGraphWindow.html#gwy-graph-window-class-get-tooltips" deprecated=""/>
+    <keyword type="struct" name="struct GwyGraphWindow" link="GwyGraphWindow.html#GwyGraphWindow-struct"/>
+    <keyword type="struct" name="struct GwyGraphWindowClass" link="GwyGraphWindow.html#GwyGraphWindowClass"/>
+    <keyword type="macro" name="gwy_graph_model_duplicate()" link="GwyGraphModel.html#gwy-graph-model-duplicate"/>
+    <keyword type="function" name="gwy_graph_model_new ()" link="GwyGraphModel.html#gwy-graph-model-new"/>
+    <keyword type="function" name="gwy_graph_model_new_alike ()" link="GwyGraphModel.html#gwy-graph-model-new-alike"/>
+    <keyword type="function" name="gwy_graph_model_get_n_curves ()" link="GwyGraphModel.html#gwy-graph-model-get-n-curves"/>
+    <keyword type="function" name="gwy_graph_model_add_curve ()" link="GwyGraphModel.html#gwy-graph-model-add-curve"/>
+    <keyword type="function" name="gwy_graph_model_remove_curve_by_description ()" link="GwyGraphModel.html#gwy-graph-model-remove-curve-by-description"/>
+    <keyword type="function" name="gwy_graph_model_remove_curve ()" link="GwyGraphModel.html#gwy-graph-model-remove-curve"/>
+    <keyword type="function" name="gwy_graph_model_get_curve_by_description ()" link="GwyGraphModel.html#gwy-graph-model-get-curve-by-description"/>
+    <keyword type="function" name="gwy_graph_model_get_curve ()" link="GwyGraphModel.html#gwy-graph-model-get-curve"/>
+    <keyword type="function" name="gwy_graph_model_get_curve_index ()" link="GwyGraphModel.html#gwy-graph-model-get-curve-index"/>
+    <keyword type="function" name="gwy_graph_model_replace_curve ()" link="GwyGraphModel.html#gwy-graph-model-replace-curve" since="2.51"/>
+    <keyword type="function" name="gwy_graph_model_remove_all_curves ()" link="GwyGraphModel.html#gwy-graph-model-remove-all-curves"/>
+    <keyword type="function" name="gwy_graph_model_append_curves ()" link="GwyGraphModel.html#gwy-graph-model-append-curves" since="2.41"/>
+    <keyword type="function" name="gwy_graph_model_set_units_from_data_line ()" link="GwyGraphModel.html#gwy-graph-model-set-units-from-data-line"/>
+    <keyword type="function" name="gwy_graph_model_set_units_from_data_field ()" link="GwyGraphModel.html#gwy-graph-model-set-units-from-data-field" since="2.51"/>
+    <keyword type="function" name="gwy_graph_model_units_are_compatible ()" link="GwyGraphModel.html#gwy-graph-model-units-are-compatible" since="2.41"/>
+    <keyword type="function" name="gwy_graph_model_x_data_can_be_logarithmed ()" link="GwyGraphModel.html#gwy-graph-model-x-data-can-be-logarithmed"/>
+    <keyword type="function" name="gwy_graph_model_y_data_can_be_logarithmed ()" link="GwyGraphModel.html#gwy-graph-model-y-data-can-be-logarithmed"/>
+    <keyword type="function" name="gwy_graph_model_set_axis_label ()" link="GwyGraphModel.html#gwy-graph-model-set-axis-label"/>
+    <keyword type="function" name="gwy_graph_model_get_axis_label ()" link="GwyGraphModel.html#gwy-graph-model-get-axis-label"/>
+    <keyword type="function" name="gwy_graph_model_get_x_range ()" link="GwyGraphModel.html#gwy-graph-model-get-x-range"/>
+    <keyword type="function" name="gwy_graph_model_get_y_range ()" link="GwyGraphModel.html#gwy-graph-model-get-y-range"/>
+    <keyword type="function" name="gwy_graph_model_get_ranges ()" link="GwyGraphModel.html#gwy-graph-model-get-ranges" since="2.8"/>
+    <keyword type="function" name="gwy_graph_model_export_ascii ()" link="GwyGraphModel.html#gwy-graph-model-export-ascii"/>
+    <keyword type="struct" name="struct GwyGraphModel" link="GwyGraphModel.html#GwyGraphModel-struct"/>
+    <keyword type="struct" name="struct GwyGraphModelClass" link="GwyGraphModel.html#GwyGraphModelClass"/>
+    <keyword type="property" name="The “axis-label-bottom” property" link="GwyGraphModel.html#GwyGraphModel--axis-label-bottom"/>
+    <keyword type="property" name="The “axis-label-left” property" link="GwyGraphModel.html#GwyGraphModel--axis-label-left"/>
+    <keyword type="property" name="The “axis-label-right” property" link="GwyGraphModel.html#GwyGraphModel--axis-label-right"/>
+    <keyword type="property" name="The “axis-label-top” property" link="GwyGraphModel.html#GwyGraphModel--axis-label-top"/>
+    <keyword type="property" name="The “grid-type” property" link="GwyGraphModel.html#GwyGraphModel--grid-type"/>
+    <keyword type="property" name="The “label-frame-thickness” property" link="GwyGraphModel.html#GwyGraphModel--label-frame-thickness"/>
+    <keyword type="property" name="The “label-has-frame” property" link="GwyGraphModel.html#GwyGraphModel--label-has-frame"/>
+    <keyword type="property" name="The “label-position” property" link="GwyGraphModel.html#GwyGraphModel--label-position"/>
+    <keyword type="property" name="The “label-relative-x” property" link="GwyGraphModel.html#GwyGraphModel--label-relative-x"/>
+    <keyword type="property" name="The “label-relative-y” property" link="GwyGraphModel.html#GwyGraphModel--label-relative-y"/>
+    <keyword type="property" name="The “label-reverse” property" link="GwyGraphModel.html#GwyGraphModel--label-reverse"/>
+    <keyword type="property" name="The “label-visible” property" link="GwyGraphModel.html#GwyGraphModel--label-visible"/>
+    <keyword type="property" name="The “n-curves” property" link="GwyGraphModel.html#GwyGraphModel--n-curves"/>
+    <keyword type="property" name="The “si-unit-x” property" link="GwyGraphModel.html#GwyGraphModel--si-unit-x"/>
+    <keyword type="property" name="The “si-unit-y” property" link="GwyGraphModel.html#GwyGraphModel--si-unit-y"/>
+    <keyword type="property" name="The “title” property" link="GwyGraphModel.html#GwyGraphModel--title"/>
+    <keyword type="property" name="The “x-logarithmic” property" link="GwyGraphModel.html#GwyGraphModel--x-logarithmic"/>
+    <keyword type="property" name="The “x-max” property" link="GwyGraphModel.html#GwyGraphModel--x-max"/>
+    <keyword type="property" name="The “x-max-set” property" link="GwyGraphModel.html#GwyGraphModel--x-max-set"/>
+    <keyword type="property" name="The “x-min” property" link="GwyGraphModel.html#GwyGraphModel--x-min"/>
+    <keyword type="property" name="The “x-min-set” property" link="GwyGraphModel.html#GwyGraphModel--x-min-set"/>
+    <keyword type="property" name="The “y-logarithmic” property" link="GwyGraphModel.html#GwyGraphModel--y-logarithmic"/>
+    <keyword type="property" name="The “y-max” property" link="GwyGraphModel.html#GwyGraphModel--y-max"/>
+    <keyword type="property" name="The “y-max-set” property" link="GwyGraphModel.html#GwyGraphModel--y-max-set"/>
+    <keyword type="property" name="The “y-min” property" link="GwyGraphModel.html#GwyGraphModel--y-min"/>
+    <keyword type="property" name="The “y-min-set” property" link="GwyGraphModel.html#GwyGraphModel--y-min-set"/>
+    <keyword type="signal" name="The “curve-data-changed” signal" link="GwyGraphModel.html#GwyGraphModel-curve-data-changed"/>
+    <keyword type="signal" name="The “curve-notify” signal" link="GwyGraphModel.html#GwyGraphModel-curve-notify"/>
+    <keyword type="macro" name="gwy_graph_curve_model_duplicate()" link="GwyGraphCurveModel.html#gwy-graph-curve-model-duplicate"/>
+    <keyword type="function" name="gwy_graph_curve_model_new ()" link="GwyGraphCurveModel.html#gwy-graph-curve-model-new"/>
+    <keyword type="function" name="gwy_graph_curve_model_new_alike ()" link="GwyGraphCurveModel.html#gwy-graph-curve-model-new-alike"/>
+    <keyword type="function" name="gwy_graph_curve_model_set_data ()" link="GwyGraphCurveModel.html#gwy-graph-curve-model-set-data"/>
+    <keyword type="function" name="gwy_graph_curve_model_set_data_interleaved ()" link="GwyGraphCurveModel.html#gwy-graph-curve-model-set-data-interleaved" since="2.45"/>
+    <keyword type="function" name="gwy_graph_curve_model_set_data_from_dataline ()" link="GwyGraphCurveModel.html#gwy-graph-curve-model-set-data-from-dataline"/>
+    <keyword type="function" name="gwy_graph_curve_model_enforce_order ()" link="GwyGraphCurveModel.html#gwy-graph-curve-model-enforce-order" since="2.45"/>
+    <keyword type="function" name="gwy_graph_curve_model_is_ordered ()" link="GwyGraphCurveModel.html#gwy-graph-curve-model-is-ordered" since="2.46"/>
+    <keyword type="function" name="gwy_graph_curve_model_get_xdata ()" link="GwyGraphCurveModel.html#gwy-graph-curve-model-get-xdata"/>
+    <keyword type="function" name="gwy_graph_curve_model_get_ydata ()" link="GwyGraphCurveModel.html#gwy-graph-curve-model-get-ydata"/>
+    <keyword type="function" name="gwy_graph_curve_model_get_ndata ()" link="GwyGraphCurveModel.html#gwy-graph-curve-model-get-ndata"/>
+    <keyword type="function" name="gwy_graph_curve_model_get_x_range ()" link="GwyGraphCurveModel.html#gwy-graph-curve-model-get-x-range"/>
+    <keyword type="function" name="gwy_graph_curve_model_get_y_range ()" link="GwyGraphCurveModel.html#gwy-graph-curve-model-get-y-range"/>
+    <keyword type="function" name="gwy_graph_curve_model_get_ranges ()" link="GwyGraphCurveModel.html#gwy-graph-curve-model-get-ranges" since="2.8"/>
+    <keyword type="function" name="gwy_graph_curve_model_get_calibration_data ()" link="GwyGraphCurveModel.html#gwy-graph-curve-model-get-calibration-data" since="2.23"/>
+    <keyword type="function" name="gwy_graph_curve_model_set_calibration_data ()" link="GwyGraphCurveModel.html#gwy-graph-curve-model-set-calibration-data" since="2.23"/>
+    <keyword type="struct" name="struct GwyGraphCurveModel" link="GwyGraphCurveModel.html#GwyGraphCurveModel-struct"/>
+    <keyword type="struct" name="struct GwyGraphCurveModelClass" link="GwyGraphCurveModel.html#GwyGraphCurveModelClass"/>
+    <keyword type="property" name="The “color” property" link="GwyGraphCurveModel.html#GwyGraphCurveModel--color"/>
+    <keyword type="property" name="The “description” property" link="GwyGraphCurveModel.html#GwyGraphCurveModel--description"/>
+    <keyword type="property" name="The “line-style” property" link="GwyGraphCurveModel.html#GwyGraphCurveModel--line-style"/>
+    <keyword type="property" name="The “line-width” property" link="GwyGraphCurveModel.html#GwyGraphCurveModel--line-width"/>
+    <keyword type="property" name="The “mode” property" link="GwyGraphCurveModel.html#GwyGraphCurveModel--mode"/>
+    <keyword type="property" name="The “point-size” property" link="GwyGraphCurveModel.html#GwyGraphCurveModel--point-size"/>
+    <keyword type="property" name="The “point-type” property" link="GwyGraphCurveModel.html#GwyGraphCurveModel--point-type"/>
+    <keyword type="signal" name="The “data-changed” signal" link="GwyGraphCurveModel.html#GwyGraphCurveModel-data-changed"/>
+    <keyword type="function" name="gwy_graph_area_new ()" link="GwyGraphArea.html#gwy-graph-area-new"/>
+    <keyword type="function" name="gwy_graph_area_get_label ()" link="GwyGraphArea.html#gwy-graph-area-get-label"/>
+    <keyword type="function" name="gwy_graph_area_set_model ()" link="GwyGraphArea.html#gwy-graph-area-set-model"/>
+    <keyword type="function" name="gwy_graph_area_get_model ()" link="GwyGraphArea.html#gwy-graph-area-get-model"/>
+    <keyword type="function" name="gwy_graph_area_get_cursor ()" link="GwyGraphArea.html#gwy-graph-area-get-cursor"/>
+    <keyword type="function" name="gwy_graph_area_set_x_range ()" link="GwyGraphArea.html#gwy-graph-area-set-x-range"/>
+    <keyword type="function" name="gwy_graph_area_set_y_range ()" link="GwyGraphArea.html#gwy-graph-area-set-y-range"/>
+    <keyword type="function" name="gwy_graph_area_set_x_grid_data ()" link="GwyGraphArea.html#gwy-graph-area-set-x-grid-data"/>
+    <keyword type="function" name="gwy_graph_area_set_y_grid_data ()" link="GwyGraphArea.html#gwy-graph-area-set-y-grid-data"/>
+    <keyword type="function" name="gwy_graph_area_get_x_grid_data ()" link="GwyGraphArea.html#gwy-graph-area-get-x-grid-data"/>
+    <keyword type="function" name="gwy_graph_area_get_y_grid_data ()" link="GwyGraphArea.html#gwy-graph-area-get-y-grid-data"/>
+    <keyword type="function" name="gwy_graph_area_get_selection ()" link="GwyGraphArea.html#gwy-graph-area-get-selection"/>
+    <keyword type="function" name="gwy_graph_area_set_status ()" link="GwyGraphArea.html#gwy-graph-area-set-status"/>
+    <keyword type="function" name="gwy_graph_area_get_status ()" link="GwyGraphArea.html#gwy-graph-area-get-status"/>
+    <keyword type="function" name="gwy_graph_area_draw_on_drawable ()" link="GwyGraphArea.html#gwy-graph-area-draw-on-drawable"/>
+    <keyword type="function" name="gwy_graph_area_export_vector ()" link="GwyGraphArea.html#gwy-graph-area-export-vector"/>
+    <keyword type="function" name="gwy_graph_area_enable_user_input ()" link="GwyGraphArea.html#gwy-graph-area-enable-user-input"/>
+    <keyword type="function" name="gwy_graph_area_set_selection_editable ()" link="GwyGraphArea.html#gwy-graph-area-set-selection-editable" since="2.45"/>
+    <keyword type="function" name="gwy_graph_area_edit_curve ()" link="GwyGraphArea.html#gwy-graph-area-edit-curve" since="2.5"/>
+    <keyword type="struct" name="struct GwyGraphArea" link="GwyGraphArea.html#GwyGraphArea-struct"/>
+    <keyword type="struct" name="struct GwyGraphAreaClass" link="GwyGraphArea.html#GwyGraphAreaClass"/>
+    <keyword type="property" name="The “status” property" link="GwyGraphArea.html#GwyGraphArea--status"/>
+    <keyword type="signal" name="The “edit-curve” signal" link="GwyGraphArea.html#GwyGraphArea-edit-curve"/>
+    <keyword type="function" name="gwy_axis_new ()" link="GwyAxis.html#gwy-axis-new"/>
+    <keyword type="function" name="gwy_axis_set_logarithmic ()" link="GwyAxis.html#gwy-axis-set-logarithmic"/>
+    <keyword type="function" name="gwy_axis_set_visible ()" link="GwyAxis.html#gwy-axis-set-visible"/>
+    <keyword type="function" name="gwy_axis_is_visible ()" link="GwyAxis.html#gwy-axis-is-visible"/>
+    <keyword type="function" name="gwy_axis_is_logarithmic ()" link="GwyAxis.html#gwy-axis-is-logarithmic"/>
+    <keyword type="function" name="gwy_axis_get_orientation ()" link="GwyAxis.html#gwy-axis-get-orientation"/>
+    <keyword type="function" name="gwy_axis_set_auto ()" link="GwyAxis.html#gwy-axis-set-auto"/>
+    <keyword type="function" name="gwy_axis_request_range ()" link="GwyAxis.html#gwy-axis-request-range"/>
+    <keyword type="function" name="gwy_axis_get_range ()" link="GwyAxis.html#gwy-axis-get-range"/>
+    <keyword type="function" name="gwy_axis_get_requested_range ()" link="GwyAxis.html#gwy-axis-get-requested-range"/>
+    <keyword type="function" name="gwy_axis_get_magnification ()" link="GwyAxis.html#gwy-axis-get-magnification"/>
+    <keyword type="function" name="gwy_axis_get_magnification_string ()" link="GwyAxis.html#gwy-axis-get-magnification-string"/>
+    <keyword type="function" name="gwy_axis_set_label ()" link="GwyAxis.html#gwy-axis-set-label"/>
+    <keyword type="function" name="gwy_axis_get_label ()" link="GwyAxis.html#gwy-axis-get-label"/>
+    <keyword type="function" name="gwy_axis_set_si_unit ()" link="GwyAxis.html#gwy-axis-set-si-unit"/>
+    <keyword type="function" name="gwy_axis_enable_label_edit ()" link="GwyAxis.html#gwy-axis-enable-label-edit"/>
+    <keyword type="function" name="gwy_axis_draw_on_drawable ()" link="GwyAxis.html#gwy-axis-draw-on-drawable"/>
+    <keyword type="function" name="gwy_axis_export_vector ()" link="GwyAxis.html#gwy-axis-export-vector"/>
+    <keyword type="function" name="gwy_axis_get_major_ticks ()" link="GwyAxis.html#gwy-axis-get-major-ticks"/>
+    <keyword type="struct" name="GwyAxisParams" link="GwyAxis.html#GwyAxisParams"/>
+    <keyword type="struct" name="struct GwyAxis" link="GwyAxis.html#GwyAxis-struct"/>
+    <keyword type="struct" name="struct GwyAxisClass" link="GwyAxis.html#GwyAxisClass"/>
+    <keyword type="property" name="The “auto” property" link="GwyAxis.html#GwyAxis--auto"/>
+    <keyword type="property" name="The “label” property" link="GwyAxis.html#GwyAxis--label"/>
+    <keyword type="property" name="The “line-thickness” property" link="GwyAxis.html#GwyAxis--line-thickness"/>
+    <keyword type="property" name="The “major-length” property" link="GwyAxis.html#GwyAxis--major-length"/>
+    <keyword type="property" name="The “major-maxticks” property" link="GwyAxis.html#GwyAxis--major-maxticks"/>
+    <keyword type="property" name="The “major-thickness” property" link="GwyAxis.html#GwyAxis--major-thickness"/>
+    <keyword type="property" name="The “minor-division” property" link="GwyAxis.html#GwyAxis--minor-division"/>
+    <keyword type="property" name="The “minor-length” property" link="GwyAxis.html#GwyAxis--minor-length"/>
+    <keyword type="property" name="The “minor-thickness” property" link="GwyAxis.html#GwyAxis--minor-thickness"/>
+    <keyword type="property" name="The “outer-border-width” property" link="GwyAxis.html#GwyAxis--outer-border-width"/>
+    <keyword type="signal" name="The “rescaled” signal" link="GwyAxis.html#GwyAxis-rescaled"/>
+    <keyword type="function" name="gwy_graph_draw_point ()" link="libgwydgets-GwyGraphBasics.html#gwy-graph-draw-point"/>
+    <keyword type="function" name="gwy_graph_draw_line ()" link="libgwydgets-GwyGraphBasics.html#gwy-graph-draw-line"/>
+    <keyword type="function" name="gwy_graph_draw_curve ()" link="libgwydgets-GwyGraphBasics.html#gwy-graph-draw-curve"/>
+    <keyword type="function" name="gwy_graph_draw_selection_points ()" link="libgwydgets-GwyGraphBasics.html#gwy-graph-draw-selection-points"/>
+    <keyword type="function" name="gwy_graph_draw_selection_areas ()" link="libgwydgets-GwyGraphBasics.html#gwy-graph-draw-selection-areas"/>
+    <keyword type="function" name="gwy_graph_draw_selection_lines ()" link="libgwydgets-GwyGraphBasics.html#gwy-graph-draw-selection-lines"/>
+    <keyword type="function" name="gwy_graph_draw_selection_xareas ()" link="libgwydgets-GwyGraphBasics.html#gwy-graph-draw-selection-xareas"/>
+    <keyword type="function" name="gwy_graph_draw_selection_yareas ()" link="libgwydgets-GwyGraphBasics.html#gwy-graph-draw-selection-yareas"/>
+    <keyword type="function" name="gwy_graph_draw_grid ()" link="libgwydgets-GwyGraphBasics.html#gwy-graph-draw-grid"/>
+    <keyword type="function" name="gwy_graph_get_preset_color ()" link="libgwydgets-GwyGraphBasics.html#gwy-graph-get-preset-color"/>
+    <keyword type="function" name="gwy_graph_get_n_preset_colors ()" link="libgwydgets-GwyGraphBasics.html#gwy-graph-get-n-preset-colors"/>
+    <keyword type="struct" name="GwyGraphActiveAreaSpecs" link="libgwydgets-GwyGraphBasics.html#GwyGraphActiveAreaSpecs"/>
+    <keyword type="function" name="gwy_graph_label_new ()" link="GwyGraphLabel.html#gwy-graph-label-new"/>
+    <keyword type="function" name="gwy_graph_label_set_model ()" link="GwyGraphLabel.html#gwy-graph-label-set-model"/>
+    <keyword type="function" name="gwy_graph_label_get_model ()" link="GwyGraphLabel.html#gwy-graph-label-get-model"/>
+    <keyword type="function" name="gwy_graph_label_enable_user_input ()" link="GwyGraphLabel.html#gwy-graph-label-enable-user-input"/>
+    <keyword type="function" name="gwy_graph_label_draw_on_drawable ()" link="GwyGraphLabel.html#gwy-graph-label-draw-on-drawable"/>
+    <keyword type="function" name="gwy_graph_label_export_vector ()" link="GwyGraphLabel.html#gwy-graph-label-export-vector"/>
+    <keyword type="struct" name="struct GwyGraphLabel" link="GwyGraphLabel.html#GwyGraphLabel-struct"/>
+    <keyword type="struct" name="struct GwyGraphLabelClass" link="GwyGraphLabel.html#GwyGraphLabelClass"/>
+    <keyword type="function" name="gwy_graph_data_new ()" link="GwyGraphData.html#gwy-graph-data-new"/>
+    <keyword type="function" name="gwy_graph_data_set_model ()" link="GwyGraphData.html#gwy-graph-data-set-model"/>
+    <keyword type="function" name="gwy_graph_data_get_model ()" link="GwyGraphData.html#gwy-graph-data-get-model"/>
+    <keyword type="struct" name="struct GwyGraphData" link="GwyGraphData.html#GwyGraphData-struct"/>
+    <keyword type="struct" name="struct GwyGraphDataClass" link="GwyGraphData.html#GwyGraphDataClass"/>
+    <keyword type="function" name="gwy_graph_curves_new ()" link="GwyGraphCurves.html#gwy-graph-curves-new" since="2.5"/>
+    <keyword type="function" name="gwy_graph_curves_set_model ()" link="GwyGraphCurves.html#gwy-graph-curves-set-model" since="2.5"/>
+    <keyword type="function" name="gwy_graph_curves_get_model ()" link="GwyGraphCurves.html#gwy-graph-curves-get-model" since="2.5"/>
+    <keyword type="struct" name="struct GwyGraphCurves" link="GwyGraphCurves.html#GwyGraphCurves-struct"/>
+    <keyword type="struct" name="struct GwyGraphCurvesClass" link="GwyGraphCurves.html#GwyGraphCurvesClass"/>
+    <keyword type="function" name="gwy_graph_corner_new ()" link="GwyGraphCorner.html#gwy-graph-corner-new"/>
+    <keyword type="struct" name="struct GwyGraphCorner" link="GwyGraphCorner.html#GwyGraphCorner-struct"/>
+    <keyword type="struct" name="struct GwyGraphCornerClass" link="GwyGraphCorner.html#GwyGraphCornerClass"/>
+    <keyword type="function" name="gwy_selection_graph_1darea_new ()" link="GwySelectionGraph1DArea.html#gwy-selection-graph-1darea-new" since="2.1"/>
+    <keyword type="struct" name="struct GwySelectionGraph1DArea" link="GwySelectionGraph1DArea.html#GwySelectionGraph1DArea-struct"/>
+    <keyword type="struct" name="struct GwySelectionGraph1DAreaClass" link="GwySelectionGraph1DArea.html#GwySelectionGraph1DAreaClass"/>
+    <keyword type="property" name="The “orientation” property" link="GwySelectionGraph1DArea.html#GwySelectionGraph1DArea--orientation"/>
+    <keyword type="function" name="gwy_selection_graph_area_new ()" link="GwySelectionGraphArea.html#gwy-selection-graph-area-new" since="2.1"/>
+    <keyword type="struct" name="struct GwySelectionGraphArea" link="GwySelectionGraphArea.html#GwySelectionGraphArea-struct"/>
+    <keyword type="struct" name="struct GwySelectionGraphAreaClass" link="GwySelectionGraphArea.html#GwySelectionGraphAreaClass"/>
+    <keyword type="function" name="gwy_selection_graph_line_new ()" link="GwySelectionGraphLine.html#gwy-selection-graph-line-new" since="2.1"/>
+    <keyword type="struct" name="struct GwySelectionGraphLine" link="GwySelectionGraphLine.html#GwySelectionGraphLine-struct"/>
+    <keyword type="struct" name="struct GwySelectionGraphLineClass" link="GwySelectionGraphLine.html#GwySelectionGraphLineClass"/>
+    <keyword type="property" name="The “orientation” property" link="GwySelectionGraphLine.html#GwySelectionGraphLine--orientation"/>
+    <keyword type="function" name="gwy_selection_graph_point_new ()" link="GwySelectionGraphPoint.html#gwy-selection-graph-point-new" since="2.1"/>
+    <keyword type="struct" name="struct GwySelectionGraphPoint" link="GwySelectionGraphPoint.html#GwySelectionGraphPoint-struct"/>
+    <keyword type="struct" name="struct GwySelectionGraphPointClass" link="GwySelectionGraphPoint.html#GwySelectionGraphPointClass"/>
+    <keyword type="function" name="gwy_selection_graph_zoom_new ()" link="GwySelectionGraphZoom.html#gwy-selection-graph-zoom-new" since="2.1"/>
+    <keyword type="struct" name="struct GwySelectionGraphZoom" link="GwySelectionGraphZoom.html#GwySelectionGraphZoom-struct"/>
+    <keyword type="struct" name="struct GwySelectionGraphZoomClass" link="GwySelectionGraphZoom.html#GwySelectionGraphZoomClass"/>
+    <keyword type="function" name="gwy_3d_view_new ()" link="Gwy3DView.html#gwy-3d-view-new"/>
+    <keyword type="function" name="gwy_3d_view_get_setup_prefix ()" link="Gwy3DView.html#gwy-3d-view-get-setup-prefix"/>
+    <keyword type="function" name="gwy_3d_view_set_setup_prefix ()" link="Gwy3DView.html#gwy-3d-view-set-setup-prefix"/>
+    <keyword type="function" name="gwy_3d_view_get_data_key ()" link="Gwy3DView.html#gwy-3d-view-get-data-key"/>
+    <keyword type="function" name="gwy_3d_view_set_data_key ()" link="Gwy3DView.html#gwy-3d-view-set-data-key"/>
+    <keyword type="function" name="gwy_3d_view_set_ovlay ()" link="Gwy3DView.html#gwy-3d-view-set-ovlay" since="2.26"/>
+    <keyword type="function" name="gwy_3d_view_get_gradient_key ()" link="Gwy3DView.html#gwy-3d-view-get-gradient-key"/>
+    <keyword type="function" name="gwy_3d_view_set_gradient_key ()" link="Gwy3DView.html#gwy-3d-view-set-gradient-key"/>
+    <keyword type="function" name="gwy_3d_view_get_material_key ()" link="Gwy3DView.html#gwy-3d-view-get-material-key"/>
+    <keyword type="function" name="gwy_3d_view_set_material_key ()" link="Gwy3DView.html#gwy-3d-view-set-material-key"/>
+    <keyword type="function" name="gwy_3d_view_get_reduced_size ()" link="Gwy3DView.html#gwy-3d-view-get-reduced-size"/>
+    <keyword type="function" name="gwy_3d_view_set_reduced_size ()" link="Gwy3DView.html#gwy-3d-view-set-reduced-size"/>
+    <keyword type="function" name="gwy_3d_view_get_movement_type ()" link="Gwy3DView.html#gwy-3d-view-get-movement-type"/>
+    <keyword type="function" name="gwy_3d_view_set_movement_type ()" link="Gwy3DView.html#gwy-3d-view-set-movement-type"/>
+    <keyword type="function" name="gwy_3d_view_get_pixbuf ()" link="Gwy3DView.html#gwy-3d-view-get-pixbuf"/>
+    <keyword type="function" name="gwy_3d_view_get_pixbuf_with_alpha ()" link="Gwy3DView.html#gwy-3d-view-get-pixbuf-with-alpha" since="2.54"/>
+    <keyword type="function" name="gwy_3d_view_get_label ()" link="Gwy3DView.html#gwy-3d-view-get-label"/>
+    <keyword type="function" name="gwy_3d_view_get_setup ()" link="Gwy3DView.html#gwy-3d-view-get-setup"/>
+    <keyword type="function" name="gwy_3d_view_get_data ()" link="Gwy3DView.html#gwy-3d-view-get-data"/>
+    <keyword type="function" name="gwy_3d_view_get_scale_range ()" link="Gwy3DView.html#gwy-3d-view-get-scale-range"/>
+    <keyword type="function" name="gwy_3d_view_set_scale_range ()" link="Gwy3DView.html#gwy-3d-view-set-scale-range"/>
+    <keyword type="function" name="gwy_3d_view_class_disable_axis_drawing ()" link="Gwy3DView.html#gwy-3d-view-class-disable-axis-drawing" since="2.14"/>
+    <keyword type="function" name="gwy_3d_view_get_mask_key ()" link="Gwy3DView.html#gwy-3d-view-get-mask-key"/>
+    <keyword type="function" name="gwy_3d_view_set_mask_key ()" link="Gwy3DView.html#gwy-3d-view-set-mask-key"/>
+    <keyword type="struct" name="struct Gwy3DView" link="Gwy3DView.html#Gwy3DView-struct"/>
+    <keyword type="struct" name="struct Gwy3DViewClass" link="Gwy3DView.html#Gwy3DViewClass"/>
+    <keyword type="property" name="The “data-key” property" link="Gwy3DView.html#Gwy3DView--data-key"/>
+    <keyword type="property" name="The “gradient-key” property" link="Gwy3DView.html#Gwy3DView--gradient-key"/>
+    <keyword type="property" name="The “mask-key” property" link="Gwy3DView.html#Gwy3DView--mask-key"/>
+    <keyword type="property" name="The “material-key” property" link="Gwy3DView.html#Gwy3DView--material-key"/>
+    <keyword type="property" name="The “movement-type” property" link="Gwy3DView.html#Gwy3DView--movement-type"/>
+    <keyword type="property" name="The “reduced-size” property" link="Gwy3DView.html#Gwy3DView--reduced-size"/>
+    <keyword type="property" name="The “setup-prefix” property" link="Gwy3DView.html#Gwy3DView--setup-prefix"/>
+    <keyword type="function" name="gwy_3d_window_new ()" link="Gwy3DWindow.html#gwy-3d-window-new"/>
+    <keyword type="function" name="gwy_3d_window_get_3d_view ()" link="Gwy3DWindow.html#gwy-3d-window-get-3d-view"/>
+    <keyword type="function" name="gwy_3d_window_add_action_widget ()" link="Gwy3DWindow.html#gwy-3d-window-add-action-widget"/>
+    <keyword type="function" name="gwy_3d_window_add_small_toolbar_button ()" link="Gwy3DWindow.html#gwy-3d-window-add-small-toolbar-button"/>
+    <keyword type="function" name="gwy_3d_window_set_overlay_chooser ()" link="Gwy3DWindow.html#gwy-3d-window-set-overlay-chooser" since="2.26"/>
+    <keyword type="function" name="gwy_3d_window_class_set_tooltips ()" link="Gwy3DWindow.html#gwy-3d-window-class-set-tooltips" deprecated=""/>
+    <keyword type="function" name="gwy_3d_window_class_get_tooltips ()" link="Gwy3DWindow.html#gwy-3d-window-class-get-tooltips" deprecated=""/>
+    <keyword type="struct" name="struct Gwy3DWindow" link="Gwy3DWindow.html#Gwy3DWindow-struct"/>
+    <keyword type="struct" name="struct Gwy3DWindowClass" link="Gwy3DWindow.html#Gwy3DWindowClass"/>
+    <keyword type="function" name="gwy_3d_setup_new ()" link="Gwy3DSetup.html#gwy-3d-setup-new"/>
+    <keyword type="struct" name="struct Gwy3DSetup" link="Gwy3DSetup.html#Gwy3DSetup-struct"/>
+    <keyword type="struct" name="struct Gwy3DSetupClass" link="Gwy3DSetup.html#Gwy3DSetupClass"/>
+    <keyword type="property" name="The “axes-visible” property" link="Gwy3DSetup.html#Gwy3DSetup--axes-visible"/>
+    <keyword type="property" name="The “fmscale-reserve-space” property" link="Gwy3DSetup.html#Gwy3DSetup--fmscale-reserve-space"/>
+    <keyword type="property" name="The “fmscale-size” property" link="Gwy3DSetup.html#Gwy3DSetup--fmscale-size"/>
+    <keyword type="property" name="The “fmscale-visible” property" link="Gwy3DSetup.html#Gwy3DSetup--fmscale-visible"/>
+    <keyword type="property" name="The “fmscale-y-align” property" link="Gwy3DSetup.html#Gwy3DSetup--fmscale-y-align"/>
+    <keyword type="property" name="The “hide-masked” property" link="Gwy3DSetup.html#Gwy3DSetup--hide-masked"/>
+    <keyword type="property" name="The “labels-visible” property" link="Gwy3DSetup.html#Gwy3DSetup--labels-visible"/>
+    <keyword type="property" name="The “light-phi” property" link="Gwy3DSetup.html#Gwy3DSetup--light-phi"/>
+    <keyword type="property" name="The “light-theta” property" link="Gwy3DSetup.html#Gwy3DSetup--light-theta"/>
+    <keyword type="property" name="The “line-width” property" link="Gwy3DSetup.html#Gwy3DSetup--line-width"/>
+    <keyword type="property" name="The “projection” property" link="Gwy3DSetup.html#Gwy3DSetup--projection"/>
+    <keyword type="property" name="The “rotation-x” property" link="Gwy3DSetup.html#Gwy3DSetup--rotation-x"/>
+    <keyword type="property" name="The “rotation-y” property" link="Gwy3DSetup.html#Gwy3DSetup--rotation-y"/>
+    <keyword type="property" name="The “scale” property" link="Gwy3DSetup.html#Gwy3DSetup--scale"/>
+    <keyword type="property" name="The “visualization” property" link="Gwy3DSetup.html#Gwy3DSetup--visualization"/>
+    <keyword type="property" name="The “z-scale” property" link="Gwy3DSetup.html#Gwy3DSetup--z-scale"/>
+    <keyword type="function" name="gwy_3d_label_new ()" link="Gwy3DLabel.html#gwy-3d-label-new"/>
+    <keyword type="function" name="gwy_3d_label_set_text ()" link="Gwy3DLabel.html#gwy-3d-label-set-text"/>
+    <keyword type="function" name="gwy_3d_label_get_text ()" link="Gwy3DLabel.html#gwy-3d-label-get-text"/>
+    <keyword type="function" name="gwy_3d_label_expand_text ()" link="Gwy3DLabel.html#gwy-3d-label-expand-text"/>
+    <keyword type="function" name="gwy_3d_label_reset ()" link="Gwy3DLabel.html#gwy-3d-label-reset"/>
+    <keyword type="function" name="gwy_3d_label_reset_text ()" link="Gwy3DLabel.html#gwy-3d-label-reset-text"/>
+    <keyword type="function" name="gwy_3d_label_user_size ()" link="Gwy3DLabel.html#gwy-3d-label-user-size"/>
+    <keyword type="struct" name="struct Gwy3DLabel" link="Gwy3DLabel.html#Gwy3DLabel-struct"/>
+    <keyword type="struct" name="struct Gwy3DLabelClass" link="Gwy3DLabel.html#Gwy3DLabelClass"/>
+    <keyword type="property" name="The “default-text” property" link="Gwy3DLabel.html#Gwy3DLabel--default-text"/>
+    <keyword type="property" name="The “delta-x” property" link="Gwy3DLabel.html#Gwy3DLabel--delta-x"/>
+    <keyword type="property" name="The “delta-y” property" link="Gwy3DLabel.html#Gwy3DLabel--delta-y"/>
+    <keyword type="property" name="The “fixed-size” property" link="Gwy3DLabel.html#Gwy3DLabel--fixed-size"/>
+    <keyword type="property" name="The “rotation” property" link="Gwy3DLabel.html#Gwy3DLabel--rotation"/>
+    <keyword type="property" name="The “size” property" link="Gwy3DLabel.html#Gwy3DLabel--size"/>
+    <keyword type="property" name="The “text” property" link="Gwy3DLabel.html#Gwy3DLabel--text"/>
+    <keyword type="function" name="gwy_adjust_bar_new ()" link="GwyAdjustBar.html#gwy-adjust-bar-new" since="2.49"/>
+    <keyword type="function" name="gwy_adjust_bar_set_adjustment ()" link="GwyAdjustBar.html#gwy-adjust-bar-set-adjustment" since="2.49"/>
+    <keyword type="function" name="gwy_adjust_bar_get_adjustment ()" link="GwyAdjustBar.html#gwy-adjust-bar-get-adjustment" since="2.49"/>
+    <keyword type="function" name="gwy_adjust_bar_set_snap_to_ticks ()" link="GwyAdjustBar.html#gwy-adjust-bar-set-snap-to-ticks" since="2.49"/>
+    <keyword type="function" name="gwy_adjust_bar_get_snap_to_ticks ()" link="GwyAdjustBar.html#gwy-adjust-bar-get-snap-to-ticks" since="2.49"/>
+    <keyword type="function" name="gwy_adjust_bar_set_mapping ()" link="GwyAdjustBar.html#gwy-adjust-bar-set-mapping" since="2.49"/>
+    <keyword type="function" name="gwy_adjust_bar_get_mapping ()" link="GwyAdjustBar.html#gwy-adjust-bar-get-mapping" since="2.49"/>
+    <keyword type="function" name="gwy_adjust_bar_set_has_check_button ()" link="GwyAdjustBar.html#gwy-adjust-bar-set-has-check-button" since="2.49"/>
+    <keyword type="function" name="gwy_adjust_bar_get_has_check_button ()" link="GwyAdjustBar.html#gwy-adjust-bar-get-has-check-button" since="2.49"/>
+    <keyword type="function" name="gwy_adjust_bar_set_bar_sensitive ()" link="GwyAdjustBar.html#gwy-adjust-bar-set-bar-sensitive" since="2.49"/>
+    <keyword type="function" name="gwy_adjust_bar_get_bar_sensitive ()" link="GwyAdjustBar.html#gwy-adjust-bar-get-bar-sensitive" since="2.49"/>
+    <keyword type="function" name="gwy_adjust_bar_get_label ()" link="GwyAdjustBar.html#gwy-adjust-bar-get-label" since="2.49"/>
+    <keyword type="function" name="gwy_adjust_bar_get_check_button ()" link="GwyAdjustBar.html#gwy-adjust-bar-get-check-button" since="2.49"/>
+    <keyword type="enum" name="enum GwyScaleMappingType" link="GwyAdjustBar.html#GwyScaleMappingType" since="2.49"/>
+    <keyword type="struct" name="struct GwyAdjustBar" link="GwyAdjustBar.html#GwyAdjustBar-struct"/>
+    <keyword type="struct" name="struct GwyAdjustBarClass" link="GwyAdjustBar.html#GwyAdjustBarClass" since="2.49"/>
+    <keyword type="property" name="The “adjustment” property" link="GwyAdjustBar.html#GwyAdjustBar--adjustment"/>
+    <keyword type="property" name="The “has-check-button” property" link="GwyAdjustBar.html#GwyAdjustBar--has-check-button"/>
+    <keyword type="property" name="The “mapping” property" link="GwyAdjustBar.html#GwyAdjustBar--mapping"/>
+    <keyword type="property" name="The “snap-to-ticks” property" link="GwyAdjustBar.html#GwyAdjustBar--snap-to-ticks"/>
+    <keyword type="signal" name="The “change-value” signal" link="GwyAdjustBar.html#GwyAdjustBar-change-value"/>
+    <keyword type="function" name="gwy_color_button_new ()" link="GwyColorButton.html#gwy-color-button-new"/>
+    <keyword type="function" name="gwy_color_button_new_with_color ()" link="GwyColorButton.html#gwy-color-button-new-with-color"/>
+    <keyword type="function" name="gwy_color_button_set_color ()" link="GwyColorButton.html#gwy-color-button-set-color"/>
+    <keyword type="function" name="gwy_color_button_get_color ()" link="GwyColorButton.html#gwy-color-button-get-color"/>
+    <keyword type="function" name="gwy_color_button_set_use_alpha ()" link="GwyColorButton.html#gwy-color-button-set-use-alpha"/>
+    <keyword type="function" name="gwy_color_button_get_use_alpha ()" link="GwyColorButton.html#gwy-color-button-get-use-alpha"/>
+    <keyword type="struct" name="struct GwyColorButton" link="GwyColorButton.html#GwyColorButton-struct"/>
+    <keyword type="struct" name="struct GwyColorButtonClass" link="GwyColorButton.html#GwyColorButtonClass"/>
+    <keyword type="property" name="The “color” property" link="GwyColorButton.html#GwyColorButton--color"/>
+    <keyword type="property" name="The “use-alpha” property" link="GwyColorButton.html#GwyColorButton--use-alpha"/>
+    <keyword type="function" name="gwy_curve_new ()" link="GwyCurve.html#gwy-curve-new"/>
+    <keyword type="function" name="gwy_curve_reset ()" link="GwyCurve.html#gwy-curve-reset"/>
+    <keyword type="function" name="gwy_curve_set_range ()" link="GwyCurve.html#gwy-curve-set-range"/>
+    <keyword type="function" name="gwy_curve_set_curve_type ()" link="GwyCurve.html#gwy-curve-set-curve-type"/>
+    <keyword type="function" name="gwy_curve_set_channels ()" link="GwyCurve.html#gwy-curve-set-channels"/>
+    <keyword type="function" name="gwy_curve_set_control_points ()" link="GwyCurve.html#gwy-curve-set-control-points"/>
+    <keyword type="function" name="gwy_curve_get_control_points ()" link="GwyCurve.html#gwy-curve-get-control-points"/>
+    <keyword type="typedef" name="GwyPoint" link="GwyCurve.html#GwyPoint"/>
+    <keyword type="struct" name="GwyChannelData" link="GwyCurve.html#GwyChannelData"/>
+    <keyword type="struct" name="struct GwyCurve" link="GwyCurve.html#GwyCurve-struct"/>
+    <keyword type="struct" name="struct GwyCurveClass" link="GwyCurve.html#GwyCurveClass"/>
+    <keyword type="property" name="The “curve-type” property" link="GwyCurve.html#GwyCurve--curve-type"/>
+    <keyword type="property" name="The “max-x” property" link="GwyCurve.html#GwyCurve--max-x"/>
+    <keyword type="property" name="The “max-y” property" link="GwyCurve.html#GwyCurve--max-y"/>
+    <keyword type="property" name="The “min-x” property" link="GwyCurve.html#GwyCurve--min-x"/>
+    <keyword type="property" name="The “min-y” property" link="GwyCurve.html#GwyCurve--min-y"/>
+    <keyword type="property" name="The “snap” property" link="GwyCurve.html#GwyCurve--snap"/>
+    <keyword type="signal" name="The “curve-edited” signal" link="GwyCurve.html#GwyCurve-curve-edited"/>
+    <keyword type="signal" name="The “curve-type-changed” signal" link="GwyCurve.html#GwyCurve-curve-type-changed"/>
+    <keyword type="function" name="gwy_ruler_set_range ()" link="GwyRuler.html#gwy-ruler-set-range"/>
+    <keyword type="function" name="gwy_ruler_draw_pos ()" link="GwyRuler.html#gwy-ruler-draw-pos"/>
+    <keyword type="function" name="gwy_ruler_get_range ()" link="GwyRuler.html#gwy-ruler-get-range"/>
+    <keyword type="function" name="gwy_ruler_set_si_unit ()" link="GwyRuler.html#gwy-ruler-set-si-unit"/>
+    <keyword type="function" name="gwy_ruler_get_si_unit ()" link="GwyRuler.html#gwy-ruler-get-si-unit"/>
+    <keyword type="function" name="gwy_ruler_get_units_placement ()" link="GwyRuler.html#gwy-ruler-get-units-placement"/>
+    <keyword type="function" name="gwy_ruler_set_units_placement ()" link="GwyRuler.html#gwy-ruler-set-units-placement"/>
+    <keyword type="struct" name="struct GwyRuler" link="GwyRuler.html#GwyRuler-struct"/>
+    <keyword type="struct" name="struct GwyRulerClass" link="GwyRuler.html#GwyRulerClass"/>
+    <keyword type="property" name="The “lower” property" link="GwyRuler.html#GwyRuler--lower"/>
+    <keyword type="property" name="The “max-size” property" link="GwyRuler.html#GwyRuler--max-size"/>
+    <keyword type="property" name="The “position” property" link="GwyRuler.html#GwyRuler--position"/>
+    <keyword type="property" name="The “units-placement” property" link="GwyRuler.html#GwyRuler--units-placement"/>
+    <keyword type="property" name="The “upper” property" link="GwyRuler.html#GwyRuler--upper"/>
+    <keyword type="function" name="gwy_hruler_new ()" link="GwyHRuler.html#gwy-hruler-new"/>
+    <keyword type="struct" name="struct GwyHRuler" link="GwyHRuler.html#GwyHRuler-struct"/>
+    <keyword type="struct" name="struct GwyHRulerClass" link="GwyHRuler.html#GwyHRulerClass"/>
+    <keyword type="function" name="gwy_vruler_new ()" link="GwyVRuler.html#gwy-vruler-new"/>
+    <keyword type="struct" name="struct GwyVRuler" link="GwyVRuler.html#GwyVRuler-struct"/>
+    <keyword type="struct" name="struct GwyVRulerClass" link="GwyVRuler.html#GwyVRulerClass"/>
+    <keyword type="function" name="GwyMarkerValidateFunc ()" link="GwyMarkerBox.html#GwyMarkerValidateFunc"/>
+    <keyword type="function" name="gwy_marker_box_get_selected_marker ()" link="GwyMarkerBox.html#gwy-marker-box-get-selected-marker"/>
+    <keyword type="function" name="gwy_marker_box_set_selected_marker ()" link="GwyMarkerBox.html#gwy-marker-box-set-selected-marker"/>
+    <keyword type="function" name="gwy_marker_box_get_marker_position ()" link="GwyMarkerBox.html#gwy-marker-box-get-marker-position"/>
+    <keyword type="function" name="gwy_marker_box_set_marker_position ()" link="GwyMarkerBox.html#gwy-marker-box-set-marker-position"/>
+    <keyword type="function" name="gwy_marker_box_add_marker ()" link="GwyMarkerBox.html#gwy-marker-box-add-marker"/>
+    <keyword type="function" name="gwy_marker_box_remove_marker ()" link="GwyMarkerBox.html#gwy-marker-box-remove-marker"/>
+    <keyword type="function" name="gwy_marker_box_get_nmarkers ()" link="GwyMarkerBox.html#gwy-marker-box-get-nmarkers"/>
+    <keyword type="function" name="gwy_marker_box_get_markers ()" link="GwyMarkerBox.html#gwy-marker-box-get-markers"/>
+    <keyword type="function" name="gwy_marker_box_set_markers ()" link="GwyMarkerBox.html#gwy-marker-box-set-markers"/>
+    <keyword type="function" name="gwy_marker_box_set_flipped ()" link="GwyMarkerBox.html#gwy-marker-box-set-flipped"/>
+    <keyword type="function" name="gwy_marker_box_get_flipped ()" link="GwyMarkerBox.html#gwy-marker-box-get-flipped"/>
+    <keyword type="function" name="gwy_marker_box_set_highlight_selected ()" link="GwyMarkerBox.html#gwy-marker-box-set-highlight-selected"/>
+    <keyword type="function" name="gwy_marker_box_get_highlight_selected ()" link="GwyMarkerBox.html#gwy-marker-box-get-highlight-selected"/>
+    <keyword type="function" name="gwy_marker_box_set_validator ()" link="GwyMarkerBox.html#gwy-marker-box-set-validator"/>
+    <keyword type="function" name="gwy_marker_box_get_validator ()" link="GwyMarkerBox.html#gwy-marker-box-get-validator"/>
+    <keyword type="struct" name="struct GwyMarkerBox" link="GwyMarkerBox.html#GwyMarkerBox-struct"/>
+    <keyword type="struct" name="struct GwyMarkerBoxClass" link="GwyMarkerBox.html#GwyMarkerBoxClass"/>
+    <keyword type="property" name="The “flipped” property" link="GwyMarkerBox.html#GwyMarkerBox--flipped"/>
+    <keyword type="property" name="The “highlight-selected” property" link="GwyMarkerBox.html#GwyMarkerBox--highlight-selected"/>
+    <keyword type="property" name="The “selected-marker” property" link="GwyMarkerBox.html#GwyMarkerBox--selected-marker"/>
+    <keyword type="signal" name="The “marker-added” signal" link="GwyMarkerBox.html#GwyMarkerBox-marker-added"/>
+    <keyword type="signal" name="The “marker-moved” signal" link="GwyMarkerBox.html#GwyMarkerBox-marker-moved"/>
+    <keyword type="signal" name="The “marker-removed” signal" link="GwyMarkerBox.html#GwyMarkerBox-marker-removed"/>
+    <keyword type="signal" name="The “marker-selected” signal" link="GwyMarkerBox.html#GwyMarkerBox-marker-selected"/>
+    <keyword type="signal" name="The “markers-set” signal" link="GwyMarkerBox.html#GwyMarkerBox-markers-set"/>
+    <keyword type="function" name="gwy_hmarker_box_new ()" link="GwyHMarkerBox.html#gwy-hmarker-box-new"/>
+    <keyword type="struct" name="struct GwyHMarkerBox" link="GwyHMarkerBox.html#GwyHMarkerBox-struct"/>
+    <keyword type="struct" name="struct GwyHMarkerBoxClass" link="GwyHMarkerBox.html#GwyHMarkerBoxClass"/>
+    <keyword type="function" name="gwy_sci_text_new ()" link="GwySciText.html#gwy-sci-text-new"/>
+    <keyword type="function" name="gwy_sci_text_get_text ()" link="GwySciText.html#gwy-sci-text-get-text"/>
+    <keyword type="function" name="gwy_sci_text_set_text ()" link="GwySciText.html#gwy-sci-text-set-text"/>
+    <keyword type="function" name="gwy_sci_text_get_has_preview ()" link="GwySciText.html#gwy-sci-text-get-has-preview"/>
+    <keyword type="function" name="gwy_sci_text_set_has_preview ()" link="GwySciText.html#gwy-sci-text-set-has-preview"/>
+    <keyword type="function" name="gwy_sci_text_get_entry ()" link="GwySciText.html#gwy-sci-text-get-entry"/>
+    <keyword type="struct" name="struct GwySciText" link="GwySciText.html#GwySciText-struct"/>
+    <keyword type="struct" name="struct GwySciTextClass" link="GwySciText.html#GwySciTextClass"/>
+    <keyword type="property" name="The “has-preview” property" link="GwySciText.html#GwySciText--has-preview"/>
+    <keyword type="signal" name="The “edited” signal" link="GwySciText.html#GwySciText-edited"/>
+    <keyword type="function" name="gwy_statusbar_new ()" link="GwyStatusbar.html#gwy-statusbar-new"/>
+    <keyword type="function" name="gwy_statusbar_set_markup ()" link="GwyStatusbar.html#gwy-statusbar-set-markup"/>
+    <keyword type="struct" name="struct GwyStatusbar" link="GwyStatusbar.html#GwyStatusbar-struct"/>
+    <keyword type="struct" name="struct GwyStatusbarClass" link="GwyStatusbar.html#GwyStatusbarClass"/>
+    <keyword type="function" name="gwy_shader_new ()" link="GwyShader.html#gwy-shader-new"/>
+    <keyword type="function" name="gwy_shader_get_theta ()" link="GwyShader.html#gwy-shader-get-theta"/>
+    <keyword type="function" name="gwy_shader_get_phi ()" link="GwyShader.html#gwy-shader-get-phi"/>
+    <keyword type="function" name="gwy_shader_set_theta ()" link="GwyShader.html#gwy-shader-set-theta"/>
+    <keyword type="function" name="gwy_shader_set_phi ()" link="GwyShader.html#gwy-shader-set-phi"/>
+    <keyword type="function" name="gwy_shader_set_angle ()" link="GwyShader.html#gwy-shader-set-angle"/>
+    <keyword type="function" name="gwy_shader_get_gradient ()" link="GwyShader.html#gwy-shader-get-gradient"/>
+    <keyword type="function" name="gwy_shader_set_gradient ()" link="GwyShader.html#gwy-shader-set-gradient"/>
+    <keyword type="function" name="gwy_shader_get_update_policy ()" link="GwyShader.html#gwy-shader-get-update-policy"/>
+    <keyword type="function" name="gwy_shader_set_update_policy ()" link="GwyShader.html#gwy-shader-set-update-policy"/>
+    <keyword type="struct" name="struct GwyShader" link="GwyShader.html#GwyShader-struct"/>
+    <keyword type="struct" name="struct GwyShaderClass" link="GwyShader.html#GwyShaderClass"/>
+    <keyword type="property" name="The “gradient” property" link="GwyShader.html#GwyShader--gradient"/>
+    <keyword type="property" name="The “update-policy” property" link="GwyShader.html#GwyShader--update-policy"/>
+    <keyword type="signal" name="The “angle-changed” signal" link="GwyShader.html#GwyShader-angle-changed"/>
+    <keyword type="function" name="gwy_inventory_store_new ()" link="GwyInventoryStore.html#gwy-inventory-store-new"/>
+    <keyword type="function" name="gwy_inventory_store_get_inventory ()" link="GwyInventoryStore.html#gwy-inventory-store-get-inventory"/>
+    <keyword type="function" name="gwy_inventory_store_get_column_by_name ()" link="GwyInventoryStore.html#gwy-inventory-store-get-column-by-name"/>
+    <keyword type="function" name="gwy_inventory_store_get_iter ()" link="GwyInventoryStore.html#gwy-inventory-store-get-iter"/>
+    <keyword type="function" name="gwy_inventory_store_iter_is_valid ()" link="GwyInventoryStore.html#gwy-inventory-store-iter-is-valid"/>
+    <keyword type="struct" name="struct GwyInventoryStore" link="GwyInventoryStore.html#GwyInventoryStore-struct"/>
+    <keyword type="struct" name="struct GwyInventoryStoreClass" link="GwyInventoryStore.html#GwyInventoryStoreClass"/>
+    <keyword type="function" name="gwy_null_store_new ()" link="GwyNullStore.html#gwy-null-store-new"/>
+    <keyword type="function" name="gwy_null_store_get_n_rows ()" link="GwyNullStore.html#gwy-null-store-get-n-rows"/>
+    <keyword type="function" name="gwy_null_store_set_n_rows ()" link="GwyNullStore.html#gwy-null-store-set-n-rows"/>
+    <keyword type="function" name="gwy_null_store_get_model ()" link="GwyNullStore.html#gwy-null-store-get-model"/>
+    <keyword type="function" name="gwy_null_store_set_model ()" link="GwyNullStore.html#gwy-null-store-set-model"/>
+    <keyword type="function" name="gwy_null_store_row_changed ()" link="GwyNullStore.html#gwy-null-store-row-changed"/>
+    <keyword type="function" name="gwy_null_store_iter_is_valid ()" link="GwyNullStore.html#gwy-null-store-iter-is-valid"/>
+    <keyword type="struct" name="struct GwyNullStore" link="GwyNullStore.html#GwyNullStore-struct"/>
+    <keyword type="struct" name="struct GwyNullStoreClass" link="GwyNullStore.html#GwyNullStoreClass"/>
+    <keyword type="function" name="gwy_widgets_type_init ()" link="libgwydgets-gwydgets.html#gwy-widgets-type-init"/>
+    <keyword type="function" name="gwy_widgets_gl_init ()" link="libgwydgets-gwydgets.html#gwy-widgets-gl-init"/>
+    <keyword type="function" name="gwy_widgets_get_gl_config ()" link="libgwydgets-gwydgets.html#gwy-widgets-get-gl-config"/>
+    <keyword type="typedef" name="GdkGLConfig" link="libgwydgets-gwydgets.html#GdkGLConfig"/>
+    <keyword type="function" name="gwy_graph_curve_type_get_enum ()" link="libgwydgets-gwydgetenums.html#gwy-graph-curve-type-get-enum"/>
+    <keyword type="enum" name="enum GwyAxisScaleFormat" link="libgwydgets-gwydgetenums.html#GwyAxisScaleFormat"/>
+    <keyword type="enum" name="enum Gwy3DMovement" link="libgwydgets-gwydgetenums.html#Gwy3DMovement"/>
+    <keyword type="enum" name="enum Gwy3DProjection" link="libgwydgets-gwydgetenums.html#Gwy3DProjection"/>
+    <keyword type="enum" name="enum Gwy3DVisualization" link="libgwydgets-gwydgetenums.html#Gwy3DVisualization"/>
+    <keyword type="enum" name="enum Gwy3DViewLabel" link="libgwydgets-gwydgetenums.html#Gwy3DViewLabel"/>
+    <keyword type="enum" name="enum GwyUnitsPlacement" link="libgwydgets-gwydgetenums.html#GwyUnitsPlacement"/>
+    <keyword type="enum" name="enum GwyHScaleStyle" link="libgwydgets-gwydgetenums.html#GwyHScaleStyle"/>
+    <keyword type="enum" name="enum GwyGraphStatusType" link="libgwydgets-gwydgetenums.html#GwyGraphStatusType"/>
+    <keyword type="enum" name="enum GwyGraphGridType" link="libgwydgets-gwydgetenums.html#GwyGraphGridType"/>
+    <keyword type="enum" name="enum GwyGraphPointType" link="libgwydgets-gwydgetenums.html#GwyGraphPointType"/>
+    <keyword type="enum" name="enum GwyGraphCurveType" link="libgwydgets-gwydgetenums.html#GwyGraphCurveType"/>
+    <keyword type="enum" name="enum GwyGraphLabelPosition" link="libgwydgets-gwydgetenums.html#GwyGraphLabelPosition"/>
+    <keyword type="enum" name="enum GwyGraphModelExportStyle" link="libgwydgets-gwydgetenums.html#GwyGraphModelExportStyle"/>
+    <keyword type="enum" name="enum GwyLayerBasicRangeType" link="libgwydgets-gwydgetenums.html#GwyLayerBasicRangeType"/>
+    <keyword type="enum" name="enum GwyCurveType" link="libgwydgets-gwydgetenums.html#GwyCurveType"/>
+    <keyword type="enum" name="enum GwyCurveChannel" link="libgwydgets-gwydgetenums.html#GwyCurveChannel"/>
+    <keyword type="enum" name="enum GwyMarkerOperationType" link="libgwydgets-gwydgetenums.html#GwyMarkerOperationType"/>
+    <keyword type="enum" name="enum GwyDataViewLayerType" link="libgwydgets-gwydgetenums.html#GwyDataViewLayerType"/>
+    <keyword type="enum" name="enum GwyTicksStyle" link="libgwydgets-gwydgetenums.html#GwyTicksStyle"/>
+    <keyword type="macro" name="gwy_adjustment_get_int()" link="libgwydgets-gwydgetutils.html#gwy-adjustment-get-int"/>
+    <keyword type="function" name="gwy_table_attach_spinbutton ()" link="libgwydgets-gwydgetutils.html#gwy-table-attach-spinbutton"/>
+    <keyword type="function" name="gwy_table_attach_row ()" link="libgwydgets-gwydgetutils.html#gwy-table-attach-row"/>
+    <keyword type="function" name="gwy_table_attach_hscale ()" link="libgwydgets-gwydgetutils.html#gwy-table-attach-hscale"/>
+    <keyword type="function" name="gwy_table_attach_adjbar ()" link="libgwydgets-gwydgetutils.html#gwy-table-attach-adjbar" since="2.49"/>
+    <keyword type="function" name="gwy_table_hscale_set_sensitive ()" link="libgwydgets-gwydgetutils.html#gwy-table-hscale-set-sensitive"/>
+    <keyword type="function" name="gwy_table_hscale_get_scale ()" link="libgwydgets-gwydgetutils.html#gwy-table-hscale-get-scale"/>
+    <keyword type="function" name="gwy_table_hscale_get_check ()" link="libgwydgets-gwydgetutils.html#gwy-table-hscale-get-check"/>
+    <keyword type="function" name="gwy_table_hscale_get_label ()" link="libgwydgets-gwydgetutils.html#gwy-table-hscale-get-label"/>
+    <keyword type="function" name="gwy_table_hscale_get_units ()" link="libgwydgets-gwydgetutils.html#gwy-table-hscale-get-units"/>
+    <keyword type="function" name="gwy_table_hscale_get_middle_widget ()" link="libgwydgets-gwydgetutils.html#gwy-table-hscale-get-middle-widget"/>
+    <keyword type="function" name="gwy_table_get_child_widget ()" link="libgwydgets-gwydgetutils.html#gwy-table-get-child-widget"/>
+    <keyword type="function" name="gwy_color_selector_for_mask ()" link="libgwydgets-gwydgetutils.html#gwy-color-selector-for-mask"/>
+    <keyword type="function" name="gwy_mask_color_selector_run ()" link="libgwydgets-gwydgetutils.html#gwy-mask-color-selector-run" since="2.1"/>
+    <keyword type="function" name="gwy_list_store_row_changed ()" link="libgwydgets-gwydgetutils.html#gwy-list-store-row-changed"/>
+    <keyword type="function" name="gwy_hbox_new ()" link="libgwydgets-gwydgetutils.html#gwy-hbox-new" since="2.59"/>
+    <keyword type="function" name="gwy_vbox_new ()" link="libgwydgets-gwydgetutils.html#gwy-vbox-new" since="2.59"/>
+    <keyword type="function" name="gwy_dialog_prevent_delete_cb ()" link="libgwydgets-gwydgetutils.html#gwy-dialog-prevent-delete-cb" deprecated=""/>
+    <keyword type="function" name="gwy_label_new_header ()" link="libgwydgets-gwydgetutils.html#gwy-label-new-header"/>
+    <keyword type="function" name="gwy_stock_like_button_new ()" link="libgwydgets-gwydgetutils.html#gwy-stock-like-button-new"/>
+    <keyword type="function" name="gwy_tool_like_button_new ()" link="libgwydgets-gwydgetutils.html#gwy-tool-like-button-new"/>
+    <keyword type="function" name="gwy_widget_get_activate_on_unfocus ()" link="libgwydgets-gwydgetutils.html#gwy-widget-get-activate-on-unfocus" since="2.5"/>
+    <keyword type="function" name="gwy_widget_set_activate_on_unfocus ()" link="libgwydgets-gwydgetutils.html#gwy-widget-set-activate-on-unfocus" since="2.5"/>
+    <keyword type="function" name="gwy_widget_sync_sensitivity ()" link="libgwydgets-gwydgetutils.html#gwy-widget-sync-sensitivity" since="2.8"/>
+    <keyword type="function" name="gwy_get_pango_ft2_font_map ()" link="libgwydgets-gwydgetutils.html#gwy-get-pango-ft2-font-map" deprecated=""/>
+    <keyword type="function" name="gwy_stock_register_stock_items ()" link="libgwydgets-gwystock.html#gwy-stock-register-stock-items"/>
+    <keyword type="macro" name="GWY_STOCK_3D_BASE" link="libgwydgets-gwystock.html#GWY-STOCK-3D-BASE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_ARITHMETIC" link="libgwydgets-gwystock.html#GWY-STOCK-ARITHMETIC:CAPS" since="2.3"/>
+    <keyword type="macro" name="GWY_STOCK_BINNING" link="libgwydgets-gwystock.html#GWY-STOCK-BINNING:CAPS" since="2.50"/>
+    <keyword type="macro" name="GWY_STOCK_BOLD" link="libgwydgets-gwystock.html#GWY-STOCK-BOLD:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_CANTILEVER" link="libgwydgets-gwystock.html#GWY-STOCK-CANTILEVER:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_COLOR_RANGE" link="libgwydgets-gwystock.html#GWY-STOCK-COLOR-RANGE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_COLOR_RANGE_ADAPTIVE" link="libgwydgets-gwystock.html#GWY-STOCK-COLOR-RANGE-ADAPTIVE:CAPS" since="2.7"/>
+    <keyword type="macro" name="GWY_STOCK_COLOR_RANGE_AUTO" link="libgwydgets-gwystock.html#GWY-STOCK-COLOR-RANGE-AUTO:CAPS" since="2.7"/>
+    <keyword type="macro" name="GWY_STOCK_COLOR_RANGE_FIXED" link="libgwydgets-gwystock.html#GWY-STOCK-COLOR-RANGE-FIXED:CAPS" since="2.7"/>
+    <keyword type="macro" name="GWY_STOCK_COLOR_RANGE_FULL" link="libgwydgets-gwystock.html#GWY-STOCK-COLOR-RANGE-FULL:CAPS" since="2.7"/>
+    <keyword type="macro" name="GWY_STOCK_CONVOLUTION" link="libgwydgets-gwystock.html#GWY-STOCK-CONVOLUTION:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_CONVOLVE" link="libgwydgets-gwystock.html#GWY-STOCK-CONVOLVE:CAPS" since="2.52"/>
+    <keyword type="macro" name="GWY_STOCK_CORRECT_AFFINE" link="libgwydgets-gwystock.html#GWY-STOCK-CORRECT-AFFINE:CAPS" since="2.37"/>
+    <keyword type="macro" name="GWY_STOCK_CORRELATION_LENGTH" link="libgwydgets-gwystock.html#GWY-STOCK-CORRELATION-LENGTH:CAPS" since="2.56"/>
+    <keyword type="macro" name="GWY_STOCK_CORRELATION_MASK" link="libgwydgets-gwystock.html#GWY-STOCK-CORRELATION-MASK:CAPS" since="2.48"/>
+    <keyword type="macro" name="GWY_STOCK_CROP" link="libgwydgets-gwystock.html#GWY-STOCK-CROP:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_CROSS_PROFILE" link="libgwydgets-gwystock.html#GWY-STOCK-CROSS-PROFILE:CAPS" since="2.53"/>
+    <keyword type="macro" name="GWY_STOCK_CURVATURE" link="libgwydgets-gwystock.html#GWY-STOCK-CURVATURE:CAPS" since="2.50"/>
+    <keyword type="macro" name="GWY_STOCK_CWT" link="libgwydgets-gwystock.html#GWY-STOCK-CWT:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_DATA_MEASURE" link="libgwydgets-gwystock.html#GWY-STOCK-DATA-MEASURE:CAPS" since="2.3"/>
+    <keyword type="macro" name="GWY_STOCK_DECONVOLVE" link="libgwydgets-gwystock.html#GWY-STOCK-DECONVOLVE:CAPS" since="2.52"/>
+    <keyword type="macro" name="GWY_STOCK_DISCONNECTED" link="libgwydgets-gwystock.html#GWY-STOCK-DISCONNECTED:CAPS" since="2.48"/>
+    <keyword type="macro" name="GWY_STOCK_DISPLACEMENT_FIELD" link="libgwydgets-gwystock.html#GWY-STOCK-DISPLACEMENT-FIELD:CAPS" since="2.61"/>
+    <keyword type="macro" name="GWY_STOCK_DISTANCE" link="libgwydgets-gwystock.html#GWY-STOCK-DISTANCE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_DISTANCE_TRANSFORM" link="libgwydgets-gwystock.html#GWY-STOCK-DISTANCE-TRANSFORM:CAPS" since="2.46"/>
+    <keyword type="macro" name="GWY_STOCK_DISTRIBUTION_ANGLE" link="libgwydgets-gwystock.html#GWY-STOCK-DISTRIBUTION-ANGLE:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_DISTRIBUTION_SLOPE" link="libgwydgets-gwystock.html#GWY-STOCK-DISTRIBUTION-SLOPE:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_DRIFT" link="libgwydgets-gwystock.html#GWY-STOCK-DRIFT:CAPS" since="2.3"/>
+    <keyword type="macro" name="GWY_STOCK_DWT" link="libgwydgets-gwystock.html#GWY-STOCK-DWT:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_EDGE" link="libgwydgets-gwystock.html#GWY-STOCK-EDGE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_ENFORCE_DISTRIBUTION" link="libgwydgets-gwystock.html#GWY-STOCK-ENFORCE-DISTRIBUTION:CAPS" since="2.46"/>
+    <keyword type="macro" name="GWY_STOCK_ENTROPY" link="libgwydgets-gwystock.html#GWY-STOCK-ENTROPY:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_EXTEND" link="libgwydgets-gwystock.html#GWY-STOCK-EXTEND:CAPS" since="2.37"/>
+    <keyword type="macro" name="GWY_STOCK_EXTRACT_PATH" link="libgwydgets-gwystock.html#GWY-STOCK-EXTRACT-PATH:CAPS" since="2.46"/>
+    <keyword type="macro" name="GWY_STOCK_FACET_ANALYSIS" link="libgwydgets-gwystock.html#GWY-STOCK-FACET-ANALYSIS:CAPS" since="2.50"/>
+    <keyword type="macro" name="GWY_STOCK_FACET_LEVEL" link="libgwydgets-gwystock.html#GWY-STOCK-FACET-LEVEL:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_FACET_MEASURE" link="libgwydgets-gwystock.html#GWY-STOCK-FACET-MEASURE:CAPS" since="2.54"/>
+    <keyword type="macro" name="GWY_STOCK_FAVOURITE" link="libgwydgets-gwystock.html#GWY-STOCK-FAVOURITE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_FFT" link="libgwydgets-gwystock.html#GWY-STOCK-FFT:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_FFT_2D" link="libgwydgets-gwystock.html#GWY-STOCK-FFT-2D:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_FFT_FILTER_1D" link="libgwydgets-gwystock.html#GWY-STOCK-FFT-FILTER-1D:CAPS" since="2.48"/>
+    <keyword type="macro" name="GWY_STOCK_FFT_FILTER_2D" link="libgwydgets-gwystock.html#GWY-STOCK-FFT-FILTER-2D:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_FILTER" link="libgwydgets-gwystock.html#GWY-STOCK-FILTER:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_FIND_PEAKS" link="libgwydgets-gwystock.html#GWY-STOCK-FIND-PEAKS:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_FIT_SHAPE" link="libgwydgets-gwystock.html#GWY-STOCK-FIT-SHAPE:CAPS" since="2.48"/>
+    <keyword type="macro" name="GWY_STOCK_FIX_ZERO" link="libgwydgets-gwystock.html#GWY-STOCK-FIX-ZERO:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_FLIP_DIAGONALLY" link="libgwydgets-gwystock.html#GWY-STOCK-FLIP-DIAGONALLY:CAPS" since="2.51"/>
+    <keyword type="macro" name="GWY_STOCK_FLIP_HORIZONTALLY" link="libgwydgets-gwystock.html#GWY-STOCK-FLIP-HORIZONTALLY:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_FLIP_VERTICALLY" link="libgwydgets-gwystock.html#GWY-STOCK-FLIP-VERTICALLY:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_FRACTAL" link="libgwydgets-gwystock.html#GWY-STOCK-FRACTAL:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_FRACTAL_CORRECTION" link="libgwydgets-gwystock.html#GWY-STOCK-FRACTAL-CORRECTION:CAPS" since="2.48"/>
+    <keyword type="macro" name="GWY_STOCK_FRACTAL_MEASURE" link="libgwydgets-gwystock.html#GWY-STOCK-FRACTAL-MEASURE:CAPS" since="2.49"/>
+    <keyword type="macro" name="GWY_STOCK_FREQUENCY_SPLIT" link="libgwydgets-gwystock.html#GWY-STOCK-FREQUENCY-SPLIT:CAPS" since="2.54"/>
+    <keyword type="macro" name="GWY_STOCK_GL_MATERIAL" link="libgwydgets-gwystock.html#GWY-STOCK-GL-MATERIAL:CAPS" since="2.7"/>
+    <keyword type="macro" name="GWY_STOCK_GRADIENT_HORIZONTAL" link="libgwydgets-gwystock.html#GWY-STOCK-GRADIENT-HORIZONTAL:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_GRADIENT_VERTICAL" link="libgwydgets-gwystock.html#GWY-STOCK-GRADIENT-VERTICAL:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_GRAIN_BOUNDING_BOX" link="libgwydgets-gwystock.html#GWY-STOCK-GRAIN-BOUNDING-BOX:CAPS" since="2.61"/>
+    <keyword type="macro" name="GWY_STOCK_GRAIN_CORRELATION" link="libgwydgets-gwystock.html#GWY-STOCK-GRAIN-CORRELATION:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_GRAIN_EXSCRIBED_CIRCLE" link="libgwydgets-gwystock.html#GWY-STOCK-GRAIN-EXSCRIBED-CIRCLE:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_GRAIN_INSCRIBED_BOX" link="libgwydgets-gwystock.html#GWY-STOCK-GRAIN-INSCRIBED-BOX:CAPS" since="2.61"/>
+    <keyword type="macro" name="GWY_STOCK_GRAIN_INSCRIBED_CIRCLE" link="libgwydgets-gwystock.html#GWY-STOCK-GRAIN-INSCRIBED-CIRCLE:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_GRAINS" link="libgwydgets-gwystock.html#GWY-STOCK-GRAINS:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_GRAINS_EDGE" link="libgwydgets-gwystock.html#GWY-STOCK-GRAINS-EDGE:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_GRAINS_EDGE_REMOVE" link="libgwydgets-gwystock.html#GWY-STOCK-GRAINS-EDGE-REMOVE:CAPS" since="2.46"/>
+    <keyword type="macro" name="GWY_STOCK_GRAINS_GRAPH" link="libgwydgets-gwystock.html#GWY-STOCK-GRAINS-GRAPH:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_GRAINS_MEASURE" link="libgwydgets-gwystock.html#GWY-STOCK-GRAINS-MEASURE:CAPS" since="2.7"/>
+    <keyword type="macro" name="GWY_STOCK_GRAINS_OTSU" link="libgwydgets-gwystock.html#GWY-STOCK-GRAINS-OTSU:CAPS" since="2.52"/>
+    <keyword type="macro" name="GWY_STOCK_GRAINS_REMOVE" link="libgwydgets-gwystock.html#GWY-STOCK-GRAINS-REMOVE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_GRAINS_STATISTICS" link="libgwydgets-gwystock.html#GWY-STOCK-GRAINS-STATISTICS:CAPS" since="2.50"/>
+    <keyword type="macro" name="GWY_STOCK_GRAINS_WATER" link="libgwydgets-gwystock.html#GWY-STOCK-GRAINS-WATER:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH_ALIGN" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH-ALIGN:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH_CUT" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH-CUT:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH_DOS" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH-DOS:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH_EXPORT_ASCII" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH-EXPORT-ASCII:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH_EXPORT_PNG" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH-EXPORT-PNG:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH_EXPORT_VECTOR" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH-EXPORT-VECTOR:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH_FD" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH-FD:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH_FILTER" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH-FILTER:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH_FUNCTION" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH-FUNCTION:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH_HALFGAUSS" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH-HALFGAUSS:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH_LEVEL" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH-LEVEL:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH_MEASURE" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH-MEASURE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH_PALETTE" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH-PALETTE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH_POINTER" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH-POINTER:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH_RULER" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH-RULER:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH_STATISTICS" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH-STATISTICS:CAPS" since="2.54"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH_TERRACE_MEASURE" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH-TERRACE-MEASURE:CAPS" since="2.54"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH_VERTICAL" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH-VERTICAL:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH_ZOOM_FIT" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH-ZOOM-FIT:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH_ZOOM_IN" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH-ZOOM-IN:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_GRAPH_ZOOM_OUT" link="libgwydgets-gwystock.html#GWY-STOCK-GRAPH-ZOOM-OUT:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_GWYDDION" link="libgwydgets-gwystock.html#GWY-STOCK-GWYDDION:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_HOUGH" link="libgwydgets-gwystock.html#GWY-STOCK-HOUGH:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_IMAGE_RELATION" link="libgwydgets-gwystock.html#GWY-STOCK-IMAGE-RELATION:CAPS" since="2.54"/>
+    <keyword type="macro" name="GWY_STOCK_IMMERSE" link="libgwydgets-gwystock.html#GWY-STOCK-IMMERSE:CAPS" since="2.3"/>
+    <keyword type="macro" name="GWY_STOCK_ISO_ROUGHNESS" link="libgwydgets-gwystock.html#GWY-STOCK-ISO-ROUGHNESS:CAPS" since="2.7"/>
+    <keyword type="macro" name="GWY_STOCK_ITALIC" link="libgwydgets-gwystock.html#GWY-STOCK-ITALIC:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_LESS" link="libgwydgets-gwystock.html#GWY-STOCK-LESS:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_LEVEL" link="libgwydgets-gwystock.html#GWY-STOCK-LEVEL:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_LEVEL_FLATTEN_BASE" link="libgwydgets-gwystock.html#GWY-STOCK-LEVEL-FLATTEN-BASE:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_LEVEL_MEDIAN" link="libgwydgets-gwystock.html#GWY-STOCK-LEVEL-MEDIAN:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_LEVEL_TRIANGLE" link="libgwydgets-gwystock.html#GWY-STOCK-LEVEL-TRIANGLE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_LIGHT_ROTATE" link="libgwydgets-gwystock.html#GWY-STOCK-LIGHT-ROTATE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_LIMIT_RANGE" link="libgwydgets-gwystock.html#GWY-STOCK-LIMIT-RANGE:CAPS" since="2.50"/>
+    <keyword type="macro" name="GWY_STOCK_LINE_LEVEL" link="libgwydgets-gwystock.html#GWY-STOCK-LINE-LEVEL:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_LOAD_DEBUG" link="libgwydgets-gwystock.html#GWY-STOCK-LOAD-DEBUG:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_LOAD_INFO" link="libgwydgets-gwystock.html#GWY-STOCK-LOAD-INFO:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_LOAD_WARNING" link="libgwydgets-gwystock.html#GWY-STOCK-LOAD-WARNING:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_LOCAL_SLOPE" link="libgwydgets-gwystock.html#GWY-STOCK-LOCAL-SLOPE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_LOGSCALE_HORIZONTAL" link="libgwydgets-gwystock.html#GWY-STOCK-LOGSCALE-HORIZONTAL:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_LOGSCALE_VERTICAL" link="libgwydgets-gwystock.html#GWY-STOCK-LOGSCALE-VERTICAL:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_MARK_OUTLIERS" link="libgwydgets-gwystock.html#GWY-STOCK-MARK-OUTLIERS:CAPS" since="2.48"/>
+    <keyword type="macro" name="GWY_STOCK_MARK_SCARS" link="libgwydgets-gwystock.html#GWY-STOCK-MARK-SCARS:CAPS" since="2.48"/>
+    <keyword type="macro" name="GWY_STOCK_MARK_WITH" link="libgwydgets-gwystock.html#GWY-STOCK-MARK-WITH:CAPS" since="2.37"/>
+    <keyword type="macro" name="GWY_STOCK_MASK" link="libgwydgets-gwystock.html#GWY-STOCK-MASK:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_ADD" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-ADD:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_CIRCLE" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-CIRCLE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_CIRCLE_EXCLUSIVE" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-CIRCLE-EXCLUSIVE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_CIRCLE_INCLUSIVE" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-CIRCLE-INCLUSIVE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_DISTRIBUTE" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-DISTRIBUTE:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_EDITOR" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-EDITOR:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_EXCLUDE" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-EXCLUDE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_EXCLUDE_CIRCLE" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-EXCLUDE-CIRCLE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_EXTRACT" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-EXTRACT:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_FILL_DRAW" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-FILL-DRAW:CAPS" since="2.22"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_FILL_ERASE" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-FILL-ERASE:CAPS" since="2.22"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_GROW" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-GROW:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_INTERSECT" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-INTERSECT:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_INVERT" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-INVERT:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_LINE" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-LINE:CAPS" since="2.7"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_MORPH" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-MORPH:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_NOISIFY" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-NOISIFY:CAPS" since="2.61"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_PAINT_DRAW" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-PAINT-DRAW:CAPS" since="2.22"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_PAINT_ERASE" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-PAINT-ERASE:CAPS" since="2.22"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_RECT_EXCLUSIVE" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-RECT-EXCLUSIVE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_RECT_INCLUSIVE" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-RECT-INCLUSIVE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_REMOVE" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-REMOVE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_SET" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-SET:CAPS" since="2.49"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_SHIFT" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-SHIFT:CAPS" since="2.57"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_SHRINK" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-SHRINK:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_SUBTRACT" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-SUBTRACT:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_MASK_THIN" link="libgwydgets-gwystock.html#GWY-STOCK-MASK-THIN:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_MEASURE_LATTICE" link="libgwydgets-gwystock.html#GWY-STOCK-MEASURE-LATTICE:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_MERGE" link="libgwydgets-gwystock.html#GWY-STOCK-MERGE:CAPS" since="2.3"/>
+    <keyword type="macro" name="GWY_STOCK_MFM_CONVERT_TO_FORCE" link="libgwydgets-gwystock.html#GWY-STOCK-MFM-CONVERT-TO-FORCE:CAPS" since="2.52"/>
+    <keyword type="macro" name="GWY_STOCK_MFM_CURRENT_LINE" link="libgwydgets-gwystock.html#GWY-STOCK-MFM-CURRENT-LINE:CAPS" since="2.50"/>
+    <keyword type="macro" name="GWY_STOCK_MFM_FIELD_FIND_SHIFT" link="libgwydgets-gwystock.html#GWY-STOCK-MFM-FIELD-FIND-SHIFT:CAPS" since="2.50"/>
+    <keyword type="macro" name="GWY_STOCK_MFM_FIELD_SHIFT" link="libgwydgets-gwystock.html#GWY-STOCK-MFM-FIELD-SHIFT:CAPS" since="2.50"/>
+    <keyword type="macro" name="GWY_STOCK_MFM_PARALLEL" link="libgwydgets-gwystock.html#GWY-STOCK-MFM-PARALLEL:CAPS" since="2.52"/>
+    <keyword type="macro" name="GWY_STOCK_MFM_PERPENDICULAR" link="libgwydgets-gwystock.html#GWY-STOCK-MFM-PERPENDICULAR:CAPS" since="2.52"/>
+    <keyword type="macro" name="GWY_STOCK_MORE" link="libgwydgets-gwystock.html#GWY-STOCK-MORE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_MUTUAL_CROP" link="libgwydgets-gwystock.html#GWY-STOCK-MUTUAL-CROP:CAPS" since="2.46"/>
+    <keyword type="macro" name="GWY_STOCK_NEURAL_APPLY" link="libgwydgets-gwystock.html#GWY-STOCK-NEURAL-APPLY:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_NEURAL_TRAIN" link="libgwydgets-gwystock.html#GWY-STOCK-NEURAL-TRAIN:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_NEXT" link="libgwydgets-gwystock.html#GWY-STOCK-NEXT:CAPS" since="2.49"/>
+    <keyword type="macro" name="GWY_STOCK_NULL_OFFSETS" link="libgwydgets-gwystock.html#GWY-STOCK-NULL-OFFSETS:CAPS" since="2.48"/>
+    <keyword type="macro" name="GWY_STOCK_PALETTES" link="libgwydgets-gwystock.html#GWY-STOCK-PALETTES:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_PATH_LEVEL" link="libgwydgets-gwystock.html#GWY-STOCK-PATH-LEVEL:CAPS" since="2.7"/>
+    <keyword type="macro" name="GWY_STOCK_PERSPECTIVE_DISTORT" link="libgwydgets-gwystock.html#GWY-STOCK-PERSPECTIVE-DISTORT:CAPS" since="2.61"/>
+    <keyword type="macro" name="GWY_STOCK_POINTER_MEASURE" link="libgwydgets-gwystock.html#GWY-STOCK-POINTER-MEASURE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_POLY_DISTORT" link="libgwydgets-gwystock.html#GWY-STOCK-POLY-DISTORT:CAPS" since="2.46"/>
+    <keyword type="macro" name="GWY_STOCK_POLYNOM" link="libgwydgets-gwystock.html#GWY-STOCK-POLYNOM:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_POLYNOM_LEVEL" link="libgwydgets-gwystock.html#GWY-STOCK-POLYNOM-LEVEL:CAPS" since="2.29"/>
+    <keyword type="macro" name="GWY_STOCK_PREVIOUS" link="libgwydgets-gwystock.html#GWY-STOCK-PREVIOUS:CAPS" since="2.49"/>
+    <keyword type="macro" name="GWY_STOCK_PROFILE" link="libgwydgets-gwystock.html#GWY-STOCK-PROFILE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_PROFILE_MULTIPLE" link="libgwydgets-gwystock.html#GWY-STOCK-PROFILE-MULTIPLE:CAPS" since="2.57"/>
+    <keyword type="macro" name="GWY_STOCK_PSDF_LOG_PHI" link="libgwydgets-gwystock.html#GWY-STOCK-PSDF-LOG-PHI:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_PSDF_SECTION" link="libgwydgets-gwystock.html#GWY-STOCK-PSDF-SECTION:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_PYGWY" link="libgwydgets-gwystock.html#GWY-STOCK-PYGWY:CAPS" since="2.34"/>
+    <keyword type="macro" name="GWY_STOCK_RADIAL_PROFILE" link="libgwydgets-gwystock.html#GWY-STOCK-RADIAL-PROFILE:CAPS" since="2.53"/>
+    <keyword type="macro" name="GWY_STOCK_RANK_FILTER" link="libgwydgets-gwystock.html#GWY-STOCK-RANK-FILTER:CAPS" since="2.50"/>
+    <keyword type="macro" name="GWY_STOCK_RASTERIZE" link="libgwydgets-gwystock.html#GWY-STOCK-RASTERIZE:CAPS" since="2.50"/>
+    <keyword type="macro" name="GWY_STOCK_REMOVE_UNDER_MASK" link="libgwydgets-gwystock.html#GWY-STOCK-REMOVE-UNDER-MASK:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_REVOLVE_ARC" link="libgwydgets-gwystock.html#GWY-STOCK-REVOLVE-ARC:CAPS" since="2.50"/>
+    <keyword type="macro" name="GWY_STOCK_REVOLVE_SPHERE" link="libgwydgets-gwystock.html#GWY-STOCK-REVOLVE-SPHERE:CAPS" since="2.50"/>
+    <keyword type="macro" name="GWY_STOCK_ROTATE" link="libgwydgets-gwystock.html#GWY-STOCK-ROTATE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_ROTATE_180" link="libgwydgets-gwystock.html#GWY-STOCK-ROTATE-180:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_ROTATE_3D" link="libgwydgets-gwystock.html#GWY-STOCK-ROTATE-3D:CAPS" since="2.49"/>
+    <keyword type="macro" name="GWY_STOCK_ROTATE_90_CCW" link="libgwydgets-gwystock.html#GWY-STOCK-ROTATE-90-CCW:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_ROTATE_90_CW" link="libgwydgets-gwystock.html#GWY-STOCK-ROTATE-90-CW:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_SCALE" link="libgwydgets-gwystock.html#GWY-STOCK-SCALE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_SCALE_HORIZONTALLY" link="libgwydgets-gwystock.html#GWY-STOCK-SCALE-HORIZONTALLY:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_SCALE_VERTICALLY" link="libgwydgets-gwystock.html#GWY-STOCK-SCALE-VERTICALLY:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_SCARS" link="libgwydgets-gwystock.html#GWY-STOCK-SCARS:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_SCIENTIFIC_NUMBER_FORMAT" link="libgwydgets-gwystock.html#GWY-STOCK-SCIENTIFIC-NUMBER-FORMAT:CAPS" since="2.50"/>
+    <keyword type="macro" name="GWY_STOCK_SELECTIONS" link="libgwydgets-gwystock.html#GWY-STOCK-SELECTIONS:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_SHADER" link="libgwydgets-gwystock.html#GWY-STOCK-SHADER:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_SPECTRUM" link="libgwydgets-gwystock.html#GWY-STOCK-SPECTRUM:CAPS" since="2.7"/>
+    <keyword type="macro" name="GWY_STOCK_SPOT_REMOVE" link="libgwydgets-gwystock.html#GWY-STOCK-SPOT-REMOVE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_SQUARE_SAMPLES" link="libgwydgets-gwystock.html#GWY-STOCK-SQUARE-SAMPLES:CAPS" since="2.50"/>
+    <keyword type="macro" name="GWY_STOCK_STAT_QUANTITIES" link="libgwydgets-gwystock.html#GWY-STOCK-STAT-QUANTITIES:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_STITCH" link="libgwydgets-gwystock.html#GWY-STOCK-STITCH:CAPS" since="2.50"/>
+    <keyword type="macro" name="GWY_STOCK_STRAIGHTEN_PATH" link="libgwydgets-gwystock.html#GWY-STOCK-STRAIGHTEN-PATH:CAPS" since="2.46"/>
+    <keyword type="macro" name="GWY_STOCK_SUBSCRIPT" link="libgwydgets-gwystock.html#GWY-STOCK-SUBSCRIPT:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_SUPERSCRIPT" link="libgwydgets-gwystock.html#GWY-STOCK-SUPERSCRIPT:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_SYNTHETIC_ANNEAL" link="libgwydgets-gwystock.html#GWY-STOCK-SYNTHETIC-ANNEAL:CAPS" since="2.54"/>
+    <keyword type="macro" name="GWY_STOCK_SYNTHETIC_BALLISTIC_DEPOSITION" link="libgwydgets-gwystock.html#GWY-STOCK-SYNTHETIC-BALLISTIC-DEPOSITION:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_SYNTHETIC_BROWNIAN_MOTION" link="libgwydgets-gwystock.html#GWY-STOCK-SYNTHETIC-BROWNIAN-MOTION:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_SYNTHETIC_COLUMNAR" link="libgwydgets-gwystock.html#GWY-STOCK-SYNTHETIC-COLUMNAR:CAPS" since="2.37"/>
+    <keyword type="macro" name="GWY_STOCK_SYNTHETIC_DIFFUSION" link="libgwydgets-gwystock.html#GWY-STOCK-SYNTHETIC-DIFFUSION:CAPS" since="2.38"/>
+    <keyword type="macro" name="GWY_STOCK_SYNTHETIC_DISCS" link="libgwydgets-gwystock.html#GWY-STOCK-SYNTHETIC-DISCS:CAPS" since="2.51"/>
+    <keyword type="macro" name="GWY_STOCK_SYNTHETIC_DOMAINS" link="libgwydgets-gwystock.html#GWY-STOCK-SYNTHETIC-DOMAINS:CAPS" since="2.37"/>
+    <keyword type="macro" name="GWY_STOCK_SYNTHETIC_FIBRES" link="libgwydgets-gwystock.html#GWY-STOCK-SYNTHETIC-FIBRES:CAPS" since="2.49"/>
+    <keyword type="macro" name="GWY_STOCK_SYNTHETIC_LATTICE" link="libgwydgets-gwystock.html#GWY-STOCK-SYNTHETIC-LATTICE:CAPS" since="2.37"/>
+    <keyword type="macro" name="GWY_STOCK_SYNTHETIC_LINE_NOISE" link="libgwydgets-gwystock.html#GWY-STOCK-SYNTHETIC-LINE-NOISE:CAPS" since="2.37"/>
+    <keyword type="macro" name="GWY_STOCK_SYNTHETIC_NOISE" link="libgwydgets-gwystock.html#GWY-STOCK-SYNTHETIC-NOISE:CAPS" since="2.37"/>
+    <keyword type="macro" name="GWY_STOCK_SYNTHETIC_OBJECTS" link="libgwydgets-gwystock.html#GWY-STOCK-SYNTHETIC-OBJECTS:CAPS" since="2.37"/>
+    <keyword type="macro" name="GWY_STOCK_SYNTHETIC_PARTICLES" link="libgwydgets-gwystock.html#GWY-STOCK-SYNTHETIC-PARTICLES:CAPS" since="2.37"/>
+    <keyword type="macro" name="GWY_STOCK_SYNTHETIC_PATTERN" link="libgwydgets-gwystock.html#GWY-STOCK-SYNTHETIC-PATTERN:CAPS" since="2.37"/>
+    <keyword type="macro" name="GWY_STOCK_SYNTHETIC_PHASES" link="libgwydgets-gwystock.html#GWY-STOCK-SYNTHETIC-PHASES:CAPS" since="2.48"/>
+    <keyword type="macro" name="GWY_STOCK_SYNTHETIC_PILEUP" link="libgwydgets-gwystock.html#GWY-STOCK-SYNTHETIC-PILEUP:CAPS" since="2.50"/>
+    <keyword type="macro" name="GWY_STOCK_SYNTHETIC_SPECTRAL" link="libgwydgets-gwystock.html#GWY-STOCK-SYNTHETIC-SPECTRAL:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_SYNTHETIC_TURING_PATTERN" link="libgwydgets-gwystock.html#GWY-STOCK-SYNTHETIC-TURING-PATTERN:CAPS" since="2.54"/>
+    <keyword type="macro" name="GWY_STOCK_SYNTHETIC_WAVES" link="libgwydgets-gwystock.html#GWY-STOCK-SYNTHETIC-WAVES:CAPS" since="2.37"/>
+    <keyword type="macro" name="GWY_STOCK_TERRACE_MEASURE" link="libgwydgets-gwystock.html#GWY-STOCK-TERRACE-MEASURE:CAPS" since="2.54"/>
+    <keyword type="macro" name="GWY_STOCK_TILT" link="libgwydgets-gwystock.html#GWY-STOCK-TILT:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_TIP_DILATION" link="libgwydgets-gwystock.html#GWY-STOCK-TIP-DILATION:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_TIP_EROSION" link="libgwydgets-gwystock.html#GWY-STOCK-TIP-EROSION:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_TIP_ESTIMATION" link="libgwydgets-gwystock.html#GWY-STOCK-TIP-ESTIMATION:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_TIP_INDENT_ANALYZE" link="libgwydgets-gwystock.html#GWY-STOCK-TIP-INDENT-ANALYZE:CAPS" since="2.46"/>
+    <keyword type="macro" name="GWY_STOCK_TIP_LATERAL_FORCE" link="libgwydgets-gwystock.html#GWY-STOCK-TIP-LATERAL-FORCE:CAPS" since="2.46"/>
+    <keyword type="macro" name="GWY_STOCK_TIP_MAP" link="libgwydgets-gwystock.html#GWY-STOCK-TIP-MAP:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_TIP_MODEL" link="libgwydgets-gwystock.html#GWY-STOCK-TIP-MODEL:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_TIP_PID" link="libgwydgets-gwystock.html#GWY-STOCK-TIP-PID:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_UNROTATE" link="libgwydgets-gwystock.html#GWY-STOCK-UNROTATE:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_VALUE_INVERT" link="libgwydgets-gwystock.html#GWY-STOCK-VALUE-INVERT:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_VOLUME" link="libgwydgets-gwystock.html#GWY-STOCK-VOLUME:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_VOLUME_ARITHMETIC" link="libgwydgets-gwystock.html#GWY-STOCK-VOLUME-ARITHMETIC:CAPS" since="2.51"/>
+    <keyword type="macro" name="GWY_STOCK_VOLUME_CALIBRATE" link="libgwydgets-gwystock.html#GWY-STOCK-VOLUME-CALIBRATE:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_VOLUME_DIMENSIONS" link="libgwydgets-gwystock.html#GWY-STOCK-VOLUME-DIMENSIONS:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_VOLUME_FD" link="libgwydgets-gwystock.html#GWY-STOCK-VOLUME-FD:CAPS" since="2.46"/>
+    <keyword type="macro" name="GWY_STOCK_VOLUME_INVERT" link="libgwydgets-gwystock.html#GWY-STOCK-VOLUME-INVERT:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_VOLUME_KMEANS" link="libgwydgets-gwystock.html#GWY-STOCK-VOLUME-KMEANS:CAPS" since="2.46"/>
+    <keyword type="macro" name="GWY_STOCK_VOLUME_KMEDIANS" link="libgwydgets-gwystock.html#GWY-STOCK-VOLUME-KMEDIANS:CAPS" since="2.46"/>
+    <keyword type="macro" name="GWY_STOCK_VOLUME_LINE_STATS" link="libgwydgets-gwystock.html#GWY-STOCK-VOLUME-LINE-STATS:CAPS" since="2.54"/>
+    <keyword type="macro" name="GWY_STOCK_VOLUME_PLANE_STATS" link="libgwydgets-gwystock.html#GWY-STOCK-VOLUME-PLANE-STATS:CAPS" since="2.54"/>
+    <keyword type="macro" name="GWY_STOCK_VOLUME_SLICE" link="libgwydgets-gwystock.html#GWY-STOCK-VOLUME-SLICE:CAPS" since="2.46"/>
+    <keyword type="macro" name="GWY_STOCK_VOLUME_SWAP_AXES" link="libgwydgets-gwystock.html#GWY-STOCK-VOLUME-SWAP-AXES:CAPS" since="2.54"/>
+    <keyword type="macro" name="GWY_STOCK_VOLUMIZE" link="libgwydgets-gwystock.html#GWY-STOCK-VOLUMIZE:CAPS" since="2.46"/>
+    <keyword type="macro" name="GWY_STOCK_VOLUMIZE_LAYERS" link="libgwydgets-gwystock.html#GWY-STOCK-VOLUMIZE-LAYERS:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_WRAP_VALUE" link="libgwydgets-gwystock.html#GWY-STOCK-WRAP-VALUE:CAPS" since="2.54"/>
+    <keyword type="macro" name="GWY_STOCK_XY_DENOISE" link="libgwydgets-gwystock.html#GWY-STOCK-XY-DENOISE:CAPS" since="2.48"/>
+    <keyword type="macro" name="GWY_STOCK_XYZIZE" link="libgwydgets-gwystock.html#GWY-STOCK-XYZIZE:CAPS" since="2.50"/>
+    <keyword type="macro" name="GWY_STOCK_ZERO_MAXIMUM" link="libgwydgets-gwystock.html#GWY-STOCK-ZERO-MAXIMUM:CAPS" since="2.59"/>
+    <keyword type="macro" name="GWY_STOCK_ZERO_MEAN" link="libgwydgets-gwystock.html#GWY-STOCK-ZERO-MEAN:CAPS" since="2.45"/>
+    <keyword type="macro" name="GWY_STOCK_ZERO_UNDER_MASK" link="libgwydgets-gwystock.html#GWY-STOCK-ZERO-UNDER-MASK:CAPS" since="2.61"/>
+    <keyword type="macro" name="GWY_STOCK_ZOOM_1_1" link="libgwydgets-gwystock.html#GWY-STOCK-ZOOM-1-1:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_ZOOM_FIT" link="libgwydgets-gwystock.html#GWY-STOCK-ZOOM-FIT:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_ZOOM_IN" link="libgwydgets-gwystock.html#GWY-STOCK-ZOOM-IN:CAPS"/>
+    <keyword type="macro" name="GWY_STOCK_ZOOM_OUT" link="libgwydgets-gwystock.html#GWY-STOCK-ZOOM-OUT:CAPS"/>
+    <keyword type="macro" name="GWY_ICON_SIZE_ABOUT" link="libgwydgets-gwystock.html#GWY-ICON-SIZE-ABOUT:CAPS"/>
+    <keyword type="function" name="gwy_menu_gradient ()" link="libgwydgets-gwyoptionmenus.html#gwy-menu-gradient"/>
+    <keyword type="function" name="gwy_gradient_selection_new ()" link="libgwydgets-gwyoptionmenus.html#gwy-gradient-selection-new"/>
+    <keyword type="function" name="gwy_gradient_tree_view_new ()" link="libgwydgets-gwyoptionmenus.html#gwy-gradient-tree-view-new"/>
+    <keyword type="function" name="gwy_gradient_tree_view_set_active ()" link="libgwydgets-gwyoptionmenus.html#gwy-gradient-tree-view-set-active"/>
+    <keyword type="function" name="gwy_gradient_selection_get_active ()" link="libgwydgets-gwyoptionmenus.html#gwy-gradient-selection-get-active"/>
+    <keyword type="function" name="gwy_gradient_selection_set_active ()" link="libgwydgets-gwyoptionmenus.html#gwy-gradient-selection-set-active"/>
+    <keyword type="function" name="gwy_menu_gl_material ()" link="libgwydgets-gwyoptionmenus.html#gwy-menu-gl-material"/>
+    <keyword type="function" name="gwy_gl_material_selection_new ()" link="libgwydgets-gwyoptionmenus.html#gwy-gl-material-selection-new"/>
+    <keyword type="function" name="gwy_gl_material_tree_view_new ()" link="libgwydgets-gwyoptionmenus.html#gwy-gl-material-tree-view-new"/>
+    <keyword type="function" name="gwy_gl_material_tree_view_set_active ()" link="libgwydgets-gwyoptionmenus.html#gwy-gl-material-tree-view-set-active"/>
+    <keyword type="function" name="gwy_gl_material_selection_get_active ()" link="libgwydgets-gwyoptionmenus.html#gwy-gl-material-selection-get-active"/>
+    <keyword type="function" name="gwy_gl_material_selection_set_active ()" link="libgwydgets-gwyoptionmenus.html#gwy-gl-material-selection-set-active"/>
+    <keyword type="function" name="gwy_resource_tree_view_set_active ()" link="libgwydgets-gwyoptionmenus.html#gwy-resource-tree-view-set-active"/>
+    <keyword type="function" name="gwy_grain_value_tree_view_new ()" link="libgwydgets-gwygrainvaluemenu.html#gwy-grain-value-tree-view-new" since="2.8"/>
+    <keyword type="function" name="gwy_grain_value_tree_view_set_expanded_groups ()" link="libgwydgets-gwygrainvaluemenu.html#gwy-grain-value-tree-view-set-expanded-groups" since="2.8"/>
+    <keyword type="function" name="gwy_grain_value_tree_view_get_expanded_groups ()" link="libgwydgets-gwygrainvaluemenu.html#gwy-grain-value-tree-view-get-expanded-groups" since="2.8"/>
+    <keyword type="function" name="gwy_grain_value_tree_view_n_enabled ()" link="libgwydgets-gwygrainvaluemenu.html#gwy-grain-value-tree-view-n-enabled" since="2.8"/>
+    <keyword type="function" name="gwy_grain_value_tree_view_get_enabled ()" link="libgwydgets-gwygrainvaluemenu.html#gwy-grain-value-tree-view-get-enabled" since="2.8"/>
+    <keyword type="function" name="gwy_grain_value_tree_view_set_enabled ()" link="libgwydgets-gwygrainvaluemenu.html#gwy-grain-value-tree-view-set-enabled" since="2.8"/>
+    <keyword type="function" name="gwy_grain_value_tree_view_select ()" link="libgwydgets-gwygrainvaluemenu.html#gwy-grain-value-tree-view-select" since="2.8"/>
+    <keyword type="function" name="gwy_grain_value_tree_view_set_same_units ()" link="libgwydgets-gwygrainvaluemenu.html#gwy-grain-value-tree-view-set-same-units" since="2.8"/>
+    <keyword type="enum" name="enum GwyGrainValueStoreColumn" link="libgwydgets-gwygrainvaluemenu.html#GwyGrainValueStoreColumn" since="2.8"/>
+    <keyword type="function" name="gwy_enum_combo_box_new ()" link="libgwydgets-gwycombobox.html#gwy-enum-combo-box-new"/>
+    <keyword type="function" name="gwy_enum_combo_box_newl ()" link="libgwydgets-gwycombobox.html#gwy-enum-combo-box-newl" since="2.5"/>
+    <keyword type="function" name="gwy_combo_box_metric_unit_new ()" link="libgwydgets-gwycombobox.html#gwy-combo-box-metric-unit-new"/>
+    <keyword type="function" name="gwy_combo_box_metric_unit_set_unit ()" link="libgwydgets-gwycombobox.html#gwy-combo-box-metric-unit-set-unit" since="2.5"/>
+    <keyword type="function" name="gwy_combo_box_graph_curve_new ()" link="libgwydgets-gwycombobox.html#gwy-combo-box-graph-curve-new" since="2.45"/>
+    <keyword type="function" name="gwy_combo_box_lawn_curve_new ()" link="libgwydgets-gwycombobox.html#gwy-combo-box-lawn-curve-new" since="2.60"/>
+    <keyword type="function" name="gwy_combo_box_lawn_segment_new ()" link="libgwydgets-gwycombobox.html#gwy-combo-box-lawn-segment-new" since="2.60"/>
+    <keyword type="function" name="gwy_enum_combo_box_set_active ()" link="libgwydgets-gwycombobox.html#gwy-enum-combo-box-set-active"/>
+    <keyword type="function" name="gwy_enum_combo_box_get_active ()" link="libgwydgets-gwycombobox.html#gwy-enum-combo-box-get-active"/>
+    <keyword type="function" name="gwy_enum_combo_box_update_int ()" link="libgwydgets-gwycombobox.html#gwy-enum-combo-box-update-int"/>
+    <keyword type="function" name="gwy_radio_buttons_create ()" link="libgwydgets-gwyradiobuttons.html#gwy-radio-buttons-create"/>
+    <keyword type="function" name="gwy_radio_buttons_createl ()" link="libgwydgets-gwyradiobuttons.html#gwy-radio-buttons-createl" since="2.5"/>
+    <keyword type="function" name="gwy_radio_buttons_attach_to_table ()" link="libgwydgets-gwyradiobuttons.html#gwy-radio-buttons-attach-to-table" since="2.1"/>
+    <keyword type="function" name="gwy_radio_buttons_set_current ()" link="libgwydgets-gwyradiobuttons.html#gwy-radio-buttons-set-current"/>
+    <keyword type="function" name="gwy_radio_buttons_get_current ()" link="libgwydgets-gwyradiobuttons.html#gwy-radio-buttons-get-current"/>
+    <keyword type="function" name="gwy_radio_buttons_find ()" link="libgwydgets-gwyradiobuttons.html#gwy-radio-buttons-find"/>
+    <keyword type="function" name="gwy_radio_buttons_set_sensitive ()" link="libgwydgets-gwyradiobuttons.html#gwy-radio-buttons-set-sensitive" since="2.51"/>
+    <keyword type="function" name="gwy_radio_button_get_value ()" link="libgwydgets-gwyradiobuttons.html#gwy-radio-button-get-value"/>
+    <keyword type="function" name="gwy_radio_button_set_value ()" link="libgwydgets-gwyradiobuttons.html#gwy-radio-button-set-value"/>
+    <keyword type="function" name="gwy_check_boxes_create ()" link="libgwydgets-gwycheckboxes.html#gwy-check-boxes-create" since="2.51"/>
+    <keyword type="function" name="gwy_check_boxes_createl ()" link="libgwydgets-gwycheckboxes.html#gwy-check-boxes-createl" since="2.51"/>
+    <keyword type="function" name="gwy_check_boxes_attach_to_table ()" link="libgwydgets-gwycheckboxes.html#gwy-check-boxes-attach-to-table" since="2.51"/>
+    <keyword type="function" name="gwy_check_boxes_set_selected ()" link="libgwydgets-gwycheckboxes.html#gwy-check-boxes-set-selected" since="2.51"/>
+    <keyword type="function" name="gwy_check_boxes_get_selected ()" link="libgwydgets-gwycheckboxes.html#gwy-check-boxes-get-selected" since="2.51"/>
+    <keyword type="function" name="gwy_check_box_get_group ()" link="libgwydgets-gwycheckboxes.html#gwy-check-box-get-group" since="2.51"/>
+    <keyword type="function" name="gwy_check_boxes_find ()" link="libgwydgets-gwycheckboxes.html#gwy-check-boxes-find" since="2.51"/>
+    <keyword type="function" name="gwy_check_boxes_set_sensitive ()" link="libgwydgets-gwycheckboxes.html#gwy-check-boxes-set-sensitive" since="2.51"/>
+    <keyword type="function" name="gwy_check_box_get_value ()" link="libgwydgets-gwycheckboxes.html#gwy-check-box-get-value" since="2.51"/>
+    <keyword type="function" name="gwy_sensitivity_group_new ()" link="GwySensitivityGroup.html#gwy-sensitivity-group-new"/>
+    <keyword type="function" name="gwy_sensitivity_group_add_widget ()" link="GwySensitivityGroup.html#gwy-sensitivity-group-add-widget"/>
+    <keyword type="function" name="gwy_sensitivity_group_set_state ()" link="GwySensitivityGroup.html#gwy-sensitivity-group-set-state"/>
+    <keyword type="function" name="gwy_sensitivity_group_get_state ()" link="GwySensitivityGroup.html#gwy-sensitivity-group-get-state"/>
+    <keyword type="function" name="gwy_sensitivity_group_release_widget ()" link="GwySensitivityGroup.html#gwy-sensitivity-group-release-widget"/>
+    <keyword type="function" name="gwy_sensitivity_group_get_widget_mask ()" link="GwySensitivityGroup.html#gwy-sensitivity-group-get-widget-mask"/>
+    <keyword type="function" name="gwy_sensitivity_group_set_widget_mask ()" link="GwySensitivityGroup.html#gwy-sensitivity-group-set-widget-mask"/>
+    <keyword type="function" name="gwy_sensitivity_group_contains_widget ()" link="GwySensitivityGroup.html#gwy-sensitivity-group-contains-widget" since="2.34"/>
+    <keyword type="struct" name="struct GwySensitivityGroup" link="GwySensitivityGroup.html#GwySensitivityGroup-struct"/>
+    <keyword type="struct" name="struct GwySensitivityGroupClass" link="GwySensitivityGroup.html#GwySensitivityGroupClass"/>
+    <keyword type="constant" name="GWY_SCALE_MAPPING_LINEAR" link="GwyAdjustBar.html#GWY-SCALE-MAPPING-LINEAR:CAPS"/>
+    <keyword type="constant" name="GWY_SCALE_MAPPING_SQRT" link="GwyAdjustBar.html#GWY-SCALE-MAPPING-SQRT:CAPS"/>
+    <keyword type="constant" name="GWY_SCALE_MAPPING_LOG" link="GwyAdjustBar.html#GWY-SCALE-MAPPING-LOG:CAPS"/>
+    <keyword type="constant" name="GWY_AXIS_SCALE_FORMAT_AUTO" link="libgwydgets-gwydgetenums.html#GWY-AXIS-SCALE-FORMAT-AUTO:CAPS"/>
+    <keyword type="constant" name="GWY_AXIS_SCALE_FORMAT_EXP" link="libgwydgets-gwydgetenums.html#GWY-AXIS-SCALE-FORMAT-EXP:CAPS"/>
+    <keyword type="constant" name="GWY_AXIS_SCALE_FORMAT_INT" link="libgwydgets-gwydgetenums.html#GWY-AXIS-SCALE-FORMAT-INT:CAPS"/>
+    <keyword type="constant" name="GWY_3D_MOVEMENT_NONE" link="libgwydgets-gwydgetenums.html#GWY-3D-MOVEMENT-NONE:CAPS"/>
+    <keyword type="constant" name="GWY_3D_MOVEMENT_ROTATION" link="libgwydgets-gwydgetenums.html#GWY-3D-MOVEMENT-ROTATION:CAPS"/>
+    <keyword type="constant" name="GWY_3D_MOVEMENT_SCALE" link="libgwydgets-gwydgetenums.html#GWY-3D-MOVEMENT-SCALE:CAPS"/>
+    <keyword type="constant" name="GWY_3D_MOVEMENT_DEFORMATION" link="libgwydgets-gwydgetenums.html#GWY-3D-MOVEMENT-DEFORMATION:CAPS"/>
+    <keyword type="constant" name="GWY_3D_MOVEMENT_LIGHT" link="libgwydgets-gwydgetenums.html#GWY-3D-MOVEMENT-LIGHT:CAPS"/>
+    <keyword type="constant" name="GWY_3D_PROJECTION_ORTHOGRAPHIC" link="libgwydgets-gwydgetenums.html#GWY-3D-PROJECTION-ORTHOGRAPHIC:CAPS"/>
+    <keyword type="constant" name="GWY_3D_PROJECTION_PERSPECTIVE" link="libgwydgets-gwydgetenums.html#GWY-3D-PROJECTION-PERSPECTIVE:CAPS"/>
+    <keyword type="constant" name="GWY_3D_VISUALIZATION_GRADIENT" link="libgwydgets-gwydgetenums.html#GWY-3D-VISUALIZATION-GRADIENT:CAPS"/>
+    <keyword type="constant" name="GWY_3D_VISUALIZATION_LIGHTING" link="libgwydgets-gwydgetenums.html#GWY-3D-VISUALIZATION-LIGHTING:CAPS"/>
+    <keyword type="constant" name="GWY_3D_VISUALIZATION_OVERLAY" link="libgwydgets-gwydgetenums.html#GWY-3D-VISUALIZATION-OVERLAY:CAPS"/>
+    <keyword type="constant" name="GWY_3D_VISUALIZATION_OVERLAY_NO_LIGHT" link="libgwydgets-gwydgetenums.html#GWY-3D-VISUALIZATION-OVERLAY-NO-LIGHT:CAPS"/>
+    <keyword type="constant" name="GWY_3D_VIEW_LABEL_X" link="libgwydgets-gwydgetenums.html#GWY-3D-VIEW-LABEL-X:CAPS"/>
+    <keyword type="constant" name="GWY_3D_VIEW_LABEL_Y" link="libgwydgets-gwydgetenums.html#GWY-3D-VIEW-LABEL-Y:CAPS"/>
+    <keyword type="constant" name="GWY_3D_VIEW_LABEL_MIN" link="libgwydgets-gwydgetenums.html#GWY-3D-VIEW-LABEL-MIN:CAPS"/>
+    <keyword type="constant" name="GWY_3D_VIEW_LABEL_MAX" link="libgwydgets-gwydgetenums.html#GWY-3D-VIEW-LABEL-MAX:CAPS"/>
+    <keyword type="constant" name="GWY_3D_VIEW_NLABELS" link="libgwydgets-gwydgetenums.html#GWY-3D-VIEW-NLABELS:CAPS"/>
+    <keyword type="constant" name="GWY_UNITS_PLACEMENT_NONE" link="libgwydgets-gwydgetenums.html#GWY-UNITS-PLACEMENT-NONE:CAPS"/>
+    <keyword type="constant" name="GWY_UNITS_PLACEMENT_AT_ZERO" link="libgwydgets-gwydgetenums.html#GWY-UNITS-PLACEMENT-AT-ZERO:CAPS"/>
+    <keyword type="constant" name="GWY_HSCALE_DEFAULT" link="libgwydgets-gwydgetenums.html#GWY-HSCALE-DEFAULT:CAPS"/>
+    <keyword type="constant" name="GWY_HSCALE_LOG" link="libgwydgets-gwydgetenums.html#GWY-HSCALE-LOG:CAPS"/>
+    <keyword type="constant" name="GWY_HSCALE_SQRT" link="libgwydgets-gwydgetenums.html#GWY-HSCALE-SQRT:CAPS"/>
+    <keyword type="constant" name="GWY_HSCALE_LINEAR" link="libgwydgets-gwydgetenums.html#GWY-HSCALE-LINEAR:CAPS"/>
+    <keyword type="constant" name="GWY_HSCALE_NO_SCALE" link="libgwydgets-gwydgetenums.html#GWY-HSCALE-NO-SCALE:CAPS"/>
+    <keyword type="constant" name="GWY_HSCALE_WIDGET" link="libgwydgets-gwydgetenums.html#GWY-HSCALE-WIDGET:CAPS"/>
+    <keyword type="constant" name="GWY_HSCALE_WIDGET_NO_EXPAND" link="libgwydgets-gwydgetenums.html#GWY-HSCALE-WIDGET-NO-EXPAND:CAPS"/>
+    <keyword type="constant" name="GWY_HSCALE_CHECK" link="libgwydgets-gwydgetenums.html#GWY-HSCALE-CHECK:CAPS"/>
+    <keyword type="constant" name="GWY_HSCALE_SNAP" link="libgwydgets-gwydgetenums.html#GWY-HSCALE-SNAP:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_STATUS_PLAIN" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-STATUS-PLAIN:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_STATUS_XSEL" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-STATUS-XSEL:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_STATUS_YSEL" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-STATUS-YSEL:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_STATUS_POINTS" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-STATUS-POINTS:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_STATUS_ZOOM" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-STATUS-ZOOM:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_STATUS_XLINES" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-STATUS-XLINES:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_STATUS_YLINES" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-STATUS-YLINES:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_GRID_NONE" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-GRID-NONE:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_GRID_AUTO" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-GRID-AUTO:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_GRID_USER" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-GRID-USER:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_POINT_SQUARE" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-POINT-SQUARE:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_POINT_CROSS" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-POINT-CROSS:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_POINT_CIRCLE" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-POINT-CIRCLE:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_POINT_STAR" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-POINT-STAR:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_POINT_TIMES" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-POINT-TIMES:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_POINT_TRIANGLE_UP" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-POINT-TRIANGLE-UP:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_POINT_TRIANGLE_DOWN" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-POINT-TRIANGLE-DOWN:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_POINT_DIAMOND" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-POINT-DIAMOND:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_POINT_FILLED_SQUARE" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-POINT-FILLED-SQUARE:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_POINT_DISC" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-POINT-DISC:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_POINT_FILLED_CIRCLE" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-POINT-FILLED-CIRCLE:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_POINT_FILLED_TRIANGLE_UP" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-POINT-FILLED-TRIANGLE-UP:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_POINT_FILLED_TRIANGLE_DOWN" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-POINT-FILLED-TRIANGLE-DOWN:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_POINT_FILLED_DIAMOND" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-POINT-FILLED-DIAMOND:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_POINT_TRIANGLE_LEFT" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-POINT-TRIANGLE-LEFT:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_POINT_FILLED_TRIANGLE_LEFT" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-POINT-FILLED-TRIANGLE-LEFT:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_POINT_TRIANGLE_RIGHT" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-POINT-TRIANGLE-RIGHT:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_POINT_FILLED_TRIANGLE_RIGHT" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-POINT-FILLED-TRIANGLE-RIGHT:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_POINT_ASTERISK" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-POINT-ASTERISK:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_CURVE_HIDDEN" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-CURVE-HIDDEN:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_CURVE_POINTS" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-CURVE-POINTS:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_CURVE_LINE" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-CURVE-LINE:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_CURVE_LINE_POINTS" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-CURVE-LINE-POINTS:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_LABEL_NORTHEAST" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-LABEL-NORTHEAST:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_LABEL_NORTHWEST" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-LABEL-NORTHWEST:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_LABEL_SOUTHEAST" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-LABEL-SOUTHEAST:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_LABEL_SOUTHWEST" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-LABEL-SOUTHWEST:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_LABEL_USER" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-LABEL-USER:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_MODEL_EXPORT_ASCII_PLAIN" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-MODEL-EXPORT-ASCII-PLAIN:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_MODEL_EXPORT_ASCII_GNUPLOT" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-MODEL-EXPORT-ASCII-GNUPLOT:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_MODEL_EXPORT_ASCII_CSV" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-MODEL-EXPORT-ASCII-CSV:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_MODEL_EXPORT_ASCII_ORIGIN" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-MODEL-EXPORT-ASCII-ORIGIN:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_MODEL_EXPORT_ASCII_IGORPRO" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-MODEL-EXPORT-ASCII-IGORPRO:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_MODEL_EXPORT_ASCII_POSIX" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-MODEL-EXPORT-ASCII-POSIX:CAPS"/>
+    <keyword type="constant" name="GWY_GRAPH_MODEL_EXPORT_ASCII_MERGED" link="libgwydgets-gwydgetenums.html#GWY-GRAPH-MODEL-EXPORT-ASCII-MERGED:CAPS"/>
+    <keyword type="constant" name="GWY_LAYER_BASIC_RANGE_FULL" link="libgwydgets-gwydgetenums.html#GWY-LAYER-BASIC-RANGE-FULL:CAPS"/>
+    <keyword type="constant" name="GWY_LAYER_BASIC_RANGE_FIXED" link="libgwydgets-gwydgetenums.html#GWY-LAYER-BASIC-RANGE-FIXED:CAPS"/>
+    <keyword type="constant" name="GWY_LAYER_BASIC_RANGE_AUTO" link="libgwydgets-gwydgetenums.html#GWY-LAYER-BASIC-RANGE-AUTO:CAPS"/>
+    <keyword type="constant" name="GWY_LAYER_BASIC_RANGE_ADAPT" link="libgwydgets-gwydgetenums.html#GWY-LAYER-BASIC-RANGE-ADAPT:CAPS"/>
+    <keyword type="constant" name="GWY_CURVE_TYPE_LINEAR" link="libgwydgets-gwydgetenums.html#GWY-CURVE-TYPE-LINEAR:CAPS"/>
+    <keyword type="constant" name="GWY_CURVE_TYPE_SPLINE" link="libgwydgets-gwydgetenums.html#GWY-CURVE-TYPE-SPLINE:CAPS"/>
+    <keyword type="constant" name="GWY_CURVE_TYPE_FREE" link="libgwydgets-gwydgetenums.html#GWY-CURVE-TYPE-FREE:CAPS"/>
+    <keyword type="constant" name="GWY_CURVE_CHANNEL_RED" link="libgwydgets-gwydgetenums.html#GWY-CURVE-CHANNEL-RED:CAPS"/>
+    <keyword type="constant" name="GWY_CURVE_CHANNEL_GREEN" link="libgwydgets-gwydgetenums.html#GWY-CURVE-CHANNEL-GREEN:CAPS"/>
+    <keyword type="constant" name="GWY_CURVE_CHANNEL_BLUE" link="libgwydgets-gwydgetenums.html#GWY-CURVE-CHANNEL-BLUE:CAPS"/>
+    <keyword type="constant" name="GWY_MARKER_OPERATION_MOVE" link="libgwydgets-gwydgetenums.html#GWY-MARKER-OPERATION-MOVE:CAPS"/>
+    <keyword type="constant" name="GWY_MARKER_OPERATION_ADD" link="libgwydgets-gwydgetenums.html#GWY-MARKER-OPERATION-ADD:CAPS"/>
+    <keyword type="constant" name="GWY_MARKER_OPERATION_REMOVE" link="libgwydgets-gwydgetenums.html#GWY-MARKER-OPERATION-REMOVE:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_VIEW_LAYER_BASE" link="libgwydgets-gwydgetenums.html#GWY-DATA-VIEW-LAYER-BASE:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_VIEW_LAYER_ALPHA" link="libgwydgets-gwydgetenums.html#GWY-DATA-VIEW-LAYER-ALPHA:CAPS"/>
+    <keyword type="constant" name="GWY_DATA_VIEW_LAYER_TOP" link="libgwydgets-gwydgetenums.html#GWY-DATA-VIEW-LAYER-TOP:CAPS"/>
+    <keyword type="constant" name="GWY_TICKS_STYLE_NONE" link="libgwydgets-gwydgetenums.html#GWY-TICKS-STYLE-NONE:CAPS"/>
+    <keyword type="constant" name="GWY_TICKS_STYLE_CENTER" link="libgwydgets-gwydgetenums.html#GWY-TICKS-STYLE-CENTER:CAPS"/>
+    <keyword type="constant" name="GWY_TICKS_STYLE_AUTO" link="libgwydgets-gwydgetenums.html#GWY-TICKS-STYLE-AUTO:CAPS"/>
+    <keyword type="constant" name="GWY_TICKS_STYLE_UNLABELED" link="libgwydgets-gwydgetenums.html#GWY-TICKS-STYLE-UNLABELED:CAPS"/>
+    <keyword type="constant" name="GWY_TICKS_STYLE_UNLABELLED" link="libgwydgets-gwydgetenums.html#GWY-TICKS-STYLE-UNLABELLED:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_STORE_COLUMN_ITEM" link="libgwydgets-gwygrainvaluemenu.html#GWY-GRAIN-VALUE-STORE-COLUMN-ITEM:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_STORE_COLUMN_GROUP" link="libgwydgets-gwygrainvaluemenu.html#GWY-GRAIN-VALUE-STORE-COLUMN-GROUP:CAPS"/>
+    <keyword type="constant" name="GWY_GRAIN_VALUE_STORE_COLUMN_ENABLED" link="libgwydgets-gwygrainvaluemenu.html#GWY-GRAIN-VALUE-STORE-COLUMN-ENABLED:CAPS"/>
+    <keyword type="member" name="GwyGraphActiveAreaSpecs.xmin" link="libgwydgets-GwyGraphBasics.html#GwyGraphActiveAreaSpecs.xmin"/>
+    <keyword type="member" name="GwyGraphActiveAreaSpecs.ymin" link="libgwydgets-GwyGraphBasics.html#GwyGraphActiveAreaSpecs.ymin"/>
+    <keyword type="member" name="GwyGraphActiveAreaSpecs.height" link="libgwydgets-GwyGraphBasics.html#GwyGraphActiveAreaSpecs.height"/>
+    <keyword type="member" name="GwyGraphActiveAreaSpecs.width" link="libgwydgets-GwyGraphBasics.html#GwyGraphActiveAreaSpecs.width"/>
+    <keyword type="member" name="GwyGraphActiveAreaSpecs.real-xmin" link="libgwydgets-GwyGraphBasics.html#GwyGraphActiveAreaSpecs.real-xmin"/>
+    <keyword type="member" name="GwyGraphActiveAreaSpecs.real-ymin" link="libgwydgets-GwyGraphBasics.html#GwyGraphActiveAreaSpecs.real-ymin"/>
+    <keyword type="member" name="GwyGraphActiveAreaSpecs.real-height" link="libgwydgets-GwyGraphBasics.html#GwyGraphActiveAreaSpecs.real-height"/>
+    <keyword type="member" name="GwyGraphActiveAreaSpecs.real-width" link="libgwydgets-GwyGraphBasics.html#GwyGraphActiveAreaSpecs.real-width"/>
+    <keyword type="member" name="GwyGraphActiveAreaSpecs.log-x" link="libgwydgets-GwyGraphBasics.html#GwyGraphActiveAreaSpecs.log-x"/>
+    <keyword type="member" name="GwyGraphActiveAreaSpecs.log-y" link="libgwydgets-GwyGraphBasics.html#GwyGraphActiveAreaSpecs.log-y"/>
+  </functions>
+</book>

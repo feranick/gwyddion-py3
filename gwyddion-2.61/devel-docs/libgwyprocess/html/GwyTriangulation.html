@@ -1,0 +1,636 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>triangulation: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="libgwyprocess-synth.html" title="synth">
+<link rel="next" href="libgwyprocess-gwyprocess.html" title="gwyprocess">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyTriangulation.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyTriangulation.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyprocess-synth.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyprocess-gwyprocess.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyTriangulation"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyTriangulation.top_of_page"></a>triangulation</span></h2>
+<p>triangulation — Delaunay and Voronoi triangulation and interpolation</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyTriangulation.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyTriangulation.html" title="triangulation"><span class="returnvalue">GwyTriangulation</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyTriangulation.html#gwy-triangulation-new" title="gwy_triangulation_new ()">gwy_triangulation_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyTriangulation.html#gwy-triangulation-triangulate" title="gwy_triangulation_triangulate ()">gwy_triangulation_triangulate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyTriangulation.html#gwy-triangulation-triangulate-iterative" title="gwy_triangulation_triangulate_iterative ()">gwy_triangulation_triangulate_iterative</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyTriangulation.html#gwy-triangulation-interpolate" title="gwy_triangulation_interpolate ()">gwy_triangulation_interpolate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyTriangulation.html#gwy-triangulation-data-free" title="gwy_triangulation_data_free ()">gwy_triangulation_data_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyTriangulation.html#GwyTriangulationData" title="GwyTriangulationData"><span class="returnvalue">GwyTriangulationData</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyTriangulation.html#gwy-triangulation-delaunay" title="gwy_triangulation_delaunay ()">gwy_triangulation_delaunay</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyTriangulation.html#GwyTriangulationData" title="GwyTriangulationData"><span class="returnvalue">GwyTriangulationData</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyTriangulation.html#gwy-triangulation-boundary" title="gwy_triangulation_boundary ()">gwy_triangulation_boundary</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyTriangulation.html#GwyTriangulationData" title="GwyTriangulationData"><span class="returnvalue">GwyTriangulationData</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyTriangulation.html#gwy-triangulation-voronoi" title="gwy_triangulation_voronoi ()">gwy_triangulation_voronoi</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyTriangulation.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="GwyTriangulation.html#GWY-TRIANGULATION-NONE:CAPS" title="GWY_TRIANGULATION_NONE">GWY_TRIANGULATION_NONE</a></td>
+</tr>
+<tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="GwyTriangulation.html#GwyTriangulationPointXY" title="GwyTriangulationPointXY">GwyTriangulationPointXY</a></td>
+</tr>
+<tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="GwyTriangulation.html#GwyTriangulationPointXYZ" title="GwyTriangulationPointXYZ">GwyTriangulationPointXYZ</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GwyTriangulation.html#GwyTriangulationData" title="GwyTriangulationData">GwyTriangulationData</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyTriangulation.html#GwyTriangulation-struct" title="struct GwyTriangulation">GwyTriangulation</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyTriangulation.html#GwyTriangulationClass" title="struct GwyTriangulationClass">GwyTriangulationClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyTriangulation.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> GwyTriangulation
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyTriangulation.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyTriangulation.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="GwyTriangulation.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-triangulation-new"></a><h3>gwy_triangulation_new ()</h3>
+<pre class="programlisting"><a class="link" href="GwyTriangulation.html" title="triangulation"><span class="returnvalue">GwyTriangulation</span></a> *
+gwy_triangulation_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new triangulation.</p>
+<div class="refsect3">
+<a name="gwy-triangulation-new.returns"></a><h4>Returns</h4>
+<p> A new empty triangulation.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-triangulation-triangulate"></a><h3>gwy_triangulation_triangulate ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_triangulation_triangulate (<em class="parameter"><code><a class="link" href="GwyTriangulation.html" title="triangulation"><span class="type">GwyTriangulation</span></a> *triangulation</code></em>,
+                               <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> npoints</code></em>,
+                               <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> points</code></em>,
+                               <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> point_size</code></em>);</pre>
+<p>Finds Delaunay and Voronoi triangulations for a set of points in plane.</p>
+<p>The triangulation might not work in numerically unstable cases.  At present
+this includes various ambiguous cases with neighbour points on straight
+lines or circles.  Also, no points in the input set may coincide.</p>
+<p>It is possible to call this method successively on several different sets
+of points to triangulate each separately.  Note that pointers in data
+returned by methods such as <a class="link" href="GwyTriangulation.html#gwy-triangulation-delaunay" title="gwy_triangulation_delaunay ()"><code class="function">gwy_triangulation_delaunay()</code></a> become invalid
+then.</p>
+<div class="refsect3">
+<a name="gwy-triangulation-triangulate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>triangulation</p></td>
+<td class="parameter_description"><p>Triangulation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>npoints</p></td>
+<td class="parameter_description"><p>Number of points.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>points</p></td>
+<td class="parameter_description"><p>Array of points.  They must be typecastable to
+<a href="../libgwyddion-Math.html#GwyXY"><span class="type">GwyXY</span></a> for triangulation and to
+<a href="../libgwyddion-Math.html#GwyXYZ"><span class="type">GwyXYZ</span></a> for interpolation.  However, they can be
+larger than that.  The actual struct size is indicated by
+<em class="parameter"><code>point_size</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>point_size</p></td>
+<td class="parameter_description"><p>Size of point struct, in bytes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-triangulation-triangulate.returns"></a><h4>Returns</h4>
+<p> <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success, <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> on failure.  On failure the triangulation
+is empty.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-triangulation-triangulate-iterative"></a><h3>gwy_triangulation_triangulate_iterative ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_triangulation_triangulate_iterative
+                               (<em class="parameter"><code><a class="link" href="GwyTriangulation.html" title="triangulation"><span class="type">GwyTriangulation</span></a> *triangulation</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> npoints</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> points</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> point_size</code></em>,
+                                <em class="parameter"><code><a href="../libgwyddion-gwyutils.html#GwySetFractionFunc"><span class="type">GwySetFractionFunc</span></a> set_fraction</code></em>,
+                                <em class="parameter"><code><a href="../libgwyddion-gwyutils.html#GwySetMessageFunc"><span class="type">GwySetMessageFunc</span></a> set_message</code></em>);</pre>
+<p>Finds Delaunay and Voronoi triangulations for a set of points in plane.</p>
+<p>See <a class="link" href="GwyTriangulation.html#gwy-triangulation-triangulate" title="gwy_triangulation_triangulate ()"><code class="function">gwy_triangulation_triangulate()</code></a> for discussion.  This function differs
+only by the optional <em class="parameter"><code>set_fraction</code></em>
+ and <em class="parameter"><code>set_message</code></em>
+ arguments that permit
+providing user feedback for large triangulations and cancelling the
+procedure upon request.</p>
+<div class="refsect3">
+<a name="gwy-triangulation-triangulate-iterative.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>triangulation</p></td>
+<td class="parameter_description"><p>Triangulation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>npoints</p></td>
+<td class="parameter_description"><p>Number of points.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>points</p></td>
+<td class="parameter_description"><p>Array of points.  They must be typecastable to <a href="../libgwyddion-Math.html#GwyXY"><span class="type">GwyXY</span></a> for
+triangulation and to <a href="../libgwyddion-Math.html#GwyXYZ"><span class="type">GwyXYZ</span></a> for interpolation.  However, they can
+be larger than that.  The actual struct size is indicated by
+<em class="parameter"><code>point_size</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>point_size</p></td>
+<td class="parameter_description"><p>Size of point struct, in bytes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set_fraction</p></td>
+<td class="parameter_description"><p>Function that sets fraction to output (or <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set_message</p></td>
+<td class="parameter_description"><p>Function that sets message to output (or <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-triangulation-triangulate-iterative.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> on failure.  On failure the triangulation
+is empty.  Cancellation via <em class="parameter"><code>set_fraction</code></em>
+or <em class="parameter"><code>set_message</code></em>
+callback also counts as failure.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-44.html#api-index-2.44">2.44</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-triangulation-interpolate"></a><h3>gwy_triangulation_interpolate ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_triangulation_interpolate (<em class="parameter"><code><a class="link" href="GwyTriangulation.html" title="triangulation"><span class="type">GwyTriangulation</span></a> *triangulation</code></em>,
+                               <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interpolation</code></em>,
+                               <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dfield</code></em>);</pre>
+<p>Regularizes XYZ data to a grid, represented by a data field.</p>
+<p>The area and resolution of the regular grid is given by the dimensions and
+offsets of <em class="parameter"><code>dfield</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-triangulation-interpolate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>triangulation</p></td>
+<td class="parameter_description"><p>Triangulation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interpolation</p></td>
+<td class="parameter_description"><p>Interpolation to use.  Only <em class="parameter"><code>GWY_INTERPOLATION_ROUND</code></em>
+and
+<em class="parameter"><code>GWY_INTERPOLATION_LINEAR</code></em>
+are implemented.  Is is an error
+to pass any other interpolation type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dfield</p></td>
+<td class="parameter_description"><p>Data field to fill with interpolated values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-triangulation-interpolate.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the interpolation succeeds, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> on failure, e.g. due to
+numerical errors.  In the latter case the contents of <em class="parameter"><code>dfield</code></em>
+is
+undefined.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-triangulation-data-free"></a><h3>gwy_triangulation_data_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_triangulation_data_free (<em class="parameter"><code><a class="link" href="GwyTriangulation.html#GwyTriangulationData" title="GwyTriangulationData"><span class="type">GwyTriangulationData</span></a> *triangulation_data</code></em>);</pre>
+<p>Frees raw triangulation data.</p>
+<p>This function should be used to free triangulation data returned by
+<a class="link" href="GwyTriangulation.html#gwy-triangulation-delaunay" title="gwy_triangulation_delaunay ()"><code class="function">gwy_triangulation_delaunay()</code></a> and similar.  It does not free the array
+members as they are owned by the triangulation object.</p>
+<div class="refsect3">
+<a name="gwy-triangulation-data-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>triangulation_data</p></td>
+<td class="parameter_description"><p>Raw triangulation data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-triangulation-delaunay"></a><h3>gwy_triangulation_delaunay ()</h3>
+<pre class="programlisting"><a class="link" href="GwyTriangulation.html#GwyTriangulationData" title="GwyTriangulationData"><span class="returnvalue">GwyTriangulationData</span></a> *
+gwy_triangulation_delaunay (<em class="parameter"><code><a class="link" href="GwyTriangulation.html" title="triangulation"><span class="type">GwyTriangulation</span></a> *triangulation</code></em>);</pre>
+<p>Obtains the Delaunay triangulation data.</p>
+<p>Notes to the fields in the returned struct:</p>
+<p><em class="parameter"><code>npoints</code></em>
+ equals to the number of points passed to
+<a class="link" href="GwyTriangulation.html#gwy-triangulation-triangulate" title="gwy_triangulation_triangulate ()"><code class="function">gwy_triangulation_triangulate()</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-triangulation-delaunay.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>triangulation</p></td>
+<td class="parameter_description"><p>Triangulation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-triangulation-delaunay.returns"></a><h4>Returns</h4>
+<p> Newly clreated <a class="link" href="GwyTriangulation.html#GwyTriangulationData" title="GwyTriangulationData"><span class="type">GwyTriangulationData</span></a> that must be freed with
+<a class="link" href="GwyTriangulation.html#gwy-triangulation-data-free" title="gwy_triangulation_data_free ()"><code class="function">gwy_triangulation_data_free()</code></a> when no longer used.  The data within
+is owned by <em class="parameter"><code>triangulation</code></em>
+, see <a class="link" href="GwyTriangulation.html#GwyTriangulationData" title="GwyTriangulationData"><span class="type">GwyTriangulationData</span></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-triangulation-boundary"></a><h3>gwy_triangulation_boundary ()</h3>
+<pre class="programlisting"><a class="link" href="GwyTriangulation.html#GwyTriangulationData" title="GwyTriangulationData"><span class="returnvalue">GwyTriangulationData</span></a> *
+gwy_triangulation_boundary (<em class="parameter"><code><a class="link" href="GwyTriangulation.html" title="triangulation"><span class="type">GwyTriangulation</span></a> *triangulation</code></em>);</pre>
+<p>Obtains the boundary, i.e. convex hull, of Delaunay triangulation.</p>
+<p>Notes to the fields in the returned struct:</p>
+<p><em class="parameter"><code>npoints</code></em>
+ equals to the number of points passed to
+<a class="link" href="GwyTriangulation.html#gwy-triangulation-triangulate" title="gwy_triangulation_triangulate ()"><code class="function">gwy_triangulation_triangulate()</code></a>.</p>
+<p><em class="parameter"><code>size</code></em>
+ is the boundary length.</p>
+<p><em class="parameter"><code>index</code></em>
+[] contains point indices in the boundary for points on the boundary;
+and <a class="link" href="GwyTriangulation.html#GWY-TRIANGULATION-NONE:CAPS" title="GWY_TRIANGULATION_NONE"><code class="literal">GWY_TRIANGULATION_NONE</code></a> for points not on the boundary.</p>
+<p><em class="parameter"><code>neighbours</code></em>
+[] lists sequentially the boundary points.</p>
+<div class="refsect3">
+<a name="gwy-triangulation-boundary.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>triangulation</p></td>
+<td class="parameter_description"><p>Triangulation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-triangulation-boundary.returns"></a><h4>Returns</h4>
+<p> Newly clreated <a class="link" href="GwyTriangulation.html#GwyTriangulationData" title="GwyTriangulationData"><span class="type">GwyTriangulationData</span></a> that must be freed with
+<a class="link" href="GwyTriangulation.html#gwy-triangulation-data-free" title="gwy_triangulation_data_free ()"><code class="function">gwy_triangulation_data_free()</code></a> when no longer used.  The data within
+is owned by <em class="parameter"><code>triangulation</code></em>
+, see <a class="link" href="GwyTriangulation.html#GwyTriangulationData" title="GwyTriangulationData"><span class="type">GwyTriangulationData</span></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-triangulation-voronoi"></a><h3>gwy_triangulation_voronoi ()</h3>
+<pre class="programlisting"><a class="link" href="GwyTriangulation.html#GwyTriangulationData" title="GwyTriangulationData"><span class="returnvalue">GwyTriangulationData</span></a> *
+gwy_triangulation_voronoi (<em class="parameter"><code><a class="link" href="GwyTriangulation.html" title="triangulation"><span class="type">GwyTriangulation</span></a> *triangulation</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *nvpoints</code></em>,
+                           <em class="parameter"><code>const <a href="../libgwyddion-Math.html#GwyXY"><span class="type">GwyXY</span></a> **vpoints</code></em>);</pre>
+<p>Obtains the Voronoi triangulation data.</p>
+<p>Notes to the fields in the returned struct:</p>
+<p><em class="parameter"><code>npoints</code></em>
+ equals to the number of Delaunay triangulation points passed to
+<a class="link" href="GwyTriangulation.html#gwy-triangulation-triangulate" title="gwy_triangulation_triangulate ()"><code class="function">gwy_triangulation_triangulate()</code></a> plus the number of points in the Voronoi
+triangulation, <em class="parameter"><code>nvpoints</code></em>
+.  Voronoi triangulation points are the vertices of
+Voronoi cells.  So each triangle has one original (Delaunay) point and two
+cell vertices (Voronoi points).</p>
+<p><em class="parameter"><code>index</code></em>
+[] is the usual index of blocks in <em class="parameter"><code>neighbours</code></em>
+, however,
+point indices smaller than the number of Delaunay points correspond to the
+Delaunay points, point indices equal or larger correspond to points in
+<em class="parameter"><code>vpoints</code></em>
+ (it is necessary to subtract the number of original points to
+obtain the real position in <em class="parameter"><code>vpoints</code></em>
+).</p>
+<p><em class="parameter"><code>neighbours</code></em>
+[] contains the neighbour blocks, with above caveats about
+point numbering.</p>
+<div class="refsect3">
+<a name="gwy-triangulation-voronoi.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>triangulation</p></td>
+<td class="parameter_description"><p>Triangulation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nvpoints</p></td>
+<td class="parameter_description"><p>Location to store the number of new Voronoi triangulation points,
+or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>vpoints</p></td>
+<td class="parameter_description"><p>Location to store pointer to the Voronoi triangulation points,
+or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-triangulation-voronoi.returns"></a><h4>Returns</h4>
+<p> Newly clreated <a class="link" href="GwyTriangulation.html#GwyTriangulationData" title="GwyTriangulationData"><span class="type">GwyTriangulationData</span></a> that must be freed with
+<a class="link" href="GwyTriangulation.html#gwy-triangulation-data-free" title="gwy_triangulation_data_free ()"><code class="function">gwy_triangulation_data_free()</code></a> when no longer used.  The data within
+is owned by <em class="parameter"><code>triangulation</code></em>
+, see <a class="link" href="GwyTriangulation.html#GwyTriangulationData" title="GwyTriangulationData"><span class="type">GwyTriangulationData</span></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyTriangulation.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GWY-TRIANGULATION-NONE:CAPS"></a><h3>GWY_TRIANGULATION_NONE</h3>
+<pre class="programlisting">#define GWY_TRIANGULATION_NONE G_MAXUINT
+</pre>
+<p>Point index value representing no point.</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyTriangulationPointXY"></a><h3>GwyTriangulationPointXY</h3>
+<pre class="programlisting">typedef GwyXY GwyTriangulationPointXY;
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyTriangulationPointXYZ"></a><h3>GwyTriangulationPointXYZ</h3>
+<pre class="programlisting">typedef GwyXYZ GwyTriangulationPointXYZ;
+</pre>
+<p>Representation of a point in plane with associated value for interpolation.</p>
+<p>Note this is an alias for <a href="../libgwyddion-Math.html#GwyXYZ"><span class="type">GwyXYZ</span></a> since 2.45.</p>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyTriangulationData"></a><h3>GwyTriangulationData</h3>
+<pre class="programlisting">typedef struct {
+    guint npoints;
+    guint size;
+    const guint *index;
+    const guint *neighbours;
+} GwyTriangulationData;
+</pre>
+<p>Representation of raw triangulation data.</p>
+<p>Members <em class="parameter"><code>index</code></em>
+ and <em class="parameter"><code>neighbours</code></em>
+ are owned by the <a class="link" href="GwyTriangulation.html" title="triangulation"><span class="type">GwyTriangulation</span></a> object
+that provided this data and remain valid only until this object is destroyed
+or used to perform another triangulation.</p>
+<p>The exact interpretation of individual parts depends on what kind of
+triangulation data it is and may differ a bit from the general description
+provided here.  See the descriptions of individual methods returning
+<a class="link" href="GwyTriangulation.html#GwyTriangulationData" title="GwyTriangulationData"><span class="type">GwyTriangulationData</span></a>.</p>
+<div class="refsect3">
+<a name="GwyTriangulationData.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GwyTriangulationData.npoints"></a>npoints</code></em>;</p></td>
+<td class="struct_member_description"><p>Number of points in the set, also detrmines the size of <em class="parameter"><code>index</code></em>
+.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GwyTriangulationData.size"></a>size</code></em>;</p></td>
+<td class="struct_member_description"><p>The length of <em class="parameter"><code>neighbours</code></em>
+.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *<em class="structfield"><code><a name="GwyTriangulationData.index"></a>index</code></em>;</p></td>
+<td class="struct_member_description"><p>Array of size <em class="parameter"><code>npoints</code></em>
++1 defining the blocks of neighbours in
+<em class="parameter"><code>neighbours</code></em>
+.  The block for point <em class="parameter"><code>i</code></em>
+starts at <em class="parameter"><code>index</code></em>
+[<em class="parameter"><code>i</code></em>
+] and ends
+one element before <em class="parameter"><code>index</code></em>
+[<em class="parameter"><code>i</code></em>
++1].  Hence the last of <em class="parameter"><code>index</code></em>
+is equal
+to <em class="parameter"><code>size</code></em>
+.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *<em class="structfield"><code><a name="GwyTriangulationData.neighbours"></a>neighbours</code></em>;</p></td>
+<td class="struct_member_description"><p>Neighbours of each point, represented as indices into some
+array (which array, that depends on what kind of data it is).
+The points in each block are sorted counter-clockwise.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-18.html#api-index-2.18">2.18</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyTriangulation-struct"></a><h3>struct GwyTriangulation</h3>
+<pre class="programlisting">struct GwyTriangulation;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyTriangulationClass"></a><h3>struct GwyTriangulationClass</h3>
+<pre class="programlisting">struct GwyTriangulationClass {
+    GObjectClass parent_class;
+};
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

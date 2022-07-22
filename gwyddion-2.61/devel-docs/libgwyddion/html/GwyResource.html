@@ -1,0 +1,1000 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyResource: Gwyddion Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Library Reference Manual">
+<link rel="prev" href="libgwyddion-GwyRandGenSet.html" title="GwyRandGenSet">
+<link rel="next" href="GwyStringList.html" title="GwyStringList">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyResource.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyResource.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GwyResource.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GwyResource.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyddion-GwyRandGenSet.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyStringList.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyResource"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyResource.top_of_page"></a>GwyResource</span></h2>
+<p>GwyResource — Built-in and/or user supplied application resources</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyResource.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyResource.html#gwy-resource-get-name" title="gwy_resource_get_name ()">gwy_resource_get_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResource.html#gwy-resource-get-is-modifiable" title="gwy_resource_get_is_modifiable ()">gwy_resource_get_is_modifiable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResource.html#gwy-resource-get-is-preferred" title="gwy_resource_get_is_preferred ()">gwy_resource_get_is_preferred</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResource.html#gwy-resource-set-is-preferred" title="gwy_resource_set_is_preferred ()">gwy_resource_set_is_preferred</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyResource.html#gwy-resource-class-get-name" title="gwy_resource_class_get_name ()">gwy_resource_class_get_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyInventory.html" title="GwyInventory"><span class="returnvalue">GwyInventory</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyResource.html#gwy-resource-class-get-inventory" title="gwy_resource_class_get_inventory ()">gwy_resource_class_get_inventory</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a class="link" href="GwyInventory.html#GwyInventoryItemType" title="struct GwyInventoryItemType"><span class="returnvalue">GwyInventoryItemType</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyResource.html#gwy-resource-class-get-item-type" title="gwy_resource_class_get_item_type ()">gwy_resource_class_get_item_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResource.html#gwy-resource-use" title="gwy_resource_use ()">gwy_resource_use</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResource.html#gwy-resource-release" title="gwy_resource_release ()">gwy_resource_release</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResource.html#gwy-resource-is-used" title="gwy_resource_is_used ()">gwy_resource_is_used</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResource.html#gwy-resource-data-changed" title="gwy_resource_data_changed ()">gwy_resource_data_changed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResource.html#gwy-resource-data-saved" title="gwy_resource_data_saved ()">gwy_resource_data_saved</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyResource.html#gwy-resource-build-filename" title="gwy_resource_build_filename ()">gwy_resource_build_filename</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Strings.html#GString"><span class="returnvalue">GString</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyResource.html#gwy-resource-dump" title="gwy_resource_dump ()">gwy_resource_dump</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyResource.html" title="GwyResource"><span class="returnvalue">GwyResource</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyResource.html#gwy-resource-parse" title="gwy_resource_parse ()">gwy_resource_parse</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResource.html#gwy-resource-rename" title="gwy_resource_rename ()">gwy_resource_rename</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResource.html#gwy-resource-delete" title="gwy_resource_delete ()">gwy_resource_delete</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResource.html#gwy-resource-class-load" title="gwy_resource_class_load ()">gwy_resource_class_load</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResource.html#gwy-resource-class-mkdir" title="gwy_resource_class_mkdir ()">gwy_resource_class_mkdir</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyResource.html#gwy-resource-classes-finalize" title="gwy_resource_classes_finalize ()">gwy_resource_classes_finalize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyResource.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GwyResource.html#GwyResource--is-const" title="The “is-const” property">is-const</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GwyResource.html#GwyResource--is-preferred" title="The “is-preferred” property">is-preferred</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="GwyResource.html#GwyResource--name" title="The “name” property">name</a></td>
+<td class="property_flags">Read</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyResource.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GwyResource.html#GwyResource-data-changed" title="The “data-changed” signal">data-changed</a></td>
+<td class="signal_flags"><a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyResource.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyResource.html#GwyResource-struct" title="struct GwyResource">GwyResource</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyResource.html#GwyResourceClass" title="struct GwyResourceClass">GwyResourceClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyResource.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> GwyResource
+        <span class="lineart">╰──</span> <a class="link" href="GwyNLFitPreset.html" title="GwyNLFitPreset">GwyNLFitPreset</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyResource.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwyddion/gwyddion.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyResource.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyResource.html" title="GwyResource"><span class="type">GwyResource</span></a> is a base class for various application resources.  It defines
+common interface: questioning resource name (<a class="link" href="GwyResource.html#gwy-resource-get-name" title="gwy_resource_get_name ()"><code class="function">gwy_resource_get_name()</code></a>),
+modifiability (<a class="link" href="GwyResource.html#gwy-resource-get-is-modifiable" title="gwy_resource_get_is_modifiable ()"><code class="function">gwy_resource_get_is_modifiable()</code></a>), loading resources from
+files and saving them.</p>
+</div>
+<div class="refsect1">
+<a name="GwyResource.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-resource-get-name"></a><h3>gwy_resource_get_name ()</h3>
+<pre class="programlisting">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_resource_get_name (<em class="parameter"><code><a class="link" href="GwyResource.html" title="GwyResource"><span class="type">GwyResource</span></a> *resource</code></em>);</pre>
+<p>Returns resource name.</p>
+<div class="refsect3">
+<a name="gwy-resource-get-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>resource</p></td>
+<td class="parameter_description"><p>A resource.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-resource-get-name.returns"></a><h4>Returns</h4>
+<p> Name of <em class="parameter"><code>resource</code></em>
+.  The string is owned by <em class="parameter"><code>resource</code></em>
+and must not
+be modfied or freed.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-resource-get-is-modifiable"></a><h3>gwy_resource_get_is_modifiable ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_resource_get_is_modifiable (<em class="parameter"><code><a class="link" href="GwyResource.html" title="GwyResource"><span class="type">GwyResource</span></a> *resource</code></em>);</pre>
+<p>Returns whether a resource is modifiable.</p>
+<div class="refsect3">
+<a name="gwy-resource-get-is-modifiable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>resource</p></td>
+<td class="parameter_description"><p>A resource.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-resource-get-is-modifiable.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if resource is modifiable, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it's fixed (system)
+resource.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-resource-get-is-preferred"></a><h3>gwy_resource_get_is_preferred ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_resource_get_is_preferred (<em class="parameter"><code><a class="link" href="GwyResource.html" title="GwyResource"><span class="type">GwyResource</span></a> *resource</code></em>);</pre>
+<p>Returns whether a resource is preferred.</p>
+<div class="refsect3">
+<a name="gwy-resource-get-is-preferred.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>resource</p></td>
+<td class="parameter_description"><p>A resource.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-resource-get-is-preferred.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if resource is preferred, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-resource-set-is-preferred"></a><h3>gwy_resource_set_is_preferred ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_resource_set_is_preferred (<em class="parameter"><code><a class="link" href="GwyResource.html" title="GwyResource"><span class="type">GwyResource</span></a> *resource</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> is_preferred</code></em>);</pre>
+<p>Sets preferability of a resource.</p>
+<div class="refsect3">
+<a name="gwy-resource-set-is-preferred.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>resource</p></td>
+<td class="parameter_description"><p>A resource.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>is_preferred</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to make <em class="parameter"><code>resource</code></em>
+preferred, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to make it not
+preferred.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-resource-class-get-name"></a><h3>gwy_resource_class_get_name ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_resource_class_get_name (<em class="parameter"><code><a class="link" href="GwyResource.html#GwyResourceClass" title="struct GwyResourceClass"><span class="type">GwyResourceClass</span></a> *klass</code></em>);</pre>
+<p>Gets the name of resource class.</p>
+<p>This is an simple identifier usable for example as directory name.</p>
+<div class="refsect3">
+<a name="gwy-resource-class-get-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>klass</p></td>
+<td class="parameter_description"><p>A resource class.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-resource-class-get-name.returns"></a><h4>Returns</h4>
+<p> Resource class name, as a constant string that must not be modified
+nor freed.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-resource-class-get-inventory"></a><h3>gwy_resource_class_get_inventory ()</h3>
+<pre class="programlisting"><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="returnvalue">GwyInventory</span></a> *
+gwy_resource_class_get_inventory (<em class="parameter"><code><a class="link" href="GwyResource.html#GwyResourceClass" title="struct GwyResourceClass"><span class="type">GwyResourceClass</span></a> *klass</code></em>);</pre>
+<p>Gets inventory which holds resources of a resource class.</p>
+<div class="refsect3">
+<a name="gwy-resource-class-get-inventory.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>klass</p></td>
+<td class="parameter_description"><p>A resource class.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-resource-class-get-inventory.returns"></a><h4>Returns</h4>
+<p> Resource class inventory.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-resource-class-get-item-type"></a><h3>gwy_resource_class_get_item_type ()</h3>
+<pre class="programlisting">const <a class="link" href="GwyInventory.html#GwyInventoryItemType" title="struct GwyInventoryItemType"><span class="returnvalue">GwyInventoryItemType</span></a> *
+gwy_resource_class_get_item_type (<em class="parameter"><code><a class="link" href="GwyResource.html#GwyResourceClass" title="struct GwyResourceClass"><span class="type">GwyResourceClass</span></a> *klass</code></em>);</pre>
+<p>Gets inventory item type for a resource class.</p>
+<div class="refsect3">
+<a name="gwy-resource-class-get-item-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>klass</p></td>
+<td class="parameter_description"><p>A resource class.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-resource-class-get-item-type.returns"></a><h4>Returns</h4>
+<p> Inventory item type.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-resource-use"></a><h3>gwy_resource_use ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_resource_use (<em class="parameter"><code><a class="link" href="GwyResource.html" title="GwyResource"><span class="type">GwyResource</span></a> *resource</code></em>);</pre>
+<p>Starts using a resource.</p>
+<p>Call to this function is necessary to use a resource properly.
+It makes the resource to create any auxiliary structures that consume
+considerable amount of memory and perform other initialization to
+ready-to-use form.</p>
+<p>When a resource is no longer used, it should be released with
+<a class="link" href="GwyResource.html#gwy-resource-release" title="gwy_resource_release ()"><code class="function">gwy_resource_release()</code></a>.</p>
+<p>In addition, it calls <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a> on the resource.</p>
+<p>Resources usually exist through almost whole program lifetime from
+<a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> perspective, but from the viewpoint of use this method is the
+constructor and <a class="link" href="GwyResource.html#gwy-resource-release" title="gwy_resource_release ()"><code class="function">gwy_resource_release()</code></a> is the destructor.</p>
+<div class="refsect3">
+<a name="gwy-resource-use.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>resource</p></td>
+<td class="parameter_description"><p>A resource.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-resource-release"></a><h3>gwy_resource_release ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_resource_release (<em class="parameter"><code><a class="link" href="GwyResource.html" title="GwyResource"><span class="type">GwyResource</span></a> *resource</code></em>);</pre>
+<p>Releases a resource.</p>
+<p>When the number of resource uses drops to zero, it frees all auxiliary data
+and returns back to `latent' form.  In addition, it calls <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>
+on it.  See <a class="link" href="GwyResource.html#gwy-resource-use" title="gwy_resource_use ()"><code class="function">gwy_resource_use()</code></a> for more.</p>
+<div class="refsect3">
+<a name="gwy-resource-release.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>resource</p></td>
+<td class="parameter_description"><p>A resource.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-resource-is-used"></a><h3>gwy_resource_is_used ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_resource_is_used (<em class="parameter"><code><a class="link" href="GwyResource.html" title="GwyResource"><span class="type">GwyResource</span></a> *resource</code></em>);</pre>
+<p>Tells whether a resource is currently in use.</p>
+<p>See <a class="link" href="GwyResource.html#gwy-resource-use" title="gwy_resource_use ()"><code class="function">gwy_resource_use()</code></a> for details.</p>
+<div class="refsect3">
+<a name="gwy-resource-is-used.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>resource</p></td>
+<td class="parameter_description"><p>A resource.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-resource-is-used.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if resource is in use, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-resource-data-changed"></a><h3>gwy_resource_data_changed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_resource_data_changed (<em class="parameter"><code><a class="link" href="GwyResource.html" title="GwyResource"><span class="type">GwyResource</span></a> *resource</code></em>);</pre>
+<p>Emits signal "data-changed" on a resource.</p>
+<p>It can be called only on non-constant resources.  The default handler
+sets <em class="parameter"><code>is_modified</code></em>
+ flag on the resource.</p>
+<p>Mostly useful in resource implementation.</p>
+<div class="refsect3">
+<a name="gwy-resource-data-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>resource</p></td>
+<td class="parameter_description"><p>A resource.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-resource-data-saved"></a><h3>gwy_resource_data_saved ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_resource_data_saved (<em class="parameter"><code><a class="link" href="GwyResource.html" title="GwyResource"><span class="type">GwyResource</span></a> *resource</code></em>);</pre>
+<p>Clears <em class="parameter"><code>is_modified</code></em>
+ flag of a resource.</p>
+<div class="refsect3">
+<a name="gwy-resource-data-saved.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>resource</p></td>
+<td class="parameter_description"><p>A resource.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-resource-build-filename"></a><h3>gwy_resource_build_filename ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_resource_build_filename (<em class="parameter"><code><a class="link" href="GwyResource.html" title="GwyResource"><span class="type">GwyResource</span></a> *resource</code></em>);</pre>
+<p>Builds file name a resource should be saved to.</p>
+<p>If the resource has not been newly created, renamed, or system it was
+probably loaded from file of the same name.</p>
+<div class="refsect3">
+<a name="gwy-resource-build-filename.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>resource</p></td>
+<td class="parameter_description"><p>A resource.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-resource-build-filename.returns"></a><h4>Returns</h4>
+<p> Resource file name as a newly allocated string that must be freed
+by caller.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-resource-dump"></a><h3>gwy_resource_dump ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Strings.html#GString"><span class="returnvalue">GString</span></a> *
+gwy_resource_dump (<em class="parameter"><code><a class="link" href="GwyResource.html" title="GwyResource"><span class="type">GwyResource</span></a> *resource</code></em>);</pre>
+<p>Dumps a resource to a textual (human readable) form.</p>
+<div class="refsect3">
+<a name="gwy-resource-dump.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>resource</p></td>
+<td class="parameter_description"><p>A resource.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-resource-dump.returns"></a><h4>Returns</h4>
+<p> Textual resource representation.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-resource-parse"></a><h3>gwy_resource_parse ()</h3>
+<pre class="programlisting"><a class="link" href="GwyResource.html" title="GwyResource"><span class="returnvalue">GwyResource</span></a> *
+gwy_resource_parse (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> expected_type</code></em>);</pre>
+<p>Reconstructs a resource from human readable form.</p>
+<div class="refsect3">
+<a name="gwy-resource-parse.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>text</p></td>
+<td class="parameter_description"><p>Textual resource representation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>expected_type</p></td>
+<td class="parameter_description"><p>Resource object type.  If not 0, only resources of give type
+are allowed.  Zero value means any <a class="link" href="GwyResource.html" title="GwyResource"><span class="type">GwyResource</span></a> is allowed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-resource-parse.returns"></a><h4>Returns</h4>
+<p> Newly created resource (or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-resource-rename"></a><h3>gwy_resource_rename ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_resource_rename (<em class="parameter"><code><a class="link" href="GwyResource.html" title="GwyResource"><span class="type">GwyResource</span></a> *resource</code></em>,
+                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *newname</code></em>);</pre>
+<p>Renames a resource, including renaming it on disk.</p>
+<p>The method renames the resource both in the inventory and on disk. The
+renaming must not conflict with an existing resource, constant resources
+cannot be renamed, etc.  It is OK to rename a resource to the same name
+(nothing happens then).</p>
+<div class="refsect3">
+<a name="gwy-resource-rename.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>resource</p></td>
+<td class="parameter_description"><p>A resource.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>newname</p></td>
+<td class="parameter_description"><p>New resource name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-resource-rename.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the renaming succeeded.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-51.html#api-index-2.51">2.51</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-resource-delete"></a><h3>gwy_resource_delete ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_resource_delete (<em class="parameter"><code><a class="link" href="GwyResource.html" title="GwyResource"><span class="type">GwyResource</span></a> *resource</code></em>);</pre>
+<p>Deletes a resource, including removal from disk.</p>
+<p>The method deletes the resource both in the inventory and on disk.
+Constant resources cannot be deleted.</p>
+<div class="refsect3">
+<a name="gwy-resource-delete.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>resource</p></td>
+<td class="parameter_description"><p>A resource.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-resource-delete.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the removal succeeded.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-51.html#api-index-2.51">2.51</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-resource-class-load"></a><h3>gwy_resource_class_load ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_resource_class_load (<em class="parameter"><code><a class="link" href="GwyResource.html#GwyResourceClass" title="struct GwyResourceClass"><span class="type">GwyResourceClass</span></a> *klass</code></em>);</pre>
+<p>Loads resources of a resources class from disk.</p>
+<p>Resources are loaded from system directory (and marked constant) and from
+user directory (marked modifiable).</p>
+<div class="refsect3">
+<a name="gwy-resource-class-load.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>klass</p></td>
+<td class="parameter_description"><p>A resource class.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-resource-class-mkdir"></a><h3>gwy_resource_class_mkdir ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_resource_class_mkdir (<em class="parameter"><code><a class="link" href="GwyResource.html#GwyResourceClass" title="struct GwyResourceClass"><span class="type">GwyResourceClass</span></a> *klass</code></em>);</pre>
+<p>Creates directory for user resources if it does not exist.</p>
+<div class="refsect3">
+<a name="gwy-resource-class-mkdir.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>klass</p></td>
+<td class="parameter_description"><p>A resource class.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-resource-class-mkdir.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the directory exists or has been successfully created.
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if it doesn't exist and cannot be created, consult errno
+for reason.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-resource-classes-finalize"></a><h3>gwy_resource_classes_finalize ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_resource_classes_finalize (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Destroys the inventories of all resource classes.</p>
+<p>This function makes the affected resource classes unusable.  Its purpose is
+to faciliate reference leak debugging by destroying a large number of
+objects that normally live forever.</p>
+<p>Note static resource classes that never called <a class="link" href="GwyResource.html#gwy-resource-class-load" title="gwy_resource_class_load ()"><code class="function">gwy_resource_class_load()</code></a>
+are excluded.</p>
+<p class="since">Since: <a class="link" href="api-index-2-8.html#api-index-2.8">2.8</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyResource.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyResource-struct"></a><h3>struct GwyResource</h3>
+<pre class="programlisting">struct GwyResource;</pre>
+<p>The <a class="link" href="GwyResource.html" title="GwyResource"><span class="type">GwyResource</span></a> struct contains private data only and should be accessed
+using the functions below.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyResourceClass"></a><h3>struct GwyResourceClass</h3>
+<pre class="programlisting">struct GwyResourceClass {
+    GwyInventory *inventory;
+    const gchar *name;
+
+    /* Traits */
+    GwyInventoryItemType item_type;
+
+    /* Signals */
+    void (*data_changed)(GwyResource *resource);
+
+    /* Virtual table */
+    void (*use)(GwyResource *resource);
+    void (*release)(GwyResource *resource);
+    void (*dump)(GwyResource *resource,
+                 GString *string);
+    GwyResource* (*parse)(const gchar *text,
+                          gboolean is_const);
+};
+</pre>
+<p>Resource class.</p>
+<div class="refsect3">
+<a name="GwyResourceClass.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a> *<em class="structfield"><code><a name="GwyResourceClass.inventory"></a>inventory</code></em>;</p></td>
+<td class="struct_member_description"><p>Inventory with resources.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="GwyResourceClass.name"></a>name</code></em>;</p></td>
+<td class="struct_member_description"><p>Resource class name, usable as resource directory name for on-disk
+resources.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="GwyInventory.html#GwyInventoryItemType" title="struct GwyInventoryItemType"><span class="type">GwyInventoryItemType</span></a> <em class="structfield"><code><a name="GwyResourceClass.item-type"></a>item_type</code></em>;</p></td>
+<td class="struct_member_description"><p>Inventory item type.  Most fields are pre-filled, but namely
+<em class="parameter"><code>type</code></em>
+and <em class="parameter"><code>copy</code></em>
+must be filled by particular resource type.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwyResourceClass.data-changed"></a>data_changed</code></em> ()</p></td>
+<td class="struct_member_description"><p>"data-changed" signal method.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwyResourceClass.use"></a>use</code></em> ()</p></td>
+<td class="struct_member_description"><p>gwy_resource_use() virtual method.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwyResourceClass.release"></a>release</code></em> ()</p></td>
+<td class="struct_member_description"><p>gwy_resource_release() virtual method.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwyResourceClass.dump"></a>dump</code></em> ()</p></td>
+<td class="struct_member_description"><p>gwy_resource_dump() virtual method, it only cares about resource
+data itself, the envelope is handled by <a class="link" href="GwyResource.html" title="GwyResource"><span class="type">GwyResource</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GwyResourceClass.parse"></a>parse</code></em> ()</p></td>
+<td class="struct_member_description"><p>gwy_resource_parse() virtual method, in only cares about resource
+data itself, the envelope is handled by <a class="link" href="GwyResource.html" title="GwyResource"><span class="type">GwyResource</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyResource.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GwyResource--is-const"></a><h3>The <code class="literal">“is-const”</code> property</h3>
+<pre class="programlisting">  “is-const”                 <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether a resource is constant (system).</p>
+<p>Owner: GwyResource</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyResource--is-preferred"></a><h3>The <code class="literal">“is-preferred”</code> property</h3>
+<pre class="programlisting">  “is-preferred”             <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether a resource is preferred.</p>
+<p>Owner: GwyResource</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyResource--name"></a><h3>The <code class="literal">“name”</code> property</h3>
+<pre class="programlisting">  “name”                     <span class="type">char</span> *</pre>
+<p>Resource name.</p>
+<p>Owner: GwyResource</p>
+<p>Flags: Read</p>
+<p>Default value: NULL</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyResource.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GwyResource-data-changed"></a><h3>The <code class="literal">“data-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GwyResource.html" title="GwyResource"><span class="type">GwyResource</span></a> *gwyresource,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>The ::data-changed signal is emitted when resource data changes.</p>
+<div class="refsect3">
+<a name="GwyResource-data-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gwyresource</p></td>
+<td class="parameter_description"><p>The <a class="link" href="GwyResource.html" title="GwyResource"><span class="type">GwyResource</span></a> which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyResource.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="GwyInventory.html" title="GwyInventory"><span class="type">GwyInventory</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

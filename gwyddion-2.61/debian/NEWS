@@ -1,0 +1,10 @@
+gwyddion (2.55-1) unstable; urgency=medium
+
+  Due to the forthcoming removal of PyGTK, the Python bindings are no
+  longer built and installed.  If you have custom scripts that rely on
+  them they will cease to work.
+
+  The gwyddion-plugins package is no longer available.  All plugins are
+  installed as source code examples in /usr/share/doc/gwyddion/plugins.
+
+ -- Yavor Doganov <yavor@gnu.org>  Wed, 20 Nov 2019 16:55:16 +0200

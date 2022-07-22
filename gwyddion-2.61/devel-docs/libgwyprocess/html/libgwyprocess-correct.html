@@ -1,0 +1,1308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>correct: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="GwyCDLine.html" title="cdline">
+<link rel="next" href="libgwyprocess-correlation.html" title="correlation">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwyprocess-correct.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="GwyCDLine.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyprocess-correlation.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwyprocess-correct"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwyprocess-correct.top_of_page"></a>correct</span></h2>
+<p>correct — Data correction</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwyprocess-correct.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libgwyprocess-correct.html#GwyCoordTransform2DFunc" title="GwyCoordTransform2DFunc ()">*GwyCoordTransform2DFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-correct.html#gwy-data-field-laplace-solve" title="gwy_data_field_laplace_solve ()">gwy_data_field_laplace_solve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-correct.html#gwy-data-field-correct-laplace-iteration" title="gwy_data_field_correct_laplace_iteration ()">gwy_data_field_correct_laplace_iteration</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-correct.html#gwy-data-field-correct-average" title="gwy_data_field_correct_average ()">gwy_data_field_correct_average</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-correct.html#gwy-data-field-correct-average-unmasked" title="gwy_data_field_correct_average_unmasked ()">gwy_data_field_correct_average_unmasked</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-correct.html#gwy-data-field-mask-outliers" title="gwy_data_field_mask_outliers ()">gwy_data_field_mask_outliers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-correct.html#gwy-data-field-mask-outliers2" title="gwy_data_field_mask_outliers2 ()">gwy_data_field_mask_outliers2</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-correct.html#gwy-data-field-distort" title="gwy_data_field_distort ()">gwy_data_field_distort</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-correct.html#gwy-data-field-sample-distorted" title="gwy_data_field_sample_distorted ()">gwy_data_field_sample_distorted</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-correct.html#gwy-data-field-affine" title="gwy_data_field_affine ()">gwy_data_field_affine</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-correct.html#gwy-data-field-affine-prepare" title="gwy_data_field_affine_prepare ()">gwy_data_field_affine_prepare</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-correct.html#gwy-data-field-measure-lattice-acf" title="gwy_data_field_measure_lattice_acf ()">gwy_data_field_measure_lattice_acf</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-correct.html#gwy-data-field-measure-lattice-psdf" title="gwy_data_field_measure_lattice_psdf ()">gwy_data_field_measure_lattice_psdf</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-correct.html#gwy-data-line-correct-laplace" title="gwy_data_line_correct_laplace ()">gwy_data_line_correct_laplace</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-correct.html#gwy-data-field-mark-scars" title="gwy_data_field_mark_scars ()">gwy_data_field_mark_scars</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-correct.html#gwy-data-field-subtract-row-shifts" title="gwy_data_field_subtract_row_shifts ()">gwy_data_field_subtract_row_shifts</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="returnvalue">GwyDataLine</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-correct.html#gwy-data-field-find-row-shifts-trimmed-mean" title="gwy_data_field_find_row_shifts_trimmed_mean ()">gwy_data_field_find_row_shifts_trimmed_mean</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="returnvalue">GwyDataLine</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-correct.html#gwy-data-field-find-row-shifts-trimmed-diff" title="gwy_data_field_find_row_shifts_trimmed_diff ()">gwy_data_field_find_row_shifts_trimmed_diff</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwyprocess-gwyprocessenums.html#GwyPlaneSymmetry" title="enum GwyPlaneSymmetry"><span class="returnvalue">GwyPlaneSymmetry</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwyprocess-correct.html#gwy-data-field-unrotate-find-corrections" title="gwy_data_field_unrotate_find_corrections ()">gwy_data_field_unrotate_find_corrections</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-correct.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-correct.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgwyprocess-correct.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GwyCoordTransform2DFunc"></a><h3>GwyCoordTransform2DFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GwyCoordTransform2DFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x</code></em>,
+                            <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> y</code></em>,
+                            <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *px</code></em>,
+                            <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *py</code></em>,
+                            <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>The type of two-dimensional coordinate transform function.</p>
+<div class="refsect3">
+<a name="GwyCoordTransform2DFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Old x coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Old y coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>px</p></td>
+<td class="parameter_description"><p>Location to store new x coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>py</p></td>
+<td class="parameter_description"><p>Location to store new y coordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data passed to the caller function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-5.html#api-index-2.5">2.5</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-laplace-solve"></a><h3>gwy_data_field_laplace_solve ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_laplace_solve (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *field</code></em>,
+                              <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                              <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> grain_id</code></em>,
+                              <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> qprec</code></em>);</pre>
+<p>Replaces masked areas by the solution of Laplace equation.</p>
+<p>The boundary conditions on mask boundaries are Dirichlet with values given
+by pixels on the outer boundary of the masked area.  Boundary conditions at
+field edges are Neumann conditions ∂z/∂n=0 where n denotes the normal to the
+edge.  If entire area of <em class="parameter"><code>field</code></em>
+ is to be replaced the problem is
+underspecified; <em class="parameter"><code>field</code></em>
+ will be filled with zeros.</p>
+<p>For the default value of <em class="parameter"><code>qprec</code></em>
+ the the result should be good enough for any
+image processing purposes with the typical local error of order 10⁻⁵ for
+very large grains and possibly much smaller for small grains.  You can lower
+<em class="parameter"><code>qprec</code></em>
+ down to about 0.3 or even 0.2 if speed is crucial and some precision
+can be sacrificed.  Below that the result just starts becoming somewhat
+worse for not much speed increase.  Conversely, you may wish to increase
+<em class="parameter"><code>qprec</code></em>
+ up to 3 or even 5 if accuracy is important and you can afford the
+increased computation time.</p>
+<div class="refsect3">
+<a name="gwy-data-field-laplace-solve.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>field</p></td>
+<td class="parameter_description"><p>A two-dimensional data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>A two-dimensional data field containing mask defining the areas to
+interpolate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>grain_id</p></td>
+<td class="parameter_description"><p>The id number of the grain to replace with the solution of
+Laplace equation, from 1 to <em class="parameter"><code>ngrains</code></em>
+(see
+<code class="function">gwy_data_field_grain_numbers()</code>).  Passing 0 means to replace the
+entire empty space outside grains while passing a negative value
+means to replace the entire masked area.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>qprec</p></td>
+<td class="parameter_description"><p>Speed-accuracy tuning parameter.  Pass 1.0 for the default that is
+fast and sufficiently precise.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-correct-laplace-iteration"></a><h3>gwy_data_field_correct_laplace_iteration ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_correct_laplace_iteration
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *buffer_field</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> corrfactor</code></em>,
+                                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *error</code></em>);</pre>
+<p>Performs one interation of Laplace data correction.</p>
+<p>Tries to remove all the points in mask off the data by using
+iterative method similar to solving heat flux equation.</p>
+<p>Use this function repeatedly until reasonable <em class="parameter"><code>error</code></em>
+ is reached.</p>
+<div class="warning">For almost all purposes this function was superseded by
+non-iterative <a class="link" href="libgwyprocess-correct.html#gwy-data-field-laplace-solve" title="gwy_data_field_laplace_solve ()"><code class="function">gwy_data_field_laplace_solve()</code></a> which is simultaneously much
+faster and more accurate.</div>
+<div class="refsect3">
+<a name="gwy-data-field-correct-laplace-iteration.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>Data field to be corrected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask_field</p></td>
+<td class="parameter_description"><p>Mask of places to be corrected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer_field</p></td>
+<td class="parameter_description"><p>Initialized to same size as mask and data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Maximum change within last step.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>corrfactor</p></td>
+<td class="parameter_description"><p>Correction factor within step.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-correct-average"></a><h3>gwy_data_field_correct_average ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_correct_average (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask_field</code></em>);</pre>
+<p>Fills data under mask with the average value.</p>
+<p>This function simply puts average value of all the <em class="parameter"><code>data_field</code></em>
+ values (both
+masked and unmasked) into points in <em class="parameter"><code>data_field</code></em>
+ lying under points where
+<em class="parameter"><code>mask_field</code></em>
+ values are nonzero.</p>
+<p>In most cases you probably want to use
+<a class="link" href="libgwyprocess-correct.html#gwy-data-field-correct-average-unmasked" title="gwy_data_field_correct_average_unmasked ()"><code class="function">gwy_data_field_correct_average_unmasked()</code></a> instead.</p>
+<div class="refsect3">
+<a name="gwy-data-field-correct-average.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask_field</p></td>
+<td class="parameter_description"><p>Mask of places to be corrected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-correct-average-unmasked"></a><h3>gwy_data_field_correct_average_unmasked ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_correct_average_unmasked
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask_field</code></em>);</pre>
+<p>Fills data under mask with the average value of unmasked data.</p>
+<p>This function calculates the average value of all unmasked pixels in
+<em class="parameter"><code>data_field</code></em>
+ and then fills all the masked pixels with this average value.
+It is useful as the first rough step of correction of data under the mask.</p>
+<p>If all data are masked the field is filled with zeroes.</p>
+<div class="refsect3">
+<a name="gwy-data-field-correct-average-unmasked.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask_field</p></td>
+<td class="parameter_description"><p>Mask of places to be corrected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-44.html#api-index-2.44">2.44</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-mask-outliers"></a><h3>gwy_data_field_mask_outliers ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_mask_outliers (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                              <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask_field</code></em>,
+                              <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> thresh</code></em>);</pre>
+<p>Creates mask of data that are above or below <em class="parameter"><code>thresh</code></em>
+*sigma from average
+height.</p>
+<p>Sigma denotes root-mean square deviation of heights. This criterium
+corresponds to the usual Gaussian distribution outliers detection if
+<em class="parameter"><code>thresh</code></em>
+ is 3.</p>
+<div class="refsect3">
+<a name="gwy-data-field-mask-outliers.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask_field</p></td>
+<td class="parameter_description"><p>A data field to be filled with mask.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>thresh</p></td>
+<td class="parameter_description"><p>Threshold value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-mask-outliers2"></a><h3>gwy_data_field_mask_outliers2 ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_mask_outliers2 (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                               <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask_field</code></em>,
+                               <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> thresh_low</code></em>,
+                               <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> thresh_high</code></em>);</pre>
+<p>Creates mask of data that are above or below multiples of rms from average
+height.</p>
+<p>Data that are below <em class="parameter"><code>mean</code></em>
+-<em class="parameter"><code>thresh_low</code></em>
+*<em class="parameter"><code>sigma</code></em>
+ or above
+<em class="parameter"><code>mean</code></em>
++<em class="parameter"><code>thresh_high</code></em>
+*<em class="parameter"><code>sigma</code></em>
+ are marked as outliers, where <em class="parameter"><code>sigma</code></em>
+ denotes the
+root-mean square deviation of heights.</p>
+<div class="refsect3">
+<a name="gwy-data-field-mask-outliers2.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask_field</p></td>
+<td class="parameter_description"><p>A data field to be filled with mask.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>thresh_low</p></td>
+<td class="parameter_description"><p>Lower threshold value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>thresh_high</p></td>
+<td class="parameter_description"><p>Upper threshold value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-26.html#api-index-2.26">2.26</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-distort"></a><h3>gwy_data_field_distort ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_distort (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *source</code></em>,
+                        <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dest</code></em>,
+                        <em class="parameter"><code><a class="link" href="libgwyprocess-correct.html#GwyCoordTransform2DFunc" title="GwyCoordTransform2DFunc ()"><span class="type">GwyCoordTransform2DFunc</span></a> invtrans</code></em>,
+                        <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                        <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interp</code></em>,
+                        <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyExteriorType" title="enum GwyExteriorType"><span class="type">GwyExteriorType</span></a> exterior</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> fill_value</code></em>);</pre>
+<p>Distorts a data field in the horizontal plane.</p>
+<p>Note the transform function <em class="parameter"><code>invtrans</code></em>
+ is the inverse transform, in other
+words it calculates the old coordinates from the new coordinates (the
+transform would not be uniquely defined the other way round).</p>
+<p>The <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-EXTERIOR-LAPLACE:CAPS"><code class="literal">GWY_EXTERIOR_LAPLACE</code></a> exterior type cannot be used with this function.</p>
+<div class="refsect3">
+<a name="gwy-data-field-distort.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>Source data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest</p></td>
+<td class="parameter_description"><p>Destination data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>invtrans</p></td>
+<td class="parameter_description"><p>Inverse transform function, that is the transformation from
+new coordinates to old coordinates.   It gets
+(<em class="parameter"><code>j</code></em>
++0.5, <em class="parameter"><code>i</code></em>
++0.5), where <em class="parameter"><code>i</code></em>
+and <em class="parameter"><code>j</code></em>
+are the new row and column
+indices, passed as the input coordinates.  The output coordinates
+should follow the same convention.  Unless a special exterior
+handling is required, the transform function does not need to
+concern itself with coordinates being outside of the data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>Pointer passed as <em class="parameter"><code>user_data</code></em>
+to <em class="parameter"><code>invtrans</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interp</p></td>
+<td class="parameter_description"><p>Interpolation type to use.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>exterior</p></td>
+<td class="parameter_description"><p>Exterior pixels handling.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fill_value</p></td>
+<td class="parameter_description"><p>The value to use with <em class="parameter"><code>GWY_EXTERIOR_FIXED_VALUE</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-5.html#api-index-2.5">2.5</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-sample-distorted"></a><h3>gwy_data_field_sample_distorted ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_sample_distorted (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *source</code></em>,
+                                 <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dest</code></em>,
+                                 <em class="parameter"><code>const <a href="../libgwyddion-Math.html#GwyXY"><span class="type">GwyXY</span></a> *coords</code></em>,
+                                 <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interp</code></em>,
+                                 <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyExteriorType" title="enum GwyExteriorType"><span class="type">GwyExteriorType</span></a> exterior</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> fill_value</code></em>);</pre>
+<p>Resamples a data field in an arbitrarily distorted manner.</p>
+<p>Each item in <em class="parameter"><code>coords</code></em>
+ corresponds to one pixel in <em class="parameter"><code>dest</code></em>
+ and gives the
+coordinates in <em class="parameter"><code>source</code></em>
+ defining the value to set in this pixel.</p>
+<p>The <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-EXTERIOR-LAPLACE:CAPS"><code class="literal">GWY_EXTERIOR_LAPLACE</code></a> exterior type cannot be used with this function.</p>
+<div class="refsect3">
+<a name="gwy-data-field-sample-distorted.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>Source data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest</p></td>
+<td class="parameter_description"><p>Destination data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>coords</p></td>
+<td class="parameter_description"><p>Array of <em class="parameter"><code>source</code></em>
+coordinates with the same number of items as
+<em class="parameter"><code>dest</code></em>
+, ordered as data field data.
+See <a class="link" href="libgwyprocess-correct.html#gwy-data-field-distort" title="gwy_data_field_distort ()"><code class="function">gwy_data_field_distort()</code></a> for coordinate convention discussion.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interp</p></td>
+<td class="parameter_description"><p>Interpolation type to use.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>exterior</p></td>
+<td class="parameter_description"><p>Exterior pixels handling.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fill_value</p></td>
+<td class="parameter_description"><p>The value to use with <em class="parameter"><code>GWY_EXTERIOR_FIXED_VALUE</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-affine"></a><h3>gwy_data_field_affine ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_affine (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *source</code></em>,
+                       <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dest</code></em>,
+                       <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *invtrans</code></em>,
+                       <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyInterpolationType" title="enum GwyInterpolationType"><span class="type">GwyInterpolationType</span></a> interp</code></em>,
+                       <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyExteriorType" title="enum GwyExteriorType"><span class="type">GwyExteriorType</span></a> exterior</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> fill_value</code></em>);</pre>
+<p>Performs an affine transformation of a data field in the horizontal plane.</p>
+<p>Note the transform <em class="parameter"><code>invtrans</code></em>
+ is the inverse transform, in other
+words it calculates the old coordinates from the new coordinates.  This
+way even degenerate (non-invertible) transforms can be meaningfully used.
+Also note that the (column, row) coordinate system is left-handed.</p>
+<p>The <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-EXTERIOR-LAPLACE:CAPS"><code class="literal">GWY_EXTERIOR_LAPLACE</code></a> exterior type cannot be used with this function.</p>
+<div class="refsect3">
+<a name="gwy-data-field-affine.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>Source data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest</p></td>
+<td class="parameter_description"><p>Destination data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>invtrans</p></td>
+<td class="parameter_description"><p>Inverse transform, that is the transformation from
+new pixel coordinates to old pixel coordinates, represented as
+(<em class="parameter"><code>j</code></em>
++0.5, <em class="parameter"><code>i</code></em>
++0.5), where <em class="parameter"><code>i</code></em>
+and <em class="parameter"><code>j</code></em>
+are the row and column
+indices.  It is represented as a six-element array [<em class="parameter"><code>axx</code></em>
+, <em class="parameter"><code>axy</code></em>
+,
+<em class="parameter"><code>ayx</code></em>
+, <em class="parameter"><code>ayy</code></em>
+, <em class="parameter"><code>bx</code></em>
+, <em class="parameter"><code>by</code></em>
+] where <em class="parameter"><code>axy</code></em>
+is the coefficient from <em class="parameter"><code>x</code></em>
+to
+<em class="parameter"><code>y</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>interp</p></td>
+<td class="parameter_description"><p>Interpolation type to use.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>exterior</p></td>
+<td class="parameter_description"><p>Exterior pixels handling.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fill_value</p></td>
+<td class="parameter_description"><p>The value to use with <em class="parameter"><code>GWY_EXTERIOR_FIXED_VALUE</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-34.html#api-index-2.34">2.34</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-affine-prepare"></a><h3>gwy_data_field_affine_prepare ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_affine_prepare (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *source</code></em>,
+                               <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *dest</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *a1a2</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *a1a2_corr</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *invtrans</code></em>,
+                               <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyAffineScalingType" title="enum GwyAffineScalingType"><span class="type">GwyAffineScalingType</span></a> scaling</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> prevent_rotation</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> oversampling</code></em>);</pre>
+<p>Resolves an affine transformation of a data field in the horizontal plane.</p>
+<p>This function calculates suitable arguments for <a class="link" href="libgwyprocess-correct.html#gwy-data-field-affine" title="gwy_data_field_affine ()"><code class="function">gwy_data_field_affine()</code></a>
+from given images and lattice vectors (in real coordinates).</p>
+<p>Data field <em class="parameter"><code>dest</code></em>
+ will be resized and its real dimensions and units set in
+anticipation of <a class="link" href="libgwyprocess-correct.html#gwy-data-field-affine" title="gwy_data_field_affine ()"><code class="function">gwy_data_field_affine()</code></a>.  Its contents will be destroyed.</p>
+<p>Note that <em class="parameter"><code>a1a2_corr</code></em>
+ is an input-output parameter.  In general, the vectors
+will be modified according to <em class="parameter"><code>scaling</code></em>
+ and <em class="parameter"><code>prevent_rotation</code></em>
+ to the actual
+vectors in <em class="parameter"><code>dest</code></em>
+ after the transformation.  Only if <em class="parameter"><code>prevent_rotation</code></em>
+ is
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> and <em class="parameter"><code>scaling</code></em>
+ is <a class="link" href="libgwyprocess-gwyprocessenums.html#GWY-AFFINE-SCALING-AS-GIVEN:CAPS"><code class="literal">GWY_AFFINE_SCALING_AS_GIVEN</code></a> the vectors are
+preserved.</p>
+<div class="refsect3">
+<a name="gwy-data-field-affine-prepare.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>Source data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest</p></td>
+<td class="parameter_description"><p>Destination data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>a1a2</p></td>
+<td class="parameter_description"><p>Lattice vectors (or generally base vectors) in <em class="parameter"><code>source</code></em>
+, as an array
+of four components: <em class="parameter"><code>x1</code></em>
+, <em class="parameter"><code>y1</code></em>
+, <em class="parameter"><code>x2</code></em>
+and <em class="parameter"><code>y2</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>a1a2_corr</p></td>
+<td class="parameter_description"><p>Correct lattice vectors (or generally base vectors) <em class="parameter"><code>dest</code></em>
+should
+have after the affine transform, in the same form as <em class="parameter"><code>a1a2</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>invtrans</p></td>
+<td class="parameter_description"><p>Inverse transform as an array of six values to be filled
+according to <a class="link" href="libgwyprocess-correct.html#gwy-data-field-affine" title="gwy_data_field_affine ()"><code class="function">gwy_data_field_affine()</code></a> specification.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>scaling</p></td>
+<td class="parameter_description"><p>How (or if) to scale the correct lattice vectors.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prevent_rotation</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to prevent rotation of the data by rotating
+<em class="parameter"><code>a1a2_corr</code></em>
+as a whole to a direction preserving the
+data orientation.  <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to take <em class="parameter"><code>a1a2_corr</code></em>
+as given.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>oversampling</p></td>
+<td class="parameter_description"><p>Oversampling factor.  Values larger than 1 mean smaller
+pixels (and more of them) in <em class="parameter"><code>dest</code></em>
+, values smaller than 1
+the opposite.  Pass 1.0 for the default pixel size choice.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-measure-lattice-acf"></a><h3>gwy_data_field_measure_lattice_acf ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_data_field_measure_lattice_acf (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *acf2d</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *a1a2</code></em>);</pre>
+<p>Estimates or improves estimate of lattice vectors from a 2D ACF field.</p>
+<p>Note that the 2D ACF of a data field has to be passed, not the data field
+itself.  The correlation function can be for instance calculated by
+<a class="link" href="libgwyprocess-stats.html#gwy-data-field-2dacf" title="gwy_data_field_2dacf ()"><code class="function">gwy_data_field_2dacf()</code></a>. However, you can calculate and/or process the
+correlation function in any way you see fit.</p>
+<p>When the vectors in <em class="parameter"><code>a1a2</code></em>
+ are zero the function attempts to estimate the
+lattice from scratch.  But if <em class="parameter"><code>a1a2</code></em>
+ contains two non-zero vectors it takes
+them as approximate lattice vectors to improve.</p>
+<p>If the function return <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> the array <em class="parameter"><code>a1a2</code></em>
+ is filled with useless values
+and must be ignored.</p>
+<div class="refsect3">
+<a name="gwy-data-field-measure-lattice-acf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>acf2d</p></td>
+<td class="parameter_description"><p>Data field containing two-dimensional autocorrelation function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>a1a2</p></td>
+<td class="parameter_description"><p>Lattice vectors as an array of four components: <em class="parameter"><code>x1</code></em>
+, <em class="parameter"><code>y1</code></em>
+, <em class="parameter"><code>x2</code></em>
+and
+<em class="parameter"><code>y2</code></em>
+(in real coordinates).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-measure-lattice-acf.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if good lattice vectors were found, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> on failure.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-measure-lattice-psdf"></a><h3>gwy_data_field_measure_lattice_psdf ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_data_field_measure_lattice_psdf (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *psdf2d</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *a1a2</code></em>);</pre>
+<p>Estimates or improves estimate of lattice vectors from a 2D PSDF field.</p>
+<p>Note that the 2D PSDF of a data field has to be passed, not the data field
+itself.  The spectral density can be for instance calculated by
+<a class="link" href="libgwyprocess-inttrans.html#gwy-data-field-2dfft" title="gwy_data_field_2dfft ()"><code class="function">gwy_data_field_2dfft()</code></a> and summing the squares of real and imaginary parts
+However, you can calculate and/or process the spectral density in any way
+you see fit.</p>
+<p>When the vectors in <em class="parameter"><code>a1a2</code></em>
+ are zero the function attempts to estimate the
+lattice from scratch.  But if <em class="parameter"><code>a1a2</code></em>
+ contains two non-zero vectors it takes
+them as approximate lattice vectors to improve.</p>
+<p>If the function return <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> the array <em class="parameter"><code>a1a2</code></em>
+ is filled with useless values
+and must be ignored.</p>
+<div class="refsect3">
+<a name="gwy-data-field-measure-lattice-psdf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>psdf2d</p></td>
+<td class="parameter_description"><p>Data field containing two-dimensional power spectrum density
+function (or alternatively Fourier coefficient modulus).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>a1a2</p></td>
+<td class="parameter_description"><p>Lattice vectors as an array of four components: <em class="parameter"><code>x1</code></em>
+, <em class="parameter"><code>y1</code></em>
+, <em class="parameter"><code>x2</code></em>
+and
+<em class="parameter"><code>y2</code></em>
+(in real coordinates).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-measure-lattice-psdf.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if good lattice vectors were found, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> on failure.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-line-correct-laplace"></a><h3>gwy_data_line_correct_laplace ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_data_line_correct_laplace (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *data_line</code></em>,
+                               <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *mask_line</code></em>);</pre>
+<p>Fills missing values in a data line using Laplace data correction.</p>
+<p>Both data lines must have the same number of values.</p>
+<p>For one-dimensional data the missing data interpolation is explicit.
+Interior missing segments are filled with linear dependence between the edge
+points.  Missing segments with one end open are filled with the edge value.</p>
+<div class="refsect3">
+<a name="gwy-data-line-correct-laplace.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_line</p></td>
+<td class="parameter_description"><p>A data line.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask_line</p></td>
+<td class="parameter_description"><p>Mask of places to be corrected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-line-correct-laplace.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the line contained any data at all.  If there are no data
+the <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> is returned and <em class="parameter"><code>data_line</code></em>
+is filled with zeros.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-mark-scars"></a><h3>gwy_data_field_mark_scars ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_mark_scars (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                           <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *result</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> threshold_high</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> threshold_low</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> min_scar_len</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> max_scar_width</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> negative</code></em>);</pre>
+<p>Find and marks scars in a data field.</p>
+<p>Scars are linear horizontal defects, consisting of shifted values.
+Zero or negative values in <em class="parameter"><code>result</code></em>
+ siginify normal data, positive
+values siginify samples that are part of a scar.</p>
+<div class="refsect3">
+<a name="gwy-data-field-mark-scars.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field to find scars in.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>A data field to store the result to (it is resized to match
+<em class="parameter"><code>data_field</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>threshold_high</p></td>
+<td class="parameter_description"><p>Miminum relative step for scar marking, must be positive.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>threshold_low</p></td>
+<td class="parameter_description"><p>Definite relative step for scar marking, must be at least
+equal to <em class="parameter"><code>threshold_high</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>min_scar_len</p></td>
+<td class="parameter_description"><p>Minimum length of a scar, shorter ones are discarded
+(must be at least one).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_scar_width</p></td>
+<td class="parameter_description"><p>Maximum width of a scar, must be at least one.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>negative</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to detect negative scars, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to positive.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-46.html#api-index-2.46">2.46</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-subtract-row-shifts"></a><h3>gwy_data_field_subtract_row_shifts ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_field_subtract_row_shifts (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                    <em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *shifts</code></em>);</pre>
+<p>Shifts entire data field rows as specified by given data line.</p>
+<p>Data line <em class="parameter"><code>shifts</code></em>
+ must have resolution corresponding to the number of
+<em class="parameter"><code>data_field</code></em>
+ rows.  Its values are subtracted from individual field rows.</p>
+<div class="refsect3">
+<a name="gwy-data-field-subtract-row-shifts.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>shifts</p></td>
+<td class="parameter_description"><p>Data line containing the row shifts.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-52.html#api-index-2.52">2.52</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-find-row-shifts-trimmed-mean"></a><h3>gwy_data_field_find_row_shifts_trimmed_mean ()</h3>
+<pre class="programlisting"><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="returnvalue">GwyDataLine</span></a> *
+gwy_data_field_find_row_shifts_trimmed_mean
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyMaskingType" title="enum GwyMaskingType"><span class="type">GwyMaskingType</span></a> masking</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> trimfrac</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> mincount</code></em>);</pre>
+<p>Finds row shifts to misaligned row correction using trimmed row means.</p>
+<p>For zero <em class="parameter"><code>trimfrac</code></em>
+ the function calculates row means.  For <em class="parameter"><code>trimfrac</code></em>
+ of 1/2
+or larger it calculates row medians.  Values between correspond to trimmed
+means.</p>
+<div class="refsect3">
+<a name="gwy-data-field-find-row-shifts-trimmed-mean.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Mask of values to take values into account/exclude, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for full
+<em class="parameter"><code>data_field</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>masking</p></td>
+<td class="parameter_description"><p>Masking mode to use.  See the introduction for description of
+masking modes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>trimfrac</p></td>
+<td class="parameter_description"><p>Fraction of lowest values and highest values to discard when
+trimming.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mincount</p></td>
+<td class="parameter_description"><p>Minimum number of values in a row necessary for per-row
+calculation.  Rows which are essentially completely masked are
+not shifted with respect to a global value.  Pass a non-positive
+number to use an automatic minimum count.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-find-row-shifts-trimmed-mean.returns"></a><h4>Returns</h4>
+<p> A newly created data line containing the row shifts, for instance
+row means, medians or trimmed means.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-52.html#api-index-2.52">2.52</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-find-row-shifts-trimmed-diff"></a><h3>gwy_data_field_find_row_shifts_trimmed_diff ()</h3>
+<pre class="programlisting"><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="returnvalue">GwyDataLine</span></a> *
+gwy_data_field_find_row_shifts_trimmed_diff
+                               (<em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *data_field</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataField.html" title="GwyDataField"><span class="type">GwyDataField</span></a> *mask</code></em>,
+                                <em class="parameter"><code><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyMaskingType" title="enum GwyMaskingType"><span class="type">GwyMaskingType</span></a> masking</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> trimfrac</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> mincount</code></em>);</pre>
+<p>Finds row shifts to misaligned row correction using trimmed means of row
+differences.</p>
+<p>For zero <em class="parameter"><code>trimfrac</code></em>
+ the function calculates row means.  For <em class="parameter"><code>trimfrac</code></em>
+ of 1/2
+or larger it calculates row medians.  Values between correspond to trimmed
+means.</p>
+<div class="refsect3">
+<a name="gwy-data-field-find-row-shifts-trimmed-diff.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data_field</p></td>
+<td class="parameter_description"><p>A data field.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>Mask of values to take values into account/exclude, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for full
+<em class="parameter"><code>data_field</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>masking</p></td>
+<td class="parameter_description"><p>Masking mode to use.  See the introduction for description of
+masking modes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>trimfrac</p></td>
+<td class="parameter_description"><p>Fraction of lowest values and highest values to discard when
+trimming.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mincount</p></td>
+<td class="parameter_description"><p>Minimum number of values in a row necessary for per-row
+calculation.  Rows which are essentially completely masked are
+not shifted with respect to a global value.  Pass a non-positive
+number to use an automatic minimum count.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-find-row-shifts-trimmed-diff.returns"></a><h4>Returns</h4>
+<p> A newly created data line containing the row shifts, for instance
+row means, medians or trimmed means.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-52.html#api-index-2.52">2.52</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-field-unrotate-find-corrections"></a><h3>gwy_data_field_unrotate_find_corrections ()</h3>
+<pre class="programlisting"><a class="link" href="libgwyprocess-gwyprocessenums.html#GwyPlaneSymmetry" title="enum GwyPlaneSymmetry"><span class="returnvalue">GwyPlaneSymmetry</span></a>
+gwy_data_field_unrotate_find_corrections
+                               (<em class="parameter"><code><a class="link" href="GwyDataLine.html" title="GwyDataLine"><span class="type">GwyDataLine</span></a> *derdist</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *correction</code></em>);</pre>
+<p>Finds rotation corrections.</p>
+<p>Rotation correction is computed for for all symmetry types.
+In addition an estimate is made about the prevalent one.</p>
+<div class="refsect3">
+<a name="gwy-data-field-unrotate-find-corrections.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>derdist</p></td>
+<td class="parameter_description"><p>Angular derivation distribution (normally obrained from
+<a class="link" href="libgwyprocess-stats.html#gwy-data-field-slope-distribution" title="gwy_data_field_slope_distribution ()"><code class="function">gwy_data_field_slope_distribution()</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>correction</p></td>
+<td class="parameter_description"><p>Corrections for particular symmetry types will be stored
+here (indexed by GwyPlaneSymmetry). <em class="parameter"><code>correction</code></em>
+[0] contains
+the most probable correction.  All angles are in radians.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-field-unrotate-find-corrections.returns"></a><h4>Returns</h4>
+<p> The estimate type of prevalent symmetry.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

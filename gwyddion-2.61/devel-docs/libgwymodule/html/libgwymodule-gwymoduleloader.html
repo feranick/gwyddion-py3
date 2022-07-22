@@ -1,0 +1,891 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gwymoduleloader: Gwyddion Module Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Module Library Reference Manual">
+<link rel="up" href="ModuleLibrary.html" title="Gwyddion Module Library">
+<link rel="prev" href="libgwymodule-gwymoduleenums.html" title="gwymoduleenums">
+<link rel="next" href="libgwymodule-gwymodule-file.html" title="gwymodule-file">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgwymodule-gwymoduleloader.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ModuleLibrary.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgwymodule-gwymoduleenums.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwymodule-gwymodule-file.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgwymodule-gwymoduleloader"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgwymodule-gwymoduleloader.top_of_page"></a>gwymoduleloader</span></h2>
+<p>gwymoduleloader — Basic module loader interface</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgwymodule-gwymoduleloader.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymoduleloader.html#GWY-MODULE-QUERY:CAPS" title="GWY_MODULE_QUERY()">GWY_MODULE_QUERY</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymoduleloader.html#GWY-MODULE-QUERY2:CAPS" title="GWY_MODULE_QUERY2()">GWY_MODULE_QUERY2</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleRegisterFunc" title="GwyModuleRegisterFunc ()">*GwyModuleRegisterFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleInfo" title="struct GwyModuleInfo"><span class="returnvalue">GwyModuleInfo</span></a> *
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleQueryFunc" title="GwyModuleQueryFunc ()">*GwyModuleQueryFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleRecord" title="struct GwyModuleRecord"><span class="returnvalue">GwyModuleRecord</span></a> *
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleBundleRegisterFunc" title="GwyModuleBundleRegisterFunc ()">*GwyModuleBundleRegisterFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymoduleloader.html#gwy-module-error-quark" title="gwy_module_error_quark ()">gwy_module_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymoduleloader.html#gwy-module-register-modules" title="gwy_module_register_modules ()">gwy_module_register_modules</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleInfo" title="struct GwyModuleInfo"><span class="returnvalue">GwyModuleInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymoduleloader.html#gwy-module-lookup" title="gwy_module_lookup ()">gwy_module_lookup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymoduleloader.html#gwy-module-get-filename" title="gwy_module_get_filename ()">gwy_module_get_filename</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymoduleloader.html#gwy-module-get-functions" title="gwy_module_get_functions ()">gwy_module_get_functions</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymoduleloader.html#gwy-module-foreach" title="gwy_module_foreach ()">gwy_module_foreach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymoduleloader.html#gwy-module-failure-foreach" title="gwy_module_failure_foreach ()">gwy_module_failure_foreach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleInfo" title="struct GwyModuleInfo"><span class="returnvalue">GwyModuleInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymoduleloader.html#gwy-module-register-module" title="gwy_module_register_module ()">gwy_module_register_module</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymoduleloader.html#gwy-module-disable-registration" title="gwy_module_disable_registration ()">gwy_module_disable_registration</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymoduleloader.html#gwy-module-enable-registration" title="gwy_module_enable_registration ()">gwy_module_enable_registration</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgwymodule-gwymoduleloader.html#gwy-module-is-enabled" title="gwy_module_is_enabled ()">gwy_module_is_enabled</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwymodule-gwymoduleloader.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgwymodule-gwymoduleloader.html#GWY-MODULE-ABI-VERSION:CAPS" title="GWY_MODULE_ABI_VERSION">GWY_MODULE_ABI_VERSION</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgwymodule-gwymoduleloader.html#GWY-MODULE-BUNDLE-FLAG:CAPS" title="GWY_MODULE_BUNDLE_FLAG">GWY_MODULE_BUNDLE_FLAG</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgwymodule-gwymoduleloader.html#GWY-MODULE-ERROR:CAPS" title="GWY_MODULE_ERROR">GWY_MODULE_ERROR</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleError" title="enum GwyModuleError">GwyModuleError</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleRecord" title="struct GwyModuleRecord">GwyModuleRecord</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleInfo" title="struct GwyModuleInfo">GwyModuleInfo</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleFailureInfo" title="GwyModuleFailureInfo">GwyModuleFailureInfo</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgwymodule-gwymoduleloader.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwymodule/gwymodule.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgwymodule-gwymoduleloader.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgwymodule-gwymoduleloader.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GWY-MODULE-QUERY:CAPS"></a><h3>GWY_MODULE_QUERY()</h3>
+<pre class="programlisting">#define             GWY_MODULE_QUERY(mod_info)</pre>
+<p>The module query must be the ONLY exported symbol from a module.</p>
+<p>This macro does The Right Thing necessary to export module info in a way Gwyddion understands it. Put
+<a class="link" href="libgwymodule-gwymoduleloader.html#GWY-MODULE-QUERY:CAPS" title="GWY_MODULE_QUERY()"><code class="literal">GWY_MODULE_QUERY</code></a> with the module info (<a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleInfo" title="struct GwyModuleInfo"><span class="type">GwyModuleInfo</span></a>) of your module as its argument on a line (with NO semicolon
+after).</p>
+<p>If you write a module in C++ note the module query must have C linkage. This is achieved by marking it
+<code class="literal">extern "C"</code>:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="k">extern</span> <span class="s">&quot;C&quot;</span> <span class="p">{</span>
+<span class="n">GWY_MODULE_QUERY</span><span class="p">(</span><span class="n">module_info</span><span class="p">)</span>
+<span class="p">}</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+This has to be done manually in versions up to 2.24; since version 2.25 * <a class="link" href="libgwymodule-gwymoduleloader.html#GWY-MODULE-QUERY:CAPS" title="GWY_MODULE_QUERY()"><code class="function">GWY_MODULE_QUERY()</code></a> includes
+<code class="literal">extern "C"</code> automatically if it is compiled using a C++ compiler.</p>
+<div class="refsect3">
+<a name="GWY-MODULE-QUERY.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mod_info</p></td>
+<td class="parameter_description"><p>The <a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleInfo" title="struct GwyModuleInfo"><span class="type">GwyModuleInfo</span></a> structure to return as module info.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GWY-MODULE-QUERY2:CAPS"></a><h3>GWY_MODULE_QUERY2()</h3>
+<pre class="programlisting">#define             GWY_MODULE_QUERY2(mod_info,mod_name)</pre>
+<p>The module query must be the ONLY exported symbol from a module.</p>
+<p>See <a class="link" href="libgwymodule-gwymoduleloader.html#GWY-MODULE-QUERY:CAPS" title="GWY_MODULE_QUERY()"><code class="literal">GWY_MODULE_QUERY</code></a> for discussion.</p>
+<p>This macro is intended for modules that can be bundled together to one big shared library for time and space
+optimization.  This mostly makes sense only for modules included in Gwyddion itself as it contains hundreds of
+modules.</p>
+<p>However, it safe to use in third party modules because if modules are not bundled the macro behaves exactly as
+<a class="link" href="libgwymodule-gwymoduleloader.html#GWY-MODULE-QUERY:CAPS" title="GWY_MODULE_QUERY()"><code class="literal">GWY_MODULE_QUERY</code></a> and the <em class="parameter"><code>mod_name</code></em>
+ argument is just ignored.  The macro expansion differs only when
+<code class="literal">GWY_MODULE_BUNDLING</code> is defined when including the "gwymoduleloader.h" header.</p>
+<p>The module name <em class="parameter"><code>mod_name</code></em>
+ is given as a C identifier, not a string.  It <span class="emphasis"><em>must</em></span> be identical to
+the file name of the module if it was installed standalone, with extension removed and with non-identifier
+characters converted to underscores.  For instance module implemented in "nt-mdt.c" and installed as "nt-mdt.so" or
+"nt-mdt.dll" (or with other extensions, depending on the operating system) must pass <code class="literal">nt_mdt</code>.  If
+it does not match the file name, linking will fail with a confusing message when bundling is enabled.</p>
+<div class="refsect3">
+<a name="GWY-MODULE-QUERY2.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mod_info</p></td>
+<td class="parameter_description"><p>The <a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleInfo" title="struct GwyModuleInfo"><span class="type">GwyModuleInfo</span></a> structure to return as module info.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mod_name</p></td>
+<td class="parameter_description"><p>Module name, given as C identifier corresponding to file name withough extension.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyModuleRegisterFunc"></a><h3>GwyModuleRegisterFunc ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<span class="c_punctuation">(</span>*GwyModuleRegisterFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Module registration function type.</p>
+<p>It actually runs particular featrue registration functions, like <a class="link" href="libgwymodule-gwymodule-file.html#gwy-file-func-register" title="gwy_file_func_register ()"><code class="function">gwy_file_func_register()</code></a> and
+<a class="link" href="libgwymodule-gwymodule-process.html#gwy-process-func-register" title="gwy_process_func_register ()"><code class="function">gwy_process_func_register()</code></a>.</p>
+<p>If the module has a complex initialisation it may be safer to simply not register any function but return <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>
+even if it fails to set up itself correctly.  The module feature unregistration is somewhat crude and, generally,
+unregisteration may lead to disaster when shared library unloading has unexpected side effects.</p>
+<div class="refsect3">
+<a name="GwyModuleRegisterFunc.returns"></a><h4>Returns</h4>
+<p> Whether the registration succeeded.  When it returns <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>, the module and its features are unregistered.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyModuleQueryFunc"></a><h3>GwyModuleQueryFunc ()</h3>
+<pre class="programlisting"><a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleInfo" title="struct GwyModuleInfo"><span class="returnvalue">GwyModuleInfo</span></a> *
+<span class="c_punctuation">(</span>*GwyModuleQueryFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Module query function type.</p>
+<p>The module query function should be simply declared as GWY_MODULE_QUERY(mod_info), where mod_info is module info
+struct for the module.</p>
+<div class="refsect3">
+<a name="GwyModuleQueryFunc.returns"></a><h4>Returns</h4>
+<p> The module info struct.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyModuleBundleRegisterFunc"></a><h3>GwyModuleBundleRegisterFunc ()</h3>
+<pre class="programlisting">const <a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleRecord" title="struct GwyModuleRecord"><span class="returnvalue">GwyModuleRecord</span></a> *
+<span class="c_punctuation">(</span>*GwyModuleBundleRegisterFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Module bundle query function type.</p>
+<p>It returns an array of module records for all modules in the bundle, terminated by {<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>}.</p>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-module-error-quark"></a><h3>gwy_module_error_quark ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+gwy_module_error_quark (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Returns error domain for module loading.</p>
+<p>See and use <a class="link" href="libgwymodule-gwymoduleloader.html#GWY-MODULE-ERROR:CAPS" title="GWY_MODULE_ERROR"><code class="literal">GWY_MODULE_ERROR</code></a>.</p>
+<div class="refsect3">
+<a name="gwy-module-error-quark.returns"></a><h4>Returns</h4>
+<p> The error domain.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-module-register-modules"></a><h3>gwy_module_register_modules ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_module_register_modules (<em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **paths</code></em>);</pre>
+<p>Registers all modules in given directories.</p>
+<p>It can be called several times (on different directories).  No errors are reported, register modules individually
+with <a class="link" href="libgwymodule-gwymoduleloader.html#gwy-module-register-module" title="gwy_module_register_module ()"><code class="function">gwy_module_register_module()</code></a> to get registration errors.</p>
+<p>If you need to prevent specific modules from loading use <a class="link" href="libgwymodule-gwymoduleloader.html#gwy-module-disable-registration" title="gwy_module_disable_registration ()"><code class="function">gwy_module_disable_registration()</code></a> beforehand.</p>
+<div class="refsect3">
+<a name="gwy-module-register-modules.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>paths</p></td>
+<td class="parameter_description"><p>A <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated list of directory names.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-module-lookup"></a><h3>gwy_module_lookup ()</h3>
+<pre class="programlisting">const <a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleInfo" title="struct GwyModuleInfo"><span class="returnvalue">GwyModuleInfo</span></a> *
+gwy_module_lookup (<em class="parameter"><code>const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Returns information about one module.</p>
+<div class="refsect3">
+<a name="gwy-module-lookup.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>A module name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-module-lookup.returns"></a><h4>Returns</h4>
+<p> The module info, of <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found.  It must be considered constant and never modified or freed.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-module-get-filename"></a><h3>gwy_module_get_filename ()</h3>
+<pre class="programlisting">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_module_get_filename (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Returns full file name of a module.</p>
+<div class="refsect3">
+<a name="gwy-module-get-filename.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>A module name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-module-get-filename.returns"></a><h4>Returns</h4>
+<p> Module file name as a string that must be modified or freed.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-module-get-functions"></a><h3>gwy_module_get_functions ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+gwy_module_get_functions (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Returns list of names of functions a module implements.</p>
+<div class="refsect3">
+<a name="gwy-module-get-functions.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>A module name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-module-get-functions.returns"></a><h4>Returns</h4>
+<p> List of module function names, as a <a href="/usr/share/gtk-doc/html/glib/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> that is owned by module loader and must not be modified or
+freed.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-module-foreach"></a><h3>gwy_module_foreach ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_module_foreach (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Hash-Tables.html#GHFunc"><span class="type">GHFunc</span></a> function</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<p>Runs <em class="parameter"><code>function</code></em>
+ on each registered module.</p>
+<p>It passes module name as the key and pointer to module info (<a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleInfo" title="struct GwyModuleInfo"><span class="type">GwyModuleInfo</span></a>) as the value.  Neither should be
+modified.</p>
+<div class="refsect3">
+<a name="gwy-module-foreach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>function</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Hash-Tables.html#GHFunc"><span class="type">GHFunc</span></a> run for each module.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>User data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-module-failure-foreach"></a><h3>gwy_module_failure_foreach ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_module_failure_foreach (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GFunc"><span class="type">GFunc</span></a> function</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<p>Runs <em class="parameter"><code>function</code></em>
+ for each module that failed to register.</p>
+<p>It passes the failure info (<a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleFailureInfo" title="GwyModuleFailureInfo"><span class="type">GwyModuleFailureInfo</span></a>) as the data argument. It should be modified.</p>
+<div class="refsect3">
+<a name="gwy-module-failure-foreach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>function</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GFunc"><span class="type">GFunc</span></a> run for each module registration failure.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>User data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-module-register-module"></a><h3>gwy_module_register_module ()</h3>
+<pre class="programlisting">const <a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleInfo" title="struct GwyModuleInfo"><span class="returnvalue">GwyModuleInfo</span></a> *
+gwy_module_register_module (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Loads a single module.</p>
+<p>This function also works with bundles.  The returned module info is for the bundle and thus not of much use.</p>
+<div class="refsect3">
+<a name="gwy-module-register-module.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Module file name to load, including full path and extension.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Location to store error, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to ignore them.  Errors from <a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleError" title="enum GwyModuleError"><span class="type">GwyModuleError</span></a> domain can occur.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-module-register-module.returns"></a><h4>Returns</h4>
+<p> Module info on success, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> on failure.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-module-disable-registration"></a><h3>gwy_module_disable_registration ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_module_disable_registration (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Prevents the registration of a module of given name.</p>
+<p>This function blocks future module registration using <a class="link" href="libgwymodule-gwymoduleloader.html#gwy-module-register-modules" title="gwy_module_register_modules ()"><code class="function">gwy_module_register_modules()</code></a>.  Already loaded modules are
+unaffected. The low-level module loading function <a class="link" href="libgwymodule-gwymoduleloader.html#gwy-module-register-module" title="gwy_module_register_module ()"><code class="function">gwy_module_register_module()</code></a> always attempts to load the module,
+even if blocked.</p>
+<div class="refsect3">
+<a name="gwy-module-disable-registration.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>A module name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-48.html#api-index-2.48">2.48</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-module-enable-registration"></a><h3>gwy_module_enable_registration ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_module_enable_registration (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Unblocks the registration of a module of given name.</p>
+<p>This function influences future module registration.  Already loaded modules are unaffected.</p>
+<div class="refsect3">
+<a name="gwy-module-enable-registration.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>A module name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-48.html#api-index-2.48">2.48</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-module-is-enabled"></a><h3>gwy_module_is_enabled ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_module_is_enabled (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Reports whether the registration of a module is enabled.</p>
+<p>If the registration of module <em class="parameter"><code>name</code></em>
+ was prevented using <a class="link" href="libgwymodule-gwymoduleloader.html#gwy-module-disable-registration" title="gwy_module_disable_registration ()"><code class="function">gwy_module_disable_registration()</code></a> and not subsequently
+re-enabled using <code class="function">gwy_module_enabled_registration()</code> this function returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+<p>The reported values only represents the current state of blocking.  A module <em class="parameter"><code>name</code></em>
+ could have been loaded when it
+was not blocked.</p>
+<div class="refsect3">
+<a name="gwy-module-is-enabled.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>A module name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-module-is-enabled.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if module <em class="parameter"><code>name</code></em>
+can be registered; <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> when it is blocked from registration.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-48.html#api-index-2.48">2.48</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgwymodule-gwymoduleloader.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GWY-MODULE-ABI-VERSION:CAPS"></a><h3>GWY_MODULE_ABI_VERSION</h3>
+<pre class="programlisting">#define GWY_MODULE_ABI_VERSION 2
+</pre>
+<p>Gwyddion module ABI version.</p>
+<p>To be filled as <em class="parameter"><code>abi_version</code></em>
+ in <a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleInfo" title="struct GwyModuleInfo"><span class="type">GwyModuleInfo</span></a>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GWY-MODULE-BUNDLE-FLAG:CAPS"></a><h3>GWY_MODULE_BUNDLE_FLAG</h3>
+<pre class="programlisting">#define GWY_MODULE_BUNDLE_FLAG 256u
+</pre>
+<p>Value to bitwise combine with <a class="link" href="libgwymodule-gwymoduleloader.html#GWY-MODULE-ABI-VERSION:CAPS" title="GWY_MODULE_ABI_VERSION"><code class="literal">GWY_MODULE_ABI_VERSION</code></a> to indicate a bundle.</p>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GWY-MODULE-ERROR:CAPS"></a><h3>GWY_MODULE_ERROR</h3>
+<pre class="programlisting">#define GWY_MODULE_ERROR gwy_module_error_quark()
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyModuleError"></a><h3>enum GwyModuleError</h3>
+<p>Type of module loading and registration error.</p>
+<div class="refsect3">
+<a name="GwyModuleError.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MODULE-ERROR-NAME:CAPS"></a>GWY_MODULE_ERROR_NAME</p></td>
+<td class="enum_member_description">
+<p>Module has an invalid name.  It is recommended that module names are valid C identifiers,
+possibly with dashes instead of underscores, but only really broken names are rejected.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MODULE-ERROR-DUPLICATE:CAPS"></a>GWY_MODULE_ERROR_DUPLICATE</p></td>
+<td class="enum_member_description">
+<p>A module of the same name has already been registered.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MODULE-ERROR-OPEN:CAPS"></a>GWY_MODULE_ERROR_OPEN</p></td>
+<td class="enum_member_description">
+<p>Calling <a href="/usr/share/gtk-doc/html/glib/glib-Dynamic-Loading-of-Modules.html#g-module-open"><code class="function">g_module_open()</code></a> on the module failed.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MODULE-ERROR-QUERY:CAPS"></a>GWY_MODULE_ERROR_QUERY</p></td>
+<td class="enum_member_description">
+<p>Module does not contain any query function.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MODULE-ERROR-ABI:CAPS"></a>GWY_MODULE_ERROR_ABI</p></td>
+<td class="enum_member_description">
+<p>Module has different ABI version than expected/supported; or required info field are
+missing.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MODULE-ERROR-INFO:CAPS"></a>GWY_MODULE_ERROR_INFO</p></td>
+<td class="enum_member_description">
+<p>Module query function provided <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> info.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MODULE-ERROR-REGISTER:CAPS"></a>GWY_MODULE_ERROR_REGISTER</p></td>
+<td class="enum_member_description">
+<p>The registration function returned <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>; or the module did not register any function.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GWY-MODULE-ERROR-NESTING:CAPS"></a>GWY_MODULE_ERROR_NESTING</p></td>
+<td class="enum_member_description">
+<p>Nested module bundle found.  (Since 2.49)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyModuleRecord"></a><h3>struct GwyModuleRecord</h3>
+<pre class="programlisting">struct GwyModuleRecord {
+    GwyModuleQueryFunc query;
+    const gchar *name;
+};
+</pre>
+<p>Module record returned by bundle query function.</p>
+<div class="refsect3">
+<a name="GwyModuleRecord.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleQueryFunc" title="GwyModuleQueryFunc ()"><span class="type">GwyModuleQueryFunc</span></a> <em class="structfield"><code><a name="GwyModuleRecord.query"></a>query</code></em>;</p></td>
+<td class="struct_member_description"><p>Module query function.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="GwyModuleRecord.name"></a>name</code></em>;</p></td>
+<td class="struct_member_description"><p>Module name (base file name without extensions).</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyModuleInfo"></a><h3>struct GwyModuleInfo</h3>
+<pre class="programlisting">struct GwyModuleInfo {
+    guint32 abi_version;
+    GwyModuleRegisterFunc register_func;
+    const gchar *blurb;
+    const gchar *author;
+    const gchar *version;
+    const gchar *copyright;
+    const gchar *date;
+};
+</pre>
+<p>Module information returned by <a class="link" href="libgwymodule-gwymoduleloader.html#GWY-MODULE-QUERY:CAPS" title="GWY_MODULE_QUERY()"><code class="function">GWY_MODULE_QUERY()</code></a>.</p>
+<div class="refsect3">
+<a name="GwyModuleInfo.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> <em class="structfield"><code><a name="GwyModuleInfo.abi-version"></a>abi_version</code></em>;</p></td>
+<td class="struct_member_description"><p>Gwyddion module ABI version, should be always <a class="link" href="libgwymodule-gwymoduleloader.html#GWY-MODULE-ABI-VERSION:CAPS" title="GWY_MODULE_ABI_VERSION"><span class="type">GWY_MODULE_ABI_VERSION</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="libgwymodule-gwymoduleloader.html#GwyModuleRegisterFunc" title="GwyModuleRegisterFunc ()"><span class="type">GwyModuleRegisterFunc</span></a> <em class="structfield"><code><a name="GwyModuleInfo.register-func"></a>register_func</code></em>;</p></td>
+<td class="struct_member_description"><p>Module registration function (the function run by Gwyddion module system, actually registering
+particular module features).</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="GwyModuleInfo.blurb"></a>blurb</code></em>;</p></td>
+<td class="struct_member_description"><p>Some module description.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="GwyModuleInfo.author"></a>author</code></em>;</p></td>
+<td class="struct_member_description"><p>Module author(s).</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="GwyModuleInfo.version"></a>version</code></em>;</p></td>
+<td class="struct_member_description"><p>Module version.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="GwyModuleInfo.copyright"></a>copyright</code></em>;</p></td>
+<td class="struct_member_description"><p>Who has copyright on this module.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="GwyModuleInfo.date"></a>date</code></em>;</p></td>
+<td class="struct_member_description"><p>Date (year).</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyModuleFailureInfo"></a><h3>GwyModuleFailureInfo</h3>
+<pre class="programlisting">typedef struct {
+    const gchar *filename;
+    const gchar *modname;
+    const gchar *err_message;
+    gint err_domain;
+    gint err_code;
+} GwyModuleFailureInfo;
+</pre>
+<p>Information about a failed module registration.</p>
+<div class="refsect3">
+<a name="GwyModuleFailureInfo.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="GwyModuleFailureInfo.filename"></a>filename</code></em>;</p></td>
+<td class="struct_member_description"><p>Name of the file the module was loaded from.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="GwyModuleFailureInfo.modname"></a>modname</code></em>;</p></td>
+<td class="struct_member_description"><p>Module name (can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> and contain odd bytes).</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="GwyModuleFailureInfo.err-message"></a>err_message</code></em>;</p></td>
+<td class="struct_member_description"><p>Error message from the failed module registration.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GwyModuleFailureInfo.err-domain"></a>err_domain</code></em>;</p></td>
+<td class="struct_member_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> domain from the failed module registration.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GwyModuleFailureInfo.err-code"></a>err_code</code></em>;</p></td>
+<td class="struct_member_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> code from the failed module registration.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-49.html#api-index-2.49">2.49</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

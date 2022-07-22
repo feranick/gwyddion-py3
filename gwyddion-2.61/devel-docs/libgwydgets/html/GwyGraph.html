@@ -1,0 +1,613 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyGraph: Gwyddion Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Widgets Library Reference Manual">
+<link rel="up" href="GraphWidgets.html" title="Graphs">
+<link rel="prev" href="GraphWidgets.html" title="Graphs">
+<link rel="next" href="GwyGraphWindow.html" title="GwyGraphWindow">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyGraph.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyGraph.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GwyGraph.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GwyGraph.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="GraphWidgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GraphWidgets.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwyGraphWindow.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyGraph"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyGraph.top_of_page"></a>GwyGraph</span></h2>
+<p>GwyGraph — Widget for displaying graphs</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyGraph.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraph.html#gwy-graph-new" title="gwy_graph_new ()">gwy_graph_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyAxis.html" title="GwyAxis"><span class="returnvalue">GwyAxis</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraph.html#gwy-graph-get-axis" title="gwy_graph_get_axis ()">gwy_graph_get_axis</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraph.html#gwy-graph-set-axis-visible" title="gwy_graph_set_axis_visible ()">gwy_graph_set_axis_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraph.html#gwy-graph-get-area" title="gwy_graph_get_area ()">gwy_graph_get_area</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraph.html#gwy-graph-set-model" title="gwy_graph_set_model ()">gwy_graph_set_model</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="returnvalue">GwyGraphModel</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraph.html#gwy-graph-get-model" title="gwy_graph_get_model ()">gwy_graph_get_model</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraph.html#gwy-graph-set-status" title="gwy_graph_set_status ()">gwy_graph_set_status</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgwydgets-gwydgetenums.html#GwyGraphStatusType" title="enum GwyGraphStatusType"><span class="returnvalue">GwyGraphStatusType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraph.html#gwy-graph-get-status" title="gwy_graph_get_status ()">gwy_graph_get_status</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraph.html#gwy-graph-enable-user-input" title="gwy_graph_enable_user_input ()">gwy_graph_enable_user_input</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GdkPixbuf</span> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraph.html#gwy-graph-export-pixmap" title="gwy_graph_export_pixmap ()">gwy_graph_export_pixmap</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Strings.html#GString"><span class="returnvalue">GString</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyGraph.html#gwy-graph-export-postscript" title="gwy_graph_export_postscript ()">gwy_graph_export_postscript</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyGraph.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type">
+<a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *</td>
+<td class="property_name"><a class="link" href="GwyGraph.html#GwyGraph--model" title="The “model” property">model</a></td>
+<td class="property_flags">Read / Write</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyGraph.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyGraph.html#GwyGraph-struct" title="struct GwyGraph">GwyGraph</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyGraph.html#GwyGraphClass" title="struct GwyGraphClass">GwyGraphClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyGraph.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkObject.html#GtkObject-struct">GtkObject</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct">GtkWidget</a>
+                <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkContainer.html#GtkContainer-struct">GtkContainer</a>
+                    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkTable.html#GtkTable-struct">GtkTable</a>
+                        <span class="lineart">╰──</span> GwyGraph
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyGraph.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GwyGraph implements
+ AtkImplementorIface and  <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkBuildable.html#GtkBuildable-struct">GtkBuildable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwyGraph.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwydgets/gwydgets.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyGraph.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyGraph.html" title="GwyGraph"><span class="type">GwyGraph</span></a> is a basic widget for displaying graphs.
+It consists of several widgets that can also be used separately (at least
+in principle):
+<a class="link" href="GwyGraphArea.html" title="GwyGraphArea"><span class="type">GwyGraphArea</span></a> forms the main part of the graph,
+<a class="link" href="GwyAxis.html" title="GwyAxis"><span class="type">GwyAxis</span></a> is used for the axes,
+<a class="link" href="GwyGraphLabel.html" title="GwyGraphLabel"><span class="type">GwyGraphLabel</span></a> represents the key
+and <a class="link" href="GwyGraphCorner.html" title="GwyGraphCorner"><span class="type">GwyGraphCorner</span></a> is a dummy widget (at this moment) used for graph
+corners.</p>
+<p>Persisent graph properties and data are represented with <a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a>.
+Changes to the model are automatically reflected in the graph.</p>
+</div>
+<div class="refsect1">
+<a name="GwyGraph.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-graph-new"></a><h3>gwy_graph_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_graph_new (<em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gmodel</code></em>);</pre>
+<p>Creates graph widget based on information in model.</p>
+<div class="refsect3">
+<a name="gwy-graph-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>A graph model.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-new.returns"></a><h4>Returns</h4>
+<p> new graph widget.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-get-axis"></a><h3>gwy_graph_get_axis ()</h3>
+<pre class="programlisting"><a class="link" href="GwyAxis.html" title="GwyAxis"><span class="returnvalue">GwyAxis</span></a> *
+gwy_graph_get_axis (<em class="parameter"><code><a class="link" href="GwyGraph.html" title="GwyGraph"><span class="type">GwyGraph</span></a> *graph</code></em>,
+                    <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/gtk/gtk3-Standard-Enumerations.html#GtkPositionType"><span class="type">GtkPositionType</span></a> type</code></em>);</pre>
+<p>Gets a graph axis.</p>
+<div class="refsect3">
+<a name="gwy-graph-get-axis.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>graph</p></td>
+<td class="parameter_description"><p>A graph widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>Axis orientation</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-get-axis.returns"></a><h4>Returns</h4>
+<p> The axis (of given orientation) within the graph widget.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-set-axis-visible"></a><h3>gwy_graph_set_axis_visible ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_set_axis_visible (<em class="parameter"><code><a class="link" href="GwyGraph.html" title="GwyGraph"><span class="type">GwyGraph</span></a> *graph</code></em>,
+                            <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/gtk/gtk3-Standard-Enumerations.html#GtkPositionType"><span class="type">GtkPositionType</span></a> type</code></em>,
+                            <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> is_visible</code></em>);</pre>
+<p>Sets the visibility of graph axis of given orientation. Visibility
+can be set also directly using GwyAxis API.</p>
+<div class="refsect3">
+<a name="gwy-graph-set-axis-visible.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>graph</p></td>
+<td class="parameter_description"><p>A graph widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>Axis orientation</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>is_visible</p></td>
+<td class="parameter_description"><p>set/unset axis visibility within graph widget</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-get-area"></a><h3>gwy_graph_get_area ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_graph_get_area (<em class="parameter"><code><a class="link" href="GwyGraph.html" title="GwyGraph"><span class="type">GwyGraph</span></a> *graph</code></em>);</pre>
+<p>Gets the area widget of a graph.</p>
+<div class="refsect3">
+<a name="gwy-graph-get-area.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>graph</p></td>
+<td class="parameter_description"><p>A graph widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-get-area.returns"></a><h4>Returns</h4>
+<p> The graph area widget within the graph.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-set-model"></a><h3>gwy_graph_set_model ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_set_model (<em class="parameter"><code><a class="link" href="GwyGraph.html" title="GwyGraph"><span class="type">GwyGraph</span></a> *graph</code></em>,
+                     <em class="parameter"><code><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *gmodel</code></em>);</pre>
+<p>Changes the model a graph displays.</p>
+<p>Everything in graph widgets will be reset to reflect the new data.</p>
+<div class="refsect3">
+<a name="gwy-graph-set-model.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>graph</p></td>
+<td class="parameter_description"><p>A graph widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gmodel</p></td>
+<td class="parameter_description"><p>New graph model</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-get-model"></a><h3>gwy_graph_get_model ()</h3>
+<pre class="programlisting"><a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="returnvalue">GwyGraphModel</span></a> *
+gwy_graph_get_model (<em class="parameter"><code><a class="link" href="GwyGraph.html" title="GwyGraph"><span class="type">GwyGraph</span></a> *graph</code></em>);</pre>
+<p>Gets the model of a graph.</p>
+<div class="refsect3">
+<a name="gwy-graph-get-model.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>graph</p></td>
+<td class="parameter_description"><p>A graph widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-get-model.returns"></a><h4>Returns</h4>
+<p> The graph model this graph widget displays.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-set-status"></a><h3>gwy_graph_set_status ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_set_status (<em class="parameter"><code><a class="link" href="GwyGraph.html" title="GwyGraph"><span class="type">GwyGraph</span></a> *graph</code></em>,
+                      <em class="parameter"><code><a class="link" href="libgwydgets-gwydgetenums.html#GwyGraphStatusType" title="enum GwyGraphStatusType"><span class="type">GwyGraphStatusType</span></a> status</code></em>);</pre>
+<p>Sets the status of a graph widget.</p>
+<p>The status determines how the graph reacts on mouse events.
+This includes point or area selection and zooming.</p>
+<div class="refsect3">
+<a name="gwy-graph-set-status.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>graph</p></td>
+<td class="parameter_description"><p>A graph widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>status</p></td>
+<td class="parameter_description"><p>graph status</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-get-status"></a><h3>gwy_graph_get_status ()</h3>
+<pre class="programlisting"><a class="link" href="libgwydgets-gwydgetenums.html#GwyGraphStatusType" title="enum GwyGraphStatusType"><span class="returnvalue">GwyGraphStatusType</span></a>
+gwy_graph_get_status (<em class="parameter"><code><a class="link" href="GwyGraph.html" title="GwyGraph"><span class="type">GwyGraph</span></a> *graph</code></em>);</pre>
+<p>Get the status of a graph widget.</p>
+<p>See <a class="link" href="GwyGraph.html#gwy-graph-set-status" title="gwy_graph_set_status ()"><code class="function">gwy_graph_set_status()</code></a> for more.</p>
+<div class="refsect3">
+<a name="gwy-graph-get-status.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>graph</p></td>
+<td class="parameter_description"><p>A graph widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-get-status.returns"></a><h4>Returns</h4>
+<p> The current graph status.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-enable-user-input"></a><h3>gwy_graph_enable_user_input ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_graph_enable_user_input (<em class="parameter"><code><a class="link" href="GwyGraph.html" title="GwyGraph"><span class="type">GwyGraph</span></a> *graph</code></em>,
+                             <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> enable</code></em>);</pre>
+<p>Enables/disables all the graph/curve settings dialogs to be invoked by
+mouse clicks.</p>
+<div class="refsect3">
+<a name="gwy-graph-enable-user-input.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>graph</p></td>
+<td class="parameter_description"><p>A graph widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>enable</p></td>
+<td class="parameter_description"><p>whether to enable user input</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-export-pixmap"></a><h3>gwy_graph_export_pixmap ()</h3>
+<pre class="programlisting"><span class="returnvalue">GdkPixbuf</span> *
+gwy_graph_export_pixmap (<em class="parameter"><code><a class="link" href="GwyGraph.html" title="GwyGraph"><span class="type">GwyGraph</span></a> *graph</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> export_title</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> export_axis</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> export_labels</code></em>);</pre>
+<p>Renders a graph widget into a pixbuf.</p>
+<div class="refsect3">
+<a name="gwy-graph-export-pixmap.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>graph</p></td>
+<td class="parameter_description"><p>A graph widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>export_title</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to export graph title.  Currently unimplemented.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>export_axis</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to export graph axes.  Currently unimplemented.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>export_labels</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to export graph labels.  Currently unimplemented.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-export-pixmap.returns"></a><h4>Returns</h4>
+<p> A newly created pixbuf.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-graph-export-postscript"></a><h3>gwy_graph_export_postscript ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Strings.html#GString"><span class="returnvalue">GString</span></a> *
+gwy_graph_export_postscript (<em class="parameter"><code><a class="link" href="GwyGraph.html" title="GwyGraph"><span class="type">GwyGraph</span></a> *graph</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> export_title</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> export_axis</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> export_labels</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Strings.html#GString"><span class="type">GString</span></a> *str</code></em>);</pre>
+<p>Approximately renders a graph widget in PostScript.</p>
+<div class="refsect3">
+<a name="gwy-graph-export-postscript.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>graph</p></td>
+<td class="parameter_description"><p>A graph widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>export_title</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to export graph title.  Currently unimplemented.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>export_axis</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to export graph axes.  Currently unimplemented.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>export_labels</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to export graph labels.  Currently unimplemented.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>String to put the PostScript representation to, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to
+allocate a new string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-graph-export-postscript.returns"></a><h4>Returns</h4>
+<p> Either <em class="parameter"><code>string</code></em>
+or a newly created <a href="/usr/share/gtk-doc/html/glib/glib-Strings.html#GString"><span class="type">GString</span></a>.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyGraph.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyGraph-struct"></a><h3>struct GwyGraph</h3>
+<pre class="programlisting">struct GwyGraph;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyGraphClass"></a><h3>struct GwyGraphClass</h3>
+<pre class="programlisting">struct GwyGraphClass {
+    GtkTableClass parent_class;
+
+    void (*reserved1)(void);
+    void (*reserved2)(void);
+    void (*reserved3)(void);
+    void (*reserved4)(void);
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyGraph.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GwyGraph--model"></a><h3>The <code class="literal">“model”</code> property</h3>
+<pre class="programlisting">  “model”                    <a class="link" href="GwyGraphModel.html" title="GwyGraphModel"><span class="type">GwyGraphModel</span></a> *</pre>
+<p>The graph model of the graph.</p>
+<p>Owner: GwyGraph</p>
+<p>Flags: Read / Write</p>
+<p class="since">Since: <a class="link" href="api-index-2-7.html#api-index-2.7">2.7</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

@@ -1,0 +1,892 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwyDataChooser: Gwyddion Application Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Application Library Reference Manual">
+<link rel="prev" href="libgwyapp-data-browser.html" title="data-browser">
+<link rel="next" href="libgwyapp-settings.html" title="settings">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyDataChooser.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyDataChooser.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GwyDataChooser.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyapp-data-browser.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyapp-settings.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyDataChooser"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyDataChooser.top_of_page"></a>GwyDataChooser</span></h2>
+<p>GwyDataChooser — Data object choosers</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyDataChooser.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="GwyDataChooser.html#GwyDataChooserFilterFunc" title="GwyDataChooserFilterFunc ()">*GwyDataChooserFilterFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataChooser.html#gwy-data-chooser-new-channels" title="gwy_data_chooser_new_channels ()">gwy_data_chooser_new_channels</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataChooser.html#gwy-data-chooser-new-volumes" title="gwy_data_chooser_new_volumes ()">gwy_data_chooser_new_volumes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataChooser.html#gwy-data-chooser-new-graphs" title="gwy_data_chooser_new_graphs ()">gwy_data_chooser_new_graphs</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataChooser.html#gwy-data-chooser-new-xyzs" title="gwy_data_chooser_new_xyzs ()">gwy_data_chooser_new_xyzs</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataChooser.html#gwy-data-chooser-new-curve-maps" title="gwy_data_chooser_new_curve_maps ()">gwy_data_chooser_new_curve_maps</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="returnvalue">GwyAppDataId</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataChooser.html#gwy-app-data-id-new" title="gwy_app_data_id_new ()">gwy_app_data_id_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="returnvalue">GwyAppDataId</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataChooser.html#gwy-app-data-id-copy" title="gwy_app_data_id_copy ()">gwy_app_data_id_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataChooser.html#gwy-app-data-id-free" title="gwy_app_data_id_free ()">gwy_app_data_id_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataChooser.html#gwy-data-chooser-set-active" title="gwy_data_chooser_set_active ()">gwy_data_chooser_set_active</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwyContainer.html#GwyContainer-struct"><span class="returnvalue">GwyContainer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataChooser.html#gwy-data-chooser-get-active" title="gwy_data_chooser_get_active ()">gwy_data_chooser_get_active</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataChooser.html#gwy-data-chooser-set-active-id" title="gwy_data_chooser_set_active_id ()">gwy_data_chooser_set_active_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataChooser.html#gwy-data-chooser-get-active-id" title="gwy_data_chooser_get_active_id ()">gwy_data_chooser_get_active_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataChooser.html#gwy-data-chooser-set-filter" title="gwy_data_chooser_set_filter ()">gwy_data_chooser_set_filter</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataChooser.html#gwy-data-chooser-get-none" title="gwy_data_chooser_get_none ()">gwy_data_chooser_get_none</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataChooser.html#gwy-data-chooser-set-none" title="gwy_data_chooser_set_none ()">gwy_data_chooser_set_none</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkTreeModel.html#GtkTreeModel-struct"><span class="returnvalue">GtkTreeModel</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataChooser.html#gwy-data-chooser-get-filter" title="gwy_data_chooser_get_filter ()">gwy_data_chooser_get_filter</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyDataChooser.html#gwy-data-chooser-refilter" title="gwy_data_chooser_refilter ()">gwy_data_chooser_refilter</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyDataChooser.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="GwyDataChooser.html#GWY-APP-DATA-ID-NONE:CAPS" title="GWY_APP_DATA_ID_NONE">GWY_APP_DATA_ID_NONE</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId">GwyAppDataId</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GwyDataChooser.html#GwyDataChooser-struct" title="GwyDataChooser">GwyDataChooser</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GwyDataChooser.html#GwyDataChooserClass" title="GwyDataChooserClass">GwyDataChooserClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyDataChooser.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkObject.html#GtkObject-struct">GtkObject</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkWidget.html#GtkWidget-struct">GtkWidget</a>
+                <span class="lineart">╰──</span> <a href="http://developer.gnome.org/doc/API/2.0/gtk/GtkContainer.html#GtkContainer-struct">GtkContainer</a>
+                    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkBin.html#GtkBin-struct">GtkBin</a>
+                        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkComboBox.html#GtkComboBox-struct">GtkComboBox</a>
+                            <span class="lineart">╰──</span> GwyDataChooser
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyDataChooser.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GwyDataChooser implements
+ AtkImplementorIface,  <a href="/usr/share/gtk-doc/html/gtk3/GtkBuildable.html#GtkBuildable-struct">GtkBuildable</a>,  <a href="/usr/share/gtk-doc/html/gtk3/GtkCellLayout.html#GtkCellLayout-struct">GtkCellLayout</a> and  <a href="/usr/share/gtk-doc/html/gtk3/GtkCellEditable.html#GtkCellEditable-struct">GtkCellEditable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwyDataChooser.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;app/gwyapp.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyDataChooser.description"></a><h2>Description</h2>
+<p><a class="link" href="GwyDataChooser.html" title="GwyDataChooser"><span class="type">GwyDataChooser</span></a> is an base data object chooser class.  Choosers for particular data objects can be created with
+functions like <a class="link" href="GwyDataChooser.html#gwy-data-chooser-new-channels" title="gwy_data_chooser_new_channels ()"><code class="function">gwy_data_chooser_new_channels()</code></a> or <a class="link" href="GwyDataChooser.html#gwy-data-chooser-new-volumes" title="gwy_data_chooser_new_volumes ()"><code class="function">gwy_data_chooser_new_volumes()</code></a> and then manipulated through
+<a class="link" href="GwyDataChooser.html" title="GwyDataChooser"><span class="type">GwyDataChooser</span></a> interface.</p>
+<p>The widget type used to implement choosers is not a part of the interface and may be subject of future changes.  In
+any case <a class="link" href="GwyDataChooser.html" title="GwyDataChooser"><span class="type">GwyDataChooser</span></a> has a <code class="code">"changed"</code> signal emitted when the selected item changes.</p>
+<p>It is possible to offer only data objects matching some criteria.  For example to offer only data fields compatible
+with another data field, one can use:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">GtkWidget</span> <span class="o">*</span><span class="n">chooser</span><span class="p">;</span>
+<span class="n">GwyDataField</span> <span class="o">*</span><span class="n">model</span><span class="p">;</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="p">...;</span>
+<span class="n">chooser</span> <span class="o">=</span> <span class="n">gwy_data_chooser_new_channels</span><span class="p">();</span>
+<span class="n">gwy_data_chooser_set_filter</span><span class="p">(</span><span class="n">GWY_DATA_CHOOSER</span><span class="p">(</span><span class="n">chooser</span><span class="p">),</span> <span class="n">compatible_field_filter</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>where the filter function looks like</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="k">static</span> <span class="n">gboolean</span>
+<span class="n">compatible_field_filter</span><span class="p">(</span><span class="n">GwyContainer</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span>
+                        <span class="n">gint</span> <span class="n">id</span><span class="p">,</span>
+                        <span class="n">gpointer</span> <span class="n">user_data</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">GwyDataField</span> <span class="o">*</span><span class="n">model</span><span class="p">,</span> <span class="o">*</span><span class="n">data_field</span><span class="p">;</span>
+    <span class="n">GQuark</span> <span class="n">quark</span><span class="p">;</span>
+    
+    <span class="n">quark</span> <span class="o">=</span> <span class="n">gwy_app_get_data_key_for_id</span><span class="p">(</span><span class="n">id</span><span class="p">);</span>
+    <span class="n">data_field</span> <span class="o">=</span> <span class="n">gwy_container_get_object</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">quark</span><span class="p">);</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">GWY_DATA_FIELD</span><span class="p">(</span><span class="n">user_data</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">!</span><span class="n">gwy_data_field_check_compatibility</span><span class="p">(</span><span class="n">data_field</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span>
+                                               <span class="n">GWY_DATA_COMPATIBILITY_RES</span>
+                                               <span class="o">|</span> <span class="n">GWY_DATA_COMPATIBILITY_REAL</span>
+                                               <span class="o">|</span> <span class="n">GWY_DATA_COMPATIBILITY_LATERAL</span>
+                                               <span class="o">|</span> <span class="n">GWY_DATA_COMPATIBILITY_VALUE</span><span class="p">);</span>
+<span class="p">}</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<div class="refsect1">
+<a name="GwyDataChooser.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GwyDataChooserFilterFunc"></a><h3>GwyDataChooserFilterFunc ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<span class="c_punctuation">(</span>*GwyDataChooserFilterFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>The type of data chooser filter function.</p>
+<div class="refsect3">
+<a name="GwyDataChooserFilterFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Data container.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Id of particular data in <em class="parameter"><code>data</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>Data passed to <a class="link" href="GwyDataChooser.html#gwy-data-chooser-set-filter" title="gwy_data_chooser_set_filter ()"><code class="function">gwy_data_chooser_set_filter()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="GwyDataChooserFilterFunc.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to display this data in the chooser, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to omit it.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-chooser-new-channels"></a><h3>gwy_data_chooser_new_channels ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_data_chooser_new_channels (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a data chooser for data channels.</p>
+<div class="refsect3">
+<a name="gwy-data-chooser-new-channels.returns"></a><h4>Returns</h4>
+<p> A new channel chooser.  Nothing may be assumed about the type and properties of the returned widget as
+they can change in the future.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-chooser-new-volumes"></a><h3>gwy_data_chooser_new_volumes ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_data_chooser_new_volumes (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a data chooser for volume data.</p>
+<div class="refsect3">
+<a name="gwy-data-chooser-new-volumes.returns"></a><h4>Returns</h4>
+<p> A new volume chooser.  Nothing may be assumed about the type and properties of the returned widget as they
+can change in the future.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-33.html#api-index-2.33">2.33</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-chooser-new-graphs"></a><h3>gwy_data_chooser_new_graphs ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_data_chooser_new_graphs (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a data chooser for graphs.</p>
+<div class="refsect3">
+<a name="gwy-data-chooser-new-graphs.returns"></a><h4>Returns</h4>
+<p> A new graph chooser.  Nothing may be assumed about the type and properties of the returned widget as they
+can change in the future.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-41.html#api-index-2.41">2.41</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-chooser-new-xyzs"></a><h3>gwy_data_chooser_new_xyzs ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_data_chooser_new_xyzs (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a data chooser for XYZ data.</p>
+<div class="refsect3">
+<a name="gwy-data-chooser-new-xyzs.returns"></a><h4>Returns</h4>
+<p> A new XYZ data chooser.  Nothing may be assumed about the type and properties of the returned widget as
+they can change in the future.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-45.html#api-index-2.45">2.45</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-chooser-new-curve-maps"></a><h3>gwy_data_chooser_new_curve_maps ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gwy_data_chooser_new_curve_maps (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a data chooser for curve map data.</p>
+<div class="refsect3">
+<a name="gwy-data-chooser-new-curve-maps.returns"></a><h4>Returns</h4>
+<p> A new curve map data chooser.  Nothing may be assumed about the type and properties of the returned widget
+as they can change in the future.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-60.html#api-index-2.60">2.60</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-data-id-new"></a><h3>gwy_app_data_id_new ()</h3>
+<pre class="programlisting"><a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="returnvalue">GwyAppDataId</span></a> *
+gwy_app_data_id_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> datano</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Creates a new data identifier on heap.</p>
+<p>This is mostly useful for language bindings.</p>
+<div class="refsect3">
+<a name="gwy-app-data-id-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>datano</p></td>
+<td class="parameter_description"><p>Numeric identifier of data container.  Zero is used for none.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Numeric identifier of a specific data item, such as channel or graph number.  Value -1 is used for none.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-data-id-new.returns"></a><h4>Returns</h4>
+<p> Newly allocated data id.  It must be freed with <a class="link" href="GwyDataChooser.html#gwy-app-data-id-free" title="gwy_app_data_id_free ()"><code class="function">gwy_app_data_id_free()</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-data-id-copy"></a><h3>gwy_app_data_id_copy ()</h3>
+<pre class="programlisting"><a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="returnvalue">GwyAppDataId</span></a> *
+gwy_app_data_id_copy (<em class="parameter"><code><a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="type">GwyAppDataId</span></a> *dataid</code></em>);</pre>
+<p>Creates a copy of data identifier.</p>
+<p>This is mostly useful for language bindings.</p>
+<div class="refsect3">
+<a name="gwy-app-data-id-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>dataid</p></td>
+<td class="parameter_description"><p>Data identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-app-data-id-copy.returns"></a><h4>Returns</h4>
+<p> Newly allocated data id.  It must be freed with <a class="link" href="GwyDataChooser.html#gwy-app-data-id-free" title="gwy_app_data_id_free ()"><code class="function">gwy_app_data_id_free()</code></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-app-data-id-free"></a><h3>gwy_app_data_id_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_app_data_id_free (<em class="parameter"><code><a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="type">GwyAppDataId</span></a> *dataid</code></em>);</pre>
+<p>Frees a data identifier.</p>
+<p>This is mostly useful for language bindings.</p>
+<div class="refsect3">
+<a name="gwy-app-data-id-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>dataid</p></td>
+<td class="parameter_description"><p>Data identifier.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-47.html#api-index-2.47">2.47</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-chooser-set-active"></a><h3>gwy_data_chooser_set_active ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_data_chooser_set_active (<em class="parameter"><code><a class="link" href="GwyDataChooser.html" title="GwyDataChooser"><span class="type">GwyDataChooser</span></a> *chooser</code></em>,
+                             <em class="parameter"><code><a href="../GwyContainer.html#GwyContainer-struct"><span class="type">GwyContainer</span></a> *data</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> id</code></em>);</pre>
+<p>Selects a data in a data chooser.</p>
+<div class="refsect3">
+<a name="gwy-data-chooser-set-active.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>chooser</p></td>
+<td class="parameter_description"><p>A data chooser.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>Container to select, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to select none (if the chooser contains `none' item).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Id of particular data to select in <em class="parameter"><code>data</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-chooser-set-active.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if selected item was set.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-chooser-get-active"></a><h3>gwy_data_chooser_get_active ()</h3>
+<pre class="programlisting"><a href="../GwyContainer.html#GwyContainer-struct"><span class="returnvalue">GwyContainer</span></a> *
+gwy_data_chooser_get_active (<em class="parameter"><code><a class="link" href="GwyDataChooser.html" title="GwyDataChooser"><span class="type">GwyDataChooser</span></a> *chooser</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *id</code></em>);</pre>
+<p>Gets the selected item in a data chooser.</p>
+<div class="refsect3">
+<a name="gwy-data-chooser-get-active.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>chooser</p></td>
+<td class="parameter_description"><p>A data chooser.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Location to store selected data id to (may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-chooser-get-active.returns"></a><h4>Returns</h4>
+<p> The container selected data lies in, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if nothing is selected or `none' item is selected.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-chooser-set-active-id"></a><h3>gwy_data_chooser_set_active_id ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_data_chooser_set_active_id (<em class="parameter"><code><a class="link" href="GwyDataChooser.html" title="GwyDataChooser"><span class="type">GwyDataChooser</span></a> *chooser</code></em>,
+                                <em class="parameter"><code>const <a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="type">GwyAppDataId</span></a> *id</code></em>);</pre>
+<p>Selects a data in a data chooser using numerical identifiers.</p>
+<p>Passing <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> as <em class="parameter"><code>id</code></em>
+ is permitted as a request to select the ‘none’ item.</p>
+<div class="refsect3">
+<a name="gwy-data-chooser-set-active-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>chooser</p></td>
+<td class="parameter_description"><p>A data chooser.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Data item to select.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-chooser-set-active-id.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if selected item was set.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-41.html#api-index-2.41">2.41</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-chooser-get-active-id"></a><h3>gwy_data_chooser_get_active_id ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gwy_data_chooser_get_active_id (<em class="parameter"><code><a class="link" href="GwyDataChooser.html" title="GwyDataChooser"><span class="type">GwyDataChooser</span></a> *chooser</code></em>,
+                                <em class="parameter"><code><a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="type">GwyAppDataId</span></a> *id</code></em>);</pre>
+<p>Gets the selected item in a data chooser as numerical identifiers.</p>
+<div class="refsect3">
+<a name="gwy-data-chooser-get-active-id.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>chooser</p></td>
+<td class="parameter_description"><p>A data chooser.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>Location for the id selected data item.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-chooser-get-active-id.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if any actual data item is selected.  <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> is nothing is selected or the ‘none’ item is selected.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-41.html#api-index-2.41">2.41</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-chooser-set-filter"></a><h3>gwy_data_chooser_set_filter ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_chooser_set_filter (<em class="parameter"><code><a class="link" href="GwyDataChooser.html" title="GwyDataChooser"><span class="type">GwyDataChooser</span></a> *chooser</code></em>,
+                             <em class="parameter"><code><a class="link" href="GwyDataChooser.html#GwyDataChooserFilterFunc" title="GwyDataChooserFilterFunc ()"><span class="type">GwyDataChooserFilterFunc</span></a> filter</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk2/gtk2-Types.html#GtkDestroyNotify"><span class="type">GtkDestroyNotify</span></a> destroy</code></em>);</pre>
+<p>Sets the filter applied to a data chooser.</p>
+<p>The display of an item corresponding to no data is controlled by <a class="link" href="GwyDataChooser.html#gwy-data-chooser-set-none" title="gwy_data_chooser_set_none ()"><code class="function">gwy_data_chooser_set_none()</code></a>, <em class="parameter"><code>filter</code></em>
+ function is
+only called for real data.</p>
+<p>Use <a class="link" href="GwyDataChooser.html#gwy-data-chooser-refilter" title="gwy_data_chooser_refilter ()"><code class="function">gwy_data_chooser_refilter()</code></a> to update the list if the filter depends on external state and that changes.</p>
+<div class="refsect3">
+<a name="gwy-data-chooser-set-filter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>chooser</p></td>
+<td class="parameter_description"><p>A data chooser.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filter</p></td>
+<td class="parameter_description"><p>The filter function.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>The data passed to <em class="parameter"><code>filter</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>destroy</p></td>
+<td class="parameter_description"><p>Destroy notifier of <em class="parameter"><code>user_data</code></em>
+or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-chooser-get-none"></a><h3>gwy_data_chooser_get_none ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_data_chooser_get_none (<em class="parameter"><code><a class="link" href="GwyDataChooser.html" title="GwyDataChooser"><span class="type">GwyDataChooser</span></a> *chooser</code></em>);</pre>
+<p>Gets the label of the item corresponding to no data.</p>
+<div class="refsect3">
+<a name="gwy-data-chooser-get-none.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>chooser</p></td>
+<td class="parameter_description"><p>A data chooser.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-chooser-get-none.returns"></a><h4>Returns</h4>
+<p> The label corresponding to no data, an empty string for the default label and <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the chooser does
+not display the no-data item.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-chooser-set-none"></a><h3>gwy_data_chooser_set_none ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_chooser_set_none (<em class="parameter"><code><a class="link" href="GwyDataChooser.html" title="GwyDataChooser"><span class="type">GwyDataChooser</span></a> *chooser</code></em>,
+                           <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *none</code></em>);</pre>
+<p>Sets the label of the item corresponding to no data.</p>
+<div class="refsect3">
+<a name="gwy-data-chooser-set-none.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>chooser</p></td>
+<td class="parameter_description"><p>A data chooser.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>none</p></td>
+<td class="parameter_description"><p>Label to use for item corresponding to no data. Passing <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, disables such an item, an empty string
+enables it with the default label.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-chooser-get-filter"></a><h3>gwy_data_chooser_get_filter ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkTreeModel.html#GtkTreeModel-struct"><span class="returnvalue">GtkTreeModel</span></a> *
+gwy_data_chooser_get_filter (<em class="parameter"><code><a class="link" href="GwyDataChooser.html" title="GwyDataChooser"><span class="type">GwyDataChooser</span></a> *chooser</code></em>);</pre>
+<p>Gets the tree model filter used in a data chooser.</p>
+<p>In general, you should not access the filter directly.  An exception being <a href="/usr/share/gtk-doc/html/gtk3/GtkTreeModelFilter.html#gtk-tree-model-filter-refilter"><code class="function">gtk_tree_model_filter_refilter()</code></a> when
+the filtering functions given in <a class="link" href="GwyDataChooser.html#gwy-data-chooser-set-filter" title="gwy_data_chooser_set_filter ()"><code class="function">gwy_data_chooser_set_filter()</code></a> depends on external state and that state changes.
+However, <a class="link" href="GwyDataChooser.html#gwy-data-chooser-refilter" title="gwy_data_chooser_refilter ()"><code class="function">gwy_data_chooser_refilter()</code></a> is usually more useful.</p>
+<div class="refsect3">
+<a name="gwy-data-chooser-get-filter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>chooser</p></td>
+<td class="parameter_description"><p>A data chooser.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-data-chooser-get-filter.returns"></a><h4>Returns</h4>
+<p> The <a href="/usr/share/gtk-doc/html/gtk3/GtkTreeModelFilter.html#GtkTreeModelFilter-struct"><span class="type">GtkTreeModelFilter</span></a> object used by the chooser.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-data-chooser-refilter"></a><h3>gwy_data_chooser_refilter ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_data_chooser_refilter (<em class="parameter"><code><a class="link" href="GwyDataChooser.html" title="GwyDataChooser"><span class="type">GwyDataChooser</span></a> *chooser</code></em>);</pre>
+<p>Reruns the filter function of a data chooser.</p>
+<p>This function is useful when the filtering functions given in <a class="link" href="GwyDataChooser.html#gwy-data-chooser-set-filter" title="gwy_data_chooser_set_filter ()"><code class="function">gwy_data_chooser_set_filter()</code></a> depends on external
+state and that state changes.</p>
+<p>If the currently selected item becomes filtered out the chooser selects the no-data item if enabled.  If the
+no-data item is disabled but the list contains some items then an arbitrary item is selected.  At present, this
+means the first item in the list.</p>
+<div class="refsect3">
+<a name="gwy-data-chooser-refilter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>chooser</p></td>
+<td class="parameter_description"><p>A data chooser.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-41.html#api-index-2.41">2.41</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyDataChooser.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GWY-APP-DATA-ID-NONE:CAPS"></a><h3>GWY_APP_DATA_ID_NONE</h3>
+<pre class="programlisting">#define GWY_APP_DATA_ID_NONE { 0, -1 }
+</pre>
+<p>Initialiser for <a class="link" href="GwyDataChooser.html#GwyAppDataId" title="GwyAppDataId"><span class="type">GwyAppDataId</span></a> that corresponds to no data.</p>
+<p>The macro would be typically used in initialisation as</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">GwyAppDataId</span> <span class="n">dataid</span> <span class="o">=</span> <span class="n">GWY_APP_DATA_ID_NONE</span><span class="p">;</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+<p class="since">Since: <a class="link" href="api-index-2-41.html#api-index-2.41">2.41</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyAppDataId"></a><h3>GwyAppDataId</h3>
+<pre class="programlisting">typedef struct {
+    gint datano;
+    gint id;
+} GwyAppDataId;
+</pre>
+<p>Auxiliary structure representing one data item in an open file.</p>
+<p>The data container number can be obtained with <a class="link" href="libgwyapp-data-browser.html#gwy-app-data-browser-get" title="gwy_app_data_browser_get ()"><code class="function">gwy_app_data_browser_get()</code></a> and used to look up the container with
+<a class="link" href="libgwyapp-data-browser.html#gwy-app-data-browser-get-number" title="gwy_app_data_browser_get_number ()"><code class="function">gwy_app_data_browser_get_number()</code></a>.</p>
+<div class="refsect3">
+<a name="GwyAppDataId.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GwyAppDataId.datano"></a>datano</code></em>;</p></td>
+<td class="struct_member_description"><p>Numeric identifier of data container.  Zero is used for none.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GwyAppDataId.id"></a>id</code></em>;</p></td>
+<td class="struct_member_description"><p>Numeric identifier of a specific data item, such as channel or graph number.  Value -1 is used for none.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-41.html#api-index-2.41">2.41</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyDataChooser-struct"></a><h3>GwyDataChooser</h3>
+<pre class="programlisting">typedef struct _GwyDataChooser GwyDataChooser;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyDataChooserClass"></a><h3>GwyDataChooserClass</h3>
+<pre class="programlisting">typedef struct _GwyDataChooserClass GwyDataChooserClass;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

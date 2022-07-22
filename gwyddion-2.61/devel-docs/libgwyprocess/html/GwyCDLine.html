@@ -1,0 +1,591 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>cdline: Gwyddion Data Processing Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="up" href="index.html" title="Gwyddion Data Processing Library Reference Manual">
+<link rel="prev" href="libgwyprocess-arithmetic.html" title="arithmetic">
+<link rel="next" href="libgwyprocess-correct.html" title="correct">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwyCDLine.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwyCDLine.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="libgwyprocess-arithmetic.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgwyprocess-correct.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwyCDLine"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwyCDLine.top_of_page"></a>cdline</span></h2>
+<p>cdline — Critical dimension</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwyCDLine.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="../GwyInventory.html#GwyInventory-struct"><span class="returnvalue">GwyInventory</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyCDLine.html#gwy-cdlines" title="gwy_cdlines ()">gwy_cdlines</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyCDLine.html#gwy-cdline-get-name" title="gwy_cdline_get_name ()">gwy_cdline_get_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyCDLine.html#gwy-cdline-get-definition" title="gwy_cdline_get_definition ()">gwy_cdline_get_definition</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyCDLine.html#gwy-cdline-get-param-name" title="gwy_cdline_get_param_name ()">gwy_cdline_get_param_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyCDLine.html#gwy-cdline-get-param-default" title="gwy_cdline_get_param_default ()">gwy_cdline_get_param_default</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwyCDLine.html#gwy-cdline-get-param-units" title="gwy_cdline_get_param_units ()">gwy_cdline_get_param_units</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyCDLine.html#gwy-cdline-get-nparams" title="gwy_cdline_get_nparams ()">gwy_cdline_get_nparams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyCDLine.html#gwy-cdline-fit" title="gwy_cdline_fit ()">gwy_cdline_fit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GwyCDLine.html#gwy-cdline-fit-with-caldata" title="gwy_cdline_fit_with_caldata ()">gwy_cdline_fit_with_caldata</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GwyCDLine.html#gwy-cdline-get-value" title="gwy_cdline_get_value ()">gwy_cdline_get_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyCDLine.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GwyCDLine.html#GwyCDLineBuiltin" title="GwyCDLineBuiltin">GwyCDLineBuiltin</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyCDLine.html#GwyCDLine-struct" title="struct GwyCDLine">GwyCDLine</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwyCDLine.html#GwyCDLineClass" title="struct GwyCDLineClass">GwyCDLineClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwyCDLine.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="../GwyResource.html#GwyResource-struct">GwyResource</a>
+        <span class="lineart">╰──</span> GwyCDLine
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyCDLine.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libprocess/gwyprocess.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwyCDLine.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="GwyCDLine.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-cdlines"></a><h3>gwy_cdlines ()</h3>
+<pre class="programlisting"><a href="../GwyInventory.html#GwyInventory-struct"><span class="returnvalue">GwyInventory</span></a> *
+gwy_cdlines (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Gets inventory with all the critical dimension evaluators.</p>
+<div class="refsect3">
+<a name="gwy-cdlines.returns"></a><h4>Returns</h4>
+<p> Critical dimension evaluator inventory.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-cdline-get-name"></a><h3>gwy_cdline_get_name ()</h3>
+<pre class="programlisting">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_cdline_get_name (<em class="parameter"><code><a class="link" href="GwyCDLine.html" title="cdline"><span class="type">GwyCDLine</span></a> *cdline</code></em>);</pre>
+<p>Return cdline name (its unique identifier).</p>
+<div class="refsect3">
+<a name="gwy-cdline-get-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>cdline</p></td>
+<td class="parameter_description"><p>A critical dimension evaluator.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-cdline-get-name.returns"></a><h4>Returns</h4>
+<p> The cdline name.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-cdline-get-definition"></a><h3>gwy_cdline_get_definition ()</h3>
+<pre class="programlisting">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_cdline_get_definition (<em class="parameter"><code><a class="link" href="GwyCDLine.html" title="cdline"><span class="type">GwyCDLine</span></a> *cdline</code></em>);</pre>
+<p>Gets the name of the image file with critical dimension evaluator
+description.</p>
+<div class="refsect3">
+<a name="gwy-cdline-get-definition.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>cdline</p></td>
+<td class="parameter_description"><p>A critical dimension evaluator.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-cdline-get-definition.returns"></a><h4>Returns</h4>
+<p> The cdline function definition.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-cdline-get-param-name"></a><h3>gwy_cdline_get_param_name ()</h3>
+<pre class="programlisting">const <a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gwy_cdline_get_param_name (<em class="parameter"><code><a class="link" href="GwyCDLine.html" title="cdline"><span class="type">GwyCDLine</span></a> *cdline</code></em>,
+                           <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> param</code></em>);</pre>
+<p>Returns the name of a critical dimension evaluator parameter.</p>
+<p>The name may contain Pango markup.</p>
+<div class="refsect3">
+<a name="gwy-cdline-get-param-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>cdline</p></td>
+<td class="parameter_description"><p>A NL evaluator function cdline.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>param</p></td>
+<td class="parameter_description"><p>A parameter number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-cdline-get-param-name.returns"></a><h4>Returns</h4>
+<p> The name of parameter <em class="parameter"><code>param</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-cdline-get-param-default"></a><h3>gwy_cdline_get_param_default ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_cdline_get_param_default (<em class="parameter"><code><a class="link" href="GwyCDLine.html" title="cdline"><span class="type">GwyCDLine</span></a> *cdline</code></em>,
+                              <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> param</code></em>);</pre>
+<div class="warning"><p><code class="literal">gwy_cdline_get_param_default</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>Returns a constant default parameter value.</p>
+<div class="refsect3">
+<a name="gwy-cdline-get-param-default.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>cdline</p></td>
+<td class="parameter_description"><p>A NL evaluator function cdline.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>param</p></td>
+<td class="parameter_description"><p>A parameter number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-cdline-get-param-default.returns"></a><h4>Returns</h4>
+<p> The default parameter value, unrelated to the actual data fitted.
+It is worthless.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-cdline-get-param-units"></a><h3>gwy_cdline_get_param_units ()</h3>
+<pre class="programlisting"><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="returnvalue">GwySIUnit</span></a> *
+gwy_cdline_get_param_units (<em class="parameter"><code><a class="link" href="GwyCDLine.html" title="cdline"><span class="type">GwyCDLine</span></a> *cdline</code></em>,
+                            <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> param</code></em>,
+                            <em class="parameter"><code><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *siunit_x</code></em>,
+                            <em class="parameter"><code><a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> *siunit_y</code></em>);</pre>
+<p>Derives the SI unit of a critical dimension parameter from the units of
+abscissa and ordinate.</p>
+<div class="refsect3">
+<a name="gwy-cdline-get-param-units.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>cdline</p></td>
+<td class="parameter_description"><p>A critical dimension evaluator.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>param</p></td>
+<td class="parameter_description"><p>A parameter number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>siunit_x</p></td>
+<td class="parameter_description"><p>SI unit of abscissa.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>siunit_y</p></td>
+<td class="parameter_description"><p>SI unit of ordinate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-cdline-get-param-units.returns"></a><h4>Returns</h4>
+<p> A newly created <a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a> with the units of the parameter <em class="parameter"><code>param</code></em>
+.
+If the units of <em class="parameter"><code>param</code></em>
+are not representable as <a href="../GwySIUnit.html#GwySIUnit-struct"><span class="type">GwySIUnit</span></a>,
+the result is unitless (i.e. it will be presented as a mere
+number).</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-5.html#api-index-2.5">2.5</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-cdline-get-nparams"></a><h3>gwy_cdline_get_nparams ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gwy_cdline_get_nparams (<em class="parameter"><code><a class="link" href="GwyCDLine.html" title="cdline"><span class="type">GwyCDLine</span></a> *cdline</code></em>);</pre>
+<p>Return the number of parameters of <em class="parameter"><code>cdline</code></em>
+.</p>
+<div class="refsect3">
+<a name="gwy-cdline-get-nparams.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>cdline</p></td>
+<td class="parameter_description"><p>A critical dimension evaluator.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-cdline-get-nparams.returns"></a><h4>Returns</h4>
+<p> The number of function parameters.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-cdline-fit"></a><h3>gwy_cdline_fit ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_cdline_fit (<em class="parameter"><code><a class="link" href="GwyCDLine.html" title="cdline"><span class="type">GwyCDLine</span></a> *cdline</code></em>,
+                <em class="parameter"><code><a href="http://developer.gnome.org/doc/API/2.0/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_dat</code></em>,
+                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *x</code></em>,
+                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *y</code></em>,
+                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_param</code></em>,
+                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *params</code></em>,
+                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *err</code></em>,
+                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *fixed_param</code></em>,
+                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Performs a critical dimension evaulation (fit).</p>
+<div class="refsect3">
+<a name="gwy-cdline-fit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>cdline</p></td>
+<td class="parameter_description"><p>A critical dimension evaluator.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n_dat</p></td>
+<td class="parameter_description"><p>The number of data points (number of items in <em class="parameter"><code>x</code></em>
+and <em class="parameter"><code>y</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Abscissa points.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Ordinate points.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n_param</p></td>
+<td class="parameter_description"><p>The number of parameters.  This argument is ignored as the
+evaluator knows how many parameters it has, it is safe to pass 0.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>Array to store fitted parameter values to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Array to store parameter errros to, may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fixed_param</p></td>
+<td class="parameter_description"><p>Which parameters should be treated as fixed.  It is ignored,
+pass <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>Ignored, pass <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-cdline-fit-with-caldata"></a><h3>gwy_cdline_fit_with_caldata ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gwy_cdline_fit_with_caldata (<em class="parameter"><code><a class="link" href="GwyCDLine.html" title="cdline"><span class="type">GwyCDLine</span></a> *cdline</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_dat</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *x</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *y</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *params</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *err</code></em>,
+                             <em class="parameter"><code><a class="link" href="GwyCalData.html#GwyCurveCalibrationData" title="GwyCurveCalibrationData"><span class="type">GwyCurveCalibrationData</span></a> *cdata</code></em>);</pre>
+<p>Performs a critical dimension evaulation (fit), allowing user to pass uncertainties.</p>
+<div class="refsect3">
+<a name="gwy-cdline-fit-with-caldata.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>cdline</p></td>
+<td class="parameter_description"><p>A critical dimension evaluator.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n_dat</p></td>
+<td class="parameter_description"><p>The number of data points (number of items in <em class="parameter"><code>x</code></em>
+and <em class="parameter"><code>y</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>Abscissa points.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Ordinate points.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>Array to store fitted parameter values to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Array to store parameter errros to, may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cdata</p></td>
+<td class="parameter_description"><p>Curve calibration data, may be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gwy-cdline-get-value"></a><h3>gwy_cdline_get_value ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gwy_cdline_get_value (<em class="parameter"><code><a class="link" href="GwyCDLine.html" title="cdline"><span class="type">GwyCDLine</span></a> *cdline</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x</code></em>,
+                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *params</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *fres</code></em>);</pre>
+<p>Calculates critical dimension function value in a single point with given
+parameters.</p>
+<div class="refsect3">
+<a name="gwy-cdline-get-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>cdline</p></td>
+<td class="parameter_description"><p>A critical dimension evaluator.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>The point to compute value at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>params</p></td>
+<td class="parameter_description"><p>Evaluator parameter values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fres</p></td>
+<td class="parameter_description"><p>Set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if succeeds, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> on failure.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gwy-cdline-get-value.returns"></a><h4>Returns</h4>
+<p> The function value.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwyCDLine.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwyCDLineBuiltin"></a><h3>GwyCDLineBuiltin</h3>
+<pre class="programlisting">typedef struct _GwyCDLineBuiltin GwyCDLineBuiltin;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyCDLine-struct"></a><h3>struct GwyCDLine</h3>
+<pre class="programlisting">struct GwyCDLine;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwyCDLineClass"></a><h3>struct GwyCDLineClass</h3>
+<pre class="programlisting">struct GwyCDLineClass {
+    GwyResourceClass parent_class;
+
+    void (*reserved1)(void);
+    void (*reserved2)(void);
+};
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>

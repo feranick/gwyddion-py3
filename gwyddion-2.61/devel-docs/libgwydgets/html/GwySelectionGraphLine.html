@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GwySelectionGraphLine: Gwyddion Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Gwyddion Widgets Library Reference Manual">
+<link rel="up" href="GraphWidgets.html" title="Graphs">
+<link rel="prev" href="GwySelectionGraphArea.html" title="GwySelectionGraphArea">
+<link rel="next" href="GwySelectionGraphPoint.html" title="GwySelectionGraphPoint">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GwySelectionGraphLine.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GwySelectionGraphLine.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GwySelectionGraphLine.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GwySelectionGraphLine.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="GraphWidgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GwySelectionGraphArea.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GwySelectionGraphPoint.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GwySelectionGraphLine"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GwySelectionGraphLine.top_of_page"></a>GwySelectionGraphLine</span></h2>
+<p>GwySelectionGraphLine — Single coordinate graph selection</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GwySelectionGraphLine.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="function_type">
+<a href="../GwySelection.html#GwySelection-struct"><span class="returnvalue">GwySelection</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GwySelectionGraphLine.html#gwy-selection-graph-line-new" title="gwy_selection_graph_line_new ()">gwy_selection_graph_line_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphLine.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type"><a href="../libgwyprocess-gwyprocessenums.html#GwyOrientation"><span class="type">GwyOrientation</span></a></td>
+<td class="property_name"><a class="link" href="GwySelectionGraphLine.html#GwySelectionGraphLine--orientation" title="The “orientation” property">orientation</a></td>
+<td class="property_flags">Read / Write</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphLine.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwySelectionGraphLine.html#GwySelectionGraphLine-struct" title="struct GwySelectionGraphLine">GwySelectionGraphLine</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GwySelectionGraphLine.html#GwySelectionGraphLineClass" title="struct GwySelectionGraphLineClass">GwySelectionGraphLineClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphLine.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://developer.gnome.org/doc/API/2.0/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="../GwySelection.html#GwySelection-struct">GwySelection</a>
+        <span class="lineart">╰──</span> GwySelectionGraphLine
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphLine.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GwySelectionGraphLine implements
+ <a href="../GwySerializable.html#GwySerializable-struct">GwySerializable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphLine.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libgwydgets/gwydgets.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphLine.description"></a><h2>Description</h2>
+<p><a class="link" href="GwySelectionGraphLine.html" title="GwySelectionGraphLine"><span class="type">GwySelectionGraphLine</span></a> is used to represent signle coodinate (<em class="parameter"><code>x</code></em>
+ or <em class="parameter"><code>y</code></em>
+)
+graph selections.  Selection data consists of signle coordinates.</p>
+<p>If you obtain the selection from a graph widget it has the "orientation"
+property set for information.  The orientation should be kept intact in this
+case as changing it is not meaningful.  The graph keeps two distinct
+horizontal and vertical selection objects.</p>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphLine.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gwy-selection-graph-line-new"></a><h3>gwy_selection_graph_line_new ()</h3>
+<pre class="programlisting"><a href="../GwySelection.html#GwySelection-struct"><span class="returnvalue">GwySelection</span></a> *
+gwy_selection_graph_line_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new line-wise graph selection.</p>
+<div class="refsect3">
+<a name="gwy-selection-graph-line-new.returns"></a><h4>Returns</h4>
+<p> A new selection object.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-1.html#api-index-2.1">2.1</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphLine.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GwySelectionGraphLine-struct"></a><h3>struct GwySelectionGraphLine</h3>
+<pre class="programlisting">struct GwySelectionGraphLine;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GwySelectionGraphLineClass"></a><h3>struct GwySelectionGraphLineClass</h3>
+<pre class="programlisting">struct GwySelectionGraphLineClass {
+    GwySelectionClass parent_class;
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GwySelectionGraphLine.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GwySelectionGraphLine--orientation"></a><h3>The <code class="literal">“orientation”</code> property</h3>
+<pre class="programlisting">  “orientation”              <a href="../libgwyprocess-gwyprocessenums.html#GwyOrientation"><span class="type">GwyOrientation</span></a></pre>
+<p>The :orientation property represents the orientation of the selected
+lines.</p>
+<p>The orientation is <a href="../libgwyprocess-gwyprocessenums.html#GWY-ORIENTATION-HORIZONTAL:CAPS"><code class="literal">GWY_ORIENTATION_HORIZONTAL</code></a> for selections along the
+<em class="parameter"><code>x</code></em>
+-axis, i.e. vertical lines, and <a href="../libgwyprocess-gwyprocessenums.html#GWY-ORIENTATION-VERTICAL:CAPS"><code class="literal">GWY_ORIENTATION_VERTICAL</code></a> for
+selections along the <em class="parameter"><code>y</code></em>
+-axis, i.e. horizontal lines.</p>
+<p>Owner: GwySelectionGraphLine</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GWY_ORIENTATION_HORIZONTAL</p>
+<p class="since">Since: <a class="link" href="api-index-2-43.html#api-index-2.43">2.43</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.19</div>
+</body>
+</html>
